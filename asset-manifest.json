@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/brlab/static/css/main.43700ca1.css",
+    "main.js": "/brlab/static/js/main.c388d25f.js",
+    "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
+    "static/media/resilient@2x.png": "/brlab/static/media/resilient@2x.caad11220067e0c54e59.png",
+    "static/media/sensing@2x.png": "/brlab/static/media/sensing@2x.bd3b1b07568490f220bf.png",
+    "static/media/Human-centric@2x.png": "/brlab/static/media/Human-centric@2x.5dcbe4e953ad766db382.png",
+    "static/media/NUSLOGO-removebg-preview.png": "/brlab/static/media/NUSLOGO-removebg-preview.5dd0ad9bdd141b9217c1.png",
+    "index.html": "/brlab/index.html",
+    "main.43700ca1.css.map": "/brlab/static/css/main.43700ca1.css.map",
+    "main.c388d25f.js.map": "/brlab/static/js/main.c388d25f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43700ca1.css",
+    "static/js/main.c388d25f.js"
+  ]
+}
