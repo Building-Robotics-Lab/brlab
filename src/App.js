@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter , Routes, Route } from 'react-router-dom'
 
 import Home from './pages/Home'
 import Research from './pages/Research'
@@ -14,7 +14,7 @@ import Join_the_Lab from './pages/Join_the_Lab'
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route index element={<Home />} />
           {/* <Route path='/home' element={<Home />} /> */}
@@ -26,7 +26,7 @@ function App() {
           <Route path='/publications' element={<Publications />} />
           <Route path='/join_the_lab' element={<Join_the_Lab />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
