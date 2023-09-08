@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Merriweather', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.day-mode .navbar p, .day-mode .navbar {
+    background-color: white;
+    color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.night-mode .navbar p, .night-mode .navbar {
+    background-color: rgb(20, 26, 31);
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.day-mode,
+.day-mode .arrow,
+.day-mode .Footer,
+.day-mode .left_text,
+.day-mode .right_text,
+.day-mode .mid_text,
+.day-mode .content_wrapper {
+    background-color: white;
+    color: black;
+    /* Add other styles for day mode */
 }
 
-.App-link {
-  color: #61dafb;
+.night-mode,
+.night-mode .arrow,
+.night-mode .Footer,
+.night-mode .left_text,
+.night-mode .right_text,
+.night-mode .mid_text,
+.night-mode .Footer .right_text a,
+.night-mode .content_wrapper {
+    background-color: rgb(20, 26, 31, 0.99);
+    color: white;
+    /* Add other styles for night mode */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.day-mode .arrow {
+    border-color: black;
+}
+  
+.night-mode .arrow {
+    border-color: white;
+}
+
+.nidayght-mode #footer_Button {
+    color: black;
+}
+
+.night-mode #footer_Button {
+    color: white;
 }

@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Home from './pages/Home'
+import Research from './pages/Research'
+import ComfortGPT from './pages/ComfortGPT'
+import OTST from './pages/OTST'
+import Our_Team from './pages/Our_Team'
+import News from './pages/News'
+import Publications from './pages/Publications'
+import Join_the_Lab from './pages/Join_the_Lab'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          {/* <Route path='/home' element={<Home />} /> */}
+          <Route path='/research' element={<Research />} />
+          <Route path='/comfortgpt' element={<ComfortGPT />} />
+          <Route path='/optimal_temperature_setpoint_tool' element={<OTST />} />
+          <Route path='/our_team' element={<Our_Team />} />
+          <Route path='/news' element={<News />} />
+          <Route path='/publications' element={<Publications />} />
+          <Route path='/join_the_lab' element={<Join_the_Lab />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

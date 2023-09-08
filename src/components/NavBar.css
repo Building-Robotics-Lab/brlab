@@ -1,0 +1,115 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+}
+
+.left, 
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.left > *, 
+.right > * {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.left {
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.right {
+    font-size: 1rem;
+    color: black;
+}
+
+.logo {
+    width: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: white;
+    top: 3rem;
+    border: 1px solid rgba(0,0,0,0.2);
+    z-index: 1;
+    white-space: nowrap;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content p:hover {
+    background-color: green;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.dropdown:hover .dropdown-content, .dropdown-content.show {
+    display: block; /* Show on hover or when .show class is present */
+}
+
+.dropdown p {
+  cursor: pointer;  /* Add this line */
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2px;
+    vertical-align: middle; /* Add this line */
+    margin-left: 5px;  /* Add this line */
+}
+  
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+  
+.dropdown p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mode {
+    width: 30px;
+}
+
+#JoinButton {
+    padding: 10px;
+    border: 3px solid green;
+    border-radius: 0.5rem;
+    color: green;
+    font-weight: bold;
+}
+
+#JoinButton:hover {
+    padding: 10px;
+    border: 3px solid green;
+    background-color: green;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+}
