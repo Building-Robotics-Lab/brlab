@@ -1,18 +1,26 @@
 {
   "files": {
-    "main.css": "/brlab/static/css/main.d29233f2.css",
-    "main.js": "/brlab/static/js/main.e1b2076a.js",
+    "main.css": "/brlab/static/css/main.1530af17.css",
+    "main.js": "/brlab/static/js/main.191d81f7.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
+    "static/media/image.jpg": "/brlab/static/media/image.294351d9f826a0ad6129.jpg",
     "static/media/resilient@2x.png": "/brlab/static/media/resilient@2x.caad11220067e0c54e59.png",
     "static/media/sensing@2x.png": "/brlab/static/media/sensing@2x.bd3b1b07568490f220bf.png",
+    "static/media/prof_CV.pdf": "/brlab/static/media/prof_CV.c06bcd661b5a77a068bb.pdf",
+    "static/media/CV.pdf": "/brlab/static/media/CV.545b3ed2ae713b2d4a84.pdf",
+    "static/media/Lab_Image_1.png": "/brlab/static/media/Lab_Image_1.34d5ee0ffb568c71bd1d.png",
+    "static/media/kai_paper.png": "/brlab/static/media/kai_paper.cdc7943c49a7594f5783.png",
     "static/media/Human-centric@2x.png": "/brlab/static/media/Human-centric@2x.5dcbe4e953ad766db382.png",
+    "static/media/iqbal-publication.jpg": "/brlab/static/media/iqbal-publication.bfa85cffe211e5f5fec4.jpg",
+    "static/media/riccardo-publication.jpg": "/brlab/static/media/riccardo-publication.6b0317da42f65f02f46d.jpg",
+    "static/media/prof_pic.jpg": "/brlab/static/media/prof_pic.c3f590fb533559c77ce4.jpg",
     "static/media/NUSLOGO-removebg-preview.png": "/brlab/static/media/NUSLOGO-removebg-preview.5dd0ad9bdd141b9217c1.png",
     "index.html": "/brlab/index.html",
-    "main.d29233f2.css.map": "/brlab/static/css/main.d29233f2.css.map",
-    "main.e1b2076a.js.map": "/brlab/static/js/main.e1b2076a.js.map"
+    "main.1530af17.css.map": "/brlab/static/css/main.1530af17.css.map",
+    "main.191d81f7.js.map": "/brlab/static/js/main.191d81f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.d29233f2.css",
-    "static/js/main.e1b2076a.js"
+    "static/css/main.1530af17.css",
+    "static/js/main.191d81f7.js"
   ]
 }
