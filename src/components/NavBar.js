@@ -4,6 +4,7 @@ import './NavBar.css';
 import Logo from './Website Data/Logo.png';
 import Sun from './Website Data/sun.png';
 import Moon from './Website Data/moon.png'
+import Button from '@mui/material/Button';
 
 function NavBar() {
   // Add state to manage the dropdown open/close
@@ -51,9 +52,9 @@ function NavBar() {
           </Link>
           <div className="right">
             <div className="dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <p onClick={toggleDropdown} style={{cursor: 'pointer'}}>
-                <Link to="/research" style={{color: 'black'}}><p><span>Research</span></p></Link>
-                <i class="arrow down"></i>
+              <p onClick={toggleDropdown} style={{ cursor: 'pointer' }}>
+                <Link to="/research" style={{ color: 'black' }}><p><span>Research</span></p></Link>
+                <i className="arrow down"></i>
               </p>
               {(isDropdownOpen) && (
                 <div className="dropdown-content">
@@ -69,7 +70,7 @@ function NavBar() {
             <Link to="/publications"><p>Publications</p></Link>
             <Link to="/join_the_lab"><p id='JoinButton'>Join the Lab</p></Link>
             <div onClick={toggleTheme} style={{ cursor: 'pointer' }}>
-                {theme === 'day' ? <img src={Sun} alt="Sun" className='mode' /> : <img src={Moon} alt="Moon" className='mode' />}
+              {theme === 'day' ? <img src={Sun} alt="Sun" className='mode' /> : <img src={Moon} alt="Moon" className='mode' />}
             </div>
           </div>
         </div>

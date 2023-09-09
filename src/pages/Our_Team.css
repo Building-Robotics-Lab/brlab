@@ -1,0 +1,191 @@
+/* First Section */
+
+.Our_Team .first_section {
+    display: flex;
+}
+
+.Our_Team .prof_data {
+    flex: 1;
+}
+
+.Our_Team .prof_data img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    width: 65%;
+    height: 65%;
+}
+
+.prof_pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Our_Team .prof_data .HomeButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.Our_Team .prof_data .prof_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Add this line to vertically center the items */
+    margin-top: 1rem;
+}
+
+.Our_Team .prof_data .prof_links>* {
+    color: black !important;
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0px 10px !important;
+    font-size: 20px !important;
+    display: flex;
+    align-items: center;
+}
+
+.Our_Team .prof_bio {
+    flex: 2;
+}
+
+.Our_Team .prof_bio h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.75rem;
+}
+
+.Our_Team .prof_bio h1 {
+    color: green;
+    margin-bottom: 1.25rem;
+    font-size: 2.5rem;
+}
+
+.Our_Team .prof_bio h5 {
+    font-size: 1.25rem;
+}
+
+.Our_Team .prof_bio p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Second and Third Section */
+
+.Our_Team .meet_team {
+    font-size: 1.5rem;
+    margin-bottom: 3.3vmax;
+    text-align: center;
+}
+
+.Our_Team .position {
+    font-size: 1.5rem;
+    margin-bottom: 1.65vmax;
+}
+
+.Our_Team .team-grid h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.Our_Team .team-grid h6 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.Our_Team .team-grid p {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+}
+
+.Our_Team .team-grid {
+    display: grid;
+    gap: 2.25rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Our_Team .team-grid>.item {
+    outline: 2px solid black;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 8px #888888;
+    background-color: white;
+}
+
+.Our_Team .team-grid>.item:hover {
+    outline: 6px solid green;
+    border-radius: 2rem;
+    box-shadow: 15px 15px 8px #888888;
+}
+
+.Our_Team .team-grid>*>a {
+    display: block;
+    width: 60%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.Our_Team .team-grid>*>.individual-info {
+    text-align: center;
+    margin-top: 1.5rem;
+    width: 80%;
+    margin: auto;
+}
+
+.Our_Team .team-grid>*>.individual-info>a {
+    text-decoration: none;
+    color: green;
+}
+
+.Our_Team .team-grid>*>.individual-info>p {
+    margin-bottom: 3rem;
+}
+
+.Our_Team .ProfilePic img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.Our_Team .ProfilePic {
+    text-align: center;
+}
+
+.Our_Team .team-grid img:hover,
+.Our_Team .team-grid h3:hover {
+    scale: 1.1;
+}
+
+/* Fourth Section */
+
+.Our_Team .LadImage1 {
+    width: 100%;
+    border-radius: 1rem;
+    
+}
+
+/* Fifth Section */
+
+.Our_Team .fifth_section h3 {
+    font-size: 1.75rem;
+    margin: 0rem 2.5rem 2.5rem 2.5rem;
+    text-align: center;
+}
+
+.Our_Team .fifth_section p {
+    font-size: 1rem;
+    margin: 0rem 10rem 2rem 10rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.Our_Team .fifth_section .HomeButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.Our_Team .fifth_section .HomeButtons p {
+    margin-bottom: 0px !important;
+}

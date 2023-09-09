@@ -1,0 +1,138 @@
+/* First Section */
+
+.IndividualProfile .first_section {
+    display: flex;
+}
+
+.IndividualProfile .first_section .profile_pic {
+    flex: 1;
+}
+
+.IndividualProfile .first_section .profile_pic img {
+    width: 65%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.IndividualProfile .first_section .profile_name {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -5%;
+}
+
+.IndividualProfile .first_section .profile_name h1 {
+    color: green;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.IndividualProfile .first_section .profile_name h3 {
+    font-size: 1.75rem;
+}
+
+/* Second Section */
+
+.IndividualProfile .second_section {
+    display: flex;
+}
+
+.IndividualProfile .second_section .second_section_left {
+    flex: 3;
+}
+
+.IndividualProfile .second_section .second_section_left h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.IndividualProfile .second_section .second_section_left p {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.IndividualProfile .second_section .second_section_left ul {
+    padding-left: 1.25rem;
+}
+
+.IndividualProfile .second_section .second_section_left a {
+    text-decoration: none;
+    color: green;
+}
+
+.IndividualProfile .second_section .second_section_left a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    border-radius: 0.25rem;
+}
+
+.IndividualProfile .second_section .second_section_right {
+    flex: 1;
+    padding-left: 3rem;
+}
+
+.IndividualProfile .second_section .second_section_right .second_section_right_each_section {
+    margin-bottom: 3rem;
+}
+
+.IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_title .mainIcon {
+    margin-right: 1rem;
+    color: green;
+    font-size: 2rem;
+}
+
+.IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_title h2 {
+    font-size: 1.75rem;
+}
+
+.IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_content > * {
+    margin-bottom: 1rem;
+}
+
+.IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_content .subIcon {
+    margin-right: 1rem;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_content a {
+    color: black;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_content a:hover {
+    color: green;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+.IndividualProfile .second_section .second_section_right .each_section_title .mainIcon,
+.IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_content .subIcon {
+    min-width: 3rem;
+    text-align: center;
+}
+
+.IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_content p {
+    display: flex;
+    align-items: center;
+}

@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="left">
                         <div className="left_text">
                             <h3>Building Robotics Laboratory</h3>
-                            <div class="BRL_Footer">
+                            <div className="BRL_Footer">
                                 <span>a</span><span>t</span>
                                 <span> </span>
                                 <span> </span>
@@ -65,11 +65,11 @@ const Footer = () => {
                 </div>
             </div>
             <div className="uiux">
-                <div class="row justify-content-between">
-                    <div class="col-6 lg-3">
+                <div>
+                    <div>
                         <p>© 2023 Building Robotics Laboratory</p>
                     </div>
-                    <div class="col-6 lg-3">
+                    <div>
                         <p>Design: Connor Aucremanne | Code: Ilyas Dawoodjee</p>
                     </div>
                 </div>

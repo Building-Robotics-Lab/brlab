@@ -24,7 +24,7 @@
 .uiux > * {
     display: flex;
     justify-content: space-between;
-    margin: 0rem 1rem 0rem 1rem;
+    margin: 0rem 1rem 0.5rem 1rem;
     font-size: medium;
     color: #6c757d !important;
 }
