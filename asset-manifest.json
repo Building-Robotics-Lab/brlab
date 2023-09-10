@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brlab/static/css/main.1530af17.css",
-    "main.js": "/brlab/static/js/main.fbb77c07.js",
+    "main.css": "/brlab/static/css/main.6ce52177.css",
+    "main.js": "/brlab/static/js/main.86f54dbc.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
     "static/media/image.jpg": "/brlab/static/media/image.294351d9f826a0ad6129.jpg",
     "static/media/resilient@2x.png": "/brlab/static/media/resilient@2x.caad11220067e0c54e59.png",
@@ -16,11 +16,11 @@
     "static/media/prof_pic.jpg": "/brlab/static/media/prof_pic.c3f590fb533559c77ce4.jpg",
     "static/media/NUSLOGO-removebg-preview.png": "/brlab/static/media/NUSLOGO-removebg-preview.5dd0ad9bdd141b9217c1.png",
     "index.html": "/brlab/index.html",
-    "main.1530af17.css.map": "/brlab/static/css/main.1530af17.css.map",
-    "main.fbb77c07.js.map": "/brlab/static/js/main.fbb77c07.js.map"
+    "main.6ce52177.css.map": "/brlab/static/css/main.6ce52177.css.map",
+    "main.86f54dbc.js.map": "/brlab/static/js/main.86f54dbc.js.map"
   },
   "entrypoints": [
-    "static/css/main.1530af17.css",
-    "static/js/main.fbb77c07.js"
+    "static/css/main.6ce52177.css",
+    "static/js/main.86f54dbc.js"
   ]
 }
