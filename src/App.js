@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Research from './pages/Research';
@@ -17,7 +17,7 @@ import profiles from './components/Website Individual Information/profileData';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route index element={<Home />} />
           <Route path='/research' element={<Research />} />
@@ -29,7 +29,7 @@ function App() {
           <Route path='/join_the_lab' element={<Join_the_Lab />} />
           <Route path="/individual_profile/:profileName" element={<IndividualProfile />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
