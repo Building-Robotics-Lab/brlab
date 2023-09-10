@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Carousel.css';
+import { Link } from 'react-router-dom';
 
 const Carousel = ({ slides }) => {
     const [startIndex, setStartIndex] = useState(0);
@@ -52,7 +53,7 @@ const Carousel = ({ slides }) => {
                         <img className='carouselImage' src={slide.image} alt={slide.title} />
                         <p className='carouselDate'>{slide.date}</p>
                         <h3 className='carouselTitle' dangerouslySetInnerHTML={{ __html: slide.title }}></h3>
-                        <a className='carouselLink' href={slide.link}>Read More</a>
+                        <Link className='carouselLink' to={`/news#${slide.link}`}>Read More</Link>
                     </div>
                 ))}
             </div>

@@ -13,11 +13,15 @@ import Join_the_Lab from './pages/Join_the_Lab';
 
 import IndividualProfile from './pages/IndividualProfile';
 import profiles from './components/Website Individual Information/profileData';
+import ScrolltoTop from './components/ScrollToTop'
+
 
 function App() {
   return (
     <div className="App">
+
       <HashRouter>
+        <ScrolltoTop />
         <Routes>
           <Route index element={<Home />} />
           <Route path='/research' element={<Research />} />

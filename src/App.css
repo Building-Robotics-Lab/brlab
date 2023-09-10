@@ -93,3 +93,11 @@
     background-color: rgb(20, 26, 31, 0.99) !important;
     box-shadow: -1px 1px 20px 9px rgba(255, 255, 255, 0.3) !important;
 }
+
+.day-mode .IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_content a {
+    color: black;
+}
+
+.night-mode .IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_content a {
+    color: white;
+}

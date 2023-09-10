@@ -1,0 +1,73 @@
+.Our_Team .team-grid h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.Our_Team .team-grid h6 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.Our_Team .team-grid p {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+}
+
+.Our_Team .team-grid {
+    display: grid;
+    gap: 2.25rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Our_Team .team-grid>.item {
+    outline: 2px solid black;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 8px #888888;
+    background-color: white;
+}
+
+.Our_Team .team-grid>.item:hover {
+    outline: 6px solid green;
+    border-radius: 2rem;
+    box-shadow: 15px 15px 8px #888888;
+}
+
+.Our_Team .team-grid>*>a {
+    display: block;
+    width: 60%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.Our_Team .team-grid>*>.individual-info {
+    text-align: center;
+    margin-top: 1.5rem;
+    width: 80%;
+    margin: auto;
+}
+
+.Our_Team .team-grid>*>.individual-info>a {
+    text-decoration: none;
+    color: green;
+}
+
+.Our_Team .team-grid>*>.individual-info>p {
+    margin-bottom: 3rem;
+}
+
+.Our_Team .team-grid .ProfilePic img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.Our_Team .team-grid .ProfilePic {
+    text-align: center;
+}
+
+.Our_Team .team-grid img:hover,
+.Our_Team .team-grid h3:hover {
+    scale: 1.1;
+}

@@ -1,0 +1,18 @@
+/* First Section */
+
+.News .first_section h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.News .first_section h3 {
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.News .first_section a {
+    color: green;
+}
+

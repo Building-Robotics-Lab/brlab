@@ -1,0 +1,58 @@
+/* First Section */
+
+.Publications .first_section h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.Publications .first_section h3 {
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.Publications .HomeButtons {
+    justify-content: center;
+    display: flex;
+}
+
+/* publication title and sections */
+
+.Publications .publication_type_title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Publications .publication_section {
+    margin-bottom: 2rem;
+}
+
+.Publications .publication_section h3 {
+    margin-bottom: 0.5rem;
+    color: green;
+}
+
+.Publications .publication_section h4 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.Publications .publication_section h5 {
+    font-weight: 500;
+}
+
+.Publications .publication_section .min_read {
+    font-size: x-small;
+}
+
+.Publications .publication_section a {
+    color: green;
+}
+
+.Publications .publication_section a:hover {
+    color: white;
+    background-color: green;
+    border-radius: 0.25rem;
+}

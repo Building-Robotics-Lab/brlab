@@ -27,121 +27,47 @@ const slides = [
         image: PegahNews,
         title: '<b>Please welcome Pegah Eshraghi to the lab!</b>',
         date: '14/08/2023',
-        link: '/page1',
+        link: 'Pegah',
     },
     {
         image: PublicationsRiccardoNews,
         title: '<b><i>Energy and Built Environment</i> publication announcement!</b>',
         date: '04/07/2023',
-        link: '/page2',
+        link: 'RiccardoPublication',
     },
     {
         image: KellyNews,
         title: '<b>Please welcome Kelly Loh to the lab!</b>',
         date: '15/05/2023',
-        link: '/page3',
+        link: 'Kelly',
     },
     {
         image: XiaosongNews,
         title: '<b>Please welcome SU Xiaosong to the lab!</b>',
         date: '26/01/2023',
-        link: '/page3',
+        link: 'Xiaosong',
     },
     {
         image: PublicationsKaiNews,
         title: '<b><i>Building and Environment</i> publication announcement!</b>',
         date: '15/01/2023',
-        link: '/page3',
+        link: 'KaiPublication',
     },
     {
         image: ConnorNews,
         title: '<b>Please welcome Connor Aucremanne to the lab!</b>',
         date: '09/01/2023',
-        link: '/page3',
+        link: 'Connor',
     },
     {
         image: PublicationsIqbalNews,
         title: '<b><i>Energy and Buildings</i> publication announcement!</b>',
         date: '01/01/2023',
-        link: '/page3',
+        link: 'IqbalPublication',
     }
 ];
 
 function Home() {
-
-    const publicationsButtonRef = useRef(null);
-    const meetOurTeamButtonRef = useRef(null);
-    const isAdjusted = useRef(false);  // Track whether marginTop has been set
-
-    const adjustButtonHeight = () => {
-        publicationsButtonRef.current.style.marginTop = '0px';
-        meetOurTeamButtonRef.current.style.marginTop = '0px';
-
-        if (isAdjusted.current) {
-            return;  // If already adjusted, do nothing
-        }
-
-        const meet_our_team_height = document.getElementsByClassName('meet_our_team_image')[0].clientHeight +
-            document.getElementsByClassName('meet_our_team_text')[0].clientHeight;
-        const publications_height = document.getElementsByClassName('publications_image')[0].clientHeight +
-            document.getElementsByClassName('publications_text')[0].clientHeight;
-        const height_difference = Math.abs(meet_our_team_height - publications_height);
-
-        if (meet_our_team_height > publications_height) {
-            publicationsButtonRef.current.style.marginTop = height_difference + 'px';
-        } else {
-            meetOurTeamButtonRef.current.style.marginTop = height_difference + 'px';
-        }
-        isAdjusted.current = true;  // Mark as adjusted
-    };
-
-    const fifthsectionleftRef = useRef(null);
-    const fifthsectionrightRef = useRef(null);
-    const fifthsectionisAdjusted = useRef(false);  // Track whether marginTop has been set
-
-    const adjustButtonHeightfifthSection = () => {
-        if (fifthsectionisAdjusted.current) {
-            return;  // If already adjusted, do nothing
-        }
-
-        const fifth_section_left = document.getElementsByClassName('fifth_section_text_left')[0].clientHeight;
-        const fifth_section_right = document.getElementsByClassName('fifth_section_text_right')[0].clientHeight;
-        const height_difference = Math.abs(fifth_section_left - fifth_section_right);
-
-        if (fifth_section_left > fifth_section_right) {
-            fifthsectionrightRef.current.style.marginTop = height_difference + 'px';
-        } else {
-            fifthsectionleftRef.current.style.marginTop = height_difference + 'px';
-        }
-        fifthsectionisAdjusted.current = true;  // Mark as adjusted
-    };
-
-    useEffect(() => {
-        adjustButtonHeight(); // Initial height adjustment
-        adjustButtonHeightfifthSection();
-
-        // Adjust button height when window resizes
-        window.addEventListener('resize', () => {
-            isAdjusted.current = false;  // Reset the adjustment flag
-            adjustButtonHeight();
-            fifthsectionisAdjusted.current = false;
-            adjustButtonHeightfifthSection();
-        });
-
-        // Set interval for button height adjustment
-        const intervalId = setInterval(adjustButtonHeight, 500);
-        const intervalIdfifthsection = setInterval(adjustButtonHeightfifthSection, 500);
-
-        // Cleanup
-        return () => {
-            window.removeEventListener('resize', adjustButtonHeight);
-            clearInterval(intervalId); // Clear the interval
-            window.removeEventListener('resize', adjustButtonHeightfifthSection);
-            clearInterval(intervalIdfifthsection); // Clear the interval
-        };
-    }, []); // Empty dependency array
-
-
 
     return (
         <div className="Home">
@@ -226,7 +152,7 @@ function Home() {
                                 open communication, mutual respect, and a strong work ethic.
                             </p>
                             <div className="HomeButtons">
-                                <Link to="/our_team"><p ref={meetOurTeamButtonRef} className='our_team_button' id='JoinButton'>OUR LAB</p></Link>
+                                <Link to="/our_team"><p className='our_team_button' id='JoinButton'>OUR LAB</p></Link>
                             </div>
                         </div>
                     </div>
@@ -244,7 +170,7 @@ function Home() {
                                 and discoveries.
                             </p>
                             <div className="HomeButtons">
-                                <Link to="/publications"><p ref={publicationsButtonRef} className='publications_button' id='JoinButton'>OUR PAPERS</p></Link>
+                                <Link to="/publications"><p className='publications_button' id='JoinButton'>OUR PAPERS</p></Link>
                             </div>
                         </div>
                     </div>
@@ -270,7 +196,7 @@ function Home() {
                                 their unique challenges and goals.
                             </p>
                             <div className="HomeButtons">
-                                <Link to="/research"><p ref={fifthsectionleftRef} className='join_the_lab_fifth_section_left' id='JoinButton'>WORK WITH US</p></Link>
+                                <Link to="/research"><p className='join_the_lab_fifth_section_left' id='JoinButton'>WORK WITH US</p></Link>
                             </div>
                         </div>
                         <div className="fifth_section_text_right">
@@ -281,7 +207,7 @@ function Home() {
                                 your interests align with these values, visit our link below to learn more about our members and current opportunities!
                             </p>
                             <div className="HomeButtons">
-                                <Link to="/join_the_lab"><p ref={fifthsectionrightRef} className='join_the_lab_fifth_section_right' id='JoinButton'>JOIN THE LAB</p></Link>
+                                <Link to="/join_the_lab"><p className='join_the_lab_fifth_section_right' id='JoinButton'>JOIN THE LAB</p></Link>
                             </div>
                         </div>
                     </div>

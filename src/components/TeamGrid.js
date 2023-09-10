@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
+import './TeamGrid.css'
 
 const TeamGrid = ({ members }) => (
     <div className="team-grid">
