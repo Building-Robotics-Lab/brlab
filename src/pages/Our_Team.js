@@ -36,56 +36,56 @@ function Our_Team() {
             role: 'Research Fellow',
             skills: 'Architectural Engineering; Building Performance Simulation; Optimisation; Energy-Efficient Buildings; Sustainable Architecture',
             imgSrc: RiccardoPic,
-            link: './individual_profile/Riccardo'
+            link: '/individual_profile/Riccardo'
         },
         {
             name: 'Chen Kai',
             role: 'PhD Student',
             skills: 'Building Energy Efficiency; Thermal Comfort; Smart Buildings',
             imgSrc: KaiPic,
-            link: './individual_profile/Kai'
+            link: '/individual_profile/Kai'
         },
         {
             name: 'Iqbal Shah',
             role: 'PhD Student',
             skills: 'Resilient Façade Systems; Urban Greening; Urban Heat Island; Digital Twin Development; Building Optimisation & Automation',
             imgSrc: IqbalPic,
-            link: './individual_profile/Iqbal'
+            link: '/individual_profile/Iqbal'
         },
         {
             name: 'Connor Aucremanne',
             role: 'PhD Student',
             skills: 'Virtual Power Plants; Building-Occupant Network Dynamics; Smart Buildings; Human-Building Interaction; Decarbonisation',
             imgSrc: ConnorPic,
-            link: './individual_profile/Connor'
+            link: '/individual_profile/Connor'
         },
         {
             name: 'Kelly Loh',
             role: 'PhD Student',
             skills: 'Building Energy Efficiency; Building Greenery; Building Finance; Building Information Modelling',
             imgSrc: KellyPic,
-            link: './individual_profile/Kelly'
+            link: '/individual_profile/Kelly'
         },
         {
             name: 'Ilyas Dawoodjee',
             role: 'Research Engineer',
             skills: 'Machine Vision; Robotics; Machine Learning; Automation',
             imgSrc: IlyasPic,
-            link: './individual_profile/Ilyas'
+            link: '/individual_profile/Ilyas'
         },
         {
             name: 'HU Xinhao',
             role: 'Visiting PhD Candidate (HNU)',
             skills: 'Indoor Thermal Comfort; Indoor Environmental Quality; Building Energy Conservation',
             imgSrc: StellaPic,
-            link: './individual_profile/Stella'
+            link: '/individual_profile/Stella'
         },
         {
             name: 'SU Xiaosong',
             role: 'Visiting PhD Candidate (HNU)',
             skills: 'Building Energy Efficiency; Energy-Efficient Building Envelope; Building-Integrated Photovoltaics; Radiant Cooling Technology in Buildings',
             imgSrc: XiaosongPic,
-            link: './individual_profile/Xiaosong'
+            link: '/individual_profile/Xiaosong'
         },
         {
             name: 'Pegah Eshraghi',
@@ -99,7 +99,7 @@ function Our_Team() {
             role: "Visiting Master's Student (ETH Zürich)",
             skills: '',  // Skills are empty in your example
             imgSrc: PierrePic,
-            link: './individual_profile/Pierre'
+            link: '/individual_profile/Pierre'
         }
     ];
 
@@ -109,7 +109,7 @@ function Our_Team() {
             role: 'Visiting PhD Candidate (HIT)',
             skills: 'Computational Design; Daylight Design; Occupant Behaviour; Visual Cognition',
             imgSrc: MichellePic,
-            link: './individual_profile/Michelle'
+            link: '/individual_profile/Michelle'
         }
     ];
 
