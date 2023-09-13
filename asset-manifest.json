@@ -1,30 +1,42 @@
 {
   "files": {
-    "main.css": "/brlab/static/css/main.5954a38a.css",
-    "main.js": "/brlab/static/js/main.c86c20fe.js",
+    "main.css": "/brlab/static/css/main.1d5bacdf.css",
+    "main.js": "/brlab/static/js/main.0dca0686.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
+    "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
     "static/media/image.jpg": "/brlab/static/media/image.294351d9f826a0ad6129.jpg",
     "static/media/resilient@2x.png": "/brlab/static/media/resilient@2x.caad11220067e0c54e59.png",
+    "static/media/1-s2.0-S221462962200281X-gr2_lrg.jpg": "/brlab/static/media/1-s2.0-S221462962200281X-gr2_lrg.8d8c8cf6ada903de2451.jpg",
+    "static/media/1-s2.0-S-gr1_lrg.jpg": "/brlab/static/media/1-s2.0-S0360132322009118-gr1_lrg.cfe8b61450e1180fbf42.jpg",
+    "static/media/1-s2.0-S-gr3_lrg.jpg": "/brlab/static/media/1-s2.0-S2352710221007580-gr3_lrg.b1870b586caabac8c879.jpg",
     "static/media/sensing@2x.png": "/brlab/static/media/sensing@2x.bd3b1b07568490f220bf.png",
     "static/media/prof_CV.pdf": "/brlab/static/media/prof_CV.c06bcd661b5a77a068bb.pdf",
     "static/media/CV.pdf": "/brlab/static/media/CV.545b3ed2ae713b2d4a84.pdf",
     "static/media/kate_pub1.png": "/brlab/static/media/kate_pub1.7c9b4754e74f4e91cec8.png",
+    "static/media/1-s2.0-S235271022100293X-ga1_lrg.jpg": "/brlab/static/media/1-s2.0-S235271022100293X-ga1_lrg.46bd20e7a76701ab5959.jpg",
     "static/media/Lab_Image_1.png": "/brlab/static/media/Lab_Image_1.34d5ee0ffb568c71bd1d.png",
     "static/media/kai_paper.png": "/brlab/static/media/kai_paper.cdc7943c49a7594f5783.png",
     "static/media/kai_pub1.png": "/brlab/static/media/kai_pub1.cdc7943c49a7594f5783.png",
     "static/media/Human-centric@2x.png": "/brlab/static/media/Human-centric@2x.5dcbe4e953ad766db382.png",
+    "static/media/sensors-22-03444-g006.png": "/brlab/static/media/sensors-22-03444-g006.c977a12d488fa900341c.png",
     "static/media/iqbal-publication.jpg": "/brlab/static/media/iqbal-publication.bfa85cffe211e5f5fec4.jpg",
     "static/media/iqbal_pub1.jpg": "/brlab/static/media/iqbal_pub1.bfa85cffe211e5f5fec4.jpg",
+    "static/media/Greenology logo.png": "/brlab/static/media/Greenology logo.52be7107418ac9c1a56e.png",
+    "static/media/Co Innovation lab logo.jpg": "/brlab/static/media/Co Innovation lab logo.48ffd48af54883eafeb2.jpg",
+    "static/media/AWS logo.png": "/brlab/static/media/AWS logo.c3a8553d2aadc3f80df7.png",
     "static/media/riccardo-publication.jpg": "/brlab/static/media/riccardo-publication.6b0317da42f65f02f46d.jpg",
     "static/media/riccardo_pub1.jpg": "/brlab/static/media/riccardo_pub1.6b0317da42f65f02f46d.jpg",
+    "static/media/41598_2022_25047_Fig3_HTML.webp": "/brlab/static/media/41598_2022_25047_Fig3_HTML.7e5320b76a238e3984f6.webp",
+    "static/media/ina12735-fig-0002-m.jpg": "/brlab/static/media/ina12735-fig-0002-m.aec67e0f30aae7831d64.jpg",
+    "static/media/tt_logo_color_rgb.jpg": "/brlab/static/media/tt_logo_color_rgb.e09f757f2b9639fb508e.jpg",
     "static/media/prof_pic.jpg": "/brlab/static/media/prof_pic.c3f590fb533559c77ce4.jpg",
     "static/media/NUSLOGO-removebg-preview.png": "/brlab/static/media/NUSLOGO-removebg-preview.5dd0ad9bdd141b9217c1.png",
     "index.html": "/brlab/index.html",
-    "main.5954a38a.css.map": "/brlab/static/css/main.5954a38a.css.map",
-    "main.c86c20fe.js.map": "/brlab/static/js/main.c86c20fe.js.map"
+    "main.1d5bacdf.css.map": "/brlab/static/css/main.1d5bacdf.css.map",
+    "main.0dca0686.js.map": "/brlab/static/js/main.0dca0686.js.map"
   },
   "entrypoints": [
-    "static/css/main.5954a38a.css",
-    "static/js/main.c86c20fe.js"
+    "static/css/main.1d5bacdf.css",
+    "static/js/main.0dca0686.js"
   ]
 }
