@@ -72,7 +72,8 @@ function JournalSection({ year, publications }) {
                 <ul>
                     {publications.map((pub, index) => (
                         <li key={index}>
-                            <h3><a href={pub.individual_paper_link} target='_blank' rel='noopener noreferrer'>{pub.title}</a></h3>
+                            {/* <h3><a href={pub.individual_paper_link} target='_blank' rel='noopener noreferrer'>{pub.title}</a></h3> */}
+                            <h3><Link to={`/individual_publication/${pub.id}`}>{pub.title}</Link></h3>
                             <h4>
                                 {pub.journal}
                                 {(pub.journal && (pub.issue || pub.page)) && ', '}

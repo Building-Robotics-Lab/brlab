@@ -31,7 +31,7 @@ function App() {
           <Route path='/publications' element={<Publications />} />
           <Route path='/join_the_lab' element={<Join_the_Lab />} />
           <Route path="/individual_profile/:profileName" element={<IndividualProfile />} />
-          <Route path='/individual_publication/:pageName' element={<IndividualPublication />} />
+          <Route path='/individual_publication/:id' element={<IndividualPublication />} />
 
           {/* <Route path='/individual_publication' element={<IndividualPublication />} />
           <Route path='/individual_profile' element={<IndividualProfile />} /> */}

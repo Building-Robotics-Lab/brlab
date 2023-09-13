@@ -15,10 +15,15 @@
     font-size: 1.5rem;
 }
 
+
 .IndividualPublication .first_section .links {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
+}
+
+.IndividualPublication .first_section .links.noKeywords {
+    margin-bottom: 0;
 }
 
 .IndividualPublication .first_section .keywords {
@@ -118,8 +123,12 @@
     flex-wrap: wrap;
     gap: 20px;
     flex-direction: row;
-    justify-content: space-between
+    /* justify-content: space-between; */
 }
+
+/* .IndividualPublication .third_section > * {
+    flex: 1;
+} */
 
 .IndividualPublication .third_section .each_profile {
     display: flex;

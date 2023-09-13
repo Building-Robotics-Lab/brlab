@@ -6,29 +6,23 @@ import Footer from '../components/Footer'
 import Container from '../components/Container';
 import { Link, useParams } from 'react-router-dom';
 
-import RiccardoPublication from './../components/Website Data/riccardo-publication.jpg'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import profiles from '../components/Website Individual Information/profileData';
 import JournalData from '../components/Papers/JournalData';
 
 function IndividualPublication() {
 
-    let { paperUniqueID } = useParams();
+    const { id } = useParams();
+    const publication = findPublicationById(id);
 
-    const allPublicationsArray = JournalData.reduce((acc, curr) => acc.concat(curr.publications), []);
-    const individual_paper = allPublicationsArray.find(p => p.id === paperUniqueID);
-
-    if (!individual_paper) {
-        return <div>Paper not found</div>;
+    if (!publication) {
+        return <div>Publication not found</div>;
     }
-
-    const { title, journal, links, keywords, highlights, abstract, profile_names } = individual_paper
 
     const getProfileByName = (profileName) => {
         return profiles.find(profile => profile.ProfileName === profileName);
     };
-    const userProfiles = profile_names.map(getProfileByName).filter(Boolean);
+    const userProfiles = publication.profiles.map(getProfileByName).filter(Boolean);
 
     return (
         <div className='IndividualPublication'>
@@ -37,11 +31,11 @@ function IndividualPublication() {
             <Container>
                 <div className="first_section">
                     <div className='title'>
-                        <h1>{title}</h1>
-                        <h2>{journal}</h2>
+                        <h1>{publication.title}</h1>
+                        <h2>{publication.journal}</h2>
                     </div>
-                    <div className='links'>
-                        {links.map((link, index) => (
+                    <div className={publication.keywords && publication.keywords.length > 0 ? 'links' : 'links noKeywords'}>
+                        {publication.links.map((link, index) => (
                             <div className="HomeButtons" key={index}>
                                 <a href={link.url} target="_blank" rel="noopener noreferrer">
                                     <p id="JoinButton">{link.type}</p>
@@ -49,29 +43,33 @@ function IndividualPublication() {
                             </div>
                         ))}
                     </div>
-                    <div className="keywords">
-                        {keywords.map((keyword, index) => (
-                            <p key={index}>{keyword}</p>
-                        ))}
-                    </div>
+                    {publication.keywords && publication.keywords.length > 0 && (
+                        <div className="keywords">
+                            {publication.keywords.map((keyword, index) => (
+                                <p key={index}>{keyword}</p>
+                            ))}
+                        </div>
+                    )}
                 </div>
             </Container>
 
             <Container useOrange={true}>
                 <div className="second_section">
-                    <div className="highlights">
-                        <h3>Highlights</h3>
-                        <ul>
-                            {highlights.map((highlight, index) => (
-                                <li key={index}>{highlight}</li>
-                            ))}
-                        </ul>
-                    </div>
+                    {publication.highlights && publication.highlights.length > 0 && (
+                        <div className="highlights">
+                            <h3>Highlights</h3>
+                            <ul>
+                                {publication.highlights.map((highlight, index) => (
+                                    <li key={index}>{highlight}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
                     <div className="image_abstract">
                         <h3>Abstract</h3>
                         <div className="abstract">
-                            <img src={RiccardoPublication} alt="" />
-                            <p>{abstract}</p>
+                            <img src={publication.display_image} alt="" />
+                            <p>{publication.abstract}</p>
                         </div>
                     </div>
                 </div>
@@ -115,6 +113,16 @@ function IndividualPublication() {
 
 export default IndividualPublication;
 
+function findPublicationById(id) {
+    for (const yearData of JournalData) {
+        for (const pub of yearData.publications) {
+            if (pub.id === id) {
+                return pub;
+            }
+        }
+    }
+    return null;  // or some default data
+}
 
 // function IndividualPublication() {
 
