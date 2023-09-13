@@ -10,7 +10,7 @@ const JournalData = [
             {
                 title: "Towards democratization of digital twins: Design principles for transformation into a human-building interface",
                 journal: "Building and Environment",
-                issue: "244",
+                volume: "", issue: "244",
                 page: "110771",
                 authors: [
                     { name: "Kate Sangwon Lee"},
@@ -43,7 +43,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Riccardo Talami", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo"},
@@ -76,7 +76,7 @@ const JournalData = [
             {
                 title: "Smart detection of indoor occupant thermal state via infrared thermography, computer vision, and machine learning",
                 journal: "Building and Environment",
-                issue: "228",
+                volume: "", issue: "228",
                 page: "109811",
                 authors: [
                     { name: "Yingdong He"},
@@ -86,7 +86,7 @@ const JournalData = [
                     { name: "Charlie Huizenga"},
                     { name: "Ronnen Levinson"},
                     { name: "Andy Wang"},
-                    { name: "Ghahramani, A.", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile"},
+                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile"},
                     { name: "Ana Alvarez-Suarez"},
                 ],
                 minRead: "3-minute read",
@@ -113,7 +113,7 @@ const JournalData = [
             {
                 title: "Thermal transfer and temperature reductions from shading systems on opaque facades: Quantifying the impacts of influential factors",
                 journal: "Energy and Buildings",
-                issue: "278",
+                volume: "", issue: "278",
                 page: "112604",
                 authors: [
                     { name: "Iqbal Shah", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Iqbal"},
@@ -142,7 +142,7 @@ const JournalData = [
             {
                 title: "Personal thermal comfort models based on physiological measurements – A design of experiments based review",
                 journal: "Building and Environment",
-                issue: "228",
+                volume: "", issue: "228",
                 page: "109919",
                 authors: [
                     { name: "Kai Chen", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Kai"},
@@ -176,7 +176,7 @@ const JournalData = [
             {
                 title: "The field of human building interaction for convergent research and innovation for intelligent built environments",
                 journal: "Nature Scientific Reports",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -208,7 +208,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -240,7 +240,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -272,7 +272,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -304,7 +304,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -336,7 +336,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -373,7 +373,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -405,7 +405,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -437,7 +437,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -469,7 +469,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -506,7 +506,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -538,7 +538,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -570,7 +570,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -602,7 +602,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -634,7 +634,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -666,7 +666,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -703,7 +703,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -735,7 +735,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -767,7 +767,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -804,7 +804,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -836,7 +836,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -868,7 +868,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -900,7 +900,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -932,7 +932,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -964,7 +964,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -996,7 +996,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -1028,7 +1028,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -1065,7 +1065,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -1097,7 +1097,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -1129,7 +1129,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -1161,7 +1161,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -1198,7 +1198,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -1230,7 +1230,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -1262,7 +1262,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -1299,7 +1299,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -1336,7 +1336,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -1368,7 +1368,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -1400,7 +1400,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
@@ -1432,7 +1432,7 @@ const JournalData = [
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
                 journal: "Energy and Built Environment",
-                issue: "",
+                volume: "", issue: "",
                 page: "",
                 authors: [
                     { name: "*Talami, R.", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
