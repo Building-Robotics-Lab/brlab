@@ -1,0 +1,109 @@
+/* First Section */
+
+.Join_the_Lab .first_section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Join_the_Lab .first_section h3 {
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+    padding: 0px 0.5rem;
+}
+
+.Join_the_Lab .first_section h1 {
+    font-size: 2.5rem;
+    color: green;
+    margin-bottom: 3rem;
+}
+
+.Join_the_Lab .first_section .lab_bio {
+    display: flex;
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+}
+
+.Join_the_Lab .first_section .lab_bio > * {
+    flex: 1;
+    margin: 0rem 2rem;
+    padding: 2rem;
+    box-shadow: -1px 1px 20px 9px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.Join_the_Lab .first_section .HomeButtons {
+    display: flex;
+    justify-content: center;
+}
+
+/* Second Section */
+
+/* .Join_the_Lab .second_section {
+    display: flex;
+} */
+
+.Join_the_Lab .second_section h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.Join_the_Lab .second_section .apply_section {
+    display: flex;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid black;
+}
+
+.Join_the_Lab .second_section .last_section {
+    margin-bottom: 0rem !important;
+}
+
+.Join_the_Lab .second_section .apply_section .position {
+    flex: 1;
+}
+
+.Join_the_Lab .second_section .apply_section .position h4 {
+    font-size: 1.5rem;
+}
+
+.Join_the_Lab .second_section .apply_section .position_information {
+    flex: 2;
+}
+
+.Join_the_Lab .second_section .apply_section .position_information p,
+.Join_the_Lab .second_section .apply_section .position_information li {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.Join_the_Lab .second_section .apply_section .position_information .sub_title {
+    margin-bottom: 1rem;
+}
+
+.Join_the_Lab .second_section .apply_section .position_information .sub_title:last-child {
+    margin-bottom: 0rem;
+}
+
+.Join_the_Lab .second_section .small_note {
+    margin-bottom: 2rem;
+}
+
+
+.Join_the_Lab .second_section a {
+    color: green;
+}
+
+.Join_the_Lab .second_section a:hover {
+    color: white;
+    background-color: green;
+    border-radius: 0.25rem;
+}
+
+.Join_the_Lab .second_section .HomeButtons {
+    display: flex;
+    justify-content: center;
+}

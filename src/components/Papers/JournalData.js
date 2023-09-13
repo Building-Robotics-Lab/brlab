@@ -222,20 +222,8 @@ const JournalData = [
                     { type: "PDF", url: "https://www.nature.com/articles/s41598-022-25047-y.pdf" },
                     { type: "DOI", url: "https://doi.org/10.1038/s41598-022-25047-y" }
                 ],
-                keywords: [
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
-                ],
-                highlights: [
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
-                ],
+                keywords: [],
+                highlights: [],
                 abstract: "Human-Building Interaction (HBI) is a convergent field that represents the growing complexities of the dynamic interplay between human experience and intelligence within built environments. This paper provides core definitions, research dimensions, and an overall vision for the future of HBI as developed through consensus among 25 interdisciplinary experts in a series of facilitated workshops. Three primary areas contribute to and require attention in HBI research: humans (human experiences, performance, and well-being), buildings (building design and operations), and technologies (sensing, inference, and awareness). Three critical interdisciplinary research domains intersect these areas: control systems and decision making, trust and collaboration, and modeling and simulation. Finally, at the core, it is vital for HBI research to center on and support equity, privacy, and sustainability. Compelling research questions are posed for each primary area, research domain, and core principle. State-of-the-art methods used in HBI studies are discussed, and examples of original research are offered to illustrate opportunities for the advancement of HBI research.",
                 display_image: AliPublication2
             },
@@ -333,13 +321,7 @@ const JournalData = [
                     "Multidisciplinary research",
                     "Energy efficiency in buildings"
                 ],
-                highlights: [
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
-                ],
+                highlights: [],
                 abstract: "Occupants play a key role in determining final building energy consumption. Empirical evidence must support occupants' modelling. Experiments on human responses to Indoor Environmental Quality (IEQ) are usually performed in test rooms or as in-field monitoring. Between these two approaches, living laboratories, often abbreviated as living labs, represent a valid alternative due to their resemblance to real-world settings. This allows observing actual behaviours while keeping the capability to reliably monitor and control the indoor environment. This work systematically reviewed the available information from 34 living labs for human comfort studies worldwide to define the scope, characteristics, and significance of living labs, for the first time. Most of the reviewed living labs are office environments, and only a few do not involve a university research institution in their operation and management. Most of them are in Europe and the United States, whereas there is a lack of such facilities in other locations and climate zones (e.g., tropics). A larger number of comfort studies in living labs is required to clarify the differences in the knowledge acquired in these experiments compared to in-field and laboratory ones. The review shows that living labs add opportunities for testing and optimizing innovations in human-centric solutions for comfortable green buildings. Through the living labs approach it is possible to holistically capture the influence of IEQ on occupant perception and the related response, to gather data on larger and more diverse groups of people, and to conduct multi-domain comfort studies involving multidisciplinary approaches given their real-life settings.",
                 display_image: AliPublication4
             },
@@ -372,13 +354,7 @@ const JournalData = [
                     "Smart buildings",
                     "Energy efficiency"
                 ],
-                highlights: [
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
-                ],
+                highlights: [],
                 abstract: "Thermal comfort is one of the primary factors influencing occupant health, well-being, and productivity in buildings. Existing thermal comfort systems require occupants to frequently communicate their comfort vote via a survey which is impractical as a long-term solution. Here, we present a novel thermal infrared-fused computer vision sensing method to capture thermoregulation performance in a non-intrusive and non-invasive manner. In this method, we align thermal and visible images, detect facial segments (i.e., nose, eyes, face boundary), and accordingly read the temperatures from the appropriate coordinates in the thermal image. We focus on the human face since it is often clearly visible to cameras and is not merged into a hot background (unlike hands). We use a regularized Gaussian Mixture model to track the thermoregulation changes over time and apply a heuristic algorithm to extract hot and cold indices. We present a personalized and a generalized comfort modeling method, selected based on the availability of the occupant historical indices measurements in a neutral environment, and use the time-series of the hot and cold indices to define corrections to HVAC system operations in the form of setpoint constraints. To evaluate the efficacy of our proposed approach in responding to thermal stimuli, we designed a series of controlled experiments to simulate exposure to cold and hot environments. While applying personalized modeling showed an acceptable average accuracy of 91.3%, the generalized model’s average accuracy was only 65.2%. This shows the importance of having access to physiological records in modeling and assessing comfort. We also found that individual differences should be considered in selecting the cooling and heating rates when some knowledge of the occupant’s overall thermal preference is available.",
                 display_image: AliPublication5
             },
@@ -409,13 +385,7 @@ const JournalData = [
                     "Personalized air quality",
                     "Sensing standards"
                 ],
-                highlights: [
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
-                ],
+                highlights: [],
                 abstract: "As humans spend more time indoors, ensuring acceptable indoor air quality (IAQ) through ubiquitous sensing systems has become a necessity. Although extensive studies have been conducted on the IAQ sensing systems, a holistic review of the performance and deployment of Ubiquitous IAQ Sensing (UIAQS) systems with associated requirements in IAQ sensing standards is still lacking. In this study, we first reviewed IAQ pollutants and other IAQ-related factors and the associated requirements in the prominent IAQ sensing standards. We found that while non-pollutant factors are influential on occupants’ perception of IAQ and their satisfaction, they do not have evaluation metrics in the IAQ standards. Then, we systematically reviewed field studies on UIAQS technologies in the literature. Specific classes of information were recorded and analyzed further. We found that the majority of the UIAQS systems did not meet the requirements of the prominent IAQ sensing standards and identified four primary research gaps. We concluded that a new holistic and personalized approach that incorporates UIAQS measurements and subjective feedback is needed. This study provides valuable insights for researchers and policymakers to better improve UIAQS technologies by developing personalized IAQ sensors and sensing standards.",
                 display_image: AliPublication6
             },
@@ -579,13 +549,7 @@ const JournalData = [
                     "Infectious disease control",
                     "Ultrasound sensor"
                 ],
-                highlights: [
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
-                ],
+                highlights: [],
                 abstract: "Human activity is known to leave significant effects on indoor airflow patterns. These patterns are carefully designed for many facilities such as cleanrooms, pharmaceutical settings, and healthcare environments, where human-induced wakes contribute to the transport of contaminants. Therefore, the knowledge about these wakes as it relates to indoor air quality is critical. As a result, a series of experiments were conducted in a controlled chamber to study the three-dimensional effects of true human walking on airflow. Experiments were designed to capture the effect of human walking under three different flow conditions, and for two different walking schemes. The results show that the effect of walking on the airflow is not negligible and can sustain up to 10 seconds after the moving body has passed. Walking on a straight line creates significant change in the velocity normal to the walking path and vertical to the plane of walking movement. These changes were detectable till 1.0 m away from the walking track. Also, the similarity between airflow patterns of walking once and twice illustrated a promising opportunity of predicting the flow patterns of random walk from a set of base cases.",
                 display_image: AliPublication10
             },

@@ -1,0 +1,79 @@
+/* First Section */
+
+.Research .first_section {
+    display: flex;
+    flex-direction: column;
+}
+
+.Research .first_section .title_section h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.Research .first_section .title_section h3 {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.Research .first_section .title_section h5 {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.Research .first_section .industry_partners {
+    display: flex;
+}
+
+.Research .first_section .industry_partners a {
+    flex: 1;
+    margin: 25px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-bottom: 3.3vmax;
+    overflow: hidden;
+}
+
+.Research .first_section .industry_partners a:nth-child(1),
+.Research .first_section .industry_partners a:nth-child(3) {
+    background-color: rgb(208, 187, 148);
+}
+
+.Research .first_section .industry_partners img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.Research .first_section .industry_partners a:not(:last-child) img {  /* Everything except last child */
+    scale: 0.8;
+    object-fit: scale-down;
+}
+
+.Research .first_section .industry_partners a:nth-child(1) img {  /* AWS logo */
+    transform: translateY(100px);
+}
+
+.Research .first_section .industry_partners a:nth-child(2) img {  /* Trane logo */
+    scale: 1;
+    transform: translateX(-5px) translateY(80px);
+}
+
+.Research .first_section .industry_partners a:nth-child(3) img {  /* Greenology logo */
+    transform: translateX(8px) translateY(110px);
+    scale: 1.05;
+}
+
+.Research .first_section .industry_partners a:last-child img {  /* co-innovation logo */
+    scale: 0.95;
+}
+
+.Research .first_section .HomeButtons {
+    display: flex;
+    justify-content: center;
+}
+
+/* Second Section */
+
