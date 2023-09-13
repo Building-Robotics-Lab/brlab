@@ -8,7 +8,8 @@
 }
 
 #parent_wrapper_orange {
-    background-color: rgb(208, 187, 148);;
+    background-color: rgb(208, 187, 148);
+    ;
 }
 
 #content_wrapper {
@@ -20,7 +21,7 @@
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-    max-width: 2000px;
+    max-width: 1600px;
 }
 
 #content_wrapper_orange {
@@ -32,5 +33,9 @@
     background-color: rgb(208, 187, 148);
     margin-left: auto;
     margin-right: auto;
-    max-width: 2000px;
+    max-width: 1600px;
+}
+
+.special-max-width {
+    max-width: 1000px !important;
 }

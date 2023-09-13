@@ -4,7 +4,11 @@ import Footer from '../components/Footer';
 import Container from '../components/Container';
 import './Publications.css'
 import { Link } from 'react-router-dom';
-import publicationData from '../components/PublicationData';
+
+import JournalData from '../components/Papers/JournalData';
+import ConferenceData from '../components/Papers/ConferenceData';
+import PatentData from '../components/Papers/PatentData';
+import ThesesData from '../components/Papers/ThesesData';
 
 function Publications() {
     return (
@@ -16,37 +20,38 @@ function Publications() {
                     <h1><b>Peer-reviewed Publications</b></h1>
                     <h3>For an up-to-date list:</h3>
                     <div className="HomeButtons">
-                        <Link to="https://scholar.google.com/citations?hl=en&user=9UACV-AAAAAJ&view_op=list_works&sortby=pubdate" target='_blank'><p className='join_the_lab_fifth_section_right' id='JoinButton'>JOIN THE LAB</p></Link>
+                        <Link to="https://scholar.google.com/citations?hl=en&user=9UACV-AAAAAJ&view_op=list_works&sortby=pubdate" target='_blank'><p id='JoinButton'>FIND US ON GOOGLE SCHOLAR</p></Link>
                     </div>
                 </div>
             </Container>
 
             <Container useOrange={true}>
                 <h1 className='publication_type_title'><b>Peer-reviewed Journal Articles</b></h1>
-                {publicationData.map((pub, index) => (
-                    <PublicationSection key={index} {...pub} />
+                {JournalData.map((pubData, index) => (
+                    <JournalSection key={index} year={pubData.year} publications={pubData.publications} />
                 ))}
             </Container>
 
             <Container>
                 <h1 className='publication_type_title'><b>Peer-reviewed Conference Papers</b></h1>
-                {publicationData.map((pub, index) => (
-                    <PublicationSection key={index} {...pub} />
+                {ConferenceData.map((pubData, index) => (
+                    <ConferenceSection key={index} year={pubData.year} publications={pubData.publications} />
                 ))}
             </Container>
 
             <Container useOrange={true}>
                 <h1 className='publication_type_title'><b>Patents</b></h1>
-                {publicationData.map((pub, index) => (
-                    <PublicationSection key={index} {...pub} />
+                {PatentData.map((pubData, index) => (
+                    <PatentSection key={index} year={pubData.year} publications={pubData.publications} />
                 ))}
             </Container>
 
             <Container>
                 <h1 className='publication_type_title'><b>Theses</b></h1>
-                {publicationData.map((pub, index) => (
-                    <PublicationSection key={index} {...pub} />
+                {ThesesData.map((pubData, index) => (
+                    <ThesesSection key={index} year={pubData.year} publications={pubData.publications} />
                 ))}
+                <p className='small_note'><i>*denotes an undergraduate, graduate, or postdoctoral scholars' work under Asst Prof Ghahramani</i></p>
             </Container>
 
             <Footer />
@@ -56,32 +61,151 @@ function Publications() {
 
 export default Publications;
 
-function PublicationSection({ title, journal, issue, page, authors, minRead }) {
+
+function JournalSection({ year, publications }) {
     return (
         <div className='publication_section'>
-            <h3>{title}</h3>
-            <h4>
-                {journal}
-                {(journal && (issue || page)) && ', '}
-                {issue && <i>{issue}</i>}
-                {issue && page && ', '}
-                {page}
-            </h4>
-            <h5>
-                {authors.map((author, index) => (
-                    <React.Fragment key={index}>
-                        {author.link ? (
-                            <b><a href={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</a></b>
-                        ) : (
-                            author.name
-                        )}
-                        {index < authors.length - 1 && ', '}
-                    </React.Fragment>
-                ))}
-                {' | '}
-                {minRead && <span className='min_read'>{minRead}</span>}
-            </h5>
+            <div className='publication_year'>
+                <h4>{year}</h4>
+            </div>
+            <div className='publication_content'>
+                <ul>
+                    {publications.map((pub, index) => (
+                        <li key={index}>
+                            <h3><a href={pub.individual_paper_link} target='_blank' rel='noopener noreferrer'>{pub.title}</a></h3>
+                            <h4>
+                                {pub.journal}
+                                {(pub.journal && (pub.issue || pub.page)) && ', '}
+                                {pub.issue && <i>{pub.issue}</i>}
+                                {pub.issue && pub.page && ', '}
+                                {pub.page}
+                            </h4>
+                            <h5>
+                                {pub.authors.map((author, i) => (
+                                    <React.Fragment key={i}>
+                                        {author.link ? (
+                                            <b><a href={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</a></b>
+                                        ) : (
+                                            author.name
+                                        )}
+                                        {i < pub.authors.length - 1 && ', '}
+                                    </React.Fragment>
+                                ))}
+                                {' | '}
+                                {pub.minRead && <span className='min_read'>{pub.minRead}</span>}
+                            </h5>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 }
 
+function ConferenceSection({ year, publications }) {
+    return (
+        <div className='publication_section'>
+            <div className='publication_year'>
+                <h4>{year}</h4>
+            </div>
+            <div className='publication_content'>
+                <ul>
+                    {publications.map((pub, index) => (
+                        <li key={index}>
+                            <h3>{pub.title}</h3>
+                            <h4>
+                                {pub.conference}
+                                {(pub.conference && (pub.page || pub.month)) && ', '}
+                                {pub.page && <i>{pub.page}</i>}
+                                {pub.page && pub.month && ', '}
+                                {pub.month}
+                            </h4>
+                            <h5>
+                                {pub.authors.map((author, i) => (
+                                    <React.Fragment key={i}>
+                                        {author.link ? (
+                                            <b><a href={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</a></b>
+                                        ) : (
+                                            author.name
+                                        )}
+                                        {i < pub.authors.length - 1 && ', '}
+                                    </React.Fragment>
+                                ))}
+                                {' | '}
+                                {pub.minRead && <span className='min_read'>{pub.minRead}</span>}
+                            </h5>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    );
+}
+
+function PatentSection({ year, publications }) {
+    return (
+        <div className='publication_section'>
+            <div className='publication_year'>
+                <h4>{year}</h4>
+            </div>
+            <div className='publication_content'>
+                <ul>
+                    {publications.map((pub, index) => (
+                        <li key={index}>
+                            <h3>{pub.title}</h3>
+                            <h4>{pub.patent}</h4>
+                            <h5>
+                                {pub.authors.map((author, i) => (
+                                    <React.Fragment key={i}>
+                                        {author.link ? (
+                                            <b><a href={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</a></b>
+                                        ) : (
+                                            author.name
+                                        )}
+                                        {i < pub.authors.length - 1 && ', '}
+                                    </React.Fragment>
+                                ))}
+                                {' | '}
+                                {pub.minRead && <span className='min_read'>{pub.minRead}</span>}
+                            </h5>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    );
+}
+
+function ThesesSection({ year, publications }) {
+    return (
+        <div className='publication_section'>
+            <div className='publication_year'>
+                <h4>{year}</h4>
+            </div>
+            <div className='publication_content'>
+                <ul>
+                    {publications.map((pub, index) => (
+                        <li key={index}>
+                            <h3>{pub.title}</h3>
+                            <h4>{pub.university}</h4>
+                            <h5>
+                                {pub.authors.map((author, i) => (
+                                    <React.Fragment key={i}>
+                                        {author.link ? (
+                                            <b><a href={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</a></b>
+                                        ) : (
+                                            author.name
+                                        )}
+                                        {i < pub.authors.length - 1 && ', '}
+                                    </React.Fragment>
+                                ))}
+                                {' | '}
+                                {pub.minRead && <span className='min_read'>{pub.minRead}</span>}
+                            </h5>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    );
+}

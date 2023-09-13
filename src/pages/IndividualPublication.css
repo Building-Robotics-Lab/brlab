@@ -1,0 +1,172 @@
+/* First Section */
+
+.IndividualPublication .first_section {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 300px;
+}
+
+.IndividualPublication .first_section .title {
+    margin-bottom: 1rem;
+}
+
+.IndividualPublication .first_section .title h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.IndividualPublication .first_section .links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.IndividualPublication .first_section .keywords {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.IndividualPublication .first_section .keywords>* {
+    background-color: green;
+    color: white;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+/* Second Section */
+
+.IndividualPublication .second_section {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 300px;
+}
+
+.IndividualPublication .second_section .abstract {
+    margin-bottom: 1rem;
+}
+
+.IndividualPublication .second_section .abstract img {
+    max-width: 40%;
+    height: auto;
+    float: right;
+    margin-left: 2rem;
+}
+
+.IndividualPublication .second_section .highlights {
+    margin-bottom: 2rem;
+}
+
+.IndividualPublication .second_section .highlights h3 {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.IndividualPublication .second_section .highlights ul li {
+    list-style-position: inside;
+}
+
+.IndividualPublication .second_section .highlights ul li {
+    font-size: 1rem;
+}
+
+.IndividualPublication .second_section .highlights ul li:not(:last-child) {
+    margin-bottom: 0.25rem;
+}
+
+.IndividualPublication .second_section .abstract {
+    margin-bottom: 2rem;
+}
+
+.IndividualPublication .second_section h3 {
+    margin-bottom: 0.5rem;
+}
+
+.IndividualPublication .second_section .abstract p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Third Section */
+
+.IndividualPublication .third_section {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 300px;
+}
+
+/* .IndividualPublication .third_section .each_profile {
+    display: flex;
+}
+
+.IndividualPublication .third_section .each_profile .profile_image {
+    flex: 1;
+}
+
+.IndividualPublication .third_section .each_profile .profile_image img {
+    max-width: 40%;
+    height: auto;
+}
+
+.IndividualPublication .third_section .each_profile .profile_data {
+    flex: 2;
+} */
+
+.IndividualPublication .third_section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.IndividualPublication .third_section .each_profile {
+    display: flex;
+    align-items: center;
+}
+
+.IndividualPublication .third_section .profile_image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.IndividualPublication .third_section .profile_data {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.IndividualPublication .third_section .profile_links {
+    display: flex;
+    gap: 10px;
+}
+
+.IndividualPublication .third_section .profile_icons {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.IndividualPublication .third_section .profile_icons:hover {
+    color: green;
+}
+
+
+.IndividualPublication .third_section .profile_data a {
+    display: flex;
+}
+
+.IndividualPublication .third_section .profile_data h5 {
+    color: green;
+    font-size: 1rem;
+}
+
+.IndividualPublication .third_section .profile_data h5:hover {
+    color: white;
+    background-color: green;
+    border-radius: 0.25rem;
+}

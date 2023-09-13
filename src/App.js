@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { HashRouter, Routes, Route } from 'react-router-dom';
+import ScrolltoTop from './components/ScrollToTop'
 
 import Home from './pages/Home';
 import Research from './pages/Research';
@@ -12,9 +13,7 @@ import Publications from './pages/Publications';
 import Join_the_Lab from './pages/Join_the_Lab';
 
 import IndividualProfile from './pages/IndividualProfile';
-import profiles from './components/Website Individual Information/profileData';
-import ScrolltoTop from './components/ScrollToTop'
-
+import IndividualPublication from './pages/IndividualPublication';
 
 function App() {
   return (
@@ -32,6 +31,11 @@ function App() {
           <Route path='/publications' element={<Publications />} />
           <Route path='/join_the_lab' element={<Join_the_Lab />} />
           <Route path="/individual_profile/:profileName" element={<IndividualProfile />} />
+          <Route path='/individual_publication/:pageName' element={<IndividualPublication />} />
+
+          {/* <Route path='/individual_publication' element={<IndividualPublication />} />
+          <Route path='/individual_profile' element={<IndividualProfile />} /> */}
+
         </Routes>
       </HashRouter>
     </div>

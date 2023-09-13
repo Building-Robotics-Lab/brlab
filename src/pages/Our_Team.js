@@ -119,7 +119,7 @@ function Our_Team() {
             <NavBar />
 
             <Container>
-                <div className="first_section">
+                <div className="first_section" id='prof_profile'>
                     <div className="prof_data">
                         <div className='prof_pic'>
                             <img src={ProfPic} alt="" />

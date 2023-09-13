@@ -117,7 +117,7 @@
 .Home .third_section {
     display: flex;
     justify-content: space-between;
-    gap: 20rem;
+    gap: 15rem;
 }
 
 .Home .meet_our_team_image,
@@ -178,7 +178,7 @@
 .Home .fifth_section_texts {
     display: flex;
     justify-content: space-between;
-    gap: 20rem;
+    gap: 15rem;
 }
 
 .Home .fifth_section_text_left,
