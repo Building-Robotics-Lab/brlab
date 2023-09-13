@@ -174,8 +174,8 @@ const JournalData = [
         year: "2022",
         publications: [
             {
-                title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
-                journal: "Energy and Built Environment",
+                title: "The field of human building interaction for convergent research and innovation for intelligent built environments",
+                journal: "Nature Scientific Reports",
                 issue: "",
                 page: "",
                 authors: [
