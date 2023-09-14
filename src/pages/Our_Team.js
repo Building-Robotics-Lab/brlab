@@ -39,7 +39,7 @@ function Our_Team() {
             link: 'https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo'
         },
         {
-            name: 'Chen Kai',
+            name: 'CHEN Kai',
             role: 'PhD Student',
             skills: 'Building Energy Efficiency; Thermal Comfort; Smart Buildings',
             imgSrc: KaiPic,

@@ -21,14 +21,14 @@ import AliPublication16 from './Publication Images/1-s2.0-S2352710219310137-gr1_
 import AliPublication17 from './Publication Images/1-s2.0-S2352710219305200-gr4_lrg.jpg'
 import AliPublication18 from './Publication Images/ghahr8-2920648-large.gif'
 import AliPublication19 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
-import AliPublication20 from './Publication Images/'
-import AliPublication21 from './Publication Images/'
-import AliPublication22 from './Publication Images/'
-import AliPublication23 from './Publication Images/'
-import AliPublication24 from './Publication Images/'
-import AliPublication25 from './Publication Images/'
-import AliPublication26 from './Publication Images/'
-import AliPublication27 from './Publication Images/'
+import AliPublication20 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
+import AliPublication21 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
+import AliPublication22 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
+import AliPublication23 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
+import AliPublication24 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
+import AliPublication25 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
+import AliPublication26 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
+import AliPublication27 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
 
 const JournalData = [
     {
@@ -46,7 +46,7 @@ const JournalData = [
                     { name: "*Iqbal Shah", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Iqbal" },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Connor", "Iqbal", "Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2023.110771" }
@@ -73,11 +73,11 @@ const JournalData = [
                 volume: "", issue: "",
                 page: "",
                 authors: [
-                    { name: "*Riccardo Talami" },
-                    { name: "*Ilyas Dawoodjee" },
+                    { name: "*Riccardo Talami", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
+                    { name: "*Ilyas Dawoodjee", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Ilyas" },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Riccardo", "Ilyas", "Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.enbenv.2023.07.001" },
@@ -116,7 +116,7 @@ const JournalData = [
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
                     { name: "Ana Alvarez-Suarez" },
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2022.109811" }
@@ -150,7 +150,7 @@ const JournalData = [
                     { name: "Siu-Kit Lau" },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Iqbal", "Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.enbuild.2022.112604" }
@@ -177,7 +177,7 @@ const JournalData = [
                     { name: "Berlynette Leow" },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Kai", "Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2022.109919" }
@@ -231,7 +231,7 @@ const JournalData = [
                     { name: "Jie Zhao" },
                     { name: "Runhe Zhu" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1038/s41598-022-25047-y" },
@@ -274,7 +274,7 @@ const JournalData = [
                     { name: "Davide Schaumann" },
                     { name: "Jie Zhao" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2022.109681" }
@@ -323,7 +323,7 @@ const JournalData = [
                     { name: "M. Vellei" },
                     { name: "A. Wang" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.erss.2022.102778" }
@@ -355,7 +355,7 @@ const JournalData = [
                     { name: "Alexander Merritt" },
                     { name: "Ronnen Levinson" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.3390/buildings12081241" },
@@ -387,7 +387,7 @@ const JournalData = [
                     { name: "Yogesh Pandit" },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.3390/s22093444" },
@@ -419,7 +419,7 @@ const JournalData = [
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
                     { name: "Ehsan Mousavi" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.jobe.2021.102900" },
@@ -475,7 +475,7 @@ const JournalData = [
                     { name: "A. Wang" },
                     { name: "S. Wei" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.rser.2021.111359" }
@@ -516,7 +516,7 @@ const JournalData = [
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
                     { name: "Mohammadamin Sheikhshahrokhdehkordi" },
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.jobe.2021.102436" }
@@ -551,7 +551,7 @@ const JournalData = [
                     { name: "Ali Ghahramani.", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
                     { name: "Ehsan S. Mousavi" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1111/ina.12735" }
@@ -583,7 +583,7 @@ const JournalData = [
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
                     { name: "Amir Hossein Nabizadeh" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.apenergy.2020.114892" }
@@ -618,7 +618,7 @@ const JournalData = [
                     { name: "Zhe Wang" },
                     { name: "Yogesh Pandit" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.3389/fbuil.2020.00049" },
@@ -653,7 +653,7 @@ const JournalData = [
                     { name: "Vy Luu" },
                     { name: "Hui Zhang" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.enbuild.2020.109805" }
@@ -690,7 +690,7 @@ const JournalData = [
                     { name: "Wellbuilt for Wellbeing Project Team" },
                     { name: "Stefano Schiavon" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1038/s41370-019-0179-5" }
@@ -717,7 +717,7 @@ const JournalData = [
                     { name: "Yingdong He" },
                     { name: "Binghui Si" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2019.106435" }
@@ -747,7 +747,7 @@ const JournalData = [
                     { name: "Hamed Nabizadeh Rafsanjani" },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.jobe.2019.100948" }
@@ -782,7 +782,7 @@ const JournalData = [
                     { name: "Hamed Nabizadeh Rafsanjani" },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.jobe.2019.100864" }
@@ -818,7 +818,7 @@ const JournalData = [
                     { name: "Hui Zhang" },
                     { name: "Edward Arens" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1109/JSEN.2019.2920648" }
@@ -827,7 +827,7 @@ const JournalData = [
                     "Ultrasonic anemometry",
                     "Pulsed ultrasound",
                     "Complex phase angle",
-                    "MEMS ultrasound",            
+                    "MEMS ultrasound",
                     "Piezoelectric micromachined ultrasound transceivers"
                 ],
                 highlights: [],
@@ -851,7 +851,7 @@ const JournalData = [
                     { name: "Kevin Kampshire" },
                     { name: "Esther Sternberg" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.jobe.2018.11.015" }
@@ -888,7 +888,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
@@ -920,7 +920,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
@@ -952,7 +952,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
@@ -984,7 +984,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
@@ -1016,7 +1016,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "PDF", url: "https://escholarship.org/content/qt79q0m374/qt79q0m374.pdf?t=pm1r17" },
@@ -1049,7 +1049,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
@@ -1081,7 +1081,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
@@ -1113,7 +1113,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
@@ -1150,7 +1150,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
@@ -1182,7 +1182,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
@@ -1214,7 +1214,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
@@ -1246,7 +1246,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
@@ -1283,7 +1283,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
@@ -1315,7 +1315,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
@@ -1347,7 +1347,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
@@ -1384,7 +1384,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
@@ -1421,7 +1421,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
@@ -1453,7 +1453,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
@@ -1485,7 +1485,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
@@ -1517,7 +1517,7 @@ const JournalData = [
                     { name: "*Dawoodjee, I." },
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
-                minRead: "3-minute read",
+                minRead: "",
                 profiles: ["Prof"],
                 links: [
                     { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
@@ -1559,5 +1559,32 @@ JournalData.forEach((yearData) => {
         publication.individual_paper_link = "https://building-robotics-lab.github.io/brlab/#/individual_publication/" + generateIdFromTitle(publication.title);
     });
 });
+
+const getWordsPerMinute = (title, keyword, highlight, abstract) => {
+    let title_word_count = title.split(' ').length;
+    let keyword_word_count = keyword.length;
+    let highlight_word_count = 0;
+    for (let i = 0; i < highlight.length; i++) {
+        highlight_word_count += highlight[i].split(' ').length;
+    }
+    let abstract_word_count = abstract.split(' ').length;
+
+    const wordCount = title_word_count + keyword_word_count + highlight_word_count + abstract_word_count;
+    const wordsPerMinute = 200;
+    const readingTime = Math.ceil(wordCount / wordsPerMinute);
+
+    return readingTime;
+}
+
+JournalData.forEach((yearData) => {
+    // Loop through the publications for each year
+    yearData.publications.forEach((publication) => {
+        let readingTime = getWordsPerMinute(publication.title, publication.keywords, publication.highlights, publication.abstract);
+        publication.minRead = `${readingTime}-minute read`
+        console.log(publication.id, readingTime);
+    });
+});
+
+
 
 export default JournalData;

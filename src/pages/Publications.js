@@ -74,11 +74,12 @@ function JournalSection({ year, publications }) {
                         <li key={index}>
                             <h3><Link to={`/individual_publication/${pub.id}`}>{pub.title}</Link></h3>
                             <h4>
-                                {pub.journal}
-                                {(pub.journal && (pub.issue || pub.page)) && ', '}
-                                {pub.issue && <i>{pub.issue}</i>}
-                                {pub.volume && `(${pub.volume})`}
-                                {pub.issue && pub.page && ', '}
+                                <i>{pub.journal}</i>
+                                {(pub.journal && (pub.issue || pub.volume || pub.page)) && ', '}
+                                {pub.volume && <i>{pub.volume}</i>}
+                                {pub.issue && `(${pub.issue})`}
+                                {/* {pub.issue && <i>{pub.issue}</i>} */}
+                                {(pub.issue || pub.volume) && pub.page && ', '}
                                 {pub.page}
                             </h4>
                             <h5>

@@ -32,7 +32,7 @@ function IndividualPublication() {
                 <div className="first_section">
                     <div className='title'>
                         <h1>{publication.title}</h1>
-                        <h2>{publication.journal}</h2>
+                        <i><h2>{publication.journal}</h2></i>
                     </div>
                     <div className={publication.keywords && publication.keywords.length > 0 ? 'links' : 'links noKeywords'}>
                         {publication.links.map((link, index) => (
