@@ -21,14 +21,13 @@ import AliPublication16 from './Publication Images/1-s2.0-S2352710219310137-gr1_
 import AliPublication17 from './Publication Images/1-s2.0-S2352710219305200-gr4_lrg.jpg'
 import AliPublication18 from './Publication Images/ghahr8-2920648-large.gif'
 import AliPublication19 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
-import AliPublication20 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
-import AliPublication21 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
-import AliPublication22 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
-import AliPublication23 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
-import AliPublication24 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
-import AliPublication25 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
-import AliPublication26 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
-import AliPublication27 from './Publication Images/1-s2.0-S2352710218310969-gr2_lrg.jpg'
+import AliPublication20 from './Publication Images/1-s2.0-S0378778818310909-gr3_lrg.jpg'
+import AliPublication21 from './Publication Images/1-s2.0-S0306261918312571-gr8_lrg.jpg'
+import AliPublication22 from './Publication Images/1-s2.0-S0360132318304165-fx1_lrg.jpg'
+import AliPublication23 from './Publication Images/1-s2.0-S2352710218304819-gr2_lrg.jpg'
+import AliPublication24 from './Publication Images/1-s2.0-S0360132318302518-gr1_lrg.jpg'
+import AliPublication25 from './Publication Images/1-s2.0-S0306261917316409-gr5_lrg.jpg'
+import AliPublication26 from './Publication Images/1-s2.0-S030626191731601X-gr4_lrg.jpg'
 
 const JournalData = [
     {
@@ -879,261 +878,234 @@ const JournalData = [
         year: "2018",
         publications: [
             {
-                title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
-                journal: "Energy and Built Environment",
-                volume: "", issue: "",
-                page: "",
+                title: "The uncertainty of subjective thermal comfort measurement",
+                journal: "Energy and Buildings",
+                volume: "181", issue: "",
+                page: "38-49",
                 authors: [
-                    { name: "*Talami, R." },
-                    { name: "*Dawoodjee, I." },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "Wang Jingyi" },
+                    { name: "Wang Zhe" },
+                    { name: "Richard de Dear" },
+                    { name: "Luo Maohui" },
+                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Lin Borong" },
                 ],
                 minRead: "",
                 profiles: ["Prof"],
                 links: [
-                    { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
+                    { type: "DOI", url: "https://doi.org/10.1016/j.enbuild.2018.09.041" }
                 ],
                 keywords: [
-                    "Decarbonization",
-                    "Smart Buildings",
-                    "Optimization",
-                    "Occupancy",
-                    "Heat Loads"
+                    "Uncertainty",
+                    "Individual difference",
+                    "Thermal comfort",
+                    "Subjective survey"
                 ],
-                highlights: [
-                    "Dynamic temperature setpoints are derived based on weather and occupancy.",
-                    "Fixed and dynamic setpoints reduce energy consumption at lower occupancy rates.",
-                    "Dynamic setpoints save additional energy from the optimal selection of setpoints.",
-                    "Below 5°C and above 32°C, lowest and highest setpoint is optimal, respectively.",
-                    "Between 5°C and 32°C, dynamic setpoints save additional 2.36%, 3.28%, and 10.26%."
-                ],
-                abstract: "Building temperature setpoints affect both HVAC energy consumption and occupant comfort. To reduce HVAC energy usage, researchers often investigate how system operations can be optimized under weather and occupancy variability subject to a fixed setpoint that minimizes any possible discomfort. While previous research has explored the selection of dynamic setpoints to minimize HVAC energy consumption based on outdoor temperature, they have often neglected the impact of varying occupancy rates on the setpoints. This paper aims to demystify energy savings derived from fixed and dynamic temperature setpoints under weather and occupancy variability and explores the additional energy savings that can be achieved through dynamic temperature setpoints. An exhaustive HVAC zone temperature setpoint optimizer was developed to determine dynamic setpoints with respect to weather and occupancy (i.e., setpoints that minimize HVAC energy consumption at different occupancy rates based on outdoor weather). U.S. DOE reference building energy models for small, medium, and large office buildings were simulated at 17 climate zones, 4 occupancy rates (25%, 50%, 75%, 100%) and 7 setpoints (19.5°C to 25.5°C at 1°C interval). It was found that, both fixed and dynamic setpoints benefit from the energy reduction of approximately 2-4% from the lower heat generated by the occupants at lower occupancy rates. However, at outdoor temperatures between 5°C and 32°C where occupant heat loads can swing the building between heating, free-running, and cooling modes, dynamic setpoints yield additional 2-10% energy savings, compared to fixed setpoints.",
+                highlights: [],
+                abstract: "This paper presents an uncertainty analysis of subjective thermal comfort measurement, which was overlooked in some subjective thermal comfort studies. Three chamber experiments were conducted to collect the data and to analyze how the uncertainty of subjective measurement is influenced by the survey instrument and the experiment protocol. Four widely-utilized subjective indicators were examined: thermal sensation, humidity sensation, draught sensation and thermal satisfaction. It was found that the Standard Uncertainty, defined as the Standard Error of the Mean, of subjective thermal comfort measurement would decrease with the increasing number of person-votes (number of subjects times votes per subject). When the person-votes were above 40, the Standard Uncertainty of subjective measurement was within 3% of the total scale length, confirming the precision and reliability of subjective thermal comfort measurement. It was found the measurement of thermal sensation/satisfaction and humidity sensation had similar uncertainty level, while the measurement of draught sensation had higher uncertainty. Discrete multiple-points scales (Likert) are recommended for subjective thermal comfort measurement since continuous scales enlarge intra-individual differences.",
                 display_image: AliPublication20
             },
             {
-                title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
-                journal: "Energy and Built Environment",
-                volume: "", issue: "",
-                page: "",
+                title: "Learning occupants’ workplace interactions from wearable and stationary ambient sensing systems",
+                journal: "Applied Energy",
+                volume: "230", issue: "",
+                page: "42-51",
                 authors: [
-                    { name: "*Talami, R." },
-                    { name: "*Dawoodjee, I." },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Jovan Pantelic" },
+                    { name: "Casey Lindberg" },
+                    { name: "Matthias Mehl" },
+                    { name: "Karthik Srinivasan" },
+                    { name: "Brian Gilligan" },
+                    { name: "Edward Arens" },
+                    { name: "Wellbuilt for Wellbeing Project Team" },
                 ],
                 minRead: "",
                 profiles: ["Prof"],
                 links: [
-                    { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
+                    { type: "DOI", url: "https://doi.org/10.1016/j.apenergy.2018.08.096" }
                 ],
                 keywords: [
-                    "Decarbonization",
-                    "Smart Buildings",
-                    "Optimization",
-                    "Occupancy",
-                    "Heat Loads"
+                    "Machine learning",
+                    "Workplace interaction",
+                    "Interaction detection",
+                    "Occupant behavior modeling",
+                    "Ubiquitous computing",
+                    "Buildings energy efficiency"
                 ],
                 highlights: [
-                    "Dynamic temperature setpoints are derived based on weather and occupancy.",
-                    "Fixed and dynamic setpoints reduce energy consumption at lower occupancy rates.",
-                    "Dynamic setpoints save additional energy from the optimal selection of setpoints.",
-                    "Below 5°C and above 32°C, lowest and highest setpoint is optimal, respectively.",
-                    "Between 5°C and 32°C, dynamic setpoints save additional 2.36%, 3.28%, and 10.26%."
+                    "A framework to learn occupant interactions from ambient sensing technologies is proposed.",
+                    "Several machine learning algorithms are tested and the one that outperforms others is selected.",
+                    "The framework selects proper the technologies and averaging windows.",
+                    "221 employees of federal agencies participated in this study.",
+                    "Using random forest algorithm an accuracy of 86.72% to predict interactions was obtained."
                 ],
-                abstract: "Building temperature setpoints affect both HVAC energy consumption and occupant comfort. To reduce HVAC energy usage, researchers often investigate how system operations can be optimized under weather and occupancy variability subject to a fixed setpoint that minimizes any possible discomfort. While previous research has explored the selection of dynamic setpoints to minimize HVAC energy consumption based on outdoor temperature, they have often neglected the impact of varying occupancy rates on the setpoints. This paper aims to demystify energy savings derived from fixed and dynamic temperature setpoints under weather and occupancy variability and explores the additional energy savings that can be achieved through dynamic temperature setpoints. An exhaustive HVAC zone temperature setpoint optimizer was developed to determine dynamic setpoints with respect to weather and occupancy (i.e., setpoints that minimize HVAC energy consumption at different occupancy rates based on outdoor weather). U.S. DOE reference building energy models for small, medium, and large office buildings were simulated at 17 climate zones, 4 occupancy rates (25%, 50%, 75%, 100%) and 7 setpoints (19.5°C to 25.5°C at 1°C interval). It was found that, both fixed and dynamic setpoints benefit from the energy reduction of approximately 2-4% from the lower heat generated by the occupants at lower occupancy rates. However, at outdoor temperatures between 5°C and 32°C where occupant heat loads can swing the building between heating, free-running, and cooling modes, dynamic setpoints yield additional 2-10% energy savings, compared to fixed setpoints.",
+                abstract: "Having access to real-time information on building occupants’ state of interactions enables optimization of building systems for improved energy efficiency, well-being and productivity of the occupants. In this paper, we propose a framework to learn occupant interactions from ambient sensing technologies (e.g., sensing of variables such as sound (dB), CO2 (ppm), light intensity (lux), dry-bulb temperature (°C), relative humidity (RH%), pressure (mbar)) from both stationary and wearable devices and select the technologies and averaging windows which contain the required information for learning. In this framework, several supervised machine learning algorithms are tested on the labeled datasets and the algorithm which outperforms others is selected. Two types of sensing devices were utilized for analyses: wearable devices worn around the neck by the test subjects, and a network of stationary devices located in the test subjects' working indoor spaces. 221 employees of federal agencies housed in facilities managed by the US. General Services Administration in the mid-Atlantic and Southern states participated in this study, answering questions about their current task every hour. Overall accuracies were observed of 86.72% for wearable and stationary devices, 81.25% for only wearable-only, and 85.16% for stationary-only for prediction of the mixed multi-label classification via Random Forests algorithm. The high prediction allows for identifying subjects’ tasks when training labels are not available. Predicting occupants’ interactions as a main indicator of occupants’ behavior have significant implications for the energy efficiency of building systems (up to 20% savings).",
                 display_image: AliPublication21
             },
             {
-                title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
-                journal: "Energy and Built Environment",
-                volume: "", issue: "",
-                page: "",
+                title: "Thermal comfort evaluated for combinations of energy-efficient personal heating and cooling devices",
+                journal: "Building and Environment",
+                volume: "143", issue: "",
+                page: "206-216",
                 authors: [
-                    { name: "*Talami, R." },
-                    { name: "*Dawoodjee, I." },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "Maohui Luo" },
+                    { name: "Edward Arens" },
+                    { name: "Hui Zhang" },
+                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Zhe Wang" },
                 ],
                 minRead: "",
                 profiles: ["Prof"],
                 links: [
-                    { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
+                    { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2018.07.008" }
                 ],
                 keywords: [
-                    "Decarbonization",
-                    "Smart Buildings",
-                    "Optimization",
-                    "Occupancy",
-                    "Heat Loads"
+                    "Thermal comfort",
+                    "Building energy saving",
+                    "Personal comfort system (PCS)",
+                    "Local heating/cooling",
+                    "Heated and cooled chair",
+                    "Corrective power (CP)"
                 ],
                 highlights: [
-                    "Dynamic temperature setpoints are derived based on weather and occupancy.",
-                    "Fixed and dynamic setpoints reduce energy consumption at lower occupancy rates.",
-                    "Dynamic setpoints save additional energy from the optimal selection of setpoints.",
-                    "Below 5°C and above 32°C, lowest and highest setpoint is optimal, respectively.",
-                    "Between 5°C and 32°C, dynamic setpoints save additional 2.36%, 3.28%, and 10.26%."
+                    "A suite of personal comfort system (PCS) devices was built and evaluated.",
+                    "Corrective power (CP) and coefficient of performance (COP) were used for the evaluation.",
+                    "PCS devices have combined heating COP of 0.88 and cooling COP of 3.6.",
+                    "They significantly improve subjects' whole-body thermal comfort satisfaction.",
+                    "They correct up to 6.5 K heating and 3.6 K cooling towards thermal neutrality."
                 ],
-                abstract: "Building temperature setpoints affect both HVAC energy consumption and occupant comfort. To reduce HVAC energy usage, researchers often investigate how system operations can be optimized under weather and occupancy variability subject to a fixed setpoint that minimizes any possible discomfort. While previous research has explored the selection of dynamic setpoints to minimize HVAC energy consumption based on outdoor temperature, they have often neglected the impact of varying occupancy rates on the setpoints. This paper aims to demystify energy savings derived from fixed and dynamic temperature setpoints under weather and occupancy variability and explores the additional energy savings that can be achieved through dynamic temperature setpoints. An exhaustive HVAC zone temperature setpoint optimizer was developed to determine dynamic setpoints with respect to weather and occupancy (i.e., setpoints that minimize HVAC energy consumption at different occupancy rates based on outdoor weather). U.S. DOE reference building energy models for small, medium, and large office buildings were simulated at 17 climate zones, 4 occupancy rates (25%, 50%, 75%, 100%) and 7 setpoints (19.5°C to 25.5°C at 1°C interval). It was found that, both fixed and dynamic setpoints benefit from the energy reduction of approximately 2-4% from the lower heat generated by the occupants at lower occupancy rates. However, at outdoor temperatures between 5°C and 32°C where occupant heat loads can swing the building between heating, free-running, and cooling modes, dynamic setpoints yield additional 2-10% energy savings, compared to fixed setpoints.",
+                abstract: "Personal comfort systems (PCS) have potential to fulfill building occupants' personal thermal comfort preferences with great efficiency. But to integrate them into building conditioning, there must be a broader selection of PCS devices available. Design guidance and standards are needed to assure that such devices provide high levels of comfort effectiveness and energy efficiency. This study addresses these needs. A suite of minimum-power PCS devices was built that target body parts significant to alliesthesia—a heated shoe insole, heated/cooled wristpad, small deskfan, and heated/cooled chair. They were tested in a climate chamber under cool and warm conditions using both thermal-manikin and human-subjects. Their efficiency at physically heating/cooling the body is high; the combined suite has a coefficient of performance (COP) of 3.6 for cooling and 0.88 for heating. The subjects' whole-body thermal acceptance and thermal comfort perception were improved by the devices in an additive manner; using the combined suite over 80% of people accepted ambient temperatures of 18°C and 29°C. The PCS ‘corrects’ the ambient temperature towards thermal neutrality by as much as 6.5 K cooling and 3.6 K heating, overcoming building occupants' typical interpersonal thermal differences and making possible large HVAC energy savings in buildings. The idea of temperature corrective power can be the basis of standards for PCS.",
                 display_image: AliPublication22
             },
             {
-                title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
-                journal: "Energy and Built Environment",
-                volume: "", issue: "",
-                page: "",
+                title: "Energy trade off analysis of optimized daily temperature setpoints",
+                journal: "Journal of Building Engineering",
+                volume: "19", issue: "",
+                page: "584-591",
                 authors: [
-                    { name: "*Talami, R." },
-                    { name: "*Dawoodjee, I." },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Kanu Dutta" },
+                    { name: "Burcin Becerik-Gerber" }
                 ],
                 minRead: "",
                 profiles: ["Prof"],
                 links: [
-                    { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
+                    { type: "DOI", url: "https://doi.org/10.1016/j.jobe.2018.06.012" }
                 ],
                 keywords: [
-                    "Decarbonization",
-                    "Smart Buildings",
-                    "Optimization",
-                    "Occupancy",
-                    "Heat Loads"
+                    "HVAC systemOptimal control",
+                    "Setpoint control",
+                    "Building energy optimization",
+                    "Spatiotemporal scale",
+                    "Occupant comfort",
+                    "Optimal control"
                 ],
                 highlights: [
-                    "Dynamic temperature setpoints are derived based on weather and occupancy.",
-                    "Fixed and dynamic setpoints reduce energy consumption at lower occupancy rates.",
-                    "Dynamic setpoints save additional energy from the optimal selection of setpoints.",
-                    "Below 5°C and above 32°C, lowest and highest setpoint is optimal, respectively.",
-                    "Between 5°C and 32°C, dynamic setpoints save additional 2.36%, 3.28%, and 10.26%."
+                    "HVAC spatiotemporal control parameters under randomized constraints are studied.",
+                    "A systematic approach for energy implication of spatiotemporal scales is presented.",
+                    "In small buildings, zone based optimization results in insignificant energy savings.",
+                    "Solely optimization for random occupants comfort results in energy inefficiency.",
+                    "Optimal daily setpoint selection demonstrated the largest impacts on savings."
                 ],
-                abstract: "Building temperature setpoints affect both HVAC energy consumption and occupant comfort. To reduce HVAC energy usage, researchers often investigate how system operations can be optimized under weather and occupancy variability subject to a fixed setpoint that minimizes any possible discomfort. While previous research has explored the selection of dynamic setpoints to minimize HVAC energy consumption based on outdoor temperature, they have often neglected the impact of varying occupancy rates on the setpoints. This paper aims to demystify energy savings derived from fixed and dynamic temperature setpoints under weather and occupancy variability and explores the additional energy savings that can be achieved through dynamic temperature setpoints. An exhaustive HVAC zone temperature setpoint optimizer was developed to determine dynamic setpoints with respect to weather and occupancy (i.e., setpoints that minimize HVAC energy consumption at different occupancy rates based on outdoor weather). U.S. DOE reference building energy models for small, medium, and large office buildings were simulated at 17 climate zones, 4 occupancy rates (25%, 50%, 75%, 100%) and 7 setpoints (19.5°C to 25.5°C at 1°C interval). It was found that, both fixed and dynamic setpoints benefit from the energy reduction of approximately 2-4% from the lower heat generated by the occupants at lower occupancy rates. However, at outdoor temperatures between 5°C and 32°C where occupant heat loads can swing the building between heating, free-running, and cooling modes, dynamic setpoints yield additional 2-10% energy savings, compared to fixed setpoints.",
+                abstract: "We introduce a systematic approach for analyzing the energy consumption of four control policies (i.e., zone level daily optimal control, zone level annual optimal control, building level daily optimal control, building level annual optimal control), which differed based on their temporal and spatial control scales. In order to integrate occupant thermal comfort requirements, we defined uniformly distributed random constraint functions on the setpoints. We used the DOE reference small office building in three U.S. climate zones for simulating the performances of control policies, using EnergyPlus. Among the four control policies, the building level annual control policy showed close to the highest energy efficiency (27.76–50.91% (average of 39.81%) savings depending on the climate) with comparatively small training data requirements. In addition, the building level daily optimal setpoint selection, subject to thermal comfort constraints, leads to 17.64–38.37% (average of 26.61%) energy savings depending on the climate. We also demonstrate that temporal scale of the policies have a statistically significant impact on the small office building's energy consumption while spatial scale's impact is insignificant.",
                 display_image: AliPublication23
             },
             {
-                title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
-                journal: "Energy and Built Environment",
-                volume: "", issue: "",
-                page: "",
+                title: "Individual difference in thermal comfort: A literature review",
+                journal: "Building and Environment",
+                volume: "138", issue: "",
+                page: "181-193",
                 authors: [
-                    { name: "*Talami, R." },
-                    { name: "*Dawoodjee, I." },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "Zhe Wang" },
+                    { name: "Richard de Dear" },
+                    { name: "Maohui Luo" },
+                    { name: "Borong Lin" },
+                    { name: "Yingdong He" },
+                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Yingxin Zhu" },
                 ],
                 minRead: "",
                 profiles: ["Prof"],
                 links: [
-                    { type: "PDF", url: "https://escholarship.org/content/qt79q0m374/qt79q0m374.pdf?t=pm1r17" },
-                    { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
+                    { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2018.04.040" }
                 ],
                 keywords: [
-                    "Decarbonization",
-                    "Smart Buildings",
-                    "Optimization",
-                    "Occupancy",
-                    "Heat Loads"
+                    "Individual difference",
+                    "Comfort temperature",
+                    "Individual comfort model",
+                    "Personal comfort systems"
                 ],
-                highlights: [
-                    "Dynamic temperature setpoints are derived based on weather and occupancy.",
-                    "Fixed and dynamic setpoints reduce energy consumption at lower occupancy rates.",
-                    "Dynamic setpoints save additional energy from the optimal selection of setpoints.",
-                    "Below 5°C and above 32°C, lowest and highest setpoint is optimal, respectively.",
-                    "Between 5°C and 32°C, dynamic setpoints save additional 2.36%, 3.28%, and 10.26%."
-                ],
-                abstract: "Building temperature setpoints affect both HVAC energy consumption and occupant comfort. To reduce HVAC energy usage, researchers often investigate how system operations can be optimized under weather and occupancy variability subject to a fixed setpoint that minimizes any possible discomfort. While previous research has explored the selection of dynamic setpoints to minimize HVAC energy consumption based on outdoor temperature, they have often neglected the impact of varying occupancy rates on the setpoints. This paper aims to demystify energy savings derived from fixed and dynamic temperature setpoints under weather and occupancy variability and explores the additional energy savings that can be achieved through dynamic temperature setpoints. An exhaustive HVAC zone temperature setpoint optimizer was developed to determine dynamic setpoints with respect to weather and occupancy (i.e., setpoints that minimize HVAC energy consumption at different occupancy rates based on outdoor weather). U.S. DOE reference building energy models for small, medium, and large office buildings were simulated at 17 climate zones, 4 occupancy rates (25%, 50%, 75%, 100%) and 7 setpoints (19.5°C to 25.5°C at 1°C interval). It was found that, both fixed and dynamic setpoints benefit from the energy reduction of approximately 2-4% from the lower heat generated by the occupants at lower occupancy rates. However, at outdoor temperatures between 5°C and 32°C where occupant heat loads can swing the building between heating, free-running, and cooling modes, dynamic setpoints yield additional 2-10% energy savings, compared to fixed setpoints.",
+                highlights: [],
+                abstract: "Human individual differences widely and markedly affect thermal comfort and should be carefully considered in the design and operation of the built environment. This paper aims to list and examine the magnitude and significance of individual difference in the preferred/neutral/comfort temperature through reviewing previous climate chamber and field studies. Causal factors for individual differences are investigated, including sex, age and etc. There is no clear and consistent conclusions as to the significance and size of inter-group differences in thermal comfort (between females and males, or the young and the old). To address the issue of individual difference, a paradigm shift from centralized to personalized air condition is on the way with the following three steps: first, collecting individual physiological and psychological response; second, predict individual comfort with machine learning algorithms; and third, accommodating individual difference with Personalized Comfort Systems.",
                 display_image: AliPublication24
             },
             {
-                title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
-                journal: "Energy and Built Environment",
-                volume: "", issue: "",
-                page: "",
+                title: "Real-time activity recognition for energy efficiency in buildings",
+                journal: "Applied Energy",
+                volume: "211", issue: "",
+                page: "146-160",
                 authors: [
-                    { name: "*Talami, R." },
-                    { name: "*Dawoodjee, I." },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "Simin Ahmadi-Karvigh" },
+                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Burcin Becerik-Gerber" },
+                    { name: "Lucio Soibelman" },
                 ],
                 minRead: "",
                 profiles: ["Prof"],
                 links: [
-                    { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
+                    { type: "DOI", url: "https://doi.org/10.1016/j.apenergy.2017.11.055" }
                 ],
                 keywords: [
-                    "Decarbonization",
-                    "Smart Buildings",
-                    "Optimization",
-                    "Occupancy",
-                    "Heat Loads"
+                    "Building energy efficiency",
+                    "Building automation",
+                    "Activity recognition",
+                    "Appliance control",
+                    "Waste detection"
                 ],
                 highlights: [
-                    "Dynamic temperature setpoints are derived based on weather and occupancy.",
-                    "Fixed and dynamic setpoints reduce energy consumption at lower occupancy rates.",
-                    "Dynamic setpoints save additional energy from the optimal selection of setpoints.",
-                    "Below 5°C and above 32°C, lowest and highest setpoint is optimal, respectively.",
-                    "Between 5°C and 32°C, dynamic setpoints save additional 2.36%, 3.28%, and 10.26%."
+                    "An unsupervised framework to detect activities and potential savings in real-time.",
+                    "Eliminating the need for collecting labeled activity data for training while achieving a high performance.",
+                    "Three sub-algorithms for action detection, activity recognition and waste estimation.",
+                    "Experimental validation in a testbed office with five occupants and two single-occupancy apartments.",
+                    "The framework could potentially be integrated with automation module for appliance control."
                 ],
-                abstract: "Building temperature setpoints affect both HVAC energy consumption and occupant comfort. To reduce HVAC energy usage, researchers often investigate how system operations can be optimized under weather and occupancy variability subject to a fixed setpoint that minimizes any possible discomfort. While previous research has explored the selection of dynamic setpoints to minimize HVAC energy consumption based on outdoor temperature, they have often neglected the impact of varying occupancy rates on the setpoints. This paper aims to demystify energy savings derived from fixed and dynamic temperature setpoints under weather and occupancy variability and explores the additional energy savings that can be achieved through dynamic temperature setpoints. An exhaustive HVAC zone temperature setpoint optimizer was developed to determine dynamic setpoints with respect to weather and occupancy (i.e., setpoints that minimize HVAC energy consumption at different occupancy rates based on outdoor weather). U.S. DOE reference building energy models for small, medium, and large office buildings were simulated at 17 climate zones, 4 occupancy rates (25%, 50%, 75%, 100%) and 7 setpoints (19.5°C to 25.5°C at 1°C interval). It was found that, both fixed and dynamic setpoints benefit from the energy reduction of approximately 2-4% from the lower heat generated by the occupants at lower occupancy rates. However, at outdoor temperatures between 5°C and 32°C where occupant heat loads can swing the building between heating, free-running, and cooling modes, dynamic setpoints yield additional 2-10% energy savings, compared to fixed setpoints.",
+                abstract: "More than half of the electricity in residential and commercial buildings is consumed by lighting systems and appliances. Consumption by these service systems is directly associated with occupant activities. By recognizing activities and identifying the associated possible energy savings, more effective strategies can be developed to design better buildings and automation systems. In line with this motivation, using inductive and deductive reasoning, we introduce a framework to detect occupant activities and potential wasted energy consumption and peak-hour usage that could be shifted to non-peak hours in real-time. Our framework consists of three sub-algorithms for action detection, activity recognition and waste estimation. As the real-time input, the action detection algorithm receives the data from the sensing system, consisting of plug meters and sensors, to detect the occurred actions (e.g., turning on an appliance) via our unsupervised clustering models. Detected actions are then used by the activity recognition algorithm to recognize the activities (e.g., preparing food) through semantic reasoning on our constructed ontology. Based on the recognized activities, the waste estimation algorithm identifies the potential waste and estimates the potential savings. To evaluate the performance of our framework, an experimental study was carried out in an office with five occupants and in two single-occupancy apartments for two weeks. Following the experiment, the performance of the action detection and activity recognition algorithms was evaluated using the ground truth labels for actions and activities. Average accuracy was 97.6% for action detection using Gaussian Mixture Model with Principal Components Analysis and 96.7% for activity recognition. In addition, 35.5% of the consumption of an appliance or lighting system in average was identified as potential savings.",
                 display_image: AliPublication25
             },
             {
-                title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
-                journal: "Energy and Built Environment",
-                volume: "", issue: "",
-                page: "",
+                title: "Towards unsupervised learning of thermal comfort using infrared thermography",
+                journal: "Applied Energy",
+                volume: "211", issue: "",
+                page: "41-49",
                 authors: [
-                    { name: "*Talami, R." },
-                    { name: "*Dawoodjee, I." },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Guillermo Castro" },
+                    { name: "Simin Ahmadi Karvigh" },
+                    { name: "Burcin Becerik-Gerber" },
                 ],
                 minRead: "",
                 profiles: ["Prof"],
                 links: [
-                    { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
+                    { type: "DOI", url: "https://doi.org/10.1016/j.apenergy.2017.11.021" }
                 ],
                 keywords: [
-                    "Decarbonization",
-                    "Smart Buildings",
-                    "Optimization",
-                    "Occupancy",
-                    "Heat Loads"
+                    "Thermal comfort",
+                    "Human sensing",
+                    "Infrared thermography",
+                    "Personal comfort",
+                    "Unsupervised learning",
+                    "Hidden Markov models"
                 ],
                 highlights: [
-                    "Dynamic temperature setpoints are derived based on weather and occupancy.",
-                    "Fixed and dynamic setpoints reduce energy consumption at lower occupancy rates.",
-                    "Dynamic setpoints save additional energy from the optimal selection of setpoints.",
-                    "Below 5°C and above 32°C, lowest and highest setpoint is optimal, respectively.",
-                    "Between 5°C and 32°C, dynamic setpoints save additional 2.36%, 3.28%, and 10.26%."
+                    "A non-contact and non-invasive data acquisition method via infrared thermography was utilized.",
+                    "A hidden Markov model learning approach is introduced to capture dynamic thermal comfort.",
+                    "Comfort is achieved via preventing existence of uncomfortable conditions as a logical inference.",
+                    "82.8% of prediction accuracy for detection uncomfortable conditions was obtained.",
+                    "Generalizing hyper-parameters of the model enables unsupervised learning of thermal comfort."
                 ],
-                abstract: "Building temperature setpoints affect both HVAC energy consumption and occupant comfort. To reduce HVAC energy usage, researchers often investigate how system operations can be optimized under weather and occupancy variability subject to a fixed setpoint that minimizes any possible discomfort. While previous research has explored the selection of dynamic setpoints to minimize HVAC energy consumption based on outdoor temperature, they have often neglected the impact of varying occupancy rates on the setpoints. This paper aims to demystify energy savings derived from fixed and dynamic temperature setpoints under weather and occupancy variability and explores the additional energy savings that can be achieved through dynamic temperature setpoints. An exhaustive HVAC zone temperature setpoint optimizer was developed to determine dynamic setpoints with respect to weather and occupancy (i.e., setpoints that minimize HVAC energy consumption at different occupancy rates based on outdoor weather). U.S. DOE reference building energy models for small, medium, and large office buildings were simulated at 17 climate zones, 4 occupancy rates (25%, 50%, 75%, 100%) and 7 setpoints (19.5°C to 25.5°C at 1°C interval). It was found that, both fixed and dynamic setpoints benefit from the energy reduction of approximately 2-4% from the lower heat generated by the occupants at lower occupancy rates. However, at outdoor temperatures between 5°C and 32°C where occupant heat loads can swing the building between heating, free-running, and cooling modes, dynamic setpoints yield additional 2-10% energy savings, compared to fixed setpoints.",
+                abstract: "Maintaining thermal comfort in built environments is important for occupant health, well-being, and productivity, and also for efficient HVAC system operations. Most of the existing personal thermal comfort learning methods require occupants to provide feedback via a survey to label the monitored environmental or physiological conditions in order to train the prediction models. Accuracy of these models usually drops after the training process as personal thermal comfort is dynamic and changes over time due to climatic variations and/or acclimation. In this paper, we present a hidden Markov model (HMM) based learning method to capture personal thermal comfort using infrared thermography of the human face. We chose human face since its blood vessels has a higher density and it is not covered while performing regular activities in built environments. The learning algorithm has 3 hidden states (i.e., uncomfortably warm, comfortable, uncomfortably cool) and uses discretization for forming the observed states from the continuous infrared measurements. The approach can potentially be used for continuous monitoring of thermal comfort to capture the variations over time. We tested and validated the method in a four-day long experiment with 10 subjects and demonstrated an accuracy of 82.8% for predicting uncomfortable conditions.",
                 display_image: AliPublication26
-            },
-            {
-                title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
-                journal: "Energy and Built Environment",
-                volume: "", issue: "",
-                page: "",
-                authors: [
-                    { name: "*Talami, R." },
-                    { name: "*Dawoodjee, I." },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
-                ],
-                minRead: "",
-                profiles: ["Prof"],
-                links: [
-                    { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
-                ],
-                keywords: [
-                    "Decarbonization",
-                    "Smart Buildings",
-                    "Optimization",
-                    "Occupancy",
-                    "Heat Loads"
-                ],
-                highlights: [
-                    "Dynamic temperature setpoints are derived based on weather and occupancy.",
-                    "Fixed and dynamic setpoints reduce energy consumption at lower occupancy rates.",
-                    "Dynamic setpoints save additional energy from the optimal selection of setpoints.",
-                    "Below 5°C and above 32°C, lowest and highest setpoint is optimal, respectively.",
-                    "Between 5°C and 32°C, dynamic setpoints save additional 2.36%, 3.28%, and 10.26%."
-                ],
-                abstract: "Building temperature setpoints affect both HVAC energy consumption and occupant comfort. To reduce HVAC energy usage, researchers often investigate how system operations can be optimized under weather and occupancy variability subject to a fixed setpoint that minimizes any possible discomfort. While previous research has explored the selection of dynamic setpoints to minimize HVAC energy consumption based on outdoor temperature, they have often neglected the impact of varying occupancy rates on the setpoints. This paper aims to demystify energy savings derived from fixed and dynamic temperature setpoints under weather and occupancy variability and explores the additional energy savings that can be achieved through dynamic temperature setpoints. An exhaustive HVAC zone temperature setpoint optimizer was developed to determine dynamic setpoints with respect to weather and occupancy (i.e., setpoints that minimize HVAC energy consumption at different occupancy rates based on outdoor weather). U.S. DOE reference building energy models for small, medium, and large office buildings were simulated at 17 climate zones, 4 occupancy rates (25%, 50%, 75%, 100%) and 7 setpoints (19.5°C to 25.5°C at 1°C interval). It was found that, both fixed and dynamic setpoints benefit from the energy reduction of approximately 2-4% from the lower heat generated by the occupants at lower occupancy rates. However, at outdoor temperatures between 5°C and 32°C where occupant heat loads can swing the building between heating, free-running, and cooling modes, dynamic setpoints yield additional 2-10% energy savings, compared to fixed setpoints.",
-                display_image: AliPublication27
             },
         ],
     },
@@ -1153,8 +1125,7 @@ const JournalData = [
                 minRead: "",
                 profiles: ["Prof"],
                 links: [
-                    { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
-                    { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
+                    { type: "DOI", url: "https://doi.org/10.1016/j.enbuild.2017.07.053" }
                 ],
                 keywords: [
                     "Decarbonization",
@@ -1185,8 +1156,7 @@ const JournalData = [
                 minRead: "",
                 profiles: ["Prof"],
                 links: [
-                    { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
-                    { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
+                    { type: "DOI", url: "https://doi.org/10.1016/j.autcon.2017.03.003" }
                 ],
                 keywords: [
                     "Decarbonization",
@@ -1217,8 +1187,7 @@ const JournalData = [
                 minRead: "",
                 profiles: ["Prof"],
                 links: [
-                    { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
-                    { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
+                    { type: "DOI", url: "https://doi.org/10.1016/j.enbuild.2017.04.015" }
                 ],
                 keywords: [
                     "Decarbonization",
@@ -1249,8 +1218,8 @@ const JournalData = [
                 minRead: "",
                 profiles: ["Prof"],
                 links: [
-                    { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
-                    { type: "DOI", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612" }
+                    { type: "DOI", url: "https://doi.org/10.22059/jfr.2017.62587" },
+                    { type: "PDF", url: "https://jfr.ut.ac.ir/article_62587_0eb9de4da7498b31e7f3c91ba89a01f0.pdf?lang=en" },
                 ],
                 keywords: [
                     "Decarbonization",
