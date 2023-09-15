@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brlab/static/css/main.5ed7c78a.css",
-    "main.js": "/brlab/static/js/main.1ba86487.js",
+    "main.css": "/brlab/static/css/main.26d911d5.css",
+    "main.js": "/brlab/static/js/main.f7acc9dc.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
     "static/media/Iqbal_DT2.png": "/brlab/static/media/Iqbal_DT2.73b332b29a8b111f14a7.png",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
@@ -27,6 +27,7 @@
     "static/media/kai_pub1.png": "/brlab/static/media/kai_pub1.cdc7943c49a7594f5783.png",
     "static/media/Human-centric@2x.png": "/brlab/static/media/Human-centric@2x.5dcbe4e953ad766db382.png",
     "static/media/sensors-22-03444-g006.png": "/brlab/static/media/sensors-22-03444-g006.c977a12d488fa900341c.png",
+    "static/media/output_example.png": "/brlab/static/media/output_example.3290c63fff8f5952a027.png",
     "static/media/iqbal-publication.jpg": "/brlab/static/media/iqbal-publication.bfa85cffe211e5f5fec4.jpg",
     "static/media/iqbal_pub1.jpg": "/brlab/static/media/iqbal_pub1.bfa85cffe211e5f5fec4.jpg",
     "static/media/Kelly_T2.jpg": "/brlab/static/media/Kelly_T2.cebaba2bff435dd14d4b.jpg",
@@ -49,11 +50,11 @@
     "static/media/Riccardo1.jpg": "/brlab/static/media/Riccardo1.e684976984904e794400.jpg",
     "static/media/NUSLOGO-removebg-preview.png": "/brlab/static/media/NUSLOGO-removebg-preview.5dd0ad9bdd141b9217c1.png",
     "index.html": "/brlab/index.html",
-    "main.5ed7c78a.css.map": "/brlab/static/css/main.5ed7c78a.css.map",
-    "main.1ba86487.js.map": "/brlab/static/js/main.1ba86487.js.map"
+    "main.26d911d5.css.map": "/brlab/static/css/main.26d911d5.css.map",
+    "main.f7acc9dc.js.map": "/brlab/static/js/main.f7acc9dc.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ed7c78a.css",
-    "static/js/main.1ba86487.js"
+    "static/css/main.26d911d5.css",
+    "static/js/main.f7acc9dc.js"
   ]
 }
