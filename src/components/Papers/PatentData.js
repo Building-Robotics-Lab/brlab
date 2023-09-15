@@ -4,17 +4,17 @@ const PatentData = [
         publications: [
             {
                 title: "Ultrasonic anemometers systems for sensing air flows in rooms and ducts",
-                patent: "U.S. Patent Application 17/496,239",
+                patent: "U.S. Patent Publication: US 2022/0099697 A1",
                 authors: [
-                    { name: "Arens, E.A." },
-                    { name: "Ghahramani, A.", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
-                    { name: "Peffer, T." },
-                    { name: "Raftery, P." },
-                    { name: "Zhang, H." },
-                    { name: "Anderson, M.P." }
+                    { name: "Edward A. Arens" },
+                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Therese Peffer" },
+                    { name: "Paul Raftery" },
+                    { name: "Hui Zhang" },
+                    { name: "Michael P. Anderson" }
                 ],
                 minRead: "",
-                profiles: [ "Prof" ],
+                profiles: ["Prof" ],
                 links: [
                     { type: "DOI", url: "https://patents.google.com/patent/US20220099697A1/en" },
                     { type: "PDF", url: "https://patentimages.storage.googleapis.com/bd/5b/42/41a2eaf43fbaf0/US20220099697A1.pdf" }
@@ -28,14 +28,14 @@ const PatentData = [
         publications: [
             {
                 title: "IGlass: infrared thermography for learning thermoregulation performance",
-                patent: "U.S. Patent Application 15/403,599",
+                patent: "U.S. Patent Publication: US 2017/0265755 A1",
                 authors: [
-                    { name: "Becerik-Gerber, B." },
-                    { name: "Castro, G." },
-                    { name: "Ghahramani, A.", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "Burcin Becerik-Gerber" },
+                    { name: "Guillermo Castro" },
+                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
                 minRead: "",
-                profiles: [ "Prof" ],
+                profiles: ["Prof" ],
                 links: [
                     { type: "DOI", url: "https://patents.google.com/patent/US20170265755A1/en" },
                     { type: "PDF", url: "https://patentimages.storage.googleapis.com/10/63/4a/21c74dfe901123/US20170265755A1.pdf" }
@@ -49,14 +49,16 @@ const PatentData = [
         publications: [
             {
                 title: "Human-building interaction framework for personalized comfort driven system operations in buildings",
-                patent: "U.S. Patent Application 14/213,475",
+                patent: "U.S. Patent Publication: US 2014/0277765 A1",
                 authors: [
-                    { name: "Becerik-Gerber, F.J." },
-                    { name: "Castro, G." },
-                    { name: "Ghahramani, A.", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "Farrokh Jazizadeh Karimi" },
+                    { name: "Burcin Becerik-Gerber" },
+                    { name: "Michael D. Orosz" },
+                    { name: "Tatiana Kichkaylo" },
+                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
                 minRead: "",
-                profiles: [ "Prof" ],
+                profiles: ["Prof" ],
                 links: [
                     { type: "DOI", url: "https://patents.google.com/patent/US20140277765A1/en" },
                     { type: "PDF", url: "https://patentimages.storage.googleapis.com/cb/e0/85/a94dd429ee3314/US20140277765A1.pdf" }

@@ -9,7 +9,7 @@ const ThesesData = [
                     { name: "Riccardo Talami", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" }
                 ],
                 minRead: "",
-                profiles: [ "Riccardo" ],
+                profiles: ["Riccardo" ],
                 links: [
                     { type: "DOI", url: "https://repository.lboro.ac.uk/articles/thesis/The_sequential_design_optimization_of_building_performance/21547701" },
                     { type: "PDF", url: "https://repository.lboro.ac.uk/ndownloader/files/38195763/1" }
@@ -38,7 +38,7 @@ const ThesesData = [
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
                 minRead: "",
-                profiles: [ "Prof" ],
+                profiles: ["Prof" ],
                 links: [
                     { type: "DOI", url: "https://www.proquest.com/docview/2399991121?pq-origsite=gscholar&fromopenview=true" },
                 ],
