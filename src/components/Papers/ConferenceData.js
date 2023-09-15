@@ -107,7 +107,7 @@ const ConferenceData = [
             {
                 title: "Quantifying the influence of temperature setpoints, building and system features on energy consumption",
                 conference: "Winter Simulation Conference (WSC)",
-                page: "1000,1011",
+                page: "1000-1011",
                 month: "December",
                 location: "Huntington Beach, CA, USA",
                 authors: [
