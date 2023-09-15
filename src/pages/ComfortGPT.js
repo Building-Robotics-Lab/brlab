@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Container from './../components/Container'
 import './ComfortGPT.css'
+import { Link } from 'react-router-dom';
 
 import ExampleImage from './../components/Website Data/output_example.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -46,17 +47,47 @@ function ComfortGPT() {
       <Container useOrange={true}>
         <div className="second_section">
           <div className="inputs">
-            <div className="left_inputs">
-              <p>Temperature Scale:</p>
-              <p>Outdoor Tempreature</p>
-              <input type="number" id="ot_input" value={-3} />
+            <div className="table_inputs">
+              <div className="temperature_scale">
+                <p>Temperature Scale:</p>
+                <Select options={options} defaultValue={options[0]} onChange={handleChange} style={{ width: '600px' }} />
+              </div>
+              <div className="temperature_inputs">
+                <div className="left_inputs">
+                  <p>Outdoor Temperature</p>
+                  <input type="number" id="ot_input" value={-3} />
+                  <input type="number" id="ot_input" value={6} />
+                  <input type="number" id="ot_input" value={7} />
+                  <input type="number" id="ot_input" />
+                  <input type="number" id="ot_input" />
+                  <input type="number" id="ot_input" />
+                  <input type="number" id="ot_input" />
+                </div>
+                <div className="right_inputs">
+                  <p>Preferred Setpoint</p>
+                  <input type="number" id="st_input" value={23} />
+                  <input type="number" id="st_input" value={22} />
+                  <input type="number" id="st_input" value={22} />
+                  <input type="number" id="st_input" />
+                  <input type="number" id="st_input" />
+                  <input type="number" id="st_input" />
+                  <input type="number" id="st_input" />
+                </div>
+              </div>
             </div>
-            {/* <div className="temperature_scale">
-              <p>Temperature Scale:</p>
-              <Select options={options} defaultValue={options[0]} onChange={handleChange} style={{ width: '600px' }}/>
-            </div> */}
-            <div className="table">
-              
+            <div className="HomeButtons">
+              <Link onClick={null}><p id='JoinButton'>Calculate</p></Link>
+            </div>
+            <div className="additional_buttons">
+              <div className="HomeButtons">
+                <Link onClick={null}><p id='JoinButton'>Add Row</p></Link>
+              </div>
+              <div className="HomeButtons">
+                <Link onClick={null}><p id='JoinButton'>Reset</p></Link>
+              </div>
+              <div className="HomeButtons">
+                <Link onClick={null} ><p id='JoinButton'>Remove Row</p></Link>
+              </div>
             </div>
           </div>
           <div className="outputs">

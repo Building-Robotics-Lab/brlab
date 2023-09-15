@@ -55,14 +55,36 @@
 
 .ComfortGPT .second_section .inputs {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-.ComfortGPT .second_section .inputs .temperature_scale {
+.ComfortGPT .second_section .inputs .table_inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ComfortGPT .second_section .inputs .table_inputs .temperature_scale {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ComfortGPT .second_section .inputs .table_inputs .temperature_inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+/* .ComfortGPT .second_section .inputs .temperature_scale {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-}
+} */
 
 .ComfortGPT .second_section .outputs {
     flex: 2;
