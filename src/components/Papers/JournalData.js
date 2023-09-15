@@ -1550,7 +1550,6 @@ JournalData.forEach((yearData) => {
     yearData.publications.forEach((publication) => {
         let readingTime = getWordsPerMinute(publication.title, publication.keywords, publication.highlights, publication.abstract);
         publication.minRead = `${readingTime}-minute read`
-        console.log(publication.id, readingTime);
     });
 });
 

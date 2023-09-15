@@ -1,0 +1,105 @@
+/* First Section */
+
+.ComfortGPT .first_section {
+    text-align: center;
+}
+
+.ComfortGPT .first_section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.ComfortGPT .first_section h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.ComfortGPT .first_section .Github_stuff {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.ComfortGPT .first_section .Github_stuff .GitHub_Code,
+.ComfortGPT .first_section .Github_stuff .GitHub_Bugs {
+    display: flex;
+    flex-direction: column;
+}
+
+.ComfortGPT .first_section .Github_stuff .icon {
+    font-size: 3em;
+    color: black;
+}
+
+.ComfortGPT .first_section .Github_stuff .icon:hover {
+    color: green;
+}
+
+.ComfortGPT .first_section .Github_stuff .text {
+    font-size: 1rem;
+    color: green;
+}
+
+.ComfortGPT .first_section .Github_stuff .text:hover {
+    background-color: green;
+    color: white;
+    border-radius: 0.25rem;
+}
+
+/* Second Section */
+
+.ComfortGPT .second_section {
+    display: flex;
+}
+
+.ComfortGPT .second_section .inputs {
+    flex: 1;
+}
+
+.ComfortGPT .second_section .inputs .temperature_scale {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ComfortGPT .second_section .outputs {
+    flex: 2;
+}
+
+/* Third Section */
+
+.ComfortGPT .third_section {
+    display: flex;
+    gap: 2rem;
+}
+
+.ComfortGPT .third_section .guidelines_text {
+    flex: 1;
+}
+
+.ComfortGPT .third_section .guidelines_text h3 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.ComfortGPT .third_section .guidelines_text ul {
+    padding-left: 2rem;
+}
+
+.ComfortGPT .third_section .guidelines_text li {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.ComfortGPT .third_section .guidelines_image {
+    flex: 2;
+}
+
+.ComfortGPT .third_section .guidelines_image img {
+    width: 100%;
+    border: 2px solid black;
+}
