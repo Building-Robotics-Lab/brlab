@@ -62,12 +62,12 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2023.110771" }
                 ],
                 keywords: [
-                    'Digital twin',
-                    'Building management system',
-                    'Occupant-centric building',
-                    'Human-building interface',
-                    'Democratization',
-                    'Personal comfort'
+                    "Digital twin",
+                    "Building management system",
+                    "Occupant-centric building",
+                    "Human-building interface",
+                    "Democratization",
+                    "Personal comfort"
                 ],
                 highlights: [
                     "Design principles for a digital twin as occupant-building interface were developed.",
@@ -211,7 +211,7 @@ const JournalData = [
         publications: [
             {
                 title: "The field of human building interaction for convergent research and innovation for intelligent built environments",
-                journal: "Scientific Reports",
+                journal: "Nature Scientific Reports",
                 volume: "12", issue: "1",
                 page: "22092",
                 authors: [
@@ -683,7 +683,7 @@ const JournalData = [
             },
             {
                 title: "Personal CO2 cloud: laboratory measurements of metabolic CO2 inhalation zone concentration and dispersion in a typical office desk setting",
-                journal: "Journal of Exposure Science & Environmental Epidemiology",
+                journal: "Nature Journal of Exposure Science & Environmental Epidemiology",
                 volume: "30", issue: "2",
                 page: "328-337",
                 authors: [
@@ -1181,7 +1181,7 @@ const JournalData = [
                 highlights: [
                     "An approach for monitoring of fatigue in construction workers using wearable sensors.",
                     "Changes in the heart rate, thermoregulation and electrical brain activity were monitored.",
-                    "Results show that monitoring thermoregulation from temple yields the best results (79%)..",
+                    "Results show that monitoring thermoregulation from temple yields the best results (79%).",
                     "This accuracy is significantly higher compared to the accuracy based on heart rate data (59%).",
                     "Combining the information from both sensors resulted in the best accuracy of 82%."
                 ],

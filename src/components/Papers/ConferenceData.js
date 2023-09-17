@@ -191,7 +191,7 @@ const ConferenceData = [
         year: "2013",
         publications: [
             {
-                title: "Personalized Thermal Comfort-Driven Control in HVAC-OperatedOffice Buildings",
+                title: "Personalized Thermal Comfort-Driven Control in HVAC-Operated Office Buildings",
                 conference: "Computing in Civil Engineering",
                 page: "218-225",
                 month: "August",
