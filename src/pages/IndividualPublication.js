@@ -9,6 +9,9 @@ import { Link, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import profiles from '../components/Website Individual Information/profileData';
 import JournalData from '../components/Papers/JournalData';
+import ConferenceData from '../components/Papers/ConferenceData';
+import PatentData from '../components/Papers/PatentData';
+import ThesesData from '../components/Papers/ThesesData';
 
 function IndividualPublication() {
 
@@ -32,7 +35,7 @@ function IndividualPublication() {
                 <div className="first_section">
                     <div className='title'>
                         <h1>{publication.title}</h1>
-                        <i><h2>{publication.journal}</h2></i>
+                        <i><h2>{publication.journal || publication.conference || publication.patent || publication.university}</h2></i>
                     </div>
                     <div className={publication.keywords && publication.keywords.length > 0 ? 'links' : 'links noKeywords'}>
                         {publication.links.map((link, index) => (
@@ -53,27 +56,37 @@ function IndividualPublication() {
                 </div>
             </Container>
 
-            <Container useOrange={true}>
-                <div className="second_section">
-                    {publication.highlights && publication.highlights.length > 0 && (
-                        <div className="highlights">
-                            <h3>Highlights</h3>
-                            <ul>
-                                {publication.highlights.map((highlight, index) => (
-                                    <li key={index}>{highlight}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    )}
-                    <div className="image_abstract">
-                        <h3>Abstract</h3>
-                        <div className="abstract">
-                            <img src={publication.display_image} alt="" />
-                            <p>{publication.abstract}</p>
-                        </div>
+            {(publication.highlights && publication.highlights.length > 0) || (publication.abstract && publication.abstract.length > 0) ? (
+                <Container useOrange={true}>
+                    <div className="second_section">
+                        {publication.highlights && publication.highlights.length > 0 && (
+                            <div className="highlights">
+                                <h3>Highlights</h3>
+                                <ul>
+                                    {publication.highlights.map((highlight, index) => (
+                                        <li key={index}>{highlight}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
+                        {publication.abstract && publication.abstract.length > 0 && (
+                            <div className="image_abstract">
+                                <h3>Abstract</h3>
+                                <div className="abstract">
+                                    <img src={publication.display_image} alt="" />
+                                    <p>{publication.abstract.split('\n').map((str, index, array) =>
+                                        index === array.length - 1 ? str : <>
+                                            {str}
+                                            <br /><br />
+                                        </>
+                                    )}</p>
+                                </div>
+                            </div>
+                        )}
                     </div>
-                </div>
-            </Container>
+                </Container>
+            ) : null}
+
 
             <Container>
                 <div className="third_section">
@@ -114,10 +127,16 @@ function IndividualPublication() {
 export default IndividualPublication;
 
 function findPublicationById(id) {
-    for (const yearData of JournalData) {
-        for (const pub of yearData.publications) {
-            if (pub.id === id) {
-                return pub;
+    const allData = [JournalData, ConferenceData, ThesesData, PatentData];
+
+    for (const data of allData) {
+        if (!data) continue;  // Skip if data is null or undefined
+
+        for (const yearData of data) {
+            for (const pub of yearData.publications) {
+                if (pub.id === id) {
+                    return pub;
+                }
             }
         }
     }

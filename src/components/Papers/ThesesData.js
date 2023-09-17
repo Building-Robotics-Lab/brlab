@@ -9,7 +9,7 @@ const ThesesData = [
                     { name: "Riccardo Talami", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" }
                 ],
                 minRead: "",
-                profiles: ["Riccardo" ],
+                profiles: ["Riccardo"],
                 links: [
                     { type: "DOI", url: "https://repository.lboro.ac.uk/articles/thesis/The_sequential_design_optimization_of_building_performance/21547701" },
                     { type: "PDF", url: "https://repository.lboro.ac.uk/ndownloader/files/38195763/1" }
@@ -38,7 +38,7 @@ const ThesesData = [
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
                 minRead: "",
-                profiles: ["Prof" ],
+                profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://www.proquest.com/docview/2399991121?pq-origsite=gscholar&fromopenview=true" },
                 ],
@@ -62,6 +62,26 @@ ThesesData.forEach((yearData) => {
         // Generate and assign the unique ID
         publication.id = generateIdFromTitle(publication.title);
         publication.individual_paper_link = "https://building-robotics-lab.github.io/brlab/#/individual_publication/" + generateIdFromTitle(publication.title);
+    });
+});
+
+const getWordsPerMinute = (title, university, abstract) => {
+    let title_word_count = title.split(' ').length;
+    let university_word_count = university.length;
+    let abstract_word_count = abstract.split(' ').length;
+
+    const wordCount = title_word_count + university_word_count + abstract_word_count;
+    const wordsPerMinute = 200;
+    const readingTime = Math.ceil(wordCount / wordsPerMinute);
+
+    return readingTime;
+}
+
+ThesesData.forEach((yearData) => {
+    // Loop through the publications for each year
+    yearData.publications.forEach((publication) => {
+        let readingTime = getWordsPerMinute(publication.title, publication.university, publication.abstract);
+        publication.minRead = `${readingTime}-minute read`
     });
 });
 

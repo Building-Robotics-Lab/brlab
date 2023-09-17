@@ -12,16 +12,134 @@ import Select from 'react-select';
 
 
 function ComfortGPT() {
-  const [temperature, setTemperature] = useState(null);
+  // For Temperature Scale
+  const options = [
+    { value: 'Celsius', label: 'Celsius (°C)' },
+    { value: 'Fahrenheit', label: 'Fahrenheit (°F)' },
+    { value: 'Kelvin', label: 'Kelvin (K)' },
+  ];
+  const [initialTemperatureScale, setInitialTemperatureScale] = useState(options[0].value);
 
+  const [temperature, setTemperature] = useState(null);
   useEffect(() => {
     setTemperature(options[0].value);
   }, []);
 
   const handleChange = (option) => {
     setTemperature(option.value);
-    console.log("selected", option.value)
+    const convertedTemperature_forDisplay = convertTemperature_forDisplay(initialTemperatureScale, option.value, otValues, stValues);
+    SimulateButton(initialTemperatureScale, option.value);
+    setInitialTemperatureScale(convertedTemperature_forDisplay[0]); // Update the initialTemperatureScale
+    setOtValues([...convertedTemperature_forDisplay[1]]);
+    setStValues([...convertedTemperature_forDisplay[2]]);
   };
+
+  // For Initial OT and ST Values, Changing Values, Add Rows, Remove Rows and Reset Rows
+  const initialOtValues = [-3, 6, 7, "", "", "", ""];
+  const initialStValues = [23, 22, 22, "", "", "", ""];
+  const [otValues, setOtValues] = useState([...initialOtValues]);
+  const [stValues, setStValues] = useState([...initialStValues]);
+  const [extremeOtIndices, setExtremeOtIndices] = useState({});
+  const [extremeStIndices, setExtremeStIndices] = useState({});
+
+  // Handling changes for OT values
+  const handleOTChange = (index, value) => {
+    const values = [...otValues];
+    values[index] = value === "" ? null : Number(value);
+    setOtValues(values);
+
+    const { lower_ot_value, higher_ot_value } = getExtremeValues(temperature);
+    let isExtreme = (value < lower_ot_value) || (value > higher_ot_value);
+    if (isExtreme) {
+      resetExtremeIndex(setExtremeOtIndices, index);
+    } else {
+      setExtremeOtIndices({
+        ...extremeOtIndices,
+        [index]: false
+      });
+    }
+
+  };
+
+  // Handling changes for ST values
+  const handleSTChange = (index, value) => {
+    const values = [...stValues];
+    values[index] = value === "" ? null : Number(value);
+    setStValues(values);
+
+    const { lower_sp_value, higher_sp_value } = getExtremeValues(temperature);
+    let isExtreme = (value < lower_sp_value) || (value > higher_sp_value);
+
+    if (isExtreme) {
+      resetExtremeIndex(setExtremeStIndices, index);
+    } else {
+      setExtremeStIndices({
+        ...extremeStIndices,
+        [index]: false
+      });
+    }
+  };
+
+  // to disable the calculate button if there is an extreme value
+  const hasExtremeValue = () => {
+    return Object.values(extremeOtIndices).some(Boolean) || Object.values(extremeStIndices).some(Boolean);
+  };
+
+  // Add Row Button
+  const AddRow = () => {
+    setOtValues([...otValues, null]);
+    setStValues([...stValues, null]);
+  };
+
+  // Remove Row Button
+  const RemoveRow = () => {
+    const otNewValues = [...otValues];
+    const stNewValues = [...stValues];
+
+    otNewValues.pop();
+    stNewValues.pop();
+
+    setOtValues(otNewValues);
+    setStValues(stNewValues);
+  };
+
+  // Reset Button
+  const Reset = () => {
+    setOtValues([...initialOtValues]);
+    setStValues([...initialStValues]);
+    setExtremeOtIndices({});
+    setExtremeStIndices({});
+  };
+
+  // Simulate Button
+  const SimulateButton = async (prevScale, selectedScale) => {
+    const filteredPairs = filterPairs(otValues, stValues);
+    let [toutListCelsius, setpointListCelsius] = convertTemperature_forCalculation(temperature, filteredPairs[0], filteredPairs[1]);
+    let [cintercept, cslope, hintercept, hslope, slope_heat, intercept_heat, slope_cool, intercept_cool] = await fetchData(toutListCelsius, setpointListCelsius);
+
+    let [x_heat_highlight, y_heat_highlight, x_cool_highlight, y_cool_highlight] = get_highlight_values(hslope, hintercept, cslope, cintercept);
+    let [x_heat, y_heat, x_cool, y_cool] = get_gray_values(slope_heat, intercept_heat, slope_cool, intercept_cool);
+    let [x_heat_highlight_csv, y_heat_highlight_csv, x_cool_highlight_csv, y_cool_highlight_csv] = save_to_csv(hslope, hintercept, cslope, cintercept);
+
+    // Convert to Respective Temperature Scale (Highlight Lines)
+    let x_heat_highlight_converted = convertTemperature_forHighlightLines(prevScale, selectedScale, x_heat_highlight);
+    let y_heat_highlight_converted = convertTemperature_forHighlightLines(prevScale, selectedScale, y_heat_highlight);
+    let x_cool_highlight_converted = convertTemperature_forHighlightLines(prevScale, selectedScale, x_cool_highlight);
+    let y_cool_highlight_converted = convertTemperature_forHighlightLines(prevScale, selectedScale, y_cool_highlight);
+
+    console.log("prevScale", prevScale, x_heat_highlight)
+    console.log("selectedScale", selectedScale, x_heat_highlight_converted)
+
+    let xy_heat_highlight_dict = x_heat_highlight.map((x_value, i) => {
+      return { xval: x_value, yval: y_heat_highlight[i] };
+    });
+
+    let xy_cool_highlight_dict = x_cool_highlight.map((x_value, i) => {
+      return { xval: x_value, yval: y_cool_highlight[i] };
+    });
+
+    let combined_data = xy_heat_highlight_dict.concat(xy_cool_highlight_dict);
+  }
 
   return (
     <div className="ComfortGPT">
@@ -48,45 +166,39 @@ function ComfortGPT() {
         <div className="second_section">
           <div className="inputs">
             <div className="table_inputs">
-              <div className="temperature_scale">
-                <p>Temperature Scale:</p>
-                <Select options={options} defaultValue={options[0]} onChange={handleChange} style={{ width: '600px' }} />
-              </div>
-              <div className="temperature_inputs">
-                <div className="left_inputs">
-                  <p>Outdoor Temperature</p>
-                  <input type="number" id="ot_input" value={-3} />
-                  <input type="number" id="ot_input" value={6} />
-                  <input type="number" id="ot_input" value={7} />
-                  <input type="number" id="ot_input" />
-                  <input type="number" id="ot_input" />
-                  <input type="number" id="ot_input" />
-                  <input type="number" id="ot_input" />
-                </div>
-                <div className="right_inputs">
-                  <p>Preferred Setpoint</p>
-                  <input type="number" id="st_input" value={23} />
-                  <input type="number" id="st_input" value={22} />
-                  <input type="number" id="st_input" value={22} />
-                  <input type="number" id="st_input" />
-                  <input type="number" id="st_input" />
-                  <input type="number" id="st_input" />
-                  <input type="number" id="st_input" />
-                </div>
-              </div>
+              <p>Temperature Scale:</p>
+              <Select options={options} defaultValue={options[0]} onChange={handleChange} style={{ width: '600px' }} isSearchable={false} />
+              <p>Outdoor Temperature</p>
+              <p>Preferred Setpoint</p>
+              {otValues.map((otValue, index) => (
+                <React.Fragment key={index}>
+                  <input type="number" key={`ot_${index}`} value={otValue} onChange={e => handleOTChange(index, e.target.value)} style={{
+                    borderColor: extremeOtIndices[index] ? 'red' : '',
+                    animation: extremeOtIndices[index] ? 'shake 0.42s cubic-bezier(.36,.07,.19,.97) both' : 'none'
+                  }} />
+                  {stValues[index] !== undefined && (
+                    <input type="number" key={`st_${index}`} value={stValues[index]} onChange={e => handleSTChange(index, e.target.value)} style={{
+                      borderColor: extremeStIndices[index] ? 'red' : '',
+                      animation: extremeStIndices[index] ? 'shake 0.42s cubic-bezier(.36,.07,.19,.97) both' : 'none'
+                    }} />
+                  )}
+                </React.Fragment>
+              ))}
             </div>
-            <div className="HomeButtons">
-              <Link onClick={null}><p id='JoinButton'>Calculate</p></Link>
+            <div className="CalculateButton">
+              <Link onClick={hasExtremeValue() ? undefined : SimulateButton} className={hasExtremeValue() ? "disabled red-button" : "enabled green-button"}>
+                <p id='CalculateButton'>Calculate</p>
+              </Link>
             </div>
             <div className="additional_buttons">
               <div className="HomeButtons">
-                <Link onClick={null}><p id='JoinButton'>Add Row</p></Link>
+                <Link onClick={AddRow}><p id='JoinButton'>Add Row</p></Link>
               </div>
               <div className="HomeButtons">
-                <Link onClick={null}><p id='JoinButton'>Reset</p></Link>
+                <Link onClick={Reset}><p id='JoinButton'>Reset</p></Link>
               </div>
               <div className="HomeButtons">
-                <Link onClick={null} ><p id='JoinButton'>Remove Row</p></Link>
+                <Link onClick={RemoveRow} ><p id='JoinButton'>Remove Row</p></Link>
               </div>
             </div>
           </div>
@@ -123,8 +235,183 @@ function ComfortGPT() {
 
 export default ComfortGPT;
 
-const options = [
-  { value: 'Celsius', label: 'Celsius (°C)' },
-  { value: 'Fahrenheit', label: 'Fahrenheit (°F)' },
-  { value: 'Kelvin', label: 'Kelvin (K)' },
-];
+const filterPairs = (ot, st) => {
+  const newOt = [];
+  const newSt = [];
+
+  for (let i = 0; i < ot.length; i++) {
+    if (ot[i] !== "" && ot[i] !== null && st[i] !== "" && st[i] !== null) {
+      newOt.push(ot[i]);
+      newSt.push(st[i]);
+    }
+  }
+
+  return [newOt, newSt];
+};
+
+const convertTemperature_forCalculation = (scale, otValues, stValues) => {
+  let converted_otValues;
+  let converted_stValues;
+
+  if (scale === "Celsius") {
+    converted_otValues = otValues;
+    converted_stValues = stValues;
+  } else if (scale === "Fahrenheit") {
+    converted_otValues = otValues.map(temp => Math.round((temp - 32) * 5 / 9));
+    converted_stValues = stValues.map(temp => Math.round((temp - 32) * 5 / 9));
+  } else if (scale === 'Kelvin') {
+    converted_otValues = otValues.map(temp => temp - 273.15);
+    converted_stValues = stValues.map(temp => temp - 273.15);
+  }
+
+  return [converted_otValues, converted_stValues];
+}
+
+const convertTemperature_forDisplay = (prevScale, selectedScale, otValues, stValues) => {
+  const convertTemp = (temp, conversionFunction) => {
+    return temp === "" || temp === null ? temp : conversionFunction(temp);
+  };
+
+  const conversions = {
+    "CelsiusCelsius": temp => temp,
+    "CelsiusFahrenheit": temp => (temp * 9 / 5) + 32,
+    "CelsiusKelvin": temp => temp + 273.15,
+    "FahrenheitCelsius": temp => Math.round((temp - 32) * 5 / 9),
+    "FahrenheitFahrenheit": temp => temp,
+    "FahrenheitKelvin": temp => ((temp - 32) * 5 / 9) + 273.15,
+    "KelvinCelsius": temp => temp - 273.15,
+    "KelvinFahrenheit": temp => ((temp - 273.15) * 9 / 5) + 32,
+    "KelvinKelvin": temp => temp
+  };
+
+  const conversionKey = prevScale + selectedScale;
+
+  let converted_otValues = otValues.map(temp => convertTemp(temp, conversions[conversionKey]));
+  let converted_stValues = stValues.map(temp => convertTemp(temp, conversions[conversionKey]));
+
+  return [selectedScale, converted_otValues, converted_stValues];
+};
+
+const convertTemperature_forHighlightLines = (prevScale, selectedScale, inputList) => {
+  const convertTemp = (temp, conversionFunction) => {
+    return temp === "" || temp === null ? temp : conversionFunction(temp);
+  };
+
+  const conversions = {
+    "CelsiusCelsius": temp => temp,
+    "CelsiusFahrenheit": temp => (temp * 9 / 5) + 32,
+    "CelsiusKelvin": temp => temp + 273.15,
+    "FahrenheitCelsius": temp => Math.round((temp - 32) * 5 / 9),
+    "FahrenheitFahrenheit": temp => temp,
+    "FahrenheitKelvin": temp => ((temp - 32) * 5 / 9) + 273.15,
+    "KelvinCelsius": temp => temp - 273.15,
+    "KelvinFahrenheit": temp => ((temp - 273.15) * 9 / 5) + 32,
+    "KelvinKelvin": temp => temp
+  };
+
+  const conversionKey = prevScale + selectedScale;
+
+  let convertedList = inputList.map(temp => convertTemp(temp, conversions[conversionKey]));
+
+  return convertedList;
+};
+
+const getExtremeValues = (scale) => {
+  let extremeValues = {};
+  if (scale === 'Celsius') {
+    extremeValues = {
+      lower_ot_value: -50,
+      higher_ot_value: 50,
+      lower_sp_value: -15,
+      higher_sp_value: 30
+    };
+  } else if (scale === 'Kelvin') {
+    extremeValues = {
+      lower_ot_value: 23.15,
+      higher_ot_value: 323.15,
+      lower_sp_value: 258.15,
+      higher_sp_value: 303.15
+    };
+  } else if (scale === 'Fahrenheit') {
+    extremeValues = {
+      lower_ot_value: -58,
+      higher_ot_value: 122,
+      lower_sp_value: 5,
+      higher_sp_value: 86
+    };
+  }
+  return extremeValues;
+};
+
+// To retrigger the shake if the user re-enter extreme values
+const resetExtremeIndex = (setExtremeIndices, index) => {
+  setExtremeIndices(prevState => ({ ...prevState, [index]: false }));
+  setTimeout(() => {
+    setExtremeIndices(prevState => ({ ...prevState, [index]: true }));
+  }, 0);
+};
+
+async function fetchData(toutList, setpointList) {
+  try {
+    const response = await fetch('https://qsqfy26d4a.execute-api.ap-southeast-1.amazonaws.com/dev', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        toutList: toutList,
+        setpointList: setpointList
+      })
+    });
+
+    const data = await response.json();
+    const output = JSON.parse(data['body']);
+
+    const cintercept = output['cintercept'];
+    const cslope = output['cslope'];
+    const hintercept = output['hintercept'];
+    const hslope = output['hslope'];
+    const slope_heat = output['slope_heat'];
+    const intercept_heat = output['intercept_heat'];
+    const slope_cool = output['slope_cool'];
+    const intercept_cool = output['intercept_cool'];
+
+    return [cintercept, cslope, hintercept, hslope, slope_heat, intercept_heat, slope_cool, intercept_cool];
+
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    return null;
+  }
+}
+
+function get_highlight_values(hslope, hintercept, cslope, cintercept) {
+  let x_heat_highlight = Array.from({ length: (16 - -6) / 0.01 }, (_, i) => (-6 + i * 0.01).toFixed(2));
+  let y_heat_highlight = x_heat_highlight.map((value) => (hslope * value + hintercept).toFixed(2));
+  let x_cool_highlight = Array.from({ length: (35 - 16) / 0.01 }, (_, i) => (16 + i * 0.01).toFixed(2));
+  let y_cool_highlight = x_cool_highlight.map((value) => (cslope * value + cintercept).toFixed(2));
+
+  return [x_heat_highlight, y_heat_highlight, x_cool_highlight, y_cool_highlight];
+}
+
+function get_gray_values(slope_heat, intercept_heat, slope_cool, intercept_cool) {
+  let x_heat = Array.from({ length: (16 - -6) / 0.1 }, (_, i) => -6 + i * 0.1);
+  let y_heat = [];
+  let x_cool = Array.from({ length: (35 - 16) / 0.1 }, (_, i) => 16 + i * 0.1);
+  let y_cool = [];
+  for (let i = 0; i < intercept_heat.length; i++) {
+    y_heat.push(x_heat.map((value) => slope_heat[i] * value + intercept_heat[i]));
+    y_cool.push(x_cool.map((value) => slope_cool[i] * value + intercept_cool[i]));
+  }
+
+  return [x_heat, y_heat, x_cool, y_cool];
+}
+
+function save_to_csv(hslope, hintercept, cslope, cintercept) {
+  let x_heat_highlight_csv = Array.from({ length: (17 - -6) / 1 }, (_, i) => -6 + i * 1);
+  let y_heat_highlight_csv = x_heat_highlight_csv.map((value) => hslope * value + hintercept);
+  let x_cool_highlight_csv = Array.from({ length: (35 - 16) / 1 }, (_, i) => 17 + i * 1);
+  let y_cool_highlight_csv = x_cool_highlight_csv.map((value) => cslope * value + cintercept);
+
+  return [x_heat_highlight_csv, y_heat_highlight_csv, x_cool_highlight_csv, y_cool_highlight_csv];
+
+}

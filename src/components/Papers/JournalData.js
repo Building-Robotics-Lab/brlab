@@ -1539,8 +1539,9 @@ JournalData.forEach((yearData) => {
     });
 });
 
-const getWordsPerMinute = (title, keyword, highlight, abstract) => {
+const getWordsPerMinute = (title, journal, keyword, highlight, abstract) => {
     let title_word_count = title.split(' ').length;
+    let journal_word_count = journal.split(' ').length;
     let keyword_word_count = keyword.length;
     let highlight_word_count = 0;
     for (let i = 0; i < highlight.length; i++) {
@@ -1548,7 +1549,7 @@ const getWordsPerMinute = (title, keyword, highlight, abstract) => {
     }
     let abstract_word_count = abstract.split(' ').length;
 
-    const wordCount = title_word_count + keyword_word_count + highlight_word_count + abstract_word_count;
+    const wordCount = title_word_count + journal_word_count + keyword_word_count + highlight_word_count + abstract_word_count;
     const wordsPerMinute = 200;
     const readingTime = Math.ceil(wordCount / wordsPerMinute);
 
@@ -1558,11 +1559,9 @@ const getWordsPerMinute = (title, keyword, highlight, abstract) => {
 JournalData.forEach((yearData) => {
     // Loop through the publications for each year
     yearData.publications.forEach((publication) => {
-        let readingTime = getWordsPerMinute(publication.title, publication.keywords, publication.highlights, publication.abstract);
+        let readingTime = getWordsPerMinute(publication.title, publication.journal, publication.keywords, publication.highlights, publication.abstract);
         publication.minRead = `${readingTime}-minute read`
     });
 });
-
-
 
 export default JournalData;

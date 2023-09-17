@@ -23,7 +23,7 @@ const ConferenceData = [
                     { name: "Edward Arens" }
                 ],
                 minRead: "",
-                profiles: ["Prof" ],
+                profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1109/SENSORS43011.2019.8956901" }
                 ],
@@ -58,7 +58,7 @@ const ConferenceData = [
                     { name: "Yingdong He" },
                 ],
                 minRead: "",
-                profiles: ["Prof" ],
+                profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://escholarship.org/uc/item/79q0m374#main" },
                     { type: "PDF", url: "https://escholarship.org/content/qt79q0m374/qt79q0m374.pdf?t=pm1r17" }
@@ -84,7 +84,7 @@ const ConferenceData = [
                     { name: "Yuchao Wang" }
                 ],
                 minRead: "",
-                profiles: ["Prof" ],
+                profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://itc.scix.net/paper/lc3-2017-022" },
                     { type: "PDF", url: "https://itc.scix.net/pdfs/LC3_2017_paper_022.pdf" }
@@ -118,7 +118,7 @@ const ConferenceData = [
                     { name: "Burcin Becerik-Gerber" }
                 ],
                 minRead: "",
-                profiles: ["Prof" ],
+                profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1109/WSC.2015.7408228" },
                 ],
@@ -138,7 +138,7 @@ const ConferenceData = [
                     { name: "Burcin Becerik-Gerber" }
                 ],
                 minRead: "",
-                profiles: ["Prof" ],
+                profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1109/WSC.2015.7408505" },
                 ],
@@ -159,7 +159,7 @@ const ConferenceData = [
                     { name: "Burcin Becerik-Gerber" },
                 ],
                 minRead: "",
-                profiles: ["Prof" ],
+                profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1061/9780784479681.011" },
                 ],
@@ -178,7 +178,7 @@ const ConferenceData = [
                     { name: "Burcin Becerik-Gerber" },
                 ],
                 minRead: "",
-                profiles: ["Prof" ],
+                profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1061/9780784479681.010" },
                 ],
@@ -204,7 +204,7 @@ const ConferenceData = [
                     { name: "Michael Orosz" },
                 ],
                 minRead: "",
-                profiles: ["Prof" ],
+                profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1061/9780784413029.028" },
                 ],
@@ -228,6 +228,26 @@ ConferenceData.forEach((yearData) => {
         // Generate and assign the unique ID
         publication.id = generateIdFromTitle(publication.title);
         publication.individual_paper_link = "https://building-robotics-lab.github.io/brlab/#/individual_publication/" + generateIdFromTitle(publication.title);
+    });
+});
+
+const getWordsPerMinute = (title, keyword, abstract) => {
+    let title_word_count = title.split(' ').length;
+    let keyword_word_count = keyword.length;
+    let abstract_word_count = abstract.split(' ').length;
+
+    const wordCount = title_word_count + keyword_word_count + abstract_word_count;
+    const wordsPerMinute = 200;
+    const readingTime = Math.ceil(wordCount / wordsPerMinute);
+
+    return readingTime;
+}
+
+ConferenceData.forEach((yearData) => {
+    // Loop through the publications for each year
+    yearData.publications.forEach((publication) => {
+        let readingTime = getWordsPerMinute(publication.title, publication.keywords, publication.abstract);
+        publication.minRead = `${readingTime}-minute read`
     });
 });
 

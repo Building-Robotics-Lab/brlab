@@ -114,13 +114,14 @@ function ConferenceSection({ year, publications }) {
                 <ul>
                     {publications.map((pub, index) => (
                         <li key={index}>
-                            <h3>{pub.title}</h3>
+                            <h3><Link to={`/individual_publication/${pub.id}`}>{pub.title}</Link></h3>
                             <h4>
-                                {pub.conference}
+                                <i>{pub.conference}</i>
                                 {(pub.conference && (pub.page || pub.month)) && ', '}
-                                {pub.page && <i>{pub.page}</i>}
-                                {pub.page && pub.month && ', '}
+                                {pub.page}<br />
                                 {pub.month}
+                                {pub.month && pub.location && ' | '}
+                                {pub.location}
                             </h4>
                             <h5>
                                 {pub.authors.map((author, i) => (
@@ -154,7 +155,8 @@ function PatentSection({ year, publications }) {
                 <ul>
                     {publications.map((pub, index) => (
                         <li key={index}>
-                            <h3>{pub.title}</h3>
+                            <h3><Link to={`/individual_publication/${pub.id}`}>{pub.title}</Link></h3>
+                            {/* <h3>{pub.title}</h3> */}
                             <h4>{pub.patent}</h4>
                             <h5>
                                 {pub.authors.map((author, i) => (
@@ -188,7 +190,8 @@ function ThesesSection({ year, publications }) {
                 <ul>
                     {publications.map((pub, index) => (
                         <li key={index}>
-                            <h3>{pub.title}</h3>
+                            <h3><Link to={`/individual_publication/${pub.id}`}>{pub.title}</Link></h3>
+                            {/* <h3>{pub.title}</h3> */}
                             <h4>{pub.university}</h4>
                             <h5>
                                 {pub.authors.map((author, i) => (

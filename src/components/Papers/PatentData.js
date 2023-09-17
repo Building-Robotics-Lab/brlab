@@ -14,7 +14,7 @@ const PatentData = [
                     { name: "Michael P. Anderson" }
                 ],
                 minRead: "",
-                profiles: ["Prof" ],
+                profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://patents.google.com/patent/US20220099697A1/en" },
                     { type: "PDF", url: "https://patentimages.storage.googleapis.com/bd/5b/42/41a2eaf43fbaf0/US20220099697A1.pdf" }
@@ -35,7 +35,7 @@ const PatentData = [
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
                 minRead: "",
-                profiles: ["Prof" ],
+                profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://patents.google.com/patent/US20170265755A1/en" },
                     { type: "PDF", url: "https://patentimages.storage.googleapis.com/10/63/4a/21c74dfe901123/US20170265755A1.pdf" }
@@ -58,7 +58,7 @@ const PatentData = [
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],
                 minRead: "",
-                profiles: ["Prof" ],
+                profiles: ["Prof"],
                 links: [
                     { type: "DOI", url: "https://patents.google.com/patent/US20140277765A1/en" },
                     { type: "PDF", url: "https://patentimages.storage.googleapis.com/cb/e0/85/a94dd429ee3314/US20140277765A1.pdf" }
@@ -82,6 +82,26 @@ PatentData.forEach((yearData) => {
         // Generate and assign the unique ID
         publication.id = generateIdFromTitle(publication.title);
         publication.individual_paper_link = "https://building-robotics-lab.github.io/brlab/#/individual_publication/" + generateIdFromTitle(publication.title);
+    });
+});
+
+const getWordsPerMinute = (title, patent, abstract) => {
+    let title_word_count = title.split(' ').length;
+    let patent_word_count = patent.length;
+    let abstract_word_count = abstract.split(' ').length;
+
+    const wordCount = title_word_count + patent_word_count + abstract_word_count;
+    const wordsPerMinute = 200;
+    const readingTime = Math.ceil(wordCount / wordsPerMinute);
+
+    return readingTime;
+}
+
+PatentData.forEach((yearData) => {
+    // Loop through the publications for each year
+    yearData.publications.forEach((publication) => {
+        let readingTime = getWordsPerMinute(publication.title, publication.patent, publication.abstract);
+        publication.minRead = `${readingTime}-minute read`
     });
 });
 
