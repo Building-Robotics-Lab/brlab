@@ -26,7 +26,7 @@ import PegahPic from './Pegah/image.jpg'
 import PegahCV from './Pegah/CV.pdf'
 
 import PierrePic from './unknown.png'
-import PierrePic from './Pierre-Louis/image.jpg'
+//import PierrePic from './Pierre-Louis/image.jpg'
 import PierreCV from './Pierre-Louis/CV.pdf'
 
 import MichellePic from './Michelle/image.jpg'

@@ -5,7 +5,7 @@ import Container from '../components/Container';
 import './News.css'
 import NewsGrid from '../components/NewsGrid';
 
-import PierrePic from './../components/Website Individual Information/Pierre/image.jpg';
+//import PierrePic from './../components/Website Individual Information/Pierre/image.jpg';
 import PegahPic from './../components/Website Individual Information/Pegah/image.jpg';
 import RiccardoPublication from './../components/Website Data/riccardo-publication.jpg'
 import KellyPic from './../components/Website Individual Information/Kelly/image.jpg';

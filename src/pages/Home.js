@@ -14,7 +14,7 @@ import FourthResearchImage from './../components/Website Data/resilient@2x.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers } from '@fortawesome/free-solid-svg-icons';
 
-import PierreNews from './../components/Website Individual Information/Pierre/image.jpg'
+//import PierreNews from './../components/Website Individual Information/Pierre/image.jpg'
 import PegahNews from './../components/Website Individual Information/Pegah/image.jpg'
 import PublicationsRiccardoNews from './../components/Website Data/riccardo-publication.jpg'
 import KellyNews from './../components/Website Individual Information/Kelly/image.jpg'
