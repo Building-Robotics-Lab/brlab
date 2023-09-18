@@ -54,7 +54,7 @@ function IndividualProfile() {
                                 <ul>
                                     {Education && Education.length > 0 && (
                                         Education.map((edu, index) => (
-                                            <li key={index}>{edu}</li>
+                                            <li key={index} dangerouslySetInnerHTML={{ __html: edu }}></li>
                                         ))
                                     )}
                                 </ul>

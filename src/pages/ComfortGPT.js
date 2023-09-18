@@ -19,6 +19,7 @@ function ComfortGPT() {
     { value: 'Kelvin', label: 'Kelvin (K)' },
   ];
   const [initialTemperatureScale, setInitialTemperatureScale] = useState(options[0].value);
+  const [test, setTest] = useState(options[0].value);
 
   const [temperature, setTemperature] = useState(null);
   useEffect(() => {
@@ -28,7 +29,6 @@ function ComfortGPT() {
   const handleChange = (option) => {
     setTemperature(option.value);
     const convertedTemperature_forDisplay = convertTemperature_forDisplay(initialTemperatureScale, option.value, otValues, stValues);
-    SimulateButton(initialTemperatureScale, option.value);
     setInitialTemperatureScale(convertedTemperature_forDisplay[0]); // Update the initialTemperatureScale
     setOtValues([...convertedTemperature_forDisplay[1]]);
     setStValues([...convertedTemperature_forDisplay[2]]);
@@ -112,7 +112,7 @@ function ComfortGPT() {
   };
 
   // Simulate Button
-  const SimulateButton = async (prevScale, selectedScale) => {
+  const SimulateButton = async () => {
     const filteredPairs = filterPairs(otValues, stValues);
     let [toutListCelsius, setpointListCelsius] = convertTemperature_forCalculation(temperature, filteredPairs[0], filteredPairs[1]);
     let [cintercept, cslope, hintercept, hslope, slope_heat, intercept_heat, slope_cool, intercept_cool] = await fetchData(toutListCelsius, setpointListCelsius);
@@ -122,13 +122,13 @@ function ComfortGPT() {
     let [x_heat_highlight_csv, y_heat_highlight_csv, x_cool_highlight_csv, y_cool_highlight_csv] = save_to_csv(hslope, hintercept, cslope, cintercept);
 
     // Convert to Respective Temperature Scale (Highlight Lines)
-    let x_heat_highlight_converted = convertTemperature_forHighlightLines(prevScale, selectedScale, x_heat_highlight);
-    let y_heat_highlight_converted = convertTemperature_forHighlightLines(prevScale, selectedScale, y_heat_highlight);
-    let x_cool_highlight_converted = convertTemperature_forHighlightLines(prevScale, selectedScale, x_cool_highlight);
-    let y_cool_highlight_converted = convertTemperature_forHighlightLines(prevScale, selectedScale, y_cool_highlight);
+    let x_heat_highlight_converted = convertTemperature_forHighlightLines(test, temperature, x_heat_highlight);
+    let y_heat_highlight_converted = convertTemperature_forHighlightLines(test, temperature, y_heat_highlight);
+    let x_cool_highlight_converted = convertTemperature_forHighlightLines(test, temperature, x_cool_highlight);
+    let y_cool_highlight_converted = convertTemperature_forHighlightLines(initialTemperatureScale, temperature, y_cool_highlight);
 
-    console.log("prevScale", prevScale, x_heat_highlight)
-    console.log("selectedScale", selectedScale, x_heat_highlight_converted)
+    console.log(x_heat_highlight)
+    console.log(x_heat_highlight_converted)
 
     let xy_heat_highlight_dict = x_heat_highlight.map((x_value, i) => {
       return { xval: x_value, yval: y_heat_highlight[i] };
@@ -298,15 +298,15 @@ const convertTemperature_forHighlightLines = (prevScale, selectedScale, inputLis
   };
 
   const conversions = {
-    "CelsiusCelsius": temp => temp,
-    "CelsiusFahrenheit": temp => (temp * 9 / 5) + 32,
-    "CelsiusKelvin": temp => temp + 273.15,
-    "FahrenheitCelsius": temp => Math.round((temp - 32) * 5 / 9),
-    "FahrenheitFahrenheit": temp => temp,
-    "FahrenheitKelvin": temp => ((temp - 32) * 5 / 9) + 273.15,
-    "KelvinCelsius": temp => temp - 273.15,
-    "KelvinFahrenheit": temp => ((temp - 273.15) * 9 / 5) + 32,
-    "KelvinKelvin": temp => temp
+    "CelsiusCelsius": temp => Number(temp),
+    "CelsiusFahrenheit": temp => (Number(temp) * 9 / 5) + 32,
+    "CelsiusKelvin": temp => Number(temp) + 273.15,
+    "FahrenheitCelsius": temp => Math.round((Number(temp) - 32) * 5 / 9),
+    "FahrenheitFahrenheit": temp => Number(temp),
+    "FahrenheitKelvin": temp => ((Number(temp) - 32) * 5 / 9) + 273.15,
+    "KelvinCelsius": temp => Number(temp) - 273.15,
+    "KelvinFahrenheit": temp => ((Number(temp) - 273.15) * 9 / 5) + 32,
+    "KelvinKelvin": temp => Number(temp)
   };
 
   const conversionKey = prevScale + selectedScale;

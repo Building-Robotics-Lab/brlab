@@ -160,7 +160,7 @@ const profiles = [
         Education: [
             'PhD, National University of Singapore (NUS), Built Environment (Current)',
             'MSc, University College London (UCL), Built Environment: Environmental Design and Engineering (2023)',
-            'BSc (summa cum laude), University of Florida (UF), Sustainability and the Built Environment (w/ minors in Economics; Agricultural and Natural Resource Ethics & Policy) (2021)'
+            'BSc (<i>summa cum laude</i>), University of Florida (UF), Sustainability and the Built Environment (w/ minors in Economics; Agricultural and Natural Resource Ethics & Policy) (2021)'
         ],
         Awards: [
             'NUS Research Scholarship (Ring Fence Award), National University of Singapore (2023 - present)',
