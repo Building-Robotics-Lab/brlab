@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Container from './../components/Container'
 import './ComfortGPT.css'
 import { Link } from 'react-router-dom';
+import * as d3 from 'd3';
 
 import ExampleImage from './../components/Website Data/output_example.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -145,7 +146,44 @@ function ComfortGPT() {
       .range([0, width]);
 
     const y = d3.scaleLinear()
-      .range([height, 0])
+      .range([height, 0]);
+
+    const svgContainer = d3.select('#graph')
+
+    svgContainer.selectAll("svg").remove();
+    d3.select("#graph").selectAll("*").remove();
+
+    const svg = svgContainer
+      .append("svg")
+      .attr("width", width - 30)
+      .attr("height", height + 30)
+      .append("g")
+
+    let xExtent = d3.extent(combined_data, d => d.xval);
+    let yExtent = d3.extent(combined_data, d => d.yval);
+
+    let num = 5;
+    if (temperature === "Fahrenheit") {
+      num = 10;
+    }
+
+    x.domain([xExtent[0] - num, xExtent[1] + num]);
+    y.domain([yExtent[0] - num, yExtent[1] + num]);
+
+    svg.append("g")
+      .attr("transform", `translate(0, ${height})`)
+      .call(d3.axisBottom(x))
+
+    svg.append("g")
+      .call(d3.axisLeft(y));
+
+    const line = d3.line()
+      .x(d => x(d.xval))
+      .y(d => y(d.yval))
+
+    let tooltip = d3.select("body").append("div")
+      .attr("class", "tooltip")
+      .style("opacity", 0);
   }
 
   return (

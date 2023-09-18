@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import ScrolltoTop from './components/ScrollToTop'
+import * as d3 from 'd3';
 
 import Home from './pages/Home';
 import Research from './pages/Research';
