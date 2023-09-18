@@ -96,7 +96,7 @@ function Our_Team() {
         },
         {
             name: 'Pierre-Louis David',
-            role: "Visiting Master's Student (ETH Zürich)",
+            role: "Visiting MSc Student (ETH Zürich)",
             skills: '',  // Skills are empty in your example
             imgSrc: PierrePic,
             link: 'https://building-robotics-lab.github.io/brlab/#/individual_profile/Pierre'

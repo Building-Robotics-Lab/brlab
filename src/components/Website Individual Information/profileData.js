@@ -89,8 +89,8 @@ const profiles = [
         Biography: 'CHEN Kai is a second-year PhD candidate at the National University of Singapore - Department of the Built Environment and is currently engaged in research that focuses on thermal comfort modelling, long-term thermal comfort prediction, and energy conservation in HVAC systems. He firmly believes that accurately addressing occupants\' comfort is vital for optimising energy consumption and enhancing human well-being. In addition to his research on these topics, Kai has conducted research on biomass heating for domestic and commercial buildings in the UK, performed analysis on building systems\' components, and gained experience in energy simulation and optimisation.',
         Education: [
             'PhD, National University of Singapore (NUS), Built Environment (Current)',
-            'MSc (Merit), University College London (UCL), Smart Buildings and Digital Engineering (2021)',
-            'BEng (Honours), University of Nottingham, Architectural Environment Engineering (2020)'
+            'MSc (<i>Merit</i>), University College London (UCL), Smart Buildings and Digital Engineering (2021)',
+            'BEng (<i>Honours</i>), University of Nottingham, Architectural Environment Engineering (2020)'
         ],
         Awards: [
             'UK Engineering and Physical Sciences Research Council Scholarship, Engineering and Physical Sciences Research Council (2019 - 2022)',
@@ -123,7 +123,7 @@ const profiles = [
         Biography: 'Iqbal Shah is a second-year PhD student (President\'s Graduate Fellow) at the National University of Singapore (NUS), College of Design & Engineering, Department of the Built Environment. His current research focuses on innovative façade technologies, urban greening solutions, as well as digital twin interface development, actuations, and ontology automation. Further expressing his interest in the technicalities and developments of heating and cooling systems, Iqbal is also currently a student member in the American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE) Singapore Chapter. He believes that a well-implemented semantic digital twin could bridge the gap between humans, systems, and the environment, allowing for true sustainability to be attained. To date, Iqbal has supervised eight undergraduate students for their final year project dissertation. Beyond academia and his research interests, Iqbal is passionate in volunteering work, and has participated as a mentor in multiple programmes. He lives by the quotes, “No one has ever become poor by giving.” - Anne Frank, and, “Those who are happiest are those who do the most for others.” - Booker T. Washington.',
         Education: [
             'PhD, National University of Singapore (NUS), Built Environment (Current)',
-            'BSc (Highest Distinction), National University of Singapore (NUS), Project & Facilities Management (2021)'
+            'BSc (<i>Highest Distinction</i>), National University of Singapore (NUS), Project & Facilities Management (2021)'
         ],
         Awards: [
             'NUS President\'s Graduate Fellowship, National University of Singapore (2022 - Current)',
@@ -169,9 +169,7 @@ const profiles = [
             'University Scholars Program Scholarship, University of Florida (2020 - 2021)',
             'President\'s Honor Roll, University of Florida (2019)'
         ],
-        Featured_Publications: [
-            
-        ],
+        Featured_Publications: [],
         Contacts: [
             { href: "tel:+6590969616", icon: faPhone, text: "+65 9096 9616" },
             { href: "tel:+1(317)3789409", icon: faPhone, text: "+1 (317) 378 9409" },
@@ -200,15 +198,13 @@ const profiles = [
         Biography: 'Kelly Loh Li Ting is an ambitious and dedicated individual who is a first-year PhD student at NUS CDE (National University of Singapore College of Design and Engineering). Recognized for her outstanding academic achievements and potential, Kelly has been awarded the esteemed President\'s Graduate Fellowship. Kelly\'s research endeavors revolve around exploring innovative uses for condensate collected from condensate recovery systems in Air Handling Units (AHUs) to optimise building efficiency. With a strong passion for energy efficiency, she aims to contribute to the development of sustainable practices that enhance building performance and reduce environmental impact. In addition to her interest in energy efficiency, Kelly is deeply fascinated by the intersection of building finance and technology. She is particularly keen on leveraging Building Information Modelling (BIM) to analyze life cycle costs associated with building projects. By integrating financial considerations into the design and construction phases, Kelly envisions a future where buildings are not only energy-efficient but also economically sustainable. Kelly\'s long-term aspiration is to become a leading researcher and advocate in the field of sustainable building practices. She is determined to bridge the gap between academia and industry by translating research findings into practical solutions. By addressing the complex challenges of energy efficiency, building finance, and life cycle costs, Kelly aims to promote sustainable development and facilitate the creation of environmentally conscious built environments.',
         Education: [
             'PhD, National University of Singapore (NUS), Built Environment (Current)',
-            'BSc (Highest Distinction), National University of Singapore (NUS), Project and Facilities Management (2023)'
+            'BSc (<i>Highest Distinction</i>), National University of Singapore (NUS), Project and Facilities Management (2023)'
         ],
         Awards: [
             'NUS President\'s Graduate Fellowship, National University of Singapore (2023 - current)',
             'Outstanding Case Submission of the NUS-CHS Case Competition, National University of Singapore (2021)'
         ],
-        Featured_Publications: [
-
-        ],
+        Featured_Publications: [],
         Contacts: [
             { href: "tel:+6598356852", icon: faPhone, text: "+65 9835 6852" },
             { href: "mailto:kelly_loh_li_ting@u.nus.edu", icon: faEnvelope, text: "kelly_loh_li_ting@u.nus.edu" },
@@ -231,16 +227,14 @@ const profiles = [
         Position: 'Research Engineer',
         Biography: 'Ilyas Dawoodjee is a Research Engineer in the Building Robotics Lab at the National University of Singapore (NUS). His current area of research involves the detection of physiological measurements through machine vision. Some of his previous projects include object detection, data classification, image segmentation, and image classification. He is well-versed in multiple aspects of engineering ranging from CAD/CAM, SPICE simulations, sensors & actuators, control systems, microcontrollers, and PLC, with hands-on experience in them. However, his main passion is robotics integrated with machine vision and machine learning. He is an avid programmer who spends most of his free time coding and is always eager to learn new programming techniques and technologies. Outside of work, he likes to play games and is a fan of movies and TV series. He is a huge fan of educational YouTubers such as Veritasium, StuffMadeHere, 3Blue1Brown, VSauce, C.G.P. Grey, Minute Physics, and more.',
         Education: [
-            'BEng (First Class Honours w/ Distinction), Asia Pacific University (APU), Mechatronics Engineering (2022)'
+            'BEng (<i>First Class Honours w/ Distinction</i>), Asia Pacific University (APU), Mechatronics Engineering (2022)'
         ],
         Awards: [
             'AI4S Program Inception Recipient, Asia Pacific University (2022)',
             'Valedictorian, Asia Pacific University (Class of 2022)',
             'Outstanding Achievement Award, Asia Pacific University (2022)'
         ],
-        Featured_Publications: [
-
-        ],
+        Featured_Publications: [],
         Contacts: [
             { href: "tel:+6586869527", icon: faPhone, text: "+6586869527" },
             { href: "mailto:ilyasd01@nus.edu.sg", icon: faEnvelope, text: "ilyasd01@nus.edu.sg" },
@@ -263,7 +257,7 @@ const profiles = [
         ProfileName: 'Stella',
         ProfileLink: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Stella",
         ProfilePic: StellaPic,
-        Name: 'Hu Xinhao',
+        Name: 'HU Xinhao',
         Position: 'Visiting PhD Candidate from Hunan University',
         Biography: 'HU XinHao is a second-year PhD candidate from the Building Environment and Energy Application Department at Hunan University, P. R. China, and is a visiting student in Assistant Professor Ghahramani\'s group in the Department of the Built Environment at the National University of Singapore. Her research focuses on thermal comfort and building energy efficiency, and her current research project is on the comfort characterising of indoor occupants with personal comfort systems under solar radiation.',
         Education: [
@@ -300,7 +294,7 @@ const profiles = [
         ProfileName: 'Xiaosong',
         ProfileLink: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Xiaosong",
         ProfilePic: XiaosongPic,
-        Name: 'Su Xiaosong',
+        Name: 'SU Xiaosong',
         Position: 'Visiting PhD Candidate from Hunan University',
         Biography: 'Song is a visiting PhD student at NUS, coming from Hunan University in China. His research focuses on building energy efficiency with advanced technology and innovative building envelope, such as building-integrated photovoltaics, light-transmitting concrete, and radiant cooling systems. In addition, he is curious about data science and other new technology and tries to integrate them with his research.',
         Education: [
@@ -342,11 +336,9 @@ const profiles = [
         Education: [
             'PhD, Shahid Beheshti University (SBU), Buildings (Current)',
             'MArch, Shahid Beheshti University (SBU), Building Engineering (2020)',
-            'BArch (First Class Honours), Ferdowsi University of Mashhad (FUM), Architecture (2018)'
+            'BArch (<i>First Class Honours</i>), Ferdowsi University of Mashhad (FUM), Architecture (2018)'
         ],
-        Awards: [
-
-        ],
+        Awards: [],
         Featured_Publications: [
             'Sharif, S.A., Hammad, A. and <b>Eshraghi, P.</b>, 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778820304904" target="_blank"><b>Generation of whole building renovation scenarios using variational autoencoders</b></a>. <i>Energy and Buildings, 230</i>, p.110520.',
             'Ahmadi Soleimani, S.M., <b>Eshraghi, P.</b>, Mirdamadi, M. and Zamardian, Z., 2022. <a href="https://soffeh.sbu.ac.ir/article_102765.html" target="_blank"><b>Optimizing energy consumption of educational buildings, a case study: Shahid Beheshti University</b></a>. <i>Safa, 32(3)</i>, p.49-65. [Persian]'
@@ -373,39 +365,35 @@ const profiles = [
         ProfileLink: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Pierre",
         ProfilePic: PierrePic,
         Name: 'Pierre-Louis David',
-        Position: 'Visiting Master\'s Student from ETH Zürich',
-        Biography: 'Pierre-Louis David',
+        Position: 'Visiting MSc Student from ETH Zürich',
+        Biography: 'Hello, I\'m Pierre-Louis David. I\'m honoured to be a Master\'s candidate from ETH Zürich, specialising in Mechanical Engineering with a significant emphasis on Computer Science. Currently, I\'m in the midst of completing my thesis at the Building Robotics Lab in the Department of the Built Environment at the National University of Singapore, with a concentrated effort on optimising virtual power plants and pioneering methods to forecast energy prices using ML techniques. In my previous role at the esteemed Paul Scherrer Institut, I had the privilege to work with computer vision in the innovative Center for Proton Therapy. The objective was to refine segmentation techniques for patients afflicted with eye tumors, enhancing the efficacy of proton therapy and subsequently, improving patient recovery outcomes. Beyond my academic and professional pursuits, I take a keen interest in marathon running, and I value the moments I spend chatting with friends and colleagues.',
         Education: [
-            'MEng, Eidgenössische Technische Hochschule (ETH Zürich), Mechanical Engineering and Computer Science (current)',
-            'BEng, École Polytechnique Fédérale de Lausanne (EPFL), Mechanical Engineering (2021)'
+            'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Mechanical Engineering and Computer Science (current)',
+            'BSc, École Polytechnique Fédérale de Lausanne (EPFL), Mechanical Engineering (2021)'
         ],
-        Awards: [
-            
-        ],
-        Featured_Publications: [
-
-        ],
+        Awards: [],
+        Featured_Publications: [],
         Contacts: [
             { href: "tel:+33(0)778434608", icon: faPhone, text: "+33 (0) 7 78 43 46 08" },
+            { href: "mailto:pierre.louis.david@u.nus.edu", icon: faEnvelope, text: "pierre.louis.david@u.nus.edu" },
             { href: "mailto:pidavid@student.ethz.ch", icon: faEnvelope, text: "pidavid@student.ethz.ch" },
         ],
         Links: [
             { href: PierreCV, icon: faUser, text: 'CV' },
-            { href: 'https://www.linkedin.com/in/pierre-david-ethz-six/', icon: faLinkedin, text: 'LinkedIn' }
+            { href: 'https://www.linkedin.com/in/pierre-louis-david', icon: faLinkedin, text: 'LinkedIn' }
         ],
         Interests: [
-            '',
-            '',
-            '',
-            '',
-            ''
+            'Machine learning',
+            'Optimisation',
+            'Computer vision',
+            'Energy'
         ],
     },
     {
         ProfileName: 'Michelle',
         ProfileLink: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Michelle",
         ProfilePic: MichellePic,
-        Name: 'Qi Xuanning',
+        Name: 'QI Xuanning',
         Position: 'Visiting PhD Candidate from Harbin Institute of Technology',
         Biography: 'QI Xuanning is currently pursuing a doctoral degree in architecture at the Harbin Institute of Technology, and is a visiting PhD candidate at the National University of Singapore. She is also a student member of the Architectural Society of China. In her academic career, she has published five papers in academic conferences and journals, and has contributed to the compilation of ‘Unified Standard for Civil Building Design Illustrations’ (20J813). In addition, she has been granted three invention patents and one utility model patent. QI Xuanning has also participated in the design of over ten architectural projects and was recognized with the third-place prize in the architectural survey and design competition in Heilongjiang Province in 2022. Her research interests include computational design, daylight design, occupant behaviour, and visual cognition. In her free time, QI Xuanning enjoys exploring new cities and experiencing different cultures. She also likes to engage in outdoor activities, such as hiking and cycling, which inspire her to think creatively about the relationship between architecture and the natural environment.',
         Education: [
