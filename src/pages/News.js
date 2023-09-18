@@ -5,6 +5,7 @@ import Container from '../components/Container';
 import './News.css'
 import NewsGrid from '../components/NewsGrid';
 
+import PierrePic from './../components/Website Individual Information/Pierre/image.jpg';
 import PegahPic from './../components/Website Individual Information/Pegah/image.jpg';
 import RiccardoPublication from './../components/Website Data/riccardo-publication.jpg'
 import KellyPic from './../components/Website Individual Information/Kelly/image.jpg';
@@ -29,6 +30,13 @@ function News() {
     }, []);
 
     const newsData = [
+        {
+            NewsSectionName: 'Pierre',
+            imageSrc: PierrePic,
+            date: '18/09/2023',
+            title: 'Please welcome Pierre-Louis to the lab!',
+            content: 'The Building Robotics Lab is happy to have Pierre-Louis joining us as a visiting MSc student from ETH Zürich studying Mechanical Engineering and Computer Science. His research revolves around Machine Learning, Optimisation, Computer Vision, and Energy. Check out his full profile <a href="https://building-robotics-lab.github.io/brlab/#/individual_profile/Pierre" target="_blank"><b>here</b></a> to get to know him more!',
+        },
         {
             NewsSectionName: 'Pegah',
             imageSrc: PegahPic,
