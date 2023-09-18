@@ -62,12 +62,12 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2023.110771" }
                 ],
                 keywords: [
-                    "Digital twin",
-                    "Building management system",
-                    "Occupant-centric building",
-                    "Human-building interface",
+                    "Digital Twin",
+                    "Building Management System",
+                    "Occupant-Centric Building",
+                    "Human-Building Interface",
                     "Democratization",
-                    "Personal comfort"
+                    "Personal Comfort"
                 ],
                 highlights: [
                     "Design principles for a digital twin as occupant-building interface were developed.",
@@ -95,10 +95,10 @@ const JournalData = [
                 ],
                 keywords: [
                     "Decarbonization",
-                    "Smart buildings",
+                    "Smart Buildings",
                     "Optimization",
                     "Occupancy",
-                    "Heat loads"
+                    "Heat Loads"
                 ],
                 highlights: [
                     "Dynamic temperature setpoints are derived based on weather and occupancy.",
@@ -132,11 +132,11 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2022.109811" }
                 ],
                 keywords: [
-                    "Infrared thermography",
-                    "Computer vision",
-                    "Machine learning",
-                    "Thermal comfort",
-                    "Prediction model"
+                    "Infrared Thermography",
+                    "Computer Vision",
+                    "Machine Learning",
+                    "Thermal Comfort",
+                    "Prediction Model"
                 ],
                 highlights: [
                     "A novel approach is proposed to predict occupant thermal state via thermal camera.",
@@ -166,11 +166,11 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.enbuild.2022.112604" }
                 ],
                 keywords: [
-                    "Façade shading",
-                    "Building design optimization",
+                    "Façade Shading",
+                    "Building Design Optimization",
                     "Overall Thermal Transfer Value",
-                    "Energy savings",
-                    "Urban Heat Island and decarbonization"
+                    "Energy Savings",
+                    "Urban Heat Island and Decarbonization"
                 ],
                 highlights: [],
                 abstract: "In recent years, with the rapid development of cities across the globe and global warming, Urban Heat Island (UHI) and building cooling energy consumption have reached a point of perilous concern. The use of shading systems on building fenestrations has long been known as an effective strategy to minimise façade heat gain as well as glare, resulting in lower cooling energy consumption and indoor comfort. Expending the potentials of shading systems beyond conventional use, the present paper focuses on the effects of shading systems on opaque facades that is currently unaccounted for in simplified Overall Thermal Transfer Value (OTTV) calculations in standards adopted by many countries. A field study was first conducted to compare the effects of various shading configurations on an opaque façade. Subsequently, a simulation study was then conducted to quantify the effects of shading systems on opaque facades with varying thermal transmittance value (U-Value). The results of this study revealed numerous benefits for the deployment of shading systems on opaque building facades, which includes, reduction to building conductive heat gain, building cooling loads, microclimate temperature near the façade, as well as potential reduction to carbon emissions over the building lifecycle. Moreover, the paper also provides considerations for the selection shading configurations, as well as the considerations that would be required for the formulation of a more accurate simplified OTTV equation that would take into account the effects of shading systems on opaque facades.",
@@ -193,11 +193,11 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2022.109919" }
                 ],
                 keywords: [
-                    "Personal comfort model",
-                    "Physiological sensing",
-                    "Experiment planning",
-                    "Comfort modeling",
-                    "Machine learning",
+                    "Personal Comfort Model",
+                    "Physiological Sensing",
+                    "Experiment Planning",
+                    "Comfort Modeling",
+                    "Machine Learning",
                     "DOE"
                 ],
                 highlights: [],
@@ -290,13 +290,13 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2022.109681" }
                 ],
                 keywords: [
-                    "Building lifecycle",
-                    "Human-centered",
+                    "Building Lifecycle",
+                    "Human-Centered",
                     "Occupants",
                     "Built environment",
-                    "Well-being",
+                    "Well-Being",
                     "Interaction",
-                    "Quality of life"
+                    "Quality of Life"
                 ],
                 highlights: [
                     "The field of Human-Building Interaction (HBI) is defined.",
@@ -339,12 +339,12 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.erss.2022.102778" }
                 ],
                 keywords: [
-                    "Living lab",
-                    "Human-centric approach",
-                    "Multi-domain comfort",
-                    "Occupant behaviour",
-                    "Multidisciplinary research",
-                    "Energy efficiency in buildings"
+                    "Living Lab",
+                    "Human-Centric Approach",
+                    "Multi-Domain Comfort",
+                    "Occupant Behaviour",
+                    "Multidisciplinary Research",
+                    "Energy Efficiency in Buildings"
                 ],
                 highlights: [],
                 abstract: "Occupants play a key role in determining final building energy consumption. Empirical evidence must support occupants' modelling. Experiments on human responses to Indoor Environmental Quality (IEQ) are usually performed in test rooms or as in-field monitoring. Between these two approaches, living laboratories, often abbreviated as living labs, represent a valid alternative due to their resemblance to real-world settings. This allows observing actual behaviours while keeping the capability to reliably monitor and control the indoor environment. This work systematically reviewed the available information from 34 living labs for human comfort studies worldwide to define the scope, characteristics, and significance of living labs, for the first time. Most of the reviewed living labs are office environments, and only a few do not involve a university research institution in their operation and management. Most of them are in Europe and the United States, whereas there is a lack of such facilities in other locations and climate zones (e.g., tropics). A larger number of comfort studies in living labs is required to clarify the differences in the knowledge acquired in these experiments compared to in-field and laboratory ones. The review shows that living labs add opportunities for testing and optimizing innovations in human-centric solutions for comfortable green buildings. Through the living labs approach it is possible to holistically capture the influence of IEQ on occupant perception and the related response, to gather data on larger and more diverse groups of people, and to conduct multi-domain comfort studies involving multidisciplinary approaches given their real-life settings.",
@@ -372,12 +372,12 @@ const JournalData = [
                     { type: "PDF", url: "https://www.mdpi.com/2075-5309/12/8/1241/pdf?version=1660555175" }
                 ],
                 keywords: [
-                    "Non-intrusive sensing",
-                    "Personalized environments",
-                    "Controlled climate chamber",
-                    "Infrared thermography",
-                    "Smart buildings",
-                    "Energy efficiency"
+                    "Non-Intrusive Sensing",
+                    "Personalized Environments",
+                    "Controlled Climate Chamber",
+                    "Infrared Thermography",
+                    "Smart Buildings",
+                    "Energy Efficiency"
                 ],
                 highlights: [],
                 abstract: "Thermal comfort is one of the primary factors influencing occupant health, well-being, and productivity in buildings. Existing thermal comfort systems require occupants to frequently communicate their comfort vote via a survey which is impractical as a long-term solution. Here, we present a novel thermal infrared-fused computer vision sensing method to capture thermoregulation performance in a non-intrusive and non-invasive manner. In this method, we align thermal and visible images, detect facial segments (i.e., nose, eyes, face boundary), and accordingly read the temperatures from the appropriate coordinates in the thermal image. We focus on the human face since it is often clearly visible to cameras and is not merged into a hot background (unlike hands). We use a regularized Gaussian Mixture model to track the thermoregulation changes over time and apply a heuristic algorithm to extract hot and cold indices. We present a personalized and a generalized comfort modeling method, selected based on the availability of the occupant historical indices measurements in a neutral environment, and use the time-series of the hot and cold indices to define corrections to HVAC system operations in the form of setpoint constraints. To evaluate the efficacy of our proposed approach in responding to thermal stimuli, we designed a series of controlled experiments to simulate exposure to cold and hot environments. While applying personalized modeling showed an acceptable average accuracy of 91.3%, the generalized model’s average accuracy was only 65.2%. This shows the importance of having access to physiological records in modeling and assessing comfort. We also found that individual differences should be considered in selecting the cooling and heating rates when some knowledge of the occupant’s overall thermal preference is available.",
@@ -405,10 +405,10 @@ const JournalData = [
                 ],
                 keywords: [
                     "IAQ",
-                    "Indoor pollutants",
-                    "Ubiquitous IAQ sensors",
-                    "Personalized air quality",
-                    "Sensing standards"
+                    "Indoor Pollutants",
+                    "Ubiquitous IAQ Sensors",
+                    "Personalized Air Quality",
+                    "Sensing Standards"
                 ],
                 highlights: [],
                 abstract: "As humans spend more time indoors, ensuring acceptable indoor air quality (IAQ) through ubiquitous sensing systems has become a necessity. Although extensive studies have been conducted on the IAQ sensing systems, a holistic review of the performance and deployment of Ubiquitous IAQ Sensing (UIAQS) systems with associated requirements in IAQ sensing standards is still lacking. In this study, we first reviewed IAQ pollutants and other IAQ-related factors and the associated requirements in the prominent IAQ sensing standards. We found that while non-pollutant factors are influential on occupants’ perception of IAQ and their satisfaction, they do not have evaluation metrics in the IAQ standards. Then, we systematically reviewed field studies on UIAQS technologies in the literature. Specific classes of information were recorded and analyzed further. We found that the majority of the UIAQS systems did not meet the requirements of the prominent IAQ sensing standards and identified four primary research gaps. We concluded that a new holistic and personalized approach that incorporates UIAQS measurements and subjective feedback is needed. This study provides valuable insights for researchers and policymakers to better improve UIAQS technologies by developing personalized IAQ sensors and sensing standards.",
@@ -436,10 +436,10 @@ const JournalData = [
                     { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2352710221007580/pdfft?md5=b3d9cc53e5139a0eac8d19c33c7b64bf&pid=1-s2.0-S2352710221007580-main.pdf" }
                 ],
                 keywords: [
-                    "Positive pressure",
-                    "Door opening",
-                    "Infection control",
-                    "Operating room",
+                    "Positive Pressure",
+                    "Door Opening",
+                    "Infection Control",
+                    "Operating Room",
                     "Covid-19"
                 ],
                 highlights: [
@@ -491,18 +491,18 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.rser.2021.111359" }
                 ],
                 keywords: [
-                    "Test room",
+                    "Test Room",
                     "Laboratory",
-                    "Climate chamber",
-                    "Human comfort",
-                    "Human-centric experiments",
-                    "Thermal comfort",
-                    "Visual comfort",
-                    "Acoustic comfort",
-                    "Indoor air quality",
-                    "Multi-domain comfort",
-                    "Energy performance",
-                    "Indoor environmental quality"
+                    "Climate Chamber",
+                    "Human Comfort",
+                    "Human-Centric Experiments",
+                    "Thermal Comfort",
+                    "Visual Comfort",
+                    "Acoustic Comfort",
+                    "Indoor Air Quality",
+                    "Multi-Domain Comfort",
+                    "Energy Performance",
+                    "Indoor Environmental Quality"
                 ],
                 highlights: [
                     "Test rooms: environmentally controlled and equipped space to study human comfort.",
@@ -532,13 +532,13 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.jobe.2021.102436" }
                 ],
                 keywords: [
-                    "Natural ventilation",
+                    "Natural Ventilation",
                     "Badgir",
                     "Windcatcher",
-                    "Wing wall",
-                    "Passive cooling",
-                    "Indoor air quality",
-                    "Thermal comfort"
+                    "Wing Wall",
+                    "Passive Cooling",
+                    "Indoor Air Quality",
+                    "Thermal Comfort"
                 ],
                 highlights: [
                     "For the first time, a combination of upper wing wall and windcatcher was studied.",
@@ -567,12 +567,12 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1111/ina.12735" }
                 ],
                 keywords: [
-                    "3-D velocities",
-                    "Human movement",
-                    "Human-induced contamination",
-                    "Indoor airflow",
-                    "Infectious disease control",
-                    "Ultrasound sensor"
+                    "3-D Velocities",
+                    "Human Movement",
+                    "Human-Induced Contamination",
+                    "Indoor Airflow",
+                    "Infectious Disease Control",
+                    "Ultrasound Sensor"
                 ],
                 highlights: [],
                 abstract: "Human activity is known to leave significant effects on indoor airflow patterns. These patterns are carefully designed for many facilities such as cleanrooms, pharmaceutical settings, and healthcare environments, where human-induced wakes contribute to the transport of contaminants. Therefore, the knowledge about these wakes as it relates to indoor air quality is critical. As a result, a series of experiments were conducted in a controlled chamber to study the three-dimensional effects of true human walking on airflow. Experiments were designed to capture the effect of human walking under three different flow conditions, and for two different walking schemes. The results show that the effect of walking on the airflow is not negligible and can sustain up to 10 seconds after the moving body has passed. Walking on a straight line creates significant change in the velocity normal to the walking path and vertical to the plane of walking movement. These changes were detectable till 1.0 m away from the walking track. Also, the similarity between airflow patterns of walking once and twice illustrated a promising opportunity of predicting the flow patterns of random walk from a set of base cases.",
@@ -599,12 +599,12 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.apenergy.2020.114892" }
                 ],
                 keywords: [
-                    "Internet of things",
+                    "Internet of Things",
                     "Smartphone",
-                    "Wi-Fi network",
-                    "Energy-use behavior",
-                    "Deep learning",
-                    "Commercial buildings"
+                    "Wi-Fi Network",
+                    "Energy-Use Behavior",
+                    "Deep Learning",
+                    "Commercial Buildings"
                 ],
                 highlights: [
                     "We propose a novel IoT-based feedback mechanism in commercial buildings.",
@@ -635,12 +635,12 @@ const JournalData = [
                     { type: "PDF", url: "https://www.frontiersin.org/articles/10.3389/fbuil.2020.00049/pdf?isPublishedV2=False" }
                 ],
                 keywords: [
-                    "Machine learning",
-                    "Personal thermal comfort",
-                    "Data mining",
-                    "Human building interactions",
-                    "Buildings energy efficiency",
-                    "Intelligent personal thermal comfort systems"
+                    "Machine Learning",
+                    "Personal Thermal Comfort",
+                    "Data Mining",
+                    "Human Building Interactions",
+                    "Buildings Energy Efficiency",
+                    "Intelligent Personal Thermal Comfort Systems"
                 ],
                 highlights: [],
                 abstract: "In buildings, one or a combination of systems (e.g., central HVAC system, ceiling fan, desk fan, personal heater, and foot warmer) are often responsible for providing thermal comfort to the occupants. While thermal comfort has been shown to differ from person to person and vary over time, these systems are often operated based on prefixed setpoints and schedule of operations or at the request/routine of each individual. This leads to occupants’ discomfort and energy wastes. To enable the improvements in both comfort and energy efficiency autonomously, in this paper, we describe the necessity of an integrated system of sensors (e.g., wearable sensors/infrared sensors), infrastructure for enabling system interoperability, learning and control algorithms, and actuators (e.g., HVAC system setpoints, ceiling fans) to work under a governing central intelligent system. To assist readers with little to no exposure to artificial intelligence (AI), we describe the fundamentals of an intelligent entity (rational agent) and components of its problem-solving process (i.e., search algorithms, logic inference, and machine learning) and provide examples from the literature. We then discuss the current application of intelligent personal thermal comfort systems in buildings based on a comprehensive review of the literature. We finally describe future directions for enabling application of fully automated systems to provide comfort in an efficient manner. It is apparent that improvements in all aspects of an intelligent system are be needed to better ascertain the correct combination of systems to activate and for how long to increase the overall efficiency of the system and improve comfort.",
@@ -669,13 +669,13 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.enbuild.2020.109805" }
                 ],
                 keywords: [
-                    "3-dimensional air velocity monitoring",
-                    "Indoor anemometer",
+                    "3-Dimensional Air Velocity Monitoring",
+                    "Indoor Anemometer",
                     "Tetrahedron",
-                    "Ultrasonic anemometry",
-                    "Ultrasonic pulse time of flight",
-                    "MEMS ultrasound",
-                    "Sonic temperature"
+                    "Ultrasonic Anemometry",
+                    "Ultrasonic Pulse Time of Flight",
+                    "MEMS Ultrasound",
+                    "Sonic Temperature"
                 ],
                 highlights: [],
                 abstract: "The ability to inexpensively monitor indoor air speed and direction on a continuous basis would transform the control of environmental quality and energy use in buildings. Air motion transports energy, ventilation air, and pollutants around building interiors and their occupants, and measured feedback about it could be used in numerous ways to improve building operation. However indoor air movement is rarely monitored because of the expense and fragility of sensors. This paper describes a unique anemometer developed by the authors, that measures 3-dimensional air velocity for indoor environmental applications, leveraging new microelectromechanical systems (MEMS) technology for ultrasonic range-finding. The anemometer uses a tetrahedral arrangement of four transceivers, the smallest number able to capture a 3-dimensional flow, that provides greater measurement redundancy than in existing anemometry. We describe the theory, hardware, and software of the anemometer, including algorithms that detect and eliminate shielding errors caused by the wakes from anemometer support struts. The anemometer has a resolution and starting threshold of 0.01 m/s, an absolute air speed error of 0.05 m/s at a given orientation with minimal filtering, 3.1° angle- and 0.11 m/s velocity errors over 360° azimuthal rotation, and 3.5° angle- and 0.07 m/s velocity errors over 135° vertical declination. It includes radio connection to internet and is able to operate standalone for multiple years on a standard battery. The anemometer also measures temperature and has a compass and tilt sensor so that flow direction is globally referenced regardless of anemometer orientation. The retail cost of parts is $100 USD, and all parts snap together for ease of assembly.",
@@ -733,10 +733,10 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2019.106435" }
                 ],
                 keywords: [
-                    "Thermal sensitivity",
-                    "Thermal comfort",
-                    "Personal comfort system",
-                    "Wearable comfort devices"
+                    "Thermal Sensitivity",
+                    "Thermal Comfort",
+                    "Personal Comfort System",
+                    "Wearable Comfort Devices"
                 ],
                 highlights: [
                     "Detailed thermal sensitivity maps have been created for the entire body.",
@@ -763,11 +763,11 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.jobe.2019.100948" }
                 ],
                 keywords: [
-                    "Office buildings",
-                    "Energy-use behavior",
-                    "Energy efficiency",
-                    "Energy intensity",
-                    "Internet of things"
+                    "Office Buildings",
+                    "Energy-Use Behavior",
+                    "Energy Efficiency",
+                    "Energy Intensity",
+                    "Internet of Things"
                 ],
                 highlights: [
                     "We propose a novel approach for understanding energy-use intensity and efficiency in office buildings.",
@@ -798,11 +798,11 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.jobe.2019.100864" }
                 ],
                 keywords: [
-                    "Wi-Fi networks",
-                    "Occupants' energy-use patterns",
-                    "Miscellaneous electric loads",
-                    "Office buildings",
-                    "Internet of things"
+                    "Wi-Fi Networks",
+                    "Occupants' Energy-Use Patterns",
+                    "Miscellaneous Electric Loads",
+                    "Office Buildings",
+                    "Internet of Things"
                 ],
                 highlights: [
                     "We empirically examined the correlation of Wi-Fi flows and miscellaneous electric loads in office buildings.",
@@ -834,11 +834,11 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1109/JSEN.2019.2920648" }
                 ],
                 keywords: [
-                    "Ultrasonic anemometry",
-                    "Pulsed ultrasound",
-                    "Complex phase angle",
-                    "MEMS ultrasound",
-                    "Piezoelectric micromachined ultrasound transceivers"
+                    "Ultrasonic Anemometry",
+                    "Pulsed Ultrasound",
+                    "Complex Phase Angle",
+                    "MEMS Ultrasound",
+                    "Piezoelectric Micromachined Ultrasound Transceivers"
                 ],
                 highlights: [],
                 abstract: "Indoor air movement affects many functions of buildings, including ventilation and air quality, comfort and health of occupants, fire safety, and building energy use. Accurate measurement of air movement has been difficult and expensive over the extended periods of time, especially for velocities below 1 m/s. A new type of high frequency ultrasonic transceiver provides high sensitivity measurements and low cost through microelectromechanical systems (MEMS) manufacturing. However, at high frequencies, the conventional ultrasonic signal processing algorithms function only over small ranges of ambient temperature and velocity. In this paper, we describe three algorithms that use the complex phase angle of an ultrasonic pulse to measure velocity and temperature over extended ranges of temperature and velocity. They employ heuristics to track the vibration cycle of the measured phase angle. These methods are applied in a pulse-based anemometer whose 176 kHz MEMS transceivers both transmit and receive. In wind tunnel tests between 0-4 m/s, the tracking algorithm with a low-pass filter measured air speed with high sensitivity and accuracy (0.026 m/s mean absolute error). The ability to monitor to this accuracy with such low power draw and low cost is currently unprecedented in the industry.",
@@ -867,12 +867,12 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.jobe.2018.11.015" }
                 ],
                 keywords: [
-                    "CO2 exposure",
-                    "Personal indoor air quality",
-                    "Inhalation zone CO2 concentration",
-                    "Occupant behavior",
-                    "Wearable CO2 sensor",
-                    "Ubiquitous sensing"
+                    "CO2 Exposure",
+                    "Personal Indoor Air Quality",
+                    "Inhalation Zone CO2 Concentration",
+                    "Occupant Behavior",
+                    "Wearable CO2 Sensor",
+                    "Ubiquitous Sensing"
                 ],
                 highlights: [
                     "High CO2 concentration in the inhalation zone was introduced as a personal CO2 bubble.",
@@ -908,9 +908,9 @@ const JournalData = [
                 ],
                 keywords: [
                     "Uncertainty",
-                    "Individual difference",
-                    "Thermal comfort",
-                    "Subjective survey"
+                    "Individual Difference",
+                    "Thermal Comfort",
+                    "Subjective Survey"
                 ],
                 highlights: [],
                 abstract: "This paper presents an uncertainty analysis of subjective thermal comfort measurement, which was overlooked in some subjective thermal comfort studies. Three chamber experiments were conducted to collect the data and to analyze how the uncertainty of subjective measurement is influenced by the survey instrument and the experiment protocol. Four widely-utilized subjective indicators were examined: thermal sensation, humidity sensation, draught sensation and thermal satisfaction. It was found that the Standard Uncertainty, defined as the Standard Error of the Mean, of subjective thermal comfort measurement would decrease with the increasing number of person-votes (number of subjects times votes per subject). When the person-votes were above 40, the Standard Uncertainty of subjective measurement was within 3% of the total scale length, confirming the precision and reliability of subjective thermal comfort measurement. It was found the measurement of thermal sensation/satisfaction and humidity sensation had similar uncertainty level, while the measurement of draught sensation had higher uncertainty. Discrete multiple-points scales (Likert) are recommended for subjective thermal comfort measurement since continuous scales enlarge intra-individual differences.",
@@ -937,12 +937,12 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.apenergy.2018.08.096" }
                 ],
                 keywords: [
-                    "Machine learning",
-                    "Workplace interaction",
-                    "Interaction detection",
-                    "Occupant behavior modeling",
-                    "Ubiquitous computing",
-                    "Buildings energy efficiency"
+                    "Machine Learning",
+                    "Workplace Interaction",
+                    "Interaction Detection",
+                    "Occupant Behavior Modeling",
+                    "Ubiquitous Computing",
+                    "Buildings Energy Efficiency"
                 ],
                 highlights: [
                     "A framework to learn occupant interactions from ambient sensing technologies is proposed.",
@@ -972,12 +972,12 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2018.07.008" }
                 ],
                 keywords: [
-                    "Thermal comfort",
-                    "Building energy saving",
-                    "Personal comfort system (PCS)",
-                    "Local heating/cooling",
-                    "Heated and cooled chair",
-                    "Corrective power (CP)"
+                    "Thermal Comfort",
+                    "Building Energy Saving",
+                    "Personal Comfort System (PCS)",
+                    "Local Heating/Cooling",
+                    "Heated and Cooled Chair",
+                    "Corrective Power (CP)"
                 ],
                 highlights: [
                     "A suite of personal comfort system (PCS) devices was built and evaluated.",
@@ -1005,12 +1005,12 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.jobe.2018.06.012" }
                 ],
                 keywords: [
-                    "HVAC systemOptimal control",
-                    "Setpoint control",
-                    "Building energy optimization",
-                    "Spatiotemporal scale",
-                    "Occupant comfort",
-                    "Optimal control"
+                    "HVAC System",
+                    "Setpoint Control",
+                    "Building Energy Optimization",
+                    "Spatiotemporal Scale",
+                    "Occupant Comfort",
+                    "Optimal Control"
                 ],
                 highlights: [
                     "HVAC spatiotemporal control parameters under randomized constraints are studied.",
@@ -1042,10 +1042,10 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2018.04.040" }
                 ],
                 keywords: [
-                    "Individual difference",
-                    "Comfort temperature",
-                    "Individual comfort model",
-                    "Personal comfort systems"
+                    "Individual Difference",
+                    "Comfort Temperature",
+                    "Individual Comfort Model",
+                    "Personal Comfort Systems"
                 ],
                 highlights: [],
                 abstract: "Human individual differences widely and markedly affect thermal comfort and should be carefully considered in the design and operation of the built environment. This paper aims to list and examine the magnitude and significance of individual difference in the preferred/neutral/comfort temperature through reviewing previous climate chamber and field studies. Causal factors for individual differences are investigated, including sex, age and etc. There is no clear and consistent conclusions as to the significance and size of inter-group differences in thermal comfort (between females and males, or the young and the old). To address the issue of individual difference, a paradigm shift from centralized to personalized air condition is on the way with the following three steps: first, collecting individual physiological and psychological response; second, predict individual comfort with machine learning algorithms; and third, accommodating individual difference with Personalized Comfort Systems.",
@@ -1068,11 +1068,11 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.apenergy.2017.11.055" }
                 ],
                 keywords: [
-                    "Building energy efficiency",
-                    "Building automation",
-                    "Activity recognition",
-                    "Appliance control",
-                    "Waste detection"
+                    "Building Energy Efficiency",
+                    "Building Automation",
+                    "Activity Recognition",
+                    "Appliance Control",
+                    "Waste Detection"
                 ],
                 highlights: [
                     "An unsupervised framework to detect activities and potential savings in real-time.",
@@ -1101,12 +1101,12 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.apenergy.2017.11.021" }
                 ],
                 keywords: [
-                    "Thermal comfort",
-                    "Human sensing",
-                    "Infrared thermography",
-                    "Personal comfort",
-                    "Unsupervised learning",
-                    "Hidden Markov models"
+                    "Thermal Comfort",
+                    "Human Sensing",
+                    "Infrared Thermography",
+                    "Personal Comfort",
+                    "Unsupervised Learning",
+                    "Hidden Markov Models"
                 ],
                 highlights: [
                     "A non-contact and non-invasive data acquisition method via infrared thermography was utilized.",
@@ -1139,12 +1139,12 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.enbuild.2017.07.053" }
                 ],
                 keywords: [
-                    "HVAC system",
-                    "Energy efficiency",
-                    "Optimal control",
-                    "Online learning",
-                    "Setpoint optimization",
-                    "Adaptive learning"
+                    "HVAC System",
+                    "Energy Efficiency",
+                    "Optimal Control",
+                    "Online Learning",
+                    "Setpoint Optimization",
+                    "Adaptive Learning"
                 ],
                 highlights: [
                     "An online learning algorithm for optimization of HVAC system is presented.",
@@ -1172,11 +1172,11 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.autcon.2017.03.003" }
                 ],
                 keywords: [
-                    "Fatigue assessment",
+                    "Fatigue Assessment",
                     "Thermoregulation",
-                    "Wearable sensing",
-                    "Construction safety",
-                    "Physiological monitoring"
+                    "Wearable Sensing",
+                    "Construction Safety",
+                    "Physiological Monitoring"
                 ],
                 highlights: [
                     "An approach for monitoring of fatigue in construction workers using wearable sensors.",
@@ -1206,12 +1206,12 @@ const JournalData = [
                 ],
                 keywords: [
                     "Automation",
-                    "Occupant preferences",
-                    "Energy efficiency",
-                    "Adjustable autonomy",
-                    "Adaptive autonomy",
-                    "Appliance control",
-                    "Lighting control"
+                    "Occupant Preferences",
+                    "Energy Efficiency",
+                    "Adjustable Autonomy",
+                    "Adaptive Autonomy",
+                    "Appliance Control",
+                    "Lighting Control"
                 ],
                 highlights: [],
                 abstract: "In recent years, technological advances have substantially extended the capabilities of automation systems in buildings. Despite the achieved advances, automation systems have not been widely adopted by building occupants. This paper presents our investigations on automation preferences of occupants for the control of lighting systems and appliances in residential buildings. A survey was carried out to determine how preferences for level of automation vary by contexts as well as individuals’ personalities and demographic characteristics. The contexts investigated in this study include rescheduling an energy consuming activity, activity-based appliance state control, and lighting control. The collected data from 250 respondents were analyzed using Generalized Linear Mixed Models. Our findings demonstrate that in all context no automation is the least preferred option. For rescheduling an energy consuming activity, an automation level with higher user participation is more preferred. For activity-based appliance state control and lighting control, levels of automation with lower user participation are more preferred. Our findings also indicate that income and education levels and also personality traits of agreeableness, neuroticism and openness to experience affect the preference of particular automation levels over the others. Findings from this study can be used in designing user-centered automation systems that lead to potentially more satisfying operation and hence, could enhance automation acceptability.",
@@ -1234,7 +1234,7 @@ const JournalData = [
                     { type: "PDF", url: "https://jfr.ut.ac.ir/article_62587_0eb9de4da7498b31e7f3c91ba89a01f0.pdf?lang=en" },
                 ],
                 keywords: [
-                    "Fama and French five-factor Model",
+                    "Fama and French Five-Factor Model",
                     "GRS Test",
                     "Investment",
                     "Profitability"
@@ -1264,12 +1264,12 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2016.09.005" }
                 ],
                 keywords: [
-                    "Thermoregulation system",
-                    "Thermal comfort",
-                    "Infrared thermography",
-                    "Energy efficiency",
+                    "Thermoregulation System",
+                    "Thermal Comfort",
+                    "Infrared Thermography",
+                    "Energy Efficiency",
                     "Sensing",
-                    "Physiological measurements"
+                    "Physiological Measurements"
                 ],
                 highlights: [
                     "A data acquisition system for monitoring thermoregulation performance is introduced.",
@@ -1297,10 +1297,10 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.energy.2016.04.099" }
                 ],
                 keywords: [
-                    "HVAC system",
-                    "Energy efficiency",
-                    "Building information modeling (BIM)",
-                    "OccOccupancy diversityupancy",
+                    "HVAC System",
+                    "Energy Efficiency",
+                    "Building Information Modeling (BIM)",
+                    "Occupancy Diversity",
                     "Simulation",
                     "Loads"
                 ],
@@ -1331,12 +1331,12 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.apenergy.2015.12.115" }
                 ],
                 keywords: [
-                    "HVAC system",
-                    "Energy consumption",
+                    "HVAC System",
+                    "Energy Consumption",
                     "Setpoint",
                     "Deadband",
-                    "Climate impact",
-                    "Energy savings"
+                    "Climate Impact",
+                    "Energy Savings"
                 ],
                 highlights: [
                     "We provide a systematic approach to quantify the impact of factors on energy usage.",
@@ -1369,12 +1369,12 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2015.04.017" }
                 ],
                 keywords: [
-                    "Thermal comfort",
-                    "Probabilistic modeling",
-                    "Online learning",
-                    "Adaptive stochastic modeling",
-                    "Personalized comfort",
-                    "Commercial buildings"
+                    "Thermal Comfort",
+                    "Probabilistic Modeling",
+                    "Online Learning",
+                    "Adaptive Stochastic Modeling",
+                    "Personalized Comfort",
+                    "Commercial Buildings"
                 ],
                 highlights: [
                     "An adaptive stochastic modeling for quantifying personalized thermal comfort is proposed.",
@@ -1406,11 +1406,11 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.enbuild.2014.09.055" }
                 ],
                 keywords: [
-                    "Thermal comfort",
-                    "HVAC system",
-                    "Energy conservation",
-                    "Office buildings",
-                    "Comfort energy tradeoff"
+                    "Thermal Comfort",
+                    "HVAC System",
+                    "Energy Conservation",
+                    "Office Buildings",
+                    "Comfort Energy Tradeoff"
                 ],
                 highlights: [
                     "A knowledge-based approach for improving HVAC system energy efficiency is proposed.",
@@ -1439,11 +1439,11 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.enbuild.2013.11.066" }
                 ],
                 keywords: [
-                    "Thermal comfort",
-                    "HVAC control",
-                    "Energy efficiency",
-                    "Participatory sensing",
-                    "Personalized control"
+                    "Thermal Comfort",
+                    "HVAC Control",
+                    "Energy Efficiency",
+                    "Participatory Sensing",
+                    "Personalized Control"
                 ],
                 highlights: [
                     "We proposed a framework that learns building occupants thermal comfort profiles.",
@@ -1473,10 +1473,10 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1016/j.firesaf.2013.11.010" }
                 ],
                 keywords: [
-                    "Building fire emergency",
-                    "Card game",
-                    "First responder",
-                    "Situational awareness",
+                    "Building Fire Emergency",
+                    "Card Game",
+                    "First Responder",
+                    "Situational Awareness",
                     "Survey"
                 ],
                 highlights: [
@@ -1507,10 +1507,10 @@ const JournalData = [
                     { type: "DOI", url: "https://doi.org/10.1061/(ASCE)CP.1943-5487.0000300" }
                 ],
                 keywords: [
-                    "Thermal comfort",
-                    "HVAC system",
-                    "Human-building interaction",
-                    "Commercial buildings",
+                    "Thermal Comfort",
+                    "HVAC System",
+                    "Human-Building Interaction",
+                    "Commercial Buildings",
                     "Learning",
                     "Energy"
                 ],

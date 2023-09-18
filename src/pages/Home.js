@@ -123,16 +123,12 @@ function Home() {
                 />
 
                 <ResearchSectionRight
-                    title="INTELLIGENT INTELLIGENT ENVIRONMENTS"
+                    title="INTELLIGENT ENVIRONMENTS"
                     imageUrl={FourthResearchImage}
-                    text="BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR 
-                    BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR 
-                    BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR 
-                    BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR 
-                    BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR BLA BLA CONNOR."
+                    text="Our research investigates the democratisation of virtual power plants (VPP) for optimal monetisation and grid flexibility to empower end-users to participate effectively. By leveraging artificial intelligence (AI), we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into two halves: one explores user impacts on VPPs and behaviour modeling, while the other employs machine learning for automated energy market participation."
                 />
                 <div className="HomeButtons">
-                    <Link to="/join_the_lab"><p id='JoinButton'>LEARN MORE ABOUT OUT RESEARCH</p></Link>
+                    <Link to="/join_the_lab"><p id='JoinButton'>LEARN MORE ABOUT OUR RESEARCH</p></Link>
                 </div>
             </Container>
 

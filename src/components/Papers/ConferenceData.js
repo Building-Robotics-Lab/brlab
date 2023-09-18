@@ -28,11 +28,11 @@ const ConferenceData = [
                     { type: "DOI", url: "https://doi.org/10.1109/SENSORS43011.2019.8956901" }
                 ],
                 keywords: [
-                    "Ultrasonic anemometer",
-                    "Pulsed ultrasound",
-                    "Indoor anemometer",
-                    "MEMS ultrasound",
-                    "3-dimensional air velocity"
+                    "Ultrasonic Anemometer",
+                    "Pulsed Ultrasound",
+                    "Indoor Anemometer",
+                    "MEMS Ultrasound",
+                    "3-Dimensional Air Velocity"
                 ],
                 abstract: "The ability to monitor the direction and speed of the air within buildings would enable closed-loop control of systems, improving occupants' comfort, health, and safety, and reducing building energy use. Leveraging inexpensive and low-power Micro-Electro-Mechanical Systems (MEMS) technology used in ultrasonic range-finding, we have developed a unique anemometer (i.e., air velocity sensor) that measures 3-dimensional air velocity for indoor environmental applications. The anemometer uses a novel tetrahedral arrangement of four ultrasonic transceivers, the minimum number of transducers required to capture a 3-dimensional flow. We describe in this paper the hardware and software of the anemometer, and the algorithms that eliminate or compensate for the shielding effects of its support struts and base. The angular and speed accuracies for the anemometer are unprecedented for an inexpensive instrument. In a speed range of 0 - 6 m/s, error averages are ±3% for air speed, 2.9° for yaw (azimuth) angle, and 2.3° for pitch (vertical declination) angle. The anemometer is simple to assemble and needs no calibration.",
                 display_image: AliPaper1
@@ -90,12 +90,12 @@ const ConferenceData = [
                     { type: "PDF", url: "https://itc.scix.net/pdfs/LC3_2017_paper_022.pdf" }
                 ],
                 keywords: [
-                    "Immersive virtual environment",
-                    "Virtual reality",
-                    "Physical environment",
-                    "Thermal perception",
-                    "Building systems",
-                    "Occupant-building systems interactions"
+                    "Immersive Virtual Environment",
+                    "Virtual Reality",
+                    "Physical Environment",
+                    "Thermal Perception",
+                    "Building Systems",
+                    "Occupant-Building Systems Interactions"
                 ],
                 abstract: "Occupants' interactions with building systems, as well as occupant-related factors considerably influence a building's energy consumption. However, understanding occupant-system interactions related to thermal changes in built environments could be cumbersome due to the resources needed to create these environments or the resources needed for conducting controlled experiments in existing Physical Environments (PEs). One avenue is to use Immersive Virtual Environments (IVEs) where occupants' interactions with the built environment are measured in the context of thermal stimuli. However, for validating the adequacy of using IVEs for understanding occupant interactions with building systems and/or elements, it is imperative to first investigate if IVEs are proper representations of PEs. In this study, we benchmark IVEs to the PEs with regards to user perceptions relating to thermal stimuli. In a human subject experiment, we use surveys and subjective thermal votes both in the IVE and PE, where participants experience both hot and cold indoor thermal conditions. Perceived thermal comfort and satisfaction votes are analysed by using paired t-tests and ANOVA. The change parameters are defined for identifying the direction of perceived thermal comfort and satisfaction. Statistical inferences show that change in occupants' perceived thermal comfort and satisfaction in IVE and PE are not significantly different, and direction of the change is positive in majority of the cases (i.e., 100% of the participants were comfortable in PE, almost 95% of the participants were comfortable in IVE, 79 % were satisfied in PE, 74% were satisfied in IVE at the end of the experiment)."
             },

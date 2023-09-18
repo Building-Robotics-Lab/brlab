@@ -123,10 +123,10 @@ function Research() {
                         </div>
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">
-                            <p>Chen, K., Xu, Q., Leow, B. and Ghahramani, A., 2022. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0360132322011490" target="_blank"><b>Personal thermal comfort models based on physiological measurements-A design of experiments based review</b></a>. <i>Building and Environment</i>, <i>228</i>, p.109919.</p>
+                            <p>Chen, K., Xu, Q., Leow, B. and Ghahramani, A., 2022. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0360132322011490" target="_blank"><b>Personal thermal comfort models based on physiological measurements-A design of experiments based review</b></a>. <i>Building and Environment</i>, <i>228</i>, 109919.</p>
                             <p>Chen, K. and Ghahramani, A., 2023. <b>A Transformer-based Architecture for Predicting Preferred Temperature Setpoints Leveraging Big Data</b>. <i>Building and Environment</i>. [under review]</p>
                         </div>
-                        <p><a href="https://building-robotics-lab.github.io/brlab/#/ComfortGPT" target="_blank"><b>ComfortGPT</b></a> (tool UI/UX by <a href="https://building-robotics-lab.github.io/brlab/#/individual_profile/Ilyas">Ilyas Dawoodjee</a> & <a href="https://building-robotics-lab.github.io/brlab/#/individual_profile/Connor">Connor Aucremanne</a>)</p>
+                        <p><a href="https://building-robotics-lab.github.io/brlab/#/ComfortGPT" target="_blank"><b>ComfortGPT</b></a> (UI/UX by <a href="https://building-robotics-lab.github.io/brlab/#/individual_profile/Ilyas">Ilyas Dawoodjee</a> & <a href="https://building-robotics-lab.github.io/brlab/#/individual_profile/Connor">Connor Aucremanne</a>)</p>
                     </div>
                     <div className='theme_section' id='theme1_section'>
                         <div className="theme_details">
@@ -141,7 +141,7 @@ function Research() {
                             <p>Talami, R., Dawoodjee, I. and Ghahramani, A., 2023. <a href="https://www.sciencedirect.com/science/article/pii/S2666123323000612?via%3Dihub" target="_blank"><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></a>. <i>Energy and Built Environment</i>.</p>
                             <p>Talami, R., Dawoodjee, I. and Ghahramani, A., 2023. <b>Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns</b>. <i>Applied Energy</i>. [under review]</p>
                         </div>
-                        <p><a href="https://building-robotics-lab.github.io/brlab/#/optimal_temperature_setpoint_tool" target="_blank"><b>Optimal Temperature Setpoint Tool</b></a> (tool UI/UX by <a href="https://building-robotics-lab.github.io/brlab/#/individual_profile/Ilyas">Ilyas Dawoodjee</a> & <a href="https://building-robotics-lab.github.io/brlab/#/individual_profile/Connor">Connor Aucremanne</a>)</p>
+                        <p><a href="https://building-robotics-lab.github.io/brlab/#/optimal_temperature_setpoint_tool" target="_blank"><b>Optimal Temperature Setpoint Tool</b></a> (UI/UX by <a href="https://building-robotics-lab.github.io/brlab/#/individual_profile/Ilyas">Ilyas Dawoodjee</a> & <a href="https://building-robotics-lab.github.io/brlab/#/individual_profile/Connor">Connor Aucremanne</a>)</p>
                     </div>
                 </div>
             </Container>
@@ -177,12 +177,11 @@ function Research() {
                         </div>
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">
-                            <p>KeyObjs</p>
-                            <p>KeyObjs</p>
-                            <p>KeyObjs</p>
-                            <p>KeyObjs</p>
+                            <p>Recreate and implement state-of-the-art algorithms as outlined from the 120+ papers filtered from the 2,000+ papers.</p>
+                            <p>Develop a user-friendly framework that allows future rPPG researchers to generate evaluation results at the click of a button.</p>
+                            <p>Apply these algorithms to widely-used public datasets to obtain results for a fair comparison.</p>
+                            <p>Visit <a href="https://github.com/blank-ed/remote_PPG" target="_blank"><b>GitHub - rPPG</b></a> to find the actual implementations of the state-of-the-art rPPG algorithms.</p>
                         </div>
-                        <p>Visit <a href="https://github.com/blank-ed/remote_PPG" target="_blank"><b>GitHub - rPPG</b></a> to find the actual implementations of the state-of-the-art rPPG algorithms</p>
                     </div>
                     <div className='theme_section' id='theme2_section'>
                         <div className="theme_details">
@@ -215,7 +214,7 @@ function Research() {
                         </div>
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">
-                            <p>Shah, I., Soh, B., Lim, C., Lau, S. K., and Ghahramani, A., 2023. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778822007757" target="_blank"><b>Thermal transfer and temperature reductions from shading systems on opaque facades: Quantifying the impacts of influential factors</b></a>. <i>Energy and Buildings</i>, <i>278</i>, p.112604.</p>
+                            <p>Shah, I., Soh, B., Lim, C., Lau, S. K., and Ghahramani, A., 2023. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778822007757" target="_blank"><b>Thermal transfer and temperature reductions from shading systems on opaque facades: Quantifying the impacts of influential factors</b></a>. <i>Energy and Buildings</i>, <i>278</i>, 112604.</p>
                             <p>Shah, I. and Ghahramani, A., 2023. <b>Porous Plant Form-Induced Amplification of Evapotranspiration for Enhanced Cooling in Vertical Greenery Systems</b>. <i>Building and Environment</i>. [under review]</p>
                         </div>
                     </div>
