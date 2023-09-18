@@ -109,6 +109,7 @@ function ComfortGPT() {
     setStValues([...initialStValues]);
     setExtremeOtIndices({});
     setExtremeStIndices({});
+    setTemperature(options[0].value)
   };
 
   // Simulate Button
@@ -125,10 +126,7 @@ function ComfortGPT() {
     let x_heat_highlight_converted = convertTemperature_forHighlightLines(test, temperature, x_heat_highlight);
     let y_heat_highlight_converted = convertTemperature_forHighlightLines(test, temperature, y_heat_highlight);
     let x_cool_highlight_converted = convertTemperature_forHighlightLines(test, temperature, x_cool_highlight);
-    let y_cool_highlight_converted = convertTemperature_forHighlightLines(initialTemperatureScale, temperature, y_cool_highlight);
-
-    console.log(x_heat_highlight)
-    console.log(x_heat_highlight_converted)
+    let y_cool_highlight_converted = convertTemperature_forHighlightLines(test, temperature, y_cool_highlight);
 
     let xy_heat_highlight_dict = x_heat_highlight.map((x_value, i) => {
       return { xval: x_value, yval: y_heat_highlight[i] };
@@ -139,6 +137,15 @@ function ComfortGPT() {
     });
 
     let combined_data = xy_heat_highlight_dict.concat(xy_cool_highlight_dict);
+
+    let width = document.getElementById('graph').offsetWidth;
+    let height = document.getElementById('graph').offsetHeight;
+
+    const x = d3.scaleLinear()
+      .range([0, width]);
+
+    const y = d3.scaleLinear()
+      .range([height, 0])
   }
 
   return (
@@ -202,8 +209,8 @@ function ComfortGPT() {
               </div>
             </div>
           </div>
-          <div className="outputs">
-            <p>p</p>
+          <div className="outputs" id='graph'>
+
           </div>
         </div>
       </Container>
