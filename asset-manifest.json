@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brlab/static/css/main.33678c4b.css",
-    "main.js": "/brlab/static/js/main.2e4c15d8.js",
+    "main.css": "/brlab/static/css/main.ad40e5d5.css",
+    "main.js": "/brlab/static/js/main.573692ee.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
     "static/media/Iqbal_DT2.png": "/brlab/static/media/Iqbal_DT2.73b332b29a8b111f14a7.png",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
@@ -16,9 +16,9 @@
     "static/media/sensing@2x.png": "/brlab/static/media/sensing@2x.bd3b1b07568490f220bf.png",
     "static/media/fbuil-06-00049-g007.jpeg": "/brlab/static/media/fbuil-06-00049-g007.94946d82915fc9db4774.jpeg",
     "static/media/1-s2.0-S-gr13_lrg.jpg": "/brlab/static/media/1-s2.0-S0378778817323988-gr13_lrg.23c5e915a9a3be649484.jpg",
-    "static/media/prof_CV.pdf": "/brlab/static/media/prof_CV.c06bcd661b5a77a068bb.pdf",
+    "static/media/prof_CV.pdf": "/brlab/static/media/prof_CV.05de42cacba81e714ecf.pdf",
+    "static/media/CV.pdf": "/brlab/static/media/CV.8df964af037d1af0377e.pdf",
     "static/media/1-s2.0-S-gr4_lrg.jpg": "/brlab/static/media/1-s2.0-S2352710219305200-gr4_lrg.b2aef02f62642b5a14e1.jpg",
-    "static/media/CV.pdf": "/brlab/static/media/CV.545b3ed2ae713b2d4a84.pdf",
     "static/media/kate_pub1.png": "/brlab/static/media/kate_pub1.7c9b4754e74f4e91cec8.png",
     "static/media/Iqbal_VGS.jpg": "/brlab/static/media/Iqbal_VGS.32f1800758ee053f0bba.jpg",
     "static/media/1-s2.0-S235271022100293X-ga1_lrg.jpg": "/brlab/static/media/1-s2.0-S235271022100293X-ga1_lrg.46bd20e7a76701ab5959.jpg",
@@ -59,11 +59,11 @@
     "static/media/Riccardo1.jpg": "/brlab/static/media/Riccardo1.e684976984904e794400.jpg",
     "static/media/NUSLOGO-removebg-preview.png": "/brlab/static/media/NUSLOGO-removebg-preview.5dd0ad9bdd141b9217c1.png",
     "index.html": "/brlab/index.html",
-    "main.33678c4b.css.map": "/brlab/static/css/main.33678c4b.css.map",
-    "main.2e4c15d8.js.map": "/brlab/static/js/main.2e4c15d8.js.map"
+    "main.ad40e5d5.css.map": "/brlab/static/css/main.ad40e5d5.css.map",
+    "main.573692ee.js.map": "/brlab/static/js/main.573692ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.33678c4b.css",
-    "static/js/main.2e4c15d8.js"
+    "static/css/main.ad40e5d5.css",
+    "static/js/main.573692ee.js"
   ]
 }
