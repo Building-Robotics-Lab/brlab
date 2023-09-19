@@ -109,6 +109,8 @@ function ComfortGPT() {
   };
 
   // Reset Button
+  const [isReset, setIsReset] = useState(false);  // Add a new state to track reset status
+
   const Reset = () => {
     setOtValues([...initialOtValues]);
     setStValues([...initialStValues]);
@@ -118,23 +120,40 @@ function ComfortGPT() {
     setInitialTemperatureScale(options[0].value);
     setDrawLines(false);
     SimulateButton(false);
+    setShowOutput('none');
+    setIsReset(true);  // Set the reset flag when the reset function is triggered
   };
 
   useEffect(() => {
-    const handleResize = () => {
+    if (!isReset) {
+      const handleResize = () => {
+        SimulateButton(drawLines);
+      };
       SimulateButton(drawLines);
-    };
-    SimulateButton(drawLines);
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+      window.addEventListener("resize", handleResize);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    } else {
+      setIsReset(false);  // Reset the flag after handling it
+    }
   }, [initialTemperatureScale, temperature, drawLines, otValues, stValues, extremeOtIndices, extremeStIndices, initialOtValues, initialStValues]);
+
+  let x_heat_highlight_csv;
+  let y_heat_highlight_csv;
+  let x_cool_highlight_csv;
+  let y_cool_highlight_csv;
+  let scale_csv;
 
   // Simulate Button
   const SimulateButton = async (inputVar) => {
     let shouldDrawLines = inputVar;
     setDrawLines(shouldDrawLines)
+    if (shouldDrawLines === true) {
+      setShowOutput('flex')
+    } else {
+      setShowOutput('none')
+    }
 
     const filteredPairs = filterPairs(otValues, stValues);
     let [toutListCelsius, setpointListCelsius] = convertTemperature_forCalculation(temperature, filteredPairs[0], filteredPairs[1]);
@@ -142,7 +161,7 @@ function ComfortGPT() {
 
     let [x_heat_highlight, y_heat_highlight, x_cool_highlight, y_cool_highlight] = get_highlight_values(hslope, hintercept, cslope, cintercept);
     let [x_heat, y_heat, x_cool, y_cool] = get_gray_values(slope_heat, intercept_heat, slope_cool, intercept_cool);
-    let [x_heat_highlight_csv, y_heat_highlight_csv, x_cool_highlight_csv, y_cool_highlight_csv] = save_to_csv(hslope, hintercept, cslope, cintercept);
+    [x_heat_highlight_csv, y_heat_highlight_csv, x_cool_highlight_csv, y_cool_highlight_csv] = save_to_csv(hslope, hintercept, cslope, cintercept);
 
     // Convert to Respective Temperature Scale (Highlight Lines)
     x_heat_highlight = convertTemperature_forHighlightLines(options[0].value, temperature, x_heat_highlight);
@@ -169,6 +188,58 @@ function ComfortGPT() {
     y_heat_highlight_csv = convertTemperature_forHighlightLines(options[0].value, temperature, y_heat_highlight_csv);
     x_cool_highlight_csv = convertTemperature_forHighlightLines(options[0].value, temperature, x_cool_highlight_csv);
     y_cool_highlight_csv = convertTemperature_forHighlightLines(options[0].value, temperature, y_cool_highlight_csv);
+
+    let scale;
+
+    if (temperature === "Celsius") {
+      scale = "°C";
+      scale_csv = "°C";
+    } else if (temperature === "Kelvin") {
+      scale = "K";
+      scale_csv = "K";
+    } else if (temperature === "Fahrenheit") {
+      scale = "°F";
+      scale_csv = "°F";
+    }
+
+    let spanCoolingSlope = document.getElementById('coolingSlope');
+    spanCoolingSlope.textContent = Number(cslope).toFixed(2);
+
+    let spanCoolingIntercept = document.getElementById('coolingIntercept');
+    spanCoolingIntercept.textContent = Number(cintercept).toFixed(2);
+
+    let spanHeatingSlope = document.getElementById('heatingSlope');
+    spanHeatingSlope.textContent = Number(hslope).toFixed(2);
+
+    let spanHeatingIntercept = document.getElementById('heatingIntercept');
+    spanHeatingIntercept.textContent = Number(hintercept).toFixed(2);
+
+    let scale_thing = document.querySelectorAll('#scale_thing');
+    for (let i = 0; i < scale_thing.length; i++) {
+      scale_thing[i].textContent = scale;
+    }
+
+    let above_val;
+    let below_val;
+
+    if (scale === "°C") {
+      above_val = 16;
+      below_val = 16;
+    } else if (scale === "K") {
+      above_val = 289.15;
+      below_val = 289.15;
+    } else if (scale === "°F") {
+      above_val = 60.8;
+      below_val = 60.8;
+    }
+
+    let above = document.getElementById('above');
+    above.textContent = above_val;
+
+    let below = document.getElementById('below');
+    below.textContent = below_val;
+
+    // Plot stuff
 
     let xy_heat_highlight_dict = x_heat_highlight.map((x_value, i) => {
       return { xval: x_value, yval: y_heat_highlight[i] };
@@ -288,16 +359,6 @@ function ComfortGPT() {
       .style("stroke-width", 2)
       .style("stroke-dasharray", "5,5")
       .style("opacity", 0);
-
-    let scale;
-
-    if (temperature === "Celsius") {
-      scale = "°C";
-    } else if (temperature === "Kelvin") {
-      scale = "K";
-    } else if (temperature === "Fahrenheit") {
-      scale = "°F";
-    }
 
     if (shouldDrawLines) {
       svg.append("path")
@@ -423,6 +484,62 @@ function ComfortGPT() {
       .text(`Preferred Setpoint (${scale})`);
   }
 
+  // Download CSV
+  const DownloadCSV = () => {
+    const csvContent = generateCSVContent();
+
+    // Create a Blob object from the CSV content
+    const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+
+    // Create a temporary anchor element to initiate the download
+    const link = document.createElement("a");
+    if (link.download !== undefined) {
+      // Set the link's attributes
+      const url = URL.createObjectURL(blob);
+      link.setAttribute("href", url);
+      link.setAttribute("download", "data.csv");
+
+      // Append the link to the document body
+      document.body.appendChild(link);
+
+      // Simulate a click event on the link
+      link.click();
+
+      // Clean up resources
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    }
+  }
+
+  function generateCSVContent() {
+    // Generate the CSV content based on the arrays
+    const csvRows = [];
+
+    // Create the header row
+    csvRows.push(`Outdoor Temperature Heat (${scale_csv}), Predicted Setpoint Heat (${scale_csv}), Outdoor Temperature Cool (${scale_csv}), Predicted Setpoint Cool (${scale_csv})`);
+    // "x_heat_highlight,y_heat_highlight,x_cool_highlight,y_cool_highlight"
+    // Determine the maximum length among the arrays
+    const maxLength = Math.max(
+      x_heat_highlight_csv.length,
+      y_heat_highlight_csv.length,
+      x_cool_highlight_csv.length,
+      y_cool_highlight_csv.length
+    );
+
+    // Populate the rows with the array values
+    for (let i = 0; i < maxLength; i++) {
+      const row = [
+        i < x_heat_highlight_csv.length ? x_heat_highlight_csv[i] : "",
+        i < y_heat_highlight_csv.length ? y_heat_highlight_csv[i] : "",
+        i < x_cool_highlight_csv.length ? x_cool_highlight_csv[i] : "",
+        i < y_cool_highlight_csv.length ? y_cool_highlight_csv[i] : ""
+      ];
+      csvRows.push(row.join(","));
+    }
+
+    return csvRows.join("\n");
+  }
+
   const getProfileByName = (profileName) => {
     return profiles.find(profile => profile.ProfileName === profileName);
   };
@@ -432,6 +549,8 @@ function ComfortGPT() {
 
   const mainUserProfile = mainProfile.map(getProfileByName).filter(Boolean);
   const supportUserProfiles = supportProfile.map(getProfileByName).filter(Boolean);
+
+  const [showOutput, setShowOutput] = useState('none');
 
   return (
     <div className="ComfortGPT">
@@ -546,6 +665,22 @@ function ComfortGPT() {
           <div className="outputs" id='graph'>
 
           </div>
+        </div>
+        <div className="output" id='output' style={{ display: showOutput }}>
+          <div class="output1">
+            <h5>For an Outdoor Temperature below <span id="below"></span> <span id="scale_thing"></span>:</h5>
+            <p><b>Preferred Setpoint</b> = (<i>Slope</i> * <i>Outdoor Temperature</i>) + <i>Intercept</i></p>
+            <p><b>Preferred Setpoint</b> = (<span id="heatingSlope"></span> * <i>Outdoor Temperature</i>) + <span id="heatingIntercept"></span></p>
+          </div>
+
+          <div class="output2">
+            <h5>For an Outdoor Temperature above <span id="above"></span> <span id="scale_thing"></span>:</h5>
+            <p><b>Preferred Setpoint</b> = (<i>Slope</i> * <i>Outdoor Temperature</i>) + <i>Intercept</i></p>
+            <p><b>Preferred Setpoint</b> = (<span id="coolingSlope"></span> * <i>Outdoor Temperature</i>) + <span id="coolingIntercept"></span></p>
+          </div>
+        </div>
+        <div className="HomeButtons" id="DownloadCSV" style={{ display: showOutput }}>
+          <Link onClick={DownloadCSV} ><p id='JoinButton'>Download .csv File</p></Link>
         </div>
       </Container>
 

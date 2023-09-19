@@ -140,6 +140,13 @@
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
+    padding: 10px;
+}
+
+.IndividualPublication .third_section .profile_image img:hover {
+    width: 120px;
+    height: 120px;
+    padding: 0px;
 }
 
 .IndividualPublication .third_section .profile_data {
