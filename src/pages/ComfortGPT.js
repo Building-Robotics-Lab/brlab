@@ -10,9 +10,11 @@ import ExampleImage from './../components/Website Data/output_example.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Select from 'react-select';
+import profiles from '../components/Website Individual Information/profileData';
 
 
 function ComfortGPT() {
+
   // For Temperature Scale
   const options = [
     { value: 'Celsius', label: 'Celsius (°C)' },
@@ -20,17 +22,13 @@ function ComfortGPT() {
     { value: 'Kelvin', label: 'Kelvin (K)' },
   ];
   const [initialTemperatureScale, setInitialTemperatureScale] = useState(options[0].value);
-  const [test, setTest] = useState(options[0].value);
-
-  const [temperature, setTemperature] = useState(null);
-  useEffect(() => {
-    setTemperature(options[0].value);
-  }, []);
+  const [drawLines, setDrawLines] = useState(false)
+  const [temperature, setTemperature] = useState(options[0].value);
 
   const handleChange = (option) => {
     setTemperature(option.value);
     const convertedTemperature_forDisplay = convertTemperature_forDisplay(initialTemperatureScale, option.value, otValues, stValues);
-    setInitialTemperatureScale(convertedTemperature_forDisplay[0]); // Update the initialTemperatureScale
+    setInitialTemperatureScale(option.value); // Update the initialTemperatureScale
     setOtValues([...convertedTemperature_forDisplay[1]]);
     setStValues([...convertedTemperature_forDisplay[2]]);
   };
@@ -88,8 +86,11 @@ function ComfortGPT() {
 
   // Add Row Button
   const AddRow = () => {
-    setOtValues([...otValues, null]);
-    setStValues([...stValues, null]);
+    if (otValues.length < 20) {
+      setOtValues([...otValues, null]);
+      setStValues([...stValues, null]);
+    }
+    SimulateButton(drawLines);
   };
 
   // Remove Row Button
@@ -97,11 +98,14 @@ function ComfortGPT() {
     const otNewValues = [...otValues];
     const stNewValues = [...stValues];
 
-    otNewValues.pop();
-    stNewValues.pop();
+    if (otNewValues.length > 1) {
+      otNewValues.pop();
+      stNewValues.pop();
+    }
 
     setOtValues(otNewValues);
     setStValues(stNewValues);
+    SimulateButton(drawLines);
   };
 
   // Reset Button
@@ -110,11 +114,28 @@ function ComfortGPT() {
     setStValues([...initialStValues]);
     setExtremeOtIndices({});
     setExtremeStIndices({});
-    setTemperature(options[0].value)
+    setTemperature(options[0].value);
+    setInitialTemperatureScale(options[0].value);
+    setDrawLines(false);
+    SimulateButton(false);
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      SimulateButton(drawLines);
+    };
+    SimulateButton(drawLines);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [initialTemperatureScale, temperature, drawLines, otValues, stValues, extremeOtIndices, extremeStIndices, initialOtValues, initialStValues]);
+
   // Simulate Button
-  const SimulateButton = async () => {
+  const SimulateButton = async (inputVar) => {
+    let shouldDrawLines = inputVar;
+    setDrawLines(shouldDrawLines)
+
     const filteredPairs = filterPairs(otValues, stValues);
     let [toutListCelsius, setpointListCelsius] = convertTemperature_forCalculation(temperature, filteredPairs[0], filteredPairs[1]);
     let [cintercept, cslope, hintercept, hslope, slope_heat, intercept_heat, slope_cool, intercept_cool] = await fetchData(toutListCelsius, setpointListCelsius);
@@ -124,10 +145,30 @@ function ComfortGPT() {
     let [x_heat_highlight_csv, y_heat_highlight_csv, x_cool_highlight_csv, y_cool_highlight_csv] = save_to_csv(hslope, hintercept, cslope, cintercept);
 
     // Convert to Respective Temperature Scale (Highlight Lines)
-    let x_heat_highlight_converted = convertTemperature_forHighlightLines(test, temperature, x_heat_highlight);
-    let y_heat_highlight_converted = convertTemperature_forHighlightLines(test, temperature, y_heat_highlight);
-    let x_cool_highlight_converted = convertTemperature_forHighlightLines(test, temperature, x_cool_highlight);
-    let y_cool_highlight_converted = convertTemperature_forHighlightLines(test, temperature, y_cool_highlight);
+    x_heat_highlight = convertTemperature_forHighlightLines(options[0].value, temperature, x_heat_highlight);
+    y_heat_highlight = convertTemperature_forHighlightLines(options[0].value, temperature, y_heat_highlight);
+    x_cool_highlight = convertTemperature_forHighlightLines(options[0].value, temperature, x_cool_highlight);
+    y_cool_highlight = convertTemperature_forHighlightLines(options[0].value, temperature, y_cool_highlight);
+
+    // Convert to Respective Temperature Scale (Gray Lines)
+    let y_heat_converted = []
+    let y_cool_converted = []
+
+    for (let i = 0; i < y_heat.length; i++) {
+      y_heat_converted.push(convertTemperature_forHighlightLines(options[0].value, temperature, y_heat[i]));
+      y_cool_converted.push(convertTemperature_forHighlightLines(options[0].value, temperature, y_cool[i]));
+    }
+
+    x_heat = convertTemperature_forHighlightLines(options[0].value, temperature, x_heat);
+    y_heat = y_heat_converted
+    x_cool = convertTemperature_forHighlightLines(options[0].value, temperature, x_cool);
+    y_cool = y_cool_converted
+
+    // Convert to Respective Temperature Scale (CSV)
+    x_heat_highlight_csv = convertTemperature_forHighlightLines(options[0].value, temperature, x_heat_highlight_csv);
+    y_heat_highlight_csv = convertTemperature_forHighlightLines(options[0].value, temperature, y_heat_highlight_csv);
+    x_cool_highlight_csv = convertTemperature_forHighlightLines(options[0].value, temperature, x_cool_highlight_csv);
+    y_cool_highlight_csv = convertTemperature_forHighlightLines(options[0].value, temperature, y_cool_highlight_csv);
 
     let xy_heat_highlight_dict = x_heat_highlight.map((x_value, i) => {
       return { xval: x_value, yval: y_heat_highlight[i] };
@@ -139,8 +180,13 @@ function ComfortGPT() {
 
     let combined_data = xy_heat_highlight_dict.concat(xy_cool_highlight_dict);
 
-    let width = document.getElementById('graph').offsetWidth;
-    let height = document.getElementById('graph').offsetHeight;
+    const svgContainer = d3.select('#graph')
+    svgContainer.selectAll("svg").remove();
+
+    const margin = { top: 20, right: 20, bottom: 50, left: 60 };
+
+    let width = document.getElementById('graph').offsetWidth - margin.left - margin.right;
+    let height = document.getElementById('graph').offsetHeight - margin.top - margin.bottom;
 
     const x = d3.scaleLinear()
       .range([0, width]);
@@ -148,16 +194,13 @@ function ComfortGPT() {
     const y = d3.scaleLinear()
       .range([height, 0]);
 
-    const svgContainer = d3.select('#graph')
-
-    svgContainer.selectAll("svg").remove();
-    d3.select("#graph").selectAll("*").remove();
-
     const svg = svgContainer
       .append("svg")
-      .attr("width", width - 30)
-      .attr("height", height + 30)
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
       .append("g")
+      .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
 
     let xExtent = d3.extent(combined_data, d => d.xval);
     let yExtent = d3.extent(combined_data, d => d.yval);
@@ -184,7 +227,211 @@ function ComfortGPT() {
     let tooltip = d3.select("body").append("div")
       .attr("class", "tooltip")
       .style("opacity", 0);
+
+    let legends = [{ color: "lightgray", label: "Comfort Archetypes" }];
+    if (shouldDrawLines) {
+      legends.push({ color: "red", label: "Heating Setpoint" });
+      legends.push({ color: "blue", label: "Cooling Setpoint" });
+    }
+
+    var legend = svg.selectAll('.legend')
+      .data(legends)
+      .enter().append('g')
+      .attr('class', 'legend')
+      .attr('transform', function (d, i) { return 'translate(' + (50) + ',' + (i * 20) + ')'; });
+
+    legend.append('rect')
+      .attr('x', -30)
+      .attr('y', 7)
+      .attr('width', 19)
+      .attr('height', 5)
+      .style('fill', d => d.color);
+
+    legend.append('text')
+      .attr('x', -5)
+      .attr('y', 9.5)
+      .attr('dy', '0.32em')
+      .text(function (d) { return d.label; });
+
+    for (let i = 0; i < y_heat.length; i++) {
+      let y_heat_dict = x_heat.map((x_value, j) => {  // Use a different variable name (j)
+        return { xval: x_value, yval: y_heat[i][j] };
+      });
+
+      svg.append("path")
+        .datum(y_heat_dict)
+        .attr("fill", "none")
+        .attr("stroke", "lightgray")
+        .attr("stroke-width", 1)
+        .attr("d", line)
+
+      let y_cool_dict = x_cool.map((x_value, j) => {  // Use a different variable name (j)
+        return { xval: x_value, yval: y_cool[i][j] };
+      });
+
+      svg.append("path")
+        .datum(y_cool_dict)
+        .attr("fill", "none")
+        .attr("stroke", "lightgray")
+        .attr("stroke-width", 1)
+        .attr("d", line)
+    }
+
+    let hoverLineHorizontal = svg.append("line")
+      .style("stroke", "black")
+      .style("stroke-width", 2)
+      .style("stroke-dasharray", "5,5")
+      .style("opacity", 0);
+
+    let hoverLineVertical = svg.append("line")
+      .style("stroke", "black")
+      .style("stroke-width", 2)
+      .style("stroke-dasharray", "5,5")
+      .style("opacity", 0);
+
+    let scale;
+
+    if (temperature === "Celsius") {
+      scale = "°C";
+    } else if (temperature === "Kelvin") {
+      scale = "K";
+    } else if (temperature === "Fahrenheit") {
+      scale = "°F";
+    }
+
+    if (shouldDrawLines) {
+      svg.append("path")
+        .datum(xy_heat_highlight_dict)
+        .attr("fill", "none")
+        .attr("stroke", "red")
+        .attr("stroke-width", 5)
+        .attr("d", line)
+
+      svg.append("path")
+        .datum(xy_cool_highlight_dict)
+        .attr("fill", "none")
+        .attr("stroke", "blue")
+        .attr("stroke-width", 5)
+        .attr("d", line)
+
+      // Hover to show points on the heat and cool lines
+      svg.selectAll('.heat-point')
+        .data(xy_heat_highlight_dict)
+        .enter().append('circle')
+        .attr('class', 'heat-point')
+        .attr('cx', d => x(d.xval))
+        .attr('cy', d => y(d.yval))
+        .attr('r', 3)
+        .attr('fill', 'red')
+        .attr('opacity', 0)
+        .on('mouseover', function (event, d) {
+          let [xPos, yPos] = d3.pointer(event, svg.node());
+          tooltip.transition()
+            .duration(200)
+            .style('opacity', 0.9);
+          tooltip.html(`Outdoor Temperature (${scale}): ${Number(d.xval).toFixed(2)} <br/> Preferred Setpoint (${scale}): ${Number(d.yval).toFixed(2)}`)
+            .style('left', (xPos + document.getElementById('graph').offsetLeft) + 10 + 'px')
+            .style('top', (yPos + document.getElementById('graph').offsetTop) + 10 + 'px');
+
+          hoverLineVertical.attr("x1", x(d.xval))
+            .attr("y1", y(d.yval))
+            .attr("x2", x(d.xval))
+            .attr("y2", height)  // y(0) assuming the x-axis is at y=0
+            .style("opacity", 1);
+
+          hoverLineHorizontal.attr("x1", x(d.xval))
+            .attr("y1", y(d.yval))
+            .attr("x2", 0)
+            .attr("y2", y(d.yval))  // y(0) assuming the x-axis is at y=0
+            .style("opacity", 1);
+
+
+        })
+        .on('mouseout', function (d) {
+          tooltip.transition()
+            .duration(500)
+            .style('opacity', 0);
+
+          hoverLineVertical.style("opacity", 0);  // hide the line
+          hoverLineHorizontal.style("opacity", 0);  // hide the line
+        });
+
+      svg.selectAll('.cool-point')
+        .data(xy_cool_highlight_dict)
+        .enter().append('circle')
+        .attr('class', 'cool-point')
+        .attr('cx', d => x(d.xval))
+        .attr('cy', d => y(d.yval))
+        .attr('r', 3)
+        .attr('fill', 'blue')
+        .attr('opacity', 0)
+        .on('mouseover', function (event, d) {
+          let [xPos, yPos] = d3.pointer(event, svg.node());
+          tooltip.transition()
+            .duration(200)
+            .style('opacity', 0.9);
+          tooltip.html(`Outdoor Temperature (${scale}): ${Number(d.xval).toFixed(2)} <br/> Preferred Setpoint (${scale}): ${Number(d.yval).toFixed(2)}`)
+            .style('left', (xPos + document.getElementById('graph').offsetLeft) + 'px')
+            .style('top', (yPos + document.getElementById('graph').offsetTop) + 'px');
+
+          hoverLineVertical.attr("x1", x(d.xval))
+            .attr("y1", y(d.yval))
+            .attr("x2", x(d.xval))
+            .attr("y2", height)  // y(0) assuming the x-axis is at y=0
+            .style("opacity", 1);
+
+          hoverLineHorizontal.attr("x1", x(d.xval))
+            .attr("y1", y(d.yval))
+            .attr("x2", 0)
+            .attr("y2", y(d.yval))  // y(0) assuming the x-axis is at y=0
+            .style("opacity", 1);
+        })
+        .on('mouseout', function (d) {
+          tooltip.transition()
+            .duration(500)
+            .style('opacity', 0);
+
+          hoverLineVertical.style("opacity", 0);  // hide the line
+          hoverLineHorizontal.style("opacity", 0);  // hide the line
+        });
+    } else {
+      // Remove existing red and blue lines
+      svg.selectAll('path')
+        .filter(function () {
+          return d3.select(this).attr('stroke') === 'red' || d3.select(this).attr('stroke') === 'blue';
+        })
+        .remove();
+
+      // Remove existing red and blue points
+      svg.selectAll('.heat-point, .cool-point')
+        .remove();
+    }
+
+    // X Axis Label and Y Axis Label
+    svg.append("text")
+      .attr("transform", `translate(${width / 2} ,${height + 15})`) // Position at the middle of the x-axis, and move slightly below the axis
+      .attr("y", 20) // Position it to the left of the y-axis
+      .style("text-anchor", "middle")
+      .text(`Outdoor Temperature (${scale})`);
+
+    svg.append("text")
+      .attr("transform", "rotate(-90)") // Rotate the text 90 degrees
+      .attr("y", -50) // Position it to the left of the y-axis
+      .attr("x", 0 - (height / 2)) // Position at the middle of the y-axis
+      .attr("dy", "1em") // Move slightly away from the axis
+      .style("text-anchor", "middle")
+      .text(`Preferred Setpoint (${scale})`);
   }
+
+  const getProfileByName = (profileName) => {
+    return profiles.find(profile => profile.ProfileName === profileName);
+  };
+  const mainProfile = ['Kai']
+  const supportProfile = ['Connor', 'Prof', 'Ilyas']
+  const Roles = ["Project Lead", "UX Designer", "Collaborator/else?", "UI Developer"]
+
+  const mainUserProfile = mainProfile.map(getProfileByName).filter(Boolean);
+  const supportUserProfiles = supportProfile.map(getProfileByName).filter(Boolean);
 
   return (
     <div className="ComfortGPT">
@@ -192,16 +439,57 @@ function ComfortGPT() {
 
       <Container>
         <div className="first_section">
-          <h1>ComfortGPT</h1>
-          <h3>For source code and to report bugs</h3>
-          <div className="Github_stuff">
-            <div className="GitHub_Code">
-              <b><a className='icon' href="https://github.com/Building-Robotics-Lab/ComfortGPT" target="_blank"><FontAwesomeIcon icon={faGithub} /></a></b>
-              <b><a className='text' href="https://github.com/Building-Robotics-Lab/ComfortGPT" target="_blank">Code</a></b>
+          <div className='heading_and_links'>
+            <h1>ComfortGPT</h1>
+            <h3>For source code and to report bugs</h3>
+            <div className="Github_stuff">
+              <div className="GitHub_Code">
+                <b><a className='icon' href="https://github.com/Building-Robotics-Lab/ComfortGPT" target="_blank"><FontAwesomeIcon icon={faGithub} /></a></b>
+                <b><a className='text' href="https://github.com/Building-Robotics-Lab/ComfortGPT" target="_blank">Code</a></b>
+              </div>
+              <div className="GitHub_Bugs">
+                <b><a className='icon' href="https://github.com/Building-Robotics-Lab/ComfortGPT/issues/new" target="_blank"><FontAwesomeIcon icon={faGithub} /></a></b>
+                <b><a className='text' href="https://github.com/Building-Robotics-Lab/ComfortGPT/issues/new" target="_blank">Bugs</a></b>
+              </div>
             </div>
-            <div className="GitHub_Bugs">
-              <b><a className='icon' href="https://github.com/Building-Robotics-Lab/ComfortGPT/issues/new" target="_blank"><FontAwesomeIcon icon={faGithub} /></a></b>
-              <b><a className='text' href="https://github.com/Building-Robotics-Lab/ComfortGPT/issues/new" target="_blank">Bugs</a></b>
+          </div>
+          <div className='contacts'>
+            <div>
+              <h3>Tool Contacts</h3>
+            </div>
+            <div className='Main'>
+              {mainUserProfile.map((profile, index) => (
+                <div className="each_profile" key={index}>
+                  <div className="profile_image">
+                    <Link to={`/individual_profile/${profile.ProfileName}`} target="_blank">
+                      <img src={profile.ProfilePic} alt={profile.Name} />
+                    </Link>
+                  </div>
+                  <div className="profile_data">
+                    <a href={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
+                      <h5><b>{profile.Name}</b></h5>
+                    </a>
+                    <p>{Roles[0]}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className='Supports'>
+              {supportUserProfiles.map((profile, index) => (
+                <div className="each_profile" key={index}>
+                  <div className="profile_image">
+                    <Link to={`/individual_profile/${profile.ProfileName}`} target="_blank">
+                      <img src={profile.ProfilePic} alt={profile.Name} />
+                    </Link>
+                  </div>
+                  <div className="profile_data">
+                    <a href={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
+                      <h5><b>{profile.Name}</b></h5>
+                    </a>
+                    <p>{Roles.slice(1, Roles.length)[index]}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -212,7 +500,7 @@ function ComfortGPT() {
           <div className="inputs">
             <div className="table_inputs">
               <p>Temperature Scale:</p>
-              <Select options={options} defaultValue={options[0]} onChange={handleChange} style={{ width: '600px' }} isSearchable={false} />
+              <Select options={options} value={options.find(option => option.value === temperature)} defaultValue={options[0]} onChange={handleChange} style={{ width: '600px' }} isSearchable={false} />
               <p>Outdoor Temperature</p>
               <p>Preferred Setpoint</p>
               {otValues.map((otValue, index) => (
@@ -231,7 +519,15 @@ function ComfortGPT() {
               ))}
             </div>
             <div className="CalculateButton">
-              <Link onClick={hasExtremeValue() ? undefined : SimulateButton} className={hasExtremeValue() ? "disabled red-button" : "enabled green-button"}>
+              {/* <Link onClick={hasExtremeValue() ? undefined : SimulateButton} className={hasExtremeValue() ? "disabled red-button" : "enabled green-button"}> */}
+              <Link
+                onClick={() => {
+                  if (!hasExtremeValue()) {
+                    SimulateButton(true);
+                  }
+                }}
+                className={hasExtremeValue() ? "disabled red-button" : "enabled green-button"}
+              >
                 <p id='CalculateButton'>Calculate</p>
               </Link>
             </div>

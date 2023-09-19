@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css';
 import NUSLogo from './Website Data/NUSLOGO-removebg-preview.png'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -54,12 +55,24 @@ const Footer = () => {
                     <div className="right">
                         <div className="right_text">
                             <h3>Quick Links</h3>
-                            <p><a href="/">Home</a></p>
-                            <p><a href="/research">Research</a></p>
-                            <p><a href="/our_team">Our Team</a></p>
-                            <p><a href="/news">News</a></p>
-                            <p><a href="/publications">Publications</a></p>
-                            <p><a href="/join_the_lab">Join the Lab</a></p>
+                            <Link to={`/`}>
+                                <p>Home</p>
+                            </Link>
+                            <Link to={`/research`}>
+                                <p>Research</p>
+                            </Link>
+                            <Link to={`/our_team`}>
+                                <p>Our Team</p>
+                            </Link>
+                            <Link to={`/news`}>
+                                <p>News</p>
+                            </Link>
+                            <Link to={`/publications`}>
+                                <p>Publications</p>
+                            </Link>
+                            <Link to={`/join_the_lab`}>
+                                <p>Join the Lab</p>
+                            </Link>
                         </div>
                     </div>
                 </div>

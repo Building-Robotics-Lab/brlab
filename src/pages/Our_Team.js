@@ -36,70 +36,70 @@ function Our_Team() {
             role: 'Research Fellow',
             skills: 'Architectural Engineering; Building Performance Simulation; Optimisation; Energy-Efficient Buildings; Sustainable Architecture',
             imgSrc: RiccardoPic,
-            link: 'https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo'
+            link: 'Riccardo'
         },
         {
             name: 'CHEN Kai',
             role: 'PhD Student',
             skills: 'Building Energy Efficiency; Thermal Comfort; Smart Buildings',
             imgSrc: KaiPic,
-            link: 'https://building-robotics-lab.github.io/brlab/#/individual_profile/Kai'
+            link: 'Kai'
         },
         {
             name: 'Iqbal Shah',
             role: 'PhD Student',
             skills: 'Resilient Façade Systems; Urban Greening; Urban Heat Island; Digital Twin Development; Building Optimisation & Automation',
             imgSrc: IqbalPic,
-            link: 'https://building-robotics-lab.github.io/brlab/#/individual_profile/Iqbal'
+            link: 'Iqbal'
         },
         {
             name: 'Connor Aucremanne',
             role: 'PhD Student',
             skills: 'Virtual Power Plants; Building-Occupant Network Dynamics; Smart Buildings; Human-Building Interaction; Decarbonisation',
             imgSrc: ConnorPic,
-            link: 'https://building-robotics-lab.github.io/brlab/#/individual_profile/Connor'
+            link: 'Connor'
         },
         {
             name: 'Kelly Loh',
             role: 'PhD Student',
             skills: 'Building Energy Efficiency; Building Greenery; Building Finance; Building Information Modelling',
             imgSrc: KellyPic,
-            link: 'https://building-robotics-lab.github.io/brlab/#/individual_profile/Kelly'
+            link: 'Kelly'
         },
         {
             name: 'Ilyas Dawoodjee',
             role: 'Research Engineer',
             skills: 'Machine Vision; Robotics; Machine Learning; Automation',
             imgSrc: IlyasPic,
-            link: 'https://building-robotics-lab.github.io/brlab/#/individual_profile/Ilyas'
+            link: 'Ilyas'
         },
         {
             name: 'HU Xinhao',
             role: 'Visiting PhD Candidate (HNU)',
             skills: 'Indoor Thermal Comfort; Indoor Environmental Quality; Building Energy Conservation',
             imgSrc: StellaPic,
-            link: 'https://building-robotics-lab.github.io/brlab/#/individual_profile/Stella'
+            link: 'Stella'
         },
         {
             name: 'SU Xiaosong',
             role: 'Visiting PhD Candidate (HNU)',
             skills: 'Building Energy Efficiency; Energy-Efficient Building Envelope; Building-Integrated Photovoltaics; Radiant Cooling Technology in Buildings',
             imgSrc: XiaosongPic,
-            link: 'https://building-robotics-lab.github.io/brlab/#/individual_profile/Xiaosong'
+            link: 'Xiaosong'
         },
         {
             name: 'Pegah Eshraghi',
             role: 'Visiting PhD Candidate (SBU)',
             skills: 'Building Energy Efficiency; Machine Learning; Urban Building Energy Modelling; Indoor Environmental Quality; Thermal Comfort',
             imgSrc: PegahPic,
-            link: 'https://building-robotics-lab.github.io/brlab/#/individual_profile/Pegah'
+            link: 'Pegah'
         },
         {
             name: 'Pierre-Louis David',
             role: "Visiting MSc Student (ETH Zürich)",
             skills: '',  // Skills are empty in your example
             imgSrc: PierrePic,
-            link: 'https://building-robotics-lab.github.io/brlab/#/individual_profile/Pierre'
+            link: 'Pierre'
         }
     ];
 
@@ -109,7 +109,7 @@ function Our_Team() {
             role: 'Visiting PhD Candidate (HIT)',
             skills: 'Computational Design; Daylight Design; Occupant Behaviour; Visual Cognition',
             imgSrc: MichellePic,
-            link: 'https://building-robotics-lab.github.io/brlab/#/individual_profile/Michelle'
+            link: 'Michelle'
         }
     ];
 
