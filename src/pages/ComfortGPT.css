@@ -52,7 +52,7 @@
 
 .ComfortGPT .first_section .contacts h3 {
     font-size: 1.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .ComfortGPT .first_section .contacts .Main .profile_image img {
@@ -60,13 +60,7 @@
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    padding: 10px;
-}
-
-.ComfortGPT .first_section .contacts .Main .profile_image img:hover {
-    width: 170px;
-    height: 170px;
-    padding: 0px;
+    margin-bottom: 0.5rem;
 }
 
 .ComfortGPT .first_section .contacts .Supports .profile_image img {
@@ -74,13 +68,7 @@
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
-    padding: 10px;
-}
-
-.ComfortGPT .first_section .contacts .Supports .profile_image img:hover {
-    width: 120px;
-    height: 120px;
-    padding: 0px;
+    margin-bottom: 0.5rem;
 }
 
 .ComfortGPT .first_section .contacts .Main {
@@ -250,33 +238,6 @@
     border-radius: 8px;
     pointer-events: none;
 }
-
-/* For outputs after simulating (downloading csv and stuff) */
-.ComfortGPT .output {
-    display: flex;
-    justify-content: center;
-    gap: 10rem;
-    margin-top: 2.5rem;
-}
-
-.ComfortGPT .output h5 {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-
-.ComfortGPT .output p {
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-}
-
-.ComfortGPT #DownloadCSV {
-    display: flex;
-    justify-content: center;
-    margin-top: 1.25rem;
-}
-
 
 /* Third Section */
 
