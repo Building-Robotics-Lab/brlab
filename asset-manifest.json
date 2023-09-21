@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brlab/static/css/main.c2869d51.css",
-    "main.js": "/brlab/static/js/main.d25ed659.js",
+    "main.js": "/brlab/static/js/main.a59721c0.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
     "static/media/Iqbal_DT2.png": "/brlab/static/media/Iqbal_DT2.73b332b29a8b111f14a7.png",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
@@ -60,10 +60,10 @@
     "static/media/NUSLOGO-removebg-preview.png": "/brlab/static/media/NUSLOGO-removebg-preview.5dd0ad9bdd141b9217c1.png",
     "index.html": "/brlab/index.html",
     "main.c2869d51.css.map": "/brlab/static/css/main.c2869d51.css.map",
-    "main.d25ed659.js.map": "/brlab/static/js/main.d25ed659.js.map"
+    "main.a59721c0.js.map": "/brlab/static/js/main.a59721c0.js.map"
   },
   "entrypoints": [
     "static/css/main.c2869d51.css",
-    "static/js/main.d25ed659.js"
+    "static/js/main.a59721c0.js"
   ]
 }
