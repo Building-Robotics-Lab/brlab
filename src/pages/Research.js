@@ -126,7 +126,7 @@ function Research() {
                             <p>Chen, K., Xu, Q., Leow, B. and Ghahramani, A., 2022. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0360132322011490" target="_blank"><b>Personal thermal comfort models based on physiological measurements-A design of experiments based review</b></a>. <i>Building and Environment</i>, <i>228</i>, 109919.</p>
                             <p>Chen, K. and Ghahramani, A., 2023. <b>A Transformer-based Architecture for Predicting Preferred Temperature Setpoints Leveraging Big Data</b>. <i>Building and Environment</i>. [under review]</p>
                         </div>
-                        <p><a href="https://building-robotics-lab.github.io/brlab/#/ComfortGPT" target="_blank"><b>ComfortGPT</b></a> (UI/UX by <a href="https://building-robotics-lab.github.io/brlab/#/individual_profile/Ilyas">Ilyas Dawoodjee</a> & <a href="https://building-robotics-lab.github.io/brlab/#/individual_profile/Connor">Connor Aucremanne</a>)</p>
+                        <p><a href="https://building-robotics-lab.github.io/brlab/#/ComfortGPT" target="_blank">ComfortGPT</a></p>
                     </div>
                     <div className='theme_section' id='theme1_section'>
                         <div className="theme_details">
@@ -141,7 +141,7 @@ function Research() {
                             <p>Talami, R., Dawoodjee, I. and Ghahramani, A., 2023. <a href="https://www.sciencedirect.com/science/article/pii/S2666123323000612?via%3Dihub" target="_blank"><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></a>. <i>Energy and Built Environment</i>.</p>
                             <p>Talami, R., Dawoodjee, I. and Ghahramani, A., 2023. <b>Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns</b>. <i>Applied Energy</i>. [under review]</p>
                         </div>
-                        <p><a href="https://building-robotics-lab.github.io/brlab/#/optimal_temperature_setpoint_tool" target="_blank"><b>Optimal Temperature Setpoint Tool</b></a> (UI/UX by <a href="https://building-robotics-lab.github.io/brlab/#/individual_profile/Ilyas">Ilyas Dawoodjee</a> & <a href="https://building-robotics-lab.github.io/brlab/#/individual_profile/Connor">Connor Aucremanne</a>)</p>
+                        <p><a href="https://building-robotics-lab.github.io/brlab/#/optimal_temperature_setpoint_tool" target="_blank">Optimal Temperature Setpoint Tool</a></p>
                     </div>
                 </div>
             </Container>

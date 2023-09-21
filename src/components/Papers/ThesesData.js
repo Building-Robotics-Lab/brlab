@@ -33,7 +33,7 @@ const ThesesData = [
         publications: [
             {
                 title: "Learning Personal Thermal Comfort and Integrating Personal Comfort Requirements into HVAC System Control Loop",
-                university: "University of Southern California",
+                university: "University of Southern California (USC)",
                 authors: [
                     { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
                 ],

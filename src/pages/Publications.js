@@ -20,7 +20,7 @@ function Publications() {
                     <h1><b>Peer-reviewed Publications</b></h1>
                     <h3>For an up-to-date list:</h3>
                     <div className="HomeButtons">
-                        <Link to="https://scholar.google.com/citations?hl=en&user=9UACV-AAAAAJ&view_op=list_works&sortby=pubdate" target='_blank'><p id='JoinButton'>GOOGLE SCHOLAR</p></Link>
+                        <Link to="https://scholar.google.com/citations?user=9UACV-AAAAAJ&hl=en&oi=ao" target='_blank'><p id='JoinButton'>GOOGLE SCHOLAR</p></Link>
                     </div>
                 </div>
             </Container>
@@ -86,7 +86,7 @@ function JournalSection({ year, publications }) {
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
-                                            <b><a href={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</a></b>
+                                            <a href={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</a>
                                         ) : (
                                             author.name
                                         )}
@@ -127,7 +127,7 @@ function ConferenceSection({ year, publications }) {
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
-                                            <b><a href={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</a></b>
+                                            <a href={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</a>
                                         ) : (
                                             author.name
                                         )}
@@ -162,7 +162,7 @@ function PatentSection({ year, publications }) {
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
-                                            <b><a href={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</a></b>
+                                            <a href={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</a>
                                         ) : (
                                             author.name
                                         )}
@@ -197,7 +197,7 @@ function ThesesSection({ year, publications }) {
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
-                                            <b><a href={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</a></b>
+                                            <a href={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</a>
                                         ) : (
                                             author.name
                                         )}

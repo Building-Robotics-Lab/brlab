@@ -25,6 +25,8 @@ import PegahPic from './../components/Website Individual Information/Pegah/image
 
 import PierrePic from './../components/Website Individual Information/unknown.png';
 // import PierrePic from './../components/Website Individual Information/Pierre-Louis/image.jpg';
+import GuillaumePic from './../components/Website Individual Information/unknown.png';
+// import GuillaumePic from './../components/Website Individual Information/Pierre-Louis/image.jpg';
 
 import MichellePic from './../components/Website Individual Information/Michelle/image.jpg';
 
@@ -97,9 +99,16 @@ function Our_Team() {
         {
             name: 'Pierre-Louis David',
             role: "Visiting MSc Student (ETH Zürich)",
-            skills: '',  // Skills are empty in your example
+            skills: 'Machine Learning; Optimisation; Computer Vision; Energy',
             imgSrc: PierrePic,
             link: 'Pierre'
+        },
+        {
+            name: 'Guillaume Lecronier',
+            role: "Visiting MSc Student (ETH Zürich)",
+            skills: '',
+            imgSrc: GuillaumePic,
+            link: 'Guillaume'
         }
     ];
 
@@ -143,7 +152,7 @@ function Our_Team() {
                         <h5><b>Assistant Professor (PYP) at the National University of Singapore</b></h5>
                         <p>I am Dr. Ali Ghahramani, an Assistant Professor (Presidential Young Professor) at the Department of the Built Environment,
                             National University of Singapore. I received my PhD in Civil Engineering (Informatics for Intelligent Built Environments)
-                            from the University of Southern California (USC), and I hold multiple master's degrees in Computer Science, Industrial and
+                            from the University of Southern California (USC), and I hold multiple MS degrees in Computer Science, Industrial and
                             Systems Engineering, and Civil Engineering. I previously held a postdoctoral scholar position at the Center for the Built
                             Environment at the University of California, Berkeley. My research interests include sensing human health and comfort,
                             infrared thermography, building robotics, human-centred AI, smart buildings, and resilient cooling. I have been the recipient

@@ -14,6 +14,8 @@ import FourthResearchImage from './../components/Website Data/resilient@2x.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers } from '@fortawesome/free-solid-svg-icons';
 
+import GuillaumeNews from './../components/Website Individual Information/unknown.png'
+//import GuillaumeNews from './../components/Website Individual Information/Pierre/image.jpg'
 import PierreNews from './../components/Website Individual Information/unknown.png'
 //import PierreNews from './../components/Website Individual Information/Pierre/image.jpg'
 import PegahNews from './../components/Website Individual Information/Pegah/image.jpg'
@@ -25,6 +27,12 @@ import ConnorNews from './../components/Website Individual Information/Connor/im
 import PublicationsIqbalNews from './../components/Website Data//iqbal-publication.jpg'
 
 const slides = [
+    {
+        image: GuillaumeNews,
+        title: '<b>Please Guillaume Lecronier to the lab!</b>',
+        date: '21/09/2023',
+        link: 'Guillaume',
+    },
     {
         image: PierreNews,
         title: '<b>Please welcome Pierre-Louis David to the lab!</b>',
@@ -133,10 +141,10 @@ function Home() {
                 <ResearchSectionRight
                     title="INTELLIGENT ENVIRONMENTS"
                     imageUrl={FourthResearchImage}
-                    text="Our research investigates the democratisation of virtual power plants (VPP) for optimal monetisation and grid flexibility to empower end-users to participate effectively. By leveraging artificial intelligence (AI), we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into two halves: one explores user impacts on VPPs and behaviour modeling, while the other employs machine learning for automated energy market participation."
+                    text="Our research investigates the <b><i>democratisation of virtual power plants</b></i> (VPP) for <b><i>optimal monetisation</b></i> and <b><i>grid flexibility</b></i> to empower end-users to participate effectively. By leveraging artificial intelligence (AI), we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into two halves: one explores <b><i>user impacts on VPPs</b></i> and <b><i>behaviour modelling</b></i>, while the other employs <b><i>machine learning for automated energy market participation</b></i>."
                 />
                 <div className="HomeButtons">
-                    <Link to="/join_the_lab"><p id='JoinButton'>LEARN MORE ABOUT OUR RESEARCH</p></Link>
+                    <Link to="/research"><p id='JoinButton'>LEARN MORE ABOUT OUR RESEARCH</p></Link>
                 </div>
             </Container>
 

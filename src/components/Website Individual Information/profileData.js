@@ -29,6 +29,10 @@ import PierrePic from './unknown.png'
 //import PierrePic from './Pierre-Louis/image.jpg'
 import PierreCV from './Pierre-Louis/CV.pdf'
 
+import GuillaumePic from './unknown.png'
+//import GuillaumePic from './Pierre-Louis/image.jpg'
+import GuillaumeCV from './Pierre-Louis/CV.pdf'
+
 import MichellePic from './Michelle/image.jpg'
 import MichelleCV from './Michelle/CV.pdf'
 
@@ -256,7 +260,7 @@ const profiles = [
         ProfilePic: StellaPic,
         Name: 'HU Xinhao',
         Position: 'Visiting PhD Candidate from Hunan University',
-        Biography: 'HU XinHao is a second-year PhD candidate from the Building Environment and Energy Application Department at Hunan University, P. R. China, and is a visiting student in Assistant Professor Ghahramani\'s group in the Department of the Built Environment at the National University of Singapore. Her research focuses on thermal comfort and building energy efficiency, and her current research project is on the comfort characterising of indoor occupants with personal comfort systems under solar radiation.',
+        Biography: 'HU Xinhao is a second-year PhD candidate from the Building Environment and Energy Application Department at Hunan University, P. R. China, and is a visiting student in Assistant Professor Ghahramani\'s group in the Department of the Built Environment at the National University of Singapore. Her research focuses on thermal comfort and building energy efficiency, and her current research project is on the comfort characterising of indoor occupants with personal comfort systems under solar radiation.',
         Education: [
             'PhD, Hunan University (HNU), Civil Engineering (current)',
             'MEng, Nanjing Normal University, Heating, Gas Supply, Ventilating and Air Conditioning Engineering (2020)',
@@ -384,6 +388,36 @@ const profiles = [
             'Optimisation',
             'Computer Vision',
             'Energy'
+        ],
+    },
+    {
+        ProfileName: 'Guillaume',
+        ProfileLink: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Guillaume",
+        ProfilePic: GuillaumePic,
+        Name: 'Guillaume Lecronier',
+        Position: 'Visiting MSc Student from ETH Zürich',
+        Biography: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        Education: [
+            'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Mechanical Engineering (current)',
+            'BSc, École Polytechnique Fédérale de Lausanne (EPFL), Mechanical Engineering (2021)'
+        ],
+        Awards: [],
+        Featured_Publications: [],
+        Contacts: [
+            { href: "tel:", icon: faPhone, text: "" },
+            { href: "mailto:e1307332@u.nus.edu", icon: faEnvelope, text: "e1307332@u.nus.edu" },
+            { href: "mailto:", icon: faEnvelope, text: "" },
+        ],
+        Links: [
+            { href: GuillaumeCV, icon: faUser, text: 'CV' },
+            { href: 'https://www.linkedin.com/in/guillaume-lecronier-990b67197/', icon: faLinkedin, text: 'LinkedIn' }
+        ],
+        Interests: [
+            '',
+            '',
+            '',
+            '',
+            ''
         ],
     },
     {

@@ -1,8 +1,8 @@
 import KatePublication1 from './Publication Images/kate_pub1.png'
 import RiccardoPublication1 from './Publication Images/riccardo_pub1.jpg'
 import AliPublication1 from './Publication Images/1-s2.0-S0360132322010411-gr1_lrg.jpg'
-import IqbalPublication1 from './Publication Images/iqbal_pub1.jpg'
 import KaiPublication1 from './Publication Images/kai_pub1.png'
+import IqbalPublication1 from './Publication Images/iqbal_pub1.jpg'
 import AliPublication2 from './Publication Images/41598_2022_25047_Fig3_HTML.webp'
 import AliPublication3 from './Publication Images/1-s2.0-S0360132322009118-gr1_lrg.jpg'
 import AliPublication4 from './Publication Images/1-s2.0-S221462962200281X-gr2_lrg.jpg'
@@ -149,34 +149,6 @@ const JournalData = [
                 display_image: AliPublication1
             },
             {
-                title: "Thermal transfer and temperature reductions from shading systems on opaque facades: Quantifying the impacts of influential factors",
-                journal: "Energy and Buildings",
-                volume: "278", issue: "",
-                page: "112604",
-                authors: [
-                    { name: "*Iqbal Shah", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Iqbal" },
-                    { name: "Brian Soh" },
-                    { name: "Caitlin Lim" },
-                    { name: "Siu-Kit Lau" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
-                ],
-                minRead: "",
-                profiles: ["Iqbal", "Prof"],
-                links: [
-                    { type: "DOI", url: "https://doi.org/10.1016/j.enbuild.2022.112604" }
-                ],
-                keywords: [
-                    "Façade Shading",
-                    "Building Design Optimization",
-                    "Overall Thermal Transfer Value",
-                    "Energy Savings",
-                    "Urban Heat Island and Decarbonization"
-                ],
-                highlights: [],
-                abstract: "In recent years, with the rapid development of cities across the globe and global warming, Urban Heat Island (UHI) and building cooling energy consumption have reached a point of perilous concern. The use of shading systems on building fenestrations has long been known as an effective strategy to minimise façade heat gain as well as glare, resulting in lower cooling energy consumption and indoor comfort. Expending the potentials of shading systems beyond conventional use, the present paper focuses on the effects of shading systems on opaque facades that is currently unaccounted for in simplified Overall Thermal Transfer Value (OTTV) calculations in standards adopted by many countries. A field study was first conducted to compare the effects of various shading configurations on an opaque façade. Subsequently, a simulation study was then conducted to quantify the effects of shading systems on opaque facades with varying thermal transmittance value (U-Value). The results of this study revealed numerous benefits for the deployment of shading systems on opaque building facades, which includes, reduction to building conductive heat gain, building cooling loads, microclimate temperature near the façade, as well as potential reduction to carbon emissions over the building lifecycle. Moreover, the paper also provides considerations for the selection shading configurations, as well as the considerations that would be required for the formulation of a more accurate simplified OTTV equation that would take into account the effects of shading systems on opaque facades.",
-                display_image: IqbalPublication1
-            },
-            {
                 title: "Personal thermal comfort models based on physiological measurements – A design of experiments based review",
                 journal: "Building and Environment",
                 volume: "228", issue: "",
@@ -203,6 +175,34 @@ const JournalData = [
                 highlights: [],
                 abstract: "Researchers have shown that the physiological-based personal comfort models (PCM) are capable of addressing individual differences as well as transient thermal comfort. Given that physiological-based comfort modeling studies are often very resource-intensive, a well-developed Design of Experiment (DOE) framework could help by optimizing the experimental sequence and use of resources. This study critically reviewed 74 physiological-based PCMs studies and dissected each study based on a DOE framework, dividing the experiments into the experimental procedures, sequences and variables settings. The results indicate that skin temperature, subjects' thermal sensation and air temperature are the leading input variables for PCM. Additionally, the most dominant experiment settings include a 1-min physiological data sampling interval, 10 min interval for reporting thermal vote, a less than 3 h experimental duration, and a fixed clothing level. We found that the subjects' number is independent of the experimental duration (correlation coefficient of 0.0201). Different activity levels and submerging subjects' hands into hot water are also used as thermal stimuli, in addition to the change in air temperature. By applying diverse algorithms, the average predicting accuracy of PCM from selected studies could achieve 85%, and Support Vector Machines (SVM) shows a superior predicting performance. The prominent limitations of the existing studies include insufficient subject numbers, technical restrictions of sensing devices, cumbersome data collection interfaces, improper machine learning algorithms and lack of diversity consideration. Finally, the review suggested that more related studies in this field should be compiled for cross-validation, helping to trade off the most appropriate experiment designs corresponding to the study objectives.",
                 display_image: KaiPublication1
+            },
+            {
+                title: "Thermal transfer and temperature reductions from shading systems on opaque facades: Quantifying the impacts of influential factors",
+                journal: "Energy and Buildings",
+                volume: "278", issue: "",
+                page: "112604",
+                authors: [
+                    { name: "*Iqbal Shah", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Iqbal" },
+                    { name: "Brian Soh" },
+                    { name: "Caitlin Lim" },
+                    { name: "Siu-Kit Lau" },
+                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                ],
+                minRead: "",
+                profiles: ["Iqbal", "Prof"],
+                links: [
+                    { type: "DOI", url: "https://doi.org/10.1016/j.enbuild.2022.112604" }
+                ],
+                keywords: [
+                    "Façade Shading",
+                    "Building Design Optimization",
+                    "Overall Thermal Transfer Value",
+                    "Energy Savings",
+                    "Urban Heat Island and Decarbonization"
+                ],
+                highlights: [],
+                abstract: "In recent years, with the rapid development of cities across the globe and global warming, Urban Heat Island (UHI) and building cooling energy consumption have reached a point of perilous concern. The use of shading systems on building fenestrations has long been known as an effective strategy to minimise façade heat gain as well as glare, resulting in lower cooling energy consumption and indoor comfort. Expending the potentials of shading systems beyond conventional use, the present paper focuses on the effects of shading systems on opaque facades that is currently unaccounted for in simplified Overall Thermal Transfer Value (OTTV) calculations in standards adopted by many countries. A field study was first conducted to compare the effects of various shading configurations on an opaque façade. Subsequently, a simulation study was then conducted to quantify the effects of shading systems on opaque facades with varying thermal transmittance value (U-Value). The results of this study revealed numerous benefits for the deployment of shading systems on opaque building facades, which includes, reduction to building conductive heat gain, building cooling loads, microclimate temperature near the façade, as well as potential reduction to carbon emissions over the building lifecycle. Moreover, the paper also provides considerations for the selection shading configurations, as well as the considerations that would be required for the formulation of a more accurate simplified OTTV equation that would take into account the effects of shading systems on opaque facades.",
+                display_image: IqbalPublication1
             },
         ],
     },
