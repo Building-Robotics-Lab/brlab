@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Container from './../components/Container';
 import './OTST.css'
 import Pako from 'pako';
+import * as d3 from 'd3';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -58,7 +59,7 @@ function OTST() {
         { value: 'Minneapolis', label: '6A (Cold, Humid)' },
         { value: 'Helena', label: '6B (Cold, Dry)' },
         { value: 'Duluth', label: '7 (Very Cold)' },
-        { value: 'Fairbanks', label: '8 (Sub-Artic)' }
+        { value: 'Fairbanks', label: '8 (Sub-Arctic)' }
     ];
     const [climate, setClimate] = useState(climate_zone[0].value);
     const climateZone = (option) => {
@@ -66,29 +67,37 @@ function OTST() {
     }
 
     const occupancy_rate = [
-        { value: 25, label: 'Lightly Occupied (25%)' },
-        { value: 50, label: 'Mildly Occupied (50%)' },
-        { value: 75, label: 'Most Occupied (75%)' },
-        { value: 100, label: 'Fully Occupied(100%)' }
+        { value: 0, label: 'Lightly Occupied (25%)' },
+        { value: 1, label: 'Mildly Occupied (50%)' },
+        { value: 2, label: 'Most Occupied (75%)' },
+        { value: 3, label: 'Fully Occupied(100%)' }
     ];
     const [or, setOR] = useState(occupancy_rate[0].value);
     const occupancyRate = (option) => {
         setOR(option.value);
     }
 
-    const [otValue, setotValue] = useState(null)
-    const handleOTChange = () => {
-        setotValue(otValue)
+    const [otValue, setotValue] = useState("")
+    const handleOTChange = (event) => {
+        setotValue(event.target.value);
     }
 
-    const [checkedItems, setCheckedItems] = useState([false, false, false, false, true, false, false, false, true, false, false, true, false, true]);
+    const initialItems = [false, false, false, false, true, false, false, false, true, false, false, true, false, true]
+    const [checkedItems, setCheckedItems] = useState([...initialItems]);
     const labels = [
         "LM", "LA", "2h EM; 1h LT; 2h LA", "3h EM; 3h EA", "3h LM; 3h LA",
         "2h LT; 1h MM; 1h MA", "1h EA; 1h MA; 2h LT", "1h MM; 1h LM; 2h LT", "2h LM; 2h EA",
         "1h LT; 1h MA", "1h LT; 1h MM", "LT",
         "LT",
         "0"]
+    const fulllabels = [
+        "Late-Morning", "Late-Afternoon", "2h Early-Morning; 1h Lunchtime; 2h Late-Afternoon", "3h Early-Morning; 3h Early-Afternoon", "3h Late-Morning; 3h Late-Afternoon",
+        "2h Lunchtime; 1h Mid-Morning; 1h Mid-Afternoon", "1h Early-Afternoon; 1h Mid-Afternoon; 2h Lunchtime", "1h Mid-Morning; 1h Late-Morning; 2h Lunchtime", "2h Late-Morning; 2h Early-Afternoon",
+        "1h Lunchtime; 1h Mid-Afternoon", "1h Lunchtime; 1h Mid-Morning", "Lunchtime",
+        "Lunchtime",
+        "0h Unoccupied"]
     const label_imgs = [sixhLM, sixhLA, sixhEMLTLA, sixhEMEA, sixhLMLA, fourhLTMMMA, fourhEAMALT, fourhMMLMLT, fourhLMEA, twohLTMA, twohLTMM, twohLT, onehLT, zerohzero]
+    const [lab, setLab] = useState()
     const handleCheckboxChange = (index) => (event) => {
         const updatedCheckedItems = [...checkedItems];
         updatedCheckedItems[index] = event.target.checked;
@@ -116,28 +125,26 @@ function OTST() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({})
-        })
-            .then(response => response.json())
-            .then(data => {
-                // Decode and decompress the gzipped data
-                let decodedData = atob(data['body']);
-                let compressedData = new Uint8Array(decodedData.length);
-                for (let i = 0; i < decodedData.length; i++) {
-                    compressedData[i] = decodedData.charCodeAt(i);
-                }
-                let decompressedData = Pako.inflate(compressedData, { to: 'string' });
+        }).then(response => response.json()).then(data => {
+            // Decode and decompress the gzipped data
+            let decodedData = atob(data['body']);
+            let compressedData = new Uint8Array(decodedData.length);
+            for (let i = 0; i < decodedData.length; i++) {
+                compressedData[i] = decodedData.charCodeAt(i);
+            }
+            let decompressedData = Pako.inflate(compressedData, { to: 'string' });
 
-                // Parse the decompressed string into a JSON object
-                let output = JSON.parse(decompressedData);
+            // Parse the decompressed string into a JSON object
+            let output = JSON.parse(decompressedData);
 
-                setClimateData(output);
-                setLoading(false);
-                console.log('done loading')
-            })
-            .catch(error => {
-                setError(error);
-                setLoading(false);
-            });
+            setClimateData(output);
+            setLoading(false);
+            setTemperature(temperature_scale[0].value);
+            setprevTemperature(temperature_scale[0].value);
+        }).catch(error => {
+            setError(error);
+            setLoading(false);
+        });
     }, []);
 
     // Convert temperature when needed
@@ -149,17 +156,299 @@ function OTST() {
             }
             setClimateData(convertedData);
             setprevTemperature(temperature);
-
-            
         }
     }, [temperature]);
 
-    console.log(climateData)
+    const [forCSVdata, setforCSVdata] = useState({ x_values: [], y_values: [], e_values: [], b_values: [] });
+    const [x_val_extent, set_x_val_extent] = useState();
+
+    useEffect(() => {
+        const drawGraph = () => {
+            if (!loading) {
+                let scale;
+                if (temperature === 'Celsius') {
+                    scale = '°C';
+                } else {
+                    scale = '°F';
+                }
+
+                let scale_text = document.getElementById('scale');
+                scale_text.textContent = scale;
+
+                let scale_text2 = document.getElementById('scale2');
+                scale_text2.textContent = scale;
+
+                let scale_text3 = document.getElementById('scale3');
+                scale_text3.textContent = scale;
+
+                let all_colors = ["#7986CB", "#1A237E", "#303F9F", "#3F51B5", "blue", "#388E3C", "#4CAF50", "#81C784", "green", "#FBC02D", "#FBC02D", "khaki", "#8E24AA", "red"];
+                const filteredColors = all_colors.filter((_, index) => checkedItems[index]);
+
+                let data_climate = climateData[climate]
+                const data_or = data_climate.map(each_or => each_or[or]);
+                const data_op_checked = data_or.map(each_op => {
+                    return each_op.filter((_, index) => checkedItems[index]);
+                });
+
+                const selectedLabels = fulllabels.filter((_, index) => checkedItems[index]);
+                setLab(selectedLabels);
+
+                const svgContainer = d3.select("#graph");
+                svgContainer.select("svg").remove();
+
+                const margin = { top: 20, right: 30, bottom: 40, left: 80 };
+                const width = document.getElementById('graph').offsetWidth - margin.left - margin.right;
+                const height = (document.getElementById('graph').offsetHeight - margin.top - margin.bottom);
+
+                const x = d3.scaleLinear()
+                    .range([0, width]);
+
+                const y = d3.scaleLinear()
+                    .range([height, 0]);
+
+                const svg = svgContainer
+                    .append("svg")
+                    .attr("width", width + margin.left + margin.right)
+                    .attr("height", height + margin.top + margin.bottom)
+                    .append("g")
+                    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+                let x_values = data_op_checked[0];
+                let y_values = data_op_checked[1];
+                let e_values = data_op_checked[2];
+                let b_values = data_op_checked[3];
+
+                setforCSVdata({ x_values, y_values, e_values, b_values }); // update csvdata
+
+                let xExtent = d3.extent(x_values.flat());
+                let yExtent = d3.extent(y_values.flat());
+
+                x.domain([xExtent[0] - 1, xExtent[1] + 1]);
+                y.domain([yExtent[0] - 1, yExtent[1] + 1]);
+
+                set_x_val_extent(xExtent);
+
+                svg.append("g")
+                    .attr("transform", `translate(0, ${height})`)
+                    .call(d3.axisBottom(x))
+
+                svg.append("g")
+                    .call(d3.axisLeft(y))
+
+                const line = d3.line()
+                    .x(d => x(d.x))
+                    .y(d => y(d.y))
+
+                let tooltip = d3.select("body").append("div")
+                    .attr("class", "tooltip")
+                    .style("opacity", 0);
+
+                svg.append("text")
+                    .attr("transform", `translate(${width / 2} ,${height + margin.top + 15})`) // Position at the middle of the x-axis, and move slightly below the axis
+                    .style("text-anchor", "middle")
+                    .text(`Outdoor Temperature (${scale})`);
+
+                svg.append("text")
+                    .attr("transform", "rotate(-90)") // Rotate the text 90 degrees
+                    .attr("y", 20 - margin.left) // Position it to the left of the y-axis
+                    .attr("x", 0 - (height / 2)) // Position at the middle of the y-axis
+                    .attr("dy", "1em") // Move slightly away from the axis
+                    .style("text-anchor", "middle")
+                    .text(`Optimal Setpoint (${scale})`);
+
+                for (let i = 0; i < x_values.length; i++) {
+                    const currentX = x_values[i];
+                    const currentY = y_values[i];
+                    const currentE = e_values[i];
+                    const currentB = b_values[i];
+
+                    // Prepare data for the current line
+                    const plot_data = currentX.map((x, j) => ({ x, y: currentY[j], e: currentE[j], b: currentB[j] }));
 
 
-    
+                    // Plot the line
+                    svg.append("path")
+                        .datum(plot_data)
+                        .attr("fill", "none")
+                        .attr("stroke", filteredColors[i % filteredColors.length])  // Cycle through colors if there are more lines than colors
+                        .attr("stroke-width", 3)
+                        .attr("d", line);
+
+                    let hoverLineHorizontal = svg.append("line")
+                        .style("stroke", "gray")
+                        .style("stroke-width", 2)
+                        .style("stroke-dasharray", "5,5")
+                        .style("opacity", 0);
+
+                    let hoverLineVertical = svg.append("line")
+                        .style("stroke", "gray")
+                        .style("stroke-width", 2)
+                        .style("stroke-dasharray", "5,5")
+                        .style("opacity", 0);
+
+                    // Hover to show points on the heat and cool lines
+                    svg.selectAll(`.heat-point-${i}`)
+                        .data(plot_data)
+                        .enter().append('circle')
+                        .attr('class', `heat-point-${i}`)
+                        .attr('cx', d => x(d.x))
+                        .attr('cy', d => y(d.y))
+                        .attr('r', 3)
+                        .attr('fill', 'red')
+                        .attr('opacity', 0)
+                        .on('mouseover', function (event, d) {
+                            let [xPos, yPos] = d3.pointer(event, svg.node());
+                            tooltip.transition()
+                                .duration(200)
+                                .style('opacity', 0.9);
+                            tooltip.html(`Outdoor Temperature (${scale}): ${Number(d.x).toFixed(1)} <br/> Optimal Setpoint (${scale}): ${Number(d.y).toFixed(1)} <br/> HVAC Energy Consumption (kWh): ${(Number(d.e) / 1000000).toFixed(0)} <br/> HVAC Baseline Energy Consumption (kWh): ${(Number(d.b) / 1000000).toFixed(0)}`)
+                                .style('left', (xPos + margin.left + document.getElementById('graph').offsetLeft) + 'px')
+                                .style('top', (yPos + document.getElementById('graph').offsetTop) + 'px');
+
+                            hoverLineVertical.attr("x1", x(d.x))
+                                .attr("y1", y(d.y))
+                                .attr("x2", x(d.x))
+                                .attr("y2", height)
+                                .style("opacity", 1);
+
+                            hoverLineHorizontal.attr("x1", x(d.x))
+                                .attr("y1", y(d.y))
+                                .attr("x2", 0)
+                                .attr("y2", y(d.y))
+                                .style("opacity", 1);
+                        })
+                        .on('mouseout', function (d) {
+                            tooltip.transition()
+                                .duration(500)
+                                .style('opacity', 0);
+
+                            hoverLineVertical.style("opacity", 0); // hide the vertical line
+                            hoverLineHorizontal.style("opacity", 0); // hide the horizontal line
+                        });
+                }
+            }
+        };
+
+        drawGraph();
+
+        window.addEventListener('resize', drawGraph);
+
+        return () => {
+            window.removeEventListener('resize', drawGraph)
+        }
+
+    }, [climate, climateData, or, checkedItems]);
+
+    const Reset = () => {
+        setCheckedItems([...initialItems]);
+        setTemperature(temperature_scale[0].value);
+        setprevTemperature(temperature_scale[0].value);
+        setOR(occupancy_rate[0].value);
+        setClimate(climate_zone[0].value)
+        setotValue("");
+        setexceedValue(false);
+    }
+
+    let col1;
+    let col2;
+    let col3;
+    let col4;
+    let col5;
+    let col6;
+    let col7;
+    let col8;
+    let col9;
+
+    const [exceedValue, setexceedValue] = useState(false)
     const CalculateButton = () => {
+        const { x_values, y_values, e_values, b_values } = forCSVdata;
+        let inputValue = Number(otValue);
 
+        if (inputValue < x_val_extent[1] && inputValue > x_val_extent[0]) {
+            col1 = [] // Temp Scale
+            col2 = [] // Climate
+            col3 = [] // Patt
+            col4 = [] // Rate
+            col5 = [] // OT
+            col6 = [] // SP
+            col7 = [] // E
+            col8 = [] // B
+            col9 = [] // Savings
+
+            let scale;
+            if (temperature === 'Celsius') {
+                scale = 'Celsius (°C)';
+            } else {
+                scale = 'Fahrenheit (°F)';
+            }
+
+            const closestIndices = findClosestIndices(x_values, inputValue);
+            closestIndices.forEach((element, index) => {
+                col1.push(scale)
+                col2.push(climate)
+                col3.push(lab[index])
+                col4.push(occupancy_rate[or].label)
+                col5.push(inputValue)
+                col6.push(Number((y_values[index][element]).toFixed(1)))
+                col7.push((e_values[index][element]));
+                col8.push(b_values[index][element]);
+
+                let savings = Number(((Math.abs(e_values[index][element] - b_values[index][element]) / (b_values[index][element])) * 100).toFixed(2))
+
+                col9.push(savings);
+            });
+            setexceedValue(false)
+        } else {
+            setexceedValue(true)
+            let scale_text_lower = document.getElementById('lower');
+            scale_text_lower.textContent = x_val_extent[0].toFixed(1);
+
+            let scale_text_higher = document.getElementById('higher');
+            scale_text_higher.textContent = x_val_extent[1].toFixed(1);
+        }
+
+
+    }
+
+    const DownloadCSV = () => {
+        if (!otValue) {
+            setexceedValue(true);
+            let scale_text_lower = document.getElementById('lower');
+            scale_text_lower.textContent = x_val_extent[0].toFixed(1);
+
+            let scale_text_higher = document.getElementById('higher');
+            scale_text_higher.textContent = x_val_extent[1].toFixed(1);
+        } else {
+            let csvContent = "Temperature Scale,Climate Zone,Occupancy Pattern,Occupancy Rate,Outdoor Temperature,Optimal Setpoint,HVAC Energy Consumption (J),HVAC Baseline Energy Consumption (J),Energy Savings (%)\n";
+            // Assuming col1, col2, ... col9 are of the same length
+            for (let i = 0; i < col1.length; i++) {
+                let row = [
+                    col1[i],
+                    col2[i],
+                    col3[i],
+                    col4[i],
+                    col5[i],
+                    col6[i],
+                    col7[i],
+                    col8[i],
+                    col9[i]
+                ].join(",");
+                csvContent += row + "\n";
+            }
+
+            // Create Blob
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+
+            // Create a download link and click it
+            const link = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+            link.setAttribute('href', url);
+            link.setAttribute('download', 'data.csv');
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
     }
 
     return (
@@ -241,24 +530,45 @@ function OTST() {
                                 <Select options={occupancy_rate} value={occupancy_rate.find(rate => rate.value === or)} defaultValue={occupancy_rate[0]} onChange={occupancyRate} style={{ width: '600px' }} isSearchable={false} />
                             </div>
                             <div>
-                                <p>Enter Outdoor Temperature (<span id='scale'>C</span>)</p>
-                                <input type="number" value={otValue} onChange={handleOTChange} />
+                                <p>Enter Outdoor Temperature (<span id='scale'></span>)</p>
+                                <input type="number" value={otValue} onChange={handleOTChange} className={exceedValue ? "error-input" : ""} />
                             </div>
-                            <div className="HomeButtons">
-                                <Link onClick={CalculateButton}><p id='JoinButton'>Calculate Optimal Temperature Setpoint</p></Link>
+                            <div className='Buttons'>
+                                <div className="HomeButtons">
+                                    <Link onClick={CalculateButton}><p id='JoinButton'>Calculate</p></Link>
+                                </div>
+                                <div className="HomeButtons">
+                                    <Link onClick={Reset}><p id='JoinButton'>Reset</p></Link>
+                                </div>
+                                <div className="HomeButtons">
+                                    <Link onClick={DownloadCSV} className={exceedValue ? "disabled-button" : ""}><p id='JoinButton'>Download .csv File</p></Link>
+                                </div>
                             </div>
+                            <div class="error_input">
+                                <p style={{ display: exceedValue ? "block" : "none" }}>Enter Outdoor Temperature between <span id='lower'></span><span id='scale2'></span> and <span id='higher'></span><span id='scale3'></span></p>
+                            </div>
+                            <div class="legend">
+                                <p>EM: Early-Morning; MM: Mid-Morning; LM: Late-Morning; EA: Early-Afternoon; MA: Mid-Afternoon; LA: Late-Afternoon; LT: Lunchtime</p>
+                            </div>
+
                         </div>
                         <div className='up_right'>
                             <div>
                                 <section>
-                                    <p>6 Hours Unoccupied</p>
-                                    {checkedItems.slice(0, 5).map((isChecked, index) => (
-                                        <div key={index}>
-                                            <input type="checkbox" checked={isChecked} onChange={handleCheckboxChange(index)} />
-                                            <img src={label_imgs[index]}></img>
-                                            <label>{labels[index]}</label>
-                                        </div>
-                                    ))}
+                                    <p>0 Hours Unoccupied</p>
+                                    <div>
+                                        <input type="checkbox" checked={checkedItems[13]} onChange={handleCheckboxChange(13)} />
+                                        <img src={label_imgs[13]}></img>
+                                        <label>{labels[13]}</label>
+                                    </div>
+                                </section>
+                                <section>
+                                    <p>1 Hour Unoccupied</p>
+                                    <div>
+                                        <input type="checkbox" checked={checkedItems[12]} onChange={handleCheckboxChange(12)} />
+                                        <img src={label_imgs[12]}></img>
+                                        <label>{labels[12]}</label>
+                                    </div>
                                 </section>
                                 <section>
                                     <p>2 Hours Unoccupied</p>
@@ -283,26 +593,20 @@ function OTST() {
                                     ))}
                                 </section>
                                 <section>
-                                    <p>1 Hour Unoccupied</p>
-                                    <div>
-                                        <input type="checkbox" checked={checkedItems[12]} onChange={handleCheckboxChange(12)} />
-                                        <img src={label_imgs[12]}></img>
-                                        <label>{labels[12]}</label>
-                                    </div>
-                                </section>
-                                <section>
-                                    <p>0 Hours Unoccupied</p>
-                                    <div>
-                                        <input type="checkbox" checked={checkedItems[13]} onChange={handleCheckboxChange(13)} />
-                                        <img src={label_imgs[13]}></img>
-                                        <label>{labels[13]}</label>
-                                    </div>
+                                    <p>6 Hours Unoccupied</p>
+                                    {checkedItems.slice(0, 5).map((isChecked, index) => (
+                                        <div key={index}>
+                                            <input type="checkbox" checked={isChecked} onChange={handleCheckboxChange(index)} />
+                                            <img src={label_imgs[index]}></img>
+                                            <label>{labels[index]}</label>
+                                        </div>
+                                    ))}
                                 </section>
                             </div>
                         </div>
                     </div>
                     <div className='second_section_down' id='graph'>
-                        <p>down</p>
+
                     </div>
                 </div>
             </Container>
@@ -342,3 +646,19 @@ const convertTemperature = (prevScale, selectedScale, inputList) => {
 
     return convertedList;
 };
+
+function findClosestIndices(arrays, target) {
+    return arrays.map(arr => {
+        let closest = arr[0];
+        let index = 0;
+
+        for (let i = 1; i < arr.length; i++) {
+            if (Math.abs(arr[i] - target) < Math.abs(closest - target)) {
+                closest = arr[i];
+                index = i;
+            }
+        }
+
+        return index;
+    });
+}

@@ -156,7 +156,15 @@
 }
 
 /* Fourth Section */
+.Home .fourth_section_title {
+    font-size: 2rem;
+    padding-bottom: 1.65vmax;
+    text-align: center;
+}
 
+.Home #fourth_section_button {
+    margin-top: 2rem;
+}
 
 /* Fifth Section */
 

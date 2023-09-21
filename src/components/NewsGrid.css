@@ -38,8 +38,8 @@
 
 .NewsGrid .NewsInformation .date {
     color: gray;
-    font-size: medium;
-    margin-bottom: 0.75rem;
+    font-size: smaller;
+    margin-bottom: 0.25rem;
 }
 
 .NewsGrid .NewsInformation h4 {

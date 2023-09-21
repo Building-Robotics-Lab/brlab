@@ -182,7 +182,11 @@ function Home() {
             </Container>
 
             <Container useOrange={true}>
+                <h2 className='fourth_section_title'><b>News & Updates</b></h2>
                 <Carousel slides={slides} />
+                <div className="HomeButtons" id='fourth_section_button'>
+                    <Link to="/news"><p id='JoinButton'>SEE ALL NEWS</p></Link>
+                </div>
             </Container>
 
             <Container>

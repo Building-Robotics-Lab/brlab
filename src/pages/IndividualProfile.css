@@ -30,6 +30,7 @@
 
 .IndividualProfile .first_section .profile_name h3 {
     font-size: 1.75rem;
+    font-weight: 500;
 }
 
 /* Second Section */
@@ -45,6 +46,7 @@
 .IndividualProfile .second_section .second_section_left h3 {
     font-size: 1.75rem;
     margin-bottom: 1.5rem;
+    font-weight: 500;
 }
 
 .IndividualProfile .second_section .second_section_left p {
@@ -94,6 +96,7 @@
 
 .IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_title h2 {
     font-size: 1.75rem;
+    font-weight: 500;
 }
 
 .IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_content {

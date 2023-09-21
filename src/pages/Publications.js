@@ -20,7 +20,7 @@ function Publications() {
                     <h1><b>Peer-reviewed Publications</b></h1>
                     <h3>For an up-to-date list:</h3>
                     <div className="HomeButtons">
-                        <Link to="https://scholar.google.com/citations?hl=en&user=9UACV-AAAAAJ&view_op=list_works&sortby=pubdate" target='_blank'><p id='JoinButton'>FIND US ON GOOGLE SCHOLAR</p></Link>
+                        <Link to="https://scholar.google.com/citations?hl=en&user=9UACV-AAAAAJ&view_op=list_works&sortby=pubdate" target='_blank'><p id='JoinButton'>GOOGLE SCHOLAR</p></Link>
                     </div>
                 </div>
             </Container>

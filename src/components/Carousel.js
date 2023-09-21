@@ -53,7 +53,7 @@ const Carousel = ({ slides }) => {
                         <img className='carouselImage' src={slide.image} alt={slide.title} />
                         <p className='carouselDate'>{slide.date}</p>
                         <h3 className='carouselTitle' dangerouslySetInnerHTML={{ __html: slide.title }}></h3>
-                        <Link className='carouselLink' to={`/news#${slide.link}`}>Read More</Link>
+                        <Link className='carouselLink' to={`/news#${slide.link}`}>Read more</Link>
                     </div>
                 ))}
             </div>

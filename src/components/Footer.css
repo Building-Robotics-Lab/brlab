@@ -7,7 +7,7 @@
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-    max-width: 2000px;
+    max-width: 1600px;
 }
 
 .footer-container {
@@ -24,8 +24,8 @@
 .uiux > * {
     display: flex;
     justify-content: space-between;
-    margin: 0rem 1rem 0.5rem 1rem;
-    font-size: medium;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+    font-size: smaller;
     color: #6c757d !important;
 }
 
@@ -34,6 +34,7 @@
 .Footer h3 {
     font-size: 1.75rem;
     margin-bottom: 0.625rem;
+    font-weight: 500;
 }
 
 .Footer .BRL_Footer {

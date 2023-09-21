@@ -39,7 +39,7 @@
     width: 100%;
     text-align: left;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 0.25rem  1rem;
 }
 
 .slides {
@@ -54,6 +54,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    justify-content: flex-start;
 }
 
 .btn {

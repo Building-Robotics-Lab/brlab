@@ -1,7 +1,7 @@
 .navbar-container {
     display: flex;
     justify-content: space-between;
-    padding: 0.75rem;
+    padding: 0rem 0.5rem;
 }
 
 .left, 

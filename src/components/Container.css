@@ -3,11 +3,11 @@
     margin: 0px;
 }
 
-#parent_wrapper {
+.parent_wrapper {
     background-color: white;
 }
 
-#parent_wrapper_orange {
+.parent_wrapper_orange {
     background-color: rgb(208, 187, 148);
     ;
 }

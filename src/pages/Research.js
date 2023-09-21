@@ -108,12 +108,12 @@ function Research() {
                 </div>
             </Container>
 
-            <Container>
+            <Container sectionName='theme1_section'>
                 <div className="title">
                     <h1>Sensing Human Health and Comfort</h1>
                 </div>
                 <div className="whole_theme">
-                    <div className='theme_section' id='theme1_section'>
+                    <div className='theme_section'>
                         <div className="theme_details">
                             <img src={Theme1}></img>
                             <h4><b>Optimising Thermal Comfort in the Built Environment</b></h4>
@@ -146,12 +146,12 @@ function Research() {
                 </div>
             </Container>
 
-            <Container useOrange={true}>
+            <Container useOrange={true} sectionName='theme2_section'>
                 <div className="title">
                     <h1>Human-Centred AI</h1>
                 </div>
                 <div className="whole_theme">
-                    <div className='theme_section' id='theme2_section'>
+                    <div className='theme_section'>
                         <div className="theme_details">
                             <img src={Theme2}></img>
                             <h4><b>Towards a Semantics-Driven Human-Centric Digital Twin</b></h4>
@@ -199,12 +199,12 @@ function Research() {
                 </div>
             </Container>
 
-            <Container>
+            <Container sectionName='theme3_section'>
                 <div className="title">
                     <h1>Resilient Cooling</h1>
                 </div>
                 <div className="whole_theme">
-                    <div className='theme_section' id='theme3_section'>
+                    <div className='theme_section'>
                         <div className="theme_details">
                             <img src={Theme3_0}></img>
                             <h4><b>Exploring Novel Cooling Technologies For Building Façades: Towards a Cooler and Resilient Urban Landscape</b></h4>
@@ -236,12 +236,12 @@ function Research() {
                 </div>
             </Container>
 
-            <Container useOrange={true}>
+            <Container useOrange={true} sectionName='theme4_section'>
                 <div className="title">
                     <h1>Intelligent Environments</h1>
                 </div>
                 <div className="whole_theme">
-                    <div className='theme_section' id='theme4_section'>
+                    <div className='theme_section'>
                         <div className="theme_details">
                             <img src={Theme4}></img>
                             <h4><b>Democratisation of Virtual Power Plants (VPP) for Optimal Monetisation and Grid Flexibility</b></h4>
