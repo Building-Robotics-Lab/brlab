@@ -256,6 +256,35 @@ function OTST() {
                     .style("text-anchor", "middle")
                     .text(`Optimal Setpoint (${scale})`);
 
+                // For legends
+                const legend_labels = labels.filter((_, index) => checkedItems[index]);
+                const legend_colors = all_colors.filter((_, index) => checkedItems[index]);
+                const legends = legend_labels.map((label, index) => {
+                    return { color: legend_colors[index], label: label };
+                });
+
+                var legend = svg.selectAll('.legend')
+                    .data(legends)
+                    .enter().append('g')
+                    .attr('class', 'legend')
+                    .attr('transform', function (d, i) { return 'translate(' + (50) + ',' + (i * 20) + ')'; });
+
+                legend.append('rect')
+                    .attr('x', -30)
+                    .attr('y', 7)
+                    .attr('width', 19)
+                    .attr('height', 5)
+                    .style('fill', d => d.color);
+
+                legend.append('text')
+                    .attr('x', -5)
+                    .attr('y', 9.5)
+                    .attr('dy', '0.32em')
+                    .text(function (d) { return d.label; });
+
+                
+
+
                 for (let i = 0; i < x_values.length; i++) {
                     const currentX = x_values[i];
                     const currentY = y_values[i];
@@ -342,7 +371,7 @@ function OTST() {
     const Reset = () => {
         setCheckedItems([...initialItems]);
         setTemperature(temperature_scale[0].value);
-        setprevTemperature(temperature_scale[0].value);
+        // setprevTemperature(temperature_scale[0].value);
         setOR(occupancy_rate[0].value);
         setClimate(climate_zone[0].value)
         setotValue("");
@@ -419,6 +448,7 @@ function OTST() {
             let scale_text_higher = document.getElementById('higher');
             scale_text_higher.textContent = x_val_extent[1].toFixed(1);
         } else {
+            CalculateButton();
             let csvContent = "Temperature Scale,Climate Zone,Occupancy Pattern,Occupancy Rate,Outdoor Temperature,Optimal Setpoint,HVAC Energy Consumption (J),HVAC Baseline Energy Consumption (J),Energy Savings (%)\n";
             // Assuming col1, col2, ... col9 are of the same length
             for (let i = 0; i < col1.length; i++) {
