@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Research from './pages/Research';
 import ComfortGPT from './pages/ComfortGPT';
 import OTST from './pages/OTST';
+import OTST2 from './pages/OTST2';
 import Our_Team from './pages/Our_Team';
 import News from './pages/News';
 import Publications from './pages/Publications';
@@ -27,6 +28,7 @@ function App() {
           <Route path='/research' element={<Research />} />
           <Route path='/comfortgpt' element={<ComfortGPT />} />
           <Route path='/optimal_temperature_setpoint_tool' element={<OTST />} />
+          <Route path='/optimal_temperature_setpoint_tool2' element={<OTST2 />} />
           <Route path='/our_team' element={<Our_Team />} />
           <Route path='/news' element={<News />} />
           <Route path='/publications' element={<Publications />} />

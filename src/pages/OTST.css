@@ -234,6 +234,7 @@
 }
 
 .OTST .legend {
+    padding-top: 0.5rem;
     display: grid;
     grid-column: span 2;
 }
