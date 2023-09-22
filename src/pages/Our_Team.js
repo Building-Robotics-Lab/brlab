@@ -106,7 +106,7 @@ function Our_Team() {
         {
             name: 'Guillaume Lecronier',
             role: "Visiting MSc Student (ETH Zürich)",
-            skills: '',
+            skills: 'Robotics; Embedded Systems; IoT; Sensor Data Analysis; Machine Learning',
             imgSrc: GuillaumePic,
             link: 'Guillaume'
         }

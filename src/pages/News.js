@@ -38,7 +38,7 @@ function News() {
             imageSrc: GuillaumePic,
             date: '21/09/2023',
             title: 'Please welcome Guillaume Lecronier to the lab!',
-            content: '<p>The Building Robotics Lab is happy to have Guillaume joining us as a visiting MSc student from ETH Zürich studying Mechanical Engineering. His research revolves around XX, XX, XX, XX, and XX. Check out his full profile <a href="https://building-robotics-lab.github.io/brlab/#/individual_profile/Guillaume" target="_blank">here</a> to get to know him more!</p>',
+            content: '<p>The Building Robotics Lab is happy to have Guillaume joining us as a visiting MSc student from ETH Zürich studying Mechanical Engineering and Robotics. His research revolves around Robotics, Embedded Systems, IoT, Sensor Data Analysis, and Machine Learning. Check out his full profile <a href="https://building-robotics-lab.github.io/brlab/#/individual_profile/Guillaume" target="_blank">here</a> to get to know him more!</p>',
         },
         {
             NewsSectionName: 'Pierre',

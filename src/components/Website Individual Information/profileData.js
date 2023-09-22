@@ -31,7 +31,7 @@ import PierreCV from './Pierre-Louis/CV.pdf'
 
 import GuillaumePic from './unknown.png'
 //import GuillaumePic from './Pierre-Louis/image.jpg'
-import GuillaumeCV from './Pierre-Louis/CV.pdf'
+import GuillaumeCV from './Guillaume/CV.pdf'
 
 import MichellePic from './Michelle/image.jpg'
 import MichelleCV from './Michelle/CV.pdf'
@@ -396,7 +396,7 @@ const profiles = [
         ProfilePic: GuillaumePic,
         Name: 'Guillaume Lecronier',
         Position: 'Visiting MSc Student from ETH Zürich',
-        Biography: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        Biography: 'Guillaume Lecronier is a master student at ETH Zürich (Swiss Federal Institute of Technology) in Mechanical Engineering and Robotics. Originally from France, he\'s visiting the lab in order to conduct his master thesis. His research focuses on indoor environment monitoring and involves the use of bluetooth low energy (BLE) technology in the scope of indoor positioning systems using a digital twin interface. Guillaume has a strong interest in IoT applications and is keen on working with sensors and integrating them into electronic prototyping setups, especially with platforms like Raspberry Pis. He enjoys the process of collecting valuable and meaningful data from these for innovative projects. In his free time, Guillaume enjoys running and fitness as well as travelling.',
         Education: [
             'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Mechanical Engineering (current)',
             'BSc, École Polytechnique Fédérale de Lausanne (EPFL), Mechanical Engineering (2021)'
@@ -404,20 +404,21 @@ const profiles = [
         Awards: [],
         Featured_Publications: [],
         Contacts: [
-            { href: "tel:", icon: faPhone, text: "" },
-            { href: "mailto:e1307332@u.nus.edu", icon: faEnvelope, text: "e1307332@u.nus.edu" },
-            { href: "mailto:", icon: faEnvelope, text: "" },
+            { href: "tel:+6589185944", icon: faPhone, text: "+65 8918 5944" },
+            { href: "tel:+33761091396", icon: faPhone, text: "+33 (0) 7 61 09 13 96" },
+            { href: "mailto:glecronier@u.nus.edu", icon: faEnvelope, text: "glecronier@u.nus.edu" },
+            { href: "mailto:glecronier@me.com", icon: faEnvelope, text: "glecronier@me.com" },
         ],
         Links: [
             { href: GuillaumeCV, icon: faUser, text: 'CV' },
             { href: 'https://www.linkedin.com/in/guillaume-lecronier-990b67197/', icon: faLinkedin, text: 'LinkedIn' }
         ],
         Interests: [
-            '',
-            '',
-            '',
-            '',
-            ''
+            'Robotics',
+            'Embedded Systems',
+            'IoT',
+            'Sensor Data Analysis',
+            'Machine Learning'
         ],
     },
     {
