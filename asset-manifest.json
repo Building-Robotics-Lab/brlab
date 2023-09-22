@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brlab/static/css/main.c2869d51.css",
-    "main.js": "/brlab/static/js/main.7769eb72.js",
+    "main.css": "/brlab/static/css/main.4ca0b4a5.css",
+    "main.js": "/brlab/static/js/main.0b7ddb23.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
     "static/media/Iqbal_DT2.png": "/brlab/static/media/Iqbal_DT2.73b332b29a8b111f14a7.png",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
@@ -59,11 +59,11 @@
     "static/media/Riccardo1.jpg": "/brlab/static/media/Riccardo1.e684976984904e794400.jpg",
     "static/media/NUSLOGO-removebg-preview.png": "/brlab/static/media/NUSLOGO-removebg-preview.5dd0ad9bdd141b9217c1.png",
     "index.html": "/brlab/index.html",
-    "main.c2869d51.css.map": "/brlab/static/css/main.c2869d51.css.map",
-    "main.7769eb72.js.map": "/brlab/static/js/main.7769eb72.js.map"
+    "main.4ca0b4a5.css.map": "/brlab/static/css/main.4ca0b4a5.css.map",
+    "main.0b7ddb23.js.map": "/brlab/static/js/main.0b7ddb23.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2869d51.css",
-    "static/js/main.7769eb72.js"
+    "static/css/main.4ca0b4a5.css",
+    "static/js/main.0b7ddb23.js"
   ]
 }
