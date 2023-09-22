@@ -146,7 +146,7 @@
 .OTST2 .second_section .inputs .inputs_left .Buttons {
     display: flex;
     justify-content: center;
-    /* padding-bottom: 1rem; */
+    padding-bottom: 1rem;
     gap: 1rem;
 }
 
@@ -184,6 +184,48 @@
 
 .OTST2 .legend p b {
     font-weight: 900;
+}
+
+.OTST2 .error_input p {
+    font-size: smaller;
+    color: red !important;
+}
+
+.OTST2 .error-input {
+    border: 2px solid red;
+    animation: shake 0.25s linear;
+}
+
+.OTST2 .disabled-button {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.OTST2 .all_outputs>* {
+    font-size: smaller;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(10px);
+    }
 }
 
 .OTST2 .second_section .outputs {

@@ -12,21 +12,6 @@ import Select from 'react-select';
 import profiles from '../components/Website Individual Information/profileData';
 import { Link } from 'react-router-dom';
 
-import sixhLM from '../components/Website Data/OTST/6hLM.png';
-import sixhLA from '../components/Website Data/OTST/6hLA.png';
-import sixhEMLTLA from '../components/Website Data/OTST/6hEMLTLA.png';
-import sixhEMEA from '../components/Website Data/OTST/6hEMEA.png';
-import sixhLMLA from '../components/Website Data/OTST/6hLMLA.png';
-import fourhLTMMMA from '../components/Website Data/OTST/4hLTMMMA.png';
-import fourhEAMALT from '../components/Website Data/OTST/4hEAMALT.png';
-import fourhMMLMLT from '../components/Website Data/OTST/4hMMLMLT.png';
-import fourhLMEA from '../components/Website Data/OTST/4hLMEA.png';
-import twohLTMA from '../components/Website Data/OTST/2hLTMA.png';
-import twohLTMM from '../components/Website Data/OTST/2hLTMM.png';
-import twohLT from '../components/Website Data/OTST/2hLT.png';
-import onehLT from '../components/Website Data/OTST/1hLT.png';
-import zerohzero from '../components/Website Data/OTST/0h0.png';
-
 function OTST2() {
     // For First Section
     const getProfileByName = (profileName) => {
@@ -153,6 +138,19 @@ function OTST2() {
 
     // Render graph after data is loaded
     let scale;
+    const [col1, setcol1] = useState([]); // Temp Scale
+    const [col2, setcol2] = useState([]); // Climate
+    const [col3, setcol3] = useState([]); // Patt
+    const [col3_2, setcol3_2] = useState([]); // Patt Shortened
+    const [col4, setcol4] = useState([]); // Rate
+    const [col5, setcol5] = useState([]); // Outdoor Temperature
+    const [col6, setcol6] = useState([]); // Setpoint
+    const [col7, setcol7] = useState([]); // Energy
+    const [col8, setcol8] = useState([]); // Baseline
+    const [col9, setcol9] = useState([]); // Savings
+    const [col10, setcol10] = useState([]); // Legend Color
+    const [exceedValue, setexceedValue] = useState(false)
+    const [usescale, setusescale] = useState();
     useEffect(() => {
         const drawGraph = () => {
             if (!loading) {
@@ -161,13 +159,17 @@ function OTST2() {
                 } else {
                     scale = '°F';
                 }
+                setusescale(scale)
 
                 let scale_text = document.getElementById('scale');
                 scale_text.textContent = scale;
 
                 let all_colors = ["#7986CB", "#1A237E", "#303F9F", "#3F51B5", "blue", "#388E3C", "#4CAF50", "#81C784", "green", "#FBC02D", "#FBC02D", "khaki", "#8E24AA", "red"];
                 const filteredColors = selectedOptions.map(element => all_colors[element.value]);
+                setcol10(filteredColors)
                 const filteredLabels = selectedOptions.map(element => labels[element.value]);
+                setcol3_2(filteredLabels);
+                const filteredFullLabels = selectedOptions.map(element => fulllabels[element.value]);
 
                 let data_climate = climateData[climate]
                 const data_or = data_climate.map(each_or => each_or[or]);
@@ -217,7 +219,7 @@ function OTST2() {
                     .y(d => y(d.y))
 
                 let tooltip = d3.select("body").append("div")
-                    .attr("class", "tooltip")
+                    .attr("className", "tooltip")
                     .style("opacity", 0);
 
                 svg.append("text")
@@ -256,15 +258,23 @@ function OTST2() {
                     .attr('dy', '0.32em')
                     .text(function (d) { return d.label; });
 
+                const temporary_col1 = [] // Temp Scale
+                const temporary_col2 = [] // Climate
+                const temporary_col3 = [] // Patt
+                const temporary_col4 = [] // Rate
+                const temporary_col5 = [] // Outdoor Temperature
+                const temporary_col6 = [] // Setpoint
+                const temporary_col7 = [] // Energy
+                const temporary_col8 = [] // Baseline
+                const temporary_col9 = [] // Savings
+
                 for (let i = 0; i < x_values.length; i++) {
                     const currentX = x_values[i];
                     const currentY = y_values[i];
                     const currentE = e_values[i];
                     const currentB = b_values[i];
 
-                    // Prepare data for the current line
                     const plot_data = currentX.map((x, j) => ({ x, y: currentY[j], e: currentE[j], b: currentB[j] }));
-
 
                     // Plot the line
                     svg.append("path")
@@ -326,39 +336,81 @@ function OTST2() {
                             hoverLineHorizontal.style("opacity", 0); // hide the horizontal line
                         });
 
-                    // Find the closest index for the specific x_value (assuming you have that value stored in a variable)
-                    let closestIndex = findClosestIndex(currentX, Number(otValue));
+                    if (Number(otValue) < xExtent[1] && Number(otValue) > xExtent[0]) {
+                        setexceedValue(false)
+                        let scale_text_lower = document.getElementById('scale2');
+                        scale_text_lower.textContent = scale;
+                        let scale_text_higher = document.getElementById('scale3');
+                        scale_text_higher.textContent = scale;
 
-                    // Extract the corresponding y_value based on the closestIndex
-                    let closestY = currentY[closestIndex];
+                        let scale_lower = document.getElementById('lower');
+                        scale_lower.textContent = Number(xExtent[0]).toFixed(1);
+                        let scale_higher = document.getElementById('higher');
+                        scale_higher.textContent = Number(xExtent[1]).toFixed(1);
 
-                    // Highlight the point by adding a circle
-                    svg.append("circle")
-                        .attr("cx", x(currentX[closestIndex]))
-                        .attr("cy", y(closestY))
-                        .attr("r", 6)  // Radius of circle
-                        .attr("fill", filteredColors[i % filteredColors.length]);
+                        // Find the closest index for the specific x_value (assuming you have that value stored in a variable)
+                        let closestIndex = findClosestIndex(currentX, Number(otValue));
 
-                    // Add vertical line
-                    svg.append("line")
-                        .attr("x1", x(currentX[closestIndex]))
-                        .attr("y1", y(closestY))
-                        .attr("x2", x(currentX[closestIndex]))
-                        .attr("y2", height)
-                        .style("stroke", 'black')
-                        .style("stroke-width", 2)
-                        .style("stroke-dasharray", "5,5");
+                        // Extract the corresponding y_value based on the closestIndex
+                        let closestY = currentY[closestIndex];
+                        let closestE = currentE[closestIndex];
+                        let closestB = currentB[closestIndex];
 
-                    // Add horizontal line
-                    svg.append("line")
-                        .attr("x1", x(currentX[closestIndex]))
-                        .attr("y1", y(closestY))
-                        .attr("x2", 0)
-                        .attr("y2", y(closestY))
-                        .style("stroke", filteredColors[i % filteredColors.length])
-                        .style("stroke-width", 2)
-                        .style("stroke-dasharray", "5,5");
+                        // Highlight the point by adding a circle
+                        svg.append("circle")
+                            .attr("cx", x(currentX[closestIndex]))
+                            .attr("cy", y(closestY))
+                            .attr("r", 6)  // Radius of circle
+                            .attr("fill", filteredColors[i % filteredColors.length]);
+
+                        // Add vertical line
+                        svg.append("line")
+                            .attr("x1", x(currentX[closestIndex]))
+                            .attr("y1", y(closestY))
+                            .attr("x2", x(currentX[closestIndex]))
+                            .attr("y2", height)
+                            .style("stroke", 'black')
+                            .style("stroke-width", 2)
+                            .style("stroke-dasharray", "5,5");
+
+                        // Add horizontal line
+                        svg.append("line")
+                            .attr("x1", x(currentX[closestIndex]))
+                            .attr("y1", y(closestY))
+                            .attr("x2", 0)
+                            .attr("y2", y(closestY))
+                            .style("stroke", filteredColors[i % filteredColors.length])
+                            .style("stroke-width", 2)
+                            .style("stroke-dasharray", "5,5");
+
+                        // Populate the columns for download csv
+                        temporary_col1.push(temperature + ' (' + scale + ')') // Temp Scale
+                        temporary_col2.push(climate) // Climate
+                        temporary_col3.push(fulllabels[i]) // Patt
+                        temporary_col4.push(occupancy_rate[or]) // Rate
+                        temporary_col5.push(Number(otValue)) // Outdoor Temperature
+                        temporary_col6.push(closestY) // Setpoint
+                        temporary_col7.push(closestE) // Energy
+                        temporary_col8.push(closestB) // Baseline
+
+                        let savings = Number(((Math.abs(closestE - closestB) / (closestB)) * 100).toFixed(2))
+
+                        temporary_col9.push(savings) // Savings
+                    } else {
+                        setexceedValue(true);
+
+                    }
                 }
+
+                setcol1(temporary_col1);
+                setcol2(temporary_col2);
+                setcol3(temporary_col3);
+                setcol4(temporary_col4);
+                setcol5(temporary_col5);
+                setcol6(temporary_col6);
+                setcol7(temporary_col7);
+                setcol8(temporary_col8);
+                setcol9(temporary_col9);
             }
         };
 
@@ -369,11 +421,7 @@ function OTST2() {
         return () => {
             window.removeEventListener('resize', drawGraph)
         }
-    }, [climate, climateData, or, selectedOptions, otValue])
-
-    const CalculateButton = () => {
-
-    }
+    }, [climate, climateData, or, selectedOptions, otValue, exceedValue])
 
     const Reset = () => {
         setTemperature(temperature_scale[0].value);
@@ -381,10 +429,29 @@ function OTST2() {
         setClimate(climate_zone[0].value);
         setSelectedOptions(options.filter(option => option.isChecked));
         setotValue(25);
+        setexceedValue(false);
     }
 
     const DownloadCSV = () => {
+        let csvContent = "Temperature Scale,Climate Zone,Unoccupied Periods,Occupancy Rate,Outdoor Temperature,Optimal Setpoint,HVAC Energy Consumption (J),HVAC Baseline Energy Consumption (J),Energy Savings (%)\n";
+        // Assuming col1, col2, ... col9 are of the same length
+        for (let i = 0; i < col1.length; i++) {
+            let row = [col1[i], col2[i], col3[i], col4[i], col5[i], col6[i], col7[i], col8[i], col9[i]].join(",");
+            csvContent += row + "\n";
+        }
 
+        // Create Blob
+        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+
+        // Create a download link and click it
+        const link = document.createElement('a');
+        const url = URL.createObjectURL(blob);
+        link.setAttribute('href', url);
+        link.setAttribute('download', 'data.csv');
+        link.style.visibility = 'hidden';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     }
 
     return (
@@ -467,19 +534,36 @@ function OTST2() {
                             </div>
                             <div className='select_options'>
                                 <p>Enter Outdoor Temperature (<span id='scale'></span>)</p>
-                                <input type="number" value={otValue} onChange={handleOTChange} />
+                                <input type="number" value={otValue} onChange={handleOTChange} className={exceedValue ? "error-input" : ""} />
                             </div>
                             <div className='Buttons'>
-                                <div className="HomeButtons" id='calculateButton'>
-                                    <Link onClick={CalculateButton}><p id='JoinButton'>Calculate</p></Link>
-                                </div>
                                 <div className="HomeButtons">
                                     <Link onClick={Reset}><p id='JoinButton'>Reset</p></Link>
                                 </div>
                                 <div className="HomeButtons">
-                                    <Link onClick={DownloadCSV}><p id='JoinButton'>Download .csv</p></Link>
+                                    <Link onClick={DownloadCSV} className={exceedValue ? "disabled-button" : ""}><p id='JoinButton'>Download .csv File</p></Link>
                                 </div>
                             </div>
+                            <div className="error_input">
+                                <p style={{ display: exceedValue ? "block" : "none" }}>Enter Outdoor Temperature between <span id='lower'></span><span id='scale2'></span> and <span id='higher'></span><span id='scale3'></span></p>
+                            </div>
+                            {!exceedValue && (
+                                <div className='all_outputs'>
+                                    {col1.map((_, index) => (
+                                        <div key={index} style={{ display: 'flex', alignItems: 'center' }}>
+                                            <svg width="30" height="20">
+                                                <rect x="0" y="7" width="19" height="5" style={{ fill: col10[index] }} />
+                                            </svg>
+                                            <p>
+                                                <b><span id={`output_label_${index}`}>{col3_2[index]}</span></b>:
+                                                Optimal Setpoint (<span id={`output_scale_${index}`}>{usescale}</span>):
+                                                <b><span id={`output_sp_${index}`}> {col6[index].toFixed(1)}</span></b>;
+                                                Energy Savings (%): <b><span id={`output_savings_${index}`}>{col9[index]}</span></b>
+                                            </p>
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
                         </div>
                         <div className="inputs_right">
                             <div className='unoccupied_periods'>
