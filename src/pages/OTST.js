@@ -420,7 +420,7 @@ function OTST() {
             window.removeEventListener('resize', drawGraph)
         }
 
-    }, [climate, climateData, or, checkedItems, isCalculated, otValue]);
+    }, [climate, climateData, or, checkedItems, isCalculated]);
 
     const Reset = () => {
         setCheckedItems([...initialItems]);
