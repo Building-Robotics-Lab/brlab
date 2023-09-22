@@ -234,9 +234,13 @@
     pointer-events: none;
 }
 
+.OTST .legend {
+    display: grid;
+    grid-column: span 2;
+}
+
 .OTST .legend p {
     font-size: smaller;
-    grid-column: span 2;
 }
 
 .OTST .error_input p {

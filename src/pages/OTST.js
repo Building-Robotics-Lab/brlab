@@ -282,7 +282,7 @@ function OTST() {
                     .attr('dy', '0.32em')
                     .text(function (d) { return d.label; });
 
-                
+
 
 
                 for (let i = 0; i < x_values.length; i++) {
@@ -330,7 +330,7 @@ function OTST() {
                             tooltip.transition()
                                 .duration(200)
                                 .style('opacity', 0.9);
-                            tooltip.html(`Outdoor Temperature (${scale}): ${Number(d.x).toFixed(1)} <br/> Optimal Setpoint (${scale}): ${Number(d.y).toFixed(1)} <br/> HVAC Energy Consumption (kWh): ${(Number(d.e) / 1000000).toFixed(0)} <br/> HVAC Baseline Energy Consumption (kWh): ${(Number(d.b) / 1000000).toFixed(0)}`)
+                            tooltip.html(`Outdoor Temperature (${scale}): ${Number(d.x).toFixed(1)} <br/> Optimal Setpoint (${scale}): ${Number(d.y).toFixed(1)} <br/> Energy Savings (%): ${Number(((Math.abs(d.e - d.b) / (d.b)) * 100)).toFixed(2)}`)
                                 .style('left', (xPos + margin.left + document.getElementById('graph').offsetLeft) + 'px')
                                 .style('top', (yPos + document.getElementById('graph').offsetTop) + 'px');
 
@@ -348,7 +348,7 @@ function OTST() {
                         })
                         .on('mouseout', function (d) {
                             tooltip.transition()
-                                .duration(500)
+                                .duration(100)
                                 .style('opacity', 0);
 
                             hoverLineVertical.style("opacity", 0); // hide the vertical line
@@ -387,6 +387,7 @@ function OTST() {
     let col7;
     let col8;
     let col9;
+    let col10;
 
     const [exceedValue, setexceedValue] = useState(false)
     const CalculateButton = () => {
@@ -403,12 +404,16 @@ function OTST() {
             col7 = [] // E
             col8 = [] // B
             col9 = [] // Savings
+            col10 = []
 
             let scale;
+            let scale2;
             if (temperature === 'Celsius') {
                 scale = 'Celsius (°C)';
+                scale2 = '°C'
             } else {
                 scale = 'Fahrenheit (°F)';
+                scale2 = '°F'
             }
 
             const closestIndices = findClosestIndices(x_values, inputValue);
@@ -425,6 +430,7 @@ function OTST() {
                 let savings = Number(((Math.abs(e_values[index][element] - b_values[index][element]) / (b_values[index][element])) * 100).toFixed(2))
 
                 col9.push(savings);
+                col10.push(scale2);
             });
             setexceedValue(false)
         } else {
@@ -449,7 +455,7 @@ function OTST() {
             scale_text_higher.textContent = x_val_extent[1].toFixed(1);
         } else {
             CalculateButton();
-            let csvContent = "Temperature Scale,Climate Zone,Occupancy Pattern,Occupancy Rate,Outdoor Temperature,Optimal Setpoint,HVAC Energy Consumption (J),HVAC Baseline Energy Consumption (J),Energy Savings (%)\n";
+            let csvContent = "Temperature Scale,Climate Zone,Unoccupied Periods,Occupancy Rate,Outdoor Temperature,Optimal Setpoint,HVAC Energy Consumption (J),HVAC Baseline Energy Consumption (J),Energy Savings (%)\n";
             // Assuming col1, col2, ... col9 are of the same length
             for (let i = 0; i < col1.length; i++) {
                 let row = [
@@ -574,13 +580,12 @@ function OTST() {
                                     <Link onClick={DownloadCSV} className={exceedValue ? "disabled-button" : ""}><p id='JoinButton'>Download .csv File</p></Link>
                                 </div>
                             </div>
-                            <div class="error_input">
+                            <div className='all_outputs'>
+                                {/* <p><b><span id='output_label'></span></b>: Optimal Setpoint (<span id='output_scale'></span>): <span id='output_sp'></span>; Energy Savings (%): <span id='output_savings'></span></p> */}
+                            </div>
+                            <div className="error_input">
                                 <p style={{ display: exceedValue ? "block" : "none" }}>Enter Outdoor Temperature between <span id='lower'></span><span id='scale2'></span> and <span id='higher'></span><span id='scale3'></span></p>
                             </div>
-                            <div class="legend">
-                                <p>EM: Early-Morning; MM: Mid-Morning; LM: Late-Morning; EA: Early-Afternoon; MA: Mid-Afternoon; LA: Late-Afternoon; LT: Lunchtime</p>
-                            </div>
-
                         </div>
                         <div className='up_right'>
                             <div>
@@ -632,6 +637,9 @@ function OTST() {
                                         </div>
                                     ))}
                                 </section>
+                            </div>
+                            <div class="legend">
+                                <p>EM: Early-Morning; MM: Mid-Morning; LM: Late-Morning; EA: Early-Afternoon; MA: Mid-Afternoon; LA: Late-Afternoon; LT: Lunchtime</p>
                             </div>
                         </div>
                     </div>
