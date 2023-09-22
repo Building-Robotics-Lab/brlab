@@ -77,7 +77,7 @@ function OTST() {
         setOR(option.value);
     }
 
-    const [otValue, setotValue] = useState("")
+    const [otValue, setotValue] = useState(25)
     const handleOTChange = (event) => {
         setotValue(event.target.value);
     }
@@ -98,6 +98,8 @@ function OTST() {
         "0h Unoccupied"]
     const label_imgs = [sixhLM, sixhLA, sixhEMLTLA, sixhEMEA, sixhLMLA, fourhLTMMMA, fourhEAMALT, fourhMMLMLT, fourhLMEA, twohLTMA, twohLTMM, twohLT, onehLT, zerohzero]
     const [lab, setLab] = useState()
+    const [short_lab, set_short_lab] = useState();
+    const [sel_col, set_sel_col] = useState();
     const handleCheckboxChange = (index) => (event) => {
         const updatedCheckedItems = [...checkedItems];
         updatedCheckedItems[index] = event.target.checked;
@@ -161,6 +163,20 @@ function OTST() {
 
     const [forCSVdata, setforCSVdata] = useState({ x_values: [], y_values: [], e_values: [], b_values: [] });
     const [x_val_extent, set_x_val_extent] = useState();
+    
+    const [col1, setcol1] = useState([]);
+    const [col2, setcol2] = useState([]);
+    const [col3, setcol3] = useState([]);
+    const [col4, setcol4] = useState([]);
+    const [col5, setcol5] = useState([]);
+    const [col6, setcol6] = useState([]);
+    const [col7, setcol7] = useState([]);
+    const [col8, setcol8] = useState([]);
+    const [col9, setcol9] = useState([]);
+    const [col10, setcol10] = useState([]);
+    const [col11, setcol11] = useState([]);
+    const [col12, setcol12] = useState([]);
+    const [isCalculated, setIsCalculated] = useState(false);
 
     useEffect(() => {
         const drawGraph = () => {
@@ -183,6 +199,7 @@ function OTST() {
 
                 let all_colors = ["#7986CB", "#1A237E", "#303F9F", "#3F51B5", "blue", "#388E3C", "#4CAF50", "#81C784", "green", "#FBC02D", "#FBC02D", "khaki", "#8E24AA", "red"];
                 const filteredColors = all_colors.filter((_, index) => checkedItems[index]);
+                set_sel_col(filteredColors);
 
                 let data_climate = climateData[climate]
                 const data_or = data_climate.map(each_or => each_or[or]);
@@ -192,6 +209,8 @@ function OTST() {
 
                 const selectedLabels = fulllabels.filter((_, index) => checkedItems[index]);
                 setLab(selectedLabels);
+                const short_selectedLabels = labels.filter((_, index) => checkedItems[index]);
+                set_short_lab(short_selectedLabels);
 
                 const svgContainer = d3.select("#graph");
                 svgContainer.select("svg").remove();
@@ -354,6 +373,41 @@ function OTST() {
                             hoverLineVertical.style("opacity", 0); // hide the vertical line
                             hoverLineHorizontal.style("opacity", 0); // hide the horizontal line
                         });
+
+                    if (isCalculated) {
+                        // Find the closest index for the specific x_value (assuming you have that value stored in a variable)
+                        let closestIndex = findClosestIndex(currentX, Number(otValue));
+
+                        // Extract the corresponding y_value based on the closestIndex
+                        let closestY = currentY[closestIndex];
+
+                        // Highlight the point by adding a circle
+                        svg.append("circle")
+                            .attr("cx", x(currentX[closestIndex]))
+                            .attr("cy", y(closestY))
+                            .attr("r", 6)  // Radius of circle
+                            .attr("fill", filteredColors[i % filteredColors.length]);
+
+                        // Add vertical line
+                        svg.append("line")
+                            .attr("x1", x(currentX[closestIndex]))
+                            .attr("y1", y(closestY))
+                            .attr("x2", x(currentX[closestIndex]))
+                            .attr("y2", height)
+                            .style("stroke", 'black')
+                            .style("stroke-width", 2)
+                            .style("stroke-dasharray", "5,5");
+
+                        // Add horizontal line
+                        svg.append("line")
+                            .attr("x1", x(currentX[closestIndex]))
+                            .attr("y1", y(closestY))
+                            .attr("x2", 0)
+                            .attr("y2", y(closestY))
+                            .style("stroke", filteredColors[i % filteredColors.length])
+                            .style("stroke-width", 2)
+                            .style("stroke-dasharray", "5,5");
+                    }
                 }
             }
         };
@@ -366,7 +420,7 @@ function OTST() {
             window.removeEventListener('resize', drawGraph)
         }
 
-    }, [climate, climateData, or, checkedItems]);
+    }, [climate, climateData, or, checkedItems, isCalculated]);
 
     const Reset = () => {
         setCheckedItems([...initialItems]);
@@ -376,35 +430,28 @@ function OTST() {
         setClimate(climate_zone[0].value)
         setotValue("");
         setexceedValue(false);
+        setIsCalculated(false);
     }
 
-    let col1;
-    let col2;
-    let col3;
-    let col4;
-    let col5;
-    let col6;
-    let col7;
-    let col8;
-    let col9;
-    let col10;
-
     const [exceedValue, setexceedValue] = useState(false)
+    
     const CalculateButton = () => {
         const { x_values, y_values, e_values, b_values } = forCSVdata;
         let inputValue = Number(otValue);
 
         if (inputValue < x_val_extent[1] && inputValue > x_val_extent[0]) {
-            col1 = [] // Temp Scale
-            col2 = [] // Climate
-            col3 = [] // Patt
-            col4 = [] // Rate
-            col5 = [] // OT
-            col6 = [] // SP
-            col7 = [] // E
-            col8 = [] // B
-            col9 = [] // Savings
-            col10 = []
+            const newcol1 = [] // Temp Scale
+            const newcol2 = [] // Climate
+            const newcol3 = [] // Patt
+            const newcol4 = [] // Rate
+            const newcol5 = [] // OT
+            const newcol6 = [] // SP
+            const newcol7 = [] // E
+            const newcol8 = [] // B
+            const newcol9 = [] // Savings
+            const newcol10 = []
+            const newcol11 = []
+            const newcol12 = []
 
             let scale;
             let scale2;
@@ -418,31 +465,45 @@ function OTST() {
 
             const closestIndices = findClosestIndices(x_values, inputValue);
             closestIndices.forEach((element, index) => {
-                col1.push(scale)
-                col2.push(climate)
-                col3.push(lab[index])
-                col4.push(occupancy_rate[or].label)
-                col5.push(inputValue)
-                col6.push(Number((y_values[index][element]).toFixed(1)))
-                col7.push((e_values[index][element]));
-                col8.push(b_values[index][element]);
+                newcol1.push(scale)
+                newcol2.push(climate)
+                newcol3.push(lab[index])
+                newcol4.push(occupancy_rate[or].label)
+                newcol5.push(inputValue)
+                newcol6.push(Number((y_values[index][element]).toFixed(1)))
+                newcol7.push((e_values[index][element]));
+                newcol8.push(b_values[index][element]);
 
                 let savings = Number(((Math.abs(e_values[index][element] - b_values[index][element]) / (b_values[index][element])) * 100).toFixed(2))
 
-                col9.push(savings);
-                col10.push(scale2);
+                newcol9.push(savings);
+                newcol10.push(scale2);
+                newcol11.push(sel_col[index])
+                newcol12.push(short_lab[index])
             });
+            setcol1(newcol1);
+            setcol2(newcol2);
+            setcol3(newcol3);
+            setcol4(newcol4);
+            setcol5(newcol5);
+            setcol6(newcol6);
+            setcol7(newcol7);
+            setcol8(newcol8);
+            setcol9(newcol9);
+            setcol10(newcol10);
+            setcol11(newcol11);
+            setcol12(newcol12);
             setexceedValue(false)
+            setIsCalculated(true);
         } else {
             setexceedValue(true)
+            setIsCalculated(false);
             let scale_text_lower = document.getElementById('lower');
             scale_text_lower.textContent = x_val_extent[0].toFixed(1);
 
             let scale_text_higher = document.getElementById('higher');
             scale_text_higher.textContent = x_val_extent[1].toFixed(1);
         }
-
-
     }
 
     const DownloadCSV = () => {
@@ -458,17 +519,7 @@ function OTST() {
             let csvContent = "Temperature Scale,Climate Zone,Unoccupied Periods,Occupancy Rate,Outdoor Temperature,Optimal Setpoint,HVAC Energy Consumption (J),HVAC Baseline Energy Consumption (J),Energy Savings (%)\n";
             // Assuming col1, col2, ... col9 are of the same length
             for (let i = 0; i < col1.length; i++) {
-                let row = [
-                    col1[i],
-                    col2[i],
-                    col3[i],
-                    col4[i],
-                    col5[i],
-                    col6[i],
-                    col7[i],
-                    col8[i],
-                    col9[i]
-                ].join(",");
+                let row = [col1[i], col2[i], col3[i], col4[i], col5[i], col6[i], col7[i], col8[i], col9[i]].join(",");
                 csvContent += row + "\n";
             }
 
@@ -580,9 +631,23 @@ function OTST() {
                                     <Link onClick={DownloadCSV} className={exceedValue ? "disabled-button" : ""}><p id='JoinButton'>Download .csv File</p></Link>
                                 </div>
                             </div>
-                            <div className='all_outputs'>
-                                {/* <p><b><span id='output_label'></span></b>: Optimal Setpoint (<span id='output_scale'></span>): <span id='output_sp'></span>; Energy Savings (%): <span id='output_savings'></span></p> */}
-                            </div>
+                            {isCalculated && (
+                                <div className='all_outputs'>
+                                    {col1.map((_, index) => (
+                                        <div key={index} style={{ display: 'flex', alignItems: 'center' }}>
+                                            <svg width="30" height="20">
+                                                <rect x="0" y="7" width="19" height="5" style={{ fill: col11[index] }} />
+                                            </svg>
+                                            <p>
+                                                <b><span id={`output_label_${index}`}>{col12[index]}</span></b>:
+                                                Optimal Setpoint (<span id={`output_scale_${index}`}>{col10[index]}</span>):
+                                                <span id={`output_sp_${index}`}> {col6[index]}</span>;
+                                                Energy Savings (%): <span id={`output_savings_${index}`}>{col9[index]}</span>
+                                            </p>
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
                             <div className="error_input">
                                 <p style={{ display: exceedValue ? "block" : "none" }}>Enter Outdoor Temperature between <span id='lower'></span><span id='scale2'></span> and <span id='higher'></span><span id='scale3'></span></p>
                             </div>
@@ -699,4 +764,18 @@ function findClosestIndices(arrays, target) {
 
         return index;
     });
+}
+
+function findClosestIndex(array, target) {
+    let closest = array[0];
+    let index = 0;
+
+    for (let i = 1; i < array.length; i++) {
+        if (Math.abs(array[i] - target) < Math.abs(closest - target)) {
+            closest = array[i];
+            index = i;
+        }
+    }
+
+    return index;
 }
