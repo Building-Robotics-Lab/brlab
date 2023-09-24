@@ -12,7 +12,7 @@ import Select from 'react-select';
 import profiles from '../components/Website Individual Information/profileData';
 import { Link } from 'react-router-dom';
 
-function OTST2() {
+function OTST() {
     // For First Section
     const getProfileByName = (profileName) => {
         return profiles.find(profile => profile.ProfileName === profileName);
@@ -28,7 +28,17 @@ function OTST2() {
     const [temperature, setTemperature] = useState(temperature_scale[0].value);
     const [prevTemperature, setprevTemperature] = useState(temperature_scale[0].value);
     const temperatureScale = (option) => {
-        setTemperature(option.value);
+        const newScale = option.value;
+
+        // Convert the otValue
+        if (temperature === 'Celsius' && newScale === 'Fahrenheit') {
+            setotValue((otValue * 9 / 5) + 32);
+        } else if (temperature === 'Fahrenheit' && newScale === 'Celsius') {
+            setotValue((otValue - 32) * 5 / 9);
+        }
+
+        // Update the temperature scale
+        setTemperature(newScale);
     }
 
     const [climate, setClimate] = useState(climate_zone[0].value);
@@ -455,7 +465,7 @@ function OTST2() {
     }
 
     return (
-        <div className='OTST2'>
+        <div className='OTST'>
             <NavBar />
 
             <Container>
@@ -465,12 +475,12 @@ function OTST2() {
                         <h3>For source code and to report bugs</h3>
                         <div className="Github_stuff">
                             <div className="GitHub_Code">
-                                <b><a className='icon' href="https://github.com/Building-Robotics-Lab/brlab" target="_blank"><FontAwesomeIcon icon={faGithub} /></a></b>
-                                <b><a className='text' href="https://github.com/Building-Robotics-Lab/brlab" target="_blank">Code</a></b>
+                                <b><a className='icon' href="https://github.com/Building-Robotics-Lab/brlab" rel="noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a></b>
+                                <b><a className='text' href="https://github.com/Building-Robotics-Lab/brlab" rel="noreferrer" target="_blank">Code</a></b>
                             </div>
                             <div className="GitHub_Bugs">
-                                <b><a className='icon' href="https://github.com/Building-Robotics-Lab/brlab/issues/new" target="_blank"><FontAwesomeIcon icon={faGithub} /></a></b>
-                                <b><a className='text' href="https://github.com/Building-Robotics-Lab/brlab/issues/new" target="_blank">Bugs</a></b>
+                                <b><a className='icon' href="https://github.com/Building-Robotics-Lab/brlab/issues/new" rel="noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a></b>
+                                <b><a className='text' href="https://github.com/Building-Robotics-Lab/brlab/issues/new" rel="noreferrer" target="_blank">Bugs</a></b>
                             </div>
                         </div>
                     </div>
@@ -499,7 +509,7 @@ function OTST2() {
                             {supportUserProfiles.map((profile, index) => (
                                 <div className="each_profile" key={index}>
                                     <div className="profile_image">
-                                        <Link to={`/individual_profile/${profile.ProfileName}`} target="_blank">
+                                        <Link to={profile.ProfileName !== 'Prof' ? `/individual_profile/${profile.ProfileName}` : profile.ProfileLink} target="_blank">
                                             <img src={profile.ProfilePic} alt={profile.Name} />
                                         </Link>
                                     </div>
@@ -602,7 +612,7 @@ function OTST2() {
     )
 }
 
-export default OTST2
+export default OTST
 
 const temperature_scale = [
     { value: 'Celsius', label: 'Celsius (°C)' },
@@ -635,16 +645,6 @@ const occupancy_rate = [
     { value: 2, label: 'Most Occupied (75%)' },
     { value: 3, label: 'Fully Occupied(100%)' }
 ];
-
-const abbreviations = {
-    'EM': 'Early-Morning',
-    'MM': 'Mid-Morning',
-    'LM': 'Late-Morning',
-    'EA': 'Early-Afternoon',
-    'MA': 'Mid-Afternoon',
-    'LA': 'Late-Afternoon',
-    'LT': 'Lunchtime'
-};
 
 const convertTemperature = (prevScale, selectedScale, inputList) => {
     const convertTemp = (temp, conversionFunction) => {
@@ -688,3 +688,4 @@ function findClosestIndex(array, target) {
 
     return index;
 }
+

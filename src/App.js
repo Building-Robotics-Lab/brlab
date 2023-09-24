@@ -34,9 +34,6 @@ function App() {
           <Route path="/individual_profile/:profileName" element={<IndividualProfile />} />
           <Route path='/individual_publication/:id' element={<IndividualPublication />} />
 
-          {/* <Route path='/individual_publication' element={<IndividualPublication />} />
-          <Route path='/individual_profile' element={<IndividualProfile />} /> */}
-
         </Routes>
       </HashRouter>
     </div>
