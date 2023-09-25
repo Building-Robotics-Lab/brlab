@@ -29,7 +29,7 @@ import PublicationsIqbalNews from './../components/Website Data//iqbal-publicati
 const slides = [
     {
         image: GuillaumeNews,
-        title: '<b>Please Guillaume Lecronier to the lab!</b>',
+        title: '<b>Please welcome Guillaume Lecronier to the lab!</b>',
         date: '21/09/2023',
         link: 'Guillaume',
     },
