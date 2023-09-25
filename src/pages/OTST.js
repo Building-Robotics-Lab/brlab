@@ -229,7 +229,7 @@ function OTST() {
                     .y(d => y(d.y))
 
                 let tooltip = d3.select("body").append("div")
-                    .attr("className", "tooltip")
+                    .attr("class", "tooltip")
                     .style("opacity", 0);
 
                 svg.append("text")
