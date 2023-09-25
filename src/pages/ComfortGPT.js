@@ -19,7 +19,7 @@ function ComfortGPT() {
     };
     const mainProfile = ['Kai']
     const supportProfile = ['Connor', 'Prof', 'Ilyas']
-    const Roles = ["Project Lead", "UX Designer", "Collaborator/else?", "UI Developer"]
+    const Roles = ["Project Lead", "UX Designer", "PI", "UI Developer"]
 
     const mainUserProfile = mainProfile.map(getProfileByName).filter(Boolean);
     const supportUserProfiles = supportProfile.map(getProfileByName).filter(Boolean);
@@ -573,45 +573,6 @@ function ComfortGPT() {
                             </div>
                         </div>
                     </div>
-                    <div className='contacts'>
-                        <div>
-                            <h3>Tool Contacts</h3>
-                        </div>
-                        <div className='Main'>
-                            {mainUserProfile.map((profile, index) => (
-                                <div className="each_profile" key={index}>
-                                    <div className="profile_image">
-                                        <Link to={`/individual_profile/${profile.ProfileName}`} target="_blank">
-                                            <img src={profile.ProfilePic} alt={profile.Name} />
-                                        </Link>
-                                    </div>
-                                    <div className="profile_data">
-                                        <a href={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
-                                            <h5><b>{profile.Name}</b></h5>
-                                        </a>
-                                        <p>{Roles[0]}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        <div className='Supports'>
-                            {supportUserProfiles.map((profile, index) => (
-                                <div className="each_profile" key={index}>
-                                    <div className="profile_image">
-                                        <Link to={profile.ProfileName !== 'Prof' ? `/individual_profile/${profile.ProfileName}` : profile.ProfileLink} target="_blank">
-                                            <img src={profile.ProfilePic} alt={profile.Name} />
-                                        </Link>
-                                    </div>
-                                    <div className="profile_data">
-                                        <a href={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
-                                            <h5><b>{profile.Name}</b></h5>
-                                        </a>
-                                        <p>{Roles.slice(1, Roles.length)[index]}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
                 </div>
             </Container>
 
@@ -694,6 +655,50 @@ function ComfortGPT() {
                     </div>
                 </div>
             </Container>
+
+            {/* <Container useOrange={true}>
+                <div className='first_section'>
+                    <div className='contacts'>
+                        <div>
+                            <h3>Tool Contacts</h3>
+                        </div>
+                        <div className='Main'>
+                            {mainUserProfile.map((profile, index) => (
+                                <div className="each_profile" key={index}>
+                                    <div className="profile_image">
+                                        <Link to={`/individual_profile/${profile.ProfileName}`} target="_blank">
+                                            <img src={profile.ProfilePic} alt={profile.Name} />
+                                        </Link>
+                                    </div>
+                                    <div className="profile_data">
+                                        <a href={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
+                                            <h5><b>{profile.Name}</b></h5>
+                                        </a>
+                                        <p>{Roles[0]}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                        <div className='Supports'>
+                            {supportUserProfiles.map((profile, index) => (
+                                <div className="each_profile" key={index}>
+                                    <div className="profile_image">
+                                        <Link to={profile.ProfileName !== 'Prof' ? `/individual_profile/${profile.ProfileName}` : profile.ProfileLink} target="_blank">
+                                            <img src={profile.ProfilePic} alt={profile.Name} />
+                                        </Link>
+                                    </div>
+                                    <div className="profile_data">
+                                        <a href={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
+                                            <h5><b>{profile.Name}</b></h5>
+                                        </a>
+                                        <p>{Roles.slice(1, Roles.length)[index]}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </Container> */}
 
             <Footer />
         </div>

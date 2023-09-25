@@ -25,6 +25,11 @@ function OTST() {
     const supportUserProfiles = supportProfile.map(getProfileByName).filter(Boolean);
 
     // For Graph
+    const [size, setSize] = useState(building_size[0].value);
+    const buildingSize = (option) => {
+        setSize(option.value)
+    }
+
     const [temperature, setTemperature] = useState(temperature_scale[0].value);
     const [prevTemperature, setprevTemperature] = useState(temperature_scale[0].value);
     const temperatureScale = (option) => {
@@ -182,6 +187,7 @@ function OTST() {
                 const filteredFullLabels = selectedOptions.map(element => fulllabels[element.value]);
 
                 let data_climate = climateData[climate]
+                // const data_building = data_climate[size]
                 const data_or = data_climate.map(each_or => each_or[or]);
                 const indices = selectedOptions.map(option => option.value);
                 const data_op_checked = data_or.map(subArray => indices.map(index => subArray[index]));
@@ -245,28 +251,28 @@ function OTST() {
                     .style("text-anchor", "middle")
                     .text(`Optimal Setpoint (${scale})`);
 
-                const legends = filteredLabels.map((label, index) => {
-                    return { color: filteredColors[index], label: label };
-                });
+                // const legends = filteredLabels.map((label, index) => {
+                //     return { color: filteredColors[index], label: label };
+                // });
 
-                var legend = svg.selectAll('.legend')
-                    .data(legends)
-                    .enter().append('g')
-                    .attr('class', 'legend')
-                    .attr('transform', function (d, i) { return 'translate(' + (50) + ',' + (i * 20) + ')'; });
+                // var legend = svg.selectAll('.legend')
+                //     .data(legends)
+                //     .enter().append('g')
+                //     .attr('class', 'legend')
+                //     .attr('transform', function (d, i) { return 'translate(' + (50) + ',' + (i * 20) + ')'; });
 
-                legend.append('rect')
-                    .attr('x', -30)
-                    .attr('y', 7)
-                    .attr('width', 19)
-                    .attr('height', 5)
-                    .style('fill', d => d.color);
+                // legend.append('rect')
+                //     .attr('x', -30)
+                //     .attr('y', 7)
+                //     .attr('width', 19)
+                //     .attr('height', 5)
+                //     .style('fill', d => d.color);
 
-                legend.append('text')
-                    .attr('x', -5)
-                    .attr('y', 9.5)
-                    .attr('dy', '0.32em')
-                    .text(function (d) { return d.label; });
+                // legend.append('text')
+                //     .attr('x', -5)
+                //     .attr('y', 9.5)
+                //     .attr('dy', '0.32em')
+                //     .text(function (d) { return d.label; });
 
                 const temporary_col1 = [] // Temp Scale
                 const temporary_col2 = [] // Climate
@@ -484,45 +490,6 @@ function OTST() {
                             </div>
                         </div>
                     </div>
-                    <div className='contacts'>
-                        <div>
-                            <h3>Tool Contacts</h3>
-                        </div>
-                        <div className='Main'>
-                            {mainUserProfile.map((profile, index) => (
-                                <div className="each_profile" key={index}>
-                                    <div className="profile_image">
-                                        <Link to={`/individual_profile/${profile.ProfileName}`} target="_blank">
-                                            <img src={profile.ProfilePic} alt={profile.Name} />
-                                        </Link>
-                                    </div>
-                                    <div className="profile_data">
-                                        <a href={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
-                                            <h5><b>{profile.Name}</b></h5>
-                                        </a>
-                                        <p>{Roles[0]}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        <div className='Supports'>
-                            {supportUserProfiles.map((profile, index) => (
-                                <div className="each_profile" key={index}>
-                                    <div className="profile_image">
-                                        <Link to={profile.ProfileName !== 'Prof' ? `/individual_profile/${profile.ProfileName}` : profile.ProfileLink} target="_blank">
-                                            <img src={profile.ProfilePic} alt={profile.Name} />
-                                        </Link>
-                                    </div>
-                                    <div className="profile_data">
-                                        <a href={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
-                                            <h5><b>{profile.Name}</b></h5>
-                                        </a>
-                                        <p>{Roles.slice(1, Roles.length)[index]}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
                 </div>
             </Container>
 
@@ -530,6 +497,10 @@ function OTST() {
                 <div className="second_section">
                     <div className="inputs">
                         <div className="inputs_left">
+                            <div className='select_options'>
+                                <p>Building Size:</p>
+                                <Select options={building_size} value={building_size.find(building => building.value === size)} defaultValue={building_size[0]} onChange={buildingSize} style={{ width: '600px' }} isSearchable={false} />
+                            </div>
                             <div className='select_options'>
                                 <p>Tempreature Scale:</p>
                                 <Select options={temperature_scale} value={temperature_scale.find(scale => scale.value === temperature)} defaultValue={temperature_scale[0]} onChange={temperatureScale} style={{ width: '600px' }} isSearchable={false} />
@@ -545,14 +516,6 @@ function OTST() {
                             <div className='select_options'>
                                 <p>Enter Outdoor Temperature (<span id='scale'></span>)</p>
                                 <input type="number" value={otValue} onChange={handleOTChange} className={exceedValue ? "error-input" : ""} />
-                            </div>
-                            <div className='Buttons'>
-                                <div className="HomeButtons">
-                                    <Link onClick={Reset}><p id='JoinButton'>Reset</p></Link>
-                                </div>
-                                <div className="HomeButtons">
-                                    <Link onClick={DownloadCSV} className={exceedValue ? "disabled-button" : ""}><p id='JoinButton'>Download .csv File</p></Link>
-                                </div>
                             </div>
                             <div className="error_input">
                                 <p style={{ display: exceedValue ? "block" : "none" }}>Enter Outdoor Temperature between <span id='lower'></span><span id='scale2'></span> and <span id='higher'></span><span id='scale3'></span></p>
@@ -599,6 +562,14 @@ function OTST() {
                             <div className="legend">
                                 <p><b>EM</b>: Early-Morning; <b>MM</b>: Mid-Morning; <b>LM</b>: Late-Morning; <br /><b>EA</b>: Early-Afternoon; <b>MA</b>: Mid-Afternoon; <b>LA</b>: Late-Afternoon; <b>LT</b>: Lunchtime</p>
                             </div>
+                            <div className='Buttons'>
+                                <div className="HomeButtons">
+                                    <Link onClick={Reset}><p id='JoinButton'>Reset</p></Link>
+                                </div>
+                                <div className="HomeButtons">
+                                    <Link onClick={DownloadCSV} className={exceedValue ? "disabled-button" : ""}><p id='JoinButton'>Download .csv File</p></Link>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="outputs" id='graph'>
@@ -606,6 +577,50 @@ function OTST() {
                     </div>
                 </div>
             </Container>
+
+            {/* <Container>
+                <div className="first_section">
+                    <div className='contacts'>
+                        <div>
+                            <h3>Tool Contacts</h3>
+                        </div>
+                        <div className='Main'>
+                            {mainUserProfile.map((profile, index) => (
+                                <div className="each_profile" key={index}>
+                                    <div className="profile_image">
+                                        <Link to={`/individual_profile/${profile.ProfileName}`} target="_blank">
+                                            <img src={profile.ProfilePic} alt={profile.Name} />
+                                        </Link>
+                                    </div>
+                                    <div className="profile_data">
+                                        <a href={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
+                                            <h5><b>{profile.Name}</b></h5>
+                                        </a>
+                                        <p>{Roles[0]}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                        <div className='Supports'>
+                            {supportUserProfiles.map((profile, index) => (
+                                <div className="each_profile" key={index}>
+                                    <div className="profile_image">
+                                        <Link to={profile.ProfileName !== 'Prof' ? `/individual_profile/${profile.ProfileName}` : profile.ProfileLink} target="_blank">
+                                            <img src={profile.ProfilePic} alt={profile.Name} />
+                                        </Link>
+                                    </div>
+                                    <div className="profile_data">
+                                        <a href={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
+                                            <h5><b>{profile.Name}</b></h5>
+                                        </a>
+                                        <p>{Roles.slice(1, Roles.length)[index]}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </Container> */}
 
             <Footer />
         </div>
@@ -643,8 +658,15 @@ const occupancy_rate = [
     { value: 0, label: 'Lightly Occupied (25%)' },
     { value: 1, label: 'Mildly Occupied (50%)' },
     { value: 2, label: 'Most Occupied (75%)' },
-    { value: 3, label: 'Fully Occupied(100%)' }
+    { value: 3, label: 'Fully Occupied (100%)' }
 ];
+
+const building_size = [
+    { value: 0, label: 'Small Building' },
+    { value: 1, label: 'Medium Building' },
+    { value: 2, label: 'Large Building' },
+];
+
 
 const convertTemperature = (prevScale, selectedScale, inputList) => {
     const convertTemp = (temp, conversionFunction) => {

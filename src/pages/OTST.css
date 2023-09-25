@@ -128,7 +128,6 @@
 .OTST .second_section .inputs {
     display: flex;
     background-color: white;
-    padding-bottom: 1rem;
 }
 
 .OTST .second_section .inputs .inputs_left {
@@ -143,10 +142,10 @@
     padding-bottom: 1rem;
 }
 
-.OTST .second_section .inputs .inputs_left .Buttons {
+.OTST .second_section .inputs .inputs_right .Buttons {
     display: flex;
     justify-content: center;
-    padding-bottom: 1rem;
+    padding-top: 1rem;
     gap: 1rem;
 }
 
