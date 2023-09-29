@@ -142,12 +142,12 @@
 }
 
 .Research .theme_section a {
-    color: green;
+    color: rgb(45, 99, 83);
 }
 
 .Research .theme_section a:hover {
     color: white;
-    background-color: green;
+    background-color: rgb(45, 99, 83);
     border-radius: 0.25rem;
 }
 

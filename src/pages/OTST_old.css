@@ -36,16 +36,16 @@
 }
 
 .OTST .first_section .heading_and_links .Github_stuff .icon:hover {
-    color: green;
+    color: rgb(45, 99, 83);
 }
 
 .OTST .first_section .heading_and_links .Github_stuff .text {
     font-size: 1rem;
-    color: green;
+    color: rgb(45, 99, 83);
 }
 
 .OTST .first_section .heading_and_links .Github_stuff .text:hover {
-    background-color: green;
+    background-color: rgb(45, 99, 83);
     color: white;
     border-radius: 0.25rem;
 }
@@ -108,13 +108,13 @@
 }
 
 .OTST .first_section .contacts .profile_data h5 {
-    color: green;
+    color: rgb(45, 99, 83);
     font-size: 1rem;
 }
 
 .OTST .first_section .contacts .profile_data h5:hover {
     color: white;
-    background-color: green;
+    background-color: rgb(45, 99, 83);
     border-radius: 0.25rem;
 }
 

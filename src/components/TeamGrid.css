@@ -28,7 +28,7 @@
 }
 
 .Our_Team .team-grid>.item:hover {
-    outline: 6px solid green;
+    outline: 6px solid rgb(45, 99, 83);
     border-radius: 2rem;
     box-shadow: 15px 15px 8px #888888;
 }
@@ -50,7 +50,7 @@
 
 .Our_Team .team-grid>*>.individual-info>a {
     text-decoration: none;
-    color: green;
+    color: rgb(45, 99, 83);
 }
 
 .Our_Team .team-grid>*>.individual-info>p {

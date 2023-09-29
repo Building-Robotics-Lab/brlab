@@ -33,7 +33,7 @@
 }
 
 .IndividualPublication .first_section .keywords>* {
-    background-color: green;
+    background-color: rgb(45, 99, 83);
     color: white;
     padding: 0.25rem;
     border-radius: 0.5rem;
@@ -168,7 +168,7 @@
 }
 
 .IndividualPublication .third_section .profile_icons:hover {
-    color: green;
+    color: rgb(45, 99, 83);
 }
 
 
@@ -177,12 +177,12 @@
 }
 
 .IndividualPublication .third_section .profile_data h5 {
-    color: green;
+    color: rgb(45, 99, 83);
     font-size: 1rem;
 }
 
 .IndividualPublication .third_section .profile_data h5:hover {
     color: white;
-    background-color: green;
+    background-color: rgb(45, 99, 83);
     border-radius: 0.25rem;
 }

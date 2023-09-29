@@ -14,7 +14,7 @@
 
 .Join_the_Lab .first_section h1 {
     font-size: 2.5rem;
-    color: green;
+    color: rgb(45, 99, 83);
     margin-bottom: 3rem;
 }
 
@@ -94,12 +94,12 @@
 
 
 .Join_the_Lab .second_section a {
-    color: green;
+    color: rgb(45, 99, 83);
 }
 
 .Join_the_Lab .second_section a:hover {
     color: white;
-    background-color: green;
+    background-color: rgb(45, 99, 83);
     border-radius: 0.25rem;
 }
 
