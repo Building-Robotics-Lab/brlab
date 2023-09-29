@@ -327,7 +327,7 @@ function OTST() {
                             tooltip.transition()
                                 .duration(200)
                                 .style('opacity', 0.9);
-                            tooltip.html(`Outdoor Temperature (${scale}): ${Number(d.x).toFixed(1)} <br/> Optimal Setpoint (${scale}): ${Number(d.y).toFixed(1)} <br/> Energy Savings (%): ${Number(((Math.abs(d.e - d.b) / (d.b)) * 100)).toFixed(2)}`)
+                            tooltip.html(`Outdoor Temperature (${scale}): ${Number(d.x).toFixed(1)} <br/> Optimal Setpoint (${scale}): ${Number(d.y).toFixed(1)} <br/> Energy Savings Compared to 22.5°C (%): ${Number(((Math.abs(d.e - d.b) / (d.b)) * 100)).toFixed(2)}`)
                                 .style('left', (xPos + margin.left + document.getElementById('graph').offsetLeft) + 'px')
                                 .style('top', (yPos + document.getElementById('graph').offsetTop) + 'px');
 
@@ -413,8 +413,11 @@ function OTST() {
 
                         temporary_col9.push(savings) // Savings
                     } else {
+                        let scale_lower = document.getElementById('lower');
+                        scale_lower.textContent = Number(xExtent[0]).toFixed(1);
+                        let scale_higher = document.getElementById('higher');
+                        scale_higher.textContent = Number(xExtent[1]).toFixed(1);
                         setexceedValue(true);
-
                     }
                 }
 
@@ -531,7 +534,7 @@ function OTST() {
                                                 <b><span id={`output_label_${index}`}>{col3_2[index]}</span></b>:
                                                 Optimal Setpoint (<span id={`output_scale_${index}`}>{usescale}</span>):
                                                 <b><span id={`output_sp_${index}`}> {col6[index].toFixed(1)}</span></b>;
-                                                Energy Savings (%): <b><span id={`output_savings_${index}`}>{col9[index]}</span></b>
+                                                Energy Savings Compared to 22.5°C (%): <b><span id={`output_savings_${index}`}>{col9[index]}</span></b>
                                             </p>
                                         </div>
                                     ))}
