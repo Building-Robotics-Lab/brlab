@@ -26,6 +26,10 @@ function IndividualPublication() {
         return profiles.find(profile => profile.ProfileName === profileName);
     };
     const userProfiles = publication.profiles.map(getProfileByName).filter(Boolean);
+    let authorList = [];
+    publication.authors.forEach((author) => {
+        authorList.push(author.name.replace("*", ""))
+    })
 
     return (
         <div className='IndividualPublication'>
@@ -36,6 +40,10 @@ function IndividualPublication() {
                     <div className='title'>
                         <h1>{publication.title}</h1>
                         <i><h2>{publication.journal || publication.conference || publication.patent || publication.university}</h2></i>
+                        <p>{authorList.join(', ')}</p>
+                        {/* {publication.authors.map((author, index) => (
+                            <p key={index}>{author.name}</p>
+                        ))} */}
                     </div>
                     <div className={publication.keywords && publication.keywords.length > 0 ? 'links' : 'links noKeywords'}>
                         {publication.links.map((link, index) => (

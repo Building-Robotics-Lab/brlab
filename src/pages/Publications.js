@@ -116,6 +116,9 @@ function Publications() {
                         <Link to="https://scholar.google.com/citations?user=9UACV-AAAAAJ&hl=en&oi=ao" target='_blank'><p id='JoinButton'>GOOGLE SCHOLAR</p></Link>
                     </div>
                 </div>
+            </Container>
+
+            <Container useOrange={true}>
                 <div className="publication_filter">
                     <div className='publication_type'>
                         <p>Type of Publication:</p>
@@ -125,14 +128,11 @@ function Publications() {
                         <p>Year Range:</p>
                         <Select isMulti name="year" options={publication_year} value={pubyear} defaultValue={publication_year[0]} onChange={publicationYear} />
                     </div>
-                    <div className='publication_type'>
+                    <div className='publication_author'>
                         <p>Author:</p>
                         <Select isMulti name="year" options={publication_author} value={pubauthor} defaultValue={publication_author[0]} onChange={publicationAuthor} />
                     </div>
                 </div>
-            </Container>
-
-            <Container useOrange={true}>
                 <h1 className='publication_type_title'><b>Peer-reviewed Journal Articles</b></h1>
                 {JournalData.map((pubData, index) => (
                     <JournalSection key={index} year={pubData.year} publications={pubData.publications} />
@@ -321,3 +321,10 @@ function ThesesSection({ year, publications }) {
         </div>
     );
 }
+
+const customStyles = {
+    container: provided => ({
+      ...provided,
+      width: '100%',
+    }),
+  };

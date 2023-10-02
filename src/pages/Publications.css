@@ -18,19 +18,37 @@
     display: flex;
 }
 
+/* publication title and sections */
+
 .Publications .publication_filter {
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 3.3vmax;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 .Publications .publication_filter > *{
+    flex: 1;
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-/* publication title and sections */
+.Publications .publication_filter .css-b62m3t-container {
+    width: 60%;
+}
+
+.Publications .publication_filter .publication_type {
+    justify-content: start;
+}
+
+.Publications .publication_filter .publication_year {
+    justify-content: center;
+}
+
+.Publications .publication_filter .publication_author {
+    justify-content: end;
+}
 
 .Publications .publication_type_title {
     font-size: 2rem;
