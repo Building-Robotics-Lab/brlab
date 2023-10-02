@@ -18,6 +18,18 @@
     display: flex;
 }
 
+.Publications .publication_filter {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Publications .publication_filter > *{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 /* publication title and sections */
 
 .Publications .publication_type_title {
