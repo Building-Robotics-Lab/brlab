@@ -104,6 +104,106 @@ function Publications() {
         }
     }
 
+    const [text, setText] = useState('');
+
+    const handleChange = (event) => {
+        setText(event.target.value);
+    };
+
+    const renderSections = () => {
+        const sections = [];
+        let useOrange = true;
+
+        const renderFilter = () => (
+            <>
+                <div className='input_filter'>
+                    <input type="text" value={text} onChange={handleChange} placeholder="Search..." />
+                </div>
+                <div className="publication_filter">
+                    <div className='publication_type'>
+                        <p>Publication Type:</p>
+                        <Select isMulti name="type" options={publication_types} value={pubtype} defaultValue={publication_types[0]} onChange={publicationType} />
+                    </div>
+                    <div className='publication_year'>
+                        <p>Year Range:</p>
+                        <Select isMulti name="year" options={publication_year} value={pubyear} defaultValue={publication_year[0]} onChange={publicationYear} />
+                    </div>
+                    <div className='publication_author'>
+                        <p>Author:</p>
+                        <Select isMulti name="year" options={publication_author} value={pubauthor} defaultValue={publication_author[0]} onChange={publicationAuthor} />
+                    </div>
+                </div>
+            </>
+        );
+
+        const renderNote = () => (
+            <p className='small_note'><i>*denotes an undergraduate, graduate, or postdoctoral scholars' work under Asst Prof Ghahramani</i></p>
+        );
+
+        const isLastSection = (currentType) => {
+            const remainingTypes = publication_types.slice(currentType + 1);
+            return !remainingTypes.some(type => pubtype.some(option => option.value === type.value));
+        };
+
+        if (pubtype.some(option => option.value === 0) || pubtype.some(option => option.value === 1)) {
+            sections.push(
+                <Container useOrange={useOrange}>
+                    {sections.length === 0 && renderFilter()}
+                    <h1 className='publication_type_title'><b>Peer-reviewed Journal Articles</b></h1>
+                    {JournalData.map((pubData, index) => (
+                        <JournalSection key={index} year={pubData.year} publications={pubData.publications} />
+                    ))}
+                    {isLastSection(1) && renderNote()}
+                </Container>
+            );
+            useOrange = !useOrange;
+        }
+
+        if (pubtype.some(option => option.value === 0) || pubtype.some(option => option.value === 2)) {
+            sections.push(
+                <Container useOrange={useOrange}>
+                    {sections.length === 0 && renderFilter()}
+                    <h1 className='publication_type_title'><b>Peer-reviewed Conference Papers</b></h1>
+                    {ConferenceData.map((pubData, index) => (
+                        <ConferenceSection key={index} year={pubData.year} publications={pubData.publications} />
+                    ))}
+                    {isLastSection(2) && renderNote()}
+                </Container>
+            );
+            useOrange = !useOrange;
+        }
+
+        if (pubtype.some(option => option.value === 0) || pubtype.some(option => option.value === 3)) {
+            sections.push(
+                <Container useOrange={useOrange}>
+                    {sections.length === 0 && renderFilter()}
+                    <h1 className='publication_type_title'><b>Patents</b></h1>
+                    {PatentData.map((pubData, index) => (
+                        <PatentSection key={index} year={pubData.year} publications={pubData.publications} />
+                    ))}
+                    {isLastSection(3) && renderNote()}
+                </Container>
+            );
+            useOrange = !useOrange;
+        }
+
+        if (pubtype.some(option => option.value === 0) || pubtype.some(option => option.value === 4)) {
+            sections.push(
+                <Container useOrange={useOrange}>
+                    {sections.length === 0 && renderFilter()}
+                    <h1 className='publication_type_title'><b>Theses</b></h1>
+                    {ThesesData.map((pubData, index) => (
+                        <ThesesSection key={index} year={pubData.year} publications={pubData.publications} />
+                    ))}
+                    {isLastSection(4) && renderNote()}
+                </Container>
+            );
+            useOrange = !useOrange;
+        }
+
+        return sections;
+    };
+
     return (
         <div className="Publications">
             <NavBar />
@@ -118,48 +218,7 @@ function Publications() {
                 </div>
             </Container>
 
-            <Container useOrange={true}>
-                <div className="publication_filter">
-                    <div className='publication_type'>
-                        <p>Type of Publication:</p>
-                        <Select isMulti name="type" options={publication_types} value={pubtype} defaultValue={publication_types[0]} onChange={publicationType} />
-                    </div>
-                    <div className='publication_year'>
-                        <p>Year Range:</p>
-                        <Select isMulti name="year" options={publication_year} value={pubyear} defaultValue={publication_year[0]} onChange={publicationYear} />
-                    </div>
-                    <div className='publication_author'>
-                        <p>Author:</p>
-                        <Select isMulti name="year" options={publication_author} value={pubauthor} defaultValue={publication_author[0]} onChange={publicationAuthor} />
-                    </div>
-                </div>
-                <h1 className='publication_type_title'><b>Peer-reviewed Journal Articles</b></h1>
-                {JournalData.map((pubData, index) => (
-                    <JournalSection key={index} year={pubData.year} publications={pubData.publications} />
-                ))}
-            </Container>
-
-            <Container>
-                <h1 className='publication_type_title'><b>Peer-reviewed Conference Papers</b></h1>
-                {ConferenceData.map((pubData, index) => (
-                    <ConferenceSection key={index} year={pubData.year} publications={pubData.publications} />
-                ))}
-            </Container>
-
-            <Container useOrange={true}>
-                <h1 className='publication_type_title'><b>Patents</b></h1>
-                {PatentData.map((pubData, index) => (
-                    <PatentSection key={index} year={pubData.year} publications={pubData.publications} />
-                ))}
-            </Container>
-
-            <Container>
-                <h1 className='publication_type_title'><b>Theses</b></h1>
-                {ThesesData.map((pubData, index) => (
-                    <ThesesSection key={index} year={pubData.year} publications={pubData.publications} />
-                ))}
-                <p className='small_note'><i>*denotes an undergraduate, graduate, or postdoctoral scholars' work under Asst Prof Ghahramani</i></p>
-            </Container>
+            {renderSections()}
 
             <Footer />
         </div>
@@ -321,10 +380,3 @@ function ThesesSection({ year, publications }) {
         </div>
     );
 }
-
-const customStyles = {
-    container: provided => ({
-      ...provided,
-      width: '100%',
-    }),
-  };

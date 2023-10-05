@@ -27,7 +27,7 @@
     gap: 1rem;
 }
 
-.Publications .publication_filter > *{
+.Publications .publication_filter>* {
     flex: 1;
     display: flex;
     align-items: center;
@@ -35,10 +35,26 @@
 }
 
 .Publications .publication_filter .css-b62m3t-container {
-    width: 60%;
+    width: 50%;
 }
 
-.Publications .publication_filter .publication_type {
+.Publications .input_filter {
+    margin-bottom: 1.65vmax;
+}
+
+.Publications .input_filter input {
+    border-radius: 0.25rem;
+    min-height: 38px;
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 80%);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    width: 50%;
+    padding-left: 8px;
+}
+
+/* .Publications .publication_filter .publication_type {
     justify-content: start;
 }
 
@@ -48,7 +64,7 @@
 
 .Publications .publication_filter .publication_author {
     justify-content: end;
-}
+} */
 
 .Publications .publication_type_title {
     font-size: 2rem;
@@ -115,4 +131,20 @@
 
 .Publications .small_note {
     font-size: smaller;
+}
+
+/* For filtering */
+
+.fade-enter,
+.fade-exit-active {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease-out, visibility 300ms ease-out;
+}
+
+.fade-enter-active,
+.fade-exit {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms ease-in, visibility 300ms ease-in;
 }

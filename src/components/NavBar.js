@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';  // Add useRef
 import { Link } from 'react-router-dom';
 import './NavBar.css';
-import Logo from './Website Data/Logo.png';
+import Logo from './Website Data/MicrosoftTeams-image.png';
 import Sun from './Website Data/sun.png';
 import Moon from './Website Data/moon.png'
 import Button from '@mui/material/Button';
