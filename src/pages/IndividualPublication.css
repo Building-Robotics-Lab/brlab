@@ -3,7 +3,7 @@
 .IndividualPublication .first_section {
     display: flex;
     flex-direction: column;
-    padding: 0px 300px;
+    /* padding: 0px 300px; */
 }
 
 .IndividualPublication .first_section .title {
@@ -49,7 +49,7 @@
 .IndividualPublication .second_section {
     display: flex;
     flex-direction: column;
-    padding: 0px 300px;
+    /* padding: 0px 300px; */
 }
 
 .IndividualPublication .second_section .abstract {
@@ -103,7 +103,7 @@
 .IndividualPublication .third_section {
     display: flex;
     flex-direction: column;
-    padding: 0px 300px;
+    /* padding: 0px 300px; */
 }
 
 /* .IndividualPublication .third_section .each_profile {
