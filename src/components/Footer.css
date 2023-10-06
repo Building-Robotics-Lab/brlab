@@ -29,6 +29,17 @@
     color: #6c757d !important;
 }
 
+.uiux a {
+    color: rgb(45, 99, 83) !important;
+}
+
+.uiux a:hover {
+    color: white !important;
+    border-radius: 0.25rem;
+    background-color: rgb(45, 99, 83) !important;
+}
+
+
 /* ALL LEFT */
 
 .Footer h3 {
