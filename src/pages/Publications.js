@@ -14,8 +14,8 @@ import ThesesData from '../components/Papers/ThesesData';
 function Publications() {
     const publication_types = [
         { value: 0, label: 'All' },
-        { value: 1, label: 'Journal Article' },
-        { value: 2, label: 'Conference Paper' },
+        { value: 1, label: 'Journal' },
+        { value: 2, label: 'Conference' },
         { value: 3, label: 'Patent' },
         { value: 4, label: 'Thesis' },
     ];
