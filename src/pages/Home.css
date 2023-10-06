@@ -203,8 +203,8 @@
     color: black;
 }
 
-.Home .fifth_section_text_left p,
-.Home .fifth_section_text_right p {
+.Home .fifth_section_text_left #text_left,
+.Home .fifth_section_text_right #text_right {
     text-align: center;
     text-justify: inter-word;
     line-height: 1.5;

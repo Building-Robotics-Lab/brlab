@@ -204,7 +204,7 @@ function Home() {
                     </div>
                     <div className="fifth_section_texts">
                         <div className="fifth_section_text_left">
-                            <p>
+                            <p id='text_left'>
                                 As a research lab, we place a strong emphasis on developing practical solutions that can be readily implemented
                                 in real-world scenarios. Our team is dedicated to working closely with industry stakeholders to understand their
                                 needs and to develop innovative solutions that drive change and make a positive impact in their respective fields.
@@ -216,7 +216,7 @@ function Home() {
                             </div>
                         </div>
                         <div className="fifth_section_text_right">
-                            <p>
+                            <p id='text_right'>
                                 Our research lab provides a collaborative and interdisciplinary environment that encourages creativity and innovation,
                                 offering a platform for academics and students to gain practical experience in developing solutions that prioritise human
                                 well-being and environmental sustainability, and conduct cutting-edge research that can have a real impact on society. If

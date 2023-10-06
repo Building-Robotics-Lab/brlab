@@ -42,6 +42,10 @@
     margin-bottom: 1.65vmax;
 }
 
+.Publications .publication_type_title {
+    margin-top: 1.65vmax
+}
+
 .Publications .input_filter input {
     border-radius: 0.25rem;
     min-height: 38px;
@@ -74,6 +78,11 @@
     display: flex;
     border-bottom: 2px solid black;
 }
+
+.Publications .publication_section.no-border {
+    border-bottom: none;
+}
+
 
 .Publications .publication_section .publication_year {
     flex: 1;

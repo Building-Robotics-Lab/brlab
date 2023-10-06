@@ -347,10 +347,9 @@ function Publications() {
                 allSections.push(
                     <>
                         <h1 className='publication_type_title'><b>{dataType.title}</b></h1>
-                        {dataType.type.filter(pubData => shouldDisplayPublication(pubData.year) && hasPublicationsForYear(pubData)).map((pubData, idx) => (
-                            <dataType.component key={idx} year={pubData.year} publications={pubData.publications.filter(shouldShowPublication)} />
+                        {dataType.type.filter(pubData => shouldDisplayPublication(pubData.year) && hasPublicationsForYear(pubData)).map((pubData, idx, self) => (
+                            <dataType.component className={idx === self.length - 1 ? 'no-border' : ''} key={idx} year={pubData.year} publications={pubData.publications.filter(shouldShowPublication)} />
                         ))}
-                        {dataType === dataTypes[dataTypes.length - 1] && renderNote()}
                     </>
                 );
             }
@@ -360,6 +359,7 @@ function Publications() {
             <Container useOrange={true}>
                 {renderFilterInputs()}
                 {allSections}
+                {renderNote()}
             </Container>
         );
     };
@@ -388,9 +388,9 @@ function Publications() {
 export default Publications;
 
 
-function JournalSection({ year, publications }) {
+function JournalSection({ year, publications, className }) {
     return (
-        <div className='publication_section'>
+        <div className={`publication_section ${className}`}>
             <div className='publication_year'>
                 <h4>{year}</h4>
             </div>
@@ -430,9 +430,9 @@ function JournalSection({ year, publications }) {
     );
 }
 
-function ConferenceSection({ year, publications }) {
+function ConferenceSection({ year, publications, className }) {
     return (
-        <div className='publication_section'>
+        <div className={`publication_section ${className}`}>
             <div className='publication_year'>
                 <h4>{year}</h4>
             </div>
@@ -471,9 +471,9 @@ function ConferenceSection({ year, publications }) {
     );
 }
 
-function PatentSection({ year, publications }) {
+function PatentSection({ year, publications, className }) {
     return (
-        <div className='publication_section'>
+        <div className={`publication_section ${className}`}>
             <div className='publication_year'>
                 <h4>{year}</h4>
             </div>
@@ -506,9 +506,9 @@ function PatentSection({ year, publications }) {
     );
 }
 
-function ThesesSection({ year, publications }) {
+function ThesesSection({ year, publications, className }) {
     return (
-        <div className='publication_section'>
+        <div className={`publication_section ${className}`}>
             <div className='publication_year'>
                 <h4>{year}</h4>
             </div>
