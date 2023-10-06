@@ -13,6 +13,31 @@ import ThesesData from '../components/Papers/ThesesData';
 
 function Publications() {
 
+    const getAvailableTypes = () => {
+        let availableTypes = new Set();
+
+        const checkTypeForSelectedYear = (typeData, typeValue) => {
+            if (pubyear.some(option => option.value === 'all' || typeData.some(data => option.value === data.year.toString()))) {
+                availableTypes.add(typeValue);
+            }
+        };
+
+        checkTypeForSelectedYear(JournalData, 1);
+        checkTypeForSelectedYear(ConferenceData, 2);
+        checkTypeForSelectedYear(PatentData, 3);
+        checkTypeForSelectedYear(ThesesData, 4);
+
+        return Array.from(availableTypes);
+    };
+
+    const dynamicTypeOptions = () => {
+        const types = getAvailableTypes();
+        return [
+            { value: 0, label: 'All' },
+            ...types.map(type => publication_types.find(t => t.value === type))
+        ];
+    };
+
     const getAvailableYears = () => {
         let availableYears = new Set();
 
@@ -41,6 +66,106 @@ function Publications() {
             { value: 'all', label: 'All' },
             ...years.map(year => ({ value: year.toString(), label: year.toString() }))
         ];
+    };
+
+    const getAvailableYearsForAuthors = () => {
+        let availableYears = new Set();
+
+        const checkYearForSelectedAuthor = (typeData) => {
+            typeData.forEach(data => {
+                if (data.publications.some(pub => shouldShowPublication(pub))) {
+                    availableYears.add(data.year);
+                }
+            });
+        };
+
+        checkYearForSelectedAuthor(JournalData);
+        checkYearForSelectedAuthor(ConferenceData);
+        checkYearForSelectedAuthor(PatentData);
+        checkYearForSelectedAuthor(ThesesData);
+
+        return Array.from(availableYears).sort((a, b) => b - a);
+    };
+
+    const dynamicYearOptionsForAuthors = () => {
+        const years = getAvailableYearsForAuthors();
+        return [
+            { value: 'all', label: 'All' },
+            ...years.map(year => ({ value: year.toString(), label: year.toString() }))
+        ];
+    };
+
+    const getAvailableTypesForAuthors = () => {
+        let availableTypes = new Set();
+
+        const checkTypeForSelectedAuthor = (typeData, typeValue) => {
+            if (typeData.some(data => data.publications.some(pub => shouldShowPublication(pub)))) {
+                availableTypes.add(typeValue);
+            }
+        };
+
+        checkTypeForSelectedAuthor(JournalData, 1);
+        checkTypeForSelectedAuthor(ConferenceData, 2);
+        checkTypeForSelectedAuthor(PatentData, 3);
+        checkTypeForSelectedAuthor(ThesesData, 4);
+
+        return Array.from(availableTypes);
+    };
+
+    const dynamicTypeOptionsForAuthors = () => {
+        const types = getAvailableTypesForAuthors();
+        return [
+            { value: 0, label: 'All' },
+            ...types.map(type => publication_types.find(t => t.value === type))
+        ];
+    };
+
+
+
+    const predefinedAuthors = [
+        'Ali Ghahramani',
+        'Riccardo Talami',
+        'CHEN Kai',
+        'Iqbal Shah',
+        'Connor Aucremanne',
+        'Ilyas Dawoodjee'
+    ];
+
+    const getAllDataBasedOnType = () => {
+        let combinedData = [];
+        if (pubtype.some(option => option.value === 0 || option.value === 1)) {
+            combinedData = combinedData.concat(JournalData);
+        }
+        if (pubtype.some(option => option.value === 0 || option.value === 2)) {
+            combinedData = combinedData.concat(ConferenceData);
+        }
+        if (pubtype.some(option => option.value === 0 || option.value === 3)) {
+            combinedData = combinedData.concat(PatentData);
+        }
+        if (pubtype.some(option => option.value === 0 || option.value === 4)) {
+            combinedData = combinedData.concat(ThesesData);
+        }
+        return combinedData;
+    };
+
+    const getDynamicAuthorOptions = () => {
+        const combinedData = getAllDataBasedOnType();
+        let allAuthors = [];
+
+        combinedData.forEach(data => {
+            if (pubyear.some(option => option.value === 'all' || option.value === data.year.toString())) {
+                data.publications.forEach(pub => {
+                    pub.authors.forEach(author => {
+                        const cleanedAuthorName = author.name.replace('*', '');
+                        if (predefinedAuthors.includes(cleanedAuthorName) && !allAuthors.includes(cleanedAuthorName)) {
+                            allAuthors.push(cleanedAuthorName);
+                        }
+                    });
+                });
+            }
+        });
+
+        return [{ value: 0, label: 'All' }, ...allAuthors.map((author, index) => ({ value: index + 1, label: author }))];
     };
 
     const publication_types = [
@@ -150,6 +275,29 @@ function Publications() {
         return pubyear.some(option => option.value === pubYear.toString());
     }
 
+    const shouldShowPublication = (publication) => {
+        // If 'All' is selected in authors, show every publication
+        if (pubauthor.some(option => option.value === 0)) {
+            if (text) {
+                return publication.title.toLowerCase().includes(text.toLowerCase());
+            }
+            return true;
+        }
+
+        // Check if any of the publication's authors are in the selected authors
+        for (let author of publication.authors) {
+            const cleanedAuthorName = author.name.replace('*', '');
+            if (pubauthor.some(option => option.label === cleanedAuthorName)) {
+                if (text) {
+                    return publication.title.toLowerCase().includes(text.toLowerCase());
+                }
+                return true;
+            }
+        }
+        return false;
+    };
+
+
     const renderFilterInputs = () => (
         <>
             <div className='input_filter'>
@@ -157,16 +305,16 @@ function Publications() {
             </div>
             <div className="publication_filter">
                 <div className='publication_type'>
-                    <p>Publication Type:</p>
-                    <Select isMulti name="type" options={publication_types} value={pubtype} defaultValue={publication_types[0]} onChange={publicationType} />
+                    <p>Type:</p>
+                    <Select isMulti name="type" options={pubauthor.some(option => option.value === 0) ? dynamicTypeOptions() : dynamicTypeOptionsForAuthors()} value={pubtype} defaultValue={publication_types[0]} onChange={publicationType} />
                 </div>
                 <div className='publication_year'>
-                    <p>Year Range:</p>
-                    <Select isMulti name="year" options={dynamicYearOptions()} value={pubyear} defaultValue={publication_year[0]} onChange={publicationYear} />
+                    <p>Year:</p>
+                    <Select isMulti name="year" options={pubauthor.some(option => option.value === 0) ? dynamicYearOptions() : dynamicYearOptionsForAuthors()} value={pubyear} defaultValue={publication_year[0]} onChange={publicationYear} />
                 </div>
                 <div className='publication_author'>
                     <p>Author:</p>
-                    <Select isMulti name="year" options={publication_author} value={pubauthor} defaultValue={publication_author[0]} onChange={publicationAuthor} />
+                    <Select isMulti name="year" options={getDynamicAuthorOptions()} value={pubauthor} defaultValue={publication_author[0]} onChange={publicationAuthor} />
                 </div>
             </div>
         </>
@@ -176,13 +324,16 @@ function Publications() {
         <p className='small_note'><i>*denotes an undergraduate, graduate, or postdoctoral scholars' work under Asst Prof Ghahramani</i></p>
     );
 
-    const renderSections = () => {
-        const sections = [];
-        let useOrange = true;
+    const hasPublicationsForYear = (pubData) => {
+        return pubData.publications.filter(shouldShowPublication).length > 0;
+    };
 
-        const checkDataForSelectedYear = (data) => {
-            return data.filter(pubData => shouldDisplayPublication(pubData.year)).length > 0;
-        };
+    const hasPublicationsForSection = (data) => {
+        return data.some(pubData => shouldDisplayPublication(pubData.year) && hasPublicationsForYear(pubData));
+    };
+
+    const renderSections = () => {
+        let allSections = [];
 
         const dataTypes = [
             { type: JournalData, title: "Peer-reviewed Journal Articles", component: JournalSection, check: pubtype.some(option => option.value === 0) || pubtype.some(option => option.value === 1) },
@@ -192,23 +343,27 @@ function Publications() {
         ];
 
         dataTypes.forEach((dataType, index) => {
-            if (dataType.check && checkDataForSelectedYear(dataType.type)) {
-                sections.push(
-                    <Container useOrange={useOrange}>
-                        {sections.length === 0 && renderFilterInputs()}
+            if (dataType.check && hasPublicationsForSection(dataType.type)) {
+                allSections.push(
+                    <>
                         <h1 className='publication_type_title'><b>{dataType.title}</b></h1>
-                        {dataType.type.filter(pubData => shouldDisplayPublication(pubData.year)).map((pubData, idx) => (
-                            <dataType.component key={idx} year={pubData.year} publications={pubData.publications} />
+                        {dataType.type.filter(pubData => shouldDisplayPublication(pubData.year) && hasPublicationsForYear(pubData)).map((pubData, idx) => (
+                            <dataType.component key={idx} year={pubData.year} publications={pubData.publications.filter(shouldShowPublication)} />
                         ))}
                         {dataType === dataTypes[dataTypes.length - 1] && renderNote()}
-                    </Container>
+                    </>
                 );
-                useOrange = !useOrange;
             }
         });
 
-        return sections;
+        return (
+            <Container useOrange={true}>
+                {renderFilterInputs()}
+                {allSections}
+            </Container>
+        );
     };
+
 
     return (
         <div className="Publications">
