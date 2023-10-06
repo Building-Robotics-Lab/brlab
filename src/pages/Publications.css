@@ -35,7 +35,7 @@
 }
 
 .Publications .publication_filter .css-b62m3t-container {
-    width: 50%;
+    width: 80%;
 }
 
 .Publications .input_filter {
@@ -135,16 +135,14 @@
 
 /* For filtering */
 
-.fade-enter,
-.fade-exit-active {
+.container-entering,
+.container-exiting,
+.container-exited {
     opacity: 0;
-    visibility: hidden;
-    transition: opacity 300ms ease-out, visibility 300ms ease-out;
+    display: none;
 }
 
-.fade-enter-active,
-.fade-exit {
+.container-entered {
     opacity: 1;
-    visibility: visible;
-    transition: opacity 300ms ease-in, visibility 300ms ease-in;
+    transition: opacity 500ms ease-in;
 }
