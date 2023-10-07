@@ -1,7 +1,7 @@
 {
   "name": "brlab",
   "version": "0.1.0",
-  "homepage": "https://building-robotics-lab.github.io/brlab",
+  "homepage": "https://building-robotics-lab.github.io/brlab/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",

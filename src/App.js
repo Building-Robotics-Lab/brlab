@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ScrolltoTop from './components/ScrollToTop'
+import ScrolltoTop from './components/ScrollToTop';
 import * as d3 from 'd3';
 
 import Home from './pages/Home';
@@ -19,8 +19,7 @@ import IndividualPublication from './pages/IndividualPublication';
 function App() {
   return (
     <div className="App">
-
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <ScrolltoTop />
         <Routes>
           <Route index element={<Home />} />
@@ -33,7 +32,6 @@ function App() {
           <Route path='/join' element={<Join_the_Lab />} />
           <Route path="/individual_profile/:profileName" element={<IndividualProfile />} />
           <Route path='/individual_publication/:id' element={<IndividualPublication />} />
-
         </Routes>
       </Router>
     </div>
