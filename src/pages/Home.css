@@ -146,8 +146,8 @@
     padding-bottom: 0.5rem;
 }
 
-.Home .meet_our_team p,
-.Home .publications_text p {
+.Home .meet_our_team #meet_our_team_text_left,
+.Home .publications_text #publications_text_right {
     text-align: center;
     text-justify: inter-word;
     line-height: 1.5;

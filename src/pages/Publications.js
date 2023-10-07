@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Container from '../components/Container';
 import './Publications.css'
 import { Link } from 'react-router-dom';
-import Select from 'react-select';
+import Select, { components } from 'react-select';
 
 import JournalData from '../components/Papers/JournalData';
 import ConferenceData from '../components/Papers/ConferenceData';
@@ -119,8 +119,6 @@ function Publications() {
             ...types.map(type => publication_types.find(t => t.value === type))
         ];
     };
-
-
 
     const predefinedAuthors = [
         'Ali Ghahramani',
@@ -297,27 +295,67 @@ function Publications() {
         return false;
     };
 
+    const [isTypeOpen, setTypeOpen] = useState(false);
+    const [isYearOpen, setYearOpen] = useState(false);
+    const [isAuthorOpen, setAuthorOpen] = useState(false);
+    const selectRef = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (selectRef.current && !selectRef.current.contains(event.target)) {
+                setTypeOpen(false);
+                setYearOpen(false);
+                setAuthorOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+
+    const Reset = () => {
+        setText('')
+        setPubtype([publication_types[0]]);
+        setPubyear([publication_year[0]]);
+        setPubauthor([publication_author[0]]);
+    }
 
     const renderFilterInputs = () => (
-        <>
+        <div className='publication_filter_section'>
             <div className='input_filter'>
                 <input type="text" value={text} onChange={handleChange} placeholder="Search..." />
             </div>
             <div className="publication_filter">
-                <div className='publication_type'>
-                    <p>Type:</p>
-                    <Select isMulti name="type" options={pubauthor.some(option => option.value === 0) ? dynamicTypeOptions() : dynamicTypeOptionsForAuthors()} value={pubtype} defaultValue={publication_types[0]} onChange={publicationType} />
+                <div className='publication_type' ref={selectRef}>
+                    <div onClick={() => setTypeOpen(!isTypeOpen)} style={{ cursor: 'pointer' }}>
+                        Type
+                        <span style={{ marginLeft: '5px' }}>▼</span>
+                    </div>
+                    <Select styles={customStyles} isMulti closeMenuOnSelect={false} hideSelectedOptions={false} name="type" options={pubauthor.some(option => option.value === 0) ? dynamicTypeOptions() : dynamicTypeOptionsForAuthors()} value={pubtype} defaultValue={publication_types[0]} onChange={publicationType} onMenuOpen={() => setTypeOpen(true)} onMenuClose={() => setTypeOpen(false)} menuIsOpen={isTypeOpen} components={{ Option: InputOption }} />
                 </div>
                 <div className='publication_year'>
-                    <p>Year:</p>
-                    <Select isMulti name="year" options={pubauthor.some(option => option.value === 0) ? dynamicYearOptions() : dynamicYearOptionsForAuthors()} value={pubyear} defaultValue={publication_year[0]} onChange={publicationYear} />
+                    <div onClick={() => setYearOpen(!isYearOpen)} style={{ cursor: 'pointer' }}>
+                        Year
+                        <span style={{ marginLeft: '5px' }}>▼</span>
+                    </div>
+                    <Select styles={customStyles} isMulti closeMenuOnSelect={false} hideSelectedOptions={false} name="year" options={pubauthor.some(option => option.value === 0) ? dynamicYearOptions() : dynamicYearOptionsForAuthors()} value={pubyear} defaultValue={publication_year[0]} onChange={publicationYear} onMenuOpen={() => setYearOpen(true)} onMenuClose={() => setYearOpen(false)} menuIsOpen={isYearOpen} components={{ Option: InputOption }} />
                 </div>
+
                 <div className='publication_author'>
-                    <p>Author:</p>
-                    <Select isMulti name="year" options={getDynamicAuthorOptions()} value={pubauthor} defaultValue={publication_author[0]} onChange={publicationAuthor} />
+                    <div onClick={() => setAuthorOpen(!isAuthorOpen)} style={{ cursor: 'pointer' }}>
+                        Author
+                        <span style={{ marginLeft: '5px' }}>▼</span>
+                    </div>
+                    <Select styles={customStyles} isMulti closeMenuOnSelect={false} hideSelectedOptions={false} name="author" options={getDynamicAuthorOptions()} value={pubauthor} defaultValue={publication_author[0]} onChange={publicationAuthor} onMenuOpen={() => setAuthorOpen(true)} onMenuClose={() => setAuthorOpen(false)} menuIsOpen={isAuthorOpen} components={{ Option: InputOption }} />
+                </div>
+                <div className="HomeButtons">
+                    <Link onClick={Reset}><p id='JoinButton'>Reset</p></Link>
                 </div>
             </div>
-        </>
+
+        </div>
     );
 
     const renderNote = () => (
@@ -540,3 +578,34 @@ function ThesesSection({ year, publications, className }) {
         </div>
     );
 }
+
+const InputOption = ({ getStyles, isFocused, isSelected, children, innerProps, ...rest }) => {
+    const style = {
+        alignItems: 'center',
+        backgroundColor: isFocused ? '#eee' : 'transparent',
+        color: 'inherit',
+        display: 'flex',
+        padding: '8px 12px'
+    };
+
+    return (
+        <components.Option {...rest} isFocused={isFocused} isSelected={isSelected} getStyles={getStyles} innerProps={innerProps} style={style}>
+            <input type="checkbox" checked={isSelected} readOnly />
+            <span style={{ marginLeft: '8px' }}>{children}</span>
+        </components.Option>
+    );
+};
+
+const customStyles = {
+    control: () => ({
+        display: 'none'
+    }),
+    menu: base => ({
+        ...base,
+        zIndex: 1000,
+        position: 'absolute',
+        top: '10px',  // This adjusts the vertical position. Increase or decrease as needed.
+        left: '-75px',  // This adjusts the horizontal position. Increase or decrease as needed.
+        width: '250px'
+    }),
+};

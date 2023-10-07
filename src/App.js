@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ScrolltoTop from './components/ScrollToTop'
 import * as d3 from 'd3';
 
@@ -20,22 +20,22 @@ function App() {
   return (
     <div className="App">
 
-      <HashRouter>
+      <Router>
         <ScrolltoTop />
         <Routes>
           <Route index element={<Home />} />
           <Route path='/research' element={<Research />} />
           <Route path='/comfortgpt' element={<ComfortGPT />} />
-          <Route path='/optimal_temperature_setpoint_tool' element={<OTST />} />
-          <Route path='/our_team' element={<Our_Team />} />
+          <Route path='/otst' element={<OTST />} />
+          <Route path='/team' element={<Our_Team />} />
           <Route path='/news' element={<News />} />
           <Route path='/publications' element={<Publications />} />
-          <Route path='/join_the_lab' element={<Join_the_Lab />} />
+          <Route path='/join' element={<Join_the_Lab />} />
           <Route path="/individual_profile/:profileName" element={<IndividualProfile />} />
           <Route path='/individual_publication/:id' element={<IndividualPublication />} />
 
         </Routes>
-      </HashRouter>
+      </Router>
     </div>
   );
 }

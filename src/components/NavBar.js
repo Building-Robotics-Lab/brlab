@@ -60,15 +60,15 @@ function NavBar() {
                 <div className="dropdown-content">
                   <Link to="/research"><p>Initiatives</p></Link>
                   <Link to="/comfortgpt"><p>ComfortGPT</p></Link>
-                  <Link to="/optimal_temperature_setpoint_tool"><p>Optimal Temperature Setpoint Tool</p></Link>
+                  <Link to="/otst"><p>Optimal Temperature Setpoint Tool</p></Link>
                   <Link to="https://github.com/Building-Robotics-Lab"><p>GitHub</p></Link>
                 </div>
               )}
             </div>
-            <Link to="/our_team"><p>Our Team</p></Link>
+            <Link to="/team"><p>Our Team</p></Link>
             <Link to="/news"><p>News</p></Link>
             <Link to="/publications"><p>Publications</p></Link>
-            <Link to="/join_the_lab"><p id='JoinButton'>Join the Lab</p></Link>
+            <Link to="/join"><p id='JoinButton'>Join the Lab</p></Link>
             <div onClick={toggleTheme} style={{ cursor: 'pointer' }}>
               {theme === 'day' ? <img src={Sun} alt="Sun" className='mode' /> : <img src={Moon} alt="Moon" className='mode' />}
             </div>

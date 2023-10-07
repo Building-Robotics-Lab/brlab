@@ -24,27 +24,39 @@
 
 /* publication title and sections */
 
-.Publications .publication_filter {
+.Publications .publication_filter_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Publications .publication_filter_section .publication_filter {
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* .Publications .publication_filter {
     margin-bottom: 3.3vmax;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-}
+} */
 
-.Publications .publication_filter>* {
+/* .Publications .publication_filter>* {
     flex: 1;
     display: flex;
     align-items: center;
     gap: 1rem;
-}
+} */
 
-.Publications .publication_filter .css-b62m3t-container {
+/* .Publications .publication_filter .css-b62m3t-container {
     width: 80%;
-}
+} */
 
-.Publications .input_filter {
+/* .Publications .input_filter {
     margin-bottom: 1.65vmax;
-}
+} */
 
 .Publications .publication_type_title {
     margin-top: 1.65vmax
@@ -58,8 +70,8 @@
     border-radius: 4px;
     border-style: solid;
     border-width: 1px;
-    width: 50%;
     padding-left: 8px;
+    width: 95%;
 }
 
 /* .Publications .publication_filter .publication_type {

@@ -156,7 +156,7 @@ function Home() {
                         </div>
                         <div className="meet_our_team_text">
                             <h2><b>Meet Our Team</b></h2>
-                            <p>
+                            <p id='meet_our_team_text_left'>
                                 We are a team of researchers with diverse backgrounds, enabling us to effectively innovate. Our
                                 goal is to create smart buildings that enhance the quality of life for occupants and contribute
                                 to a greener planet. Our lab members come from various academic backgrounds and cultures, which
@@ -174,7 +174,8 @@ function Home() {
                         </div>
                         <div className="publications_text">
                             <h2><b>Publications</b></h2>
-                            <p>Our research involves the use of both
+                            <p id='publications_text_right'>
+                                Our research involves the use of both
                                 quantitative and qualitative techniques to comprehend the impact of our built environment and
                                 artificial intelligence on individuals. Our objective is to create interventions and adaptations
                                 that promote human well-being. Furthermore, we disseminate our findings through peer-reviewed
