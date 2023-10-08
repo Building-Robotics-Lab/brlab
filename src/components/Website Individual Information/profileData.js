@@ -45,7 +45,7 @@ import { faGoogle, faLinkedin, faResearchgate, faOrcid, faGit, faGithub } from '
 const profiles = [
     {
         ProfileName: 'Riccardo',
-        ProfileLink: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo",
+        ProfileLink: "https://building-robotics-lab.github.io/brlab/individual_profile/Riccardo",
         ProfilePic: RiccardoPic,
         Name: 'Riccardo Talami',
         Position: 'Research Fellow',
@@ -86,7 +86,7 @@ const profiles = [
     },
     {
         ProfileName: 'Kai',
-        ProfileLink: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Kai",
+        ProfileLink: "https://building-robotics-lab.github.io/brlab/individual_profile/Kai",
         ProfilePic: KaiPic,
         Name: 'CHEN Kai',
         Position: 'PhD Student',
@@ -117,7 +117,7 @@ const profiles = [
     },
     {
         ProfileName: 'Iqbal',
-        ProfileLink: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Iqbal",
+        ProfileLink: "https://building-robotics-lab.github.io/brlab/individual_profile/Iqbal",
         ProfilePic: IqbalPic,
         Name: 'Iqbal Shah',
         Position: 'PhD Student',
@@ -153,7 +153,7 @@ const profiles = [
     },
     {
         ProfileName: 'Connor',
-        ProfileLink: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Connor",
+        ProfileLink: "https://building-robotics-lab.github.io/brlab/individual_profile/Connor",
         ProfilePic: ConnorPic,
         Name: 'Connor Aucremanne',
         Position: 'PhD Student',
@@ -192,7 +192,7 @@ const profiles = [
     },
     {
         ProfileName: 'Kelly',
-        ProfileLink: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Kelly",
+        ProfileLink: "https://building-robotics-lab.github.io/brlab/individual_profile/Kelly",
         ProfilePic: KellyPic,
         Name: 'Kelly Loh',
         Position: 'PhD Student',
@@ -222,7 +222,7 @@ const profiles = [
     },
     {
         ProfileName: 'Ilyas',
-        ProfileLink: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Ilyas",
+        ProfileLink: "https://building-robotics-lab.github.io/brlab/individual_profile/Ilyas",
         ProfilePic: IlyasPic,
         Name: 'Ilyas Dawoodjee',
         Position: 'Research Engineer',
@@ -256,7 +256,7 @@ const profiles = [
     },
     {
         ProfileName: 'Stella',
-        ProfileLink: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Stella",
+        ProfileLink: "https://building-robotics-lab.github.io/brlab/individual_profile/Stella",
         ProfilePic: StellaPic,
         Name: 'HU Xinhao',
         Position: 'Visiting PhD Candidate from Hunan University',
@@ -293,7 +293,7 @@ const profiles = [
     },
     {
         ProfileName: 'Xiaosong',
-        ProfileLink: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Xiaosong",
+        ProfileLink: "https://building-robotics-lab.github.io/brlab/individual_profile/Xiaosong",
         ProfilePic: XiaosongPic,
         Name: 'SU Xiaosong',
         Position: 'Visiting PhD Candidate from Hunan University',
@@ -329,7 +329,7 @@ const profiles = [
     },
     {
         ProfileName: 'Pegah',
-        ProfileLink: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Pegah",
+        ProfileLink: "https://building-robotics-lab.github.io/brlab/individual_profile/Pegah",
         ProfilePic: PegahPic,
         Name: 'Pegah Eshraghi',
         Position: 'Visiting PhD Candidate from Shahid Beheshti University',
@@ -363,7 +363,7 @@ const profiles = [
     },
     {
         ProfileName: 'Pierre',
-        ProfileLink: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Pierre",
+        ProfileLink: "https://building-robotics-lab.github.io/brlab/individual_profile/Pierre",
         ProfilePic: PierrePic,
         Name: 'Pierre-Louis David',
         Position: 'Visiting MSc Student from ETH Zürich',
@@ -392,7 +392,7 @@ const profiles = [
     },
     {
         ProfileName: 'Guillaume',
-        ProfileLink: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Guillaume",
+        ProfileLink: "https://building-robotics-lab.github.io/brlab/individual_profile/Guillaume",
         ProfilePic: GuillaumePic,
         Name: 'Guillaume Lecronier',
         Position: 'Visiting MSc Student from ETH Zürich',
@@ -423,7 +423,7 @@ const profiles = [
     },
     {
         ProfileName: 'Michelle',
-        ProfileLink: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Michelle",
+        ProfileLink: "https://building-robotics-lab.github.io/brlab/individual_profile/Michelle",
         ProfilePic: MichellePic,
         Name: 'QI Xuanning',
         Position: 'Visiting PhD Candidate from Harbin Institute of Technology',
@@ -460,7 +460,7 @@ const profiles = [
     },
     {
         ProfileName: 'Prof',
-        ProfileLink: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile",
+        ProfileLink: "https://building-robotics-lab.github.io/brlab/team",
         ProfilePic: ProfPic,
         Name: 'Ali Ghahramani',
         Position: 'Assistant Professor (PYP)',
