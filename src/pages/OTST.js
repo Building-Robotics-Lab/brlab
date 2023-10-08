@@ -8,11 +8,20 @@ import * as d3 from 'd3';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import Select from 'react-select';
 import profiles from '../components/Website Individual Information/profileData';
 import { Link } from 'react-router-dom';
 
 function OTST() {
+
+    useEffect(() => {
+        document.title = 'BRL - OTST';
+        return () => {
+            document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
+        };
+    }, []); // Empty dependency array ensures this runs only once when the component mounts.
+
     // For First Section
     const getProfileByName = (profileName) => {
         return profiles.find(profile => profile.ProfileName === profileName);
@@ -153,6 +162,7 @@ function OTST() {
 
     // Render graph after data is loaded
     let scale;
+    let baseline;
     const [col1, setcol1] = useState([]); // Temp Scale
     const [col2, setcol2] = useState([]); // Climate
     const [col3, setcol3] = useState([]); // Patt
@@ -166,15 +176,19 @@ function OTST() {
     const [col10, setcol10] = useState([]); // Legend Color
     const [exceedValue, setexceedValue] = useState(false)
     const [usescale, setusescale] = useState();
+    const [usebaseline, setusebaseline] = useState();
     useEffect(() => {
         const drawGraph = () => {
             if (!loading) {
                 if (temperature === 'Celsius') {
                     scale = '°C';
+                    baseline = "22.5"
                 } else {
                     scale = '°F';
+                    baseline = "72.5"
                 }
                 setusescale(scale)
+                setusebaseline(baseline)
 
                 let scale_text = document.getElementById('scale');
                 scale_text.textContent = scale;
@@ -327,7 +341,7 @@ function OTST() {
                             tooltip.transition()
                                 .duration(200)
                                 .style('opacity', 0.9);
-                            tooltip.html(`Outdoor Temperature (${scale}): ${Number(d.x).toFixed(1)} <br/> Optimal Setpoint (${scale}): ${Number(d.y).toFixed(1)} <br/> Energy Savings Compared to 22.5°C (%): ${Number(((Math.abs(d.e - d.b) / (d.b)) * 100)).toFixed(2)}`)
+                            tooltip.html(`Outdoor Temperature (${scale}): ${Number(d.x).toFixed(1)} <br/> Optimal Setpoint (${scale}): ${Number(d.y).toFixed(1)} <br/> Energy Savings Compared to ${baseline}${scale} (%): ${Number(((Math.abs(d.e - d.b) / (d.b)) * 100)).toFixed(2)}`)
                                 .style('left', (xPos + margin.left + document.getElementById('graph').offsetLeft) + 'px')
                                 .style('top', (yPos + document.getElementById('graph').offsetTop) + 'px');
 
@@ -534,7 +548,7 @@ function OTST() {
                                                 <b><span id={`output_label_${index}`}>{col3_2[index]}</span></b>:
                                                 Optimal Setpoint (<span id={`output_scale_${index}`}>{usescale}</span>):
                                                 <b><span id={`output_sp_${index}`}> {col6[index].toFixed(1)}</span></b>;
-                                                Energy Savings Compared to 22.5°C (%): <b><span id={`output_savings_${index}`}>{col9[index]}</span></b>
+                                                Energy Savings Compared to <span id={`output_baseline_${index}`}>{usebaseline}</span><span id={`output_scale_${index}`}>{usescale}</span> (%): <b><span id={`output_savings_${index}`}>{col9[index]}</span></b>
                                             </p>
                                         </div>
                                     ))}
@@ -576,8 +590,11 @@ function OTST() {
                         </div>
                     </div>
                     <div className="outputs" id='graph'>
-
+                        {loading &&
+                            <FontAwesomeIcon className='loading_thing' icon={faSpinner} spin size="3x" style={{ color: "#2d6353" }} />
+                        }
                     </div>
+
                 </div>
             </Container>
 

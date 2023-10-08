@@ -230,7 +230,15 @@
 .OTST .second_section .outputs {
     background-color: #f0f0f0;
     min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.loading_thing {
+    font-size: 5rem;
+}
+
 
 .tooltip {
     position: absolute;

@@ -13,6 +13,13 @@ import ThesesData from '../components/Papers/ThesesData';
 
 function Publications() {
 
+    useEffect(() => {
+        document.title = 'BRL - Publications';
+        return () => {
+            document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
+        };
+    }, []); // Empty dependency array ensures this runs only once when the component mounts.
+
     const getAvailableTypes = () => {
         let availableTypes = new Set();
 
@@ -329,14 +336,14 @@ function Publications() {
             </div>
             <div className="publication_filter">
                 <div className='publication_type' ref={selectRef}>
-                    <div onClick={() => setTypeOpen(!isTypeOpen)} style={{ cursor: 'pointer' }}>
+                    <div onClick={() => {setTypeOpen(!isTypeOpen); setYearOpen(false); setAuthorOpen(false); }} style={{ cursor: 'pointer' }}>
                         Type
                         <span style={{ marginLeft: '5px' }}>▼</span>
                     </div>
                     <Select styles={customStyles} isMulti closeMenuOnSelect={false} hideSelectedOptions={false} name="type" options={pubauthor.some(option => option.value === 0) ? dynamicTypeOptions() : dynamicTypeOptionsForAuthors()} value={pubtype} defaultValue={publication_types[0]} onChange={publicationType} onMenuOpen={() => setTypeOpen(true)} onMenuClose={() => setTypeOpen(false)} menuIsOpen={isTypeOpen} components={{ Option: InputOption }} />
                 </div>
                 <div className='publication_year'>
-                    <div onClick={() => setYearOpen(!isYearOpen)} style={{ cursor: 'pointer' }}>
+                    <div onClick={() => {setYearOpen(!isYearOpen); setTypeOpen(false); setAuthorOpen(false);}} style={{ cursor: 'pointer' }}>
                         Year
                         <span style={{ marginLeft: '5px' }}>▼</span>
                     </div>
@@ -344,7 +351,7 @@ function Publications() {
                 </div>
 
                 <div className='publication_author'>
-                    <div onClick={() => setAuthorOpen(!isAuthorOpen)} style={{ cursor: 'pointer' }}>
+                    <div onClick={() => {setAuthorOpen(!isAuthorOpen); setYearOpen(false); setTypeOpen(false);}} style={{ cursor: 'pointer' }}>
                         Author
                         <span style={{ marginLeft: '5px' }}>▼</span>
                     </div>
@@ -606,6 +613,10 @@ const customStyles = {
         position: 'absolute',
         top: '10px',  // This adjusts the vertical position. Increase or decrease as needed.
         left: '-75px',  // This adjusts the horizontal position. Increase or decrease as needed.
-        width: '250px'
+        width: '250px',
+    }),
+    option: (base, state) => ({
+        ...base,
+        backgroundColor: state.isSelected ? 'rgb(45, 99, 83);' : base.backgroundColor,
     }),
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Container from '../components/Container';
@@ -14,7 +14,7 @@ import Theme1 from './../components/Website Data/Kai_OPC.jpg'
 import Theme1_2 from './../components/Website Data/Riccardo1.jpg'
 
 import Theme2 from './../components/Website Data/Iqbal_DT2.png'
-import Theme2_1 from './../components/Website Data/Ilyas_rPPG.png'
+import Theme2_1 from './../components/Website Data/Ilyas_rPPG@2x.png'
 import Theme2_2 from './../components/Website Data/Riccardo2.jpg'
 
 import Theme3_0 from './../components/Website Data/Iqbal_VGS.jpg'
@@ -23,6 +23,13 @@ import Theme3 from './../components/Website Data/Kelly_T2.jpg'
 import Theme4 from './../components/Website Data/Connor_VPP.jpg'
 
 function Research() {
+
+    useEffect(() => {
+        document.title = 'BRL - Research';
+        return () => {
+            document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
+        };
+    }, []); // Empty dependency array ensures this runs only once when the component mounts.
 
     function handleThemeClick(themeId) {
         const themeElement = document.getElementById(themeId);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGoogle, FaOrcid, FaResearchgate } from 'react-icons/fa';
 import './Our_Team.css';
@@ -31,6 +31,13 @@ import GuillaumePic from './../components/Website Individual Information/unknown
 import MichellePic from './../components/Website Individual Information/Michelle/image.jpg';
 
 function Our_Team() {
+
+    useEffect(() => {
+        document.title = 'BRL - Team';
+        return () => {
+            document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
+        };
+    }, []); // Empty dependency array ensures this runs only once when the component mounts.
 
     const teamMembers = [
         {

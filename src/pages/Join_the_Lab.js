@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Container from '../components/Container';
@@ -6,6 +6,14 @@ import { Link } from 'react-router-dom';
 import './Join_the_Lab.css'
 
 function Join_the_Lab() {
+
+    useEffect(() => {
+        document.title = 'BRL - Join';
+        return () => {
+            document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
+        };
+    }, []); // Empty dependency array ensures this runs only once when the component mounts.
+
     return (
         <div className="Join_the_Lab">
             <NavBar />

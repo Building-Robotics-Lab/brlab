@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './IndividualPublication.css'
 
 import NavBar from '../components/NavBar'
@@ -18,6 +18,17 @@ function IndividualPublication() {
     const { id } = useParams();
     const publication = findPublicationById(id);
 
+    useEffect(() => {
+        if (publication) {
+            document.title = 'BRL - ' + publication.id.replace("_", " ").charAt(0).toUpperCase() + publication.id.replace("_", " ").slice(1).toLowerCase();
+        } else {
+            document.title = 'BRL - Publication Not Found';
+        }
+        return () => {
+            document.title = 'My React App';
+        };
+    }, [publication]);
+
     if (!publication) {
         return <div>Publication not found</div>;
     }
@@ -25,11 +36,13 @@ function IndividualPublication() {
     const getProfileByName = (profileName) => {
         return profiles.find(profile => profile.ProfileName === profileName);
     };
+
     const userProfiles = publication.profiles.map(getProfileByName).filter(Boolean);
+
     let authorList = [];
     publication.authors.forEach((author) => {
         authorList.push(author.name.replace("*", ""))
-    })
+    });
 
     return (
         <div className='IndividualPublication'>
@@ -41,9 +54,6 @@ function IndividualPublication() {
                         <h1>{publication.title}</h1>
                         <i><h2>{publication.journal || publication.conference || publication.patent || publication.university}</h2></i>
                         <p>{authorList.join(', ')}</p>
-                        {/* {publication.authors.map((author, index) => (
-                            <p key={index}>{author.name}</p>
-                        ))} */}
                     </div>
                     <div className={publication.keywords && publication.keywords.length > 0 ? 'links' : 'links noKeywords'}>
                         {publication.links.map((link, index) => (
@@ -67,30 +77,34 @@ function IndividualPublication() {
             {(publication.highlights && publication.highlights.length > 0) || (publication.abstract && publication.abstract.length > 0) ? (
                 <Container useOrange={true}>
                     <div className="second_section">
-                        {publication.highlights && publication.highlights.length > 0 && (
-                            <div className="highlights">
-                                <h3>Highlights</h3>
-                                <ul>
-                                    {publication.highlights.map((highlight, index) => (
-                                        <li key={index}>{highlight}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        )}
-                        {publication.abstract && publication.abstract.length > 0 && (
-                            <div className="image_abstract">
-                                <h3>Abstract</h3>
-                                <div className="abstract">
-                                    <img src={publication.display_image} alt="" />
-                                    <p>{publication.abstract.split('\n').map((str, index, array) =>
-                                        index === array.length - 1 ? str : <>
-                                            {str}
-                                            <br /><br />
-                                        </>
-                                    )}</p>
+                        <div className="text">
+                            {publication.highlights && publication.highlights.length > 0 && (
+                                <div className="highlights">
+                                    <h3>Highlights</h3>
+                                    <ul>
+                                        {publication.highlights.map((highlight, index) => (
+                                            <li key={index}>{highlight}</li>
+                                        ))}
+                                    </ul>
                                 </div>
-                            </div>
-                        )}
+                            )}
+                            {publication.abstract && publication.abstract.length > 0 && (
+                                <div className="image_abstract">
+                                    <h3>Abstract</h3>
+                                    <div className="abstract">
+                                        <p>{publication.abstract.split('\n').map((str, index, array) =>
+                                            index === array.length - 1 ? str : <>
+                                                {str}
+                                                <br /><br />
+                                            </>
+                                        )}</p>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                        <div className="image">
+                            <img src={publication.display_image} alt="" />
+                        </div>
                     </div>
                 </Container>
             ) : null}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './IndividualProfile.css';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
@@ -14,13 +14,22 @@ function IndividualProfile() {
     let { profileName } = useParams();
 
     const profile = profiles.find(p => p.ProfileName === profileName);
-    
+
+    useEffect(() => {
+        if (profile) {
+            document.title = 'BRL - ' + profile.Name; // Assuming you want to set the title to profile's name
+        } else {
+            document.title = 'BRL - Profile Not Found';
+        }
+        return () => {
+            document.title = 'My React App';
+        };
+    }, [profile]);
+
     if (!profile) {
-        // Handle error, e.g., display "Profile not found" message
         return <div>Profile not found</div>;
     }
 
-    // Use profile's properties in your component, for instance:
     const { ProfilePic, Name, Position, Biography, Education, Awards, Featured_Publications, Contacts, Links, Interests } = profile;
 
     return (

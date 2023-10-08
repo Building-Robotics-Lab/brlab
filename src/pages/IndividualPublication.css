@@ -48,19 +48,25 @@
 
 .IndividualPublication .second_section {
     display: flex;
-    flex-direction: column;
-    /* padding: 0px 300px; */
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.IndividualPublication .second_section .text {
+    flex: 3;
+}
+
+.IndividualPublication .second_section .image {
+    flex: 2;
 }
 
 .IndividualPublication .second_section .abstract {
     margin-bottom: 1rem;
 }
 
-.IndividualPublication .second_section .abstract img {
-    max-width: 40%;
+.IndividualPublication .second_section img {
+    max-width: 100%;
     height: auto;
-    float: right;
-    margin-left: 2rem;
 }
 
 .IndividualPublication .second_section .highlights {

@@ -18,18 +18,51 @@ import ConnorPic from './../components/Website Individual Information/Connor/ima
 import IqbalPublication from './../components/Website Data/iqbal-publication.jpg'
 
 function News() {
-    const [highlightedSection, setHighlightedSection] = useState(null);
 
     useEffect(() => {
-        const hashes = window.location.hash.split("#");
-        if (hashes.length > 2) {
-            const sectionID = hashes[2];
-            const section = document.getElementById(sectionID);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-                setHighlightedSection(sectionID);
+        document.title = 'BRL - News';
+        return () => {
+            document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
+        };
+    }, []); // Empty dependency array ensures this runs only once when the component mounts.
+
+    const [highlightedSection, setHighlightedSection] = useState(null);
+
+    // useEffect(() => {
+    //     const hashes = window.location.hash.split("#");
+    //     if (hashes.length > 2) {
+    //         const sectionID = hashes[2];
+    //         const section = document.getElementById(sectionID);
+    //         if (section) {
+    //             section.scrollIntoView({ behavior: 'smooth' });
+    //             setHighlightedSection(sectionID);
+    //         }
+    //     }
+    // }, []);
+
+    useEffect(() => {
+        const scrollToSection = () => {
+            const hashes = window.location.hash.split("#");
+            if (hashes.length > 1) {
+                const sectionID = hashes[1]; // Get the second part of the hash
+                const section = document.getElementById(sectionID);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                    setHighlightedSection(sectionID);
+                }
             }
         }
+
+        // Initial scroll when component mounts
+        scrollToSection();
+
+        // Add an event listener for hash changes
+        window.addEventListener('hashchange', scrollToSection);
+
+        // Cleanup the event listener when the component unmounts
+        return () => {
+            window.removeEventListener('hashchange', scrollToSection);
+        };
     }, []);
 
     const newsData = [

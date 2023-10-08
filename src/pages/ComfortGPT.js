@@ -9,10 +9,19 @@ import * as d3 from 'd3';
 import ExampleImage from './../components/Website Data/output_example.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import Select from 'react-select';
 import profiles from '../components/Website Individual Information/profileData';
 
 function ComfortGPT() {
+
+    useEffect(() => {
+        document.title = 'BRL - ComfortGPT';
+        return () => {
+            document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
+        };
+    }, []); // Empty dependency array ensures this runs only once when the component mounts.
+
     // User Profiles
     const getProfileByName = (profileName) => {
         return profiles.find(profile => profile.ProfileName === profileName);
@@ -615,7 +624,9 @@ function ComfortGPT() {
                         </div>
                     </div>
                     <div className="outputs" id='graph'>
-
+                        {loading &&
+                            <FontAwesomeIcon className='loading_thing' icon={faSpinner} spin size="3x" style={{ color: "#2d6353" }} />
+                        }
                     </div>
                 </div>
                 <div className="output" id='output' style={{ display: showOutput }}>

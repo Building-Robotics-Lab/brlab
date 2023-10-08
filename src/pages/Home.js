@@ -85,6 +85,13 @@ const slides = [
 
 function Home() {
 
+    useEffect(() => {
+        document.title = 'BRL - Home';
+        return () => {
+            document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
+        };
+    }, []); // Empty dependency array ensures this runs only once when the component mounts.
+
     return (
         <div className="Home">
             <NavBar />
