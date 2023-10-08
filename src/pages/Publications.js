@@ -416,7 +416,7 @@ function Publications() {
 
             <Container>
                 <div className="first_section">
-                    <h1><b>Peer-reviewed Publications</b></h1>
+                    <h1><b>Publications</b></h1>
                     <div className="HomeButtons">
                         <Link to="https://scholar.google.com/citations?user=9UACV-AAAAAJ&hl=en&oi=ao" target='_blank'><p id='JoinButton'>GOOGLE SCHOLAR</p></Link>
                     </div>
