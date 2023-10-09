@@ -13,7 +13,7 @@ const ConferenceData = [
                 month: "October",
                 location: "Montreal, QC, Canada",
                 authors: [
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Megan Zhu" },
                     { name: "Richard Przybyla" },
                     { name: "Michael Andersen" },
@@ -52,7 +52,7 @@ const ConferenceData = [
                     { name: "Maohui Luo" },
                     { name: "Hui Zhang" },
                     { name: "Edward Arens" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Zhe Wang" },
                     { name: "Ling Jin" },
                     { name: "Yingdong He" },
@@ -80,7 +80,7 @@ const ConferenceData = [
                 authors: [
                     { name: "Gokce Ozcelik" },
                     { name: "Burcin Becerik-Gerber" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Yuchao Wang" }
                 ],
                 minRead: "",
@@ -111,7 +111,7 @@ const ConferenceData = [
                 month: "December",
                 location: "Huntington Beach, CA, USA",
                 authors: [
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Kanu Dutta" },
                     { name: "Zheng Yang" },
                     { name: "Gokce Ozcelik" },
@@ -134,7 +134,7 @@ const ConferenceData = [
                 location: "Huntington Beach, CA, USA",
                 authors: [
                     { name: "Zheng Yang" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Burcin Becerik-Gerber" }
                 ],
                 minRead: "",
@@ -153,7 +153,7 @@ const ConferenceData = [
                 month: "September",
                 location: "",
                 authors: [
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Chao Tang" },
                     { name: "Zheng Yang" },
                     { name: "Burcin Becerik-Gerber" },
@@ -174,7 +174,7 @@ const ConferenceData = [
                 location: "",
                 authors: [
                     { name: "Zheng Yang" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Burcin Becerik-Gerber" },
                 ],
                 minRead: "",
@@ -198,7 +198,7 @@ const ConferenceData = [
                 location: "",
                 authors: [
                     { name: "Farrokh Jazizadeh" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Burcin Becerik-Gerber" },
                     { name: "Tatiana Kichkaylo" },
                     { name: "Michael Orosz" },
@@ -227,7 +227,7 @@ ConferenceData.forEach((yearData) => {
     yearData.publications.forEach((publication) => {
         // Generate and assign the unique ID
         publication.id = generateIdFromTitle(publication.title);
-        publication.individual_paper_link = "https://building-robotics-lab.github.io/brlab/#/individual_publication/" + generateIdFromTitle(publication.title);
+        publication.individual_paper_link = "/individual_publication/" + generateIdFromTitle(publication.title);
     });
 });
 

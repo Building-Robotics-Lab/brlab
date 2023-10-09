@@ -61,7 +61,7 @@ const Footer = () => {
                             <Link to={`/research`}>
                                 <p>Research</p>
                             </Link>
-                            <Link to={`/our_team`}>
+                            <Link to={`/team`}>
                                 <p>Our Team</p>
                             </Link>
                             <Link to={`/news`}>
@@ -70,7 +70,7 @@ const Footer = () => {
                             <Link to={`/publications`}>
                                 <p>Publications</p>
                             </Link>
-                            <Link to={`/join_the_lab`}>
+                            <Link to={`/join`}>
                                 <p>Join the Lab</p>
                             </Link>
                         </div>

@@ -120,9 +120,9 @@ function IndividualPublication() {
                                 </Link>
                             </div>
                             <div className="profile_data">
-                                <a href={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
+                                <Link to={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
                                     <h5><b>{profile.Name}</b></h5>
-                                </a>
+                                </Link>
                                 <p>{profile.Position}</p>
                                 <div className="profile_links">
                                     {profile.Links.slice(1).map((link, index) => (

@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import './NewsGrid.css';
+import { Link } from 'react-router-dom';
 
 function NewsGrid({ newsData, highlightedSection }) {
     const newsGridRef = useRef(null);
@@ -30,7 +31,7 @@ function NewsGrid({ newsData, highlightedSection }) {
                         <h4><b dangerouslySetInnerHTML={{ __html: news.title }}></b></h4>
                     </div>
                     <div className="NewsInformation">
-                        <p className='content' dangerouslySetInnerHTML={{ __html: news.content }}></p>
+                        <div className='content'>{news.content}</div>
                     </div>
                 </div>
             ))}

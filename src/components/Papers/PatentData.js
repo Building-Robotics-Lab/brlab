@@ -7,7 +7,7 @@ const PatentData = [
                 patent: "U.S. Patent Publication: US 2022/0099697 A1",
                 authors: [
                     { name: "Edward A. Arens" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Therese Peffer" },
                     { name: "Paul Raftery" },
                     { name: "Hui Zhang" },
@@ -32,7 +32,7 @@ const PatentData = [
                 authors: [
                     { name: "Burcin Becerik-Gerber" },
                     { name: "Guillermo Castro" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" }
                 ],
                 minRead: "",
                 profiles: ["Prof"],
@@ -55,7 +55,7 @@ const PatentData = [
                     { name: "Burcin Becerik-Gerber" },
                     { name: "Michael D. Orosz" },
                     { name: "Tatiana Kichkaylo" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" }
                 ],
                 minRead: "",
                 profiles: ["Prof"],
@@ -81,7 +81,7 @@ PatentData.forEach((yearData) => {
     yearData.publications.forEach((publication) => {
         // Generate and assign the unique ID
         publication.id = generateIdFromTitle(publication.title);
-        publication.individual_paper_link = "https://building-robotics-lab.github.io/brlab/#/individual_publication/" + generateIdFromTitle(publication.title);
+        publication.individual_paper_link = "/individual_publication/" + generateIdFromTitle(publication.title);
     });
 });
 

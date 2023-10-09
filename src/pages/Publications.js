@@ -338,14 +338,14 @@ function Publications() {
                 <div className='publication_type' ref={selectRef}>
                     <div onClick={() => {setTypeOpen(!isTypeOpen); setYearOpen(false); setAuthorOpen(false); }} style={{ cursor: 'pointer' }}>
                         Type
-                        <span style={{ marginLeft: '5px' }}>▼</span>
+                        <i className="arrow2 down2"></i>
                     </div>
                     <Select styles={customStyles} isMulti closeMenuOnSelect={false} hideSelectedOptions={false} name="type" options={pubauthor.some(option => option.value === 0) ? dynamicTypeOptions() : dynamicTypeOptionsForAuthors()} value={pubtype} defaultValue={publication_types[0]} onChange={publicationType} onMenuOpen={() => setTypeOpen(true)} onMenuClose={() => setTypeOpen(false)} menuIsOpen={isTypeOpen} components={{ Option: InputOption }} />
                 </div>
                 <div className='publication_year'>
                     <div onClick={() => {setYearOpen(!isYearOpen); setTypeOpen(false); setAuthorOpen(false);}} style={{ cursor: 'pointer' }}>
                         Year
-                        <span style={{ marginLeft: '5px' }}>▼</span>
+                        <i className="arrow2 down2"></i>
                     </div>
                     <Select styles={customStyles} isMulti closeMenuOnSelect={false} hideSelectedOptions={false} name="year" options={pubauthor.some(option => option.value === 0) ? dynamicYearOptions() : dynamicYearOptionsForAuthors()} value={pubyear} defaultValue={publication_year[0]} onChange={publicationYear} onMenuOpen={() => setYearOpen(true)} onMenuClose={() => setYearOpen(false)} menuIsOpen={isYearOpen} components={{ Option: InputOption }} />
                 </div>
@@ -353,7 +353,7 @@ function Publications() {
                 <div className='publication_author'>
                     <div onClick={() => {setAuthorOpen(!isAuthorOpen); setYearOpen(false); setTypeOpen(false);}} style={{ cursor: 'pointer' }}>
                         Author
-                        <span style={{ marginLeft: '5px' }}>▼</span>
+                        <i className="arrow2 down2"></i>
                     </div>
                     <Select styles={customStyles} isMulti closeMenuOnSelect={false} hideSelectedOptions={false} name="author" options={getDynamicAuthorOptions()} value={pubauthor} defaultValue={publication_author[0]} onChange={publicationAuthor} onMenuOpen={() => setAuthorOpen(true)} onMenuClose={() => setAuthorOpen(false)} menuIsOpen={isAuthorOpen} components={{ Option: InputOption }} />
                 </div>
@@ -457,7 +457,7 @@ function JournalSection({ year, publications, className }) {
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
-                                            <a href={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</a>
+                                            <Link to={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</Link>
                                         ) : (
                                             author.name
                                         )}
@@ -498,7 +498,7 @@ function ConferenceSection({ year, publications, className }) {
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
-                                            <a href={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</a>
+                                            <Link to={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</Link>
                                         ) : (
                                             author.name
                                         )}
@@ -533,7 +533,7 @@ function PatentSection({ year, publications, className }) {
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
-                                            <a href={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</a>
+                                            <Link to={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</Link>
                                         ) : (
                                             author.name
                                         )}
@@ -568,7 +568,7 @@ function ThesesSection({ year, publications, className }) {
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
-                                            <a href={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</a>
+                                            <Link to={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</Link>
                                         ) : (
                                             author.name
                                         )}

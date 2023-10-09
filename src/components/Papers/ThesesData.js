@@ -6,7 +6,7 @@ const ThesesData = [
                 title: "The sequential design optimization of building performance",
                 university: "Loughborough University",
                 authors: [
-                    { name: "Riccardo Talami", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" }
+                    { name: "Riccardo Talami", link: "/individual_profile/Riccardo" }
                 ],
                 minRead: "",
                 profiles: ["Riccardo"],
@@ -35,7 +35,7 @@ const ThesesData = [
                 title: "Learning Personal Thermal Comfort and Integrating Personal Comfort Requirements into HVAC System Control Loop",
                 university: "University of Southern California (USC)",
                 authors: [
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" }
                 ],
                 minRead: "",
                 profiles: ["Prof"],
@@ -61,7 +61,7 @@ ThesesData.forEach((yearData) => {
     yearData.publications.forEach((publication) => {
         // Generate and assign the unique ID
         publication.id = generateIdFromTitle(publication.title);
-        publication.individual_paper_link = "https://building-robotics-lab.github.io/brlab/#/individual_publication/" + generateIdFromTitle(publication.title);
+        publication.individual_paper_link = "/individual_publication/" + generateIdFromTitle(publication.title);
     });
 });
 

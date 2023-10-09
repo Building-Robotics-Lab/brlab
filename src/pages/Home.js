@@ -171,7 +171,7 @@ function Home() {
                                 open communication, mutual respect, and a strong work ethic.
                             </p>
                             <div className="HomeButtons">
-                                <Link to="/our_team"><p className='our_team_button' id='JoinButton'>OUR LAB</p></Link>
+                                <Link to="/team"><p className='our_team_button' id='JoinButton'>OUR LAB</p></Link>
                             </div>
                         </div>
                     </div>
@@ -231,7 +231,7 @@ function Home() {
                                 your interests align with these values, visit our link below to learn more about our members and current opportunities!
                             </p>
                             <div className="HomeButtons">
-                                <Link to="/join_the_lab"><p className='join_the_lab_fifth_section_right' id='JoinButton'>JOIN THE LAB</p></Link>
+                                <Link to="/join"><p className='join_the_lab_fifth_section_right' id='JoinButton'>JOIN THE LAB</p></Link>
                             </div>
                         </div>
                     </div>

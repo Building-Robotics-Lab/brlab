@@ -200,7 +200,7 @@ function Our_Team() {
                         <p>If you are a potential student or postdoctoral scholar interested in the Building Robotics Lab, please do not hesitate to get in touch with us. Our creative and collaborative lab is open for applicants with diverse experiences, backgrounds, abilities, and perspectives to apply.</p>
                     </div>
                     <div className="HomeButtons">
-                        <Link to="/join_the_lab"><p id='JoinButton'>JOIN THE LAB</p></Link>
+                        <Link to="/join"><p id='JoinButton'>JOIN THE LAB</p></Link>
                     </div>
                 </div>
             </Container>

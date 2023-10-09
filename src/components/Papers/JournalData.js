@@ -52,9 +52,9 @@ const JournalData = [
                 authors: [
                     { name: "Kate Sangwon Lee" },
                     { name: "Jung-Joo Lee" },
-                    { name: "*Connor Aucremanne", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Connor" },
-                    { name: "*Iqbal Shah", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Iqbal" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "*Connor Aucremanne", link: "/individual_profile/Connor" },
+                    { name: "*Iqbal Shah", link: "/individual_profile/Iqbal" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" }
                 ],
                 minRead: "",
                 profiles: ["Connor", "Iqbal", "Prof"],
@@ -83,9 +83,9 @@ const JournalData = [
                 volume: "", issue: "",
                 page: "",
                 authors: [
-                    { name: "*Riccardo Talami", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Riccardo" },
-                    { name: "*Ilyas Dawoodjee", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Ilyas" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "*Riccardo Talami", link: "/individual_profile/Riccardo" },
+                    { name: "*Ilyas Dawoodjee", link: "/individual_profile/Ilyas" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" }
                 ],
                 minRead: "",
                 profiles: ["Riccardo", "Ilyas", "Prof"],
@@ -123,7 +123,7 @@ const JournalData = [
                     { name: "Charlie Huizenga" },
                     { name: "Ronnen Levinson" },
                     { name: "Andy Wang" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Ana Alvarez-Suarez" },
                 ],
                 minRead: "",
@@ -154,10 +154,10 @@ const JournalData = [
                 volume: "228", issue: "",
                 page: "109919",
                 authors: [
-                    { name: "*CHEN Kai", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Kai" },
+                    { name: "*CHEN Kai", link: "/individual_profile/Kai" },
                     { name: "*Qian Xu" },
                     { name: "Berlynette Leow" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" }
                 ],
                 minRead: "",
                 profiles: ["Kai", "Prof"],
@@ -182,11 +182,11 @@ const JournalData = [
                 volume: "278", issue: "",
                 page: "112604",
                 authors: [
-                    { name: "*Iqbal Shah", link: "https://building-robotics-lab.github.io/brlab/#/individual_profile/Iqbal" },
+                    { name: "*Iqbal Shah", link: "/individual_profile/Iqbal" },
                     { name: "Brian Soh" },
                     { name: "Caitlin Lim" },
                     { name: "Siu-Kit Lau" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" }
                 ],
                 minRead: "",
                 profiles: ["Iqbal", "Prof"],
@@ -222,7 +222,7 @@ const JournalData = [
                     { name: "Mario Bergés" },
                     { name: "Sarah Billington" },
                     { name: "Olga Boric-Lubecke" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Arsalan Heydarian" },
                     { name: "Christoph Höelscher" },
                     { name: "Farrokh Jazizadeh" },
@@ -265,7 +265,7 @@ const JournalData = [
                     { name: "Mario Bergés" },
                     { name: "Sarah L Billington" },
                     { name: "Olga Boric-Lubecke" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Arsalan Heydarian" },
                     { name: "Farrokh Jazizadeh" },
                     { name: "Ruying Liu" },
@@ -321,7 +321,7 @@ const JournalData = [
                     { name: "C. Berger" },
                     { name: "G. Chinazzo" },
                     { name: "Zs. Deme Belafi" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "A. Heydarian" },
                     { name: "D. Kastner" },
                     { name: "M. Kong" },
@@ -356,7 +356,7 @@ const JournalData = [
                 volume: "12", issue: "8",
                 page: "1241",
                 authors: [
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "*Qian Xu" },
                     { name: "Syung Min" },
                     { name: "Andy Wang" },
@@ -395,7 +395,7 @@ const JournalData = [
                     { name: "Hamed Nabizadeh Rafsanjani" },
                     { name: "Zubin Varghese" },
                     { name: "Yogesh Pandit" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" }
                 ],
                 minRead: "",
                 profiles: ["Prof"],
@@ -426,7 +426,7 @@ const JournalData = [
                 page: "102900",
                 authors: [
                     { name: "Arup Bhattacharya" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Ehsan Mousavi" }
                 ],
                 minRead: "",
@@ -467,7 +467,7 @@ const JournalData = [
                     { name: "Z. Deme Belafi" },
                     { name: "B. Dong" },
                     { name: "M. Favero" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "G. Havenith" },
                     { name: "A. Heydarian" },
                     { name: "D. Kastner" },
@@ -523,7 +523,7 @@ const JournalData = [
                     { name: "Payam Nejat" },
                     { name: "M. Salim Ferwati" },
                     { name: "John Calautit" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Mohammadamin Sheikhshahrokhdehkordi" },
                 ],
                 minRead: "",
@@ -558,7 +558,7 @@ const JournalData = [
                 authors: [
                     { name: "Arup Bhattacharya" },
                     { name: "Jovan Pantelic" },
-                    { name: "Ali Ghahramani.", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani.", link: "/team#prof_profile" },
                     { name: "Ehsan S. Mousavi" }
                 ],
                 minRead: "",
@@ -590,7 +590,7 @@ const JournalData = [
                 page: "114892",
                 authors: [
                     { name: "Hamed Nabizadeh" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Amir Hossein Nabizadeh" }
                 ],
                 minRead: "",
@@ -621,7 +621,7 @@ const JournalData = [
                 volume: "6", issue: "",
                 page: "49",
                 authors: [
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Parson Galicia" },
                     { name: "David Lehrer" },
                     { name: "Zubin Varghese" },
@@ -653,7 +653,7 @@ const JournalData = [
                 page: "109805",
                 authors: [
                     { name: "Edward Arens" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Richard Przybyla" },
                     { name: "Michael Andersen" },
                     { name: "Syung Min" },
@@ -693,7 +693,7 @@ const JournalData = [
                     { name: "Dusan Licina" },
                     { name: "Matthew Vannucci" },
                     { name: "Sasan Sadrizadeh" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Brian Gilligan" },
                     { name: "Esther Sternberg" },
                     { name: "Kevin Kampschroer" },
@@ -722,7 +722,7 @@ const JournalData = [
                     { name: "Edward Arens" },
                     { name: "Davide Filingeri" },
                     { name: "Ling Jin" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Wenhua Chen" },
                     { name: "Yingdong He" },
                     { name: "Binghui Si" }
@@ -755,7 +755,7 @@ const JournalData = [
                 page: "100948",
                 authors: [
                     { name: "Hamed Nabizadeh Rafsanjani" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" }
                 ],
                 minRead: "",
                 profiles: ["Prof"],
@@ -790,7 +790,7 @@ const JournalData = [
                 page: "100864",
                 authors: [
                     { name: "Hamed Nabizadeh Rafsanjani" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" }
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" }
                 ],
                 minRead: "",
                 profiles: ["Prof"],
@@ -819,7 +819,7 @@ const JournalData = [
                 volume: "19", issue: "18",
                 page: "8136-8145",
                 authors: [
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Megan Zhu" },
                     { name: "Richard J. Przybyla" },
                     { name: "Michael P. Andersen" },
@@ -850,7 +850,7 @@ const JournalData = [
                 volume: "22", issue: "",
                 page: "295-304",
                 authors: [
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Jovan Pantelic" },
                     { name: "Matthew Vannucci" },
                     { name: "Lorenza Pistore" },
@@ -898,7 +898,7 @@ const JournalData = [
                     { name: "Wang Zhe" },
                     { name: "Richard de Dear" },
                     { name: "Luo Maohui" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Lin Borong" },
                 ],
                 minRead: "",
@@ -922,7 +922,7 @@ const JournalData = [
                 volume: "230", issue: "",
                 page: "42-51",
                 authors: [
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Jovan Pantelic" },
                     { name: "Casey Lindberg" },
                     { name: "Matthias Mehl" },
@@ -963,7 +963,7 @@ const JournalData = [
                     { name: "Maohui Luo" },
                     { name: "Edward Arens" },
                     { name: "Hui Zhang" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Zhe Wang" },
                 ],
                 minRead: "",
@@ -995,7 +995,7 @@ const JournalData = [
                 volume: "19", issue: "",
                 page: "584-591",
                 authors: [
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Kanu Dutta" },
                     { name: "Burcin Becerik-Gerber" }
                 ],
@@ -1033,7 +1033,7 @@ const JournalData = [
                     { name: "Maohui Luo" },
                     { name: "Borong Lin" },
                     { name: "Yingdong He" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Yingxin Zhu" },
                 ],
                 minRead: "",
@@ -1058,7 +1058,7 @@ const JournalData = [
                 page: "146-160",
                 authors: [
                     { name: "Simin Ahmadi-Karvigh" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Burcin Becerik-Gerber" },
                     { name: "Lucio Soibelman" },
                 ],
@@ -1090,7 +1090,7 @@ const JournalData = [
                 volume: "211", issue: "",
                 page: "41-49",
                 authors: [
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Guillermo Castro" },
                     { name: "Simin Ahmadi Karvigh" },
                     { name: "Burcin Becerik-Gerber" },
@@ -1129,7 +1129,7 @@ const JournalData = [
                 volume: "152", issue: "",
                 page: "149-161",
                 authors: [
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Simin Ahmadi Karvigh" },
                     { name: "Burcin Becerik-Gerber" }
                 ],
@@ -1163,7 +1163,7 @@ const JournalData = [
                 page: "154-165",
                 authors: [
                     { name: "Ashrant Aryal" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Burcin Becerik-Gerber" },
                 ],
                 minRead: "",
@@ -1195,7 +1195,7 @@ const JournalData = [
                 page: "163-173",
                 authors: [
                     { name: "Simin Ahmadi-Karvigh" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Burcin Becerik-Gerber" },
                     { name: "Lucio Soibelman" }
                 ],
@@ -1224,7 +1224,7 @@ const JournalData = [
                 page: "691-714",
                 authors: [
                     { name: "Reza Eyvazloo" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Alireza Ajam" }
                 ],
                 minRead: "",
@@ -1253,7 +1253,7 @@ const JournalData = [
                 volume: "109", issue: "",
                 page: "1-11",
                 authors: [
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Guillermo Castro" },
                     { name: "Burcin Becerik-Gerber" },
                     { name: "Xinran Yu" },
@@ -1288,7 +1288,7 @@ const JournalData = [
                 page: "641-649",
                 authors: [
                     { name: "Zheng Yang" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Burcin Becerik-Gerber" },
                 ],
                 minRead: "",
@@ -1319,7 +1319,7 @@ const JournalData = [
                 volume: "165", issue: "",
                 page: "930-942",
                 authors: [
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Kenan Zhang" },
                     { name: "Kanu Dutta" },
                     { name: "Zheng Yang" },
@@ -1359,7 +1359,7 @@ const JournalData = [
                 volume: "92", issue: "",
                 page: "86-96",
                 authors: [
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Chao Tang" },
                     { name: "Burcin Becerik-Gerber" },
                 ],
@@ -1396,7 +1396,7 @@ const JournalData = [
                 volume: "85", issue: "",
                 page: "536-548",
                 authors: [
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Farrokh Jazizadeh" },
                     { name: "Burcin Becerik-Gerber" },
                 ],
@@ -1428,7 +1428,7 @@ const JournalData = [
                 page: "398-410",
                 authors: [
                     { name: "Farrokh Jazizadeh" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Burcin Becerik-Gerber" },
                     { name: "Tatiana Kichkaylo" },
                     { name: "Michael Orosz" }
@@ -1463,7 +1463,7 @@ const JournalData = [
                 authors: [
                     { name: "Nan Li" },
                     { name: "Zheng Yang" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Burcin Becerik-Gerber" },
                     { name: "Lucio Soibelman" }
                 ],
@@ -1496,7 +1496,7 @@ const JournalData = [
                 page: "2-16",
                 authors: [
                     { name: "Farrokh Jazizadeh" },
-                    { name: "Ali Ghahramani", link: "https://building-robotics-lab.github.io/brlab/#/our_team#prof_profile" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
                     { name: "Burcin Becerik-Gerber" },
                     { name: "Tatiana Kichkaylo" },
                     { name: "Michael Orosz" },
@@ -1535,7 +1535,7 @@ JournalData.forEach((yearData) => {
     yearData.publications.forEach((publication) => {
         // Generate and assign the unique ID
         publication.id = generateIdFromTitle(publication.title);
-        publication.individual_paper_link = "https://building-robotics-lab.github.io/brlab/#/individual_publication/" + generateIdFromTitle(publication.title);
+        publication.individual_paper_link = "/individual_publication/" + generateIdFromTitle(publication.title);
     });
 });
 
