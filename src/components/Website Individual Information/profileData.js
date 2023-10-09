@@ -39,6 +39,7 @@ import ProfCV from './prof_CV.pdf'
 
 import { faPhone, faEnvelope, faUser, faTemperatureHalf, faPerson, faS } from '@fortawesome/free-solid-svg-icons';
 import { faGoogle, faLinkedin, faResearchgate, faOrcid, faGit, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom'
 
 const profiles = [
     {
@@ -55,12 +56,24 @@ const profiles = [
         ],
         Awards: [
             'UK Engineering and Physical Sciences Research Council Scholarship, Engineering and Physical Sciences Research Council (2019 - 2022)',
-            'Winner of Best Poster Award for <a href="https://buildingsimulation2019.org/best-poster-award/" target="_blank"><b>"Subjective and Measured Evidence for Residential Lighting Metrics in the Tropics"</b></a> (in collaboration with Jakubiec, J. Alstan; Srisamranrungruang, Thanyalak; Kong, Zhe; Quek, Geraldine), 16th International IBPSA Conference (2019)'
+            'Winner of Best Poster Award for <a href="https://buildingsimulation2019.org/best-poster-award/" ><b>"Subjective and Measured Evidence for Residential Lighting Metrics in the Tropics"</b></a> (in collaboration with Jakubiec, J. Alstan; Srisamranrungruang, Thanyalak; Kong, Zhe; Quek, Geraldine), 16th International IBPSA Conference (2019)'
         ],
         Featured_Publications: [
-            '<b>Talami, R.</b>, Dawoodjee, I. and Ghahramani, A., 2023. <a href="https://www.sciencedirect.com/science/article/pii/S2666123323000612?via%3Dihub" target="_blank"><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></a>. <i>Energy and Built Environment</i>.',
-            '<b>Talami, R.</b> and  Jakubiec, J.A., 2020. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778819333614" target="_blank"><b>Early-design sensitivity of radiant cooled office buildings in the tropics for building performance</b></a>. <i>Energy and Buildings, 223</i>, 110177.',
-            '<b>Talami, R.</b>, 2022. <a href="https://doi.org/10.26174/thesis.lboro.21547701.v1" target="_blank"><b>The sequential design optimization of building performance</b></a>. (Doctoral dissertation, Loughborough University).'
+            (
+                <>
+                    <b>Talami, R.</b>, Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/individual_publication/demystifying_energy" ><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. <i>Energy and Built Environment</i>.
+                </>
+            ),
+            (
+                <>
+                    <b>Talami, R.</b> and  Jakubiec, J.A., 2020. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778819333614" ><b>Early-design sensitivity of radiant cooled office buildings in the tropics for building performance</b></a>. <i>Energy and Buildings, 223</i>, 110177.
+                </>
+            ),
+            (
+                <>
+                    <b>Talami, R.</b>, 2022. <Link to="/individual_publication/the_sequential" ><b>The sequential design optimization of building performance</b></Link>. (Doctoral dissertation, Loughborough University).
+                </>
+            )
         ],
         Contacts: [
             { href: "tel:+6580446551", icon: faPhone, text: "+65 8044 6551" },
@@ -96,7 +109,11 @@ const profiles = [
         ],
         Awards: [],
         Featured_Publications: [
-            '<b>Chen, K.</b>, Xu, Q., Leow, B. and Ghahramani, A., 2022. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0360132322011490" target="_blank"><b>Personal thermal comfort models based on physiological measurements–A design of experiments based review</b></a>. <i>Building and Environment</i>, <i>228</i>, 109919.'
+            (
+                <>
+                    <b>Chen, K.</b>, Xu, Q., Leow, B. and Ghahramani, A., 2022. <Link to="/individual_publication/personal_thermal" ><b>Personal thermal comfort models based on physiological measurements–A design of experiments based review</b></Link>. <i>Building and Environment</i>, <i>228</i>, 109919.    
+                </>
+            ),
         ],
         Contacts: [
             { href: "tel:+6590503813", icon: faPhone, text: "+65 9050 3813" },
@@ -130,7 +147,11 @@ const profiles = [
             'Best BIMx Award, Graphisoft (2020)'
         ],
         Featured_Publications: [
-            '<b>Shah, I.</b>, Soh, B., Lim, C., Lau, S. K., & Ghahramani, A., 2023. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778822007757" target="_blank"><b>Thermal transfer and temperature reductions from shading systems on opaque facades: Quantifying the impacts of influential factors</b></a>. <i>Energy and Buildings, 278</i>, p.112604.'
+            (
+                <>
+                    <b>Shah, I.</b>, Soh, B., Lim, C., Lau, S. K., & Ghahramani, A., 2023. <Link to="/individual_publication/thermal_transfer" ><b>Thermal transfer and temperature reductions from shading systems on opaque facades: Quantifying the impacts of influential factors</b></Link>. <i>Energy and Buildings, 278</i>, p.112604.      
+                </>
+            ),
         ],
         Contacts: [
             { href: "tel:+6581126774", icon: faPhone, text: "+65 8112 6774" },
@@ -271,8 +292,16 @@ const profiles = [
             'First-Class Scholarship, Nanjing Normal University (2017 - 2019)'
         ],
         Featured_Publications: [
-            '<b>Hu, X.</b>, Zhang, Z., Yao, Y. and Wang, Q., 2018. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1359431118300796" target="_blank"><b>Non-azeotropic refrigerant charge optimization for cold storage unit based on year-round performance evaluation</b></a>. <i>Applied Thermal Engineering, 139</i>, 395-401.',
-            '<b>Hu, X.</b>, Zhang, Z. and Cai, D., 2020. <a href="https://www.mdpi.com/1996-1073/13/6/1436" target="_blank"><b>A Mathematical Tightening of Instantaneous Indoor and Outdoor Dry-Bulb and Wet-Bulb Temperature Tolerances[J]</b></a>. <i>Energies, 13(6)</i>, 1436.'
+            (
+                <>
+                    <b>Hu, X.</b>, Zhang, Z., Yao, Y. and Wang, Q., 2018. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1359431118300796" ><b>Non-azeotropic refrigerant charge optimization for cold storage unit based on year-round performance evaluation</b></a>. <i>Applied Thermal Engineering, 139</i>, 395-401.  
+                </>
+            ),
+            (
+                <>
+                    <b>Hu, X.</b>, Zhang, Z. and Cai, D., 2020. <a href="https://www.mdpi.com/1996-1073/13/6/1436" ><b>A Mathematical Tightening of Instantaneous Indoor and Outdoor Dry-Bulb and Wet-Bulb Temperature Tolerances[J]</b></a>. <i>Energies, 13(6)</i>, 1436.
+                </>
+            ),
         ],
         Contacts: [
             { href: "tel:+6588648925", icon: faPhone, text: "+65 8864 8925" },
@@ -308,8 +337,16 @@ const profiles = [
             'Top Ten Graduate Students in College of Civil Engineering (academic performance and research achievements), Hunan University (2022)'
         ],
         Featured_Publications: [
-            '<b>Su, X.</b>, Zhang, L., Liu, Z., Luo, Y., Liang, P. and Lian, J., 2022. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0959652622021886" target="_blank"><b>An optical and thermal analysis of translucent concrete considering its dynamic transmittance</b></a>. <i>Journal of Cleaner Production, 364</i>, 132588.',
-            '<b>Su, X.</b>, Zhang, L., Luo, Y., Liu, Z., Yang, H. and Wang, X., 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0196890421011018" target="_blank"><b>Conceptualization and preliminary analysis of a novel reversible photovoltaic window</b></a>. <i>Energy Conversion and Management, 250</i>, 114925.'
+            (
+                <>
+                    <b>Su, X.</b>, Zhang, L., Liu, Z., Luo, Y., Liang, P. and Lian, J., 2022. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0959652622021886" ><b>An optical and thermal analysis of translucent concrete considering its dynamic transmittance</b></a>. <i>Journal of Cleaner Production, 364</i>, 132588.
+                </>
+            ),
+            (
+                <>
+                    <b>Su, X.</b>, Zhang, L., Luo, Y., Liu, Z., Yang, H. and Wang, X., 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0196890421011018" ><b>Conceptualization and preliminary analysis of a novel reversible photovoltaic window</b></a>. <i>Energy Conversion and Management, 250</i>, 114925.
+                </>
+            ),  
         ],
         Contacts: [
             { href: "mailto:e1115332@u.nus.edu", icon: faEnvelope, text: "e1115332@u.nus.edu" },
@@ -339,8 +376,16 @@ const profiles = [
         ],
         Awards: [],
         Featured_Publications: [
-            'Sharif, S.A., Hammad, A. and <b>Eshraghi, P.</b>, 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778820304904" target="_blank"><b>Generation of whole building renovation scenarios using variational autoencoders</b></a>. <i>Energy and Buildings, 230</i>, 110520.',
-            'Ahmadi Soleimani, S.M., <b>Eshraghi, P.</b>, Mirdamadi, M. and Zamardian, Z., 2022. <a href="https://soffeh.sbu.ac.ir/article_102765.html" target="_blank"><b>Optimizing energy consumption of educational buildings, a case study: Shahid Beheshti University</b></a>. <i>Safa, 32(3)</i>, 49-65. [Persian]'
+            (
+                <>
+                    Sharif, S.A., Hammad, A. and <b>Eshraghi, P.</b>, 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778820304904" ><b>Generation of whole building renovation scenarios using variational autoencoders</b></a>. <i>Energy and Buildings, 230</i>, 110520.
+                </>
+            ),
+            (
+                <>
+                    Ahmadi Soleimani, S.M., <b>Eshraghi, P.</b>, Mirdamadi, M. and Zamardian, Z., 2022. <a href="https://soffeh.sbu.ac.ir/article_102765.html" ><b>Optimizing energy consumption of educational buildings, a case study: Shahid Beheshti University</b></a>. <i>Safa, 32(3)</i>, 49-65. [Persian]
+                </>
+            ),
         ],
         Contacts: [
             { href: "tel:+6581597168", icon: faPhone, text: "+65 8159 7168" },
@@ -438,8 +483,16 @@ const profiles = [
             'Second Place - Special scholarship for outstanding master students, Harbin Institute of Technology (2018)',
         ],
         Featured_Publications: [
-            'Sun, C., <b>Qi, X.</b> and Han, Y., 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0038092X21002012" target="_blank"><b>Seasonal characteristics of CIE standard sky types in northeast China</b></a>. <i>Solar Energy, 220</i>, 152-162.',
-            'Sun, C., Han, Y., <b>Qi, X.</b>, Yang, Y., Dong, Q., Huang, X., Jia, Y., Huang, Q., 2019. <a href="https://kns.cnki.net/kcms2/article/abstract?v=kxaUMs6x7-4I2jr5WTdXti3zQ9F92xu0gvt3ehWH641nXIm3xPXxt0GgxIkyBOp9sifFXSY8TBfc2pPK_g4G8hk_kvOHtCd-&uniplatform=NZKPT" target="_blank"><b>An Immersive Simulation Method of Building Indoor Glare Based on Local Sky Model</b></a>. Heilongjiang Province, CN201811307655.8 [P]'
+            (
+                <>
+                    Sun, C., <b>Qi, X.</b> and Han, Y., 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0038092X21002012" ><b>Seasonal characteristics of CIE standard sky types in northeast China</b></a>. <i>Solar Energy, 220</i>, 152-162.
+                </>
+            ),
+            (
+                <>
+                    Sun, C., Han, Y., <b>Qi, X.</b>, Yang, Y., Dong, Q., Huang, X., Jia, Y., Huang, Q., 2019. <a href="https://kns.cnki.net/kcms2/article/abstract?v=kxaUMs6x7-4I2jr5WTdXti3zQ9F92xu0gvt3ehWH641nXIm3xPXxt0GgxIkyBOp9sifFXSY8TBfc2pPK_g4G8hk_kvOHtCd-&uniplatform=NZKPT" ><b>An Immersive Simulation Method of Building Indoor Glare Based on Local Sky Model</b></a>. Heilongjiang Province, CN201811307655.8 [P]
+                </>
+            ),
         ],
         Contacts: [
             { href: "tel:+6580446551", icon: faPhone, text: "+65 8044 6551" },

@@ -127,7 +127,7 @@
 
 .OTST .second_section .inputs {
     display: flex;
-    background-color: white;
+    background-color: #f0f0f0;
 }
 
 .OTST .second_section .inputs .inputs_left {
@@ -228,7 +228,7 @@
 }
 
 .OTST .second_section .outputs {
-    background-color: #f0f0f0;
+    background-color: white;
     min-height: 400px;
     display: flex;
     justify-content: center;

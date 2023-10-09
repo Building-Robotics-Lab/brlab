@@ -91,7 +91,8 @@ const JournalData = [
                 profiles: ["Riccardo", "Ilyas", "Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.enbenv.2023.07.001" },
-                    { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" }
+                    { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
+                    { type: "Optimal Temperature Setpoint Tool", url: "/brlab/otst" }
                 ],
                 keywords: [
                     "Decarbonization",
@@ -162,7 +163,8 @@ const JournalData = [
                 minRead: "",
                 profiles: ["Kai", "Prof"],
                 links: [
-                    { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2022.109919" }
+                    { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2022.109919" },
+                    { type: "ComfortGPT", url: "/brlab/comfortgpt" }
                 ],
                 keywords: [
                     "Personal Comfort Model",

@@ -87,7 +87,8 @@ function IndividualProfile() {
                                 <p>
                                     <ul>
                                         {Featured_Publications.map((featured, index) => (
-                                            <li key={index} dangerouslySetInnerHTML={{ __html: featured }}></li>
+                                            // <li key={index} dangerouslySetInnerHTML={{ __html: featured }}></li>
+                                            <li key={index}>{featured}</li>
                                         ))}
                                     </ul>
                                 </p>

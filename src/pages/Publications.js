@@ -443,7 +443,7 @@ function JournalSection({ year, publications, className }) {
                 <ul>
                     {publications.map((pub, index) => (
                         <li key={index}>
-                            <h3><Link to={`/individual_publication/${pub.id}`}>{pub.title}</Link></h3>
+                            <h3><Link to={`/individual_publication/${pub.id}`} target="_blank">{pub.title}</Link></h3>
                             <h4>
                                 <i>{pub.journal}</i>
                                 {(pub.journal && (pub.issue || pub.volume || pub.page)) && ', '}
@@ -457,7 +457,7 @@ function JournalSection({ year, publications, className }) {
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
-                                            <Link to={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</Link>
+                                            <Link to={author.link} target="_blank" rel='noopener noreferrer'>{author.name}</Link>
                                         ) : (
                                             author.name
                                         )}
@@ -485,7 +485,7 @@ function ConferenceSection({ year, publications, className }) {
                 <ul>
                     {publications.map((pub, index) => (
                         <li key={index}>
-                            <h3><Link to={`/individual_publication/${pub.id}`}>{pub.title}</Link></h3>
+                            <h3><Link to={`/individual_publication/${pub.id}`} target="_blank">{pub.title}</Link></h3>
                             <h4>
                                 <i>{pub.conference}</i>
                                 {(pub.conference && (pub.page || pub.month)) && ', '}
@@ -498,7 +498,7 @@ function ConferenceSection({ year, publications, className }) {
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
-                                            <Link to={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</Link>
+                                            <Link to={author.link} target="_blank" rel='noopener noreferrer'>{author.name}</Link>
                                         ) : (
                                             author.name
                                         )}
@@ -526,14 +526,14 @@ function PatentSection({ year, publications, className }) {
                 <ul>
                     {publications.map((pub, index) => (
                         <li key={index}>
-                            <h3><Link to={`/individual_publication/${pub.id}`}>{pub.title}</Link></h3>
+                            <h3><Link to={`/individual_publication/${pub.id}`} target="_blank">{pub.title}</Link></h3>
                             {/* <h3>{pub.title}</h3> */}
                             <h4>{pub.patent}</h4>
                             <h5>
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
-                                            <Link to={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</Link>
+                                            <Link to={author.link} target="_blank" rel='noopener noreferrer'>{author.name}</Link>
                                         ) : (
                                             author.name
                                         )}
@@ -561,14 +561,14 @@ function ThesesSection({ year, publications, className }) {
                 <ul>
                     {publications.map((pub, index) => (
                         <li key={index}>
-                            <h3><Link to={`/individual_publication/${pub.id}`}>{pub.title}</Link></h3>
+                            <h3><Link to={`/individual_publication/${pub.id}`} target="_blank">{pub.title}</Link></h3>
                             {/* <h3>{pub.title}</h3> */}
                             <h4>{pub.university}</h4>
                             <h5>
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
-                                            <Link to={author.link} target='_blank' rel='noopener noreferrer'>{author.name}</Link>
+                                            <Link to={author.link} target="_blank" rel='noopener noreferrer'>{author.name}</Link>
                                         ) : (
                                             author.name
                                         )}
