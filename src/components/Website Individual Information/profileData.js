@@ -25,12 +25,10 @@ import XiaosongCV from './Xiaosong/CV.pdf'
 import PegahPic from './Pegah/image.jpg'
 import PegahCV from './Pegah/CV.pdf'
 
-import PierrePic from './unknown.png'
-//import PierrePic from './Pierre-Louis/image.jpg'
+import PierrePic from './Pierre-Louis/image.jpg'
 import PierreCV from './Pierre-Louis/CV.pdf'
 
-import GuillaumePic from './unknown.png'
-//import GuillaumePic from './Pierre-Louis/image.jpg'
+import GuillaumePic from './Guillaume/image.jpg'
 import GuillaumeCV from './Guillaume/CV.pdf'
 
 import MichellePic from './Michelle/image.jpg'

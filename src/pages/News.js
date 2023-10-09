@@ -6,10 +6,8 @@ import './News.css'
 import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
-import PierrePic from './../components/Website Individual Information/unknown.png'
-//import PierrePic from './../components/Website Individual Information/Pierre/image.jpg';
-import GuillaumePic from './../components/Website Individual Information/unknown.png'
-//import PierrePic from './../components/Website Individual Information/Pierre/image.jpg';
+import PierrePic from './../components/Website Individual Information/Pierre-Louis/image.jpg';
+import GuillaumePic from './../components/Website Individual Information/Guillaume/image.jpg';
 import PegahPic from './../components/Website Individual Information/Pegah/image.jpg';
 import RiccardoPublication from './../components/Website Data/riccardo-publication.jpg'
 import KellyPic from './../components/Website Individual Information/Kelly/image.jpg';

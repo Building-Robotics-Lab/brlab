@@ -22,11 +22,8 @@ import IlyasPic from './../components/Website Individual Information/Ilyas/image
 import StellaPic from './../components/Website Individual Information/Stella/image.jpg';
 import XiaosongPic from './../components/Website Individual Information/Xiaosong/image.jpg';
 import PegahPic from './../components/Website Individual Information/Pegah/image.jpg';
-
-import PierrePic from './../components/Website Individual Information/unknown.png';
-// import PierrePic from './../components/Website Individual Information/Pierre-Louis/image.jpg';
-import GuillaumePic from './../components/Website Individual Information/unknown.png';
-// import GuillaumePic from './../components/Website Individual Information/Pierre-Louis/image.jpg';
+import PierrePic from './../components/Website Individual Information/Pierre-Louis/image.jpg';
+import GuillaumePic from './../components/Website Individual Information/Guillaume/image.jpg';
 
 import MichellePic from './../components/Website Individual Information/Michelle/image.jpg';
 
