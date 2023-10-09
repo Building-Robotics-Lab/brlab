@@ -30,16 +30,16 @@ function NavBar() {
     }, 75);
   };
 
-  // Day and Night
-  const [theme, setTheme] = useState('day');
+  // // Day and Night
+  // const [theme, setTheme] = useState('day');
 
-  const toggleTheme = () => {
-    setTheme(theme === 'day' ? 'night' : 'day');
-  };
+  // const toggleTheme = () => {
+  //   setTheme(theme === 'day' ? 'night' : 'day');
+  // };
 
-  useEffect(() => {
-    document.body.className = `${theme}-mode`;
-  }, [theme]);
+  // useEffect(() => {
+  //   document.body.className = `${theme}-mode`;
+  // }, [theme]);
 
 
   return (
@@ -69,9 +69,9 @@ function NavBar() {
             <Link to="/news"><p>News</p></Link>
             <Link to="/publications"><p>Publications</p></Link>
             <Link to="/join"><p id='JoinButton'>Join the Lab</p></Link>
-            <div onClick={toggleTheme} style={{ cursor: 'pointer' }}>
+            {/* <div onClick={toggleTheme} style={{ cursor: 'pointer' }}>
               {theme === 'day' ? <img src={Sun} alt="Sun" className='mode' /> : <img src={Moon} alt="Moon" className='mode' />}
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>

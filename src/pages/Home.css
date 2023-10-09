@@ -120,6 +120,32 @@
     gap: 15rem;
 }
 
+.third_section {
+    display: flex;
+    /* Make it a flex container to ensure children stretch to the same height */
+}
+
+.meet_our_team,
+.publications {
+    flex: 1;
+    /* Make them take equal widths */
+    display: flex;
+    /* Make these flex containers too */
+    flex-direction: column;
+    /* Stack children vertically */
+}
+
+.meet_our_team_text,
+.publications_text {
+    flex-grow: 1;
+    /* This will ensure the text container takes up all available space, pushing the button to the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* This will ensure maximum space between the text and the button */
+}
+
+
 .Home .meet_our_team_image,
 .Home .publications_image {
     color: rgb(45, 99, 83);
