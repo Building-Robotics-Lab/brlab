@@ -16,7 +16,7 @@ const Carousel = ({ slides }) => {
     const setTimer = () => {
         timerRef.current = setInterval(() => {
             moveForward();
-        }, 3000);
+        }, 30000);
     };
 
     const resetTimer = () => {
@@ -50,12 +50,12 @@ const Carousel = ({ slides }) => {
             <div ref={sliderRef} className="slides" style={{ transform: `translateX(-${startIndex * 33.33}%)` }}>
                 {slidesState.map((slide, index) => (
                     <div className="slide" key={index}>
-                        <div className="aaaaa">
+                        <div className="slide_up">
                             <img className='carouselImage' src={slide.image} alt={slide.title} />
                             <p className='carouselDate'>{slide.date}</p>
                             <h3 className='carouselTitle' dangerouslySetInnerHTML={{ __html: slide.title }}></h3>
                         </div>
-                        <div className="aaaa">
+                        <div className="slide_down">
                             <Link className='carouselLink' to={`/news#${slide.link}`}>Read more</Link>
                         </div>
                     </div>

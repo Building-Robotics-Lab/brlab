@@ -56,18 +56,18 @@
 
 .Research .first_section .industry_partners a:nth-child(1) img {
     /* AWS logo */
-    transform: translateY(100px);
+    /* transform: translateY(100px); */
 }
 
 .Research .first_section .industry_partners a:nth-child(2) img {
     /* Trane logo */
     scale: 1;
-    transform: translateX(-5px) translateY(80px);
+    /* transform: translateX(-5px) translateY(80px); */
 }
 
 .Research .first_section .industry_partners a:nth-child(3) img {
     /* Greenology logo */
-    transform: translateX(8px) translateY(110px);
+    /* transform: translateX(8px) translateY(110px); */
     scale: 1.05;
 }
 
