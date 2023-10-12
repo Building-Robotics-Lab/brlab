@@ -83,7 +83,7 @@ const Footer = () => {
                         <p>© 2023 Building Robotics Laboratory</p>
                     </div>
                     <div>
-                        <p>Design by Connor Aucremanne. Code by Ilyas Dawoodjee. Logo & video by <a href="https://www.servicedesignlab.net/" target="_blank">Service Design Lab</a></p>
+                        <p>Design by Connor Aucremanne. Code by Ilyas Dawoodjee. Logo & video by <a href="https://www.servicedesignlab.net/" target="_blank">Service Design Lab</a>.</p>
                     </div>
                 </div>
             </div>

@@ -12,7 +12,7 @@ function Join_the_Lab() {
         {
             title: "President's Graduate Fellowship",
             link: "https://nusgs.nus.edu.sg/scholarships-list/",
-            description: "Awarded to PhD candidates who show exceptional promise or accomplishment in research. A number of PhD candidates are selected each semester by the University for the award. The following Fellowships are donor-funded: President’s Graduate Fellowship (funded by Lee Kong Chian Scholarship) and President’s Graduate Fellowship (funded by Jasmine Scholarship). Additionally, the candidate must have an exemplary academic record, strong research potential, and strong ethical character and high potential to success in the PhD program.",
+            description: "Awarded to PhD candidates who show exceptional promise or accomplishment in research. A number of PhD candidates are selected each semester by the University for the award. The following Fellowships are donor-funded: President’s Graduate Fellowship (funded by Lee Kong Chian Scholarship) and President’s Graduate Fellowship (funded by Jasmine Scholarship). Additionally, the candidate must have an exemplary academic record, strong research potential, and strong ethical character and high potential to succeed in the PhD program.",
         },
         {
             title: "NUS Research Scholarship",
@@ -37,12 +37,12 @@ function Join_the_Lab() {
         {
             title: "Meta Research PhD Fellowship",
             link: "https://research.facebook.com/fellowship/",
-            description: "Is a global program designed to encourage and support promising doctoral students who are engaged in innovative and relevant research in areas related to computer science and engineering at an accredited university. Winners of the Fellowship are entitled to receive two years of paid tuition and fees, an annual stipend to cover living costs, various opportunities to engage with Meta researchers, and an invitation to the annual Fellowship summit.",
+            description: "A global program designed to encourage and support promising doctoral students who are engaged in innovative and relevant research in areas related to computer science and engineering at an accredited university. Winners of the Fellowship are entitled to receive two years of paid tuition and fees, an annual stipend to cover living costs, various opportunities to engage with Meta researchers, and an invitation to the annual Fellowship summit.",
         },
         {
             title: "NVIDIA Graduate Fellowship Programme",
             link: "https://research.nvidia.com/graduate-fellowships",
-            description: "Have found this program to be a great way to support academia in its pursuit of cutting edge innovation, as well as an ideal avenue to introduce NVIDIA to the future leaders of our industry. It provides funding in the form of a single-year stipend to PhD students who are researching topics that will lead to major advanves in accelerated computing and its applications. NVIDIA Particularly invites submissions from students pushing the envelope in artificial intelligence, robotics, autonomous vehicles, and related fields.",
+            description: "Have found this program to be a great way to support academia in its pursuit of cutting edge innovation, as well as an ideal avenue to introduce NVIDIA to the future leaders of our industry. It provides funding in the form of a single-year stipend to PhD students who are researching topics that will lead to major advanves in accelerated computing and its applications. NVIDIA particularly invites submissions from students pushing the envelope in artificial intelligence, robotics, autonomous vehicles, and related fields.",
         },
         {
             title: "Google PhD Fellowship",
@@ -65,17 +65,17 @@ function Join_the_Lab() {
         {
             title: "NUS-SINGA Scholarship",
             link: "https://www.a-star.edu.sg/Scholarships/for-graduate-studies/singapore-international-graduate-award-singa",
-            description: "Open for application to all <b>international graduates</b> with a passion for research and excellent academic results, SINGA supports PhD studies in Biomedical Sciences, Computing and Information Sciences, Engineering and Technology, and Physical Sciences. The award consists of tution fees, a monthly stipend, an one-time airfare grant, and an one-time settling-in allowance.",
+            description: "Open for application to all <b>international graduates</b> with a passion for research and excellent academic results, SINGA supports PhD studies in biomedical sciences, computing and information sciences, engineering and technology, and physical sciences. The award consists of tuition fees, a monthly stipend, an one-time airfare grant, and an one-time settling-in allowance.",
         },
         {
             title: "Commonwealth Scholarship",
             link: "https://nusgs.nus.edu.sg/scholarships-list/",
-            description: "Awarded to outstanding graduate students from <a href='https://thecommonwealth.org/our-member-countries' target='_blank'>Commonwealth countries</a> for research leading to a hgher degree at the University. This scholarship is for new, incoming student who are <b>not Singapore citizens or permanent residents.</b> The Scholarship consists of a monthly stipend plus a tuition fee subsidy. A number of students are selected each semester by the University for the award. Additionally, the candidate must have graduated with an undergraduate degree with at least Second Class Honours or equivalent, have been offered admission to a full-time graduate research programme at NUS, and be eligible for MOE subsidy.",
+            description: "Awarded to outstanding graduate students from <a href='https://thecommonwealth.org/our-member-countries' target='_blank'>Commonwealth countries</a> for research leading to a higher degree at the University. This scholarship is for new, incoming students who are <b>not Singapore citizens or permanent residents.</b> The Scholarship consists of a monthly stipend plus a tuition fee subsidy. A number of students are selected each semester by the University for the award. Additionally, the candidate must have graduated with an undergraduate degree with at least Second Class Honours or equivalent, have been offered admission to a full-time graduate research programme at NUS, and be eligible for MOE subsidy.",
         },
         {
             title: "Schlumberger Foundation Faculty for the Future",
             link: "https://www.facultyforthefuture.net/",
-            description: "Fellowships are awarded to <b>women from developing and emerging economies</b> who are preparing for PhD or post-doctoral studt in STEM disciplines to pursue advanced graduate study at top universities in their disciplines abroad. Grant receipients are selected as much for their leadership capabilities as for their scientific talents, and they are expected to return to their home countries to continue their careers and inspire other young women.",
+            description: "Fellowships are awarded to <b>women from developing and emerging economies</b> who are preparing for PhD or post-doctoral studies in STEM disciplines to pursue advanced graduate study at top universities in their disciplines abroad. Grant receipients are selected as much for their leadership capabilities as for their scientific talents, and they are expected to return to their home countries to continue their careers and inspire other young women.",
         },
         {
             title: "SG Academies South-East Asia Fellowship (SASEAF) Programme",
@@ -193,7 +193,7 @@ function Join_the_Lab() {
                             <h4><b>Current Opportunities</b></h4>
                         </div>
                         <div className="position_information">
-                            <p>There is available workload and physical space in the Lab, but only by scholarship at the moment (as of August 2023).</p>
+                            <p>There is available workload and physical space in the Lab, but only by scholarship at the moment (as of January 2024).</p>
                         </div>
                     </div>
 
