@@ -566,7 +566,7 @@ function OTST() {
                             {mainUserProfile.map((profile, index) => (
                                 <div className="each_profile" key={index}>
                                     <div className="profile_image">
-                                        <Link to={`/individual_profile/${profile.ProfileName}`} target="_blank">
+                                        <Link to={`/profile/${profile.ProfileName}`} target="_blank">
                                             <img src={profile.ProfilePic} alt={profile.Name} />
                                         </Link>
                                     </div>
@@ -583,7 +583,7 @@ function OTST() {
                             {supportUserProfiles.map((profile, index) => (
                                 <div className="each_profile" key={index}>
                                     <div className="profile_image">
-                                        <Link to={`/individual_profile/${profile.ProfileName}`} target="_blank">
+                                        <Link to={`/profile/${profile.ProfileName}`} target="_blank">
                                             <img src={profile.ProfilePic} alt={profile.Name} />
                                         </Link>
                                     </div>

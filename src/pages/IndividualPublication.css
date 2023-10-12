@@ -147,25 +147,25 @@
 }
 
 .IndividualPublication .third_section .profile_image img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 50%;
-    padding: 10px;
+    padding: 0px;
 }
 
 .IndividualPublication .third_section .profile_image img:hover {
-    width: 120px;
-    height: 120px;
-    padding: 0px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
 }
 
 .IndividualPublication .third_section .profile_data {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
+    justify-content: space-between;
+    height: 120px;
 }
 
 .IndividualPublication .third_section .profile_links {

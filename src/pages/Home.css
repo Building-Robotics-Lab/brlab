@@ -120,11 +120,6 @@
     gap: 15rem;
 }
 
-.third_section {
-    display: flex;
-    /* Make it a flex container to ensure children stretch to the same height */
-}
-
 .meet_our_team,
 .publications {
     flex: 1;
@@ -220,7 +215,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin: auto;
     z-index: 2;
     padding: 3.5%;
     box-shadow: -1px 1px 20px 9px rgba(0, 0, 0, 0.3);

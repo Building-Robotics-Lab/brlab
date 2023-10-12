@@ -6,7 +6,7 @@ const ThesesData = [
                 title: "The sequential design optimization of building performance",
                 university: "Loughborough University",
                 authors: [
-                    { name: "Riccardo Talami", link: "/individual_profile/Riccardo" }
+                    { name: "Riccardo Talami", link: "/profile/Riccardo" }
                 ],
                 minRead: "",
                 profiles: ["Riccardo"],
@@ -61,7 +61,7 @@ ThesesData.forEach((yearData) => {
     yearData.publications.forEach((publication) => {
         // Generate and assign the unique ID
         publication.id = generateIdFromTitle(publication.title);
-        publication.individual_paper_link = "/individual_publication/" + generateIdFromTitle(publication.title);
+        publication.individual_paper_link = "/publication/" + generateIdFromTitle(publication.title);
     });
 });
 

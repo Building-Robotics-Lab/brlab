@@ -155,22 +155,22 @@ function Publications() {
 
     const getDynamicAuthorOptions = () => {
         const combinedData = getAllDataBasedOnType();
-        let allAuthors = [];
+        let authorSet = new Set();
 
         combinedData.forEach(data => {
             if (pubyear.some(option => option.value === 'all' || option.value === data.year.toString())) {
                 data.publications.forEach(pub => {
                     pub.authors.forEach(author => {
                         const cleanedAuthorName = author.name.replace('*', '');
-                        if (predefinedAuthors.includes(cleanedAuthorName) && !allAuthors.includes(cleanedAuthorName)) {
-                            allAuthors.push(cleanedAuthorName);
+                        if (predefinedAuthors.includes(cleanedAuthorName)) {
+                            authorSet.add(cleanedAuthorName);
                         }
                     });
                 });
             }
         });
 
-        return [{ value: 0, label: 'All' }, ...allAuthors.map((author, index) => ({ value: index + 1, label: author }))];
+        return publication_author.filter(option => option.value === 0 || authorSet.has(option.label));
     };
 
     const publication_types = [
@@ -336,14 +336,14 @@ function Publications() {
             </div>
             <div className="publication_filter">
                 <div className='publication_type' ref={selectRef}>
-                    <div onClick={() => {setTypeOpen(!isTypeOpen); setYearOpen(false); setAuthorOpen(false); }} style={{ cursor: 'pointer' }}>
+                    <div onClick={() => { setTypeOpen(!isTypeOpen); setYearOpen(false); setAuthorOpen(false); }} style={{ cursor: 'pointer' }}>
                         Type
                         <i className="arrow2 down2"></i>
                     </div>
                     <Select styles={customStyles} isMulti closeMenuOnSelect={false} hideSelectedOptions={false} name="type" options={pubauthor.some(option => option.value === 0) ? dynamicTypeOptions() : dynamicTypeOptionsForAuthors()} value={pubtype} defaultValue={publication_types[0]} onChange={publicationType} onMenuOpen={() => setTypeOpen(true)} onMenuClose={() => setTypeOpen(false)} menuIsOpen={isTypeOpen} components={{ Option: InputOption }} />
                 </div>
                 <div className='publication_year'>
-                    <div onClick={() => {setYearOpen(!isYearOpen); setTypeOpen(false); setAuthorOpen(false);}} style={{ cursor: 'pointer' }}>
+                    <div onClick={() => { setYearOpen(!isYearOpen); setTypeOpen(false); setAuthorOpen(false); }} style={{ cursor: 'pointer' }}>
                         Year
                         <i className="arrow2 down2"></i>
                     </div>
@@ -351,7 +351,7 @@ function Publications() {
                 </div>
 
                 <div className='publication_author'>
-                    <div onClick={() => {setAuthorOpen(!isAuthorOpen); setYearOpen(false); setTypeOpen(false);}} style={{ cursor: 'pointer' }}>
+                    <div onClick={() => { setAuthorOpen(!isAuthorOpen); setYearOpen(false); setTypeOpen(false); }} style={{ cursor: 'pointer' }}>
                         Author
                         <i className="arrow2 down2"></i>
                     </div>
@@ -443,7 +443,7 @@ function JournalSection({ year, publications, className }) {
                 <ul>
                     {publications.map((pub, index) => (
                         <li key={index}>
-                            <h3><Link to={`/individual_publication/${pub.id}`} target="_blank">{pub.title}</Link></h3>
+                            <h3><Link to={`/publication/${pub.id}`} target="_blank">{pub.title}</Link></h3>
                             <h4>
                                 <i>{pub.journal}</i>
                                 {(pub.journal && (pub.issue || pub.volume || pub.page)) && ', '}
@@ -453,7 +453,7 @@ function JournalSection({ year, publications, className }) {
                                 {(pub.issue || pub.volume) && pub.page && ', '}
                                 {pub.page}
                             </h4>
-                            <h5>
+                            <h5 id='author_names'>
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
@@ -485,7 +485,7 @@ function ConferenceSection({ year, publications, className }) {
                 <ul>
                     {publications.map((pub, index) => (
                         <li key={index}>
-                            <h3><Link to={`/individual_publication/${pub.id}`} target="_blank">{pub.title}</Link></h3>
+                            <h3><Link to={`/publication/${pub.id}`} target="_blank">{pub.title}</Link></h3>
                             <h4>
                                 <i>{pub.conference}</i>
                                 {(pub.conference && (pub.page || pub.month)) && ', '}
@@ -526,7 +526,7 @@ function PatentSection({ year, publications, className }) {
                 <ul>
                     {publications.map((pub, index) => (
                         <li key={index}>
-                            <h3><Link to={`/individual_publication/${pub.id}`} target="_blank">{pub.title}</Link></h3>
+                            <h3><Link to={`/publication/${pub.id}`} target="_blank">{pub.title}</Link></h3>
                             {/* <h3>{pub.title}</h3> */}
                             <h4>{pub.patent}</h4>
                             <h5>
@@ -561,7 +561,7 @@ function ThesesSection({ year, publications, className }) {
                 <ul>
                     {publications.map((pub, index) => (
                         <li key={index}>
-                            <h3><Link to={`/individual_publication/${pub.id}`} target="_blank">{pub.title}</Link></h3>
+                            <h3><Link to={`/publication/${pub.id}`} target="_blank">{pub.title}</Link></h3>
                             {/* <h3>{pub.title}</h3> */}
                             <h4>{pub.university}</h4>
                             <h5>
@@ -611,12 +611,15 @@ const customStyles = {
         ...base,
         zIndex: 1000,
         position: 'absolute',
-        top: '10px',  // This adjusts the vertical position. Increase or decrease as needed.
-        left: '-75px',  // This adjusts the horizontal position. Increase or decrease as needed.
+        top: '10px',
+        left: '-75px',
         width: '250px',
     }),
     option: (base, state) => ({
         ...base,
-        backgroundColor: state.isSelected ? 'rgb(45, 99, 83);' : base.backgroundColor,
+        backgroundColor: state.isFocused ? 'lightgreen' : (state.isSelected ? 'rgb(45, 99, 83)' : base.backgroundColor),
+        ':active': {
+            backgroundColor: 'green'
+        }
     }),
 };

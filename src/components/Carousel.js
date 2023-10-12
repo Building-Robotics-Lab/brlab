@@ -50,10 +50,14 @@ const Carousel = ({ slides }) => {
             <div ref={sliderRef} className="slides" style={{ transform: `translateX(-${startIndex * 33.33}%)` }}>
                 {slidesState.map((slide, index) => (
                     <div className="slide" key={index}>
-                        <img className='carouselImage' src={slide.image} alt={slide.title} />
-                        <p className='carouselDate'>{slide.date}</p>
-                        <h3 className='carouselTitle' dangerouslySetInnerHTML={{ __html: slide.title }}></h3>
-                        <Link className='carouselLink' to={`/news#${slide.link}`}>Read more</Link>
+                        <div className="aaaaa">
+                            <img className='carouselImage' src={slide.image} alt={slide.title} />
+                            <p className='carouselDate'>{slide.date}</p>
+                            <h3 className='carouselTitle' dangerouslySetInnerHTML={{ __html: slide.title }}></h3>
+                        </div>
+                        <div className="aaaa">
+                            <Link className='carouselLink' to={`/news#${slide.link}`}>Read more</Link>
+                        </div>
                     </div>
                 ))}
             </div>

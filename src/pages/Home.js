@@ -29,55 +29,55 @@ const slides = [
         image: GuillaumeNews,
         title: '<b>Please welcome Guillaume Lecronier to the lab!</b>',
         date: '21/09/2023',
-        link: 'Guillaume',
+        link: 'ThirdNewsSection',
     },
     {
         image: PierreNews,
         title: '<b>Please welcome Pierre-Louis David to the lab!</b>',
         date: '18/09/2023',
-        link: 'Pierre',
+        link: 'ThirdNewsSection',
     },
     {
         image: PegahNews,
         title: '<b>Please welcome Pegah Eshraghi to the lab!</b>',
         date: '14/08/2023',
-        link: 'Pegah',
+        link: 'ThirdNewsSection',
     },
     {
         image: PublicationsRiccardoNews,
         title: '<b><i>Energy and Built Environment</i> publication announcement!</b>',
         date: '04/07/2023',
-        link: 'RiccardoPublication',
+        link: 'SecondNewsSection',
     },
     {
         image: KellyNews,
         title: '<b>Please welcome Kelly Loh to the lab!</b>',
         date: '15/05/2023',
-        link: 'Kelly',
+        link: 'SecondNewsSection',
     },
     {
         image: XiaosongNews,
         title: '<b>Please welcome SU Xiaosong to the lab!</b>',
         date: '26/01/2023',
-        link: 'Xiaosong',
+        link: 'SecondNewsSection',
     },
     {
         image: PublicationsKaiNews,
         title: '<b><i>Building and Environment</i> publication announcement!</b>',
         date: '15/01/2023',
-        link: 'KaiPublication',
+        link: 'FirstNewsSection',
     },
     {
         image: ConnorNews,
         title: '<b>Please welcome Connor Aucremanne to the lab!</b>',
         date: '09/01/2023',
-        link: 'Connor',
+        link: 'FirstNewsSection',
     },
     {
         image: PublicationsIqbalNews,
         title: '<b><i>Energy and Buildings</i> publication announcement!</b>',
         date: '01/01/2023',
-        link: 'IqbalPublication',
+        link: 'FirstNewsSection',
     }
 ];
 
@@ -160,8 +160,9 @@ function Home() {
                             <FontAwesomeIcon icon={faUsers} />
                         </div>
                         <div className="meet_our_team_text">
-                            <h2><b>Meet Our Team</b></h2>
+
                             <p id='meet_our_team_text_left'>
+                                <h2><b>Meet Our Team</b></h2>
                                 We are a team of researchers with diverse backgrounds, enabling us to effectively innovate. Our
                                 goal is to create smart buildings that enhance the quality of life for occupants and contribute
                                 to a greener planet. Our lab members come from various academic backgrounds and cultures, which
@@ -178,8 +179,9 @@ function Home() {
                             <FontAwesomeIcon icon={faBook} />
                         </div>
                         <div className="publications_text">
-                            <h2><b>Publications</b></h2>
+
                             <p id='publications_text_right'>
+                                <h2><b>Publications</b></h2>
                                 Our research involves the use of both
                                 quantitative and qualitative techniques to comprehend the impact of our built environment and
                                 artificial intelligence on individuals. Our objective is to create interventions and adaptations

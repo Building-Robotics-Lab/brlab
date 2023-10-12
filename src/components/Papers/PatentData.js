@@ -81,7 +81,7 @@ PatentData.forEach((yearData) => {
     yearData.publications.forEach((publication) => {
         // Generate and assign the unique ID
         publication.id = generateIdFromTitle(publication.title);
-        publication.individual_paper_link = "/individual_publication/" + generateIdFromTitle(publication.title);
+        publication.individual_paper_link = "/publication/" + generateIdFromTitle(publication.title);
     });
 });
 

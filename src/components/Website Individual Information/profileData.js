@@ -44,7 +44,7 @@ import { Link } from 'react-router-dom'
 const profiles = [
     {
         ProfileName: 'Riccardo',
-        ProfileLink: "/individual_profile/Riccardo",
+        ProfileLink: "/profile/Riccardo",
         ProfilePic: RiccardoPic,
         Name: 'Riccardo Talami',
         Position: 'Research Fellow',
@@ -61,7 +61,7 @@ const profiles = [
         Featured_Publications: [
             (
                 <>
-                    <b>Talami, R.</b>, Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/individual_publication/demystifying_energy" ><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. <i>Energy and Built Environment</i>.
+                    <b>Talami, R.</b>, Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/publication/demystifying_energy" ><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. <i>Energy and Built Environment</i>.
                 </>
             ),
             (
@@ -71,7 +71,7 @@ const profiles = [
             ),
             (
                 <>
-                    <b>Talami, R.</b>, 2022. <Link to="/individual_publication/the_sequential" ><b>The sequential design optimization of building performance</b></Link>. (Doctoral dissertation, Loughborough University).
+                    <b>Talami, R.</b>, 2022. <Link to="/publication/the_sequential" ><b>The sequential design optimization of building performance</b></Link>. (Doctoral dissertation, Loughborough University).
                 </>
             )
         ],
@@ -97,7 +97,7 @@ const profiles = [
     },
     {
         ProfileName: 'Kai',
-        ProfileLink: "/individual_profile/Kai",
+        ProfileLink: "/profile/Kai",
         ProfilePic: KaiPic,
         Name: 'CHEN Kai',
         Position: 'PhD Student',
@@ -111,7 +111,7 @@ const profiles = [
         Featured_Publications: [
             (
                 <>
-                    <b>Chen, K.</b>, Xu, Q., Leow, B. and Ghahramani, A., 2022. <Link to="/individual_publication/personal_thermal" ><b>Personal thermal comfort models based on physiological measurements–A design of experiments based review</b></Link>. <i>Building and Environment</i>, <i>228</i>, 109919.    
+                    <b>Chen, K.</b>, Xu, Q., Leow, B. and Ghahramani, A., 2022. <Link to="/publication/personal_thermal" ><b>Personal thermal comfort models based on physiological measurements–A design of experiments based review</b></Link>. <i>Building and Environment</i>, <i>228</i>, 109919.    
                 </>
             ),
         ],
@@ -132,7 +132,7 @@ const profiles = [
     },
     {
         ProfileName: 'Iqbal',
-        ProfileLink: "/individual_profile/Iqbal",
+        ProfileLink: "/profile/Iqbal",
         ProfilePic: IqbalPic,
         Name: 'Iqbal Shah',
         Position: 'PhD Student',
@@ -149,7 +149,7 @@ const profiles = [
         Featured_Publications: [
             (
                 <>
-                    <b>Shah, I.</b>, Soh, B., Lim, C., Lau, S. K., & Ghahramani, A., 2023. <Link to="/individual_publication/thermal_transfer" ><b>Thermal transfer and temperature reductions from shading systems on opaque facades: Quantifying the impacts of influential factors</b></Link>. <i>Energy and Buildings, 278</i>, p.112604.      
+                    <b>Shah, I.</b>, Soh, B., Lim, C., Lau, S. K., & Ghahramani, A., 2023. <Link to="/publication/thermal_transfer" ><b>Thermal transfer and temperature reductions from shading systems on opaque facades: Quantifying the impacts of influential factors</b></Link>. <i>Energy and Buildings, 278</i>, p.112604.      
                 </>
             ),
         ],
@@ -172,7 +172,7 @@ const profiles = [
     },
     {
         ProfileName: 'Connor',
-        ProfileLink: "/individual_profile/Connor",
+        ProfileLink: "/profile/Connor",
         ProfilePic: ConnorPic,
         Name: 'Connor Aucremanne',
         Position: 'PhD Student',
@@ -211,7 +211,7 @@ const profiles = [
     },
     {
         ProfileName: 'Kelly',
-        ProfileLink: "/individual_profile/Kelly",
+        ProfileLink: "/profile/Kelly",
         ProfilePic: KellyPic,
         Name: 'Kelly Loh',
         Position: 'PhD Student',
@@ -241,7 +241,7 @@ const profiles = [
     },
     {
         ProfileName: 'Ilyas',
-        ProfileLink: "/individual_profile/Ilyas",
+        ProfileLink: "/profile/Ilyas",
         ProfilePic: IlyasPic,
         Name: 'Ilyas Dawoodjee',
         Position: 'Research Engineer',
@@ -275,7 +275,7 @@ const profiles = [
     },
     {
         ProfileName: 'Stella',
-        ProfileLink: "/individual_profile/Stella",
+        ProfileLink: "/profile/Stella",
         ProfilePic: StellaPic,
         Name: 'HU Xinhao',
         Position: 'Visiting PhD Candidate from Hunan University',
@@ -320,7 +320,7 @@ const profiles = [
     },
     {
         ProfileName: 'Xiaosong',
-        ProfileLink: "/individual_profile/Xiaosong",
+        ProfileLink: "/profile/Xiaosong",
         ProfilePic: XiaosongPic,
         Name: 'SU Xiaosong',
         Position: 'Visiting PhD Candidate from Hunan University',
@@ -364,7 +364,7 @@ const profiles = [
     },
     {
         ProfileName: 'Pegah',
-        ProfileLink: "/individual_profile/Pegah",
+        ProfileLink: "/profile/Pegah",
         ProfilePic: PegahPic,
         Name: 'Pegah Eshraghi',
         Position: 'Visiting PhD Candidate from Shahid Beheshti University',
@@ -406,7 +406,7 @@ const profiles = [
     },
     {
         ProfileName: 'Pierre',
-        ProfileLink: "/individual_profile/Pierre",
+        ProfileLink: "/profile/Pierre",
         ProfilePic: PierrePic,
         Name: 'Pierre-Louis David',
         Position: 'Visiting MSc Student from ETH Zürich',
@@ -435,7 +435,7 @@ const profiles = [
     },
     {
         ProfileName: 'Guillaume',
-        ProfileLink: "/individual_profile/Guillaume",
+        ProfileLink: "/profile/Guillaume",
         ProfilePic: GuillaumePic,
         Name: 'Guillaume Lecronier',
         Position: 'Visiting MSc Student from ETH Zürich',
@@ -466,7 +466,7 @@ const profiles = [
     },
     {
         ProfileName: 'Michelle',
-        ProfileLink: "/individual_profile/Michelle",
+        ProfileLink: "/profile/Michelle",
         ProfilePic: MichellePic,
         Name: 'QI Xuanning',
         Position: 'Visiting PhD Candidate from Harbin Institute of Technology',

@@ -46,7 +46,7 @@
     border-radius: 0.25rem;
 }
 
-.parent_wrapper .NewsGrid .highlighted-section {
+/* .parent_wrapper .NewsGrid .highlighted-section {
     animation: highlight-section-content 2s linear;
     animation-delay: 1s;
     position: relative;
@@ -85,4 +85,4 @@
         box-shadow: 0 0 10px 10px rgb(226,205,182);
     }
 }
-
+ */

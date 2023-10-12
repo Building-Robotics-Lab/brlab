@@ -30,8 +30,8 @@ function App() {
           <Route path='/news' element={<News />} />
           <Route path='/publications' element={<Publications />} />
           <Route path='/join' element={<Join_the_Lab />} />
-          <Route path="/individual_profile/:profileName" element={<IndividualProfile />} />
-          <Route path='/individual_publication/:id' element={<IndividualPublication />} />
+          <Route path="/profile/:profileName" element={<IndividualProfile />} />
+          <Route path='/publication/:id' element={<IndividualPublication />} />
         </Routes>
       </Router>
     </div>

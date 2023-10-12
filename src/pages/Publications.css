@@ -177,12 +177,23 @@
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 2px;
-    vertical-align: middle; /* Add this line */
-    margin-left: 8px;  /* Add this line */
-    margin-bottom: 2px;  /* Add this line */
+    vertical-align: middle;
+    /* Add this line */
+    margin-left: 8px;
+    /* Add this line */
+    margin-bottom: 2px;
+    /* Add this line */
 }
-  
+
 .down2 {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+.Publications #author_names {
+    line-height: 2;
+}
+
+.css-1n7v3ny-option:active {
+    background-color: green !important;
 }

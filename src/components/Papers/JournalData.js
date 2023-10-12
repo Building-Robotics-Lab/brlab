@@ -52,8 +52,8 @@ const JournalData = [
                 authors: [
                     { name: "Kate Sangwon Lee" },
                     { name: "Jung-Joo Lee" },
-                    { name: "*Connor Aucremanne", link: "/individual_profile/Connor" },
-                    { name: "*Iqbal Shah", link: "/individual_profile/Iqbal" },
+                    { name: "*Connor Aucremanne", link: "/profile/Connor" },
+                    { name: "*Iqbal Shah", link: "/profile/Iqbal" },
                     { name: "Ali Ghahramani", link: "/team#prof_profile" }
                 ],
                 minRead: "",
@@ -83,8 +83,8 @@ const JournalData = [
                 volume: "", issue: "",
                 page: "",
                 authors: [
-                    { name: "*Riccardo Talami", link: "/individual_profile/Riccardo" },
-                    { name: "*Ilyas Dawoodjee", link: "/individual_profile/Ilyas" },
+                    { name: "*Riccardo Talami", link: "/profile/Riccardo" },
+                    { name: "*Ilyas Dawoodjee", link: "/profile/Ilyas" },
                     { name: "Ali Ghahramani", link: "/team#prof_profile" }
                 ],
                 minRead: "",
@@ -155,7 +155,7 @@ const JournalData = [
                 volume: "228", issue: "",
                 page: "109919",
                 authors: [
-                    { name: "*CHEN Kai", link: "/individual_profile/Kai" },
+                    { name: "*CHEN Kai", link: "/profile/Kai" },
                     { name: "*Qian Xu" },
                     { name: "Berlynette Leow" },
                     { name: "Ali Ghahramani", link: "/team#prof_profile" }
@@ -184,7 +184,7 @@ const JournalData = [
                 volume: "278", issue: "",
                 page: "112604",
                 authors: [
-                    { name: "*Iqbal Shah", link: "/individual_profile/Iqbal" },
+                    { name: "*Iqbal Shah", link: "/profile/Iqbal" },
                     { name: "Brian Soh" },
                     { name: "Caitlin Lim" },
                     { name: "Siu-Kit Lau" },
@@ -1537,7 +1537,7 @@ JournalData.forEach((yearData) => {
     yearData.publications.forEach((publication) => {
         // Generate and assign the unique ID
         publication.id = generateIdFromTitle(publication.title);
-        publication.individual_paper_link = "/individual_publication/" + generateIdFromTitle(publication.title);
+        publication.individual_paper_link = "/publication/" + generateIdFromTitle(publication.title);
     });
 });
 
