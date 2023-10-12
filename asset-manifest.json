@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brlab/static/css/main.cfb762a8.css",
-    "main.js": "/brlab/static/js/main.da0ba70d.js",
+    "main.css": "/brlab/static/css/main.491254de.css",
+    "main.js": "/brlab/static/js/main.33a46068.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
     "static/media/Iqbal_DT2.png": "/brlab/static/media/Iqbal_DT2.73b332b29a8b111f14a7.png",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
@@ -60,11 +60,11 @@
     "static/media/NUSLOGO-removebg-preview.png": "/brlab/static/media/NUSLOGO-removebg-preview.5dd0ad9bdd141b9217c1.png",
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
-    "main.cfb762a8.css.map": "/brlab/static/css/main.cfb762a8.css.map",
-    "main.da0ba70d.js.map": "/brlab/static/js/main.da0ba70d.js.map"
+    "main.491254de.css.map": "/brlab/static/css/main.491254de.css.map",
+    "main.33a46068.js.map": "/brlab/static/js/main.33a46068.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfb762a8.css",
-    "static/js/main.da0ba70d.js"
+    "static/css/main.491254de.css",
+    "static/js/main.33a46068.js"
   ]
 }
