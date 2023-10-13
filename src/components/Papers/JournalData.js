@@ -1,3 +1,4 @@
+import IqbalPublication2 from './Publication Images/1-s2.0-S0360132323009319-gr3_lrg.jpg'
 import KatePublication1 from './Publication Images/kate_pub1.png'
 import RiccardoPublication1 from './Publication Images/riccardo_pub1.jpg'
 import AliPublication1 from './Publication Images/1-s2.0-S0360132322010411-gr1_lrg.jpg'
@@ -44,6 +45,40 @@ const JournalData = [
     {
         year: "2023",
         publications: [
+            {
+                title: "Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems",
+                journal: "Building and Environment",
+                volume: "", issue: "",
+                page: "",
+                authors: [
+                    { name: "*Iqbal Shah", link: "/profile/Iqbal" },
+                    { name: "Siu-Kit Lau" },
+                    { name: "Veera Sekaran" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" }
+                ],
+                minRead: "",
+                profiles: ["Iqbal", "Prof"],
+                links: [
+                    { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2023.110904" }
+                ],
+                keywords: [
+                    "Urban Greening",
+                    "Urban Heat Island",
+                    "Living Wall",
+                    "Façade Thermal Performance",
+                    "Energy Savings",
+                    "Green Wall"
+                ],
+                highlights: [
+                    "Porous plant growth form in VGS amplifies cooling effect by up to 1 °C within 800 mm.",
+                    "Negative VGS façade heat flux of −2.32 W/m2 achieved with porous plant growth form.",
+                    "16% higher rate of evaporative cooling from growing media found in porous VGS.",
+                    "Fully formed VGS crucial for optimal cooling and heat gain reduction.",
+                    "VGS cooling is driven by complex mechanisms, beyond the mere effects of shading."
+                ],
+                abstract: "Vertical Greenery Systems (VGS) installed on building façades have recently gained significant attention for its urban cooling potentials. While current research primarily leans on the Leaf Area Index to estimate the VGS cooling potentials, the evaporative cooling effects of VGS growing media, has largely been overlooked. In particular, the effect of plant growth form on air movement within the VGS, which could notably augment the rate of evapotranspiration, has commonly been ignored. To address this gap, our study undertakes a comprehensive thermal analysis of two distinct plant growth forms (porous and dense), combining systematic Computational Fluid Dynamics simulations with field experiments over a six-month period. Our results, for the first time, demonstrate that the provision of a porous VGS significantly enhances its cooling effects, which could even lead to a negative façade heat flux. Our findings offer a novel perspective for plant and growing media selection in VGS design.",
+                display_image: IqbalPublication2
+            },
             {
                 title: "Towards democratization of digital twins: Design principles for transformation into a human-building interface",
                 journal: "Building and Environment",

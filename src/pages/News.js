@@ -6,6 +6,7 @@ import './News.css'
 import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
+import IqbalPublication2 from './../components/Website Data/1-s2.0-S0360132323009319-gr3_lrg.jpg'
 import PierrePic from './../components/Website Individual Information/Pierre-Louis/image.jpg';
 import GuillaumePic from './../components/Website Individual Information/Guillaume/image.jpg';
 import PegahPic from './../components/Website Individual Information/Pegah/image.jpg';
@@ -65,6 +66,17 @@ function News() {
     }, []);
 
     const newsData = [
+        {
+            NewsSectionName: 'IqbalPublication2',
+            imageSrc: IqbalPublication2,
+            date: '11/10/2023',
+            title: '<i>Building and Environment</i> publication announcement!',
+            content: (
+                <>
+                    <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/porous_plant"><b>Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems</b></Link>. A few of the highlights include the finding that porous plant growth form in VGS amplifies cooling effect by up to 1°C within 800 mm, a negative VGS façade heat flux of -2.32 W/m2 was achieved with porous plant growth form, and there was a 16% higher rate of evaporative cooling from growing media found in porous VGS. Congratulations everyone!
+                </>
+            ),
+        },
         {
             NewsSectionName: 'Guillaume',
             imageSrc: GuillaumePic,
@@ -177,16 +189,20 @@ function News() {
                 </div>
             </Container>
 
-            <Container useOrange={true} sectionName='ThirdNewsSection'>
+            <Container useOrange={true} sectionName='FourthNewsSection'>
                 <NewsGrid newsData={newsData.slice(0, 3)} highlightedSection={highlightedSection} />
             </Container>
 
-            <Container sectionName='SecondNewsSection'>
+            <Container sectionName='ThirdNewsSection'>
                 <NewsGrid newsData={newsData.slice(3, 6)} highlightedSection={highlightedSection} />
             </Container>
 
-            <Container useOrange={true} sectionName='FirstNewsSection'>
+            <Container useOrange={true} sectionName='SecondNewsSection'>
                 <NewsGrid newsData={newsData.slice(6, 9)} highlightedSection={highlightedSection} />
+            </Container>
+
+            <Container sectionName='FirstNewsSection'>
+                <NewsGrid newsData={newsData.slice(9, 12)} highlightedSection={highlightedSection} />
             </Container>
 
             <Footer />

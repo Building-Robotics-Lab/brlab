@@ -14,6 +14,7 @@ import FourthResearchImage from './../components/Website Data/resilient@2x.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers } from '@fortawesome/free-solid-svg-icons';
 
+import PublicationsIqbalNews2 from './../components/Website Data/1-s2.0-S0360132323009319-gr3_lrg.jpg'
 import GuillaumeNews from './../components/Website Individual Information/Guillaume/image.jpg'
 import PierreNews from './../components/Website Individual Information/Pierre-Louis/image.jpg'
 import PegahNews from './../components/Website Individual Information/Pegah/image.jpg'
@@ -26,16 +27,22 @@ import PublicationsIqbalNews from './../components/Website Data//iqbal-publicati
 
 const slides = [
     {
+        image: PublicationsIqbalNews2,
+        title: '<b><i>Building and Environment</i> publication announcement!</b>',
+        date: '11/10/2023',
+        link: 'FourthNewsSection',
+    },
+    {
         image: GuillaumeNews,
         title: '<b>Please welcome Guillaume Lecronier to the lab!</b>',
         date: '21/09/2023',
-        link: 'ThirdNewsSection',
+        link: 'FourthNewsSection',
     },
     {
         image: PierreNews,
         title: '<b>Please welcome Pierre-Louis David to the lab!</b>',
         date: '18/09/2023',
-        link: 'ThirdNewsSection',
+        link: 'FourthNewsSection',
     },
     {
         image: PegahNews,
@@ -47,13 +54,13 @@ const slides = [
         image: PublicationsRiccardoNews,
         title: '<b><i>Energy and Built Environment</i> publication announcement!</b>',
         date: '04/07/2023',
-        link: 'SecondNewsSection',
+        link: 'ThirdNewsSection',
     },
     {
         image: KellyNews,
         title: '<b>Please welcome Kelly Loh to the lab!</b>',
         date: '15/05/2023',
-        link: 'SecondNewsSection',
+        link: 'ThirdNewsSection',
     },
     {
         image: XiaosongNews,
@@ -65,13 +72,13 @@ const slides = [
         image: PublicationsKaiNews,
         title: '<b><i>Building and Environment</i> publication announcement!</b>',
         date: '15/01/2023',
-        link: 'FirstNewsSection',
+        link: 'SecondNewsSection',
     },
     {
         image: ConnorNews,
         title: '<b>Please welcome Connor Aucremanne to the lab!</b>',
         date: '09/01/2023',
-        link: 'FirstNewsSection',
+        link: 'SecondNewsSection',
     },
     {
         image: PublicationsIqbalNews,

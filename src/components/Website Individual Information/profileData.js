@@ -149,7 +149,12 @@ const profiles = [
         Featured_Publications: [
             (
                 <>
-                    <b>Shah, I.</b>, Soh, B., Lim, C., Lau, S. K., & Ghahramani, A., 2023. <Link to="/publication/thermal_transfer" ><b>Thermal transfer and temperature reductions from shading systems on opaque facades: Quantifying the impacts of influential factors</b></Link>. <i>Energy and Buildings, 278</i>, p.112604.      
+                    <b>Shah, I.</b>, Lau, S.K., Sekaran, V., and Ghahramani, A., 2023. <Link to="/publication/porous_plant" ><b>Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems</b></Link>. <i>Building and Environment</i>.
+                </>
+            ),
+            (
+                <>
+                    <b>Shah, I.</b>, Soh, B., Lim, C., Lau, S. K., and Ghahramani, A., 2023. <Link to="/publication/thermal_transfer" ><b>Thermal transfer and temperature reductions from shading systems on opaque facades: Quantifying the impacts of influential factors</b></Link>. <i>Energy and Buildings, 278</i>, p.112604.      
                 </>
             ),
         ],
@@ -490,7 +495,7 @@ const profiles = [
             ),
             (
                 <>
-                    Sun, C., Han, Y., <b>Qi, X.</b>, Yang, Y., Dong, Q., Huang, X., Jia, Y., Huang, Q., 2019. <a href="https://kns.cnki.net/kcms2/article/abstract?v=kxaUMs6x7-4I2jr5WTdXti3zQ9F92xu0gvt3ehWH641nXIm3xPXxt0GgxIkyBOp9sifFXSY8TBfc2pPK_g4G8hk_kvOHtCd-&uniplatform=NZKPT" ><b>An Immersive Simulation Method of Building Indoor Glare Based on Local Sky Model</b></a>. Heilongjiang Province, CN201811307655.8 [P]
+                    Sun, C., Han, Y., <b>Qi, X.</b>, Yang, Y., Dong, Q., Huang, X., Jia, Y., and Huang, Q., 2019. <a href="https://kns.cnki.net/kcms2/article/abstract?v=kxaUMs6x7-4I2jr5WTdXti3zQ9F92xu0gvt3ehWH641nXIm3xPXxt0GgxIkyBOp9sifFXSY8TBfc2pPK_g4G8hk_kvOHtCd-&uniplatform=NZKPT" ><b>An Immersive Simulation Method of Building Indoor Glare Based on Local Sky Model</b></a>. Heilongjiang Province, CN201811307655.8 [P]
                 </>
             ),
         ],
