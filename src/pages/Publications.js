@@ -617,9 +617,9 @@ const customStyles = {
     }),
     option: (base, state) => ({
         ...base,
-        backgroundColor: state.isFocused ? 'lightgreen' : (state.isSelected ? 'rgb(45, 99, 83)' : base.backgroundColor),
+        backgroundColor: state.isFocused ? 'rgb(45, 99, 83)' : (state.isSelected ? 'rgb(45, 99, 83)' : base.backgroundColor),
         ':active': {
-            backgroundColor: 'green'
+            backgroundColor: 'rgb(45, 99, 83)'
         }
     }),
 };

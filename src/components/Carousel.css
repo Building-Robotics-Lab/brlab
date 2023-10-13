@@ -81,9 +81,9 @@
 }
 
 .btn-left {
-    left: 10px;
+    left: -10px;
 }
 
 .btn-right {
-    right: 10px;
+    right: -10px;
 }
