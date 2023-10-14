@@ -349,7 +349,6 @@ function Publications() {
                     </div>
                     <Select styles={customStyles} isMulti closeMenuOnSelect={false} hideSelectedOptions={false} name="year" options={pubauthor.some(option => option.value === 0) ? dynamicYearOptions() : dynamicYearOptionsForAuthors()} value={pubyear} defaultValue={publication_year[0]} onChange={publicationYear} onMenuOpen={() => setYearOpen(true)} onMenuClose={() => setYearOpen(false)} menuIsOpen={isYearOpen} components={{ Option: InputOption }} />
                 </div>
-
                 <div className='publication_author'>
                     <div onClick={() => { setAuthorOpen(!isAuthorOpen); setYearOpen(false); setTypeOpen(false); }} style={{ cursor: 'pointer' }}>
                         Author
