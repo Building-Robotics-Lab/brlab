@@ -650,21 +650,21 @@ function Join_the_Lab() {
                                         Position
                                         <i className="arrow2 down2"></i>
                                     </div>
-                                    <Select styles={customStyles} isMulti options={availablePositions} value={scholarship_position.filter(option => position.includes(option.value))} onChange={scholarshipPosition} onMenuOpen={() => setPositionOpen(true)} onMenuClose={() => setPositionOpen(false)} menuIsOpen={isPositionOpen} components={{ Option: InputOption }} hideSelectedOptions={false} />
+                                    <Select styles={customStyles} isMulti options={availablePositions} value={scholarship_position.filter(option => position.includes(option.value))} onChange={scholarshipPosition} closeMenuOnSelect={false} onMenuOpen={() => setPositionOpen(true)} onMenuClose={() => setPositionOpen(false)} menuIsOpen={isPositionOpen} components={{ Option: InputOption }} hideSelectedOptions={false} />
                                 </div>
                                 <div className='scholarship_country'>
                                     <div onClick={() => { setCountryOpen(!isCountryOpen); setPositionOpen(false); setDurationOpen(false); }} style={{ cursor: 'pointer' }}>
                                         Country
                                         <i className="arrow2 down2"></i>
                                     </div>
-                                    <Select styles={customStyles} isMulti options={availableCountries} value={scholarship_country.filter(option => country.includes(option.value))} onChange={scholarshipCountry} onMenuOpen={() => setCountryOpen(true)} onMenuClose={() => setCountryOpen(false)} menuIsOpen={isCountryOpen} components={{ Option: InputOption }} hideSelectedOptions={false} />
+                                    <Select styles={customStyles} isMulti options={availableCountries} value={scholarship_country.filter(option => country.includes(option.value))} onChange={scholarshipCountry} closeMenuOnSelect={false} onMenuOpen={() => setCountryOpen(true)} onMenuClose={() => setCountryOpen(false)} menuIsOpen={isCountryOpen} components={{ Option: InputOption }} hideSelectedOptions={false} />
                                 </div>
                                 <div className='scholarship_duration'>
                                     <div onClick={() => { setDurationOpen(!isDurationOpen); setPositionOpen(false); setCountryOpen(false); }} style={{ cursor: 'pointer' }}>
                                         Duration
                                         <i className="arrow2 down2"></i>
                                     </div>
-                                    <Select styles={customStyles} isMulti options={availableDurations} value={scholarship_duration.filter(option => duration.includes(option.value))} onChange={scholarshipDuration} onMenuOpen={() => setDurationOpen(true)} onMenuClose={() => setDurationOpen(false)} menuIsOpen={isDurationOpen} components={{ Option: InputOption }} hideSelectedOptions={false} />
+                                    <Select styles={customStyles} isMulti options={availableDurations} value={scholarship_duration.filter(option => duration.includes(option.value))} onChange={scholarshipDuration} closeMenuOnSelect={false} onMenuOpen={() => setDurationOpen(true)} onMenuClose={() => setDurationOpen(false)} menuIsOpen={isDurationOpen} components={{ Option: InputOption }} hideSelectedOptions={false} />
                                 </div>
                                 <div className="HomeButtons">
                                     <Link onClick={Reset}><p id='JoinButton'>Reset</p></Link>
