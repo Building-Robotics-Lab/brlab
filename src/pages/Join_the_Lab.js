@@ -242,6 +242,15 @@ function Join_the_Lab() {
         }
 
         setPosition(selectedValues);
+
+        // Update available options for the other dropdowns based on the selected duration
+        if (selectedValues.length === 1) {
+            updateAvailableOptionsForPosition(selectedValues[0]);
+        } else {
+            // Reset available options for position and country if multiple durations or none are selected
+            setAvailableDurations(scholarship_position);
+            setAvailableCountries(scholarship_country);
+        }
     }
 
 
@@ -340,6 +349,15 @@ function Join_the_Lab() {
         }
 
         setCountry(selectedValues);
+
+        // Update available options for the other dropdowns based on the selected country
+        if (selectedValues.length === 1) {
+            updateAvailableOptionsForCountry(selectedValues[0]);
+        } else {
+            // Reset available options for position and duration if multiple countries or none are selected
+            setAvailablePositions(scholarship_position);
+            setAvailableDurations(scholarship_duration);
+        }
     }
 
     const scholarship_duration = [
@@ -371,7 +389,17 @@ function Join_the_Lab() {
         }
 
         setDuration(selectedValues);
+
+        // Update available options for the other dropdowns based on the selected duration
+        if (selectedValues.length === 1) {
+            updateAvailableOptionsForDuration(selectedValues[0]);
+        } else {
+            // Reset available options for position and country if multiple durations or none are selected
+            setAvailablePositions(scholarship_position);
+            setAvailableCountries(scholarship_country);
+        }
     };
+
 
     // Extract the values from the scholarship_position, scholarship_country, and scholarship_duration for filtering
     const allPositions = scholarship_position.map(option => option.value);
@@ -402,6 +430,101 @@ function Join_the_Lab() {
     const filteredOpenEligibilityScholarships = filterScholarships(openEligibility, position, country, duration);
     const filteredCountrySpecificEligibilityScholarships = filterScholarships(countrySpecificEligibility, position, country, duration);
 
+    const [availablePositions, setAvailablePositions] = useState(scholarship_position);
+    const [availableCountries, setAvailableCountries] = useState(scholarship_country);
+    const [availableDurations, setAvailableDurations] = useState(scholarship_duration);
+
+    const updateAvailableOptionsForPosition = (selectedPosition) => {
+        // Filter scholarships based on the selected position
+        const scholarships = [...openEligibility, ...countrySpecificEligibility];
+        const filteredScholarships = scholarships.filter(scholarship => scholarship.tags.position.includes(selectedPosition));
+
+        // Extract unique durations and countries from the filtered scholarships
+        const newDurations = [...new Set(filteredScholarships.flatMap(scholarship => scholarship.tags.duration))];
+        const newCountries = [...new Set(filteredScholarships.flatMap(scholarship => scholarship.tags.country))];
+
+        if (selectedPosition === "All") {
+            // If 'All' is selected, reset to all available options
+            setAvailableDurations(scholarship_duration);
+            setAvailableCountries(scholarship_country);
+        } else {
+            // Update the available options state WITHOUT updating the position dropdown
+            if (!duration.includes("All") && duration.length === 1) {
+                // Don't update the duration dropdown if a single duration is already selected
+            } else {
+                setAvailableDurations(scholarship_duration.filter(option => newDurations.includes(option.value)));
+            }
+            if (!country.includes("All") && country.length === 1) {
+                // Don't update the country dropdown if a single country is already selected
+            } else {
+                setAvailableCountries(scholarship_country.filter(option => newCountries.includes(option.value)));
+            }
+
+        }
+    }
+
+    const updateAvailableOptionsForDuration = (selectedDuration) => {
+        // Filter scholarships based on the selected duration
+        const scholarships = [...openEligibility, ...countrySpecificEligibility];
+        const filteredScholarships = scholarships.filter(scholarship => scholarship.tags.duration.includes(selectedDuration));
+
+        // Extract unique positions and countries from the filtered scholarships
+        const newPositions = [...new Set(filteredScholarships.flatMap(scholarship => scholarship.tags.position))];
+        const newCountries = [...new Set(filteredScholarships.flatMap(scholarship => scholarship.tags.country))];
+
+        if (selectedDuration === "All") {
+            // If 'All' is selected, reset to all available options
+            setAvailablePositions(scholarship_position);
+            setAvailableCountries(scholarship_country);
+        } else {
+            // Update the available options state WITHOUT updating the duration dropdown
+            if (!position.includes("All") && position.length === 1) {
+                // Don't update the position dropdown if a single position is already selected
+            } else {
+                setAvailablePositions(scholarship_position.filter(option => newPositions.includes(option.value)));
+            }
+            if (!country.includes("All") && country.length === 1) {
+                // Don't update the country dropdown if a single country is already selected
+            } else {
+                setAvailableCountries(scholarship_country.filter(option => newCountries.includes(option.value)));
+            }
+        }
+    }
+
+    const updateAvailableOptionsForCountry = (selectedCountry) => {
+        // Filter scholarships based on the selected country
+        const scholarships = [...openEligibility, ...countrySpecificEligibility];
+        let filteredScholarships = scholarships.filter(scholarship => scholarship.tags.country.includes(selectedCountry));
+
+        // Further filter the scholarships based on the currently selected position
+        if (!position.includes("All")) {
+            filteredScholarships = filteredScholarships.filter(scholarship => position.some(p => scholarship.tags.position.includes(p)));
+        }
+
+        // Extract unique positions and durations from the filtered scholarships
+        const newPositions = [...new Set(filteredScholarships.flatMap(scholarship => scholarship.tags.position))];
+        const newDurations = [...new Set(filteredScholarships.flatMap(scholarship => scholarship.tags.duration))];
+
+        if (selectedCountry === "All") {
+            // If 'All' is selected, reset to all available options
+            setAvailablePositions(scholarship_position);
+            setAvailableDurations(scholarship_duration);
+        } else {
+            // Update the available options state WITHOUT updating the country dropdown
+            if (!position.includes("All") && position.length === 1) {
+                // Don't update the position dropdown if a single position is already selected
+            } else {
+                setAvailablePositions(scholarship_position.filter(option => newPositions.includes(option.value)));
+            }
+            if (!duration.includes("All") && duration.length === 1) {
+                // Don't update the duration dropdown if a single duration is already selected
+            } else {
+                setAvailableDurations(scholarship_duration.filter(option => newDurations.includes(option.value)));
+            }
+        }
+    }
+
+
     const [isPositionOpen, setPositionOpen] = useState(false);
     const [isCountryOpen, setCountryOpen] = useState(false);
     const [isDurationOpen, setDurationOpen] = useState(false);
@@ -426,7 +549,12 @@ function Join_the_Lab() {
         setPosition([scholarship_position[0].value]);
         setCountry([scholarship_country[0].value]);
         setDuration([scholarship_duration[0].value]);
+
+        setAvailablePositions(scholarship_position);
+        setAvailableCountries(scholarship_country);
+        setAvailableDurations(scholarship_duration);
     }
+
 
     useEffect(() => {
         document.title = 'BRL - Join';
@@ -519,24 +647,24 @@ function Join_the_Lab() {
                             <div className='search_bars'>
                                 <div className='scholarship_position' ref={selectRef}>
                                     <div onClick={() => { setPositionOpen(!isPositionOpen); setCountryOpen(false); setDurationOpen(false); }} style={{ cursor: 'pointer' }}>
-                                        Type
+                                        Position
                                         <i className="arrow2 down2"></i>
                                     </div>
-                                    <Select styles={customStyles} isMulti options={scholarship_position} value={scholarship_position.filter(option => position.includes(option.value))} onChange={scholarshipPosition} onMenuOpen={() => setPositionOpen(true)} onMenuClose={() => setPositionOpen(false)} menuIsOpen={isPositionOpen} components={{ Option: InputOption }} />
+                                    <Select styles={customStyles} isMulti options={availablePositions} value={scholarship_position.filter(option => position.includes(option.value))} onChange={scholarshipPosition} onMenuOpen={() => setPositionOpen(true)} onMenuClose={() => setPositionOpen(false)} menuIsOpen={isPositionOpen} components={{ Option: InputOption }} hideSelectedOptions={false} />
                                 </div>
                                 <div className='scholarship_country'>
                                     <div onClick={() => { setCountryOpen(!isCountryOpen); setPositionOpen(false); setDurationOpen(false); }} style={{ cursor: 'pointer' }}>
-                                        Year
+                                        Country
                                         <i className="arrow2 down2"></i>
                                     </div>
-                                    <Select styles={customStyles} isMulti options={scholarship_country} value={scholarship_country.filter(option => country.includes(option.value))} onChange={scholarshipCountry} onMenuOpen={() => setCountryOpen(true)} onMenuClose={() => setCountryOpen(false)} menuIsOpen={isCountryOpen} components={{ Option: InputOption }} />
+                                    <Select styles={customStyles} isMulti options={availableCountries} value={scholarship_country.filter(option => country.includes(option.value))} onChange={scholarshipCountry} onMenuOpen={() => setCountryOpen(true)} onMenuClose={() => setCountryOpen(false)} menuIsOpen={isCountryOpen} components={{ Option: InputOption }} hideSelectedOptions={false} />
                                 </div>
                                 <div className='scholarship_duration'>
                                     <div onClick={() => { setDurationOpen(!isDurationOpen); setPositionOpen(false); setCountryOpen(false); }} style={{ cursor: 'pointer' }}>
-                                        Author
+                                        Duration
                                         <i className="arrow2 down2"></i>
                                     </div>
-                                    <Select styles={customStyles} isMulti options={scholarship_duration} value={scholarship_duration.filter(option => duration.includes(option.value))} onChange={scholarshipDuration} onMenuOpen={() => setDurationOpen(true)} onMenuClose={() => setDurationOpen(false)} menuIsOpen={isDurationOpen} components={{ Option: InputOption }} />
+                                    <Select styles={customStyles} isMulti options={availableDurations} value={scholarship_duration.filter(option => duration.includes(option.value))} onChange={scholarshipDuration} onMenuOpen={() => setDurationOpen(true)} onMenuClose={() => setDurationOpen(false)} menuIsOpen={isDurationOpen} components={{ Option: InputOption }} hideSelectedOptions={false} />
                                 </div>
                                 <div className="HomeButtons">
                                     <Link onClick={Reset}><p id='JoinButton'>Reset</p></Link>
@@ -626,11 +754,11 @@ const customStyles = {
         position: 'absolute',
         top: '10px',
         left: '-75px',
-        width: '250px',
+        width: '300px',
     }),
     option: (base, state) => ({
         ...base,
-        backgroundColor: state.isFocused ? 'lightgreen' : (state.isSelected ? 'rgb(45, 99, 83)' : base.backgroundColor),
+        backgroundColor: state.isFocused ? 'rgb(45, 99, 83)' : (state.isSelected ? 'rgb(45, 99, 83)' : base.backgroundColor),
         ':active': {
             backgroundColor: 'green'
         }
