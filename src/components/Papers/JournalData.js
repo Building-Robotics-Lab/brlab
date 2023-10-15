@@ -48,8 +48,8 @@ const JournalData = [
             {
                 title: "Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems",
                 journal: "Building and Environment",
-                volume: "", issue: "",
-                page: "",
+                volume: "245", issue: "",
+                page: "110904",
                 authors: [
                     { name: "*Iqbal Shah", link: "/profile/Iqbal" },
                     { name: "Siu-Kit Lau" },

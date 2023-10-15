@@ -716,10 +716,10 @@ function ScholarshipItem({ title, link, description }) {
 
     return (
         <li>
-            <b onClick={() => setShowDescription(!showDescription)}>{title} <i className="arrow down"></i></b>
+            <span onClick={() => setShowDescription(!showDescription)}>{title} <i className="arrow down"></i></span>
             {showDescription && (
                 <div style={{ marginLeft: '1.4em', marginBottom: "1rem" }}>
-                    <span dangerouslySetInnerHTML={{ __html: description }}></span> <a href={link} target="_blank" rel="noopener noreferrer">[link]</a>
+                    <span dangerouslySetInnerHTML={{ __html: description }}></span> <a href={link} target="_blank" rel="noopener noreferrer"><b>[link]</b></a>
                 </div>
             )}
         </li>
@@ -760,7 +760,7 @@ const customStyles = {
         ...base,
         backgroundColor: state.isFocused ? 'rgb(45, 99, 83)' : (state.isSelected ? 'rgb(45, 99, 83)' : base.backgroundColor),
         ':active': {
-            backgroundColor: 'green'
+            backgroundColor: 'rgb(45, 99, 83)'
         }
     }),
 };

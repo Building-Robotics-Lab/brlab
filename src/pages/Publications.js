@@ -365,7 +365,7 @@ function Publications() {
     );
 
     const renderNote = () => (
-        <p className='small_note'><i>*denotes an undergraduate, graduate, or postdoctoral scholars' work under Asst Prof Ghahramani</i></p>
+        <p className='small_note'><i>*Denotes an undergraduate's, graduate's, or postdoctoral scholar's work under Asst Prof Ghahramani.</i></p>
     );
 
     const hasPublicationsForYear = (pubData) => {
@@ -380,8 +380,8 @@ function Publications() {
         let allSections = [];
 
         const dataTypes = [
-            { type: JournalData, title: "Peer-reviewed Journal Articles", component: JournalSection, check: pubtype.some(option => option.value === 0) || pubtype.some(option => option.value === 1) },
-            { type: ConferenceData, title: "Peer-reviewed Conference Papers", component: ConferenceSection, check: pubtype.some(option => option.value === 0) || pubtype.some(option => option.value === 2) },
+            { type: JournalData, title: "Peer-Reviewed Journal Articles", component: JournalSection, check: pubtype.some(option => option.value === 0) || pubtype.some(option => option.value === 1) },
+            { type: ConferenceData, title: "Peer-Reviewed Conference Papers", component: ConferenceSection, check: pubtype.some(option => option.value === 0) || pubtype.some(option => option.value === 2) },
             { type: PatentData, title: "Patents", component: PatentSection, check: pubtype.some(option => option.value === 0) || pubtype.some(option => option.value === 3) },
             { type: ThesesData, title: "Theses", component: ThesesSection, check: pubtype.some(option => option.value === 0) || pubtype.some(option => option.value === 4) }
         ];

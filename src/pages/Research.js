@@ -222,7 +222,7 @@ function Research() {
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">
                             <p>Shah, I., Soh, B., Lim, C., Lau, S. K., and Ghahramani, A., 2023. <Link to="/publication/thermal_transfer"><b>Thermal transfer and temperature reductions from shading systems on opaque facades: Quantifying the impacts of influential factors</b></Link>. <i>Energy and Buildings</i>, <i>278</i>, 112604.</p>
-                            <p>Shah, I., Lau, S.K., Sekaran, V., and Ghahramani, A., 2023. <Link to="/publication/porous_plant" ><b>Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems</b></Link>. <i>Building and Environment</i>.</p>
+                            <p>Shah, I., Lau, S.K., Sekaran, V., and Ghahramani, A., 2023. <Link to="/publication/porous_plant" ><b>Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems</b></Link>. <i>Building and Environment</i>, <i>245</i>, 110904.</p>
                         </div>
                     </div>
                     <div className='theme_section' id='theme3_section'>

@@ -121,7 +121,7 @@ function Home() {
 
                 <ResearchSection
                     title="SENSING HUMAN HEALTH AND COMFORT"
-                    text="Our focus on sensing human health and comfort enables us to create smarter buildings that
+                    text="Sensing human health and comfort enables us to create smarter buildings that
                     prioritise the well-being of their occupants while reducing energy consumption and promoting
                     environmental sustainability. Projects include <b><i>adaptive comfort</i></b> modelling,
                     vision-based systems for <b><i>remote physiological measurements</i></b>, and
@@ -153,7 +153,7 @@ function Home() {
                 <ResearchSectionRight
                     title="INTELLIGENT ENVIRONMENTS"
                     imageUrl={FourthResearchImage}
-                    text="Our research investigates the <b><i>democratisation of virtual power plants</b></i> (VPP) for <b><i>optimal monetisation</b></i> and <b><i>grid flexibility</b></i> to empower end-users to participate effectively. By leveraging artificial intelligence (AI), we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into two halves: one explores <b><i>user impacts on VPPs</b></i> and <b><i>behaviour modelling</b></i>, while the other employs <b><i>machine learning for automated energy market participation</b></i>."
+                    text="Our research investigates the <b><i>democratisation of virtual power plants</b></i> (VPP) for <b><i>optimal monetisation</b></i> and <b><i>grid flexibility</b></i> to empower end-users to participate effectively. By leveraging artificial intelligence (AI), we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into two halves: one explores <b><i>user impacts on VPPs</b></i> and <b><i>energy consumption behaviour modelling</b></i>, while the other employs <b><i>machine learning for automated energy market participation</b></i>."
                 />
                 <div className="HomeButtons">
                     <Link to="/research"><p id='JoinButton'>LEARN MORE ABOUT OUR RESEARCH</p></Link>
