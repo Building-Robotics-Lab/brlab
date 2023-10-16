@@ -442,7 +442,10 @@ function JournalSection({ year, publications, className }) {
                 <ul>
                     {publications.map((pub, index) => (
                         <li key={index}>
-                            <h3><Link to={`/publication/${pub.id}`} target="_blank">{pub.title}</Link></h3>
+                            <h3>
+                                {/* <Link to={`/publication/${pub.id}`} target="_blank">{pub.title}</Link> */}
+                                <Link to="/research">{pub.title}</Link>
+                            </h3>
                             <h4>
                                 <i>{pub.journal}</i>
                                 {(pub.journal && (pub.issue || pub.volume || pub.page)) && ', '}
@@ -456,7 +459,8 @@ function JournalSection({ year, publications, className }) {
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
-                                            <Link to={author.link} target="_blank" rel='noopener noreferrer'>{author.name}</Link>
+                                            // <Link to={author.link} target="_blank" rel='noopener noreferrer'>{author.name}</Link>
+                                            <Link to="/research">{author.name}</Link>
                                         ) : (
                                             author.name
                                         )}
