@@ -10,8 +10,7 @@
         rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="description"
-        content="Research Group at the National University of Singapore (NUS) (Asst Prof Ali Ghahramani)." />
+    <meta name="description" content="Research Group at the National University of Singapore (NUS) (Asst Prof Ali Ghahramani)." />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/BRL_2.svg" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Building Robotics Lab</title>
@@ -20,20 +19,13 @@
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!-- <script>
+    <script>
         const { pathname } = window.location;
         if (pathname !== '/') {
             const withoutTrailingSlash = pathname.replace(/\/$/, "");
             window.history.replaceState(null, null, withoutTrailingSlash);
         }
-    </script> -->
-    <script type="text/javascript">
-        // Pathname is the full URL path, including the leading slash
-        var pathname = document.location.pathname;
-        // Redirect to the home page with the path attached
-        window.location.replace("/brlab" + pathname);
     </script>
-
 </body>
 
 </html>
