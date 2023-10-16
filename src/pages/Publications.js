@@ -459,8 +459,8 @@ function JournalSection({ year, publications, className }) {
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
-                                            // <Link to={author.link} target="_blank" rel='noopener noreferrer'>{author.name}</Link>
-                                            <Link to="/research">{author.name}</Link>
+                                            <Link to={author.link} target="_blank">{author.name}</Link>
+                                            // <Link to="/research">{author.name}</Link>
                                         ) : (
                                             author.name
                                         )}
