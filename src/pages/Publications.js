@@ -443,8 +443,8 @@ function JournalSection({ year, publications, className }) {
                     {publications.map((pub, index) => (
                         <li key={index}>
                             <h3>
-                                {/* <Link to={`/publication/${pub.id}`} target="_blank">{pub.title}</Link> */}
-                                <Link to="/research">{pub.title}</Link>
+                                <Link to={`/publication/${pub.id}`} target="_blank">{pub.title}</Link>
+                                {/* <Link to="/research">{pub.title}</Link> */}
                             </h3>
                             <h4>
                                 <i>{pub.journal}</i>

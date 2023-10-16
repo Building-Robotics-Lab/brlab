@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import ScrolltoTop from './components/ScrollToTop';
 import * as d3 from 'd3';
 
@@ -19,7 +19,7 @@ import IndividualPublication from './pages/IndividualPublication';
 function App() {
   return (
     <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <ScrolltoTop />
         <Routes>
           <Route index element={<Home />} />
