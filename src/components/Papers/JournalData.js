@@ -1,9 +1,9 @@
+import IqbalPublication1 from './Publication Images/iqbal_pub1.jpg'
 import IqbalPublication2 from './Publication Images/1-s2.0-S0360132323009319-gr3_lrg.jpg'
 import KatePublication1 from './Publication Images/kate_pub1.png'
 import RiccardoPublication1 from './Publication Images/riccardo_pub1.jpg'
 import AliPublication1 from './Publication Images/1-s2.0-S0360132322010411-gr1_lrg.jpg'
 import KaiPublication1 from './Publication Images/kai_pub1.png'
-import IqbalPublication1 from './Publication Images/iqbal_pub1.jpg'
 import AliPublication2 from './Publication Images/41598_2022_25047_Fig3_HTML.webp'
 import AliPublication3 from './Publication Images/1-s2.0-S0360132322009118-gr1_lrg.jpg'
 import AliPublication4 from './Publication Images/1-s2.0-S221462962200281X-gr2_lrg.jpg'
@@ -70,8 +70,8 @@ const JournalData = [
                     "Green Wall"
                 ],
                 highlights: [
-                    "Porous plant growth form in VGS amplifies cooling effect by up to 1 °C within 800 mm.",
-                    "Negative VGS façade heat flux of −2.32 W/m2 achieved with porous plant growth form.",
+                    "Porous plant growth form in VGS amplifies cooling effect by up to 1 °C within 800 mm.",
+                    "Negative VGS façade heat flux of -2.32 W/m2 achieved with porous plant growth form.",
                     "16% higher rate of evaporative cooling from growing media found in porous VGS.",
                     "Fully formed VGS crucial for optimal cooling and heat gain reduction.",
                     "VGS cooling is driven by complex mechanisms, beyond the mere effects of shading."
