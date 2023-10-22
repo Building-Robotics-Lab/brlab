@@ -108,7 +108,7 @@ function Home() {
                     </video>
                 </div>
                 <div className="first_section2">
-                    <h2><b>Our mission at the Building Robotics Lab is to create a sustainable future by developing innovative solutions for building energy efficiency and human-building interaction.</b></h2>
+                    <h2><b>Our mission at the Building Robotics Lab is to create a sustainable future by developing innovative solutions to advance building energy efficiency and human-building interaction.</b></h2>
                 </div>
             </Container>
 
