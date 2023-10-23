@@ -135,8 +135,8 @@ function Home() {
                     text="Human-centred AI puts people at the forefront of technology development, ensuring that AI
                     systems are designed to meet human needs and improve the quality of life for individuals and
                     society as a whole. Projects include <b><i>integrating</i></b> and <b><i>optimising personal
-                    comfort system devices</i></b> into the control loop of <b><i>HVAC systems</i></b>,developing 
-                    <b><i>advanced sensors</i></b>, <b><i>ontology automation,</i></b> and a<b><i>semantically 
+                    comfort system devices</i></b> into the control loop of <b><i>HVAC systems</i></b>, developing 
+                    <b><i>advanced sensors</i></b>, <b><i>ontology automation,</i></b> and a <b><i>semantically 
                     connected digital twin</i></b>."
                 />
 

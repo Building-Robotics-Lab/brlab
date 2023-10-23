@@ -19,7 +19,7 @@ const TeamGrid = ({ members }) => (
                     <p>{member.skills}</p>
                 </div>
                 <div className="HomeButtons" id='profile_buttons'>
-                    <Link to={`/profile/${member.link}`} target='_blank'><p id='JoinButton'>Learn More</p></Link>
+                    <Link to={`/profile/${member.link}`} target='_blank'><p id='JoinButton'>Learn more</p></Link>
                 </div>
             </div>
         ))}

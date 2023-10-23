@@ -73,13 +73,6 @@ function Our_Team() {
             link: 'Kelly'
         },
         {
-            name: 'Ilyas Dawoodjee',
-            role: 'Research Engineer',
-            skills: 'Machine Vision; Robotics; Machine Learning; Automation',
-            imgSrc: IlyasPic,
-            link: 'Ilyas'
-        },
-        {
             name: 'HU Xinhao',
             role: 'Visiting PhD Candidate (HNU)',
             skills: 'Indoor Thermal Comfort; Indoor Environmental Quality; Building Energy Conservation',
@@ -118,8 +111,15 @@ function Our_Team() {
 
     const alumnis = [
         {
+            name: 'Ilyas Dawoodjee',
+            role: 'MSc Student (UM)',
+            skills: 'Machine Vision; Robotics; Machine Learning; Automation',
+            imgSrc: IlyasPic,
+            link: 'Ilyas'
+        },
+        {
             name: 'QI Xuanning',
-            role: 'Visiting PhD Candidate (HIT)',
+            role: 'PhD Candidate (HIT)',
             skills: 'Computational Design; Daylight Design; Occupant Behaviour; Visual Cognition',
             imgSrc: MichellePic,
             link: 'Michelle'

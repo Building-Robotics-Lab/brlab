@@ -31,6 +31,7 @@
 .IndividualProfile .first_section .profile_name h3 {
     font-size: 1.75rem;
     font-weight: 500;
+    margin-bottom: .5rem;
 }
 
 /* Second Section */

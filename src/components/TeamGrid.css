@@ -23,7 +23,7 @@
 .Our_Team .team-grid>.item {
     outline: 2px solid black;
     border-radius: 2rem;
-    box-shadow: 10px 10px 8px #888888;
+   box-shadow: 10px 10px 8px #888888;
     background-color: white;
     display: flex;
     flex-direction: column;

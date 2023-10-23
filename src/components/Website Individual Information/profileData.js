@@ -249,19 +249,22 @@ const profiles = [
         ProfileLink: "/profile/Ilyas",
         ProfilePic: IlyasPic,
         Name: 'Ilyas Dawoodjee',
-        Position: 'Research Engineer',
-        Biography: 'Ilyas Dawoodjee is a Research Engineer in the Building Robotics Lab at the National University of Singapore (NUS). His current area of research involves the detection of physiological measurements through machine vision. Some of his previous projects include object detection, data classification, image segmentation, and image classification. He is well-versed in multiple aspects of engineering ranging from CAD/CAM, SPICE simulations, sensors & actuators, control systems, microcontrollers, and PLC, with hands-on experience in them. However, his main passion is robotics integrated with machine vision and machine learning. He is an avid programmer who spends most of his free time coding and is always eager to learn new programming techniques and technologies. Outside of work, he likes to play games and is a fan of movies and TV series. He is a huge fan of educational YouTubers such as Veritasium, StuffMadeHere, 3Blue1Brown, VSauce, C.G.P. Grey, Minute Physics, and more.',
+        Position: 'MSc Mechanical Engineering Student at University of Manitoba',
+        Position2: 'BRL Research Engineer (April 2022 - December 2023)',
+        Biography: 'Ilyas Dawoodjee is currently a MSc Mechanical Engineering student at University of Manitoba where he researches in the Intelligent Digital Manufacturing Laboratory (IDML). From April 2022 to December 2023, he served as a Research Engineer in the Building Robotics Lab. His area of research involved the detection of physiological measurements through machine vision. Some of his previous projects include object detection, data classification, image segmentation, and image classification. He is well-versed in multiple aspects of engineering ranging from CAD/CAM, SPICE simulations, sensors & actuators, control systems, microcontrollers, and PLC, with hands-on experience in them. However, his main passion is robotics integrated with machine vision and machine learning. He is an avid programmer who spends most of his free time coding and is always eager to learn new programming techniques and technologies. Outside of work, he likes to play games and is a fan of movies and TV series. He is a huge fan of educational YouTubers such as Veritasium, StuffMadeHere, 3Blue1Brown, VSauce, C.G.P. Grey, Minute Physics, and more.',
         Education: [
+            'MSc, University of Manitoba, Mechanical Engineering (current)',
             'BEng (<i>First Class Honours w/ Distinction</i>), Asia Pacific University (APU), Mechatronics Engineering (2022)'
         ],
         Awards: [
+            'International Graduate Student Entrance Scholarship (IGSES), University of Manitoba (current)',
             'AI4S Program Inception Recipient, Asia Pacific University (2022)',
             'Valedictorian, Asia Pacific University (Class of 2022)',
             'Outstanding Achievement Award, Asia Pacific University (2022)'
         ],
         Featured_Publications: [],
         Contacts: [
-            { href: "tel:+6586869527", icon: faPhone, text: "+65 8686 9527" },
+            /*{ href: "tel:+6586869527", icon: faPhone, text: "+65 8686 9527" },*/
             { href: "mailto:ilyasd01@nus.edu.sg", icon: faEnvelope, text: "ilyasd01@nus.edu.sg" },
         ],
         Links: [
@@ -474,8 +477,9 @@ const profiles = [
         ProfileLink: "/profile/Michelle",
         ProfilePic: MichellePic,
         Name: 'QI Xuanning',
-        Position: 'Visiting PhD Candidate from Harbin Institute of Technology',
-        Biography: 'QI Xuanning is currently pursuing a doctoral degree in architecture at the Harbin Institute of Technology, and is a visiting PhD candidate at the National University of Singapore. She is also a student member of the Architectural Society of China. In her academic career, she has published five papers in academic conferences and journals, and has contributed to the compilation of ‘Unified Standard for Civil Building Design Illustrations’ (20J813). In addition, she has been granted three invention patents and one utility model patent. QI Xuanning has also participated in the design of over ten architectural projects and was recognized with the third-place prize in the architectural survey and design competition in Heilongjiang Province in 2022. Her research interests include computational design, daylight design, occupant behaviour, and visual cognition. In her free time, QI Xuanning enjoys exploring new cities and experiencing different cultures. She also likes to engage in outdoor activities, such as hiking and cycling, which inspire her to think creatively about the relationship between architecture and the natural environment.',
+        Position: 'PhD Candidate at Harbin Insitute of Technology',
+        Position2: 'BRL Visiting PhD Candidate from Harbin Institute of Technology (August 2022 - August 2023)',
+        Biography: 'QI Xuanning is currently pursuing a doctoral degree in architecture at the Harbin Institute of Technology, and was a visiting PhD candidate at the National University of Singapore from August 2022 to August 2023. She is also a student member of the Architectural Society of China. In her academic career, she has published five papers in academic conferences and journals, and has contributed to the compilation of ‘Unified Standard for Civil Building Design Illustrations’ (20J813). In addition, she has been granted three invention patents and one utility model patent. QI Xuanning has also participated in the design of over ten architectural projects and was recognized with the third-place prize in the architectural survey and design competition in Heilongjiang Province in 2022. Her research interests include computational design, daylight design, occupant behaviour, and visual cognition. In her free time, QI Xuanning enjoys exploring new cities and experiencing different cultures. She also likes to engage in outdoor activities, such as hiking and cycling, which inspire her to think creatively about the relationship between architecture and the natural environment.',
         Education: [
             'PhD, Harbin Institute of Technology, Architecture Design and Theory (current)',
             'BArch, Central South University, Architecture Design and Theory (2018)'
@@ -500,8 +504,7 @@ const profiles = [
             ),
         ],
         Contacts: [
-            { href: "tel:+6580446551", icon: faPhone, text: "+65 8044 6551" },
-            { href: "mailto:r.talami@nus.edu.sg", icon: faEnvelope, text: "r.talami@nus.edu.sg" },
+            { href: "mailto:r.talami@nus.edu.sg", icon: faEnvelope, text: "michelle@hit.edu.cn" },
         ],
         Links: [
             { href: MichelleCV, icon: faUser, text: 'CV' },

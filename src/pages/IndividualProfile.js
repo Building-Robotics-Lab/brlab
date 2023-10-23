@@ -30,7 +30,7 @@ function IndividualProfile() {
         return <div>Profile not found</div>;
     }
 
-    const { ProfilePic, Name, Position, Biography, Education, Awards, Featured_Publications, Contacts, Links, Interests } = profile;
+    const { ProfilePic, Name, Position, Position2, Biography, Education, Awards, Featured_Publications, Contacts, Links, Interests } = profile;
 
     return (
         <div className='IndividualProfile'>
@@ -44,6 +44,7 @@ function IndividualProfile() {
                     <div className="profile_name">
                         <h1><b>{Name}</b></h1>
                         <h3>{Position}</h3>
+                        <h3>{Position2}</h3>
                     </div>
                 </div>
             </Container>
