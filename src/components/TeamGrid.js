@@ -7,18 +7,19 @@ const TeamGrid = ({ members }) => (
         {members.map((member, index) => (
             <div className={`item item-${index + 1}`} key={index}>
                 <Link to={`/profile/${member.link}`}>
-                {/* <a href={member.link} target="_blank" className={member.name.split(' ')[0]}> */}
                     <div className="ProfilePic">
                         <img src={member.imgSrc} alt={member.name} />
                     </div>
-                {/* </a> */}
                 </Link>
                 <div className="individual-info">
-                    <a href={member.link} target="_blank" rel="noopener noreferrer">
+                    <Link to={`/profile/${member.link}`} target='_blank'>
                         <h4>{member.name}</h4>
-                    </a>
+                    </Link>
                     <h6><b>{member.role}</b></h6>
                     <p>{member.skills}</p>
+                </div>
+                <div className="HomeButtons" id='profile_buttons'>
+                    <Link to={`/profile/${member.link}`} target='_blank'><p id='JoinButton'>Learn More</p></Link>
                 </div>
             </div>
         ))}

@@ -25,6 +25,8 @@
     border-radius: 2rem;
     box-shadow: 10px 10px 8px #888888;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .Our_Team .team-grid>.item:hover {
@@ -45,7 +47,7 @@
     text-align: center;
     margin-top: 1.5rem;
     width: 80%;
-    margin: auto;
+    margin: 0px auto;
 }
 
 .Our_Team .team-grid>*>.individual-info>a {
@@ -54,7 +56,7 @@
 }
 
 .Our_Team .team-grid>*>.individual-info>p {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .Our_Team .team-grid .ProfilePic img {
@@ -70,4 +72,10 @@
 .Our_Team .team-grid img:hover,
 .Our_Team .team-grid h3:hover {
     scale: 1.1;
+}
+
+#profile_buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
 }
