@@ -570,7 +570,7 @@ function Join_the_Lab() {
             <Container>
                 <div className="first_section">
                     <div className="title_section">
-                        <h3><b>Are you interested in building robotics, human-building interaction, smart buildings, building energy efficiency, and/or building simulation?</b></h3>
+                        <h3><b>Are you interested in building robotics, human-building interaction, smart buildings, building energy efficiency, or building simulation?</b></h3>
                         <h1><b>Become the newest member of the Building Robotics Lab!</b></h1>
                     </div>
                     <div className="lab_bio">
@@ -626,7 +626,7 @@ function Join_the_Lab() {
                             <h4><b>Graduate Students<br />Undergraduate Students</b></h4>
                         </div>
                         <div className="position_information">
-                            <p>In certain scenarios, I will also consider current NUS BSc, BEng, BArch, MSc, MEng, and MArch students to join the Lab for a researcher position. First, it is important to become acquainted with myself by taking one of my classes: <b>PF3502</b> (<a href="https://nusmods.com/modules/PF3502/smart-facilities" target="_blank"><b>Smart Facilities</b></a>) or <b>BPS5226</b> (<a href="https://nusmods.com/modules/BPS5226/smart-buildings-and-facilities" target="_blank"><b>Smart Buildings and Facilities</b></a>), or conducting your final year project with me. Then, after completing at least one of these options, you are welcome to reach out to me at <a href="mailto:ghahramani@nus.edu.sg"><b>ghahramani@nus.edu.sg</b></a> to discuss if I have any current research opportunities for BSc or MSc students, either for academic credit or paid employment.</p>
+                            <p>In certain scenarios, I will also consider current NUS BSc, BEng, BArch, MSc, MEng, and MArch students to join the Lab for a researcher position. First, it is important to become acquainted with myself by taking one of my classes: <b>PF3502</b> (<a href="https://nusmods.com/modules/PF3502/smart-facilities" target="_blank"><b>Smart Facilities</b></a>) or <b>BPS5226</b> (<a href="https://nusmods.com/modules/BPS5226/smart-buildings-and-facilities" target="_blank"><b>Smart Buildings and Facilities</b></a>), or conducting your final year project with me. Then, after completing at least one of these options, you are welcome to reach out to me at <a href="mailto:ghahramani@nus.edu.sg"><b>ghahramani@nus.edu.sg</b></a> to discuss if I have any current research opportunities for undergraduate or graduate students, either for academic credit or paid employment.</p>
                         </div>
                     </div>
 

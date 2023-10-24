@@ -146,6 +146,7 @@
     color: rgb(45, 99, 83);
     font-size: 125px;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .Home .meet_our_team_text,
@@ -195,7 +196,8 @@
 
 .Home .fifth_section_Title h2 {
     font-size: 2rem;
-    padding-bottom: 1.65vmax
+    padding-bottom: 1.65vmax;
+    margin-bottom: 1rem;
 }
 
 .Home .fifth_section {

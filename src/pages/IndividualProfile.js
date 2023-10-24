@@ -39,7 +39,7 @@ function IndividualProfile() {
             <Container>
                 <div className="first_section">
                     <div className="profile_pic">
-                        <img src={ProfilePic} alt="" />
+                        <img src={ProfilePic} alt={Name} />
                     </div>
                     <div className="profile_name">
                         <h1><b>{Name}</b></h1>

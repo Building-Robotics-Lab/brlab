@@ -32,7 +32,7 @@ const Footer = () => {
                             </div>
                             <div className="logo-buttons-wrapper">
                                 <a href="https://www.nus.edu.sg/" target="_blank">
-                                    <img src={NUSLogo} className='NUSLogo' />
+                                    <img src={NUSLogo} alt="Logo of the National University of Singapore" className='NUSLogo' />
                                 </a>
                                 <p>
                                     <a className="bi-envelope" id="footer_Button" href="mailto:ghahramani@nus.edu.sg"></a>

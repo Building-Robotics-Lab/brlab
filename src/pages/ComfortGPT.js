@@ -662,7 +662,7 @@ function ComfortGPT() {
                         </ul>
                     </div>
                     <div className="guidelines_image">
-                        <img src={ExampleImage} alt="" />
+                        <img src={ExampleImage} alt="An example of what the interactive tool above should look like when being used." />
                     </div>
                 </div>
             </Container>

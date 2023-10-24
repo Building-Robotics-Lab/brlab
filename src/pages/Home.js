@@ -173,7 +173,7 @@ function Home() {
                                 We are a team of researchers with diverse backgrounds, enabling us to effectively innovate. Our
                                 goal is to create smart buildings that enhance the quality of life for occupants and contribute
                                 to a greener planet. Our lab members come from various academic backgrounds and cultures, which
-                                contributes to a collaborative and dynamic environment. We believe in fostering a culture of
+                                contribute to a collaborative and dynamic environment. We believe in fostering a culture of
                                 open communication, mutual respect, and a strong work ethic.
                             </p>
                             <div className="HomeButtons">

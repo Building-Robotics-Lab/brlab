@@ -103,7 +103,7 @@ function IndividualPublication() {
                             )}
                         </div>
                         <div className="image">
-                            <img src={publication.display_image} alt="" />
+                            <img src={publication.display_image} alt="A corresponding image of the publication of either a graph, table, simulation, or physical experiment." />
                         </div>
                     </div>
                 </Container>

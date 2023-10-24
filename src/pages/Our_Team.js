@@ -135,7 +135,7 @@ function Our_Team() {
                 <div className="first_section" id='prof_profile'>
                     <div className="prof_data">
                         <div className='prof_pic'>
-                            <img src={ProfPic} alt="" />
+                            <img src={ProfPic} alt="Ali Ghahramani, PhD" />
                         </div>
                         <div className="HomeButtons">
                             <a href={ProfCV} target="_blank">
@@ -187,7 +187,7 @@ function Our_Team() {
             </Container>
 
             <Container useOrange={true}>
-                <img className='LadImage1' src={LabImage1} alt="" />
+                <img className='LadImage1' src={LabImage1} alt="All the current members of the lab together." />
             </Container>
 
             <Container>

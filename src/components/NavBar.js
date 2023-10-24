@@ -47,7 +47,7 @@ function NavBar() {
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="left">
-            <img src={Logo} alt="BRLab Logo" className='logo' />
+            <img src={Logo} alt="Logo for the NUS Building Robotics Laboratory" className='logo' />
             <p>Building Robotics Laboratory</p>
           </Link>
           <div className="right">

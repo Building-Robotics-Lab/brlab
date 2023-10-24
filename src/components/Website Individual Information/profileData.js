@@ -259,7 +259,7 @@ const profiles = [
         Awards: [
             'International Graduate Student Entrance Scholarship (IGSES), University of Manitoba (current)',
             'AI4S Program Inception Recipient, Asia Pacific University (2022)',
-            'Valedictorian, Asia Pacific University (Class of 2022)',
+            'Valedictorian, Asia Pacific University (2022)',
             'Outstanding Achievement Award, Asia Pacific University (2022)'
         ],
         Featured_Publications: [],
