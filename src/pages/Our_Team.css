@@ -55,7 +55,7 @@
 
 .Our_Team .prof_bio h1 {
     color: rgb(45, 99, 83);
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
     font-size: 2.5rem;
 }
 
@@ -66,7 +66,7 @@
 .Our_Team .prof_bio p {
     text-align: justify;
     text-justify: inter-word;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     font-size: 1rem;
     line-height: 1.5;
 }

@@ -173,7 +173,7 @@ function Our_Team() {
                         <h2><b>Meet the team!</b></h2>
                     </div>
                     <div class="position">
-                        <h4><b>Full-time Researchers</b></h4>
+                        <h4><b>Full-Time Researchers</b></h4>
                     </div>
                     <TeamGrid members={teamMembers} />
                 </div>
