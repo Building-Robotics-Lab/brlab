@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/brlab/static/css/main.f9381892.css",
-    "main.js": "/brlab/static/js/main.86a7fa07.js",
+    "main.js": "/brlab/static/js/main.7a926e46.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
     "static/media/Iqbal_DT2.png": "/brlab/static/media/Iqbal_DT2.73b332b29a8b111f14a7.png",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
-    "static/media/image.jpg": "/brlab/static/media/image.462eb886cb4ba7ca3c77.jpg",
+    "static/media/image.jpg": "/brlab/static/media/image.40e9dddedda50b4de1b7.jpg",
     "static/media/1-s2.0-S-gr2_lrg.jpg": "/brlab/static/media/1-s2.0-S0306261915016888-gr2_lrg.6d077d348833c7a56185.jpg",
     "static/media/1-s2.0-S-gr1_lrg.jpg": "/brlab/static/media/1-s2.0-S0360132318302518-gr1_lrg.b499839525f32d8b4461.jpg",
     "static/media/figure1.jpg": "/brlab/static/media/figure1.0da7989ea1f76cbd3d8a.jpg",
@@ -61,10 +61,10 @@
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
     "main.f9381892.css.map": "/brlab/static/css/main.f9381892.css.map",
-    "main.86a7fa07.js.map": "/brlab/static/js/main.86a7fa07.js.map"
+    "main.7a926e46.js.map": "/brlab/static/js/main.7a926e46.js.map"
   },
   "entrypoints": [
     "static/css/main.f9381892.css",
-    "static/js/main.86a7fa07.js"
+    "static/js/main.7a926e46.js"
   ]
 }
