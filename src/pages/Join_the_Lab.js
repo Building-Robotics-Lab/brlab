@@ -579,7 +579,7 @@ function Join_the_Lab() {
                         <p>During your tenure, you will have the opportunity to grow your personal and professional skills while working towards shared research goals.</p>
                     </div>
                     <div className="HomeButtons">
-                        <Link to="/research"><p id='JoinButton'>CLICK HERE FOR INDUSTRY PARTNERSHIP</p></Link>
+                        <Link to="/research"><p id='JoinButton'>CLICK HERE FOR INDUSTRY PARTNERSHIPS</p></Link>
                     </div>
                 </div>
             </Container>
