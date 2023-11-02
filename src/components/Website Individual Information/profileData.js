@@ -265,7 +265,7 @@ const profiles = [
         Featured_Publications: [],
         Contacts: [
             /*{ href: "tel:+6586869527", icon: faPhone, text: "+65 8686 9527" },*/
-            { href: "mailto:ilyasd01@nus.edu.sg", icon: faEnvelope, text: "ilyasd01@nus.edu.sg" },
+            { href: "mailto:dawoodji@myumanitoba.ca", icon: faEnvelope, text: "dawoodji@myumanitoba.ca" },
         ],
         Links: [
             { href: IlyasCV, icon: faUser, text: 'CV' },
