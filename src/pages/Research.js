@@ -45,7 +45,7 @@ function Research() {
             <Container>
                 <div className="first_section">
                     <div className="title_section">
-                        <h1><b>Research Initiatives</b></h1>
+                        <h1><b>Research Thrusts</b></h1>
                         <h3><b>We strive to integrate robotics and human-centred artificial intelligence into the built environment in an effort to improve energy efficiency and occupant well-being throughout the existing and forthcoming building stock.</b></h3>
                         <h5>Are you an industry partner on a similar mission or have an idea for a project we could collaborate on for smart buildings and intelligent environments?</h5>
                     </div>
@@ -72,7 +72,7 @@ function Research() {
                         </a>
                     </div>
                     <div className="HomeButtons">
-                        <Link to="mailto:ghahramani@nus.edu.sg" target='_blank'><p id='JoinButton'>EMAIL THE PI</p></Link>
+                        <Link to="mailto:ghahramani@nus.edu.sg" target='_blank'><p id='JoinButton'>CONTACT US</p></Link>
                     </div>
                 </div>
             </Container>
@@ -80,7 +80,7 @@ function Research() {
             <Container useOrange={true}>
                 <div className="second_section">
                     <div className="title_section">
-                        <h2><b>Themes in our work</b></h2>
+                        <h2><b>Our Work</b></h2>
                     </div>
                     <div className="themes">
                         <div class="each_theme">

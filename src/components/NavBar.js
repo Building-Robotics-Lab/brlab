@@ -58,7 +58,7 @@ function NavBar() {
               </p>
               {(isDropdownOpen) && (
                 <div className="dropdown-content">
-                  <Link to="/research"><p>Initiatives</p></Link>
+                  <Link to="/research"><p>Themes</p></Link>
                   <Link to="/comfortgpt"><p>ComfortGPT</p></Link>
                   <Link to="/otst"><p>Optimal Temperature Setpoint Tool</p></Link>
                   <Link to="https://github.com/Building-Robotics-Lab"><p>GitHub</p></Link>
