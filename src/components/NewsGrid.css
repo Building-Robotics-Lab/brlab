@@ -12,8 +12,6 @@
 }
 
 .NewsGrid .NewsSection {
-    /* display: grid;
-    grid-template-rows: 1fr auto; */
     border-radius: 1rem;
 }
 
@@ -86,3 +84,105 @@
     }
 }
  */
+
+@media screen and (max-width: 1025px) {
+    .NewsGrid {
+        gap: calc(0.7 * 4rem);
+        grid-template-columns: repeat(3, calc(0.7 * 1fr));
+    }
+
+    .NewsGrid .NewsPic img {
+        height: calc(0.7 * 300px);
+        margin-bottom: calc(0.7 * 1.5rem);
+    }
+
+    .NewsGrid .NewsSection {
+        border-radius: calc(0.7 * 1rem);
+    }
+
+    .NewsGrid .NewsPic .date {
+        font-size: x-small;
+        margin-bottom: calc(0.7 * 0.25rem);
+    }
+
+    .NewsGrid .NewsPic h4 {
+        font-size: calc(0.7 * 1.5rem);
+        margin-bottom: calc(0.7 * 0.75rem);
+    }
+
+    .NewsGrid .NewsInformation .content {
+        font-size: calc(0.7 * 1rem);
+    }
+
+    .NewsGrid .NewsInformation .content a:hover {
+        border-radius: calc(0.7 * 0.25rem);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .NewsGrid {
+        gap: calc(0.4 * 4rem);
+        grid-template-columns: repeat(3, calc(0.4 * 1fr));
+    }
+
+    .NewsGrid .NewsPic img {
+        height: calc(0.4 * 300px);
+        margin-bottom: calc(0.4 * 1.5rem);
+    }
+
+    .NewsGrid .NewsSection {
+        border-radius: calc(0.4 * 1rem);
+    }
+
+    .NewsGrid .NewsPic .date {
+        font-size: 0.4rem;
+        margin-bottom: calc(0.4 * 0.25rem);
+    }
+
+    .NewsGrid .NewsPic h4 {
+        font-size: calc(0.4 * 1.5rem);
+        margin-bottom: calc(0.4 * 0.45rem);
+    }
+
+    .NewsGrid .NewsInformation .content {
+        font-size: calc(0.4 * 1rem);
+    }
+
+    .NewsGrid .NewsInformation .content a:hover {
+        border-radius: calc(0.4 * 0.25rem);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .NewsGrid {
+        gap: calc(0.3 * 4rem);
+        grid-template-columns: repeat(3, calc(0.3 * 1fr));
+    }
+
+    .NewsGrid .NewsPic img {
+        height: calc(0.3 * 300px);
+        margin-bottom: calc(0.3 * 1.5rem);
+    }
+
+    .NewsGrid .NewsSection {
+        border-radius: calc(0.3 * 1rem);
+    }
+
+    .NewsGrid .NewsPic .date {
+        font-size: 0.3rem;
+        margin-bottom: calc(0.3 * 0.25rem);
+    }
+
+    .NewsGrid .NewsPic h4 {
+        font-size: calc(0.3 * 1.5rem);
+        margin-bottom: calc(0.3 * 0.35rem);
+    }
+
+    .NewsGrid .NewsInformation .content {
+        font-size: calc(0.3 * 1rem);
+    }
+
+    .NewsGrid .NewsInformation .content a:hover {
+        border-radius: calc(0.3 * 0.25rem);
+    }
+}

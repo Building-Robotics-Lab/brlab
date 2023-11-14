@@ -90,7 +90,7 @@
 .Our_Team .LadImage1 {
     width: 100%;
     border-radius: 1rem;
-    
+
 }
 
 /* Fifth Section */
@@ -115,4 +115,208 @@
 
 .Our_Team .fifth_section .HomeButtons p {
     margin-bottom: 0px !important;
+}
+
+@media screen and (max-width: 1025px) {
+    /* First Section */
+
+    .Our_Team .prof_data img {
+        margin-bottom: calc(0.7 * 1rem);
+        width: 65%;
+        height: 65%;
+    }
+
+    .Our_Team .prof_data .prof_links {
+        margin-top: calc(0.7 * 1rem);
+    }
+
+    .Our_Team .prof_data .prof_links>* {
+        padding: 0px calc(0.7 * 10px) !important;
+        font-size: calc(0.7 * 20px) !important;
+    }
+
+    .Our_Team .prof_bio h3 {
+        margin-bottom: calc(0.7 * 0.5rem);
+        font-size: calc(0.7 * 1.75rem);
+    }
+
+    .Our_Team .prof_bio h1 {
+        margin-bottom: calc(0.7 * 1rem);
+        font-size: calc(0.7 * 2.5rem);
+    }
+
+    .Our_Team .prof_bio h5 {
+        font-size: calc(0.7 * 1.25rem);
+    }
+
+    .Our_Team .prof_bio p {
+        margin-top: calc(0.7 * 2rem);
+        font-size: calc(0.7 * 1rem);
+    }
+
+    /* Second and Third Section */
+
+    .Our_Team .meet_team {
+        font-size: calc(0.7 * 1.5rem);
+        margin-bottom: calc(0.7 * 3.3vmax);
+    }
+
+    .Our_Team .position {
+        font-size: calc(0.7 * 1.5rem);
+        margin-bottom: calc(1 * 1.65vmax);
+    }
+
+    /* Fourth Section */
+
+    .Our_Team .LadImage1 {
+        border-radius: calc(0.7 * 1rem);
+    }
+
+    /* Fifth Section */
+
+    .Our_Team .fifth_section h3 {
+        font-size: calc(0.7 * 1.75rem);
+        margin: 0rem calc(0.7 * 2.5rem) calc(0.7 * 2.5rem) calc(0.7 * 2.5rem);
+    }
+
+    .Our_Team .fifth_section p {
+        font-size: calc(0.7 * 1rem);
+        margin: 0rem calc(0.7 * 10rem) calc(0.7 * 2rem) calc(0.7 * 10rem);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    /* First Section */
+
+    .Our_Team .prof_data img {
+        margin-bottom: calc(0.4 * 1rem);
+        width: 65%;
+        height: 65%;
+    }
+
+    .Our_Team .prof_data .prof_links {
+        margin-top: calc(0.4 * 1rem);
+    }
+
+    .Our_Team .prof_data .prof_links>* {
+        padding: 0px calc(0.4 * 10px) !important;
+        font-size: calc(0.4 * 20px) !important;
+    }
+
+    .Our_Team .prof_bio h3 {
+        margin-bottom: calc(0.4 * 0.5rem);
+        font-size: calc(0.4 * 1.75rem);
+    }
+
+    .Our_Team .prof_bio h1 {
+        margin-bottom: calc(0.4 * 1rem);
+        font-size: calc(0.4 * 2.5rem);
+    }
+
+    .Our_Team .prof_bio h5 {
+        font-size: calc(0.4 * 1.25rem);
+    }
+
+    .Our_Team .prof_bio p {
+        margin-top: calc(0.4 * 2rem);
+        font-size: calc(0.4 * 1rem);
+    }
+
+    /* Second and Third Section */
+
+    .Our_Team .meet_team {
+        font-size: calc(0.4 * 1.5rem);
+        margin-bottom: calc(0.4 * 3.3vmax);
+    }
+
+    .Our_Team .position {
+        font-size: calc(0.4 * 1.5rem);
+        margin-bottom: calc(1 * 1.65vmax);
+    }
+
+    /* Fourth Section */
+
+    .Our_Team .LadImage1 {
+        border-radius: calc(0.4 * 1rem);
+    }
+
+    /* Fifth Section */
+
+    .Our_Team .fifth_section h3 {
+        font-size: calc(0.4 * 1.75rem);
+        margin: 0rem calc(0.4 * 2.5rem) calc(0.4 * 2.5rem) calc(0.4 * 2.5rem);
+    }
+
+    .Our_Team .fifth_section p {
+        font-size: calc(0.4 * 1rem);
+        margin: 0rem calc(0.4 * 10rem) calc(0.4 * 2rem) calc(0.4 * 10rem);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    /* First Section */
+
+    .Our_Team .prof_data img {
+        margin-bottom: calc(0.3 * 1rem);
+        width: 65%;
+        height: 65%;
+    }
+
+    .Our_Team .prof_data .prof_links {
+        margin-top: calc(0.3 * 1rem);
+    }
+
+    .Our_Team .prof_data .prof_links>* {
+        padding: 0px calc(0.3 * 10px) !important;
+        font-size: calc(0.3 * 20px) !important;
+    }
+
+    .Our_Team .prof_bio h3 {
+        margin-bottom: calc(0.3 * 0.5rem);
+        font-size: calc(0.3 * 1.75rem);
+    }
+
+    .Our_Team .prof_bio h1 {
+        margin-bottom: calc(0.3 * 1rem);
+        font-size: calc(0.3 * 2.5rem);
+    }
+
+    .Our_Team .prof_bio h5 {
+        font-size: calc(0.3 * 1.25rem);
+    }
+
+    .Our_Team .prof_bio p {
+        margin-top: calc(0.3 * 2rem);
+        font-size: calc(0.3 * 1rem);
+    }
+
+    /* Second and Third Section */
+
+    .Our_Team .meet_team {
+        font-size: calc(0.3 * 1.5rem);
+        margin-bottom: calc(0.3 * 3.3vmax);
+    }
+
+    .Our_Team .position {
+        font-size: calc(0.3 * 1.5rem);
+        margin-bottom: calc(1 * 1.65vmax);
+    }
+
+    /* Fourth Section */
+
+    .Our_Team .LadImage1 {
+        border-radius: calc(0.3 * 1rem);
+    }
+
+    /* Fifth Section */
+
+    .Our_Team .fifth_section h3 {
+        font-size: calc(0.3 * 1.75rem);
+        margin: 0rem calc(0.3 * 2.5rem) calc(0.3 * 2.5rem) calc(0.3 * 2.5rem);
+    }
+
+    .Our_Team .fifth_section p {
+        font-size: calc(0.3 * 1rem);
+        margin: 0rem calc(0.3 * 10rem) calc(0.3 * 2rem) calc(0.3 * 10rem);
+    }
 }

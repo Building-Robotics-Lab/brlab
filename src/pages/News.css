@@ -22,3 +22,35 @@
     color: rgb(45, 99, 83);
 }
 
+@media screen and (max-width: 1025px) {
+    .News .first_section h1 {
+        margin-bottom: calc(0.7 * 2rem);
+        font-size: calc(0.7 * 2.5rem);
+    }
+
+    .News .first_section h3 {
+        font-size: calc(0.7 * 1.75rem);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .News .first_section h1 {
+        margin-bottom: calc(0.4 * 2rem);
+        font-size: calc(0.4 * 2.5rem);
+    }
+
+    .News .first_section h3 {
+        font-size: calc(0.4 * 1.75rem);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .News .first_section h1 {
+        margin-bottom: calc(0.3 * 2rem);
+        font-size: calc(0.3 * 2.5rem);
+    }
+
+    .News .first_section h3 {
+        font-size: calc(0.3 * 1.75rem);
+    }
+}

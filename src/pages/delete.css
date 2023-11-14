@@ -1,0 +1,55 @@
+.Our_Team .team-grid h4 {
+    font-size: calc(0.3 * 1.5rem);
+    margin-bottom: calc(0.3 * 0.5rem);
+}
+
+.Our_Team .team-grid h6 {
+    font-size: calc(0.3 * 1rem);
+    margin-bottom: calc(0.3 * 0.5rem);
+}
+
+.Our_Team .team-grid p {
+    font-size: calc(0.3 * 1rem);
+    margin-bottom: calc(0.3 * 3rem);
+}
+
+.Our_Team .team-grid {
+    gap: calc(0.3 * 2.25rem);
+    grid-template-columns: repeat(3, calc(0.3 * 1fr));
+}
+
+.Our_Team .team-grid>.item {
+    outline: calc(0.3 * 2px) solid black;
+    border-radius: calc(0.3 * 2rem);
+    box-shadow: calc(0.3 * 10px) calc(0.3 * 10px) calc(0.3 * 8px) #888888;
+}
+
+.Our_Team .team-grid>.item:hover {
+    outline: calc(0.3 * 6px) solid rgb(45, 99, 83);
+    border-radius: calc(0.3 * 2rem);
+    box-shadow: calc(0.3 * 15px) calc(0.3 * 15px) calc(0.3 * 8px) #888888;
+}
+
+.Our_Team .team-grid>*>a {
+    width: 60%;
+    margin-top: calc(0.3 * 3rem);
+    margin-bottom: calc(0.3 * 2.5rem);
+}
+
+.Our_Team .team-grid>*>.individual-info {
+    margin-top: calc(0.3 * 1.5rem);
+}
+
+.Our_Team .team-grid>*>.individual-info>p {
+    margin-bottom: calc(0.3 * 1.5rem);
+}
+
+.Our_Team .team-grid .ProfilePic img {
+    border-radius: calc(0.3 * 1rem);
+}
+
+@media screen and (max-width: 1025px) {}
+
+@media screen and (max-width: 769px) {}
+
+@media screen and (max-width: 426px) {}

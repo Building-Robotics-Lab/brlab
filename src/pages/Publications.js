@@ -615,7 +615,7 @@ const customStyles = {
         zIndex: 1000,
         position: 'absolute',
         top: '10px',
-        left: '-75px',
+        left: '0px',
         width: '250px',
     }),
     option: (base, state) => ({

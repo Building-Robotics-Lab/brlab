@@ -249,6 +249,12 @@
     .Publications .small_note {
         font-size: smaller;
     }
+
+    .css-13gvzck-menu {
+        top: 0px !important;
+        left: 0px !important;
+        width: 175px !important;
+    }
 }
 
 @media screen and (max-width: 769px) {
@@ -337,6 +343,12 @@
 
     .Publications .small_note {
         font-size: 0.5rem;
+    }
+
+    .css-13gvzck-menu {
+        top: 0px !important;
+        left: -25px !important;
+        width: 125px !important;
     }
 }
 
@@ -427,6 +439,12 @@
     .Publications .small_note {
         font-size: 0.3rem;
     }
+
+    .css-13gvzck-menu {
+        top: 0px !important;
+        left: -25px !important;
+        width: 100px !important;
+    }
 }
 
 
@@ -437,3 +455,4 @@
 .css-1n7v3ny-option:active {
     background-color: rgb(45, 99, 83) !important;
 }
+
