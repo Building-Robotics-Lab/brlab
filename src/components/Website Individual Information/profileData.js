@@ -122,6 +122,7 @@ const profiles = [
         Links: [
             { href: KaiCV, icon: faUser, text: 'CV' },
             { href: 'https://scholar.google.com/citations?user=YCk9UUYAAAAJ&hl=en', icon: faGoogle, text: 'Google Scholar' },
+            { href: 'https://orcid.org/0000-0002-4779-7104', icon: faOrcid, text: 'ORCID' },
             { href: '/comfortGPT', icon: faPerson, text: 'ComfortGPT', isReactLink: true }
         ],
         Interests: [
@@ -165,7 +166,8 @@ const profiles = [
         Links: [
             { href: IqbalCV, icon: faUser, text: 'CV' },
             { href: 'https://scholar.google.com/citations?user=dxE-nuEAAAAJ&hl=en&oi=sra', icon: faGoogle, text: 'Google Scholar' },
-            { href: 'https://www.linkedin.com/in/iqbal-s-834035224/', icon: faLinkedin, text: 'LinkedIn' }
+            { href: 'https://www.linkedin.com/in/iqbal-s-834035224/', icon: faLinkedin, text: 'LinkedIn' },
+            { href: 'https://orcid.org/0000-0002-8006-1078', icon: faOrcid, text: 'ORCID' }
         ],
         Interests: [
             'Resilient Façade Systems',
@@ -268,7 +270,7 @@ const profiles = [
             { href: "mailto:dawoodji@myumanitoba.ca", icon: faEnvelope, text: "dawoodji@myumanitoba.ca" },
         ],
         Links: [
-            { href: IlyasCV, icon: faUser, text: 'CV' },
+            /*{ href: IlyasCV, icon: faUser, text: 'CV' },*/
             { href: 'https://scholar.google.com/citations?user=FlonsoAAAAAJ&hl=en&oi=ao', icon: faGoogle, text: 'Google Scholar' },
             { href: 'https://www.linkedin.com/in/ilyas-dawoodjee-858011195/', icon: faLinkedin, text: 'LinkedIn' },
             { href: 'https://github.com/blank-ed', icon: faGithub, text: 'GitHub' },
@@ -507,7 +509,7 @@ const profiles = [
             { href: "mailto:r.talami@nus.edu.sg", icon: faEnvelope, text: "michelle@hit.edu.cn" },
         ],
         Links: [
-            { href: MichelleCV, icon: faUser, text: 'CV' },
+            /*{ href: MichelleCV, icon: faUser, text: 'CV' },*/
             { href: 'https://www.researchgate.net/profile/Xuanning-Qi', icon: faResearchgate, text: 'ResearchGate' }
         ],
         Interests: [

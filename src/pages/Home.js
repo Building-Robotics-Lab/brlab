@@ -125,7 +125,7 @@ function Home() {
                     prioritise the well-being of their occupants while reducing energy consumption and promoting
                     environmental sustainability. Projects include <b><i>adaptive comfort</i></b> modelling,
                     vision-based systems for <b><i>remote physiological measurements</i></b>, and
-                    <b><i> multi-sensing devices</i></b> for <b><i>human-centric IEQ</i></b>."
+                    <b><i> multi-sensing devices</i></b> for <b><i>human-centric indoor environmental quality (IEQ)</i></b>."
                     imageUrl={FirstResearchImage}
                 />
 
@@ -146,14 +146,14 @@ function Home() {
                     envelope systems</i></b> that reduce the energy needed for cooling while also providing
                     increased thermal comfort for occupants. This includes research developments and technology
                     integration for enhancing the <b><i>cooling effects</i></b> of current urban greening systems,
-                    such as <b><i>Vertical Greenery Systems (VGS)</i></b>."
+                    such as <b><i>vertical greenery systems (VGS)</i></b>."
                     imageUrl={ThirdResearchImage}
                 />
 
                 <ResearchSectionRight
                     title="INTELLIGENT ENVIRONMENTS"
                     imageUrl={FourthResearchImage}
-                    text="Our research investigates the <b><i>democratisation of virtual power plants</b></i> (VPP) for <b><i>optimal monetisation</b></i> and <b><i>grid flexibility</b></i> to empower end-users to participate effectively. By leveraging artificial intelligence (AI), we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into two halves: one explores <b><i>user impacts on VPPs</b></i> and <b><i>energy consumption behaviour modelling</b></i>, while the other employs <b><i>machine learning for automated energy market participation</b></i>."
+                    text="Our research investigates the <b><i>democratisation of virtual power plants</b></i> (VPP) for <b><i>optimal monetisation</b></i> and <b><i>grid flexibility</b></i> to empower end-users to participate effectively. By leveraging AI, we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into two halves: one explores <b><i>user impacts on VPPs</b></i> and <b><i>energy consumption behaviour modelling</b></i>, while the other employs <b><i>machine learning for automated energy market participation</b></i>."
                 />
                 <div className="HomeButtons">
                     <Link to="/research"><p id='JoinButton'>LEARN MORE ABOUT OUR RESEARCH</p></Link>
@@ -191,7 +191,7 @@ function Home() {
                                 <h2><b>Publications</b></h2>
                                 Our research involves the use of both
                                 quantitative and qualitative techniques to comprehend the impact of our built environment and
-                                artificial intelligence on individuals. Our objective is to create interventions and adaptations
+                                AI on individuals. Our objective is to create interventions and adaptations
                                 that promote human well-being. Furthermore, we disseminate our findings through peer-reviewed
                                 journals, workshop and conference proceedings, and encourage readers to explore our approaches
                                 and discoveries.
