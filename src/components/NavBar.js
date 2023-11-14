@@ -2,9 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';  // Add useRef
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 import Logo from './Website Data/MicrosoftTeams-image.png';
-import Sun from './Website Data/sun.png';
-import Moon from './Website Data/moon.png'
-import Button from '@mui/material/Button';
+import { Nav } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
+import { NavDropdown } from 'react-bootstrap';
 
 function NavBar() {
   // Add state to manage the dropdown open/close
@@ -29,18 +29,6 @@ function NavBar() {
       setDropdownOpen(false);
     }, 75);
   };
-
-  // // Day and Night
-  // const [theme, setTheme] = useState('day');
-
-  // const toggleTheme = () => {
-  //   setTheme(theme === 'day' ? 'night' : 'day');
-  // };
-
-  // useEffect(() => {
-  //   document.body.className = `${theme}-mode`;
-  // }, [theme]);
-
 
   return (
     <>
@@ -69,9 +57,6 @@ function NavBar() {
             <Link to="/news"><p>News</p></Link>
             <Link to="/publications"><p>Publications</p></Link>
             <Link to="/join"><p id='JoinButton'>Join the Lab</p></Link>
-            {/* <div onClick={toggleTheme} style={{ cursor: 'pointer' }}>
-              {theme === 'day' ? <img src={Sun} alt="Sun" className='mode' /> : <img src={Moon} alt="Moon" className='mode' />}
-            </div> */}
           </div>
         </div>
       </nav>

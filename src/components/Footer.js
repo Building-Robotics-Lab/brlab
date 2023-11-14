@@ -37,6 +37,7 @@ const Footer = () => {
                                 <p>
                                     <a className="bi-envelope" id="footer_Button" href="mailto:ghahramani@nus.edu.sg"></a>
                                     <a className="bi-linkedin" id="footer_Button" href="https://www.linkedin.com/company/building-robotics-lab/" target="_blank"></a>
+                                    <a className="bi-github" id="footer_Button" href="https://github.com/Building-Robotics-Lab" target="_blank"></a>
                                 </p>
                             </div>
                         </div>

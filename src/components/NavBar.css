@@ -28,8 +28,14 @@
 }
 
 .logo {
-    width: 75px;
+    width: clamp(50px, 5vw, 75px);
 }
+
+/* @media screen and (max-width: 850px) {
+    .right {
+
+    }
+} */
 
 a {
     text-decoration: none;
