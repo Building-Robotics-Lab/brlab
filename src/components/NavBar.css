@@ -1,17 +1,21 @@
+.navbar {
+    max-width: 1600px;
+}
+
 .navbar-container {
     display: flex;
     justify-content: space-between;
     padding: 0rem 0.5rem;
 }
 
-.left, 
+.left,
 .right {
     display: flex;
     align-items: center;
 }
 
-.left > *, 
-.right > * {
+.left>*,
+.right>* {
     padding: 0.5rem;
     text-decoration: none;
     color: black;
@@ -28,14 +32,34 @@
 }
 
 .logo {
-    width: clamp(50px, 5vw, 75px);
+    width: clamp(40px, 5vw, 75px);
 }
 
-/* @media screen and (max-width: 850px) {
-    .right {
+.right .dropdown-toggle {
+    display: none;
+}
 
+@media screen and (max-width: 850px) {
+    .right .dropdown-toggle {
+        display: block;
     }
-} */
+
+    .right>a,
+    .right>.dropdown {
+        display: none;
+    }
+
+    .right.active>a,
+    .right.active>.dropdown {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .left {
+        font-size: 0.75rem;
+    }
+}
 
 a {
     text-decoration: none;
@@ -45,13 +69,13 @@ a {
     position: relative;
     display: inline-block;
 }
-  
+
 .dropdown-content {
     display: block;
     position: absolute;
     background-color: white;
     top: 3rem;
-    border: 1px solid rgba(0,0,0,0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     z-index: 1;
     white-space: nowrap;
     border-radius: 0.5rem;
@@ -71,12 +95,15 @@ a {
     border-radius: 0.5rem;
 }
 
-.dropdown:hover .dropdown-content, .dropdown-content.show {
-    display: block; /* Show on hover or when .show class is present */
+.dropdown:hover .dropdown-content,
+.dropdown-content.show {
+    display: block;
+    /* Show on hover or when .show class is present */
 }
 
 .dropdown p {
-  cursor: pointer;  /* Add this line */
+    cursor: pointer;
+    /* Add this line */
 }
 
 .arrow {
@@ -84,16 +111,46 @@ a {
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 2px;
-    vertical-align: middle; /* Add this line */
-    margin-left: 8px;  /* Add this line */
-    margin-bottom: 2px;  /* Add this line */
+    vertical-align: middle;
+    /* Add this line */
+    margin-left: 8px;
+    /* Add this line */
+    margin-bottom: 2px;
+    /* Add this line */
 }
-  
+
+@media screen and (max-width: 1025px) {
+    .arrow {
+        border-width: 0 calc(0.7 * 3px) calc(0.7 * 3px) 0;
+        padding: calc(0.7 * 2px);
+        margin-left: calc(0.7 * 8px);
+        margin-bottom: calc(0.7 * 2px);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .arrow {
+        border-width: 0 calc(0.4 * 3px) calc(0.4 * 3px) 0;
+        padding: calc(0.4 * 2px);
+        margin-left: calc(0.4 * 8px);
+        margin-bottom: calc(0.4 * 2px);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .arrow {
+        border-width: 0 calc(0.3 * 3px) calc(0.3 * 3px) 0;
+        padding: calc(0.3 * 2px);
+        margin-left: calc(0.3 * 8px);
+        margin-bottom: calc(0.3 * 2px);
+    }
+}
+
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
-  
+
 .dropdown p {
     display: flex;
     align-items: center;
@@ -110,6 +167,34 @@ a {
     border-radius: 0.5rem;
     color: rgb(45, 99, 83);
     font-weight: bold;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1025px) {
+    #JoinButton {
+        padding: calc(0.7 * 10px);
+        border: calc(0.7 * 3px) solid rgb(45, 99, 83);
+        font-size: calc(0.7 * 1rem);
+        border-radius: calc(0.7 * 0.5rem);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #JoinButton {
+        padding: calc(0.4 * 10px);
+        border: calc(0.4 * 3px) solid rgb(45, 99, 83);
+        font-size: calc(0.4 * 1rem);
+        border-radius: calc(0.4 * 0.5rem);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #JoinButton {
+        padding: calc(0.3 * 10px);
+        border: calc(0.3 * 3px) solid rgb(45, 99, 83);
+        font-size: calc(0.3 * 1rem);
+        border-radius: calc(0.3 * 0.5rem);
+    }
 }
 
 #JoinButton:hover {

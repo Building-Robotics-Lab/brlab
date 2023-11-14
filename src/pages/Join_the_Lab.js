@@ -679,8 +679,6 @@ function Join_the_Lab() {
                                     description={item.description}
                                 />
                             ))}
-                            <br /><br />
-
                             <p className='sub_title'><b>Country-specific Eligibility</b></p>
                             {filteredCountrySpecificEligibilityScholarships.map((item, index) => (
                                 <ScholarshipItem
@@ -690,8 +688,6 @@ function Join_the_Lab() {
                                     description={item.description}
                                 />
                             ))}
-                            <br /><br />
-
                             <p className='sub_title'><i>*Further details regarding elibility, award details, application procedure, award period, and other can be found at the corresponding hyperlinks.</i></p>
                             <p className='sub_title'><i>**This is by no means an exhaustive list. If you don't see a scholarship opportunity that applies to you (or there aren't enough to feel comfortable about your chances), please mention so in your introductory email to me and I will gladly work with you to help find additional possibilities for funding.</i></p>
                         </div>

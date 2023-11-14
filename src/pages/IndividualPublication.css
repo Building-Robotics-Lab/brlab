@@ -3,11 +3,11 @@
 .IndividualPublication .first_section {
     display: flex;
     flex-direction: column;
-    /* padding: 0px 300px; */
 }
 
 .IndividualPublication .first_section .title {
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .IndividualPublication .first_section .title h2 {
@@ -36,6 +36,7 @@
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    font-size: 1rem;
 }
 
 .IndividualPublication .first_section .keywords>* {
@@ -77,6 +78,7 @@
 .IndividualPublication .second_section .highlights h3 {
     margin-bottom: 0.5rem;
     text-align: left;
+    font-size: 1.17rem;
 }
 
 .IndividualPublication .second_section .highlights ul li {
@@ -110,37 +112,14 @@
 .IndividualPublication .third_section {
     display: flex;
     flex-direction: column;
-    /* padding: 0px 300px; */
 }
-
-/* .IndividualPublication .third_section .each_profile {
-    display: flex;
-}
-
-.IndividualPublication .third_section .each_profile .profile_image {
-    flex: 1;
-}
-
-.IndividualPublication .third_section .each_profile .profile_image img {
-    max-width: 40%;
-    height: auto;
-}
-
-.IndividualPublication .third_section .each_profile .profile_data {
-    flex: 2;
-} */
 
 .IndividualPublication .third_section {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     flex-direction: row;
-    /* justify-content: space-between; */
 }
-
-/* .IndividualPublication .third_section > * {
-    flex: 1;
-} */
 
 .IndividualPublication .third_section .each_profile {
     display: flex;
@@ -148,17 +127,11 @@
 }
 
 .IndividualPublication .third_section .profile_image img {
-    width: 120px;
-    height: 120px;
+    width: 124.8px;
+    height: 124.8px;
     object-fit: cover;
     border-radius: 50%;
     padding: 0px;
-}
-
-.IndividualPublication .third_section .profile_image img:hover {
-    width: 100px;
-    height: 100px;
-    padding: 10px;
 }
 
 .IndividualPublication .third_section .profile_data {
@@ -188,7 +161,8 @@
     display: flex;
 }
 
-.IndividualPublication .third_section .profile_data h5 {
+.IndividualPublication .third_section .profile_data h5,
+.IndividualPublication .third_section .profile_data p {
     color: rgb(45, 99, 83);
     font-size: 1rem;
 }
@@ -197,4 +171,328 @@
     color: white;
     background-color: rgb(45, 99, 83);
     border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 1025px) {
+    /* First Section */
+
+    .IndividualPublication .first_section .title {
+        margin-bottom: calc(0.7 * 1rem);
+        font-size: calc(0.7 * 1.5rem);
+    }
+
+    .IndividualPublication .first_section .title h2 {
+        margin-top: calc(0.7 * 1rem);
+        font-size: calc(0.7 * 1.5rem);
+    }
+
+    .IndividualPublication .first_section .title p {
+        margin-top: calc(0.7 * 1rem);
+        font-size: calc(0.7 * 1rem);
+    }
+
+
+    .IndividualPublication .first_section .links {
+        gap: calc(0.7 * 1rem);
+        margin-bottom: calc(0.7 * 1rem);
+    }
+
+    .IndividualPublication .first_section .keywords {
+        gap: calc(0.7 * 1rem);
+        font-size: calc(0.7 * 1rem);
+    }
+
+    .IndividualPublication .first_section .keywords>* {
+        padding: calc(0.7 * 0.25rem);
+        border-radius: calc(0.7 * 0.5rem);
+    }
+
+    /* Second Section */
+
+    .IndividualPublication .second_section {
+        gap: calc(0.7 * 2rem);
+    }
+
+    .IndividualPublication .second_section .abstract {
+        margin-bottom: calc(0.7 * 1rem);
+    }
+
+    .IndividualPublication .second_section .highlights {
+        margin-bottom: calc(0.7 * 2rem);
+    }
+
+    .IndividualPublication .second_section .highlights h3 {
+        margin-bottom: calc(0.7 * 0.5rem);
+        font-size: calc(0.7 * 1.17rem);
+    }
+
+    .IndividualPublication .second_section .highlights ul li {
+        font-size: calc(0.7 * 1rem);
+    }
+
+    .IndividualPublication .second_section .highlights ul li:not(:last-child) {
+        margin-bottom: calc(0.7 * 0.25rem);
+    }
+
+    .IndividualPublication .second_section .abstract {
+        margin-bottom: calc(0.7 * 2rem);
+    }
+
+    .IndividualPublication .second_section h3 {
+        margin-bottom: calc(0.7 * 0.5rem);
+        font-size: calc(0.7 * 1.17rem);
+    }
+
+    .IndividualPublication .second_section .abstract p {
+        font-size: calc(0.7 * 1rem);
+    }
+
+    /* Third Section */
+
+    .IndividualPublication .third_section {
+        gap: calc(0.7 * 20px);
+    }
+
+    .IndividualPublication .third_section .profile_image img {
+        width: calc(0.7 * 124.8px);
+        height: calc(0.7 * 124.8px);
+    }
+
+    .IndividualPublication .third_section .profile_data {
+        margin-left: calc(0.7 * 20px);
+        height: calc(0.7 * 120px);
+    }
+
+    .IndividualPublication .third_section .profile_links {
+        gap: calc(0.7 * 10px);
+    }
+
+    .IndividualPublication .third_section .profile_icons {
+        font-size: calc(0.7 * 1.5rem);
+    }
+
+    .IndividualPublication .third_section .profile_data h5,
+    .IndividualPublication .third_section .profile_data p {
+        font-size: calc(0.7 * 1rem);
+    }
+
+    .IndividualPublication .third_section .profile_data h5:hover {
+        border-radius: calc(0.7 * 0.25rem);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    /* First Section */
+
+    .IndividualPublication .first_section .title {
+        margin-bottom: calc(0.4 * 1rem);
+        font-size: calc(0.4 * 1.5rem);
+    }
+
+    .IndividualPublication .first_section .title h2 {
+        margin-top: calc(0.4 * 1rem);
+        font-size: calc(0.4 * 1.5rem);
+    }
+
+    .IndividualPublication .first_section .title p {
+        margin-top: calc(0.4 * 1rem);
+        font-size: calc(0.4 * 1rem);
+    }
+
+
+    .IndividualPublication .first_section .links {
+        gap: calc(0.4 * 1rem);
+        margin-bottom: calc(0.4 * 1rem);
+    }
+
+    .IndividualPublication .first_section .keywords {
+        gap: calc(0.4 * 1rem);
+        font-size: calc(0.4 * 1rem);
+    }
+
+    .IndividualPublication .first_section .keywords>* {
+        padding: calc(0.4 * 0.25rem);
+        border-radius: calc(0.4 * 0.5rem);
+    }
+
+    /* Second Section */
+
+    .IndividualPublication .second_section {
+        gap: calc(0.4 * 2rem);
+    }
+
+    .IndividualPublication .second_section .abstract {
+        margin-bottom: calc(0.4 * 1rem);
+    }
+
+    .IndividualPublication .second_section .highlights {
+        margin-bottom: calc(0.4 * 2rem);
+    }
+
+    .IndividualPublication .second_section .highlights h3 {
+        margin-bottom: calc(0.4 * 0.5rem);
+        font-size: calc(0.4 * 1.17rem);
+    }
+
+    .IndividualPublication .second_section .highlights ul li {
+        font-size: calc(0.4 * 1rem);
+    }
+
+    .IndividualPublication .second_section .highlights ul li:not(:last-child) {
+        margin-bottom: calc(0.4 * 0.25rem);
+    }
+
+    .IndividualPublication .second_section .abstract {
+        margin-bottom: calc(0.4 * 2rem);
+    }
+
+    .IndividualPublication .second_section h3 {
+        margin-bottom: calc(0.4 * 0.5rem);
+        font-size: calc(0.4 * 1.17rem);
+    }
+
+    .IndividualPublication .second_section .abstract p {
+        font-size: calc(0.4 * 1rem);
+    }
+
+    /* Third Section */
+
+    .IndividualPublication .third_section {
+        gap: calc(0.4 * 20px);
+    }
+
+    .IndividualPublication .third_section .profile_image img {
+        width: calc(0.4 * 124.8px);
+        height: calc(0.4 * 124.8px);
+    }
+
+    .IndividualPublication .third_section .profile_data {
+        margin-left: calc(0.4 * 20px);
+        height: calc(0.4 * 120px);
+    }
+
+    .IndividualPublication .third_section .profile_links {
+        gap: calc(0.4 * 10px);
+    }
+
+    .IndividualPublication .third_section .profile_icons {
+        font-size: calc(0.4 * 1.5rem);
+    }
+
+    .IndividualPublication .third_section .profile_data h5,
+    .IndividualPublication .third_section .profile_data p {
+        font-size: calc(0.4 * 1rem);
+    }
+
+    .IndividualPublication .third_section .profile_data h5:hover {
+        border-radius: calc(0.4 * 0.25rem);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    /* First Section */
+
+    .IndividualPublication .first_section .title {
+        margin-bottom: calc(0.3 * 1rem);
+        font-size: calc(0.3 * 1.5rem);
+    }
+
+    .IndividualPublication .first_section .title h2 {
+        margin-top: calc(0.3 * 1rem);
+        font-size: calc(0.3 * 1.5rem);
+    }
+
+    .IndividualPublication .first_section .title p {
+        margin-top: calc(0.3 * 1rem);
+        font-size: calc(0.3 * 1rem);
+    }
+
+
+    .IndividualPublication .first_section .links {
+        gap: calc(0.3 * 1rem);
+        margin-bottom: calc(0.3 * 1rem);
+    }
+
+    .IndividualPublication .first_section .keywords {
+        gap: calc(0.3 * 1rem);
+        font-size: calc(0.3 * 1rem);
+    }
+
+    .IndividualPublication .first_section .keywords>* {
+        padding: calc(0.3 * 0.25rem);
+        border-radius: calc(0.3 * 0.5rem);
+    }
+
+    /* Second Section */
+
+    .IndividualPublication .second_section {
+        gap: calc(0.3 * 2rem);
+    }
+
+    .IndividualPublication .second_section .abstract {
+        margin-bottom: calc(0.3 * 1rem);
+    }
+
+    .IndividualPublication .second_section .highlights {
+        margin-bottom: calc(0.3 * 2rem);
+    }
+
+    .IndividualPublication .second_section .highlights h3 {
+        margin-bottom: calc(0.3 * 0.5rem);
+        font-size: calc(0.3 * 1.17rem);
+    }
+
+    .IndividualPublication .second_section .highlights ul li {
+        font-size: calc(0.3 * 1rem);
+    }
+
+    .IndividualPublication .second_section .highlights ul li:not(:last-child) {
+        margin-bottom: calc(0.3 * 0.25rem);
+    }
+
+    .IndividualPublication .second_section .abstract {
+        margin-bottom: calc(0.3 * 2rem);
+    }
+
+    .IndividualPublication .second_section h3 {
+        margin-bottom: calc(0.3 * 0.5rem);
+        font-size: calc(0.3 * 1.17rem);
+    }
+
+    .IndividualPublication .second_section .abstract p {
+        font-size: calc(0.3 * 1rem);
+    }
+
+    /* Third Section */
+
+    .IndividualPublication .third_section {
+        gap: calc(0.3 * 20px);
+    }
+
+    .IndividualPublication .third_section .profile_image img {
+        width: calc(0.3 * 124.8px);
+        height: calc(0.3 * 124.8px);
+    }
+
+    .IndividualPublication .third_section .profile_data {
+        margin-left: calc(0.3 * 20px);
+        height: calc(0.3 * 120px);
+    }
+
+    .IndividualPublication .third_section .profile_links {
+        gap: calc(0.3 * 10px);
+    }
+
+    .IndividualPublication .third_section .profile_icons {
+        font-size: calc(0.3 * 1.5rem);
+    }
+
+    .IndividualPublication .third_section .profile_data h5,
+    .IndividualPublication .third_section .profile_data p {
+        font-size: calc(0.3 * 1rem);
+    }
+
+    .IndividualPublication .third_section .profile_data h5:hover {
+        border-radius: calc(0.3 * 0.25rem);
+    }
 }

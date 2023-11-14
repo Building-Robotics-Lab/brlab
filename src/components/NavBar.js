@@ -30,6 +30,11 @@ function NavBar() {
     }, 75);
   };
 
+  function toggleNav() {
+    const rightNav = document.querySelector('.right');
+    rightNav.classList.toggle('active');
+  }
+
   return (
     <>
       <nav className="navbar">
@@ -39,6 +44,7 @@ function NavBar() {
             <p>Building Robotics Laboratory</p>
           </Link>
           <div className="right">
+            <button className="dropdown-toggle" onClick={toggleNav}>Menu</button>
             <div className="dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               <p onClick={toggleDropdown} style={{ cursor: 'pointer' }}>
                 <Link to="/research" style={{ color: 'black' }}><p><span>Research</span></p></Link>

@@ -411,7 +411,7 @@ function Publications() {
 
     return (
         <div className="Publications">
-            {/* <NavBar /> */}
+            <NavBar />
 
             <Container>
                 <div className="first_section">

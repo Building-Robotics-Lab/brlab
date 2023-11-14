@@ -25,11 +25,11 @@
     line-height: 1.5;
 }
 
-.Join_the_Lab .first_section .lab_bio > * {
+.Join_the_Lab .first_section .lab_bio>* {
     flex: 1;
     margin: 0rem 2rem;
     padding: 2rem;
-    box-shadow: -1px 1px 20px 9px rgba(0,0,0,0.3);
+    box-shadow: -1px 1px 20px 9px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 
@@ -39,10 +39,6 @@
 }
 
 /* Second Section */
-
-/* .Join_the_Lab .second_section {
-    display: flex;
-} */
 
 .Join_the_Lab .second_section h2 {
     font-size: 2rem;
@@ -80,6 +76,12 @@
     text-align: justify;
 }
 
+#content_wrapper_orange>div>div.apply_section.last_section li {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left !important;
+}
+
 .Join_the_Lab .second_section .apply_section .position_information .sub_title {
     margin-bottom: 1rem;
 }
@@ -114,4 +116,203 @@
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1025px) {
+    .Join_the_Lab .first_section h3 {
+        font-size: calc(0.7 * 1.75rem);
+        margin-bottom: calc(0.7 * 3rem);
+        padding: 0px calc(0.7 * 0.5rem);
+    }
+
+    .Join_the_Lab .first_section h1 {
+        font-size: calc(0.7 * 2.5rem);
+        margin-bottom: calc(0.7 * 3rem);
+    }
+
+    .Join_the_Lab .first_section .lab_bio {
+        font-size: calc(0.7 * 1rem);
+        margin-bottom: calc(0.7 * 3rem);
+    }
+
+    .Join_the_Lab .first_section .lab_bio>* {
+        margin: 0rem calc(0.7 * 2rem);
+        padding: calc(0.7 * 2rem);
+        box-shadow: -1px 1px calc(0.7 * 20px) calc(0.7 * 9px) rgba(0, 0, 0, 0.3);
+        border-radius: calc(0.7 * 10px);
+    }
+
+    /* Second Section */
+
+    .Join_the_Lab .second_section h2 {
+        font-size: calc(0.7 *2rem);
+        margin-bottom: calc(0.7 *3rem);
+    }
+
+    .Join_the_Lab .second_section .apply_section {
+        margin-bottom: calc(0.7 *2rem);
+        padding-bottom: calc(0.7 *2rem);
+    }
+
+    .Join_the_Lab .second_section .apply_section .position h4 {
+        font-size: calc(0.7 *1.5rem);
+    }
+
+
+    .Join_the_Lab .second_section .apply_section .position_information p,
+    .Join_the_Lab .second_section .apply_section .position_information li {
+        font-size: calc(0.7 *1rem);
+    }
+
+    #content_wrapper_orange>div>div.apply_section.last_section li {
+        font-size: calc(0.7 *1rem);
+    }
+
+    .Join_the_Lab .second_section .apply_section .position_information .sub_title {
+        margin: calc(0.7 *1rem) 0px;
+    }
+
+    .Join_the_Lab .second_section .small_note {
+        font-size: smaller;
+        margin-bottom: calc(0.7 *2rem);
+    }
+
+    .Join_the_Lab .second_section .search_bars {
+        gap: calc(0.7 *1rem);
+        margin-bottom: calc(0.7 *1rem);
+        font-size: calc(0.7 * 1rem);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .Join_the_Lab .first_section h3 {
+        font-size: calc(0.4 * 1.75rem);
+        margin-bottom: calc(0.4 * 3rem);
+        padding: 0px calc(0.4 * 0.5rem);
+    }
+
+    .Join_the_Lab .first_section h1 {
+        font-size: calc(0.4 * 2.5rem);
+        margin-bottom: calc(0.4 * 3rem);
+    }
+
+    .Join_the_Lab .first_section .lab_bio {
+        font-size: calc(0.4 * 1rem);
+        margin-bottom: calc(0.4 * 3rem);
+    }
+
+    .Join_the_Lab .first_section .lab_bio>* {
+        margin: 0rem calc(0.4 * 2rem);
+        padding: calc(0.4 * 2rem);
+        box-shadow: -1px 1px calc(0.4 * 20px) calc(0.4 * 9px) rgba(0, 0, 0, 0.3);
+        border-radius: calc(0.4 * 10px);
+    }
+
+    /* Second Section */
+
+    .Join_the_Lab .second_section h2 {
+        font-size: calc(0.4 *2rem);
+        margin-bottom: calc(0.4 *3rem);
+    }
+
+    .Join_the_Lab .second_section .apply_section {
+        margin-bottom: calc(0.4 *2rem);
+        padding-bottom: calc(0.4 *2rem);
+    }
+
+    .Join_the_Lab .second_section .apply_section .position h4 {
+        font-size: calc(0.4 * 1.5rem);
+    }
+
+
+    .Join_the_Lab .second_section .apply_section .position_information p,
+    .Join_the_Lab .second_section .apply_section .position_information li {
+        font-size: calc(0.4 *1rem);
+    }
+
+    #content_wrapper_orange>div>div.apply_section.last_section li {
+        font-size: calc(0.4 *1rem);
+    }
+
+    .Join_the_Lab .second_section .apply_section .position_information .sub_title {
+        margin: calc(0.4 *1rem) 0px;
+    }
+
+    .Join_the_Lab .second_section .small_note {
+        font-size: 0.5rem;
+        margin-bottom: calc(0.4 *2rem);
+    }
+
+    .Join_the_Lab .second_section .search_bars {
+        gap: calc(0.7 *1rem);
+        margin-bottom: calc(0.4 *1rem);
+        font-size: calc(0.4 * 1rem);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .Join_the_Lab .first_section h3 {
+        font-size: calc(0.3 * 1.75rem);
+        margin-bottom: calc(0.3 * 3rem);
+        padding: 0px calc(0.3 * 0.5rem);
+    }
+
+    .Join_the_Lab .first_section h1 {
+        font-size: calc(0.3 * 2.5rem);
+        margin-bottom: calc(0.3 * 3rem);
+    }
+
+    .Join_the_Lab .first_section .lab_bio {
+        font-size: calc(0.3 * 1rem);
+        margin-bottom: calc(0.3 * 3rem);
+    }
+
+    .Join_the_Lab .first_section .lab_bio>* {
+        margin: 0rem calc(0.3 * 2rem);
+        padding: calc(0.3 * 2rem);
+        box-shadow: -1px 1px calc(0.3 * 20px) calc(0.3 * 9px) rgba(0, 0, 0, 0.3);
+        border-radius: calc(0.3 * 10px);
+    }
+
+    /* Second Section */
+
+    .Join_the_Lab .second_section h2 {
+        font-size: calc(0.3 *2rem);
+        margin-bottom: calc(0.3 *3rem);
+    }
+
+    .Join_the_Lab .second_section .apply_section {
+        margin-bottom: calc(0.3 *2rem);
+        padding-bottom: calc(0.3 *2rem);
+    }
+
+    .Join_the_Lab .second_section .apply_section .position h4 {
+        font-size: calc(0.25 *1.5rem);
+    }
+
+
+    .Join_the_Lab .second_section .apply_section .position_information p,
+    .Join_the_Lab .second_section .apply_section .position_information li {
+        font-size: calc(0.3 *1rem);
+    }
+
+    #content_wrapper_orange>div>div.apply_section.last_section li {
+        font-size: calc(0.3 *1rem);
+    }
+
+    .Join_the_Lab .second_section .apply_section .position_information .sub_title {
+        margin: calc(0.3 *1rem) 0px;
+    }
+
+    .Join_the_Lab .second_section .small_note {
+        font-size: 0.3rem;
+        margin-bottom: calc(0.3 *2rem);
+    }
+
+    .Join_the_Lab .second_section .search_bars {
+        gap: calc(0.7 *1rem);
+        margin-bottom: calc(0.3 *1rem);
+        font-size: calc(0.3 * 1rem);
+    }
 }
