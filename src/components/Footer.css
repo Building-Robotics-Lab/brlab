@@ -179,9 +179,30 @@
 }
 
 @media screen and (max-width: 425px) {
+
+    .Footer h3 {
+        font-size: calc(0.3 * 1.75rem);
+    }
+
+    .Footer .BRL_Footer {
+        font-size: calc(0.3 * 1rem);
+    }
+
+    #footer_Button {
+        font-size: calc(0.3 * 20px);
+    }
+
+    .Footer .mid_text p {
+        font-size: calc(0.3 * 1rem);
+    }
+
+    .Footer .right_text p {
+        font-size: calc(0.3 * 1rem);
+    }
+
     .footer-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: left;
     }
 
