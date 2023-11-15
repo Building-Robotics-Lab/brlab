@@ -90,6 +90,11 @@
     margin-bottom: 0rem;
 }
 
+#content_wrapper_orange > div > div.apply_section.last_section > div.position_information > p:nth-child(12),
+#content_wrapper_orange > div > div.apply_section.last_section > div.position_information > p:nth-child(24) {
+    margin-top: 1rem;
+}
+
 .Join_the_Lab .second_section .small_note {
     font-size: smaller;
     margin-bottom: 2rem;

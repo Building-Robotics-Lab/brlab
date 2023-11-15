@@ -590,7 +590,7 @@ function ComfortGPT() {
                     <div className="inputs">
                         <div className="table_inputs">
                             <p>Temperature Scale:</p>
-                            <Select options={temperature_scale} value={temperature_scale.find(option => option.value === temperature)} defaultValue={temperature_scale[0]} onChange={temperatureScale} style={{ width: '600px' }} isSearchable={false} />
+                            <Select options={temperature_scale} value={temperature_scale.find(option => option.value === temperature)} defaultValue={temperature_scale[0]} onChange={temperatureScale} isSearchable={false} />
                             <p>Outdoor Temperature</p>
                             <p>Preferred Setpoint</p>
                             {otValues.map((otValue, index) => (
@@ -613,13 +613,13 @@ function ComfortGPT() {
                         </div>
                         <div className="additional_buttons">
                             <div className="HomeButtons">
-                                <Link onClick={AddRow}><p id='JoinButton'>Add Row</p></Link>
+                                <Link onClick={AddRow}><p className='AdditionalButtonsCGPT' id='JoinButton'>Add Row</p></Link>
                             </div>
                             <div className="HomeButtons">
-                                <Link onClick={Reset}><p id='JoinButton'>Reset</p></Link>
+                                <Link onClick={Reset}><p className='AdditionalButtonsCGPT' id='JoinButton'>Reset</p></Link>
                             </div>
                             <div className="HomeButtons">
-                                <Link onClick={RemoveRow} ><p id='JoinButton'>Remove Row</p></Link>
+                                <Link onClick={RemoveRow} ><p className='AdditionalButtonsCGPT' id='JoinButton'>Remove Row</p></Link>
                             </div>
                         </div>
                     </div>

@@ -133,7 +133,7 @@ function Research() {
                             <p>Chen, K., Xu, Q., Leow, B. and Ghahramani, A., 2022. <Link to="/publication/personal_thermal"><b>Personal thermal comfort models based on physiological measurements-A design of experiments based review</b></Link>. <i>Building and Environment</i>, <i>228</i>, 109919.</p>
                             <p>Chen, K. and Ghahramani, A., 2023. <b>A Transformer-based Architecture for Predicting Preferred Temperature Setpoints Leveraging Big Data</b>. <i>Building and Environment</i>. [under review]</p>
                         </div>
-                        <p><Link to="/ComfortGPT"><b>ComfortGPT</b></Link></p>
+                        <p className='tool_links'><Link to="/ComfortGPT"><b>ComfortGPT</b></Link></p>
                     </div>
                     <div className='theme_section' id='theme1_section'>
                         <div className="theme_details">
@@ -148,7 +148,7 @@ function Research() {
                             <p>Talami, R., Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/publication/demystifying_energy"><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. <i>Energy and Built Environment</i>.</p>
                             <p>Talami, R., Dawoodjee, I. and Ghahramani, A., 2023. <b>Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns</b>. <i>Applied Energy</i>. [under review]</p>
                         </div>
-                        <p><Link to="/otst"><b>Optimal Temperature Setpoint Tool</b></Link></p>
+                        <p className='tool_links'><Link to="/otst"><b>Optimal Temperature Setpoint Tool</b></Link></p>
                     </div>
                 </div>
             </Container>
