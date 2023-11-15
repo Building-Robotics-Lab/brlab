@@ -695,7 +695,7 @@ function Join_the_Lab() {
                     <p className='small_note'><i>*Please allow up to two weeks for a response before following up. Thank you very much!</i></p>
 
                     <div className="HomeButtons">
-                        <Link to="mailto:ghahramani@nus.edu.sg" target='_blank'><p id='JoinButton'>EMAIL THE PI</p></Link>
+                        <Link to="mailto:ghahramani@nus.edu.sg" target='_blank'><p id='JoinButton'>CONTACT US</p></Link>
                     </div>
                 </div>
             </Container>

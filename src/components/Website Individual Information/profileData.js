@@ -480,7 +480,7 @@ const profiles = [
         ProfilePic: MichellePic,
         Name: 'QI Xuanning',
         Position: 'PhD Candidate at Harbin Insitute of Technology',
-        Position2: 'BRL Visiting PhD Candidate from Harbin Institute of Technology (August 2022 - August 2023)',
+        Position2: 'BRL Visiting PhD Candidate (August 2022 - August 2023)',
         Biography: 'QI Xuanning is currently pursuing a doctoral degree in architecture at the Harbin Institute of Technology, and was a visiting PhD candidate at the National University of Singapore from August 2022 to August 2023. She is also a student member of the Architectural Society of China. In her academic career, she has published five papers in academic conferences and journals, and has contributed to the compilation of ‘Unified Standard for Civil Building Design Illustrations’ (20J813). In addition, she has been granted three invention patents and one utility model patent. QI Xuanning has also participated in the design of over ten architectural projects and was recognized with the third-place prize in the architectural survey and design competition in Heilongjiang Province in 2022. Her research interests include computational design, daylight design, occupant behaviour, and visual cognition. In her free time, QI Xuanning enjoys exploring new cities and experiencing different cultures. She also likes to engage in outdoor activities, such as hiking and cycling, which inspire her to think creatively about the relationship between architecture and the natural environment.',
         Education: [
             'PhD, Harbin Institute of Technology, Architecture Design and Theory (current)',

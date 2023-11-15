@@ -185,7 +185,9 @@ function News() {
             <Container>
                 <div className="first_section">
                     <h1><b>Lab News & Updates</b></h1>
-                    <h3>Follow us on <a href="https://www.linkedin.com/company/building-robotics-lab/" target="_blank"><b>LinkedIn</b></a> for more updates!</h3>
+                    <div className="HomeButtons">
+                        <Link to="https://www.linkedin.com/company/building-robotics-lab/" target='_blank'><p id='JoinButton'>FOLLOW US ON LINKEDIN FOR UPDATES</p></Link>
+                    </div>
                 </div>
             </Container>
 

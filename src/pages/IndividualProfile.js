@@ -44,7 +44,7 @@ function IndividualProfile() {
                     <div className="profile_name">
                         <h1><b>{Name}</b></h1>
                         <h3>{Position}</h3>
-                        <h3>{Position2}</h3>
+                        <h5>{Position2}</h5>
                     </div>
                 </div>
             </Container>
