@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brlab/static/css/main.b52bc23b.css",
-    "main.js": "/brlab/static/js/main.2b78e1b6.js",
+    "main.css": "/brlab/static/css/main.c6989fac.css",
+    "main.js": "/brlab/static/js/main.cc77e502.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
     "static/media/Iqbal_DT2.png": "/brlab/static/media/Iqbal_DT2.73b332b29a8b111f14a7.png",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
@@ -37,6 +37,7 @@
     "static/media/7408228-fig-1-source-large.gif": "/brlab/static/media/7408228-fig-1-source-large.df55b59972ac4f9e8c23.gif",
     "static/media/Kelly_T2.jpg": "/brlab/static/media/Kelly_T2.cebaba2bff435dd14d4b.jpg",
     "static/media/Connor_VPP.jpg": "/brlab/static/media/Connor_VPP.c02e2101d87dcdd46baf.jpg",
+    "static/media/nus_logo_full-horizontal.jpg": "/brlab/static/media/nus_logo_full-horizontal.e540176bda557a3d95f3.jpg",
     "static/media/Co Innovation lab logo.jpg": "/brlab/static/media/Co Innovation lab logo.48ffd48af54883eafeb2.jpg",
     "static/media/1-s2.0-S-gr2.jpg": "/brlab/static/media/1-s2.0-S0360132316303456-gr2.4c6266128fa578738812.jpg",
     "static/media/riccardo-publication.jpg": "/brlab/static/media/riccardo-publication.6b0317da42f65f02f46d.jpg",
@@ -45,26 +46,25 @@
     "static/media/1-s2.0-S030626191731601X-gr4_lrg.jpg": "/brlab/static/media/1-s2.0-S030626191731601X-gr4_lrg.a4bbd62aa0f806058a6e.jpg",
     "static/media/Ilyas_rPPG@2x.png": "/brlab/static/media/Ilyas_rPPG@2x.c65321e7bbe1340d8415.png",
     "static/media/ghahr1-p4-ghahr-large.gif": "/brlab/static/media/ghahr1-p4-ghahr-large.71d75c87838a80e17d70.gif",
+    "static/media/Greenology logo2.png": "/brlab/static/media/Greenology logo2.1fa7b117f0ba87dabc9e.png",
     "static/media/ghahr8-2920648-large.gif": "/brlab/static/media/ghahr8-2920648-large.c93332a2b793792dc07a.gif",
     "static/media/ina12735-fig-0002-m.jpg": "/brlab/static/media/ina12735-fig-0002-m.aec67e0f30aae7831d64.jpg",
     "static/media/7408505-fig-1-source-large.gif": "/brlab/static/media/7408505-fig-1-source-large.01dc5da1d70c5c9270ea.gif",
-    "static/media/Greenology logo.png": "/brlab/static/media/Greenology logo.db90504b50702d4b746f.png",
     "static/media/Kai_OPC.jpg": "/brlab/static/media/Kai_OPC.4394c4e1aeacf583a731.jpg",
+    "static/media/AWS logo21.png": "/brlab/static/media/AWS logo21.6eac98691494bb780db6.png",
     "static/media/prof_pic.jpg": "/brlab/static/media/prof_pic.c3f590fb533559c77ce4.jpg",
     "static/media/41370_2019_179_Fig1_HTML.png": "/brlab/static/media/41370_2019_179_Fig1_HTML.f621fc4b3cc4cbb27744.png",
     "static/media/Riccardo2.jpg": "/brlab/static/media/Riccardo2.9c888426017c725f819e.jpg",
     "static/media/1-s2.0-S-gr4.jpg": "/brlab/static/media/1-s2.0-S0378778813007731-gr4.8c24134a6bf86746a1d7.jpg",
     "static/media/Riccardo1.jpg": "/brlab/static/media/Riccardo1.e684976984904e794400.jpg",
-    "static/media/NUSLOGO-removebg-preview.png": "/brlab/static/media/NUSLOGO-removebg-preview.5dd0ad9bdd141b9217c1.png",
-    "static/media/AWS logo.png": "/brlab/static/media/AWS logo.409adddba349ee015883.png",
     "static/media/tt_logo_color_rgb.jpg": "/brlab/static/media/tt_logo_color_rgb.b8c960c7e4476b1e552a.jpg",
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
-    "main.b52bc23b.css.map": "/brlab/static/css/main.b52bc23b.css.map",
-    "main.2b78e1b6.js.map": "/brlab/static/js/main.2b78e1b6.js.map"
+    "main.c6989fac.css.map": "/brlab/static/css/main.c6989fac.css.map",
+    "main.cc77e502.js.map": "/brlab/static/js/main.cc77e502.js.map"
   },
   "entrypoints": [
-    "static/css/main.b52bc23b.css",
-    "static/js/main.2b78e1b6.js"
+    "static/css/main.c6989fac.css",
+    "static/js/main.cc77e502.js"
   ]
 }
