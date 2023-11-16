@@ -22,6 +22,56 @@ function ComfortGPT() {
         };
     }, []); // Empty dependency array ensures this runs only once when the component mounts.
 
+    // State for screen width and target height
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const [targetHeight, setTargetHeight] = useState(30); // default height
+    const [margin, settaretmargin] = useState({ top: 20, right: 20, bottom: 50, left: 60 })
+    const [y_axis1, sety_axis1] = useState(20)
+    const [y_axis2, sety_axis2] = useState(-50)
+
+    useEffect(() => {
+        const handleResize = () => {
+            setScreenWidth(window.innerWidth);
+            if (window.innerWidth < 1025) {
+                setTargetHeight(30); // smaller height for smaller screens
+                settaretmargin({ top: 20, right: 20, bottom: 50, left: 60 })
+                sety_axis1(20)
+                sety_axis2(-50)
+            } else if (window.innerWidth < 760) {
+                setTargetHeight(20);
+                settaretmargin({ top: 10, right: 10, bottom: 30, left: 30 })
+                sety_axis1(5)
+                sety_axis2(-25)
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Clean up the event listener
+        return () => window.removeEventListener('resize', handleResize);
+    }, [screenWidth]);
+
+    // Define styles here, using targetHeight
+    const styles = {
+        control: (base) => ({
+            ...base,
+            minHeight: 'initial',
+        }),
+        valueContainer: (base) => ({
+            ...base,
+            height: `${targetHeight - 2}px`,
+            padding: '0 2px',
+        }),
+        clearIndicator: (base) => ({
+            ...base,
+            padding: `${(targetHeight - 22) / 2}px`,
+        }),
+        dropdownIndicator: (base) => ({
+            ...base,
+            padding: `${(targetHeight - 22) / 2}px`,
+        }),
+    };
+
     // User Profiles
     const getProfileByName = (profileName) => {
         return profiles.find(profile => profile.ProfileName === profileName);
@@ -219,7 +269,9 @@ function ComfortGPT() {
                 const svgContainer = d3.select('#graph')
                 svgContainer.selectAll("svg").remove();
 
-                const margin = { top: 20, right: 20, bottom: 50, left: 60 };
+                // const margin = { top: 20, right: 20, bottom: 50, left: 60 };
+                // const margin = { top: 10, right: 10, bottom: 30, left: 30 };
+                console.log(margin)
 
                 let width = document.getElementById('graph').offsetWidth - margin.left - margin.right;
                 let height = document.getElementById('graph').offsetHeight - margin.top - margin.bottom;
@@ -434,13 +486,17 @@ function ComfortGPT() {
                 // X Axis Label and Y Axis Label
                 svg.append("text")
                     .attr("transform", `translate(${width / 2} ,${height + 15})`) // Position at the middle of the x-axis, and move slightly below the axis
-                    .attr("y", 20) // Position it to the left of the y-axis
+                    // .attr("y", 20) // Position it to the left of the y-axis
+                    // .attr("y", 5) // Position it to the left of the y-axis
+                    .attr("y", `${y_axis1}`)
                     .style("text-anchor", "middle")
                     .text(`Outdoor Temperature (${scale})`);
 
                 svg.append("text")
                     .attr("transform", "rotate(-90)") // Rotate the text 90 degrees
-                    .attr("y", -50) // Position it to the left of the y-axis
+                    // .attr("y", -50) // Position it to the left of the y-axis
+                    // .attr("y", -25) // Position it to the left of the y-axis
+                    .attr("y", `${y_axis2}`)
                     .attr("x", 0 - (height / 2)) // Position at the middle of the y-axis
                     .attr("dy", "1em") // Move slightly away from the axis
                     .style("text-anchor", "middle")
@@ -590,7 +646,7 @@ function ComfortGPT() {
                     <div className="inputs">
                         <div className="table_inputs">
                             <p>Temperature Scale:</p>
-                            <Select options={temperature_scale} value={temperature_scale.find(option => option.value === temperature)} defaultValue={temperature_scale[0]} onChange={temperatureScale} isSearchable={false} />
+                            <Select options={temperature_scale} value={temperature_scale.find(option => option.value === temperature)} defaultValue={temperature_scale[0]} onChange={temperatureScale} isSearchable={false} styles={styles} />
                             <p>Outdoor Temperature</p>
                             <p>Preferred Setpoint</p>
                             {otValues.map((otValue, index) => (
@@ -715,6 +771,28 @@ function ComfortGPT() {
         </div>
     )
 }
+
+// const targetHeight = 10;
+
+// const styles = {
+//   control: (base) => ({
+//     ...base,
+//     minHeight: 'initial',
+//   }),
+//   valueContainer: (base) => ({
+//     ...base,
+//     height: `${targetHeight - 1 - 1}px`,
+//     padding: '0 8px',
+//   }),
+//   clearIndicator: (base) => ({
+//     ...base,
+//     padding: `${(targetHeight - 20 - 1 - 1) / 2}px`,
+//   }),
+//   dropdownIndicator: (base) => ({
+//     ...base,
+//     padding: `${(targetHeight - 20 - 1 - 1) / 2}px`,
+//   }),
+// };
 
 export default ComfortGPT
 

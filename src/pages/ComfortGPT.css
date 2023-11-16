@@ -313,7 +313,6 @@
 
 .ComfortGPT .css-b62m3t-container {
     width: 200px;
-    height: 40px;
 }
 
 #graph>svg>g>* {
@@ -512,7 +511,6 @@
 
     .ComfortGPT .css-b62m3t-container {
         width: calc(0.7 * 200px);
-        height: calc(0.7 * 40px);
     }
 
     #graph>svg>g>* {
@@ -709,7 +707,6 @@
 
     .ComfortGPT .css-b62m3t-container {
         width: calc(0.4 * 200px);
-        height: calc(0.4 * 40px);
     }
 
     #graph>svg>g>* {
@@ -905,8 +902,7 @@
     }
 
     .ComfortGPT .css-b62m3t-container {
-        width: calc(0.3 * 200px);
-        height: calc(0.3 * 40px);
+        width: calc(0.4 * 200px);
     }
 
     #graph>svg>g>* {

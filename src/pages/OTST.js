@@ -22,6 +22,47 @@ function OTST() {
         };
     }, []); // Empty dependency array ensures this runs only once when the component mounts.
 
+    // State for screen width and target height
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const [targetHeight, setTargetHeight] = useState(30); // default height
+
+    useEffect(() => {
+        const handleResize = () => {
+            setScreenWidth(window.innerWidth);
+            if (window.innerWidth < 1025) {
+                setTargetHeight(30); // smaller height for smaller screens
+            } else if (window.innerWidth < 760) {
+                setTargetHeight(20);
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Clean up the event listener
+        return () => window.removeEventListener('resize', handleResize);
+    }, [screenWidth]);
+
+    // Define styles here, using targetHeight
+    const styles = {
+        control: (base) => ({
+            ...base,
+            minHeight: 'initial',
+        }),
+        valueContainer: (base) => ({
+            ...base,
+            height: `${targetHeight - 2}px`,
+            padding: '0 2px',
+        }),
+        clearIndicator: (base) => ({
+            ...base,
+            padding: `${(targetHeight - 22) / 2}px`,
+        }),
+        dropdownIndicator: (base) => ({
+            ...base,
+            padding: `${(targetHeight - 22) / 2}px`,
+        }),
+    };
+
     // For First Section
     const getProfileByName = (profileName) => {
         return profiles.find(profile => profile.ProfileName === profileName);
@@ -516,19 +557,19 @@ function OTST() {
                         <div className="inputs_left">
                             <div className='select_options'>
                                 <p>Building Size:</p>
-                                <Select options={building_size} value={building_size.find(building => building.value === size)} defaultValue={building_size[0]} onChange={buildingSize} style={{ width: '600px' }} isSearchable={false} />
+                                <Select options={building_size} value={building_size.find(building => building.value === size)} defaultValue={building_size[0]} onChange={buildingSize} styles={styles} isSearchable={false} />
                             </div>
                             <div className='select_options'>
                                 <p>Tempreature Scale:</p>
-                                <Select options={temperature_scale} value={temperature_scale.find(scale => scale.value === temperature)} defaultValue={temperature_scale[0]} onChange={temperatureScale} style={{ width: '600px' }} isSearchable={false} />
+                                <Select options={temperature_scale} value={temperature_scale.find(scale => scale.value === temperature)} defaultValue={temperature_scale[0]} onChange={temperatureScale} styles={styles} isSearchable={false} />
                             </div>
                             <div className='select_options'>
                                 <p>Choose Climate Zone:</p>
-                                <Select options={climate_zone} value={climate_zone.find(zone => zone.value === climate)} defaultValue={climate_zone[0]} onChange={climateZone} style={{ width: '600px' }} isSearchable={false} />
+                                <Select options={climate_zone} value={climate_zone.find(zone => zone.value === climate)} defaultValue={climate_zone[0]} onChange={climateZone} styles={styles} isSearchable={false} />
                             </div>
                             <div className='select_options'>
                                 <p>Choose Occupancy Rate:</p>
-                                <Select options={occupancy_rate} value={occupancy_rate.find(rate => rate.value === or)} defaultValue={occupancy_rate[0]} onChange={occupancyRate} style={{ width: '600px' }} isSearchable={false} />
+                                <Select options={occupancy_rate} value={occupancy_rate.find(rate => rate.value === or)} defaultValue={occupancy_rate[0]} onChange={occupancyRate} styles={styles} isSearchable={false} />
                             </div>
                             <div className='select_options'>
                                 <p>Enter Outdoor Temperature (<span id='scale'></span>)</p>
@@ -558,23 +599,23 @@ function OTST() {
                         <div className="inputs_right">
                             <div className='unoccupied_periods'>
                                 <p>0 Hours Unoccupied</p>
-                                <Select isMulti name="0-hours-unoccupied" formatOptionLabel={formatLabel} options={options.slice(13, 14)} value={selectedOptions.filter(option => option.value >= 13 && option.value < 14)} onChange={handle0HourChange} />
+                                <Select isMulti name="0-hours-unoccupied" formatOptionLabel={formatLabel} options={options.slice(13, 14)} styles={styles} value={selectedOptions.filter(option => option.value >= 13 && option.value < 14)} onChange={handle0HourChange} />
                             </div>
                             <div className='unoccupied_periods'>
                                 <p>1 Hour Unoccupied</p>
-                                <Select isMulti name="1-hour-unoccupied" formatOptionLabel={formatLabel} options={options.slice(12, 13)} value={selectedOptions.filter(option => option.value >= 12 && option.value < 13)} onChange={handle1HourChange} />
+                                <Select isMulti name="1-hour-unoccupied" formatOptionLabel={formatLabel} options={options.slice(12, 13)} styles={styles} value={selectedOptions.filter(option => option.value >= 12 && option.value < 13)} onChange={handle1HourChange} />
                             </div>
                             <div className='unoccupied_periods'>
                                 <p>2 Hours Unoccupied</p>
-                                <Select isMulti name="2-hours-unoccupied" formatOptionLabel={formatLabel} options={options.slice(9, 12)} value={selectedOptions.filter(option => option.value >= 9 && option.value < 12)} onChange={handle2HoursChange} />
+                                <Select isMulti name="2-hours-unoccupied" formatOptionLabel={formatLabel} options={options.slice(9, 12)} styles={styles} value={selectedOptions.filter(option => option.value >= 9 && option.value < 12)} onChange={handle2HoursChange} />
                             </div>
                             <div className='unoccupied_periods'>
                                 <p>4 Hours Unoccupied</p>
-                                <Select isMulti name="4-hours-unoccupied" formatOptionLabel={formatLabel} options={options.slice(5, 9)} value={selectedOptions.filter(option => option.value >= 5 && option.value < 9)} onChange={handle4HoursChange} />
+                                <Select isMulti name="4-hours-unoccupied" formatOptionLabel={formatLabel} options={options.slice(5, 9)} styles={styles} value={selectedOptions.filter(option => option.value >= 5 && option.value < 9)} onChange={handle4HoursChange} />
                             </div>
                             <div className='unoccupied_periods'>
                                 <p>6 Hours Unoccupied</p>
-                                <Select isMulti name="6-hours-unoccupied" formatOptionLabel={formatLabel} options={options.slice(0, 5)} value={selectedOptions.filter(option => option.value >= 0 && option.value < 5)} onChange={handle6HoursChange} />
+                                <Select isMulti name="6-hours-unoccupied" formatOptionLabel={formatLabel} options={options.slice(0, 5)} styles={styles} value={selectedOptions.filter(option => option.value >= 0 && option.value < 5)} onChange={handle6HoursChange} />
                             </div>
                             <div className="legend">
                                 <p><b>EM</b>: Early-Morning; <b>MM</b>: Mid-Morning; <b>LM</b>: Late-Morning; <br /><b>EA</b>: Early-Afternoon; <b>MA</b>: Mid-Afternoon; <b>LA</b>: Late-Afternoon; <b>LT</b>: Lunchtime</p>

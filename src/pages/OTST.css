@@ -149,6 +149,11 @@
     gap: 1rem;
 }
 
+.OTST .second_section .inputs .inputs_left .select_options p,
+.OTST .second_section .inputs .inputs_right .unoccupied_periods p  {
+    font-size: 1rem;
+}
+
 .OTST .second_section .inputs .inputs_left input {
     font-size: 1rem;
     height: 25px;
@@ -337,6 +342,11 @@
         padding: calc(0.7 * 2rem);
     }
 
+    .OTST .second_section .inputs .inputs_left .select_options p,
+    .OTST .second_section .inputs .inputs_right .unoccupied_periods p {
+        font-size: calc(0.7 * 1rem);
+    }
+
     .OTST .second_section .inputs .inputs_left .select_options {
         grid-template-columns: calc(0.7 * 1fr) calc(0.7 * 1fr);
         padding-bottom: calc(0.7 * 1rem);
@@ -370,11 +380,11 @@
     }
 
     .OTST .legend p {
-        font-size: smaller;
+        font-size: 0.7rem;
     }
 
     .OTST .error_input p {
-        font-size: smaller;
+        font-size: 0.7rem;
     }
 
     .OTST .error-input {
@@ -382,7 +392,7 @@
     }
 
     .OTST .all_outputs>* {
-        font-size: smaller;
+        font-size: 0.7rem;
     }
 
     .OTST .second_section .outputs {
@@ -397,6 +407,14 @@
         padding: calc(0.7 * .5rem);
         border: calc(0.7 * 1px) solid black;
         border-radius: calc(0.7 * 8px);
+    }
+
+    .OTST .css-b62m3t-container {
+        width: calc(0.7 * 200px);
+    }
+
+    .OTST .css-b62m3t-container div div div {
+        font-size: calc(0.7 * 1rem);
     }
 }
 
@@ -487,6 +505,11 @@
         padding: calc(0.4 * 2rem);
     }
 
+    .OTST .second_section .inputs .inputs_left .select_options p,
+    .OTST .second_section .inputs .inputs_right .unoccupied_periods p  {
+        font-size: calc(0.4 * 1rem);
+    }
+
     .OTST .second_section .inputs .inputs_left .select_options {
         grid-template-columns: calc(0.4 * 1fr) calc(0.4 * 1fr);
         padding-bottom: calc(0.4 * 1rem);
@@ -520,11 +543,11 @@
     }
 
     .OTST .legend p {
-        font-size: smaller;
+        font-size: 0.5rem;
     }
 
     .OTST .error_input p {
-        font-size: smaller;
+        font-size: 0.5rem;
     }
 
     .OTST .error-input {
@@ -532,7 +555,7 @@
     }
 
     .OTST .all_outputs>* {
-        font-size: smaller;
+        font-size: 0.5rem;
     }
 
     .OTST .second_section .outputs {
@@ -547,6 +570,14 @@
         padding: calc(0.4 * .5rem);
         border: calc(0.4 * 1px) solid black;
         border-radius: calc(0.4 * 8px);
+    }
+
+    .OTST .css-b62m3t-container {
+        width: calc(0.4 * 200px);
+    }
+
+    .OTST .css-b62m3t-container div div div {
+        font-size: calc(0.4 * 1rem);
     }
 }
 
@@ -637,6 +668,11 @@
         padding: calc(0.3 * 2rem);
     }
 
+    .OTST .second_section .inputs .inputs_left .select_options p,
+    .OTST .second_section .inputs .inputs_right .unoccupied_periods p  {
+        font-size: calc(0.3 * 1rem);
+    }
+
     .OTST .second_section .inputs .inputs_left .select_options {
         grid-template-columns: calc(0.3 * 1fr) calc(0.3 * 1fr);
         padding-bottom: calc(0.3 * 1rem);
@@ -670,11 +706,11 @@
     }
 
     .OTST .legend p {
-        font-size: smaller;
+        font-size: 0.3rem;
     }
 
     .OTST .error_input p {
-        font-size: smaller;
+        font-size: 0.3rem;
     }
 
     .OTST .error-input {
@@ -682,7 +718,7 @@
     }
 
     .OTST .all_outputs>* {
-        font-size: smaller;
+        font-size: 0.3rem;
     }
 
     .OTST .second_section .outputs {
@@ -699,4 +735,11 @@
         border-radius: calc(0.3 * 8px);
     }
 
+    .OTST .css-b62m3t-container {
+        width: calc(0.3 * 200px);
+    }
+
+    .OTST .css-b62m3t-container div div div {
+        font-size: calc(0.3 * 1rem);
+    }
 }

@@ -16,7 +16,7 @@ const Carousel = ({ slides }) => {
     const setTimer = () => {
         timerRef.current = setInterval(() => {
             moveForward();
-        }, 4000);
+        }, 40000);
     };
 
     const resetTimer = () => {
