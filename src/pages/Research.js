@@ -5,9 +5,9 @@ import Container from '../components/Container';
 import './Research.css'
 import { Link } from 'react-router-dom';
 
-import AWSLogo from './../components/Website Data/AWS logo.png'
+import AWSLogo from './../components/Website Data/AWS logo21.png'
 import TraneLogo from './../components/Website Data/tt_logo_color_rgb.jpg'
-import GreenologyLogo from './../components/Website Data/Greenology logo.png'
+import GreenologyLogo from './../components/Website Data/Greenology logo2.png'
 import CoLogo from './../components/Website Data/Co Innovation lab logo.jpg'
 
 import Theme1 from './../components/Website Data/Kai_OPC.jpg'

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css';
-import NUSLogo from './Website Data/NUSLOGO-removebg-preview.png'
+import NUSLogo from './Website Data/nus_logo_full-horizontal.jpg'
 import { Link } from 'react-router-dom';
 
 const Footer = () => {

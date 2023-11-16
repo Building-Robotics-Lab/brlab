@@ -31,15 +31,10 @@
 .Research .first_section .industry_partners a {
     flex: 1;
     margin: 25px;
-    border: 2px solid black;
+    border: 3px solid rgb(45, 99, 83);
     border-radius: 50%;
     margin-bottom: 3.3vmax;
     overflow: hidden;
-}
-
-.Research .first_section .industry_partners a:nth-child(1),
-.Research .first_section .industry_partners a:nth-child(3) {
-    background-color: rgb(208, 187, 148);
 }
 
 .Research .first_section .industry_partners img {

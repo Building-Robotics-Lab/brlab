@@ -88,6 +88,11 @@
     /* Add some space between the logo and buttons */
 }
 
+.logo-buttons-wrapper img {
+    width: 219px;
+
+}
+
 /* ALL MID */
 
 .Footer .mid_text h3 {
@@ -148,6 +153,10 @@
     .logo-buttons-wrapper p {
         display: flex;
     }
+
+    .logo-buttons-wrapper img {
+        width: calc(0.7 * 219px);
+    }
 }
 
 @media screen and (max-width: 769px) {
@@ -188,6 +197,9 @@
         margin-bottom: 1.5rem;
     }
     
+    .logo-buttons-wrapper img {
+        width: calc(0.4 * 219px);
+    }
 }
 
 @media screen and (max-width: 426px) {
@@ -255,5 +267,9 @@
     
     #footer_Button:not(:last-child) {
         padding: 0px 5px 0px 0px;
+    }
+
+    .logo-buttons-wrapper img {
+        width: calc(0.3 * 219px);
     }
 }

@@ -69,6 +69,7 @@ function News() {
         {
             NewsSectionName: 'IqbalPublication2',
             imageSrc: IqbalPublication2,
+            altText: "",
             date: '11/10/2023',
             title: '<i>Building and Environment</i> publication announcement!',
             content: (
@@ -80,6 +81,7 @@ function News() {
         {
             NewsSectionName: 'Guillaume',
             imageSrc: GuillaumePic,
+            altText: "",
             date: '21/09/2023',
             title: 'Please welcome Guillaume Lecronier to the lab!',
             content: (
@@ -91,6 +93,7 @@ function News() {
         {
             NewsSectionName: 'Pierre',
             imageSrc: PierrePic,
+            altText: "",
             date: '18/09/2023',
             title: 'Please welcome Pierre-Louis David to the lab!',
             content: (
@@ -102,6 +105,7 @@ function News() {
         {
             NewsSectionName: 'Pegah',
             imageSrc: PegahPic,
+            altText: "",
             date: '14/08/2023',
             title: 'Please welcome Pegah Eshraghi to the lab!',
             content: (
@@ -113,6 +117,7 @@ function News() {
         {
             NewsSectionName: 'RiccardoPublication',
             imageSrc: RiccardoPublication,
+            altText: "",
             date: '04/07/2023',
             title: '<i>Energy and Built Environment</i> publication announcement!',
             content: (
@@ -124,6 +129,7 @@ function News() {
         {
             NewsSectionName: 'Kelly',
             imageSrc: KellyPic,
+            altText: "",
             date: '15/05/2023',
             title: 'Please welcome Kelly Loh to the lab!',
             content: (
@@ -135,6 +141,7 @@ function News() {
         {
             NewsSectionName: 'Xiaosong',
             imageSrc: XiaosongPic,
+            altText: "",
             date: '26/01/2023',
             title: 'Please welcome SU Xiaosong to the lab!',
             content: (
@@ -146,6 +153,7 @@ function News() {
         {
             NewsSectionName: 'KaiPublication',
             imageSrc: KaiPublication,
+            altText: "",
             date: '15/01/2023',
             title: '<i>Building and Environment</i> publication announcement!',
             content: (
@@ -157,6 +165,7 @@ function News() {
         {
             NewsSectionName: 'Connor',
             imageSrc: ConnorPic,
+            altText: "",
             date: '09/01/2023',
             title: 'Please welcome Connor Aucremanne to the lab!',
             content: (
@@ -168,6 +177,7 @@ function News() {
         {
             NewsSectionName: 'IqbalPublication',
             imageSrc: IqbalPublication,
+            altText: "",
             date: '01/01/2023',
             title: '<i>Energy and Buildings</i> publication announcement!',
             content: (

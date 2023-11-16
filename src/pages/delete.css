@@ -1,149 +1,35 @@
-/* First Section */
-
-.OTST .first_section {
-    gap: calc(0.3 * 2rem);
-}
-
-.OTST .first_section .heading_and_links h1 {
-    font-size: calc(0.3 * 2.5rem);
-    margin-bottom: calc(0.3 * 1.5rem);
-}
-
-.OTST .first_section .heading_and_links h3 {
-    font-size: calc(0.3 * 1.75rem);
-    margin-bottom: calc(0.3 * 1.5rem);
-}
-
-.OTST .first_section .heading_and_links .Github_stuff {
-    gap: calc(0.3 * 2rem);
-}
-
-.OTST .first_section .heading_and_links .Github_stuff .icon {
-    font-size: calc(0.3 * 3rem);
-}
-
-.OTST .first_section .heading_and_links .Github_stuff .text {
-    font-size: calc(0.3 * 1rem);
-}
-
-.OTST .first_section .heading_and_links .Github_stuff .text:hover {
-    border-radius: calc(0.3 * 0.25rem);
-}
-
-.OTST .first_section .contacts h3 {
-    font-size: calc(0.3 * 1.75rem);
+.carouselImage {
+    height: calc(0.3 * 300px);
     margin-bottom: calc(0.3 * 1rem);
+    padding: calc(0.3 * 1rem);
 }
 
-.OTST .first_section .contacts .Main .profile_image img {
-    width: calc(0.3 * 150px);
-    height: calc(0.3 * 150px);
-    padding: calc(0.3 * 10px);
-}
-
-.OTST .first_section .contacts .Main .profile_image img:hover {
-    width: calc(0.3 * 170px);
-    height: calc(0.3 * 170px);
-}
-
-.OTST .first_section .contacts .Supports .profile_image img {
-    width: calc(0.3 * 100px);
-    height: calc(0.3 * 100px);
-    padding: calc(0.3 * 10px);
-}
-
-.OTST .first_section .contacts .Supports .profile_image img:hover {
-    width: calc(0.3 * 120px);
-    height: calc(0.3 * 120px);
-}
-
-.OTST .first_section .contacts .Main {
-    margin-bottom: calc(0.3 * 1.5rem);
-}
-
-.OTST .first_section .contacts .Main .each_profile,
-.OTST .first_section .contacts .Supports .each_profile {
-    width: calc(0.3 * 200px);
-}
-
-.OTST .first_section .contacts .profile_data a {
-    margin-bottom: calc(0.3 * 0.5rem);
-}
-
-.OTST .first_section .contacts .profile_data h5 {
-    font-size: calc(0.3 * 1rem);
-}
-
-.OTST .first_section .contacts .profile_data h5:hover {
-    border-radius: calc(0.3 * 0.25rem);
-}
-
-/* Second Section */
-
-.OTST .second_section .inputs .inputs_left {
-    padding: calc(0.3 * 2rem);
-}
-
-.OTST .second_section .inputs .inputs_left .select_options {
-    grid-template-columns: calc(0.3 * 1fr) calc(0.3 * 1fr);
-    padding-bottom: calc(0.3 * 1rem);
-}
-
-.OTST .second_section .inputs .inputs_right .Buttons {
-    padding-top: calc(0.3 * 1rem);
-    gap: calc(0.3 * 1rem);
-}
-
-.OTST .second_section .inputs .inputs_left input {
-    font-size: calc(0.3 * 1rem);
-    height: calc(0.3 * 25px);
-    padding: 0rem calc(0.3 * 0.25rem);
-}
-
-.OTST .second_section .inputs .inputs_right {
-    padding: calc(0.3 * 2rem);
-}
-
-.OTST .second_section .inputs .inputs_right img {
-    width: calc(0.3 * 25px);
-    right: calc(0.3 * 25px);
-    padding: 0rem calc(0.3 * 1rem);
-}
-
-.OTST .second_section .inputs .inputs_right .unoccupied_periods {
-    display: grid;
-    grid-template-columns: calc(0.3 * 1fr) calc(0.3 * 2fr);
-    padding-bottom: calc(0.3 * 1rem);
-}
-
-.OTST .legend p {
+.carouselDate {
+    padding: 0 calc(0.3 * 1rem);
     font-size: smaller;
 }
 
-.OTST .error_input p {
-    font-size: smaller;
+.carouselLink {
+    padding: 0 calc(0.3 * 1rem);
 }
 
-.OTST .error-input {
-    border: calc(0.3 * 2px) solid red;
+.carouselTitle {
+    font-size: calc(0.3 * 1.5rem);
+    padding: calc(0.3 * 0.25rem) calc(0.3 * 1rem);
 }
 
-.OTST .all_outputs>* {
-    font-size: smaller;
+.btn {
+    width: calc(0.3 * 40px);
+    height: calc(0.3 * 40px);
+    font-size: calc(0.3 * 1.5rem);
 }
 
-.OTST .second_section .outputs {
-    min-height: calc(0.3 * 400px);
+.btn-left {
+    left: calc(0.3 * -10px);
 }
 
-.loading_thing {
-    font-size: calc(0.3 * 5rem);
-}
-
-.tooltip {
-    padding: calc(0.3 * .5rem);
-    border: calc(0.3 * 1px) solid black;
-    border-radius: calc(0.3 * 8px);
+.btn-right {
+    right: calc(0.3 * -10px);
 }
 
 @media screen and (max-width: 1025px) {}

@@ -26,7 +26,7 @@ function NewsGrid({ newsData, highlightedSection }) {
             {newsData.map((news, index) => (
                 <div key={index} className={`NewsSection ${highlightedSection === news.NewsSectionName ? 'highlighted-section' : ''}`} id={news.NewsSectionName}>
                     <div className="NewsPic">
-                        <img src={news.imageSrc} alt="" />
+                        <img src={news.imageSrc} alt={news.altText} />
                         <p className='date'>{news.date}</p>
                         <h4><b dangerouslySetInnerHTML={{ __html: news.title }}></b></h4>
                     </div>

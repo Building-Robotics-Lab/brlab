@@ -104,7 +104,7 @@ function Home() {
             <Container>
                 <div className="first_section">
                     <video autoPlay loop muted>
-                        <source src={LandingPageVideo} type="video/mp4" ></source>
+                        <source src={LandingPageVideo} type="video/mp4" alt=""></source>
                     </video>
                 </div>
                 <div className="first_section2">
@@ -127,6 +127,7 @@ function Home() {
                     vision-based systems for <b><i>remote physiological measurements</i></b>, and
                     <b><i> multi-sensing devices</i></b> for <b><i>human-centric indoor environmental quality (IEQ)</i></b>."
                     imageUrl={FirstResearchImage}
+                    researchAltText="whatever"
                 />
 
                 <ResearchSectionRight
@@ -138,6 +139,7 @@ function Home() {
                     comfort system devices</i></b> into the control loop of <b><i>HVAC systems</i></b>, developing 
                     <b><i>advanced sensors</i></b>, <b><i>ontology automation,</i></b> and a <b><i>semantically 
                     connected digital twin</i></b>."
+                    researchAltText="whatever"
                 />
 
                 <ResearchSection
@@ -148,12 +150,18 @@ function Home() {
                     integration for enhancing the <b><i>cooling effects</i></b> of current urban greening systems,
                     such as <b><i>vertical greenery systems (VGS)</i></b>."
                     imageUrl={ThirdResearchImage}
+                    researchAltText="whatever"
                 />
 
                 <ResearchSectionRight
                     title="INTELLIGENT ENVIRONMENTS"
+                    text="Our research investigates the <b><i>democratisation of virtual power plants</b></i> (VPP) for <b><i>optimal 
+                    monetisation</b></i> and <b><i>grid flexibility</b></i> to empower end-users to participate effectively. By leveraging AI, 
+                    we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into 
+                    two halves: one explores <b><i>user impacts on VPPs</b></i> and <b><i>energy consumption behaviour modelling</b></i>, 
+                    while the other employs <b><i>machine learning for automated energy market participation</b></i>."
                     imageUrl={FourthResearchImage}
-                    text="Our research investigates the <b><i>democratisation of virtual power plants</b></i> (VPP) for <b><i>optimal monetisation</b></i> and <b><i>grid flexibility</b></i> to empower end-users to participate effectively. By leveraging AI, we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into two halves: one explores <b><i>user impacts on VPPs</b></i> and <b><i>energy consumption behaviour modelling</b></i>, while the other employs <b><i>machine learning for automated energy market participation</b></i>."
+                    researchAltText="whatever"
                 />
                 <div className="HomeButtons">
                     <Link to="/research"><p id='JoinButton'>LEARN MORE ABOUT OUR RESEARCH</p></Link>
@@ -167,7 +175,6 @@ function Home() {
                             <FontAwesomeIcon icon={faUsers} />
                         </div>
                         <div className="meet_our_team_text">
-
                             <p id='meet_our_team_text_left'>
                                 <h2><b>Meet Our Team</b></h2>
                                 We are a team of researchers with diverse backgrounds, enabling us to effectively innovate. Our
@@ -252,12 +259,12 @@ function Home() {
 
 export default Home;
 
-const ResearchSection = ({ title, text, imageUrl }) => {
+const ResearchSection = ({ title, text, imageUrl, researchAltText }) => {
     return (
         <div className='Each_Section'>
             <div className="grid-container">
                 <div className='ResearchImage grid-item'>
-                    <img src={imageUrl} alt="Research" />
+                    <img src={imageUrl} alt={researchAltText} />
                 </div>
                 <div className='ResearchText grid-item'>
                     <h2><b>{title}</b></h2>
@@ -268,7 +275,7 @@ const ResearchSection = ({ title, text, imageUrl }) => {
     );
 };
 
-const ResearchSectionRight = ({ title, text, imageUrl }) => {
+const ResearchSectionRight = ({ title, text, imageUrl, researchAltText }) => {
     return (
         <div className='Each_Section'>
             <div className="grid-container">
@@ -277,7 +284,7 @@ const ResearchSectionRight = ({ title, text, imageUrl }) => {
                     <p dangerouslySetInnerHTML={{ __html: text }} />
                 </div>
                 <div className='ResearchImage grid-item'>
-                    <img src={imageUrl} alt="Research" />
+                    <img src={imageUrl} alt={researchAltText} />
                 </div>
             </div>
         </div>
