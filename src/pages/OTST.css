@@ -210,6 +210,60 @@
     font-size: smaller;
 }
 
+/* Third Section */
+
+.OTST .third_section {
+    display: flex;
+    gap: 2rem;
+}
+
+.OTST .third_section .guidelines_text {
+    flex: 1;
+}
+
+.OTST .third_section .guidelines_text h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.OTST .third_section .guidelines_text ul {
+    padding-left: 1rem;
+}
+
+.OTST .third_section .guidelines_text p {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+.OTST .third_section .guidelines_text li {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.OTST .third_section .guidelines_image {
+    flex: 2;
+}
+
+.OTST .third_section .guidelines_image img {
+    width: 100%;
+    border: 2px solid black;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.OTST .third_section .guidelines_image2 {
+    flex: 2;
+}
+
+.OTST .third_section .guidelines_image2 img {
+    width: 100%;
+    border: 2px solid black;
+    height: auto;
+}
+
 @keyframes shake {
     0% {
         transform: translateX(0);

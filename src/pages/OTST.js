@@ -6,6 +6,8 @@ import './OTST.css'
 import Pako from 'pako';
 import * as d3 from 'd3';
 
+import ExampleImage from './../components/Website Data/output_example1.png'
+import ExampleImage2 from './../components/Website Data/output_example3.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
@@ -560,7 +562,7 @@ function OTST() {
                                 <Select options={building_size} value={building_size.find(building => building.value === size)} defaultValue={building_size[0]} onChange={buildingSize} styles={styles} isSearchable={false} />
                             </div>
                             <div className='select_options'>
-                                <p>Tempreature Scale:</p>
+                                <p>Temperature Scale:</p>
                                 <Select options={temperature_scale} value={temperature_scale.find(scale => scale.value === temperature)} defaultValue={temperature_scale[0]} onChange={temperatureScale} styles={styles} isSearchable={false} />
                             </div>
                             <div className='select_options'>
@@ -587,9 +589,9 @@ function OTST() {
                                             </svg>
                                             <p>
                                                 <b><span id={`output_label_${index}`}>{col3_2[index]}</span></b>:
-                                                Optimal Setpoint (<span id={`output_scale_${index}`}>{usescale}</span>):
+                                                Optimal Setpoint (<span id={`output_scale_${index}`}>{usescale}</span>) =
                                                 <b><span id={`output_sp_${index}`}> {col6[index].toFixed(1)}</span></b>;
-                                                Energy Savings Compared to <span id={`output_baseline_${index}`}>{usebaseline}</span><span id={`output_scale_${index}`}>{usescale}</span> (%): <b><span id={`output_savings_${index}`}>{col9[index]}</span></b>
+                                                Energy Savings Compared to <span id={`output_baseline_${index}`}>{usebaseline}</span><span id={`output_scale_${index}`}>{usescale}</span> = <b><span id={`output_savings_${index}`}>{col9[index]}</span>%</b>
                                             </p>
                                         </div>
                                     ))}
@@ -618,7 +620,7 @@ function OTST() {
                                 <Select isMulti name="6-hours-unoccupied" formatOptionLabel={formatLabel} options={options.slice(0, 5)} styles={styles} value={selectedOptions.filter(option => option.value >= 0 && option.value < 5)} onChange={handle6HoursChange} />
                             </div>
                             <div className="legend">
-                                <p><b>EM</b>: Early-Morning; <b>MM</b>: Mid-Morning; <b>LM</b>: Late-Morning; <br /><b>EA</b>: Early-Afternoon; <b>MA</b>: Mid-Afternoon; <b>LA</b>: Late-Afternoon; <b>LT</b>: Lunchtime</p>
+                                <p><b>EM</b> = early-morning; <b>MM</b> = mid-morning; <b>LM</b> = late-morning; <br /><b>EA</b> = early-afternoon; <b>MA</b> = mid-afternoon; <b>LA</b> = late-afternoon; <b>LT</b> = lunchtime</p>
                             </div>
                             <div className='Buttons'>
                                 <div className="HomeButtons">
@@ -636,6 +638,33 @@ function OTST() {
                         }
                     </div>
 
+                </div>
+            </Container>
+
+            <Container>
+                <div className="third_section">
+                    <div className="guidelines_text">
+                    <h3>About the Tool</h3>
+                        <p>
+                            The Optimal Temperature Setpoint Tool allows the user to identify the optimal setpoint based on occupancy rates, patterns, and outdoor air temperature values in order to facilitate practical applications. With respect to the inputs, the tool returns the temperature setpoint that minimises energy consumption. Multiple scenarios with various inputs can be tested and the results can be downloaded as a .csv file. See Riccardo Talami's publication [here] for a more in-depth description and analysis of the data behind this tool.
+                        </p>
+                    <h3>Guidelines</h3>
+                        <p>
+                            <b>1. Identify the 'Building Size'</b><br/>Start by determining if your building size is small (threshold range), medium (threshold range), or large (threshold range).<br/><br/>
+                            <b>2. Select the 'Temperature Scale'</b><br/>Start by selecting the temperature scale you want to use for your calculations between Celsius and Fahrenheit.<br/><br/>
+                            <b>3. Choose the 'Climate Zone'</b> <br/>Choose the climate zone that the building in question is located within by scrolling through the dropdown menu. If you are unsure of your corresponding climate zone, please visit this link for assistance.<br/><br/>
+                            <b>4. Choose the 'Occupancy Rate'</b><br/> Depending on the minimum and maximum values that a space can be occupied, choose the occupancy rate of the building between lightly occupied (25%), mildly occupied (50%), mostly occupied (75%), and fully occupied (100%).<br/><br/>
+                            <b>5. Input 'Outdoor Temperature'</b><br/><br/>
+                            <b>6. Select the patterns of unoccupied periods</b><br/>There are 14 unoccupied patterns across 5 unoccupied periods. Choose the one(s) that best fit the schedule of your chosen building. The legend for the various abbreviations is in the section above below this segment. Please see the occupancy schedule image to the right (bottom) for an illustrative explanation of the different combinations.<br/><br/>
+                            <b>5. Click 'Download .csv file' to get the generated results</b><br/><br/>
+                            <b>6. Click 'Reset' to revert changes to default settings</b><br/><br/>
+                            <b>7. Please view the image to the right (top) for a sample output</b><br/>
+                        </p>
+                    </div>
+                    <div className="guidelines_image">
+                        <img src={ExampleImage} alt="An example of what the interactive tool above should look like when being used." />
+                        <img src={ExampleImage2} alt="An illustrative example of the occupancy schedule variations for 0 hours, 1 hour, 2 hours, 4 hours, and 6 hours." />
+                    </div>
                 </div>
             </Container>
 
@@ -718,7 +747,7 @@ const climate_zone = [
 const occupancy_rate = [
     { value: 0, label: 'Lightly Occupied (25%)' },
     { value: 1, label: 'Mildly Occupied (50%)' },
-    { value: 2, label: 'Most Occupied (75%)' },
+    { value: 2, label: 'Mostly Occupied (75%)' },
     { value: 3, label: 'Fully Occupied (100%)' }
 ];
 

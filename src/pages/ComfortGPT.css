@@ -233,13 +233,23 @@
 
 .ComfortGPT .third_section .guidelines_text h3 {
     font-size: 1.75rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+}
+.ComfortGPT .third_section .guidelines_text h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 
 .ComfortGPT .third_section .guidelines_text ul {
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
+.ComfortGPT .third_section .guidelines_text p {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+    text-align: justify;
+}
 .ComfortGPT .third_section .guidelines_text li {
     font-size: 1rem;
     margin-bottom: 0.75rem;

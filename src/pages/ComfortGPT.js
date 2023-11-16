@@ -6,7 +6,7 @@ import './ComfortGPT.css'
 import { Link } from 'react-router-dom';
 import * as d3 from 'd3';
 
-import ExampleImage from './../components/Website Data/output_example.png'
+import ExampleImage from './../components/Website Data/output_example1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
@@ -687,13 +687,13 @@ function ComfortGPT() {
                 </div>
                 <div className="output" id='output' style={{ display: showOutput }}>
                     <div className="output1">
-                        <h5>For an Outdoor Temperature below <span id="below"></span> <span id="scale_thing"></span>:</h5>
+                        <h5>For an Outdoor Temperature below <span id="below"></span><span id="scale_thing"></span>:</h5>
                         <p><b>Preferred Setpoint</b> = (<i>Slope</i> * <i>Outdoor Temperature</i>) + <i>Intercept</i></p>
                         <p><b>Preferred Setpoint</b> = (<span id="heatingSlope"></span> * <i>Outdoor Temperature</i>) + <span id="heatingIntercept"></span></p>
                     </div>
 
                     <div className="output2">
-                        <h5>For an Outdoor Temperature above <span id="above"></span> <span id="scale_thing"></span>:</h5>
+                        <h5>For an Outdoor Temperature above <span id="above"></span><span id="scale_thing"></span>:</h5>
                         <p><b>Preferred Setpoint</b> = (<i>Slope</i> * <i>Outdoor Temperature</i>) + <i>Intercept</i></p>
                         <p><b>Preferred Setpoint</b> = (<span id="coolingSlope"></span> * <i>Outdoor Temperature</i>) + <span id="coolingIntercept"></span></p>
                     </div>
@@ -706,16 +706,20 @@ function ComfortGPT() {
             <Container>
                 <div className="third_section">
                     <div className="guidelines_text">
-                        <h3>Guidelines</h3>
-                        <ul>
-                            <li><b>Select the 'Temperature Scale':</b> <br />Start by selecting the temperature scale you want to use for your calculations.</li>
-                            <li><b>Input 'Outdoor Temperature' and 'Preferred Setpoint':</b> <br />Input the outdoor temperature and preferred setpoints. Ensure the data entered aligns with the temperature scale selected in the first step and that both columns of a row are filled.</li>
-                            <li><b>Add or remove rows to your preference.</b></li>
-                            <li><b>Click 'Calculate' to obtain the slope and generate results.</b></li>
-                            <li><b>Click 'Download .csv file' to get the generated results.</b></li>
-                            <li><b>Click 'Reset' to revert changes to default settings.</b></li>
-                            <li><b>Please view the image to the right for a sample output.</b></li>
-                        </ul>
+                    <h3>About the Tool</h3>
+                        <p>
+                            ComfortGPT employs generative pre-trained models built on the data from thousands of ECOBEE thermostat users, to directly predict temperature setpoints while minimizing the reliance on occupant interactions. See CHEN Kai's publication [here] for a more in-depth description and analysis of the data behind this tool.
+                        </p>
+                    <h3>Guidelines</h3>
+                        <p>
+                            <b>1. Select the 'Temperature Scale'</b> <br/>Start by selecting the temperature scale you want to use for your calculations between Celsius, Fahrenheit, and Kelvin.<br/><br/>
+                            <b>2. Input 'Outdoor Temperature' and 'Preferred Setpoint'</b> <br />Input the outdoor temperature and preferred setpoints. Ensure the data entered aligns with the temperature scale selected in the first step and that both columns of a row are filled.<br/><br/>
+                            <b>3. Add or remove rows to your preference</b><br/><br/>
+                            <b>4. Click 'Calculate' to obtain the slope and generate results</b><br/><br/>
+                            <b>5. Click 'Download .csv file' to get the generated results</b><br/><br/>
+                            <b>6. Click 'Reset' to revert changes to default settings</b><br/><br/>
+                            <b>7. Please view the image to the right for a sample output</b><br/>
+                        </p>
                     </div>
                     <div className="guidelines_image">
                         <img src={ExampleImage} alt="An example of what the interactive tool above should look like when being used." />

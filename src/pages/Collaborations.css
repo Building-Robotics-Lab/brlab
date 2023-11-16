@@ -1,0 +1,544 @@
+/* First Section */
+
+.Collaborations .first_section {
+    display: flex;
+    flex-direction: column;
+}
+
+.Collaborations .first_section .title_section h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.Collaborations .first_section .title_section h3 {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Collaborations .first_section .title_section h5 {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.Collaborations .first_section .industry_partners {
+    display: flex;
+}
+
+.Collaborations .first_section .industry_partners a {
+    flex: 1;
+    margin: 25px;
+    border: 3px solid rgb(45, 99, 83);
+    border-radius: 50%;
+    margin-bottom: 3.3vmax;
+    overflow: hidden;
+}
+
+.Collaborations .first_section .industry_partners img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.Collaborations .first_section .industry_partners a:not(:last-child) img {
+    /* Everything except last child */
+    scale: 0.8;
+    object-fit: scale-down;
+}
+
+.Collaborations .first_section .industry_partners a:nth-child(1) img {
+    /* AWS logo */
+}
+
+.Collaborations .first_section .industry_partners a:nth-child(2) img {
+    /* Trane logo */
+    scale: 1;
+}
+
+.Collaborations .first_section .industry_partners a:nth-child(3) img {
+    scale: 1.05;
+}
+
+.Collaborations .first_section .industry_partners a:last-child img {
+    /* co-innovation logo */
+    scale: 0.95;
+}
+
+.Collaborations .first_section .HomeButtons {
+    display: flex;
+    justify-content: center;
+}
+
+/* Second Section */
+
+.Collaborations .second_section .title_section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Collaborations .second_section .themes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+}
+
+.Collaborations .second_section .themes .each_theme {
+    flex: 1;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.Collaborations .second_section .themes .each_theme img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.Collaborations .second_section .themes .each_theme h4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-size: 1.25rem;
+    min-height: 50px;
+    overflow: hidden;
+}
+
+.Collaborations .second_section .themes .each_theme p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1rem;
+}
+
+/* Themes Section */
+
+.Collaborations .whole_theme {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem
+}
+
+.Collaborations .title h1 {
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Collaborations .theme_section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* margin-bottom: 3rem; */
+}
+
+.Collaborations .theme_section a {
+    color: rgb(45, 99, 83);
+}
+
+.Collaborations .theme_section a:hover {
+    color: white;
+    background-color: rgb(45, 99, 83);
+    border-radius: 0.25rem;
+}
+
+.Collaborations .theme_section .theme_details img {
+    width: 30%;
+    height: auto;
+    float: right;
+    margin-left: 2rem;
+    margin-right: 0rem;
+}
+
+.Collaborations .theme_section:nth-child(odd) .theme_details img {
+    float: left;
+    margin-left: 0;
+    margin-right: 2rem;
+}
+
+.Collaborations .theme_section .theme_details h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.Collaborations .theme_section .keyObjs {
+    font-size: 1.75rem;
+    margin-top: -1rem;
+    margin-bottom: -.5rem;
+}
+
+.Collaborations .theme_section .theme_details h6 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Collaborations .theme_section .theme_details p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.Collaborations .theme_section .theme_deliverables {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 5rem;
+    margin-bottom: -.5rem;
+}
+
+.Collaborations .theme_section .theme_deliverables p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.Collaborations .theme_section .tool_links {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1025px) {
+    /* First Section */
+
+    .Collaborations .first_section .title_section h1 {
+        font-size: calc(0.7 * 2.5rem);
+        margin-bottom: calc(0.7 * 3rem);
+    }
+
+    .Collaborations .first_section .title_section h3 {
+        font-size: calc(0.7 * 1.75rem);
+        margin-bottom: calc(0.7 * 2rem);
+    }
+
+    .Collaborations .first_section .title_section h5 {
+        font-size: calc(0.7 * 1.25rem);
+        margin-bottom: calc(0.7 * 1rem);
+    }
+
+    .Collaborations .first_section .industry_partners a {
+        margin: calc(0.7 * 25px);
+        border: calc(0.7 * 2px) solid black;
+        margin-bottom: calc(0.7 * 3.3vmax);
+    }
+
+    /* Second Section */
+
+    .Collaborations .second_section .title_section h2 {
+        font-size: calc(0.7 * 2.5rem);
+        margin-bottom: calc(0.7 * 2rem);
+    }
+
+    .Collaborations .second_section .themes {
+        grid-template-columns: repeat(4, 1fr);
+        gap: calc(0.7 * 4rem);
+    }
+
+    .Collaborations .second_section .themes .each_theme {
+        grid-template-rows: auto calc(0.7 * 1fr);
+    }
+
+    .Collaborations .second_section .themes .each_theme img {
+        height: calc(0.7 * 300px);
+    }
+
+    .Collaborations .second_section .themes .each_theme h4 {
+        margin-top: calc(0.7 * 1rem);
+        margin-bottom: calc(0.7 * 1rem);
+        font-size: calc(0.7 * 1.25rem);
+        min-height: calc(0.7 * 50px);
+    }
+
+    .Collaborations .second_section .themes .each_theme p {
+        font-size: calc(0.7 * 1rem);
+    }
+
+    /* Themes Section */
+
+    .Collaborations .whole_theme {
+        gap: calc(0.7 * 6rem);
+    }
+
+    .Collaborations .title h1 {
+        font-size: calc(0.7 * 2.25rem);
+        margin-bottom: calc(0.7 * 2rem);
+    }
+
+    .Collaborations .theme_section {
+        gap: calc(0.7 * 2rem);
+    }
+
+    .Collaborations .theme_section a:hover {
+        border-radius: calc(0.7 * 0.25rem);
+    }
+
+    .Collaborations .theme_section .theme_details img {
+        margin-left: calc(0.7 * 2rem);
+    }
+
+    .Collaborations .theme_section:nth-child(odd) .theme_details img {
+        margin-right: calc(0.7 * 2rem);
+    }
+
+    .Collaborations .theme_section .theme_details h4 {
+        font-size: calc(0.7 * 1.5rem);
+        margin-bottom: calc(0.7 * 1.5rem);
+    }
+
+    .Collaborations .theme_section .keyObjs {
+        font-size: calc(0.7 * 1.75rem);
+        margin-top: calc(0.7 * -1rem);
+        margin-bottom: calc(0.7 * -.5rem);
+    }
+
+    .Collaborations .theme_section .theme_details h6 {
+        font-size: calc(0.7 * 1rem);
+        margin-bottom: calc(0.7 * 1rem);
+    }
+
+    .Collaborations .theme_section .theme_details p {
+        font-size: calc(0.7 * 1rem);
+        margin-bottom: calc(0.7 * 1rem);
+    }
+
+    .Collaborations .theme_section .theme_deliverables {
+        grid-template-columns: calc(0.7 * 1fr) calc(0.7 * 1fr);
+        gap: calc(0.7 * 1rem) calc(0.7 * 5rem);
+        margin-bottom: calc(0.7 * -.5rem);
+    }
+
+    .Collaborations .theme_section .theme_deliverables p,
+    .Collaborations .theme_section .tool_links {
+        font-size: calc(0.7 * 1rem);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    /* First Section */
+
+    .Collaborations .first_section .title_section h1 {
+        font-size: calc(0.4 * 2.5rem);
+        margin-bottom: calc(0.4 * 3rem);
+    }
+
+    .Collaborations .first_section .title_section h3 {
+        font-size: calc(0.4 * 1.75rem);
+        margin-bottom: calc(0.4 * 2rem);
+    }
+
+    .Collaborations .first_section .title_section h5 {
+        font-size: calc(0.4 * 1.25rem);
+        margin-bottom: calc(0.4 * 1rem);
+    }
+
+    .Collaborations .first_section .industry_partners a {
+        margin: calc(0.4 * 25px);
+        border: calc(0.4 * 2px) solid black;
+        margin-bottom: calc(0.4 * 3.3vmax);
+    }
+
+    /* Second Section */
+
+    .Collaborations .second_section .title_section h2 {
+        font-size: calc(0.4 * 2.5rem);
+        margin-bottom: calc(0.4 * 2rem);
+    }
+
+    .Collaborations .second_section .themes {
+        grid-template-columns: repeat(4, 1fr);
+        gap: calc(0.4 * 4rem);
+    }
+
+    .Collaborations .second_section .themes .each_theme {
+        grid-template-rows: auto calc(0.4 * 1fr);
+    }
+
+    .Collaborations .second_section .themes .each_theme img {
+        height: calc(0.4 * 300px);
+    }
+
+    .Collaborations .second_section .themes .each_theme h4 {
+        margin-top: calc(0.4 * 1rem);
+        margin-bottom: calc(0.4 * 1rem);
+        font-size: calc(0.4 * 1.25rem);
+        min-height: calc(0.4 * 50px);
+    }
+
+    .Collaborations .second_section .themes .each_theme p {
+        font-size: calc(0.4 * 1rem);
+    }
+
+    /* Themes Section */
+
+    .Collaborations .whole_theme {
+        gap: calc(0.4 * 6rem);
+    }
+
+    .Collaborations .title h1 {
+        font-size: calc(0.4 * 2.25rem);
+        margin-bottom: calc(0.4 * 2rem);
+    }
+
+    .Collaborations .theme_section {
+        gap: calc(0.4 * 2rem);
+    }
+
+    .Collaborations .theme_section a:hover {
+        border-radius: calc(0.4 * 0.25rem);
+    }
+
+    .Collaborations .theme_section .theme_details img {
+        margin-left: calc(0.4 * 2rem);
+    }
+
+    .Collaborations .theme_section:nth-child(odd) .theme_details img {
+        margin-right: calc(0.4 * 2rem);
+    }
+
+    .Collaborations .theme_section .theme_details h4 {
+        font-size: calc(0.4 * 1.5rem);
+        margin-bottom: calc(0.4 * 1.5rem);
+    }
+
+    .Collaborations .theme_section .keyObjs {
+        font-size: calc(0.4 * 1.75rem);
+        margin-top: calc(0.4 * -1rem);
+        margin-bottom: calc(0.4 * -.5rem);
+    }
+
+    .Collaborations .theme_section .theme_details h6 {
+        font-size: calc(0.4 * 1rem);
+        margin-bottom: calc(0.4 * 1rem);
+    }
+
+    .Collaborations .theme_section .theme_details p {
+        font-size: calc(0.4 * 1rem);
+        margin-bottom: calc(0.4 * 1rem);
+    }
+
+    .Collaborations .theme_section .theme_deliverables {
+        grid-template-columns: calc(0.4 * 1fr) calc(0.4 * 1fr);
+        gap: calc(0.4 * 1rem) calc(0.4 * 5rem);
+        margin-bottom: calc(0.4 * -.5rem);
+    }
+
+    .Collaborations .theme_section .theme_deliverables p,
+    .Collaborations .theme_section .tool_links {
+        font-size: calc(0.4 * 1rem);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    /* First Section */
+
+    .Collaborations .first_section .title_section h1 {
+        font-size: calc(0.3 * 2.5rem);
+        margin-bottom: calc(0.3 * 3rem);
+    }
+
+    .Collaborations .first_section .title_section h3 {
+        font-size: calc(0.3 * 1.75rem);
+        margin-bottom: calc(0.3 * 2rem);
+    }
+
+    .Collaborations .first_section .title_section h5 {
+        font-size: calc(0.3 * 1.25rem);
+        margin-bottom: calc(0.3 * 1rem);
+    }
+
+    .Collaborations .first_section .industry_partners a {
+        margin: calc(0.3 * 25px);
+        border: calc(0.3 * 2px) solid black;
+        margin-bottom: calc(0.3 * 3.3vmax);
+    }
+
+    /* Second Section */
+
+    .Collaborations .second_section .title_section h2 {
+        font-size: calc(0.3 * 2.5rem);
+        margin-bottom: calc(0.3 * 2rem);
+    }
+
+    .Collaborations .second_section .themes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: calc(0.3 * 4rem);
+    }
+
+    .Collaborations .second_section .themes .each_theme {
+        grid-template-rows: auto calc(0.3 * 1fr);
+    }
+
+    .Collaborations .second_section .themes .each_theme img {
+        height: calc(0.3 * 300px);
+    }
+
+    .Collaborations .second_section .themes .each_theme h4 {
+        margin-top: calc(0.3 * 1rem);
+        margin-bottom: 0rem;
+        font-size: calc(0.3 * 1.25rem);
+        min-height: calc(0.3 * 50px);
+    }
+
+    .Collaborations .second_section .themes .each_theme p {
+        font-size: calc(0.3 * 1rem);
+    }
+
+    /* Themes Section */
+
+    .Collaborations .whole_theme {
+        gap: calc(0.3 * 6rem);
+    }
+
+    .Collaborations .title h1 {
+        font-size: calc(0.3 * 2.25rem);
+        margin-bottom: calc(0.3 * 2rem);
+    }
+
+    .Collaborations .theme_section {
+        gap: calc(0.3 * 2rem);
+    }
+
+    .Collaborations .theme_section a:hover {
+        border-radius: calc(0.3 * 0.25rem);
+    }
+
+    .Collaborations .theme_section .theme_details img {
+        margin-left: calc(0.3 * 2rem);
+    }
+
+    .Collaborations .theme_section:nth-child(odd) .theme_details img {
+        margin-right: calc(0.3 * 2rem);
+    }
+
+    .Collaborations .theme_section .theme_details h4 {
+        font-size: calc(0.3 * 1.5rem);
+        margin-bottom: calc(0.3 * 1.5rem);
+    }
+
+    .Collaborations .theme_section .keyObjs {
+        font-size: calc(0.3 * 1.75rem);
+        margin-top: calc(0.3 * -1rem);
+        margin-bottom: calc(0.3 * -.5rem);
+    }
+
+    .Collaborations .theme_section .theme_details h6 {
+        font-size: calc(0.3 * 1rem);
+        margin-bottom: calc(0.3 * 1rem);
+    }
+
+    .Collaborations .theme_section .theme_details p {
+        font-size: calc(0.3 * 1rem);
+        margin-bottom: calc(0.3 * 1rem);
+    }
+
+    .Collaborations .theme_section .theme_deliverables {
+        grid-template-columns: calc(0.3 * 1fr) calc(0.3 * 1fr);
+        gap: calc(0.3 * 1rem) calc(0.3 * 5rem);
+        margin-bottom: calc(0.3 * -.5rem);
+    }
+
+    .Collaborations .theme_section .theme_deliverables p,
+    .Collaborations .theme_section .tool_links {
+        font-size: calc(0.3 * 1rem);
+    }
+}
