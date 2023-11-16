@@ -656,9 +656,9 @@ function OTST() {
                             <b>4. Choose the 'Occupancy Rate'</b><br/> Depending on the minimum and maximum values that a space can be occupied, choose the occupancy rate of the building between lightly occupied (25%), mildly occupied (50%), mostly occupied (75%), and fully occupied (100%).<br/><br/>
                             <b>5. Input 'Outdoor Temperature'</b><br/><br/>
                             <b>6. Select the patterns of unoccupied periods</b><br/>There are 14 unoccupied patterns across 5 unoccupied periods. Choose the one(s) that best fit the schedule of your chosen building. The legend for the various abbreviations is in the section above below this segment. Please see the occupancy schedule image to the right (bottom) for an illustrative explanation of the different combinations.<br/><br/>
-                            <b>5. Click 'Download .csv file' to get the generated results</b><br/><br/>
-                            <b>6. Click 'Reset' to revert changes to default settings</b><br/><br/>
-                            <b>7. Please view the image to the right (top) for a sample output</b><br/>
+                            <b>7. Click 'Download .csv file' to get the generated results</b><br/><br/>
+                            <b>8. Click 'Reset' to revert changes to default settings</b><br/><br/>
+                            <b>9. Please view the image to the right (top) for a sample output</b><br/>
                         </p>
                     </div>
                     <div className="guidelines_image">
