@@ -14,13 +14,19 @@ function NavBar() {
   };
 
   const toggleNav = () => {
-    setNavOpen(!isNavOpen);
+    const newNavOpen = !isNavOpen;
+    setNavOpen(newNavOpen);
 
-    if (!isNavOpen) {
-      document.body.classList.add('no-scroll');
+    if (newNavOpen) {
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.classList.remove('no-scroll');
+      document.body.style.overflow = '';
     }
+  };
+
+  const handleNavLinkClick = () => {
+    setNavOpen(false);
+    document.body.style.overflow = ''; // Reset the overflow
   };
 
   const toggleResearchSublinks = () => {
@@ -35,6 +41,7 @@ function NavBar() {
       if (window.innerWidth > 850 && isNavOpen) {
         setNavOpen(false);
         document.body.classList.remove('no-scroll');
+        document.body.style.overflow = '';
       }
     };
 
@@ -70,7 +77,6 @@ function NavBar() {
           <div className="right">
             <button className="dropdown-toggle" onClick={toggleNav}>
               <span className="hamburger-icon"></span>
-              
             </button>
             <div className="dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               <p onClick={toggleDropdown} style={{ cursor: 'pointer' }}>
@@ -96,25 +102,29 @@ function NavBar() {
       </nav>
       {isNavOpen && (
         <div className="nav-overlay">
+          <Link to="/" className="left overlay-left">
+            <img src={Logo} alt="Logo for the NUS Building Robotics Laboratory" className='logo' />
+            <p>Building Robotics Laboratory</p>
+          </Link>
           <button className="close-button" onClick={toggleNav}>&times;</button>
-          {/* Make Research clickable but not a link */}
-          <div className="nav-overlay-item" onClick={toggleResearchSublinks}>
-            Research<i className="arrow down"></i>
-          </div>
+          <div className="nav-overlay-item" onClick={toggleResearchSublinks}>Research<i className="arrownav downnav"></i></div>
           {showResearchSublinks && (
             <div className="nav-overlay-sublinks">
-              <Link to="/research">Themes</Link>
-              <Link to="/collaborations">Collaborations</Link>
-              <Link to="/comfortgpt">ComfortGPT</Link>
-              <Link to="/otst">Optimal Temperature Setpoint Tool</Link>
+              <Link to="/research" onClick={handleNavLinkClick}>Themes</Link>
+              <Link to="/collaborations" onClick={handleNavLinkClick}>Collaborations</Link>
+              <Link to="/comfortgpt" onClick={handleNavLinkClick}>ComfortGPT</Link>
+              <Link to="/otst" onClick={handleNavLinkClick}>Optimal Temperature Setpoint Tool</Link>
               <a href="https://github.com/Building-Robotics-Lab">GitHub</a>
             </div>
           )}
-          {/* Other main links */}
-          <Link to="/team">Our Team</Link>
-          <Link to="/news">News</Link>
-          <Link to="/publications">Publications</Link>
-          <Link to="/join">Join the Lab</Link>
+          <Link to="/team" onClick={handleNavLinkClick}>Our Team</Link>
+          <Link to="/news" onClick={handleNavLinkClick}>News</Link>
+          <Link to="/publications" onClick={handleNavLinkClick}>Publications</Link>
+          <Link to="/join" onClick={handleNavLinkClick}>Join the Lab</Link>
+          <p className='navbar_buttons'>
+            <a className="bi-envelope" id="navbar_button" onClick={handleNavLinkClick} href="mailto:ghahramani@nus.edu.sg"></a>
+            <a className="bi-linkedin" id="navbar_button" onClick={handleNavLinkClick} href="https://www.linkedin.com/company/building-robotics-lab/" target="_blank"></a>
+          </p>
         </div>
       )}
     </>

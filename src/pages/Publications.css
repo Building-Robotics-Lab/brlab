@@ -193,6 +193,10 @@
         gap: calc(0.7 * 1rem);
     }
 
+    .Publications .publication_section {
+        border-bottom: calc(0.7 * 2px) solid black;
+    }
+
     .Publications .publication_type_title {
         margin-top: calc(0.7 * 1.65vmax);
     }
@@ -282,6 +286,10 @@
     .Publications .publication_filter_section {
         grid-template-columns: calc(0.4 * 1fr) calc(0.4 * 1fr);
         font-size: calc(0.4 * 1rem);
+    }
+
+    .Publications .publication_section {
+        border-bottom: calc(0.7 * 2px) solid black;
     }
 
     .Publications .publication_filter_section .publication_filter {
@@ -379,6 +387,10 @@
         font-size: calc(0.3 * 1rem);
     }
 
+    .Publications .publication_section {
+        border-bottom: calc(0.7 * 2px) solid black;
+    }
+
     .Publications .publication_filter_section .publication_filter {
         gap: calc(0.3 * 1rem);
     }
@@ -455,4 +467,3 @@
 .css-1n7v3ny-option:active {
     background-color: rgb(45, 99, 83) !important;
 }
-

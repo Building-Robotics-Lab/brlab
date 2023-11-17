@@ -39,8 +39,8 @@
 
 .close-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 40px;
     font-size: 2rem;
     background: none;
     border: none;
@@ -50,6 +50,11 @@
 
 body.no-scroll {
     overflow: hidden;
+}
+
+.navbar_buttons {
+    display: flex;
+    flex-direction: row;
 }
 
 .navbar-container {
@@ -66,18 +71,33 @@ body.no-scroll {
 }
 
 .left>*,
-.right>* {
+.right>*,
+#root > div > div > div.nav-overlay > a.left.overlay-left > * {
     padding: 0.5rem;
     text-decoration: none;
     color: black;
 }
 
-.left {
+.left,
+#root > div > div > div.nav-overlay > a.left.overlay-left {
     font-size: 1.25rem;
     text-decoration: none;
 }
 
-.right {
+#root > div > div > div.nav-overlay > a.left.overlay-left {
+    display: flex;
+}
+
+.overlay-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2100; /* Ensure it's above the overlay content */
+    padding: 0px .5rem !important;
+}
+
+.right,
+.dropdown_research {
     font-size: 1rem;
     color: black;
 }
@@ -90,16 +110,14 @@ body.no-scroll {
     background: none;
     border: none;
     cursor: pointer;
+    
 }
 
 .hamburger-icon {
     display: block;
     width: 25px;
-    /* Width of the icon */
     height: 2px;
-    /* Height of each line */
-    background-color: #333;
-    /* Color of the lines */
+    background-color: white;
     position: relative;
     transition: background 0.3s ease-out;
 }
@@ -116,12 +134,12 @@ body.no-scroll {
 }
 
 .hamburger-icon::before {
-    top: -8px;
+    top: -4px;
     /* Position of the top line */
 }
 
 .hamburger-icon::after {
-    bottom: -8px;
+    bottom: -4px;
     /* Position of the bottom line */
 }
 
@@ -135,10 +153,7 @@ body.no-scroll {
     .navbar {
         position: sticky;
         top: 0;
-        /* Adjust as needed */
         z-index: 1000;
-        /* Ensure it stays on top of other elements */
-        /* Add other styling as needed */
     }
 
     .right .dropdown-toggle {
@@ -162,7 +177,7 @@ body.no-scroll {
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 500px) {
     .left {
         font-size: 0.75rem;
     }
@@ -228,17 +243,15 @@ a {
     /* Add this line */
 }
 
-.arrow {
+.arrow,
+.arrownav {
     border: solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 2px;
     vertical-align: middle;
-    /* Add this line */
     margin-left: 8px;
-    /* Add this line */
     margin-bottom: 2px;
-    /* Add this line */
 }
 
 @media screen and (max-width: 1025px) {
@@ -266,9 +279,17 @@ a {
         margin-left: calc(0.3 * 8px);
         margin-bottom: calc(0.3 * 2px);
     }
+
+    .arrownav {
+        border-width: 0 calc(0.8 * 3px) calc(0.8 * 3px) 0;
+        padding: calc(0.8 * 2px);
+        margin-left: calc(0.8 * 8px);
+        margin-bottom: calc(0.8 * 2px);
+    }
 }
 
-.down {
+.down,
+.downnav {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }

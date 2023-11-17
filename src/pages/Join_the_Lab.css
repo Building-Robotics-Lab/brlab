@@ -158,6 +158,7 @@
     .Join_the_Lab .second_section .apply_section {
         margin-bottom: calc(0.7 *2rem);
         padding-bottom: calc(0.7 *2rem);
+        border-bottom: calc(0.7 * 2px) solid black;
     }
 
     .Join_the_Lab .second_section .apply_section .position h4 {
@@ -224,6 +225,7 @@
     .Join_the_Lab .second_section .apply_section {
         margin-bottom: calc(0.4 *2rem);
         padding-bottom: calc(0.4 *2rem);
+        border-bottom: calc(0.4 * 2px) solid black;
     }
 
     .Join_the_Lab .second_section .apply_section .position h4 {
@@ -290,6 +292,7 @@
     .Join_the_Lab .second_section .apply_section {
         margin-bottom: calc(0.3 *2rem);
         padding-bottom: calc(0.3 *2rem);
+        border-bottom: calc(0.3 * 2px) solid black;
     }
 
     .Join_the_Lab .second_section .apply_section .position h4 {

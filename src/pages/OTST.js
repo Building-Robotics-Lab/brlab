@@ -114,8 +114,8 @@ function OTST() {
         setotValue(event.target.value);
     }
 
-    const labels = ["LM", "LA", "2h EM; 1h LT; 2h LA", "3h EM; 3h EA", "3h LM; 3h LA", "2h LT; 1h MM; 1h MA", "1h EA; 1h MA; 2h LT", "1h MM; 1h LM; 2h LT", "2h LM; 2h EA", "1h LT; 1h MA", "1h LT; 1h MM", "LT", "LT", "0"]
-    const fulllabels = ["Late-Morning", "Late-Afternoon", "2h Early-Morning; 1h Lunchtime; 2h Late-Afternoon", "3h Early-Morning; 3h Early-Afternoon", "3h Late-Morning; 3h Late-Afternoon", "1h Mid-Morning; 1h Late-Morning; 2h Lunchtime", "2h Late-Morning; 2h Early-Afternoon", "1h Mid-Morning; 1h Mid-Afternoon; 2h Lunchtime", "2h Lunchtime; 1h Early-Afternoon; 1h Mid-Afternoon", "Lunchtime", "1h Lunchtime; 1h Mid-Morning", "1h Lunchtime; 1h Mid-Afternoon", "Lunchtime", "0"]
+    const labels = ["LM", "LA", "2h EM; 1h LT; 2h LA", "3h EM; 3h EA", "3h LM; 3h LA", "2h LT; 1h MM; 1h MA", "1h EA; 1h MA; 2h LT", "1h MM; 1h LM; 2h LT", "2h LM; 2h EA", "LT", "1h LT; 1h MM", "1h LT; 1h MA", "LT", "0"]
+    const fulllabels = ["Late-Morning", "Late-Afternoon", "2h Early-Morning; 1h Lunchtime; 2h Late-Afternoon", "3h Early-Morning; 3h EA", "3h Late-Morning; 3h Late-Afternoon", "2h Lunchtime; 1h Mid-Morning; 1h Mid-Afternoon", "1h EA; 1h Mid-Afternoon; 2h Lunchtime", "1h Mid-Morning; 1h Late-Morning; 2h Lunchtime", "2h Late-Morning; 2h EA", "1h Lunchtime; 1h Mid-Afternoon", "1h Lunchtime; 1h Mid-Morning", "Lunchtime", "Lunchtime", "0"]
     const initialItems = [false, false, false, false, false, false, false, false, false, false, false, false, false, true]
     const options = labels.map((label, index) => ({
         value: index,
