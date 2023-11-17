@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brlab/static/css/main.f74a4445.css",
-    "main.js": "/brlab/static/js/main.651fc7de.js",
+    "main.css": "/brlab/static/css/main.92784ea1.css",
+    "main.js": "/brlab/static/js/main.75b8205a.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
     "static/media/Iqbal_DT2.png": "/brlab/static/media/Iqbal_DT2.73b332b29a8b111f14a7.png",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
@@ -30,6 +30,7 @@
     "static/media/kai_paper.png": "/brlab/static/media/kai_paper.cdc7943c49a7594f5783.png",
     "static/media/kai_pub1.png": "/brlab/static/media/kai_pub1.cdc7943c49a7594f5783.png",
     "static/media/Human-centric@2x.png": "/brlab/static/media/Human-centric@2x.5dcbe4e953ad766db382.png",
+    "static/media/OTSToutput_example1.png": "/brlab/static/media/OTSToutput_example1.c8b53d9c32c2db06881b.png",
     "static/media/sensors-22-03444-g006.png": "/brlab/static/media/sensors-22-03444-g006.c977a12d488fa900341c.png",
     "static/media/iqbal-publication.jpg": "/brlab/static/media/iqbal-publication.bfa85cffe211e5f5fec4.jpg",
     "static/media/iqbal_pub1.jpg": "/brlab/static/media/iqbal_pub1.bfa85cffe211e5f5fec4.jpg",
@@ -61,11 +62,11 @@
     "static/media/tt_logo_color_rgb.jpg": "/brlab/static/media/tt_logo_color_rgb.b8c960c7e4476b1e552a.jpg",
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
-    "main.f74a4445.css.map": "/brlab/static/css/main.f74a4445.css.map",
-    "main.651fc7de.js.map": "/brlab/static/js/main.651fc7de.js.map"
+    "main.92784ea1.css.map": "/brlab/static/css/main.92784ea1.css.map",
+    "main.75b8205a.js.map": "/brlab/static/js/main.75b8205a.js.map"
   },
   "entrypoints": [
-    "static/css/main.f74a4445.css",
-    "static/js/main.651fc7de.js"
+    "static/css/main.92784ea1.css",
+    "static/js/main.75b8205a.js"
   ]
 }
