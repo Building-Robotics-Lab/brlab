@@ -103,7 +103,7 @@ function Home() {
 
             <Container>
                 <div className="first_section">
-                    <video autoPlay loop muted>
+                    <video playsInline autoPlay loop muted>
                         <source src={LandingPageVideo} type="video/mp4" alt="A short informational animation that touches on the various topics that the Building Robotics Lab researches, including building sensors today, IoT hardware in buildings today, sensing individuals, cognitive control, and low-power and high-performance IoT hardware."></source>
                     </video>
                 </div>
