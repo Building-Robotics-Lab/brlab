@@ -646,7 +646,7 @@ function OTST() {
                     <div className="guidelines_text">
                     <h3>About the Tool</h3>
                         <p>
-                            The Optimal Temperature Setpoint Tool allows the user to identify the optimal setpoint based on occupancy rates, patterns, and outdoor air temperature values in order to facilitate practical applications. With respect to the inputs, the tool returns the temperature setpoint that minimises energy consumption. Multiple scenarios with various inputs can be tested and the results can be downloaded as a .csv file. See Riccardo Talami's publication [here] for a more in-depth description and analysis of the data behind this tool.
+                            The Optimal Temperature Setpoint Tool allows the user to identify the optimal setpoint based on occupancy rates, patterns, and outdoor air temperature values in order to facilitate practical applications. With respect to the inputs, the tool returns the temperature setpoint that minimises energy consumption. Multiple scenarios with various inputs can be tested and the results can be downloaded as a .csv file. See Riccardo Talami's publicatios [here] and [here] for a more in-depth description and analysis of the data behind this tool.
                         </p>
                     <h3>Guidelines</h3>
                         <p>

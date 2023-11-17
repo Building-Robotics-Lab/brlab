@@ -112,14 +112,14 @@ function Our_Team() {
     const alumnis = [
         {
             name: 'Ilyas Dawoodjee',
-            role: 'MSc Student (UM)',
+            role: 'MSc Student (University of Manitoba)',
             skills: 'Machine Vision; Robotics; Machine Learning; Automation',
             imgSrc: IlyasPic,
             link: 'Ilyas'
         },
         {
             name: 'QI Xuanning',
-            role: 'PhD Candidate (HIT)',
+            role: 'PhD Candidate (Harbin Institute of Technology)',
             skills: 'Computational Design; Daylight Design; Occupant Behaviour; Visual Cognition',
             imgSrc: MichellePic,
             link: 'Michelle'
