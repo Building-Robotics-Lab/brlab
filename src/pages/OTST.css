@@ -15,6 +15,7 @@
 .OTST .first_section .heading_and_links h3 {
     font-size: 1.75rem;
     margin-bottom: 1.5rem;
+    font-weight: 300;
 }
 
 .OTST .first_section .heading_and_links .Github_stuff {
@@ -150,7 +151,7 @@
 }
 
 .OTST .second_section .inputs .inputs_left .select_options p,
-.OTST .second_section .inputs .inputs_right .unoccupied_periods p  {
+.OTST .second_section .inputs .inputs_right .unoccupied_periods p {
     font-size: 1rem;
 }
 
@@ -236,6 +237,7 @@
     line-height: 1.5;
     text-align: justify;
 }
+
 .OTST .third_section .guidelines_text li {
     font-size: 1rem;
     margin-bottom: 0.75rem;
@@ -307,6 +309,53 @@
     border: 1px solid black;
     border-radius: 8px;
     pointer-events: none;
+}
+
+.OTST .third_section {
+    display: flex;
+    gap: 2rem;
+}
+
+.OTST .third_section .guidelines_text {
+    flex: 1;
+}
+
+.OTST .third_section .guidelines_text h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.OTST .third_section .guidelines_text h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.OTST .third_section .guidelines_text ul {
+    padding-left: 1rem;
+}
+
+.OTST .third_section .guidelines_text p {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.OTST .third_section .guidelines_text li {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.OTST .third_section .guidelines_image {
+    flex: 1;
+}
+
+.OTST .third_section .guidelines_image img {
+    width: 100%;
+    border: 2px solid black;
+    height: auto;
 }
 
 @media screen and (max-width: 1025px) {
@@ -470,6 +519,38 @@
     .OTST .css-b62m3t-container div div div {
         font-size: calc(0.7 * 1rem);
     }
+
+    .OTST .third_section {
+        gap: calc(0.7 * 2rem);
+    }
+
+    .OTST .third_section .guidelines_text h3 {
+        font-size: calc(0.7 * 1.75rem);
+        margin-bottom: calc(0.7 * 1.5rem);
+    }
+
+    .OTST .third_section .guidelines_text h3 {
+        font-size: calc(0.7 * 1.25rem);
+        margin-bottom: calc(0.7 * 1.5rem);
+    }
+
+    .OTST .third_section .guidelines_text ul {
+        padding-left: calc(0.7 * 1rem);
+    }
+
+    .OTST .third_section .guidelines_text p {
+        font-size: calc(0.7 * 1rem);
+        margin-bottom: calc(0.7 * 3rem);
+    }
+
+    .OTST .third_section .guidelines_text li {
+        font-size: calc(0.7 * 1rem);
+        margin-bottom: calc(0.7 * 0.75rem);
+    }
+
+    .OTST .third_section .guidelines_image img {
+        border: calc(0.7 * 2px) solid black;
+    }
 }
 
 @media screen and (max-width: 769px) {
@@ -560,7 +641,7 @@
     }
 
     .OTST .second_section .inputs .inputs_left .select_options p,
-    .OTST .second_section .inputs .inputs_right .unoccupied_periods p  {
+    .OTST .second_section .inputs .inputs_right .unoccupied_periods p {
         font-size: calc(0.4 * 1rem);
     }
 
@@ -632,6 +713,42 @@
 
     .OTST .css-b62m3t-container div div div {
         font-size: calc(0.4 * 1rem);
+    }
+
+    .OTST .css-b62m3t-container div div div {
+        font-size: calc(0.7 * 1rem);
+    }
+
+    .OTST .third_section {
+        gap: calc(0.4 * 2rem);
+    }
+
+    .OTST .third_section .guidelines_text h3 {
+        font-size: calc(0.4 * 1.75rem);
+        margin-bottom: calc(0.4 * 1.5rem);
+    }
+
+    .OTST .third_section .guidelines_text h3 {
+        font-size: calc(0.4 * 1.25rem);
+        margin-bottom: calc(0.4 * 1.5rem);
+    }
+
+    .OTST .third_section .guidelines_text ul {
+        padding-left: calc(0.4 * 1rem);
+    }
+
+    .OTST .third_section .guidelines_text p {
+        font-size: calc(0.4 * 1rem);
+        margin-bottom: calc(0.4 * 3rem);
+    }
+
+    .OTST .third_section .guidelines_text li {
+        font-size: calc(0.4 * 1rem);
+        margin-bottom: calc(0.4 * 0.75rem);
+    }
+
+    .OTST .third_section .guidelines_image img {
+        border: calc(0.4 * 2px) solid black;
     }
 }
 
@@ -723,7 +840,7 @@
     }
 
     .OTST .second_section .inputs .inputs_left .select_options p,
-    .OTST .second_section .inputs .inputs_right .unoccupied_periods p  {
+    .OTST .second_section .inputs .inputs_right .unoccupied_periods p {
         font-size: calc(0.3 * 1rem);
     }
 
@@ -795,5 +912,37 @@
 
     .OTST .css-b62m3t-container div div div {
         font-size: calc(0.3 * 1rem);
+    }
+
+    .OTST .third_section {
+        gap: calc(0.3 * 2rem);
+    }
+
+    .OTST .third_section .guidelines_text h3 {
+        font-size: calc(0.3 * 1.75rem);
+        margin-bottom: calc(0.3 * 1.5rem);
+    }
+
+    .OTST .third_section .guidelines_text h3 {
+        font-size: calc(0.3 * 1.25rem);
+        margin-bottom: calc(0.3 * 1.5rem);
+    }
+
+    .OTST .third_section .guidelines_text ul {
+        padding-left: calc(0.3 * 1rem);
+    }
+
+    .OTST .third_section .guidelines_text p {
+        font-size: calc(0.3 * 1rem);
+        margin-bottom: calc(0.3 * 3rem);
+    }
+
+    .OTST .third_section .guidelines_text li {
+        font-size: calc(0.3 * 1rem);
+        margin-bottom: calc(0.3 * 0.75rem);
+    }
+
+    .OTST .third_section .guidelines_image img {
+        border: calc(0.3 * 2px) solid black;
     }
 }

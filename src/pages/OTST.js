@@ -6,7 +6,7 @@ import './OTST.css'
 import Pako from 'pako';
 import * as d3 from 'd3';
 
-import ExampleImage from './../components/Website Data/output_example1.png'
+import ExampleImage from './../components/Website Data/OTSToutput_example1.png'
 import ExampleImage2 from './../components/Website Data/output_example3.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -89,9 +89,9 @@ function OTST() {
 
         // Convert the otValue
         if (temperature === 'Celsius' && newScale === 'Fahrenheit') {
-            setotValue((otValue * 9 / 5) + 32);
+            setotValue(Math.round((otValue * 9 / 5) + 32));
         } else if (temperature === 'Fahrenheit' && newScale === 'Celsius') {
-            setotValue((otValue - 32) * 5 / 9);
+            setotValue(((otValue - 32) * 5 / 9).toFixed(1));
         }
 
         // Update the temperature scale
@@ -114,7 +114,7 @@ function OTST() {
     }
 
     const labels = ["LM", "LA", "2h EM; 1h LT; 2h LA", "3h EM; 3h EA", "3h LM; 3h LA", "2h LT; 1h MM; 1h MA", "1h EA; 1h MA; 2h LT", "1h MM; 1h LM; 2h LT", "2h LM; 2h EA", "1h LT; 1h MA", "1h LT; 1h MM", "LT", "LT", "0"]
-    const fulllabels = ["Late-Morning", "Late-Afternoon", "2h Early-Morning; 1h Lunchtime; 2h Late-Afternoon", "3h Early-Morning; 3h EA", "3h Late-Morning; 3h Late-Afternoon", "2h Lunchtime; 1h Mid-Morning; 1h Mid-Afternoon", "1h EA; 1h Mid-Afternoon; 2h Lunchtime", "1h Mid-Morning; 1h Late-Morning; 2h Lunchtime", "2h Late-Morning; 2h EA", "1h Lunchtime; 1h Mid-Afternoon", "1h Lunchtime; 1h Mid-Morning", "Lunchtime", "Lunchtime", "0"]
+    const fulllabels = ["Late-Morning", "Late-Afternoon", "2h Early-Morning; 1h Lunchtime; 2h Late-Afternoon", "3h Early-Morning; 3h EA", "3h Late-Morning; 3h Late-Afternoon", "1h Mid-Morning; 1h Late-Morning; 2h Lunchtime", "2h Late-Morning; 2h Early-Afternoon", "1h Mid-Morning; 1h Mid-Afternoon; 2h Lunchtime", "2h Lunchtime; 1h Early-Afternoon; 1h Mid-Afternoon", "Lunchtime", "1h Lunchtime; 1h Mid-Morning", "1h Lunchtime; 1h Mid-Afternoon", "Lunchtime", "0"]
     const initialItems = [false, false, false, false, false, false, false, false, false, false, false, false, false, true]
     const options = labels.map((label, index) => ({
         value: index,

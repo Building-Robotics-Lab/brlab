@@ -118,7 +118,23 @@
 .Research .whole_theme {
     display: flex;
     flex-direction: column;
-    gap: 6rem
+}
+
+.Research .whole_theme > *:not(:last-child) {
+    position: relative; /* Needed for positioning the pseudo-element */
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+}
+
+.Research .whole_theme > *:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 50%;
+    border-bottom: 2px solid black;
+    display: block;
 }
 
 .Research .title h1 {
@@ -131,7 +147,6 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    /* margin-bottom: 3rem; */
 }
 
 .Research .theme_section a {
@@ -255,10 +270,15 @@
 
     /* Themes Section */
 
-    .Research .whole_theme {
-        gap: calc(0.7 * 6rem);
+    .Research .whole_theme > *:not(:last-child) {
+        margin-bottom: calc(0.7 * 3rem);
+        padding-bottom: calc(0.7 * 3rem);
     }
-
+    
+    .Research .whole_theme > *:not(:last-child)::after {
+        border-bottom: calc(0.7 * 2px) solid black; /* Your border style */
+    }
+    
     .Research .title h1 {
         font-size: calc(0.7 * 2.25rem);
         margin-bottom: calc(0.7 * 2rem);
@@ -370,8 +390,13 @@
 
     /* Themes Section */
 
-    .Research .whole_theme {
-        gap: calc(0.4 * 6rem);
+    .Research .whole_theme > *:not(:last-child) {
+        margin-bottom: calc(0.4 * 3rem);
+        padding-bottom: calc(0.4 * 3rem);
+    }
+
+    .Research .whole_theme > *:not(:last-child)::after {
+        border-bottom: calc(0.4 * 2px) solid black; /* Your border style */
     }
 
     .Research .title h1 {
@@ -485,8 +510,13 @@
 
     /* Themes Section */
 
-    .Research .whole_theme {
-        gap: calc(0.3 * 6rem);
+    .Research .whole_theme > *:not(:last-child) {
+        margin-bottom: calc(0.3 * 3rem);
+        padding-bottom: calc(0.3 * 3rem);
+    }
+
+    .Research .whole_theme > *:not(:last-child)::after {
+        border-bottom: calc(0.3 * 2px) solid black; /* Your border style */
     }
 
     .Research .title h1 {

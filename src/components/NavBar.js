@@ -1,39 +1,63 @@
-import React, { useState, useRef, useEffect } from 'react';  // Add useRef
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 import Logo from './Website Data/MicrosoftTeams-image.png';
-import { Nav } from 'react-bootstrap';
-import { Navbar } from 'react-bootstrap';
-import { NavDropdown } from 'react-bootstrap';
 
 function NavBar() {
-  // Add state to manage the dropdown open/close
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const timeoutRef = useRef(null); // To keep track of the timeout
+  const [isNavOpen, setNavOpen] = useState(false); // State to control the nav overlay
+  const timeoutRef = useRef(null);
+  const [showResearchSublinks, setShowResearchSublinks] = useState(false);
 
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
   };
 
-  const handleMouseEnter = () => {
-    // Clear any existing timeout to hide the dropdown
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+  const toggleNav = () => {
+    setNavOpen(!isNavOpen);
 
-    // Show the dropdown
+    if (!isNavOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  };
+
+  const toggleResearchSublinks = () => {
+    setShowResearchSublinks(!showResearchSublinks);
+  };
+
+
+  // Ensure that scrolling is re-enabled when the component unmounts
+  // Handle window resize
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 850 && isNavOpen) {
+        setNavOpen(false);
+        document.body.classList.remove('no-scroll');
+      }
+    };
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+
+    // Clean up
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      document.body.classList.remove('no-scroll');
+    };
+  }, [isNavOpen]);
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
     setDropdownOpen(true);
   };
 
   const handleMouseLeave = () => {
-    // Set a timeout to hide the dropdown after 500 milliseconds
     timeoutRef.current = setTimeout(() => {
       setDropdownOpen(false);
     }, 75);
   };
-
-  function toggleNav() {
-    const rightNav = document.querySelector('.right');
-    rightNav.classList.toggle('active');
-  }
 
   return (
     <>
@@ -44,10 +68,13 @@ function NavBar() {
             <p>Building Robotics Laboratory</p>
           </Link>
           <div className="right">
-            <button className="dropdown-toggle" onClick={toggleNav}>Menu</button>
+            <button className="dropdown-toggle" onClick={toggleNav}>
+              <span className="hamburger-icon"></span>
+              
+            </button>
             <div className="dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               <p onClick={toggleDropdown} style={{ cursor: 'pointer' }}>
-                <Link to="/research" style={{ color: 'black' }}><p><span>Research</span></p></Link>
+                <Link to="/research"><p><span className='dropdown_research'>Research</span></p></Link>
                 <i className="arrow down"></i>
               </p>
               {(isDropdownOpen) && (
@@ -67,6 +94,29 @@ function NavBar() {
           </div>
         </div>
       </nav>
+      {isNavOpen && (
+        <div className="nav-overlay">
+          <button className="close-button" onClick={toggleNav}>&times;</button>
+          {/* Make Research clickable but not a link */}
+          <div className="nav-overlay-item" onClick={toggleResearchSublinks}>
+            Research<i className="arrow down"></i>
+          </div>
+          {showResearchSublinks && (
+            <div className="nav-overlay-sublinks">
+              <Link to="/research">Themes</Link>
+              <Link to="/collaborations">Collaborations</Link>
+              <Link to="/comfortgpt">ComfortGPT</Link>
+              <Link to="/otst">Optimal Temperature Setpoint Tool</Link>
+              <a href="https://github.com/Building-Robotics-Lab">GitHub</a>
+            </div>
+          )}
+          {/* Other main links */}
+          <Link to="/team">Our Team</Link>
+          <Link to="/news">News</Link>
+          <Link to="/publications">Publications</Link>
+          <Link to="/join">Join the Lab</Link>
+        </div>
+      )}
     </>
   );
 }

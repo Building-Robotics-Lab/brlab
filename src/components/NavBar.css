@@ -1,11 +1,62 @@
-.navbar {
+/* .navbar {
     max-width: 1600px;
+} */
+
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    /* Semi-transparent black background */
+    z-index: 2000;
+    /* High z-index to ensure it covers everything */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-overlay a,
+.nav-overlay-item {
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+.nav-overlay-sublinks {
+    border-right: 2px solid rgb(45, 99, 83);
+    transform: translateX(-85px);
+}
+
+.nav-overlay-sublinks>* {
+    font-size: 1rem !important;
+    text-align: right !important;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+body.no-scroll {
+    overflow: hidden;
 }
 
 .navbar-container {
     display: flex;
     justify-content: space-between;
     padding: 0rem 0.5rem;
+    background-color: white;
 }
 
 .left,
@@ -35,11 +86,61 @@
     width: clamp(40px, 5vw, 75px);
 }
 
+.dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    display: block;
+    width: 25px;
+    /* Width of the icon */
+    height: 2px;
+    /* Height of each line */
+    background-color: #333;
+    /* Color of the lines */
+    position: relative;
+    transition: background 0.3s ease-out;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transition: transform 0.3s ease-out;
+    right: 0.5px;
+}
+
+.hamburger-icon::before {
+    top: -8px;
+    /* Position of the top line */
+}
+
+.hamburger-icon::after {
+    bottom: -8px;
+    /* Position of the bottom line */
+}
+
 .right .dropdown-toggle {
     display: none;
+
 }
 
 @media screen and (max-width: 850px) {
+
+    .navbar {
+        position: sticky;
+        top: 0;
+        /* Adjust as needed */
+        z-index: 1000;
+        /* Ensure it stays on top of other elements */
+        /* Add other styling as needed */
+    }
+
     .right .dropdown-toggle {
         display: block;
     }
@@ -55,9 +156,30 @@
     }
 }
 
+@media screen and (max-width: 769px) {
+    .left {
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width: 426px) {
     .left {
         font-size: 0.75rem;
+    }
+
+    .nav-overlay a,
+    .nav-overlay-item {
+        font-size: calc(0.7*1.5rem);
+        padding: calc(0.7*10px);
+    }
+
+    .nav-overlay-sublinks>* {
+        font-size: calc(0.7*1rem) !important;
+    }
+
+    .nav-overlay-sublinks {
+        border-right: calc(0.7*2px) solid rgb(45, 99, 83);
+        transform: translateX(calc(0.7*-85px));
     }
 }
 
