@@ -233,7 +233,7 @@
 
     .Research .first_section .industry_partners a {
         margin: calc(0.7 * 25px);
-        border: calc(0.7 * 2px) solid black;
+        border: calc(0.7 * 3px) solid rgb(45, 99, 83);
         margin-bottom: calc(0.7 * 3.3vmax);
     }
 
@@ -353,7 +353,7 @@
 
     .Research .first_section .industry_partners a {
         margin: calc(0.4 * 25px);
-        border: calc(0.4 * 2px) solid black;
+        border: calc(0.6 * 3px) solid rgb(45, 99, 83);
         margin-bottom: calc(0.4 * 3.3vmax);
     }
 
@@ -473,7 +473,7 @@
 
     .Research .first_section .industry_partners a {
         margin: calc(0.3 * 25px);
-        border: calc(0.3 * 2px) solid black;
+        border: calc(0.5 * 3px) solid rgb(45, 99, 83);
         margin-bottom: calc(0.3 * 3.3vmax);
     }
 

@@ -172,7 +172,8 @@ body.no-scroll {
 }
 
 @media screen and (max-width: 769px) {
-    .left {
+    .left,
+    #root > div > div > div.nav-overlay > a.left.overlay-left {
         font-size: 1rem;
     }
 }

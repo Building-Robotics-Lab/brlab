@@ -157,7 +157,7 @@
     }
 
     .Our_Team .team-grid {
-        gap: calc(0.4 * 2.25rem);
+        gap: calc(0.6 * 2.25rem);
         grid-template-columns: repeat(3, calc(0.4 * 1fr));
     }
 
@@ -218,7 +218,7 @@
     }
     
     .Our_Team .team-grid>.item {
-        outline: calc(0.3 * 2px) solid black;
+        outline: calc(0.5 * 2px) solid black;
         border-radius: calc(0.3 * 2rem);
         box-shadow: calc(0.3 * 10px) calc(0.3 * 10px) calc(0.3 * 8px) #888888;
     }
