@@ -74,21 +74,21 @@ function Our_Team() {
         },
         {
             name: 'HU Xinhao',
-            role: 'Visiting PhD Candidate (HNU)',
+            role: 'Visiting PhD Candidate (Hunan University)',
             skills: 'Indoor Thermal Comfort; Indoor Environmental Quality; Building Energy Conservation',
             imgSrc: StellaPic,
             link: 'Stella'
         },
         {
             name: 'SU Xiaosong',
-            role: 'Visiting PhD Candidate (HNU)',
+            role: 'Visiting PhD Candidate (Hunan University)',
             skills: 'Building Energy Efficiency; Energy-Efficient Building Envelope; Building-Integrated Photovoltaics; Radiant Cooling Technology in Buildings',
             imgSrc: XiaosongPic,
             link: 'Xiaosong'
         },
         {
             name: 'Pegah Eshraghi',
-            role: 'Visiting PhD Candidate (SBU)',
+            role: 'Visiting PhD Candidate (Shahid Beheshti University)',
             skills: 'Building Energy Efficiency; Machine Learning; Urban Building Energy Modelling; Indoor Environmental Quality; Thermal Comfort',
             imgSrc: PegahPic,
             link: 'Pegah'

@@ -7,7 +7,8 @@ import Pako from 'pako';
 import * as d3 from 'd3';
 
 import ExampleImage from './../components/Website Data/OTSToutput_example1.png'
-import ExampleImage2 from './../components/Website Data/output_example3.png'
+import ExampleImage2 from './../components/Website Data/OTSToutput_example3.png'
+import ExampleImage3 from './../components/Website Data/OTSToutput_example3.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
@@ -114,7 +115,7 @@ function OTST() {
     }
 
     const labels = ["LM", "LA", "2h EM; 1h LT; 2h LA", "3h EM; 3h EA", "3h LM; 3h LA", "2h LT; 1h MM; 1h MA", "1h EA; 1h MA; 2h LT", "1h MM; 1h LM; 2h LT", "2h LM; 2h EA", "1h LT; 1h MA", "1h LT; 1h MM", "LT", "LT", "0"]
-    const fulllabels = ["Late-Morning", "Late-Afternoon", "2h Early-Morning; 1h Lunchtime; 2h Late-Afternoon", "3h Early-Morning; 3h EA", "3h Late-Morning; 3h Late-Afternoon", "1h Mid-Morning; 1h Late-Morning; 2h Lunchtime", "2h Late-Morning; 2h Early-Afternoon", "1h Mid-Morning; 1h Mid-Afternoon; 2h Lunchtime", "2h Lunchtime; 1h Early-Afternoon; 1h Mid-Afternoon", "Lunchtime", "1h Lunchtime; 1h Mid-Morning", "1h Lunchtime; 1h Mid-Afternoon", "Lunchtime", "0"]
+    const fulllabels = ["Late-Morning", "Late-Afternoon", "2h Early-Morning; 1h Lunchtime; 2h Late-Afternoon", "3h Early-Morning; 3h Early-Afternoon", "3h Late-Morning; 3h Late-Afternoon", "1h Mid-Morning; 1h Late-Morning; 2h Lunchtime", "2h Late-Morning; 2h Early-Afternoon", "1h Mid-Morning; 1h Mid-Afternoon; 2h Lunchtime", "2h Lunchtime; 1h Early-Afternoon; 1h Mid-Afternoon", "Lunchtime", "1h Lunchtime; 1h Mid-Morning", "1h Lunchtime; 1h Mid-Afternoon", "Lunchtime", "0"]
     const initialItems = [false, false, false, false, false, false, false, false, false, false, false, false, false, true]
     const options = labels.map((label, index) => ({
         value: index,
@@ -589,8 +590,7 @@ function OTST() {
                                             </svg>
                                             <p>
                                                 <b><span id={`output_label_${index}`}>{col3_2[index]}</span></b>:
-                                                Optimal Setpoint (<span id={`output_scale_${index}`}>{usescale}</span>) =
-                                                <b><span id={`output_sp_${index}`}> {col6[index].toFixed(1)}</span></b>;
+                                                Optimal Setpoint = <b><span id={`output_sp_${index}`}> {col6[index].toFixed(1)}<span id={`output_scale_${index}`}>{usescale}</span></span></b>;
                                                 Energy Savings Compared to <span id={`output_baseline_${index}`}>{usebaseline}</span><span id={`output_scale_${index}`}>{usescale}</span> = <b><span id={`output_savings_${index}`}>{col9[index]}</span>%</b>
                                             </p>
                                         </div>
@@ -652,7 +652,7 @@ function OTST() {
                         <p>
                             <b>1. Identify the 'Building Size'</b><br/>Start by determining if your building size is small (threshold range), medium (threshold range), or large (threshold range).<br/><br/>
                             <b>2. Select the 'Temperature Scale'</b><br/>Start by selecting the temperature scale you want to use for your calculations between Celsius and Fahrenheit.<br/><br/>
-                            <b>3. Choose the 'Climate Zone'</b> <br/>Choose the climate zone that the building in question is located within by scrolling through the dropdown menu. If you are unsure of your corresponding climate zone, please visit this link for assistance.<br/><br/>
+                            <b>3. Choose the 'Climate Zone'</b> <br/>Choose the climate zone that the building in question is located within by scrolling through the dropdown menu. If you are unsure of the corresponding climate zone for your building, please view the image of the World Climate Zones Map to the right (middle), according to the ANSI/ASHRAE Addendum A to ANSI/ASHRAE Standard 169-2020.<br/><br/>
                             <b>4. Choose the 'Occupancy Rate'</b><br/> Depending on the minimum and maximum values that a space can be occupied, choose the occupancy rate of the building between lightly occupied (25%), mildly occupied (50%), mostly occupied (75%), and fully occupied (100%).<br/><br/>
                             <b>5. Input 'Outdoor Temperature'</b><br/><br/>
                             <b>6. Select the patterns of unoccupied periods</b><br/>There are 14 unoccupied patterns across 5 unoccupied periods. Choose the one(s) that best fit the schedule of your chosen building. The legend for the various abbreviations is in the section above below this segment. Please see the occupancy schedule image to the right (bottom) for an illustrative explanation of the different combinations.<br/><br/>
@@ -663,7 +663,8 @@ function OTST() {
                     </div>
                     <div className="guidelines_image">
                         <img src={ExampleImage} alt="An example of what the interactive tool above should look like when being used." />
-                        <img src={ExampleImage2} alt="An illustrative example of the occupancy schedule variations for 0 hours, 1 hour, 2 hours, 4 hours, and 6 hours." />
+                        <img src={ExampleImage3} alt="An illustrative example of the occupancy schedule variations for 0 hours, 1 hour, 2 hours, 4 hours, and 6 hours." />
+                        <img src={ExampleImage3} alt="An illustrative example of the occupancy schedule variations for 0 hours, 1 hour, 2 hours, 4 hours, and 6 hours." />
                     </div>
                 </div>
             </Container>
@@ -725,23 +726,23 @@ const temperature_scale = [
 ];
 
 const climate_zone = [
-    { value: 'Singapore', label: '0A (Extremely Hot, Humid)' },
-    { value: 'Miami', label: '1A (Very Hot, Humid)' },
-    { value: 'Houston', label: '2A (Hot, Humid)' },
-    { value: 'Phoenix', label: '2B (Hot, Dry)' },
-    { value: 'Atlanta', label: '3A (Warm, Humid)' },
-    { value: 'Los Angeles', label: '3B-Coast (Warm, Marine)' },
-    { value: 'Las Vegas', label: '3B (Warm, Dry)' },
-    { value: 'San Francisco', label: '3C (Warm, Marine)' },
-    { value: 'Baltimore', label: '4A (Mild, Humid)' },
-    { value: 'Albuquerque', label: '4B (Mild, Dry)' },
-    { value: 'Seattle', label: '4C (Mild, Marine)' },
-    { value: 'Chicago', label: '5A (Cold, Humid)' },
-    { value: 'Boulder', label: '5B (Cold, Dry)' },
-    { value: 'Minneapolis', label: '6A (Cold, Humid)' },
-    { value: 'Helena', label: '6B (Cold, Dry)' },
+    { value: 'Singapore', label: '0A (Extremely Hot - Humid)' },
+    { value: 'Miami', label: '1A (Very Hot - Humid)' },
+    { value: 'Houston', label: '2A (Hot - Humid)' },
+    { value: 'Phoenix', label: '2B (Hot - Dry)' },
+    { value: 'Atlanta', label: '3A (Warm - Humid)' },
+    { value: 'Los Angeles', label: '3B-Coast (Warm - Marine)' },
+    { value: 'Las Vegas', label: '3B (Warm - Dry)' },
+    { value: 'San Francisco', label: '3C (Warm - Marine)' },
+    { value: 'Baltimore', label: '4A (Mixed - Humid)' },
+    { value: 'Albuquerque', label: '4B (Mixed - Dry)' },
+    { value: 'Seattle', label: '4C (Mixed - Marine)' },
+    { value: 'Chicago', label: '5A (Cool - Humid)' },
+    { value: 'Boulder', label: '5B (Cool - Dry)' },
+    { value: 'Minneapolis', label: '6A (Cold - Humid)' },
+    { value: 'Helena', label: '6B (Cold - Dry)' },
     { value: 'Duluth', label: '7 (Very Cold)' },
-    { value: 'Fairbanks', label: '8 (Sub-Arctic)' }
+    { value: 'Fairbanks', label: '8 (Subarctic)' }
 ];
 
 const occupancy_rate = [

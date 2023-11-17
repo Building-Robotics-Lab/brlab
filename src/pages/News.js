@@ -86,7 +86,7 @@ function News() {
             title: 'Please welcome Guillaume Lecronier to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Guillaume joining us as a visiting MSc student from ETH Zürich studying Mechanical Engineering and Robotics. His research revolves around Robotics, Embedded Systems, IoT, Sensor Data Analysis, and Machine Learning. Check out his full profile <Link to="/profile/Guillaume"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Guillaume joining us from Switzerland as a visiting MSc student at ETH Zürich studying Mechanical Engineering and Robotics. His research revolves around Robotics, Embedded Systems, IoT, Sensor Data Analysis, and Machine Learning. Check out his full profile <Link to="/profile/Guillaume"><b>here</b></Link> to get to know him more!
                 </>
             ),
         },
@@ -98,7 +98,7 @@ function News() {
             title: 'Please welcome Pierre-Louis David to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Pierre-Louis joining us as a visiting MSc student from ETH Zürich studying Mechanical Engineering and Computer Science. His research revolves around Machine Learning, Optimisation, Computer Vision, and Energy. Check out his full profile <Link to="/profile/Pierre"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Pierre-Louis joining us from Switzerland as a visiting MSc student at ETH Zürich studying Mechanical Engineering and Computer Science. His research revolves around Machine Learning, Optimisation, Computer Vision, and Energy. Check out his full profile <Link to="/profile/Pierre"><b>here</b></Link> to get to know him more!
                 </>
             ),
         },
@@ -110,7 +110,7 @@ function News() {
             title: 'Please welcome Pegah Eshraghi to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Pegah joining us as a visiting PhD candidate from Shahid Beheshti University (SBU) studying Buildings in the Department of Construction. Her research revolves around Building Energy Efficiency, Machine Learning, Urban Building Energy Modelling, Indoor Environmental Quality, and Thermal Comfort. Check out her full profile <Link to="/profile/Pegah"><b>here</b></Link> to get to know her more!
+                    The Building Robotics Lab is happy to have Pegah joining us from Iran as a visiting PhD candidate at Shahid Beheshti University studying Buildings in the Department of Construction. Her research revolves around Building Energy Efficiency, Machine Learning, Urban Building Energy Modelling, Indoor Environmental Quality, and Thermal Comfort. Check out her full profile <Link to="/profile/Pegah"><b>here</b></Link> to get to know her more!
                 </>
             ),
         },
@@ -146,7 +146,7 @@ function News() {
             title: 'Please welcome SU Xiaosong to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Song joining us as a visiting PhD candidate from Hunan University studying Heating, Ventilation and Air-Conditioning (HVAC) in the Department of Civil Engineering. His research revolves around Building Energy Efficiency, Energy-Efficient Building Envelope, Building-Integrated Photovoltaics, and Radiant Cooling Technology in Buildings. Check out his full profile <Link to="/profile/Xiaosong"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Song joining us from China as a visiting PhD candidate at Hunan University studying Heating, Ventilation and Air-Conditioning (HVAC) in the Department of Civil Engineering. His research revolves around Building Energy Efficiency, Energy-Efficient Building Envelope, Building-Integrated Photovoltaics, and Radiant Cooling Technology in Buildings. Check out his full profile <Link to="/profile/Xiaosong"><b>here</b></Link> to get to know him more!
                 </>
             ),
         },

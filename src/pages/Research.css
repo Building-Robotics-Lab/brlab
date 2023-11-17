@@ -132,8 +132,8 @@
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    width: 50%;
-    border-bottom: 2px solid black;
+    width: 25%;
+    border-bottom: 1.25px solid black;
     display: block;
 }
 
