@@ -28,22 +28,39 @@ function OTST() {
     // State for screen width and target height
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const [targetHeight, setTargetHeight] = useState(30); // default height
+    const [margin, settaretmargin] = useState({ top: 20, right: 20, bottom: 40, left: 70 })
+    const [y_axis1, sety_axis1] = useState(20)
+    const [y_axis2, sety_axis2] = useState(-60)
 
     useEffect(() => {
         const handleResize = () => {
-            setScreenWidth(window.innerWidth);
-            if (window.innerWidth < 1025) {
-                setTargetHeight(30); // smaller height for smaller screens
-            } else if (window.innerWidth < 760) {
+            const newWidth = window.innerWidth;
+            if (newWidth > 760) {
+                // Batching updates for larger screens
+                setTargetHeight(30);
+                settaretmargin({ top: 20, right: 20, bottom: 50, left: 80 });
+                sety_axis1(-5);
+                sety_axis2(-70);
+                console.log('greater than 760');
+            } else {
+                // Batching updates for smaller screens
                 setTargetHeight(20);
+                settaretmargin({ top: 10, right: 10, bottom: 30, left: 40 });
+                sety_axis1(-5);
+                sety_axis2(-35);
+                console.log('less than 760');
             }
         };
 
+        // Set the initial state based on the current window size
+        handleResize();
+
+        // Set up the event listener
         window.addEventListener('resize', handleResize);
 
         // Clean up the event listener
         return () => window.removeEventListener('resize', handleResize);
-    }, [screenWidth]);
+    }, []); // Empty dependency array to run only on mount and unmount
 
     // Define styles here, using targetHeight
     const styles = {
@@ -253,7 +270,6 @@ function OTST() {
                 const svgContainer = d3.select("#graph");
                 svgContainer.select("svg").remove();
 
-                const margin = { top: 20, right: 30, bottom: 60, left: 90 };
                 const width = document.getElementById('graph').offsetWidth - margin.left - margin.right;
                 const height = (document.getElementById('graph').offsetHeight - margin.top - margin.bottom);
 
@@ -298,12 +314,13 @@ function OTST() {
 
                 svg.append("text")
                     .attr("transform", `translate(${width / 2} ,${height + margin.top + 20})`) // Position at the middle of the x-axis, and move slightly below the axis
+                    .attr("y", `${y_axis1}`)
                     .style("text-anchor", "middle")
                     .text(`Outdoor Temperature (${scale})`);
 
                 svg.append("text")
                     .attr("transform", "rotate(-90)") // Rotate the text 90 degrees
-                    .attr("y", 20 - margin.left) // Position it to the left of the y-axis
+                    .attr("y", `${y_axis2}`)
                     .attr("x", 0 - (height / 2)) // Position at the middle of the y-axis
                     .attr("dy", "1em") // Move slightly away from the axis
                     .style("text-anchor", "middle")
@@ -498,7 +515,7 @@ function OTST() {
         return () => {
             window.removeEventListener('resize', drawGraph)
         }
-    }, [climate, climateData, or, selectedOptions, otValue, exceedValue])
+    }, [margin, climate, climateData, or, selectedOptions, otValue, exceedValue])
 
     const Reset = () => {
         setTemperature(temperature_scale[0].value);
@@ -644,21 +661,21 @@ function OTST() {
             <Container>
                 <div className="third_section">
                     <div className="guidelines_text">
-                    <h3>About the Tool</h3>
+                        <h3>About the Tool</h3>
                         <p>
                             The Optimal Temperature Setpoint Tool allows the user to identify the optimal setpoint based on occupancy rates, patterns, and outdoor air temperature values in order to facilitate practical applications. With respect to the inputs, the tool returns the temperature setpoint that minimises energy consumption. Multiple scenarios with various inputs can be tested and the results can be downloaded as a .csv file. See Riccardo Talami's publicatios [here] and [here] for a more in-depth description and analysis of the data behind this tool.
                         </p>
-                    <h3>Guidelines</h3>
+                        <h3>Guidelines</h3>
                         <p>
-                            <b>1. Identify the 'Building Size'</b><br/>Start by determining if your building size is small (threshold range), medium (threshold range), or large (threshold range).<br/><br/>
-                            <b>2. Select the 'Temperature Scale'</b><br/>Start by selecting the temperature scale you want to use for your calculations between Celsius and Fahrenheit.<br/><br/>
-                            <b>3. Choose the 'Climate Zone'</b> <br/>Choose the climate zone that the building in question is located within by scrolling through the dropdown menu. If you are unsure of the corresponding climate zone for your building, please view the image of the World Climate Zones Map to the right (middle), according to the ANSI/ASHRAE Addendum A to ANSI/ASHRAE Standard 169-2020.<br/><br/>
-                            <b>4. Choose the 'Occupancy Rate'</b><br/> Depending on the minimum and maximum values that a space can be occupied, choose the occupancy rate of the building between lightly occupied (25%), mildly occupied (50%), mostly occupied (75%), and fully occupied (100%).<br/><br/>
-                            <b>5. Input 'Outdoor Temperature'</b><br/><br/>
-                            <b>6. Select the patterns of unoccupied periods</b><br/>There are 14 unoccupied patterns across 5 unoccupied periods. Choose the one(s) that best fit the schedule of your chosen building. The legend for the various abbreviations is in the section above below this segment. Please see the occupancy schedule image to the right (bottom) for an illustrative explanation of the different combinations.<br/><br/>
-                            <b>7. Click 'Download .csv file' to get the generated results</b><br/><br/>
-                            <b>8. Click 'Reset' to revert changes to default settings</b><br/><br/>
-                            <b>9. Please view the image to the right (top) for a sample output</b><br/>
+                            <b>1. Identify the 'Building Size'</b><br />Start by determining if your building size is small (threshold range), medium (threshold range), or large (threshold range).<br /><br />
+                            <b>2. Select the 'Temperature Scale'</b><br />Start by selecting the temperature scale you want to use for your calculations between Celsius and Fahrenheit.<br /><br />
+                            <b>3. Choose the 'Climate Zone'</b> <br />Choose the climate zone that the building in question is located within by scrolling through the dropdown menu. If you are unsure of the corresponding climate zone for your building, please view the image of the World Climate Zones Map to the right (middle), according to the ANSI/ASHRAE Addendum A to ANSI/ASHRAE Standard 169-2020.<br /><br />
+                            <b>4. Choose the 'Occupancy Rate'</b><br /> Depending on the minimum and maximum values that a space can be occupied, choose the occupancy rate of the building between lightly occupied (25%), mildly occupied (50%), mostly occupied (75%), and fully occupied (100%).<br /><br />
+                            <b>5. Input 'Outdoor Temperature'</b><br /><br />
+                            <b>6. Select the patterns of unoccupied periods</b><br />There are 14 unoccupied patterns across 5 unoccupied periods. Choose the one(s) that best fit the schedule of your chosen building. The legend for the various abbreviations is in the section above below this segment. Please see the occupancy schedule image to the right (bottom) for an illustrative explanation of the different combinations.<br /><br />
+                            <b>7. Click 'Download .csv file' to get the generated results</b><br /><br />
+                            <b>8. Click 'Reset' to revert changes to default settings</b><br /><br />
+                            <b>9. Please view the image to the right (top) for a sample output</b><br />
                         </p>
                     </div>
                     <div className="guidelines_image">

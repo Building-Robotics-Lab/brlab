@@ -349,7 +349,7 @@
 }
 
 .OTST .third_section .guidelines_image {
-    flex: 1;
+    flex: 2;
 }
 
 .OTST .third_section .guidelines_image img {
@@ -521,7 +521,8 @@
     }
 
     .OTST .third_section {
-        gap: calc(0.7 * 2rem);
+        flex-direction: column;
+        gap: 0rem;
     }
 
     .OTST .third_section .guidelines_text h3 {
@@ -719,10 +720,6 @@
         font-size: calc(0.7 * 1rem);
     }
 
-    .OTST .third_section {
-        gap: calc(0.4 * 2rem);
-    }
-
     .OTST .third_section .guidelines_text h3 {
         font-size: calc(0.4 * 1.75rem);
         margin-bottom: calc(0.4 * 1.5rem);
@@ -912,10 +909,6 @@
 
     .OTST .css-b62m3t-container div div div {
         font-size: calc(0.3 * 1rem);
-    }
-
-    .OTST .third_section {
-        gap: calc(0.3 * 2rem);
     }
 
     .OTST .third_section .guidelines_text h3 {

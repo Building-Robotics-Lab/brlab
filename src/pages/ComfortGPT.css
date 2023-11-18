@@ -130,33 +130,14 @@
     display: flex;
     flex-direction: column;
     background-color: #f0f0f0;
-    padding: 1rem;
+    padding: 2rem;
     justify-content: center;
-}
-
-.ComfortGPT .second_section .inputs .table_inputs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    text-align: center;
-    gap: 1rem 2rem;
-    margin: 0rem 2.5rem;
-    padding-bottom: 2rem;
-    font-size: 1rem;
-}
-
-.ComfortGPT .second_section .inputs .table_inputs input {
-    font-size: 1rem;
-    width: 100px;
-    height: 25px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .ComfortGPT .second_section .inputs .CalculateButton {
     display: flex;
     justify-content: center;
-    padding-bottom: 1rem;
+    padding: 1rem 0rem;
     font-size: 1rem;
 }
 
@@ -164,13 +145,6 @@
     display: flex;
     justify-content: center;
     gap: 0.25rem;
-    margin: 0 6rem;
-}
-
-.ComfortGPT .second_section .inputs .additional_buttons>* {
-    flex: 1;
-    text-align: center;
-    width: 130px;
 }
 
 .ComfortGPT .second_section .outputs {
@@ -181,6 +155,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.ComfortGPT .second_section .inputs .table_inputs input {
+    font-size: 1rem;
+    width: 100px;
+    height: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ComfortGPT .second_section .inputs .table_inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+    align-items: center;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .ComfortGPT .tooltip {
@@ -213,7 +205,6 @@
 .ComfortGPT .output p {
     font-size: 1rem;
     margin-bottom: 1rem;
-    ;
 }
 
 .ComfortGPT #DownloadCSV {
@@ -236,6 +227,7 @@
     font-size: 1.75rem;
     margin-bottom: 1.5rem;
 }
+
 .ComfortGPT .third_section .guidelines_text h3 {
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
@@ -251,6 +243,7 @@
     line-height: 1.5;
     text-align: justify;
 }
+
 .ComfortGPT .third_section .guidelines_text li {
     font-size: 1rem;
     margin-bottom: 0.75rem;
@@ -329,9 +322,6 @@
 #graph>svg>g>* {
     font-size: 1rem;
 }
-
-
-
 
 @media screen and (max-width: 1025px) {
     /* First Section */
@@ -417,15 +407,20 @@
     /* Second Section */
 
     .ComfortGPT .second_section .inputs {
-        padding: calc(0.7 * 1rem);
+        padding: calc(0.7 * 2rem);
     }
 
-    .ComfortGPT .second_section .inputs .table_inputs {
-        grid-template-columns: calc(0.7 * 1fr) calc(0.7 * 1fr);
-        gap: calc(0.7 * 1rem) calc(0.7 * 2rem);
-        margin: 0rem calc(0.7 * 2.5rem);
-        padding-bottom: calc(0.7 * 2rem);
+    .ComfortGPT .second_section .inputs .CalculateButton {
+        padding: calc(0.7 * 1rem) 0rem;
         font-size: calc(0.7 * 1rem);
+    }
+
+    .ComfortGPT .second_section .inputs .additional_buttons {
+        gap: calc(0.7 * 0.25rem);
+    }
+
+    .ComfortGPT .second_section .outputs {
+        padding-top: calc(0.7 * 1rem);
     }
 
     .ComfortGPT .second_section .inputs .table_inputs input {
@@ -434,22 +429,11 @@
         height: calc(0.7 * 25px);
     }
 
-    .ComfortGPT .second_section .inputs .CalculateButton {
+    .ComfortGPT .second_section .inputs .table_inputs {
+        grid-template-columns: calc(0.7 * 1fr) calc(0.7 * 1fr);
+        gap: calc(0.7 * 1rem) calc(0.7 * 2rem);
         padding-bottom: calc(0.7 * 1rem);
         font-size: calc(0.7 * 1rem);
-    }
-
-    .ComfortGPT .second_section .inputs .additional_buttons {
-        gap: calc(0.7 * 0.25rem);
-        margin: 0 calc(0.7 * 6rem);
-    }
-
-    .ComfortGPT .second_section .inputs .additional_buttons>* {
-        width: calc(0.7 * 130px);
-    }
-
-    .ComfortGPT .second_section .outputs {
-        padding-top: calc(0.7 * 1rem);
     }
 
     .ComfortGPT .tooltip {
@@ -467,7 +451,6 @@
         font-size: calc(0.7 * 5rem);
     }
 
-
     .ComfortGPT .output h5 {
         font-size: calc(0.7 * 1.25rem);
         margin-bottom: calc(0.7 * 0.5rem);
@@ -481,6 +464,7 @@
     /* Third Section */
 
     .ComfortGPT .third_section {
+        flex-direction: column;
         gap: calc(0.7 * 2rem);
     }
 
@@ -618,15 +602,20 @@
     /* Second Section */
 
     .ComfortGPT .second_section .inputs {
-        padding: calc(0.4 * 1rem);
+        padding: calc(0.4 * 2rem);
     }
 
-    .ComfortGPT .second_section .inputs .table_inputs {
-        grid-template-columns: calc(0.4 * 1fr) calc(0.4 * 1fr);
-        gap: calc(0.4 * 1rem) calc(0.4 * 2rem);
-        margin: 0rem calc(0.4 * 2.5rem);
-        padding-bottom: calc(0.4 * 2rem);
+    .ComfortGPT .second_section .inputs .CalculateButton {
+        padding: calc(0.4 * 1rem) 0rem;
         font-size: calc(0.4 * 1rem);
+    }
+
+    .ComfortGPT .second_section .inputs .additional_buttons {
+        gap: calc(0.4 * 0.25rem);
+    }
+
+    .ComfortGPT .second_section .outputs {
+        padding-top: calc(0.4 * 1rem);
     }
 
     .ComfortGPT .second_section .inputs .table_inputs input {
@@ -635,22 +624,11 @@
         height: calc(0.4 * 25px);
     }
 
-    .ComfortGPT .second_section .inputs .CalculateButton {
+    .ComfortGPT .second_section .inputs .table_inputs {
+        grid-template-columns: calc(0.4 * 1fr) calc(0.4 * 1fr);
+        gap: calc(0.4 * 1rem) calc(0.4 * 2rem);
         padding-bottom: calc(0.4 * 1rem);
         font-size: calc(0.4 * 1rem);
-    }
-
-    .ComfortGPT .second_section .inputs .additional_buttons {
-        gap: calc(0.4 * 0.25rem);
-        margin: 0 calc(0.4 * 6rem);
-    }
-
-    .ComfortGPT .second_section .inputs .additional_buttons>* {
-        width: calc(0.4 * 130px);
-    }
-
-    .ComfortGPT .second_section .outputs {
-        padding-top: calc(0.4 * 1rem);
     }
 
     .ComfortGPT .tooltip {
@@ -668,7 +646,6 @@
         font-size: calc(0.4 * 5rem);
     }
 
-
     .ComfortGPT .output h5 {
         font-size: calc(0.4 * 1.25rem);
         margin-bottom: calc(0.4 * 0.5rem);
@@ -682,6 +659,7 @@
     /* Third Section */
 
     .ComfortGPT .third_section {
+
         gap: calc(0.4 * 2rem);
     }
 
@@ -819,15 +797,20 @@
     /* Second Section */
 
     .ComfortGPT .second_section .inputs {
-        padding: calc(0.3 * 1rem);
+        padding: calc(0.3 * 2rem);
     }
 
-    .ComfortGPT .second_section .inputs .table_inputs {
-        grid-template-columns: calc(0.3 * 1fr) calc(0.3 * 1fr);
-        gap: calc(0.3 * 1rem) calc(0.3 * 2rem);
-        margin: 0rem calc(0.3 * 2.5rem);
-        padding-bottom: calc(0.3 * 2rem);
+    .ComfortGPT .second_section .inputs .CalculateButton {
+        padding: calc(0.3 * 1rem) 0rem;
         font-size: calc(0.3 * 1rem);
+    }
+
+    .ComfortGPT .second_section .inputs .additional_buttons {
+        gap: calc(0.3 * 0.25rem);
+    }
+
+    .ComfortGPT .second_section .outputs {
+        padding-top: calc(0.3 * 1rem);
     }
 
     .ComfortGPT .second_section .inputs .table_inputs input {
@@ -836,22 +819,11 @@
         height: calc(0.3 * 25px);
     }
 
-    .ComfortGPT .second_section .inputs .CalculateButton {
+    .ComfortGPT .second_section .inputs .table_inputs {
+        grid-template-columns: calc(0.3 * 1fr) calc(0.3 * 1fr);
+        gap: calc(0.3 * 1rem) calc(0.3 * 2rem);
         padding-bottom: calc(0.3 * 1rem);
         font-size: calc(0.3 * 1rem);
-    }
-
-    .ComfortGPT .second_section .inputs .additional_buttons {
-        gap: calc(0.3 * 0.25rem);
-        margin: 0 calc(0.3 * 6rem);
-    }
-
-    .ComfortGPT .second_section .inputs .additional_buttons>* {
-        width: calc(0.3 * 130px);
-    }
-
-    .ComfortGPT .second_section .outputs {
-        padding-top: calc(0.3 * 1rem);
     }
 
     .ComfortGPT .tooltip {
@@ -868,7 +840,6 @@
     .loading_thing {
         font-size: calc(0.3 * 5rem);
     }
-
 
     .ComfortGPT .output h5 {
         font-size: calc(0.3 * 1.25rem);

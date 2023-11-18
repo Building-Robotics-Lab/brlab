@@ -1,35 +1,56 @@
-.carouselImage {
-    height: calc(0.3 * 300px);
-    margin-bottom: calc(0.3 * 1rem);
+.ComfortGPT .second_section .inputs {
     padding: calc(0.3 * 1rem);
 }
 
-.carouselDate {
-    padding: 0 calc(0.3 * 1rem);
-    font-size: smaller;
+.ComfortGPT .second_section .inputs .CalculateButton {
+    padding: calc(0.3 * 1rem) 0rem;
+    font-size: calc(0.3 * 1rem);
 }
 
-.carouselLink {
-    padding: 0 calc(0.3 * 1rem);
+.ComfortGPT .second_section .inputs .additional_buttons {
+    gap: calc(0.3 * 0.25rem);
 }
 
-.carouselTitle {
-    font-size: calc(0.3 * 1.5rem);
-    padding: calc(0.3 * 0.25rem) calc(0.3 * 1rem);
+.ComfortGPT .second_section .outputs {
+    padding-top: calc(0.3 * 1rem);
 }
 
-.btn {
-    width: calc(0.3 * 40px);
-    height: calc(0.3 * 40px);
-    font-size: calc(0.3 * 1.5rem);
+.ComfortGPT .second_section .inputs .table_inputs input {
+    font-size: calc(0.3 * 1rem);
+    width: calc(0.3 * 100px);
+    height: calc(0.3 * 25px);
 }
 
-.btn-left {
-    left: calc(0.3 * -10px);
+.ComfortGPT .second_section .inputs .table_inputs {
+    grid-template-columns: calc(0.3 * 1fr) calc(0.3 * 1fr);
+    gap: 1rem calc(0.3 * 2rem);
+    padding-bottom: calc(0.3 * 1rem);
+    font-size: calc(0.3 * 1rem);
 }
 
-.btn-right {
-    right: calc(0.3 * -10px);
+.ComfortGPT .tooltip {
+    padding: calc(0.3 * .5rem);
+    border: calc(0.3 * 1px) solid black;
+    border-radius: calc(0.3 * 8px);
+}
+
+.ComfortGPT .output {
+    margin-top: calc(0.3 * 2rem);
+    gap: calc(0.3 * 10rem);
+}
+
+.loading_thing {
+    font-size: calc(0.3 * 5rem);
+}
+
+.ComfortGPT .output h5 {
+    font-size: calc(0.3 * 1.25rem);
+    margin-bottom: calc(0.3 * 0.5rem);
+}
+
+.ComfortGPT .output p {
+    font-size: calc(0.3 * 1rem);
+    margin-bottom: calc(0.3 * 1rem);
 }
 
 @media screen and (max-width: 1025px) {}

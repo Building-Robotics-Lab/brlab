@@ -25,31 +25,40 @@ function ComfortGPT() {
     // State for screen width and target height
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const [targetHeight, setTargetHeight] = useState(30); // default height
-    const [margin, settaretmargin] = useState({ top: 20, right: 20, bottom: 50, left: 65 })
+    const [margin, settaretmargin] = useState({ top: 20, right: 20, bottom: 50, left: 70 })
     const [y_axis1, sety_axis1] = useState(20)
     const [y_axis2, sety_axis2] = useState(-60)
 
     useEffect(() => {
         const handleResize = () => {
-            setScreenWidth(window.innerWidth);
-            if (window.innerWidth > 760) {
-                setTargetHeight(30); // smaller height for smaller screens
-                settaretmargin({ top: 20, right: 20, bottom: 50, left: 65 })
-                sety_axis1(20)
-                sety_axis2(-60)
+            const newWidth = window.innerWidth;
+            if (newWidth > 760) {
+                // Batching updates for larger screens
+                setTargetHeight(30);
+                settaretmargin({ top: 20, right: 20, bottom: 60, left: 70 });
+                sety_axis1(25);
+                sety_axis2(-60);
+                console.log('greater than 760');
             } else {
+                // Batching updates for smaller screens
                 setTargetHeight(20);
-                settaretmargin({ top: 10, right: 10, bottom: 30, left: 30 })
-                sety_axis1(5)
-                sety_axis2(-25)
+                settaretmargin({ top: 10, right: 10, bottom: 30, left: 40 });
+                sety_axis1(10);
+                sety_axis2(-35);
+                console.log('less than 760');
             }
         };
 
+        // Set the initial state based on the current window size
+        handleResize();
+
+        // Set up the event listener
         window.addEventListener('resize', handleResize);
 
         // Clean up the event listener
         return () => window.removeEventListener('resize', handleResize);
-    }, [screenWidth]);
+    }, []); // Empty dependency array to run only on mount and unmount
+
 
     // Define styles here, using targetHeight
     const styles = {
@@ -269,8 +278,6 @@ function ComfortGPT() {
                 const svgContainer = d3.select('#graph')
                 svgContainer.selectAll("svg").remove();
 
-                // const margin = { top: 20, right: 20, bottom: 50, left: 60 };
-                // const margin = { top: 10, right: 10, bottom: 30, left: 30 };
                 console.log(margin)
 
                 let width = document.getElementById('graph').offsetWidth - margin.left - margin.right;
@@ -511,7 +518,7 @@ function ComfortGPT() {
         return () => {
             window.removeEventListener('resize', drawGraph)
         }
-    }, [temperature, plotData, shouldDrawLines])
+    }, [margin, temperature, plotData, shouldDrawLines])
 
     const SimulateButton = () => {
         setshouldDrawLines(true);
