@@ -25,19 +25,19 @@ function ComfortGPT() {
     // State for screen width and target height
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const [targetHeight, setTargetHeight] = useState(30); // default height
-    const [margin, settaretmargin] = useState({ top: 20, right: 20, bottom: 50, left: 60 })
+    const [margin, settaretmargin] = useState({ top: 20, right: 20, bottom: 50, left: 65 })
     const [y_axis1, sety_axis1] = useState(20)
-    const [y_axis2, sety_axis2] = useState(-50)
+    const [y_axis2, sety_axis2] = useState(-60)
 
     useEffect(() => {
         const handleResize = () => {
             setScreenWidth(window.innerWidth);
-            if (window.innerWidth < 1025) {
+            if (window.innerWidth > 760) {
                 setTargetHeight(30); // smaller height for smaller screens
-                settaretmargin({ top: 20, right: 20, bottom: 50, left: 60 })
+                settaretmargin({ top: 20, right: 20, bottom: 50, left: 65 })
                 sety_axis1(20)
-                sety_axis2(-50)
-            } else if (window.innerWidth < 760) {
+                sety_axis2(-60)
+            } else {
                 setTargetHeight(20);
                 settaretmargin({ top: 10, right: 10, bottom: 30, left: 30 })
                 sety_axis1(5)
@@ -525,15 +525,51 @@ function ComfortGPT() {
         setExtremeStIndices({});
         setTemperature(temperature_scale[0].value);
         setshouldDrawLines(false);
-        setShowOutput('none')
+        setShowOutput('none');
+
+        const addButton = document.querySelector('.addRowButton');
+        addButton.style.borderColor = '';
+        addButton.style.color = '';
+        addButton.style.pointerEvents = '';
+        addButton.style.opacity = '1';
+
+        const removeButton = document.querySelector('.removeRowButton');
+        removeButton.style.borderColor = '';
+        removeButton.style.color = '';
+        removeButton.style.pointerEvents = '';
+        removeButton.style.opacity = '1';
     }
 
     const AddRow = () => {
         if (otValues.length < 20) {
             setOtValues([...otValues, null]);
             setStValues([...stValues, null]);
+            const addButton = document.querySelector('.addRowButton');
+            addButton.style.borderColor = '';
+            addButton.style.color = '';
+            addButton.style.pointerEvents = '';
+            addButton.style.opacity = '1';
+
+            const removeButton = document.querySelector('.removeRowButton');
+            removeButton.style.borderColor = '';
+            removeButton.style.color = '';
+            removeButton.style.pointerEvents = '';
+            removeButton.style.opacity = '1';
+        } else {
+            const addButton = document.querySelector('.addRowButton');
+            addButton.style.borderColor = 'red';
+            addButton.style.color = 'red';
+            addButton.style.pointerEvents = 'none';
+            addButton.style.opacity = '0.5';
         }
-    }
+
+        // // Directly change the border color of the button
+        // const addButton = document.querySelector('.addRowButton');
+        // if (addButton) {
+
+        //     // addButton.style.borderColor = otValues.length === 20 ? 'red' : 'initial';
+        // }
+    };
 
     const RemoveRow = () => {
         const otNewValues = [...otValues];
@@ -554,6 +590,24 @@ function ComfortGPT() {
             if (stExtremeNewValues.hasOwnProperty(lastRowIndex)) {
                 delete stExtremeNewValues[lastRowIndex];
             }
+
+            const addButton = document.querySelector('.addRowButton');
+            addButton.style.borderColor = '';
+            addButton.style.color = '';
+            addButton.style.pointerEvents = '';
+            addButton.style.opacity = '1';
+
+            const removeButton = document.querySelector('.removeRowButton');
+            removeButton.style.borderColor = '';
+            removeButton.style.color = '';
+            removeButton.style.pointerEvents = '';
+            removeButton.style.opacity = '1';
+        } else {
+            const removeButton = document.querySelector('.removeRowButton');
+            removeButton.style.borderColor = 'red';
+            removeButton.style.color = 'red';
+            removeButton.style.pointerEvents = 'none';
+            removeButton.style.opacity = '0.5';
         }
 
         setOtValues(otNewValues);
@@ -669,13 +723,13 @@ function ComfortGPT() {
                         </div>
                         <div className="additional_buttons">
                             <div className="HomeButtons">
-                                <Link onClick={AddRow}><p className='AdditionalButtonsCGPT' id='JoinButton'>Add Row</p></Link>
+                                <Link onClick={AddRow}><p className='AdditionalButtonsCGPT addRowButton' id='JoinButton'>Add Row</p></Link>
                             </div>
                             <div className="HomeButtons">
                                 <Link onClick={Reset}><p className='AdditionalButtonsCGPT' id='JoinButton'>Reset</p></Link>
                             </div>
                             <div className="HomeButtons">
-                                <Link onClick={RemoveRow} ><p className='AdditionalButtonsCGPT' id='JoinButton'>Remove Row</p></Link>
+                                <Link onClick={RemoveRow} ><p className='AdditionalButtonsCGPT removeRowButton' id='JoinButton'>Remove Row</p></Link>
                             </div>
                         </div>
                     </div>
@@ -706,19 +760,19 @@ function ComfortGPT() {
             <Container>
                 <div className="third_section">
                     <div className="guidelines_text">
-                    <h3>About the Tool</h3>
+                        <h3>About the Tool</h3>
                         <p>
                             ComfortGPT employs generative pre-trained models built on the data from thousands of ECOBEE thermostat users, to directly predict temperature setpoints while minimizing the reliance on occupant interactions. See CHEN Kai's publication [here] for a more in-depth description and analysis of the data behind this tool.
                         </p>
-                    <h3>Guidelines</h3>
+                        <h3>Guidelines</h3>
                         <p>
-                            <b>1. Select the 'Temperature Scale'</b> <br/>Start by selecting the temperature scale you want to use for your calculations between Celsius, Fahrenheit, and Kelvin.<br/><br/>
-                            <b>2. Input 'Outdoor Temperature' and 'Preferred Setpoint'</b> <br />Input the outdoor temperature and preferred setpoints. Ensure the data entered aligns with the temperature scale selected in the first step and that both columns of a row are filled.<br/><br/>
-                            <b>3. Add or remove rows to your preference</b><br/><br/>
-                            <b>4. Click 'Calculate' to obtain the slope and generate results</b><br/><br/>
-                            <b>5. Click 'Download .csv file' to get the generated results</b><br/><br/>
-                            <b>6. Click 'Reset' to revert changes to default settings</b><br/><br/>
-                            <b>7. Please view the image to the right for a sample output</b><br/>
+                            <b>1. Select the 'Temperature Scale'</b> <br />Start by selecting the temperature scale you want to use for your calculations between Celsius, Fahrenheit, and Kelvin.<br /><br />
+                            <b>2. Input 'Outdoor Temperature' and 'Preferred Setpoint'</b> <br />Input the outdoor temperature and preferred setpoints. Ensure the data entered aligns with the temperature scale selected in the first step and that both columns of a row are filled.<br /><br />
+                            <b>3. Add or remove rows to your preference</b><br /><br />
+                            <b>4. Click 'Calculate' to obtain the slope and generate results</b><br /><br />
+                            <b>5. Click 'Download .csv file' to get the generated results</b><br /><br />
+                            <b>6. Click 'Reset' to revert changes to default settings</b><br /><br />
+                            <b>7. Please view the image to the right for a sample output</b><br />
                         </p>
                     </div>
                     <div className="guidelines_image">

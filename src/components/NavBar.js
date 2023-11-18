@@ -104,7 +104,6 @@ function NavBar() {
         <div className="nav-overlay">
           <Link to="/" className="left overlay-left">
             <img src={Logo} alt="Logo for the NUS Building Robotics Laboratory" className='logo' />
-            <p>Building Robotics Laboratory</p>
           </Link>
           <button className="close-button" onClick={toggleNav}>&times;</button>
           <div className="nav-overlay-item" onClick={toggleResearchSublinks}>Research<i className="arrownav downnav"></i></div>
@@ -124,6 +123,7 @@ function NavBar() {
           <p className='navbar_buttons'>
             <a className="bi-envelope" id="navbar_button" onClick={handleNavLinkClick} href="mailto:ghahramani@nus.edu.sg"></a>
             <a className="bi-linkedin" id="navbar_button" onClick={handleNavLinkClick} href="https://www.linkedin.com/company/building-robotics-lab/" target="_blank"></a>
+            <a className="bi-github" id="navbar_button" href="https://github.com/Building-Robotics-Lab" target="_blank"></a>
           </p>
         </div>
       )}

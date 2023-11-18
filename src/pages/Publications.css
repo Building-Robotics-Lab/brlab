@@ -289,7 +289,7 @@
     }
 
     .Publications .publication_section {
-        border-bottom: calc(0.7 * 2px) solid black;
+        border-bottom: calc(0.4 * 2px) solid black;
     }
 
     .Publications .publication_filter_section .publication_filter {
@@ -388,7 +388,7 @@
     }
 
     .Publications .publication_section {
-        border-bottom: calc(0.7 * 2px) solid black;
+        border-bottom: calc(0.3 * 2px) solid black;
     }
 
     .Publications .publication_filter_section .publication_filter {
