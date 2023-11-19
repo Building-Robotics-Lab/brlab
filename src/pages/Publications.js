@@ -20,6 +20,17 @@ function Publications() {
         };
     }, []); // Empty dependency array ensures this runs only once when the component mounts.
 
+    const [, setWindowSize] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowSize(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     const getAvailableTypes = () => {
         let availableTypes = new Set();
 
@@ -606,6 +617,34 @@ const InputOption = ({ getStyles, isFocused, isSelected, children, innerProps, .
     );
 };
 
+const getDynamicWidth = () => {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 426) { // For small screens
+        return '100px';
+    } else if (screenWidth <= 769) { // For medium screens
+        return '120px';
+    } else if (screenWidth <= 1024) { // For larger screens
+        return '200px';
+    } else {
+        return '300px';
+    }
+};
+
+const getDynamicPadding = () => {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 426) { // For small screens
+        return '4px 6px';
+    } else if (screenWidth <= 769) { // For medium screens
+        return '5px 8px';
+    } else if (screenWidth <= 1024) { // For larger screens
+        return '6px 10px';
+    } else {
+        return '8px 12px';
+    }
+};
+
 const customStyles = {
     control: () => ({
         display: 'none'
@@ -616,11 +655,12 @@ const customStyles = {
         position: 'absolute',
         top: '10px',
         left: '0px',
-        width: '250px',
+        width: getDynamicWidth(),
     }),
     option: (base, state) => ({
         ...base,
         backgroundColor: state.isFocused ? 'rgb(45, 99, 83)' : (state.isSelected ? 'rgb(45, 99, 83)' : base.backgroundColor),
+        padding: getDynamicPadding(), //'8px 12px',
         ':active': {
             backgroundColor: 'rgb(45, 99, 83)'
         }

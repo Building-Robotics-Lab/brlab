@@ -7,7 +7,7 @@ import Pako from 'pako';
 import * as d3 from 'd3';
 
 import ExampleImage from './../components/Website Data/OTSToutput_example1.png'
-import ExampleImage2 from './../components/Website Data/OTSToutput_example3.png'
+import ExampleImage2 from './../components/Website Data/OTSToutput_example2.png'
 import ExampleImage3 from './../components/Website Data/OTSToutput_example3.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -567,6 +567,7 @@ function OTST() {
                                 <b><a className='text' href="https://github.com/Building-Robotics-Lab/brlab/issues/new" rel="noreferrer" target="_blank">Bugs</a></b>
                             </div>
                         </div>
+                        <p className='user_exp'>*For the best user experience, this tool is optimised for desktop use.</p>
                     </div>
                 </div>
             </Container>
@@ -680,7 +681,7 @@ function OTST() {
                     </div>
                     <div className="guidelines_image">
                         <img src={ExampleImage} alt="An example of what the interactive tool above should look like when being used." />
-                        <img src={ExampleImage3} alt="An illustrative example of the occupancy schedule variations for 0 hours, 1 hour, 2 hours, 4 hours, and 6 hours." />
+                        <img src={ExampleImage2} alt="An illustrative example of the occupancy schedule variations for 0 hours, 1 hour, 2 hours, 4 hours, and 6 hours." />
                         <img src={ExampleImage3} alt="An illustrative example of the occupancy schedule variations for 0 hours, 1 hour, 2 hours, 4 hours, and 6 hours." />
                     </div>
                 </div>

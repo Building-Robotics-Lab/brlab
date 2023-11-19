@@ -170,11 +170,13 @@ function ComfortGPT() {
     }, [otValues, stValues])
 
     let scale;
+    let scale2;
     let x_heat_highlight_csv;
     let y_heat_highlight_csv;
     let x_cool_highlight_csv;
     let y_cool_highlight_csv;
     const [usescale, setusescale] = useState();
+    const [usescale2, setusescale2] = useState();
     const [shouldDrawLines, setshouldDrawLines] = useState(false);
     const [showOutput, setShowOutput] = useState('none');
     useEffect(() => {
@@ -182,12 +184,16 @@ function ComfortGPT() {
             if (!loading) {
                 if (temperature === "Celsius") {
                     scale = "°C";
+                    scale2 = "°C";
                 } else if (temperature === "Kelvin") {
-                    scale = "K";
+                    scale = " K";
+                    scale2 = "K";
                 } else if (temperature === "Fahrenheit") {
                     scale = "°F";
+                    scale2 = "°F";
                 }
                 setusescale(scale);
+                setusescale2(scale2);
 
                 // Gray Lines
                 const slope_heat = plotData['slope_heat'];
@@ -261,7 +267,7 @@ function ComfortGPT() {
                 if (scale === "°C") {
                     above_val = 16;
                     below_val = 16;
-                } else if (scale === "K") {
+                } else if (scale === " K") {
                     above_val = 289.15;
                     below_val = 289.15;
                 } else if (scale === "°F") {
@@ -412,7 +418,7 @@ function ComfortGPT() {
                             tooltip.transition()
                                 .duration(200)
                                 .style('opacity', 0.9);
-                            tooltip.html(`Outdoor Temperature (${scale}): ${Number(d.xval).toFixed(2)} <br/> Preferred Setpoint (${scale}): ${Number(d.yval).toFixed(2)}`)
+                            tooltip.html(`Outdoor Temperature (${scale2}): ${Number(d.xval).toFixed(2)} <br/> Preferred Setpoint (${scale2}): ${Number(d.yval).toFixed(2)}`)
                                 .style('left', (xPos + 60 + document.getElementById('graph').offsetLeft) + 10 + 'px')
                                 .style('top', (yPos + 30 + document.getElementById('graph').offsetTop) + 10 + 'px');
 
@@ -453,7 +459,7 @@ function ComfortGPT() {
                             tooltip.transition()
                                 .duration(200)
                                 .style('opacity', 0.9);
-                            tooltip.html(`Outdoor Temperature (${scale}): ${Number(d.xval).toFixed(2)} <br/> Preferred Setpoint (${scale}): ${Number(d.yval).toFixed(2)}`)
+                            tooltip.html(`Outdoor Temperature (${scale2}): ${Number(d.xval).toFixed(2)} <br/> Preferred Setpoint (${scale2}): ${Number(d.yval).toFixed(2)}`)
                                 .style('left', (xPos + 60 + document.getElementById('graph').offsetLeft) + 'px')
                                 .style('top', (yPos + 30 + document.getElementById('graph').offsetTop) + 'px');
 
@@ -493,21 +499,17 @@ function ComfortGPT() {
                 // X Axis Label and Y Axis Label
                 svg.append("text")
                     .attr("transform", `translate(${width / 2} ,${height + 15})`) // Position at the middle of the x-axis, and move slightly below the axis
-                    // .attr("y", 20) // Position it to the left of the y-axis
-                    // .attr("y", 5) // Position it to the left of the y-axis
                     .attr("y", `${y_axis1}`)
                     .style("text-anchor", "middle")
-                    .text(`Outdoor Temperature (${scale})`);
+                    .text(`Outdoor Temperature (${scale2})`);
 
                 svg.append("text")
                     .attr("transform", "rotate(-90)") // Rotate the text 90 degrees
-                    // .attr("y", -50) // Position it to the left of the y-axis
-                    // .attr("y", -25) // Position it to the left of the y-axis
                     .attr("y", `${y_axis2}`)
                     .attr("x", 0 - (height / 2)) // Position at the middle of the y-axis
                     .attr("dy", "1em") // Move slightly away from the axis
                     .style("text-anchor", "middle")
-                    .text(`Preferred Setpoint (${scale})`);
+                    .text(`Preferred Setpoint (${scale2})`);
             }
         }
 
@@ -698,6 +700,7 @@ function ComfortGPT() {
                                 <b><a className='text' href="https://github.com/Building-Robotics-Lab/ComfortGPT/issues/new" target="_blank">Bugs</a></b>
                             </div>
                         </div>
+                        <p className='user_exp'>*For the best user experience, this tool is optimised for desktop use.</p>
                     </div>
                 </div>
             </Container>
