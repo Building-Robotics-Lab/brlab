@@ -764,6 +764,10 @@
     .OTST .third_section .guidelines_image img {
         border: calc(0.4 * 2px) solid black;
     }
+
+    .OTST .third_section .guidelines_text a {
+        color: rgb(45, 99, 83);
+    }
 }
 
 @media screen and (max-width: 426px) {

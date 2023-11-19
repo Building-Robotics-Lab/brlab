@@ -10,6 +10,16 @@ function Join_the_Lab() {
 
     const openEligibility = [
         {
+            title: "NUS Presidential Fellowship",
+            link: "https://www.nus.edu.sg/careers/NUS-Presidential-Fellowship.pdf",
+            description: "Applicants to the NUS Presidential Fellowship have obtained their PhD within the past year or will be within the next year, have displayed exceptional intellectual ability to produce original work of the highest quality, and exhibited a strong potential to lead their research projects. In return, the awardees will receive a 2-year fellowship with automatic conversion to Tenure Track Assistant Professor with an internationally competitive salary package and start-up research grant, among other features.",
+            tags: {
+                position: ["Post-Doc"],
+                country: ["Open to all Countries"],
+                duration: ["1-2 years", "2+ years"]
+            }
+        },
+        {
             title: "President's Graduate Fellowship",
             link: "https://nusgs.nus.edu.sg/scholarships-list/",
             description: "Awarded to PhD candidates who show exceptional promise or accomplishment in research. A number of PhD candidates are selected each semester by the University for the award. The following Fellowships are donor-funded: President’s Graduate Fellowship (funded by Lee Kong Chian Scholarship) and President’s Graduate Fellowship (funded by Jasmine Scholarship). Additionally, the candidate must have an exemplary academic record, strong research potential, and strong ethical character and high potential to succeed in the PhD program.",
@@ -90,7 +100,7 @@ function Join_the_Lab() {
             }
         },
         {
-            title: "Microsoft Research PhD Fellowship (paused until 10/2023)",
+            title: "Microsoft Research PhD Fellowship",
             link: "https://www.microsoft.com/en-us/research/academic-program/phd-fellowship/asia-pacific/",
             description: "Identifies the next generation of research leaders through a unique program that offers a combination of mentorship, research, networking, and academic opportunities to promosing young candidates. The award consists of a stipend for research initiatives and academic endeavors, the opportunity for intensive and individualized mentorship programs with a dedicated senior researcher, and the opportunity to attend the Microsoft Research Asia Academic Conference.",
             tags: {
