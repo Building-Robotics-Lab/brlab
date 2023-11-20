@@ -14,9 +14,10 @@
 .Research .first_section .title_section h3 {
     font-size: 1.75rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
+/*
 .Research .first_section .title_section h5 {
     font-size: 1.25rem;
     text-align: center;
@@ -44,17 +45,17 @@
 }
 
 .Research .first_section .industry_partners a:not(:last-child) img {
-    /* Everything except last child */
+    /* Everything except last child *//*
     scale: 0.8;
     object-fit: scale-down;
 }
 
 .Research .first_section .industry_partners a:nth-child(1) img {
-    /* AWS logo */
+    /* AWS logo *//*
 }
 
 .Research .first_section .industry_partners a:nth-child(2) img {
-    /* Trane logo */
+    /* Trane logo *//*
     scale: 1;
 }
 
@@ -63,7 +64,7 @@
 }
 
 .Research .first_section .industry_partners a:last-child img {
-    /* co-innovation logo */
+    /* co-innovation logo *//*
     scale: 0.95;
 }
 
@@ -71,34 +72,34 @@
     display: flex;
     justify-content: center;
 }
-
+*/
 /* Second Section */
 
-.Research .second_section .title_section h2 {
+/*.Research .second_section .title_section h2 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 2rem;
-}
+}*/
 
-.Research .second_section .themes {
+.Research .first_section .themes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 4rem;
 }
 
-.Research .second_section .themes .each_theme {
+.Research .first_section .themes .each_theme {
     flex: 1;
     display: grid;
     grid-template-rows: auto 1fr;
 }
 
-.Research .second_section .themes .each_theme img {
+.Research .first_section .themes .each_theme img {
     width: 100%;
     height: 300px;
     object-fit: contain;
 }
 
-.Research .second_section .themes .each_theme h4 {
+.Research .first_section .themes .each_theme h4 {
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: black;
@@ -107,7 +108,7 @@
     overflow: hidden;
 }
 
-.Research .second_section .themes .each_theme p {
+.Research .first_section .themes .each_theme p {
     text-align: justify;
     text-justify: inter-word;
     font-size: 1rem;
@@ -244,27 +245,27 @@
         margin-bottom: calc(0.7 * 2rem);
     }
 
-    .Research .second_section .themes {
+    .Researchfirst_section .themes {
         grid-template-columns: repeat(4, 1fr);
         gap: calc(0.7 * 4rem);
     }
 
-    .Research .second_section .themes .each_theme {
+    .Researchfirst_section .themes .each_theme {
         grid-template-rows: auto calc(0.7 * 1fr);
     }
 
-    .Research .second_section .themes .each_theme img {
+    .Researchfirst_section .themes .each_theme img {
         height: calc(0.7 * 300px);
     }
 
-    .Research .second_section .themes .each_theme h4 {
+    .Researchfirst_section .themes .each_theme h4 {
         margin-top: calc(0.7 * 1rem);
         margin-bottom: calc(0.7 * 1rem);
         font-size: calc(0.7 * 1.25rem);
         min-height: calc(0.7 * 50px);
     }
 
-    .Research .second_section .themes .each_theme p {
+    .Researchfirst_section .themes .each_theme p {
         font-size: calc(0.7 * 1rem);
     }
 
@@ -364,27 +365,27 @@
         margin-bottom: calc(0.4 * 2rem);
     }
 
-    .Research .second_section .themes {
+    .Research first_section .themes {
         grid-template-columns: repeat(4, 1fr);
         gap: calc(0.4 * 4rem);
     }
 
-    .Research .second_section .themes .each_theme {
+    .Research first_section .themes .each_theme {
         grid-template-rows: auto calc(0.4 * 1fr);
     }
 
-    .Research .second_section .themes .each_theme img {
+    .Research first_section .themes .each_theme img {
         height: calc(0.4 * 300px);
     }
 
-    .Research .second_section .themes .each_theme h4 {
+    .Research first_section .themes .each_theme h4 {
         margin-top: calc(0.4 * 1rem);
         margin-bottom: calc(0.4 * 1rem);
         font-size: calc(0.4 * 1.25rem);
         min-height: calc(0.4 * 50px);
     }
 
-    .Research .second_section .themes .each_theme p {
+    .Research first_section .themes .each_theme p {
         font-size: calc(0.4 * 1rem);
     }
 
@@ -484,27 +485,27 @@
         margin-bottom: calc(0.3 * 2rem);
     }
 
-    .Research .second_section .themes {
+    .Research .first_section .themes {
         grid-template-columns: repeat(2, 1fr);
         gap: calc(0.3 * 4rem);
     }
 
-    .Research .second_section .themes .each_theme {
+    .Research .first_section .themes .each_theme {
         grid-template-rows: auto calc(0.3 * 1fr);
     }
 
-    .Research .second_section .themes .each_theme img {
+    .Research .first_section .themes .each_theme img {
         height: calc(0.3 * 300px);
     }
 
-    .Research .second_section .themes .each_theme h4 {
+    .Research .first_section .themes .each_theme h4 {
         margin-top: calc(0.3 * 1rem);
         margin-bottom: 0rem;
         font-size: calc(0.3 * 1.25rem);
         min-height: calc(0.3 * 50px);
     }
 
-    .Research .second_section .themes .each_theme p {
+    .Research .first_section .themes .each_theme p {
         font-size: calc(0.3 * 1rem);
     }
 

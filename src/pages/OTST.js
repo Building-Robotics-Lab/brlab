@@ -664,19 +664,19 @@ function OTST() {
                     <div className="guidelines_text">
                         <h3>About the Tool</h3>
                         <p>
-                            The Optimal Temperature Setpoint Tool allows the user to identify the optimal setpoint based on occupancy rates, patterns, and outdoor air temperature values in order to facilitate practical applications. With respect to the inputs, the tool returns the temperature setpoint that minimises energy consumption. Multiple scenarios with various inputs can be tested and the results can be downloaded as a .csv file. See Riccardo Talami's publications here and <Link to="/publication/demystifying_energy"><b>here</b></Link> for a more in-depth description and analysis of the data behind this tool.
+                            The Optimal Temperature Setpoint Tool allows the user to identify the optimal setpoint based on occupancy rates, patterns, and outdoor air temperature values in order to facilitate practical applications. With respect to the inputs, the tool returns the temperature setpoint that minimises energy consumption. Multiple scenarios with various inputs can be tested and the results can be downloaded as a .csv file. See Riccardo Talami's publications here and <Link to="/publication/demystifying_energy"><b className='otst_paper'>here</b></Link> for a more in-depth description and analysis of the data behind this tool.
                         </p>
                         <h3>Guidelines</h3>
                         <p>
                             <b>1. Identify the 'Building Size'</b><br />Start by determining if your building size is small (threshold range), medium (threshold range), or large (threshold range).<br /><br />
                             <b>2. Select the 'Temperature Scale'</b><br />Start by selecting the temperature scale you want to use for your calculations between Celsius and Fahrenheit.<br /><br />
-                            <b>3. Choose the 'Climate Zone'</b> <br />Choose the climate zone that the building in question is located within by scrolling through the dropdown menu. If you are unsure of the corresponding climate zone for your building, please view the image of the World Climate Zones Map to the right (middle), according to the ANSI/ASHRAE Addendum A to ANSI/ASHRAE Standard 169-2020.<br /><br />
+                            <b>3. Choose the 'Climate Zone'</b> <br />Choose the climate zone that the building in question is located within by scrolling through the dropdown menu. If you are unsure of the corresponding climate zone for your building, please view the image of the World Climate Zones Map (middle), according to the ANSI/ASHRAE Addendum A to ANSI/ASHRAE Standard 169-2020.<br /><br />
                             <b>4. Choose the 'Occupancy Rate'</b><br /> Depending on the minimum and maximum values that a space can be occupied, choose the occupancy rate of the building between lightly occupied (25%), mildly occupied (50%), mostly occupied (75%), and fully occupied (100%).<br /><br />
                             <b>5. Input 'Outdoor Temperature'</b><br /><br />
-                            <b>6. Select the patterns of unoccupied periods</b><br />There are 14 unoccupied patterns across 5 unoccupied periods. Choose the one(s) that best fit the schedule of your chosen building. The legend for the various abbreviations is in the section above below this segment. Please see the occupancy schedule image to the right (bottom) for an illustrative explanation of the different combinations.<br /><br />
+                            <b>6. Select the patterns of unoccupied periods</b><br />There are 14 unoccupied patterns across 5 unoccupied periods. Choose the one(s) that best fit the schedule of your chosen building. The legend for the various abbreviations is in the section above below this segment. Please see the occupancy schedule image  (bottom) for an illustrative explanation of the different combinations.<br /><br />
                             <b>7. Click 'Download .csv file' to get the generated results</b><br /><br />
                             <b>8. Click 'Reset' to revert changes to default settings</b><br /><br />
-                            <b>9. Please view the image to the right (top) for a sample output</b><br />
+                            <b>9. Please view the image (top) for a sample output</b><br />
                         </p>
                     </div>
                     <div className="guidelines_image">

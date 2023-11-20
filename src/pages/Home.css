@@ -30,11 +30,11 @@
     padding-bottom: 1.65vmax
 }
 
-.Home .second_section_Title h4 {
+/*.Home .second_section_Title h4 {
     font-size: 1.5rem;
     padding: 0px 25px 3.3vmax 25px;
     font-weight: 500;
-}
+}*/
 
 .Home .Each_Section {
     display: flex;
@@ -249,10 +249,10 @@
         padding-bottom: calc(0.7 * 1.65vma)x
     }
 
-    .Home .second_section_Title h4 {
+    /*.Home .second_section_Title h4 {
         font-size: calc(0.7 * 1.5rem);
         padding: 0px calc(0.7 * 25px) calc(0.7 * 3.3vmax) calc(0.7 * 25px);
-    }
+    }*/
 
     .Home .Each_Section {
         padding-bottom: calc(0.7 * 2rem);
@@ -362,10 +362,10 @@
         padding-bottom: calc(0.4 * 1.65vma)x
     }
 
-    .Home .second_section_Title h4 {
+    /*.Home .second_section_Title h4 {
         font-size: calc(0.4 * 1.5rem);
         padding: 0px calc(0.4 * 25px) calc(0.4 * 3.3vmax) calc(0.4 * 25px);
-    }
+    }*/
 
     .Home .Each_Section {
         padding-bottom: calc(0.4 * 2rem);
@@ -475,10 +475,10 @@
         padding-bottom: calc(0.3 * 1.65vma)x
     }
 
-    .Home .second_section_Title h4 {
+    /*.Home .second_section_Title h4 {
         font-size: calc(0.3 * 1.5rem);
         padding: 0px calc(0.3 * 25px) calc(0.3 * 3.3vmax) calc(0.3 * 25px);
-    }
+    }*/
 
     .Home .Each_Section {
         padding-bottom: calc(0.3 * 2rem);

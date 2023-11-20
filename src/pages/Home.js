@@ -114,9 +114,7 @@ function Home() {
 
             <Container useOrange={true}>
                 <div className='second_section_Title'>
-                    <h2><b>A little about our research themes</b></h2>
-                    <h4>Through our interdisciplinary research, we aim to lead the way in developing cutting-edge
-                        technologies that prioritise human well-being and environmental sustainability.</h4>
+                    <h2><b>A Little about our Research Themes</b></h2>
                 </div>
 
                 <ResearchSection
@@ -127,7 +125,7 @@ function Home() {
                     vision-based systems for <b><i>remote physiological measurements</i></b>, and
                     <b><i> multi-sensing devices</i></b> for <b><i>human-centric indoor environmental quality (IEQ)</i></b>."
                     imageUrl={FirstResearchImage}
-                    researchAltText="whatever"
+                    researchAltText="An animated picture showing occupants in an office environment and an interface connected to building sensors able to detect and exhibit comfort level, heart rate, respiration rate, temperature, and stress and anxiety levels."
                 />
 
                 <ResearchSectionRight
@@ -139,7 +137,7 @@ function Home() {
                     comfort system devices</i></b> into the control loop of <b><i>HVAC systems</i></b>, developing 
                     <b><i>advanced sensors</i></b>, <b><i>ontology automation,</i></b> and a <b><i>semantically 
                     connected digital twin</i></b>."
-                    researchAltText="whatever"
+                    researchAltText="An animated picture showing office occupants walking throughout the space with comfort level bars of varying satisfaction above their heads."
                 />
 
                 <ResearchSection
@@ -150,7 +148,7 @@ function Home() {
                     integration for enhancing the <b><i>cooling effects</i></b> of current urban greening systems,
                     such as <b><i>vertical greenery systems (VGS)</i></b>."
                     imageUrl={ThirdResearchImage}
-                    researchAltText="whatever"
+                    researchAltText="An animted picture showing an occupant standing in a room with vertical greenery installed on the outside and the varying factors that are in play with resilient cooling."
                 />
 
                 <ResearchSectionRight
@@ -222,7 +220,7 @@ function Home() {
             <Container>
                 <div className='fifth_section'>
                     <div className='fifth_section_Title'>
-                        <h2><b>Collaborate with us!</b></h2>
+                        <h2><b>Collaborate with Us!</b></h2>
                     </div>
                     <div className="fifth_section_texts">
                         <div className="fifth_section_text_left">

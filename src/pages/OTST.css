@@ -244,6 +244,16 @@
     text-align: justify;
 }
 
+.OTST .third_section .guidelines_text p .otst_paper {
+    color: rgb(45, 99, 83);
+}
+
+.OTST .third_section .guidelines_text p .otst_paper:hover {
+    background-color: rgb(45, 99, 83);
+    color:white;
+    border-radius: 0.25rem;
+}
+
 .OTST .third_section .guidelines_text li {
     font-size: 1rem;
     margin-bottom: 0.75rem;

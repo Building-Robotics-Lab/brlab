@@ -597,7 +597,7 @@ function Join_the_Lab() {
             <Container useOrange={true}>
                 <div className="second_section">
                     <div className="title_section">
-                        <h2><b>How to apply</b></h2>
+                        <h2><b>How to Apply</b></h2>
                     </div>
 
                     <div className="apply_section">
