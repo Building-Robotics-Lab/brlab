@@ -27,7 +27,7 @@
 
 .Home .second_section_Title h2 {
     font-size: 2rem;
-    padding-bottom: 1.65vmax
+    padding-bottom: 3.3vmax;
 }
 
 /*.Home .second_section_Title h4 {
@@ -117,7 +117,7 @@
 .Home .third_section {
     display: flex;
     justify-content: space-between;
-    gap: 15rem;
+    gap: 10rem;
 }
 
 .meet_our_team,
@@ -146,7 +146,9 @@
     color: rgb(45, 99, 83);
     font-size: 125px;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 3.3vmax;
+    display: flex;
+    justify-content: center;
 }
 
 .Home .meet_our_team_text,
@@ -180,7 +182,7 @@
 /* Fourth Section */
 .Home .fourth_section_title {
     font-size: 2rem;
-    padding-bottom: 1.65vmax;
+    padding-bottom: 3.3vmax;
     text-align: center;
 }
 
@@ -196,8 +198,7 @@
 
 .Home .fifth_section_Title h2 {
     font-size: 2rem;
-    padding-bottom: 1.65vmax;
-    margin-bottom: 1rem;
+    padding-bottom: 3.3vmax;
 }
 
 .Home .fifth_section {
@@ -209,7 +210,7 @@
 .Home .fifth_section_texts {
     display: flex;
     justify-content: space-between;
-    gap: 15rem;
+    gap: 10rem;
 }
 
 .Home .fifth_section_text_left,
@@ -246,7 +247,7 @@
 
     .Home .second_section_Title h2 {
         font-size: calc(0.7 * 2rem);
-        padding-bottom: calc(0.7 * 1.65vma)x
+        padding-bottom: calc(0.7 * 3.3vmax);
     }
 
     /*.Home .second_section_Title h4 {
@@ -284,13 +285,13 @@
     /* Third Section */
 
     .Home .third_section {
-        gap: calc(0.7 * 15rem);
+        gap: calc(0.7 * 10rem);
     }
 
     .Home .meet_our_team_image,
     .Home .publications_image {
         font-size: calc(0.7 * 125px);
-        margin-bottom: calc(0.7 * 1rem);
+        margin-bottom: calc(0.7 * 3.3vmax);
     }
 
     .Home .meet_our_team_text,
@@ -315,7 +316,7 @@
     /* Fourth Section */
     .Home .fourth_section_title {
         font-size: calc(0.7 * 2rem);
-        padding-bottom: calc(0.7 * 1.65vmax);
+        padding-bottom: calc(0.7 * 3.3vmax);
     }
 
     .Home #fourth_section_button {
@@ -326,12 +327,11 @@
 
     .Home .fifth_section_Title h2 {
         font-size: calc(0.7 * 2rem);
-        padding-bottom: calc(0.7 * 1.65vmax);
-        margin-bottom: calc(0.7 * 1rem);
+        padding-bottom: calc(0.7 * 3.3vmax);
     }
 
     .Home .fifth_section_texts {
-        gap: calc(0.7 * 15rem);
+        gap: calc(0.7 * 10rem);
     }
 
     .Home .fifth_section_text_left,
@@ -359,7 +359,7 @@
 
     .Home .second_section_Title h2 {
         font-size: calc(0.4 * 2rem);
-        padding-bottom: calc(0.4 * 1.65vma)x
+        padding-bottom: calc(0.4 * 3.3vmax)
     }
 
     /*.Home .second_section_Title h4 {
@@ -397,13 +397,13 @@
     /* Third Section */
 
     .Home .third_section {
-        gap: calc(0.4 * 15rem);
+        gap: calc(0.4 * 10rem);
     }
 
     .Home .meet_our_team_image,
     .Home .publications_image {
         font-size: calc(0.4 * 125px);
-        margin-bottom: calc(0.4 * 1rem);
+        margin-bottom: calc(0.4 * 3.3vmax);
     }
 
     .Home .meet_our_team_text,
@@ -428,7 +428,7 @@
     /* Fourth Section */
     .Home .fourth_section_title {
         font-size: calc(0.4 * 2rem);
-        padding-bottom: calc(0.4 * 1.65vmax);
+        padding-bottom: calc(0.4 * 3.3vmax);
     }
 
     .Home #fourth_section_button {
@@ -439,12 +439,11 @@
 
     .Home .fifth_section_Title h2 {
         font-size: calc(0.4 * 2rem);
-        padding-bottom: calc(0.4 * 1.65vmax);
-        margin-bottom: calc(0.4 * 1rem);
+        padding-bottom: calc(0.4 * 3.3vmax);
     }
 
     .Home .fifth_section_texts {
-        gap: calc(0.4 * 15rem);
+        gap: calc(0.4 * 10rem);
     }
 
     .Home .fifth_section_text_left,
@@ -472,7 +471,7 @@
 
     .Home .second_section_Title h2 {
         font-size: calc(0.3 * 2rem);
-        padding-bottom: calc(0.3 * 1.65vma)x
+        padding-bottom: calc(0.3 * 3.3vmax);
     }
 
     /*.Home .second_section_Title h4 {
@@ -510,13 +509,13 @@
     /* Third Section */
 
     .Home .third_section {
-        gap: calc(0.3 * 15rem);
+        gap: calc(0.3 * 10rem);
     }
 
     .Home .meet_our_team_image,
     .Home .publications_image {
         font-size: calc(0.3 * 125px);
-        margin-bottom: calc(0.3 * 1rem);
+        margin-bottom: calc(0.3 * 3.3vmax);
     }
 
     .Home .meet_our_team_text,
@@ -541,7 +540,7 @@
     /* Fourth Section */
     .Home .fourth_section_title {
         font-size: calc(0.3 * 2rem);
-        padding-bottom: calc(0.3 * 1.65vmax);
+        padding-bottom: calc(0.3 * 3.3vmax);
     }
 
     .Home #fourth_section_button {
@@ -552,12 +551,11 @@
 
     .Home .fifth_section_Title h2 {
         font-size: calc(0.3 * 2rem);
-        padding-bottom: calc(0.3 * 1.65vmax);
-        margin-bottom: calc(0.3 * 1rem);
+        padding-bottom: calc(0.3 * 3.3vmax);
     }
 
     .Home .fifth_section_texts {
-        gap: calc(0.3 * 15rem);
+        gap: calc(0.3 * 10rem);
     }
 
     .Home .fifth_section_text_left,

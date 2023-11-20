@@ -8,20 +8,20 @@
 
 .Join_the_Lab .first_section h3 {
     font-size: 1.75rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3.3vmax;
     padding: 0px 0.5rem;
 }
 
 .Join_the_Lab .first_section h1 {
     font-size: 2.5rem;
     color: rgb(45, 99, 83);
-    margin-bottom: 3rem;
+    margin-bottom: 3.3vmax;
 }
 
 .Join_the_Lab .first_section .lab_bio {
     display: flex;
     font-size: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3.3vmax;
     line-height: 1.5;
 }
 
@@ -42,14 +42,14 @@
 
 .Join_the_Lab .second_section h2 {
     font-size: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3.3vmax;
     text-align: center;
 }
 
 .Join_the_Lab .second_section .apply_section {
     display: flex;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
+    margin-bottom: 3.3vmax;
+    padding-bottom: 3.3vmax;
     border-bottom: 2px solid black;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .Join_the_Lab .second_section .apply_section .position_information .sub_title {
-    margin-bottom: 1rem;
+    margin: 1.65vmax 0rem;
 }
 
 .Join_the_Lab .second_section .apply_section .position_information .sub_title:last-child {
@@ -97,7 +97,7 @@
 
 .Join_the_Lab .second_section .small_note {
     font-size: smaller;
-    margin-bottom: 2rem;
+    margin-bottom: 3.3vmax;
 }
 
 
@@ -120,25 +120,25 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.65vmax;
     font-size: 1rem;
 }
 
 @media screen and (max-width: 1025px) {
     .Join_the_Lab .first_section h3 {
         font-size: calc(0.7 * 1.75rem);
-        margin-bottom: calc(0.7 * 3rem);
+        margin-bottom: calc(0.7 * 3.3vmax);
         padding: 0px calc(0.7 * 0.5rem);
     }
 
     .Join_the_Lab .first_section h1 {
         font-size: calc(0.7 * 2.5rem);
-        margin-bottom: calc(0.7 * 3rem);
+        margin-bottom: calc(0.7 * 3.3vmax);
     }
 
     .Join_the_Lab .first_section .lab_bio {
         font-size: calc(0.7 * 1rem);
-        margin-bottom: calc(0.7 * 3rem);
+        margin-bottom: calc(0.7 * 3.3vmax);
     }
 
     .Join_the_Lab .first_section .lab_bio>* {
@@ -152,12 +152,12 @@
 
     .Join_the_Lab .second_section h2 {
         font-size: calc(0.7 *2rem);
-        margin-bottom: calc(0.7 *3rem);
+        margin-bottom: calc(0.7 *3.3vmax);
     }
 
     .Join_the_Lab .second_section .apply_section {
-        margin-bottom: calc(0.7 *2rem);
-        padding-bottom: calc(0.7 *2rem);
+        margin-bottom: calc(0.7 *3.3vmax);
+        padding-bottom: calc(0.7 *3.3vmax);
         border-bottom: calc(0.7 * 2px) solid black;
     }
 
@@ -176,17 +176,17 @@
     }
 
     .Join_the_Lab .second_section .apply_section .position_information .sub_title {
-        margin: calc(0.7 *1rem) 0px;
+        margin: calc(0.7 *1.65vmax) 0px;
     }
 
     .Join_the_Lab .second_section .small_note {
-        font-size: smaller;
-        margin-bottom: calc(0.7 *2rem);
+        font-size: x-small;
+        margin-bottom: calc(0.7 *3.3vmax);
     }
 
     .Join_the_Lab .second_section .search_bars {
         gap: calc(0.7 *1rem);
-        margin-bottom: calc(0.7 *1rem);
+        margin-bottom: calc(0.7 *1.65vmax);
         font-size: calc(0.7 * 1rem);
     }
 }
@@ -194,18 +194,18 @@
 @media screen and (max-width: 769px) {
     .Join_the_Lab .first_section h3 {
         font-size: calc(0.4 * 1.75rem);
-        margin-bottom: calc(0.4 * 3rem);
+        margin-bottom: calc(0.4 * 3.3vmax);
         padding: 0px calc(0.4 * 0.5rem);
     }
 
     .Join_the_Lab .first_section h1 {
         font-size: calc(0.4 * 2.5rem);
-        margin-bottom: calc(0.4 * 3rem);
+        margin-bottom: calc(0.4 * 3.3vmax);
     }
 
     .Join_the_Lab .first_section .lab_bio {
         font-size: calc(0.4 * 1rem);
-        margin-bottom: calc(0.4 * 3rem);
+        margin-bottom: calc(0.4 * 3.3vmax);
     }
 
     .Join_the_Lab .first_section .lab_bio>* {
@@ -219,12 +219,12 @@
 
     .Join_the_Lab .second_section h2 {
         font-size: calc(0.4 *2rem);
-        margin-bottom: calc(0.4 *3rem);
+        margin-bottom: calc(0.4 *3.3vmax);
     }
 
     .Join_the_Lab .second_section .apply_section {
-        margin-bottom: calc(0.4 *2rem);
-        padding-bottom: calc(0.4 *2rem);
+        margin-bottom: calc(0.4 *3.3vmax);
+        padding-bottom: calc(0.4 *3.3vmax);
         border-bottom: calc(0.4 * 2px) solid black;
     }
 
@@ -243,17 +243,17 @@
     }
 
     .Join_the_Lab .second_section .apply_section .position_information .sub_title {
-        margin: calc(0.4 *1rem) 0px;
+        margin: calc(0.4 *1.65vmax) 0px;
     }
 
     .Join_the_Lab .second_section .small_note {
-        font-size: 0.5rem;
-        margin-bottom: calc(0.4 *2rem);
+        font-size: 0.3rem;
+        margin-bottom: calc(0.4 *3.3vmax);
     }
 
     .Join_the_Lab .second_section .search_bars {
         gap: calc(0.7 *1rem);
-        margin-bottom: calc(0.4 *1rem);
+        margin-bottom: calc(0.4 *1.65vmax);
         font-size: calc(0.4 * 1rem);
     }
 }
@@ -261,18 +261,18 @@
 @media screen and (max-width: 426px) {
     .Join_the_Lab .first_section h3 {
         font-size: calc(0.3 * 1.75rem);
-        margin-bottom: calc(0.3 * 3rem);
+        margin-bottom: calc(0.3 * 3.3vmax);
         padding: 0px calc(0.3 * 0.5rem);
     }
 
     .Join_the_Lab .first_section h1 {
         font-size: calc(0.3 * 2.5rem);
-        margin-bottom: calc(0.3 * 3rem);
+        margin-bottom: calc(0.3 * 3.3vmax);
     }
 
     .Join_the_Lab .first_section .lab_bio {
         font-size: calc(0.3 * 1rem);
-        margin-bottom: calc(0.3 * 3rem);
+        margin-bottom: calc(0.3 * 3.3vmax);
     }
 
     .Join_the_Lab .first_section .lab_bio>* {
@@ -286,12 +286,12 @@
 
     .Join_the_Lab .second_section h2 {
         font-size: calc(0.3 *2rem);
-        margin-bottom: calc(0.3 *3rem);
+        margin-bottom: calc(0.3 *3.3vmax);
     }
 
     .Join_the_Lab .second_section .apply_section {
-        margin-bottom: calc(0.3 *2rem);
-        padding-bottom: calc(0.3 *2rem);
+        margin-bottom: calc(0.3 *3.3vmax);
+        padding-bottom: calc(0.3 *3.3vmax);
         border-bottom: calc(0.3 * 2px) solid black;
     }
 
@@ -310,17 +310,17 @@
     }
 
     .Join_the_Lab .second_section .apply_section .position_information .sub_title {
-        margin: calc(0.3 *1rem) 0px;
+        margin: calc(0.3 *1.65vmax) 0px;
     }
 
     .Join_the_Lab .second_section .small_note {
-        font-size: 0.3rem;
-        margin-bottom: calc(0.3 *2rem);
+        font-size: 0.2rem;
+        margin-bottom: calc(0.3 *3.3vmax);
     }
 
     .Join_the_Lab .second_section .search_bars {
         gap: calc(0.7 *1rem);
-        margin-bottom: calc(0.3 *1rem);
+        margin-bottom: calc(0.3 *1.65vmax);
         font-size: calc(0.3 * 1rem);
     }
 }

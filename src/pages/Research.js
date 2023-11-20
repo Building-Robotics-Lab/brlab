@@ -46,7 +46,15 @@ function Research() {
                 <div className="first_section">
                     <div className="title_section">
                         <h1><b>Research Thrusts</b></h1>
-                        <h3><b>We strive to integrate robotics and human-centred artificial intelligence into the built environment in an effort to improve energy efficiency and occupant well-being throughout the existing and forthcoming building stock.</b></h3>
+                        <h3><b>We strive to integrate robotics and human-centred AI into the built environment in an effort to improve energy efficiency and occupant well-being throughout the existing and forthcoming building stock.</b></h3>
+                    </div>
+                </div>
+            </Container>
+
+            <Container useOrange={true}>
+                <div className="second_section">
+                    <div className="title_section">
+                        <h2><b>Our Work</b></h2>
                     </div>
                     <div className="themes">
                         <div class="each_theme">
@@ -81,7 +89,7 @@ function Research() {
                 </div>
             </Container>
 
-            <Container useOrange={true} sectionName='theme1_section'>
+            <Container sectionName='theme1_section'>
                 <div className="title">
                     <h1>Sensing Human Health and Comfort</h1>
                 </div>
@@ -119,7 +127,7 @@ function Research() {
                 </div>
             </Container>
 
-            <Container sectionName='theme2_section'>
+            <Container useOrange={true} sectionName='theme2_section'>
                 <div className="title">
                     <h1>Human-Centred AI</h1>
                 </div>
@@ -172,7 +180,7 @@ function Research() {
                 </div>
             </Container>
 
-            <Container useOrange={true} sectionName='theme3_section'>
+            <Container sectionName='theme3_section'>
                 <div className="title">
                     <h1>Resilient Cooling</h1>
                 </div>
@@ -209,7 +217,7 @@ function Research() {
                 </div>
             </Container>
 
-            <Container sectionName='theme4_section'>
+            <Container useOrange={true} sectionName='theme4_section'>
                 <div className="title">
                     <h1>Intelligent Environments</h1>
                 </div>

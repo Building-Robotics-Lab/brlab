@@ -5,7 +5,7 @@
 /* First Section */
 
 .Publications .first_section h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 3.3vmax;
     font-size: 2.5rem;
     text-align: center;
 }
@@ -74,7 +74,7 @@
 
 .Publications .publication_section .publication_year {
     flex: 1;
-    margin-top: 2rem;
+    margin-top: 3.3vmax;
 }
 
 .Publications .publication_section .publication_year h4 {
@@ -83,11 +83,8 @@
 
 .Publications .publication_section .publication_content {
     flex: 4.5;
-}
-
-.Publications .publication_section .publication_content {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3.3vmax;
+    margin-bottom: 3.3vmax;
 }
 
 .Publications .publication_section .publication_content h3 {
@@ -126,7 +123,7 @@
 }
 
 .Publications .publication_section .publication_content li:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 3.3vmax;
 }
 
 .Publications .small_note {
@@ -173,7 +170,7 @@
     /* First Section */
 
     .Publications .first_section h1 {
-        margin-bottom: calc(0.7 * 2rem);
+        margin-bottom: calc(0.7 * 3.3vmax);
         font-size: calc(0.7 * 2.5rem);
     }
 
@@ -216,7 +213,7 @@
     }
 
     .Publications .publication_section .publication_year {
-        margin-top: calc(0.7 * 2rem);
+        margin-top: calc(0.7 * 3.3vmax);
     }
 
     .Publications .publication_section .publication_year h4 {
@@ -224,8 +221,8 @@
     }
 
     .Publications .publication_section .publication_content {
-        margin-top: calc(0.7 * 2rem);
-        margin-bottom: calc(0.7 * 2rem);
+        margin-top: calc(0.7 * 3.3vmax);
+        margin-bottom: calc(0.7 * 3.3vmax);
     }
 
     .Publications .publication_section .publication_content h3 {
@@ -247,7 +244,7 @@
     }
 
     .Publications .publication_section .publication_content li:not(:last-child) {
-        margin-bottom: calc(0.7 * 2rem);
+        margin-bottom: calc(0.7 * 3.3vmax);
     }
 
     .Publications .small_note {
@@ -272,7 +269,7 @@
     /* First Section */
 
     .Publications .first_section h1 {
-        margin-bottom: calc(0.4 * 2rem);
+        margin-bottom: calc(0.4 * 3.3vmax);
         font-size: calc(0.4 * 2.5rem);
     }
 
@@ -315,7 +312,7 @@
     }
 
     .Publications .publication_section .publication_year {
-        margin-top: calc(0.4 * 2rem);
+        margin-top: calc(0.4 * 3.3vmax);
     }
 
     .Publications .publication_section .publication_year h4 {
@@ -323,8 +320,8 @@
     }
 
     .Publications .publication_section .publication_content {
-        margin-top: calc(0.4 * 2rem);
-        margin-bottom: calc(0.4 * 2rem);
+        margin-top: calc(0.4 * 3.3vmax);
+        margin-bottom: calc(0.4 * 3.3vmax);
     }
 
     .Publications .publication_section .publication_content h3 {
@@ -346,7 +343,7 @@
     }
 
     .Publications .publication_section .publication_content li:not(:last-child) {
-        margin-bottom: calc(0.4 * 2rem);
+        margin-bottom: calc(0.4 * 3.3vmax);
     }
 
     .Publications .small_note {
@@ -371,7 +368,7 @@
     /* First Section */
 
     .Publications .first_section h1 {
-        margin-bottom: calc(0.3 * 2rem);
+        margin-bottom: calc(0.3 * 3.3vmax);
         font-size: calc(0.3 * 2.5rem);
     }
 
@@ -414,7 +411,7 @@
     }
 
     .Publications .publication_section .publication_year {
-        margin-top: calc(0.3 * 2rem);
+        margin-top: calc(0.3 * 3.3vmax);
     }
 
     .Publications .publication_section .publication_year h4 {
@@ -422,8 +419,8 @@
     }
 
     .Publications .publication_section .publication_content {
-        margin-top: calc(0.3 * 2rem);
-        margin-bottom: calc(0.3 * 2rem);
+        margin-top: calc(0.3 * 3.3vmax);
+        margin-bottom: calc(0.3 * 3.3vmax);
     }
 
     .Publications .publication_section .publication_content h3 {
@@ -445,7 +442,7 @@
     }
 
     .Publications .publication_section .publication_content li:not(:last-child) {
-        margin-bottom: calc(0.3 * 2rem);
+        margin-bottom: calc(0.3 * 3.3vmax);
     }
 
     .Publications .small_note {

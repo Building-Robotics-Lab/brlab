@@ -6,17 +6,17 @@
 }
 
 .IndividualPublication .first_section .title {
-    margin-bottom: 1rem;
+    margin-bottom: 1.65vmax;
     font-size: 1rem;
 }
 
 .IndividualPublication .first_section .title h2 {
-    margin-top: 1rem;
+    margin-top: 1.65vmax;
     font-size: 1.5rem;
 }
 
 .IndividualPublication .first_section .title p {
-    margin-top: 1rem;
+    margin-top: 1.65vmax;
     font-size: 1rem;
     line-height: 2;
 }
@@ -25,7 +25,7 @@
 .IndividualPublication .first_section .links {
     display: flex;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.65vmax;
 }
 
 .IndividualPublication .first_section .links.noKeywords {
@@ -51,7 +51,7 @@
 .IndividualPublication .second_section {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3.3vmax;
 }
 
 .IndividualPublication .second_section .text {
@@ -62,21 +62,17 @@
     flex: 2;
 }
 
-.IndividualPublication .second_section .abstract {
-    margin-bottom: 1rem;
-}
-
 .IndividualPublication .second_section img {
     max-width: 100%;
     height: auto;
 }
 
 .IndividualPublication .second_section .highlights {
-    margin-bottom: 2rem;
+    margin-bottom: 3.3vmax;
 }
 
 .IndividualPublication .second_section .highlights h3 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.65vmax;
     text-align: left;
     font-size: 1.17rem;
 }
@@ -93,12 +89,8 @@
     margin-bottom: 0.25rem;
 }
 
-.IndividualPublication .second_section .abstract {
-    margin-bottom: 2rem;
-}
-
 .IndividualPublication .second_section h3 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.65vmax;
 }
 
 .IndividualPublication .second_section .abstract p {
@@ -177,24 +169,24 @@
     /* First Section */
 
     .IndividualPublication .first_section .title {
-        margin-bottom: calc(0.7 * 1rem);
+        margin-bottom: calc(0.7 * 1.65vmax);
         font-size: calc(0.7 * 1.5rem);
     }
 
     .IndividualPublication .first_section .title h2 {
-        margin-top: calc(0.7 * 1rem);
+        margin-top: calc(0.7 * 1.65vmax);
         font-size: calc(0.7 * 1.5rem);
     }
 
     .IndividualPublication .first_section .title p {
-        margin-top: calc(0.7 * 1rem);
+        margin-top: calc(0.7 * 1.65vmax);
         font-size: calc(0.7 * 1rem);
     }
 
 
     .IndividualPublication .first_section .links {
         gap: calc(0.7 * 1rem);
-        margin-bottom: calc(0.7 * 1rem);
+        margin-bottom: calc(0.7 * 1.65vmax);
     }
 
     .IndividualPublication .first_section .keywords {
@@ -210,19 +202,15 @@
     /* Second Section */
 
     .IndividualPublication .second_section {
-        gap: calc(0.7 * 2rem);
-    }
-
-    .IndividualPublication .second_section .abstract {
-        margin-bottom: calc(0.7 * 1rem);
+        gap: calc(0.7 * 3.3vmax);
     }
 
     .IndividualPublication .second_section .highlights {
-        margin-bottom: calc(0.7 * 2rem);
+        margin-bottom: calc(0.7 * 3.3vmax);
     }
 
     .IndividualPublication .second_section .highlights h3 {
-        margin-bottom: calc(0.7 * 0.5rem);
+        margin-bottom: calc(0.7 * 1.65vmax);
         font-size: calc(0.7 * 1.17rem);
     }
 
@@ -234,12 +222,8 @@
         margin-bottom: calc(0.7 * 0.25rem);
     }
 
-    .IndividualPublication .second_section .abstract {
-        margin-bottom: calc(0.7 * 2rem);
-    }
-
     .IndividualPublication .second_section h3 {
-        margin-bottom: calc(0.7 * 0.5rem);
+        margin-bottom: calc(0.7 * 1.65vmax);
         font-size: calc(0.7 * 1.17rem);
     }
 
@@ -285,24 +269,24 @@
     /* First Section */
 
     .IndividualPublication .first_section .title {
-        margin-bottom: calc(0.4 * 1rem);
+        margin-bottom: calc(0.4 * 1.65vmax);
         font-size: calc(0.4 * 1.5rem);
     }
 
     .IndividualPublication .first_section .title h2 {
-        margin-top: calc(0.4 * 1rem);
+        margin-top: calc(0.4 * 1.65vmax);
         font-size: calc(0.4 * 1.5rem);
     }
 
     .IndividualPublication .first_section .title p {
-        margin-top: calc(0.4 * 1rem);
+        margin-top: calc(0.4 * 1.65vmax);
         font-size: calc(0.4 * 1rem);
     }
 
 
     .IndividualPublication .first_section .links {
         gap: calc(0.4 * 1rem);
-        margin-bottom: calc(0.4 * 1rem);
+        margin-bottom: calc(0.4 * 1.65vmax);
     }
 
     .IndividualPublication .first_section .keywords {
@@ -318,19 +302,15 @@
     /* Second Section */
 
     .IndividualPublication .second_section {
-        gap: calc(0.4 * 2rem);
-    }
-
-    .IndividualPublication .second_section .abstract {
-        margin-bottom: calc(0.4 * 1rem);
+        gap: calc(0.4 * 3.3vmax);
     }
 
     .IndividualPublication .second_section .highlights {
-        margin-bottom: calc(0.4 * 2rem);
+        margin-bottom: calc(0.4 * 3.3vmax);
     }
 
     .IndividualPublication .second_section .highlights h3 {
-        margin-bottom: calc(0.4 * 0.5rem);
+        margin-bottom: calc(0.4 * 1.65vmax);
         font-size: calc(0.4 * 1.17rem);
     }
 
@@ -342,12 +322,8 @@
         margin-bottom: calc(0.4 * 0.25rem);
     }
 
-    .IndividualPublication .second_section .abstract {
-        margin-bottom: calc(0.4 * 2rem);
-    }
-
     .IndividualPublication .second_section h3 {
-        margin-bottom: calc(0.4 * 0.5rem);
+        margin-bottom: calc(0.4 * 1.65vmax);
         font-size: calc(0.4 * 1.17rem);
     }
 
@@ -393,24 +369,24 @@
     /* First Section */
 
     .IndividualPublication .first_section .title {
-        margin-bottom: calc(0.3 * 1rem);
+        margin-bottom: calc(0.3 * 1.65vmax);
         font-size: calc(0.3 * 1.5rem);
     }
 
     .IndividualPublication .first_section .title h2 {
-        margin-top: calc(0.3 * 1rem);
+        margin-top: calc(0.3 * 1.65vmax);
         font-size: calc(0.3 * 1.5rem);
     }
 
     .IndividualPublication .first_section .title p {
-        margin-top: calc(0.3 * 1rem);
+        margin-top: calc(0.3 * 1.65vmax);
         font-size: calc(0.3 * 1rem);
     }
 
 
     .IndividualPublication .first_section .links {
         gap: calc(0.3 * 1rem);
-        margin-bottom: calc(0.3 * 1rem);
+        margin-bottom: calc(0.3 * 1.65vmax);
     }
 
     .IndividualPublication .first_section .keywords {
@@ -426,7 +402,7 @@
     /* Second Section */
 
     .IndividualPublication .second_section {
-        gap: calc(0.3 * 2rem);
+        gap: calc(0.3 * 3.3vmax);
     }
 
     .IndividualPublication .second_section .abstract {
@@ -434,11 +410,11 @@
     }
 
     .IndividualPublication .second_section .highlights {
-        margin-bottom: calc(0.3 * 2rem);
+        margin-bottom: calc(0.3 * 3.3vmax);
     }
 
     .IndividualPublication .second_section .highlights h3 {
-        margin-bottom: calc(0.3 * 0.5rem);
+        margin-bottom: calc(0.3 * 1.65vmax);
         font-size: calc(0.3 * 1.17rem);
     }
 
@@ -450,12 +426,9 @@
         margin-bottom: calc(0.3 * 0.25rem);
     }
 
-    .IndividualPublication .second_section .abstract {
-        margin-bottom: calc(0.3 * 2rem);
-    }
 
     .IndividualPublication .second_section h3 {
-        margin-bottom: calc(0.3 * 0.5rem);
+        margin-bottom: calc(0.3 * 1.65vmax);
         font-size: calc(0.3 * 1.17rem);
     }
 

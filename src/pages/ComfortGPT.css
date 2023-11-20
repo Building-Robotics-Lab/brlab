@@ -9,12 +9,12 @@
 
 .ComfortGPT .first_section .heading_and_links h1 {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.65vmax;
 }
 
 .ComfortGPT .first_section .heading_and_links h3 {
     font-size: 1.75rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.65vmax;
     font-weight: 300;
 }
 
@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2rem;
+    gap: 3.3vmax;
 }
 
 .ComfortGPT .first_section .heading_and_links .Github_stuff .GitHub_Code,
@@ -54,7 +54,7 @@
 .ComfortGPT .first_section .heading_and_links .user_exp {
     display: none;
     font-size: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 1.65vmax;
 }
 
 .ComfortGPT .first_section .contacts h3 {
@@ -147,10 +147,20 @@
     font-size: 1rem;
 }
 
+.ComfortGPT .second_section .inputs .CalculateButton > * {
+    width: 105px;
+    text-align: center;
+}
+
 .ComfortGPT .second_section .inputs .additional_buttons {
     display: flex;
     justify-content: center;
     gap: 0.25rem;
+}
+
+.ComfortGPT .second_section .inputs .additional_buttons > * {
+    width: 130px;
+    text-align: center;
 }
 
 .ComfortGPT .second_section .outputs {
@@ -222,7 +232,7 @@
 
 .ComfortGPT .third_section {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .ComfortGPT .third_section .guidelines_text {
@@ -230,13 +240,8 @@
 }
 
 .ComfortGPT .third_section .guidelines_text h3 {
-    font-size: 1.75rem;
-    margin-bottom: 1.5rem;
-}
-
-.ComfortGPT .third_section .guidelines_text h3 {
     font-size: 1.25rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.65vmax;
 }
 
 .ComfortGPT .third_section .guidelines_text ul {
@@ -245,7 +250,7 @@
 
 .ComfortGPT .third_section .guidelines_text p {
     font-size: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.65vmax;
     line-height: 1.5;
     text-align: justify;
 }
@@ -338,16 +343,16 @@
 
     .ComfortGPT .first_section .heading_and_links h1 {
         font-size: calc(0.7 * 2.5rem);
-        margin-bottom: calc(0.7 * 1.5rem);
+        margin-bottom: calc(0.7 * 1.65vmax);
     }
 
     .ComfortGPT .first_section .heading_and_links h3 {
         font-size: calc(0.7 * 1.75rem);
-        margin-bottom: calc(0.7 * 1.5rem);
+        margin-bottom: calc(0.7 * 1.65vmax);
     }
 
     .ComfortGPT .first_section .heading_and_links .Github_stuff {
-        gap: calc(0.7 * 2rem);
+        gap: calc(0.7 * 3.3vmax);
     }
 
     .ComfortGPT .first_section .heading_and_links .Github_stuff .icon {
@@ -364,7 +369,7 @@
 
     .ComfortGPT .first_section .heading_and_links .user_exp {
         font-size: calc(0.7 * 1rem);
-        margin-top: calc(0.7 * 1.5rem);
+        margin-top: calc(0.7 * 1.65vmax);
     }
 
     .ComfortGPT .first_section .contacts h3 {
@@ -430,6 +435,13 @@
         gap: calc(0.7 * 0.25rem);
     }
 
+    .ComfortGPT .second_section .inputs .CalculateButton > * {
+        width: calc(0.7 * 105px);
+    }
+    .ComfortGPT .second_section .inputs .additional_buttons > * {
+        width: calc(0.7 * 130px);
+    }
+
     .ComfortGPT .second_section .outputs {
         padding-top: calc(0.7 * 1rem);
     }
@@ -481,12 +493,12 @@
 
     .ComfortGPT .third_section .guidelines_text h3 {
         font-size: calc(0.7 * 1.75rem);
-        margin-bottom: calc(0.7 * 2rem);
+        margin-bottom: calc(0.7 * 1.65vmax);
     }
 
     .ComfortGPT .third_section .guidelines_text p {
         font-size: calc(0.7 * 1rem);
-        margin-bottom: calc(0.7 * 1rem);
+        margin-bottom: calc(0.7 * 1.65vmax);
     }
 
     .ComfortGPT .third_section .guidelines_text ul {
@@ -538,12 +550,12 @@
 
     .ComfortGPT .first_section .heading_and_links h1 {
         font-size: calc(0.4 * 2.5rem);
-        margin-bottom: calc(0.4 * 1.5rem);
+        margin-bottom: calc(0.4 * 1.65vmax);
     }
 
     .ComfortGPT .first_section .heading_and_links h3 {
         font-size: calc(0.4 * 1.75rem);
-        margin-bottom: calc(0.4 * 1.5rem);
+        margin-bottom: calc(0.4 * 1.65vmax);
     }
 
     .ComfortGPT .first_section .heading_and_links .Github_stuff {
@@ -565,7 +577,7 @@
     .ComfortGPT .first_section .heading_and_links .user_exp {
         display: block;
         font-size: calc(0.4 * 1rem);
-        margin-top: calc(0.4 * 1.5rem);
+        margin-top: calc(0.4 * 1.65vmax);
     }
 
     .ComfortGPT .first_section .contacts h3 {
@@ -631,6 +643,13 @@
         gap: calc(0.4 * 0.25rem);
     }
 
+    .ComfortGPT .second_section .inputs .CalculateButton > * {
+        width: calc(0.4 * 105px);
+    }
+    .ComfortGPT .second_section .inputs .additional_buttons > * {
+        width: calc(0.4 * 130px);
+    }
+
     .ComfortGPT .second_section .outputs {
         padding-top: calc(0.4 * 1rem);
     }
@@ -682,12 +701,12 @@
 
     .ComfortGPT .third_section .guidelines_text h3 {
         font-size: calc(0.4 * 1.75rem);
-        margin-bottom: calc(0.4 * 2rem);
+        margin-bottom: calc(0.4 * 1.65vmax);
     }
 
     .ComfortGPT .third_section .guidelines_text p {
         font-size: calc(0.4 * 1rem);
-        margin-bottom: calc(0.4 * 1rem);
+        margin-bottom: calc(0.4 * 1.65vmax);
     }
 
     .ComfortGPT .third_section .guidelines_text ul {
@@ -739,12 +758,12 @@
 
     .ComfortGPT .first_section .heading_and_links h1 {
         font-size: calc(0.3 * 2.5rem);
-        margin-bottom: calc(0.3 * 1.5rem);
+        margin-bottom: calc(0.3 * 1.65vmax);
     }
 
     .ComfortGPT .first_section .heading_and_links h3 {
         font-size: calc(0.3 * 1.75rem);
-        margin-bottom: calc(0.3 * 1.5rem);
+        margin-bottom: calc(0.3 * 1.65vmax);
     }
 
     .ComfortGPT .first_section .heading_and_links .Github_stuff {
@@ -765,7 +784,7 @@
 
     .ComfortGPT .first_section .heading_and_links .user_exp {
         font-size: calc(0.3 * 1rem);
-        margin-top: calc(0.3 * 1.5rem);
+        margin-top: calc(0.3 * 1.65vmax);
     }
 
     .ComfortGPT .first_section .contacts h3 {
@@ -831,6 +850,13 @@
         gap: calc(0.3 * 0.25rem);
     }
 
+    .ComfortGPT .second_section .inputs .CalculateButton > * {
+        width: calc(0.3 * 105px);
+    }
+    .ComfortGPT .second_section .inputs .additional_buttons > * {
+        width: calc(0.3 * 130px);
+    }
+
     .ComfortGPT .second_section .outputs {
         padding-top: calc(0.3 * 1rem);
     }
@@ -881,12 +907,12 @@
 
     .ComfortGPT .third_section .guidelines_text h3 {
         font-size: calc(0.3 * 1.75rem);
-        margin-bottom: calc(0.3 * 2rem);
+        margin-bottom: calc(0.3 * 1.65vmax);
     }
 
     .ComfortGPT .third_section .guidelines_text p {
         font-size: calc(0.3 * 1rem);
-        margin-bottom: calc(0.3 * 1rem);
+        margin-bottom: calc(0.3 * 1.65vmax);
     }
 
     .ComfortGPT .third_section .guidelines_text ul {
@@ -921,7 +947,7 @@
     }
 
     .ComfortGPT .css-b62m3t-container {
-        width: calc(0.4 * 200px);
+        width: calc(0.2 * 200px);
     }
 
     #graph>svg>g>* {

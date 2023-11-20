@@ -275,7 +275,7 @@ a {
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 500px) {
     .arrow {
         border-width: 0 calc(0.3 * 3px) calc(0.3 * 3px) 0;
         padding: calc(0.3 * 2px);

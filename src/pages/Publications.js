@@ -631,6 +631,16 @@ const getDynamicWidth = () => {
     }
 };
 
+const getDynamicHeight = () => {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 426) { // For small screens
+        return '5px';
+    } else {
+        return '10px';
+    }
+};
+
 const getDynamicPadding = () => {
     const screenWidth = window.innerWidth;
 
@@ -653,7 +663,7 @@ const customStyles = {
         ...base,
         zIndex: 1000,
         position: 'absolute',
-        top: '10px',
+        top: getDynamicHeight(),
         left: '0px',
         width: getDynamicWidth(),
     }),
