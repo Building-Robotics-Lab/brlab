@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brlab/static/css/main.40d842db.css",
-    "main.js": "/brlab/static/js/main.262c4042.js",
+    "main.css": "/brlab/static/css/main.4a85e965.css",
+    "main.js": "/brlab/static/js/main.28a4c9df.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
     "static/media/Iqbal_DT2.png": "/brlab/static/media/Iqbal_DT2.73b332b29a8b111f14a7.png",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
@@ -65,11 +65,11 @@
     "static/media/tt_logo_color_rgb.jpg": "/brlab/static/media/tt_logo_color_rgb.b8c960c7e4476b1e552a.jpg",
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
-    "main.40d842db.css.map": "/brlab/static/css/main.40d842db.css.map",
-    "main.262c4042.js.map": "/brlab/static/js/main.262c4042.js.map"
+    "main.4a85e965.css.map": "/brlab/static/css/main.4a85e965.css.map",
+    "main.28a4c9df.js.map": "/brlab/static/js/main.28a4c9df.js.map"
   },
   "entrypoints": [
-    "static/css/main.40d842db.css",
-    "static/js/main.262c4042.js"
+    "static/css/main.4a85e965.css",
+    "static/js/main.28a4c9df.js"
   ]
 }
