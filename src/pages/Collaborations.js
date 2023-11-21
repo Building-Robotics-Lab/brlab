@@ -80,8 +80,9 @@ function Collaborations() {
             <Container useOrange={true}>
                 <div className="second_section">
                     <div className="title_section">
-                        <h2><b>Our Work</b></h2>
+                        <h2><b>[Currently Under Construction]</b></h2>
                     </div>
+                    {/*
                     <div className="themes">
                         <div class="each_theme">
                             <Link to="#" onClick={() => handleThemeClick('theme1_section')}>
@@ -112,10 +113,12 @@ function Collaborations() {
                             <p>Our research investigates the democratisation of virtual power plants (VPP) for optimal monetisation and grid flexibility to empower end-users to participate effectively. By leveraging AI, we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into two halves: one explores user impacts on VPPs and behaviour modeling, while the other employs machine learning for automated energy market participation.</p>
                         </div>
                     </div>
+                    */}
                 </div>
             </Container>
 
             <Container sectionName='theme1_section'>
+                {/*
                 <div className="title">
                     <h1>Sensing Human Health and Comfort</h1>
                 </div>
@@ -151,9 +154,11 @@ function Collaborations() {
                         <p className='tool_links'><Link to="/otst"><b>Optimal Temperature Setpoint Tool</b></Link></p>
                     </div>
                 </div>
+                */}
             </Container>
 
             <Container useOrange={true} sectionName='theme2_section'>
+                {/*
                 <div className="title">
                     <h1>Human-Centred AI</h1>
                 </div>
@@ -204,9 +209,11 @@ function Collaborations() {
                         </div>
                     </div>
                 </div>
+                */}
             </Container>
 
             <Container sectionName='theme3_section'>
+                {/*
                 <div className="title">
                     <h1>Resilient Cooling</h1>
                 </div>
@@ -241,9 +248,11 @@ function Collaborations() {
                         </div>
                     </div>
                 </div>
+                */}
             </Container>
 
             <Container useOrange={true} sectionName='theme4_section'>
+                {/*
                 <div className="title">
                     <h1>Intelligent Environments</h1>
                 </div>
@@ -265,6 +274,7 @@ function Collaborations() {
                         </div>
                     </div>
                 </div>
+                */}
             </Container>
 
             <Footer />

@@ -114,7 +114,7 @@ function Home() {
 
             <Container useOrange={true}>
                 <div className='second_section_Title'>
-                    <h2><b>A Little about our Research Themes</b></h2>
+                    <h2><b>A Little About Our Research Themes</b></h2>
                 </div>
 
                 <ResearchSection
@@ -232,7 +232,7 @@ function Home() {
                                 their unique challenges and goals.
                             </p>
                             <div className="HomeButtons">
-                                <Link to="/research"><p className='join_the_lab_fifth_section_left' id='JoinButton'>WORK WITH US</p></Link>
+                                <Link to="/collaborations"><p className='join_the_lab_fifth_section_left' id='JoinButton'>WORK WITH US</p></Link>
                             </div>
                         </div>
                         <div className="fifth_section_text_right">

@@ -6,7 +6,7 @@ import './ComfortGPT.css'
 import { Link } from 'react-router-dom';
 import * as d3 from 'd3';
 
-import ExampleImage from './../components/Website Data/output_example1.png'
+import ExampleImage from './../components/Website Data/COMFORTGPToutput_example1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
