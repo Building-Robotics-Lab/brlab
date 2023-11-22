@@ -118,10 +118,10 @@ function Collaborations() {
             </Container>
 
             <Container sectionName='theme1_section'>
-                {/*
                 <div className="title">
-                    <h1>Sensing Human Health and Comfort</h1>
+                    <h1>Capabilities to Offer</h1>
                 </div>
+                {/*
                 <div className="whole_theme">
                     <div className='theme_section'>
                         <div className="theme_details">
@@ -157,11 +157,11 @@ function Collaborations() {
                 */}
             </Container>
 
-            <Container useOrange={true} sectionName='theme2_section'>
-                {/*
+            <Container useOrange={true} sectionName='theme2_section'>                
                 <div className="title">
-                    <h1>Human-Centred AI</h1>
+                    <h1>Lab Spaces</h1>
                 </div>
+                {/*
                 <div className="whole_theme">
                     <div className='theme_section'>
                         <div className="theme_details">
@@ -213,10 +213,10 @@ function Collaborations() {
             </Container>
 
             <Container sectionName='theme3_section'>
-                {/*
                 <div className="title">
-                    <h1>Resilient Cooling</h1>
+                    <h1>Previous Projects</h1>
                 </div>
+                {/*
                 <div className="whole_theme">
                     <div className='theme_section'>
                         <div className="theme_details">
