@@ -13,6 +13,7 @@ import News from './pages/News';
 import Publications from './pages/Publications';
 import Join_the_Lab from './pages/Join_the_Lab';
 import Collaborations from './pages/Collaborations';
+import Delete from './pages/Delete';
 
 import IndividualProfile from './pages/IndividualProfile';
 import IndividualPublication from './pages/IndividualPublication';
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path='/research' element={<Research />} />
+          <Route path='/delete' element={<Delete />} />
           <Route path='/collaborations' element={<Collaborations />}></Route>
           <Route path='/comfortgpt' element={<ComfortGPT />} />
           <Route path='/otst' element={<OTST />} />
