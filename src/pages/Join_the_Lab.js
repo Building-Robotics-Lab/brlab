@@ -279,7 +279,7 @@ function Join_the_Lab() {
     const scholarship_country = [
         { value: "All", label: "All" },
         { value: "Open to all Countries", label: "Open to all Countries" },
-        { value: "Non-Singaporean", label: "Non-Singaporean" },
+        { value: "Non-Singaporean", label: "International/Non-Singaporean" },
         { value: "Antigua and Barbuda", label: "Antigua and Barbuda" },
         { value: "Australia", label: "Australia" },
         { value: "Bangladesh", label: "Bangladesh" },
