@@ -6,7 +6,7 @@ const TeamGrid = ({ members }) => (
     <div className="team-grid">
         {members.map((member, index) => (
             <div className={`item item-${index + 1}`} key={index}>
-                <Link to={`/profile/${member.link}`}>
+                <Link to={`/profile/${member.link}`} target='_blank'>
                     <div className="ProfilePic">
                         <img src={member.imgSrc} alt={member.name} />
                     </div>

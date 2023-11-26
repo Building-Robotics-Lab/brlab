@@ -122,6 +122,7 @@ const profiles = [
         Links: [
             { href: KaiCV, icon: faUser, text: 'CV' },
             { href: 'https://scholar.google.com/citations?user=YCk9UUYAAAAJ&hl=en', icon: faGoogle, text: 'Google Scholar' },
+            { href: 'https://www.linkedin.com/in/kai-chen-879b60259/', icon: faLinkedin, text: 'LinkedIn' },
             { href: 'https://orcid.org/0000-0002-4779-7104', icon: faOrcid, text: 'ORCID' },
             { href: '/comfortGPT', icon: faPerson, text: 'ComfortGPT', isReactLink: true }
         ],
@@ -237,7 +238,8 @@ const profiles = [
             { href: "mailto:kelly_loh_li_ting@u.nus.edu", icon: faEnvelope, text: "kelly_loh_li_ting@u.nus.edu" },
         ],
         Links: [
-            { href: KellyCV, icon: faUser, text: 'CV' }
+            { href: KellyCV, icon: faUser, text: 'CV' },
+            { href: 'https://www.linkedin.com/in/kelly-loh-65a5971bb/', icon: faLinkedin, text: 'LinkedIn' },
         ],
         Interests: [
             'Building Energy Efficiency',
@@ -251,8 +253,8 @@ const profiles = [
         ProfileLink: "/profile/Ilyas",
         ProfilePic: IlyasPic,
         Name: 'Ilyas Dawoodjee',
-        Position: 'MSc Mechanical Engineering Student at University of Manitoba (Canada)',
-        Position2: 'BRL Research Engineer (April 2022 - December 2023)',
+        Position: 'MSc Student',
+        Position2: 'University of Manitoba (Canada)',
         Biography: 'Ilyas Dawoodjee is currently a MSc Mechanical Engineering student at University of Manitoba where he researches in the Intelligent Digital Manufacturing Laboratory (IDML). From April 2022 to December 2023, he served as a Research Engineer in the Building Robotics Lab. His area of research involved the detection of physiological measurements through machine vision. Some of his previous projects include object detection, data classification, image segmentation, and image classification. He is well-versed in multiple aspects of engineering ranging from CAD/CAM, SPICE simulations, sensors & actuators, control systems, microcontrollers, and PLC, with hands-on experience in them. However, his main passion is robotics integrated with machine vision and machine learning. He is an avid programmer who spends most of his free time coding and is always eager to learn new programming techniques and technologies. Outside of work, he likes to play games and is a fan of movies and TV series. He is a huge fan of educational YouTubers such as Veritasium, StuffMadeHere, 3Blue1Brown, VSauce, C.G.P. Grey, Minute Physics, and more.',
         Education: [
             'MSc, University of Manitoba, Mechanical Engineering (current)',
@@ -288,7 +290,8 @@ const profiles = [
         ProfileLink: "/profile/Stella",
         ProfilePic: StellaPic,
         Name: 'HU Xinhao',
-        Position: 'Visiting PhD Candidate from Hunan University (China)',
+        Position: 'Visiting PhD Candidate',
+        Position2: 'Hunan University (China)',
         Biography: 'HU Xinhao is a fourth-year PhD candidate from the Building Environment and Energy Application Department at Hunan University, P. R. China, and is a visiting student in Assistant Professor Ghahramani\'s group in the Department of the Built Environment at the National University of Singapore. Her research focuses on thermal comfort and building energy efficiency, and her current research project is on the comfort characterising of indoor occupants with personal comfort systems under solar radiation.',
         Education: [
             'PhD, Hunan University (HNU), Civil Engineering (current)',
@@ -333,7 +336,8 @@ const profiles = [
         ProfileLink: "/profile/Xiaosong",
         ProfilePic: XiaosongPic,
         Name: 'SU Xiaosong',
-        Position: 'Visiting PhD Candidate from Hunan University (China)',
+        Position: 'Visiting PhD Candidate',
+        Position2: 'Hunan University (China)',
         Biography: 'Song is a final-year visiting PhD student at NUS, coming from Hunan University in China. His research focuses on building energy efficiency with advanced technology and innovative building envelope, such as building-integrated photovoltaics, light-transmitting concrete, and radiant cooling systems. In addition, he is curious about data science and other new technology and tries to integrate them with his research.',
         Education: [
             'PhD, Hunan University (HNU), Heating, Ventilation and Air-Conditioning (HVAC) (current)',
@@ -377,7 +381,8 @@ const profiles = [
         ProfileLink: "/profile/Pegah",
         ProfilePic: PegahPic,
         Name: 'Pegah Eshraghi',
-        Position: 'Visiting PhD Candidate from Shahid Beheshti University (Iran)',
+        Position: 'Visiting PhD Candidate',
+        Position2: 'Shahid Beheshti University (Iran)',
         Biography: 'Pegah Eshraghi is a fourth-year PhD candidate of Architecture (with Energy background) at Shahid Beheshti University, Tehran, Iran. She is an enthusiastic student in building energy modelling and the environmental effects of buildings on different scales. Pegah is also currently a research assistant at NUS (National University of Singapore), College of Design & Engineering, Department of the Built Environment. With a strong passion for energy conservation, Pegah\'s focus is to create a framework at the urban block scale with the help of machine learning and various energy and environmental metrics in order to achieve the best morphology and density distribution. In addition to her interest in energy efficiency, Pegah is deeply fascinated by the developing frameworks based on sustainable guidelines helping architects and urban planners easily evaluate their alternatives at the very early stages of design, and provide services such as designing, consultation, optimisation, giving international certificates and energy labels for energy, daylighting, thermal comfort, indoor environmental quality, etc. She believes using these frameworks will help people to make decisions faster and more conveniently to live in an eco-friendly environment.',
         Education: [
             'PhD, Shahid Beheshti University (SBU), Buildings (current)',
@@ -419,7 +424,8 @@ const profiles = [
         ProfileLink: "/profile/Pierre",
         ProfilePic: PierrePic,
         Name: 'Pierre-Louis David',
-        Position: 'Visiting MSc Student from ETH Zürich (Switzerland)',
+        Position: 'Visiting MSc Student',
+        Position2: 'ETH Zürich (Switzerland)',
         Biography: 'Pierre-Louis David is honoured to be a Master\'s candidate from ETH Zürich, specialising in Mechanical Engineering with a significant emphasis on Computer Science. Currently, he is in the midst of completing his thesis at the Building Robotics Lab in the Department of the Built Environment at the National University of Singapore, with a concentrated effort on optimising virtual power plants and pioneering methods to forecast energy prices using ML techniques. In his previous role at the esteemed Paul Scherrer Institut, he had the privilege to work with computer vision in the innovative Center for Proton Therapy. The objective was to refine segmentation techniques for patients afflicted with eye tumors, enhancing the efficacy of proton therapy and subsequently, improving patient recovery outcomes. Beyond his academic and professional pursuits, he takes a keen interest in marathon running, and values the moments he spends chatting with friends and colleagues.',
         Education: [
             'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Mechanical Engineering and Computer Science (current)',
@@ -448,7 +454,8 @@ const profiles = [
         ProfileLink: "/profile/Guillaume",
         ProfilePic: GuillaumePic,
         Name: 'Guillaume Lecronier',
-        Position: 'Visiting MSc Student from ETH Zürich (Switzerland)',
+        Position: 'Visiting MSc Student',
+        Position2: 'ETH Zürich (Switzerland)',
         Biography: 'Guillaume Lecronier is a master student at ETH Zürich (Swiss Federal Institute of Technology) in Mechanical Engineering and Robotics. Originally from France, he\'s visiting the lab in order to conduct his master thesis. His research focuses on indoor environment monitoring and involves the use of bluetooth low energy (BLE) technology in the scope of indoor positioning systems using a digital twin interface. Guillaume has a strong interest in IoT applications and is keen on working with sensors and integrating them into electronic prototyping setups, especially with platforms like Raspberry Pis. He enjoys the process of collecting valuable and meaningful data from these for innovative projects. In his free time, Guillaume enjoys running and fitness as well as travelling.',
         Education: [
             'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Mechanical Engineering (current)',
@@ -479,8 +486,8 @@ const profiles = [
         ProfileLink: "/profile/Michelle",
         ProfilePic: MichellePic,
         Name: 'QI Xuanning',
-        Position: 'PhD Candidate at Harbin Insitute of Technology (China)',
-        Position2: 'BRL Visiting PhD Candidate (August 2022 - August 2023)',
+        Position: 'PhD Candidate',
+        Position2: 'Harbin Insitute of Technology (China)',
         Biography: 'QI Xuanning is currently pursuing a doctoral degree in architecture at the Harbin Institute of Technology, and was a visiting PhD candidate at the National University of Singapore from August 2022 to August 2023. She is also a student member of the Architectural Society of China. In her academic career, she has published five papers in academic conferences and journals, and has contributed to the compilation of ‘Unified Standard for Civil Building Design Illustrations’ (20J813). In addition, she has been granted three invention patents and one utility model patent. QI Xuanning has also participated in the design of over ten architectural projects and was recognized with the third-place prize in the architectural survey and design competition in Heilongjiang Province in 2022. Her research interests include computational design, daylight design, occupant behaviour, and visual cognition. In her free time, QI Xuanning enjoys exploring new cities and experiencing different cultures. She also likes to engage in outdoor activities, such as hiking and cycling, which inspire her to think creatively about the relationship between architecture and the natural environment.',
         Education: [
             'PhD, Harbin Institute of Technology, Architecture Design and Theory (current)',
