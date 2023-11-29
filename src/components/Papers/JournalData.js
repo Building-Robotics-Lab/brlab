@@ -1,4 +1,4 @@
-//import RiccardoPublication2 from './Publication Images/riccardo_pub2.jpg'
+import RiccardoPublication2 from './Publication Images/riccardo_pub2.png'
 import IqbalPublication1 from './Publication Images/iqbal_pub1.jpg'
 import IqbalPublication2 from './Publication Images/1-s2.0-S0360132323009319-gr3_lrg.jpg'
 import KatePublication1 from './Publication Images/kate_pub1.png'
@@ -61,7 +61,7 @@ const JournalData = [
                 links: [
                     { type: "DOI", url: "" },
                     { type: "PDF", url: "" },
-                    { type: "Optimal Temperature Setpoint Tool", url: "/brlab/otst" }
+                    { type: "Optimal Temperature Setpoint Tool", url: "/brlab/#/otst" }
                 ],
                 keywords: [
                     "Energy Reduction",
@@ -78,7 +78,7 @@ const JournalData = [
                     "Optimal selection of setpoint and setback provides additional 34-38% energy savings."
                 ],
                 abstract: "With the advent of flexible working arrangements, we are observing a dramatic shift in how buildings are occupied today, which presents an opportunity to optimize Heating, Ventilation, and Air Conditioning system temperature setpoints based on variations in occupancy. Guidelines often suggest the adoption of the highest or lowest setpoint or setback to minimize energy consumption in hot or cold climates, respectively. However, at outdoor temperatures where variations in occupancy heat loads prompt buildings to fluctuate across cooling, free-running, and heating mode, optimal setpoints and setbacks are not always the lowest or highest. In addition, the perturbations caused by rapid switching between setpoint and setback could diminish energy savings due to system destabilization. This paper aims to systematically compare the potential energy savings from fixed and optimal setpoints and setbacks across wide-ranging occupancy scenarios (four occupancy rates and 14 patterns). Energy simulations were conducted using the Department of Energy reference models for small, medium, and large office buildings to enable an exhaustive search of optimal setpoint/setbacks in 17 climate zones. Explored setpoints were 19.5 °C to 25.5 °C with intervals of 1 °C, and setbacks were 17 °C/19 °C for heating and 26 °C/28 °C for cooling. The findings indicate that, on average, while lower occupancy heat loads results in 5.48% energy reduction, a conventional fixed setpoint and setback strategy provides an additional 11.80%, and optimal selection of setpoints and setbacks could provide an additional 34.36–38.08%, emphasizing the untapped potential energy saving. To facilitate practical applications, this paper presents an interactive graphical interface: Optimal Temperature Setpoint Tool.",
-                //display_image: RiccardoPublication2
+                display_image: RiccardoPublication2
             },
             {
                 title: "Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems",
@@ -162,7 +162,7 @@ const JournalData = [
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.enbenv.2023.07.001" },
                     { type: "PDF", url: "https://www.sciencedirect.com/science/article/pii/S2666123323000612/pdfft?md5=70e481b02bb64ba4441bf5bb7cd55495&pid=1-s2.0-S2666123323000612-main.pdf" },
-                    { type: "Optimal Temperature Setpoint Tool", url: "/brlab/otst" }
+                    { type: "Optimal Temperature Setpoint Tool", url: "/brlab/#/otst" }
                 ],
                 keywords: [
                     "Decarbonization",
