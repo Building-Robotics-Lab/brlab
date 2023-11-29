@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brlab/static/css/main.fa62e19d.css",
-    "main.js": "/brlab/static/js/main.30896464.js",
+    "main.js": "/brlab/static/js/main.0b5c2ce4.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
     "static/media/Iqbal_DT2.png": "/brlab/static/media/Iqbal_DT2.73b332b29a8b111f14a7.png",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
@@ -53,6 +53,7 @@
     "static/media/ghahr1-p4-ghahr-large.gif": "/brlab/static/media/ghahr1-p4-ghahr-large.71d75c87838a80e17d70.gif",
     "static/media/Greenology logo2.png": "/brlab/static/media/Greenology logo2.1fa7b117f0ba87dabc9e.png",
     "static/media/ghahr8-2920648-large.gif": "/brlab/static/media/ghahr8-2920648-large.c93332a2b793792dc07a.gif",
+    "static/media/riccardo_pub2.png": "/brlab/static/media/riccardo_pub2.c9e0cb2bfd351bb4c627.png",
     "static/media/ina12735-fig-0002-m.jpg": "/brlab/static/media/ina12735-fig-0002-m.aec67e0f30aae7831d64.jpg",
     "static/media/7408505-fig-1-source-large.gif": "/brlab/static/media/7408505-fig-1-source-large.01dc5da1d70c5c9270ea.gif",
     "static/media/Kai_OPC.jpg": "/brlab/static/media/Kai_OPC.4394c4e1aeacf583a731.jpg",
@@ -67,10 +68,10 @@
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
     "main.fa62e19d.css.map": "/brlab/static/css/main.fa62e19d.css.map",
-    "main.30896464.js.map": "/brlab/static/js/main.30896464.js.map"
+    "main.0b5c2ce4.js.map": "/brlab/static/js/main.0b5c2ce4.js.map"
   },
   "entrypoints": [
     "static/css/main.fa62e19d.css",
-    "static/js/main.30896464.js"
+    "static/js/main.0b5c2ce4.js"
   ]
 }
