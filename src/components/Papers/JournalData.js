@@ -48,9 +48,9 @@ const JournalData = [
         publications: [
             {
                 title: "Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns",
-                journal: "Buildings [In Press]",
-                volume: "", issue: "",
-                page: "",
+                journal: "Buildings",
+                volume: "13", issue: "12",
+                page: "2998",
                 authors: [
                     { name: "*Riccardo Talami", link: "/profile/Riccardo" },
                     { name: "*Ilyas Dawoodjee", link: "/profile/Ilyas" },
@@ -59,8 +59,8 @@ const JournalData = [
                 minRead: "",
                 profiles: ["Riccardo", "Ilyas", "Prof"],
                 links: [
-                    { type: "DOI", url: "" },
-                    { type: "PDF", url: "" },
+                    { type: "DOI", url: "https://www.mdpi.com/2075-5309/13/12/2998" },
+                    { type: "PDF", url: "https://www.mdpi.com/2075-5309/13/12/2998/pdf?version=1701341600" },
                     { type: "Optimal Temperature Setpoint Tool", url: "/brlab/#/otst" }
                 ],
                 keywords: [

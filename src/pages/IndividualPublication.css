@@ -153,8 +153,7 @@
     display: flex;
 }
 
-.IndividualPublication .third_section .profile_data h5,
-.IndividualPublication .third_section .profile_data p {
+.IndividualPublication .third_section .profile_data h5 {
     color: rgb(45, 99, 83);
     font-size: 1rem;
 }
