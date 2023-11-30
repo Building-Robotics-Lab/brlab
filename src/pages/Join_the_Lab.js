@@ -627,7 +627,7 @@ function Join_the_Lab() {
                             <h4><b>PhD Applicants</b></h4>
                         </div>
                         <div className="position_information">
-                            <p>Prospective PhD students are encouraged to apply to the <a href="https://cde.nus.edu.sg/dbe/graduate/phd-msc-building" target="_blank"><b>Built Environment</b></a> PhD program. I will also consider applicants to the <a href="https://cde.nus.edu.sg/cee/graduate/research-based-programmes/" target="_blank"><b>Civil & Environmental Engineering</b></a>, <a href="https://cde.nus.edu.sg/arch/programmes/higher-degrees-by-research/" target="_blank"><b>Architecture</b></a>, and <a href="https://cde.nus.edu.sg/graduate/graduate-programmes-by-research/doctor-of-engineering-eng-d/" target="_blank"><b>Engineering Doctorate</b></a> programs. Please mention my name, Asst Prof Ghahramani, in your statement of purpose as this will ensure it is sent to me for review, since potential PhD applications are processed by the corresponding department.
+                            <p>Prospective PhD students are encouraged to apply to the <a href="https://cde.nus.edu.sg/dbe/graduate/phd-msc-building" target="_blank"><b>Built Environment</b></a> PhD program or the <a href="https://cde.nus.edu.sg/graduate/graduate-programmes-by-research/doctor-of-engineering-eng-d/" target="_blank"><b>Engineering Doctorate</b></a> program. I will also consider applicants with backgrounds in civil engineering, computer science, architecture, physics, or other related fields, but they must apply under the Department of the Built Environment for me to act as their primary supervisor. Please mention my name, Asst Prof Ghahramani, in your statement of purpose as this will ensure it is sent to me for review.
                                 <br /><br />Interested students should email <a href="mailto:ghahramani@nus.edu.sg"><b>ghahramani@nus.edu.sg</b></a> with the subject line, <b>"Prospective PhD Student - [last name]."</b> Please include a copy of your CV with a detailed explanation of how your research interests and experiences coincide with the Lab's themes. Broad emails that do not convey your fit with the lab will not be returned.</p>
                         </div>
                     </div>
@@ -657,7 +657,7 @@ function Join_the_Lab() {
                             <h4><b>Current Opportunities</b></h4>
                         </div>
                         <div className="position_information">
-                            <p>There is available workload and physical space in the Lab, but only by scholarship at the moment (as of January 2024).</p>
+                            <p>There is available workload and physical space in the Lab (as of January 2024).</p>
                         </div>
                     </div>
 

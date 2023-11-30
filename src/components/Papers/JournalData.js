@@ -48,7 +48,7 @@ const JournalData = [
         publications: [
             {
                 title: "Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns",
-                journal: "Buildings [pre-proof]",
+                journal: "Buildings [In Press]",
                 volume: "", issue: "",
                 page: "",
                 authors: [
@@ -149,7 +149,7 @@ const JournalData = [
             },
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
-                journal: "Energy and Built Environment",
+                journal: "Energy and Built Environment [In Press]",
                 volume: "", issue: "",
                 page: "",
                 authors: [

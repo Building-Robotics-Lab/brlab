@@ -6,6 +6,7 @@ import './News.css'
 import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
+import RiccardoPublication2 from './../components/Website Data/riccardo-publication2.png'
 import IqbalPublication2 from './../components/Website Data/1-s2.0-S0360132323009319-gr3_lrg.jpg'
 import PierrePic from './../components/Website Individual Information/Pierre-Louis/image.jpg';
 import GuillaumePic from './../components/Website Individual Information/Guillaume/image.jpg';
@@ -66,6 +67,18 @@ function News() {
     }, []);
 
     const newsData = [
+        {
+            NewsSectionName: 'RiccardoPublication2',
+            imageSrc: RiccardoPublication2,
+            altText: "A graphical abstract of the publication.",
+            date: '30/11/2023',
+            title: '<i>Buildings</i> publication announcement!',
+            content: (
+                <>
+                    <Link to="/profile/Riccardo"><b>Riccardo</b></Link>, <Link to="/profile/Ilyas"><b>Ilyas</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/demystifying_energy"><b>Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns</b></Link>. They investigated three fixed and optimal setpoint and setback selection strategies. They found that fixed setpoint achieves 5.48% energy reduction due to lower occupant head loads and an additional 11.80% energy savings are obtained from incorporating fixed setbacks. Overall, the optimal selection of setpoint and setback provides additional 34-38% energy savings. Congratulations everyone!
+                </>
+            ),
+        },
         {
             NewsSectionName: 'IqbalPublication2',
             imageSrc: IqbalPublication2,
@@ -158,7 +171,7 @@ function News() {
             title: '<i>Building and Environment</i> publication announcement!',
             content: (
                 <>
-                    <Link to="/profile/Kai"><b>Kai</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/personal_thermal"><b>Personal thermal comfort models based on physiological measurements -- A design of experiments based review</b></Link>. This study aims to provide a systematic, comprehensive, and DOE-framework-based review of the physiological sensing methods to predict personal thermal comfort. This is also Kai\'s inaugural first-author article! Chapeau!
+                    <Link to="/profile/Kai"><b>Kai</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/personal_thermal"><b>Personal thermal comfort models based on physiological measurements -- A design of experiments based review</b></Link>. This study aims to provide a systematic, comprehensive, and DOE-framework-based review of the physiological sensing methods to predict personal thermal comfort. This is Kai's inaugural first-author article! Chapeau!
                 </>
             ),
         },
@@ -182,7 +195,7 @@ function News() {
             title: '<i>Energy and Buildings</i> publication announcement!',
             content: (
                 <>
-                    <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/thermal_transfer"><b>Thermal transfer and temperature reductions from shading systems on opaque façades: Quantifying the impacts of influential factors</b></Link>. It investigates the effects of shading systems on opaque facades that is currently unaccounted for in simplified Overall Thermal Transfer Value (OTTV) calculations throughout standards adopted by many countries. This is Iqbal\'s inaugural first-author article! Chapeau!
+                    <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/thermal_transfer"><b>Thermal transfer and temperature reductions from shading systems on opaque façades: Quantifying the impacts of influential factors</b></Link>. It investigates the effects of shading systems on opaque facades that is currently unaccounted for in simplified Overall Thermal Transfer Value (OTTV) calculations throughout standards adopted by many countries. This is Iqbal's inaugural first-author article! Chapeau!
                 </>
             )
         },
