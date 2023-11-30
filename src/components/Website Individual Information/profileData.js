@@ -272,7 +272,7 @@ const profiles = [
             { href: "mailto:dawoodji@myumanitoba.ca", icon: faEnvelope, text: "dawoodji@myumanitoba.ca" },
         ],
         Links: [
-            /*{ href: IlyasCV, icon: faUser, text: 'CV' },*/
+            { href: IlyasCV, icon: faUser, text: 'CV' },
             { href: 'https://scholar.google.com/citations?user=FlonsoAAAAAJ&hl=en&oi=ao', icon: faGoogle, text: 'Google Scholar' },
             { href: 'https://www.linkedin.com/in/ilyas-dawoodjee-858011195/', icon: faLinkedin, text: 'LinkedIn' },
             { href: 'https://github.com/blank-ed', icon: faGithub, text: 'GitHub' },
