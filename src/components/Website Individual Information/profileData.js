@@ -61,17 +61,17 @@ const profiles = [
         Featured_Publications: [
             (
                 <>
+                    <b>Talami, R.</b>, Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/publication/quantifying_energy" ><b>Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns</b></Link>. <i>Buildings</i>.
+                </>
+            ),
+            (
+                <>
                     <b>Talami, R.</b>, Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/publication/demystifying_energy" ><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. <i>Energy and Built Environment</i>.
                 </>
             ),
             (
                 <>
                     <b>Talami, R.</b> and  Jakubiec, J.A., 2020. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778819333614" ><b>Early-design sensitivity of radiant cooled office buildings in the tropics for building performance</b></a>. <i>Energy and Buildings, 223</i>, 110177.
-                </>
-            ),
-            (
-                <>
-                    <b>Talami, R.</b>, 2022. <Link to="/publication/the_sequential" ><b>The sequential design optimization of building performance</b></Link>. (Doctoral dissertation, Loughborough University).
                 </>
             )
         ],
