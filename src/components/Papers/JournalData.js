@@ -59,7 +59,7 @@ const JournalData = [
                 minRead: "",
                 profiles: ["Riccardo", "Ilyas", "Prof"],
                 links: [
-                    { type: "DOI", url: "https://www.mdpi.com/2075-5309/13/12/2998" },
+                    { type: "DOI", url: "https://doi.org/10.3390/buildings13122998" },
                     { type: "PDF", url: "https://www.mdpi.com/2075-5309/13/12/2998/pdf?version=1701341600" },
                     { type: "Optimal Temperature Setpoint Tool", url: "/brlab/#/otst" }
                 ],
