@@ -46,7 +46,7 @@ function Collaborations() {
                 <div className="first_section">
                     <div className="title_section">
                         <h1><b>Industry Collaborations</b></h1>
-                        <h3><b>Through our interdisciplinary approach, we aim to create a sustainable future by leveraging sensing, learning, and control systems for smart buildings that prioritise environmental sustainability and improve the human experience.</b></h3>
+                        <h3><b>Through our interdisciplinary approach, we aim to create a sustainable future by leveraging sensing, learning, and control systems, and other cutting-edge technologies for smart buildings that prioritise environmental sustainability and improve the human experience.</b></h3>
                         <h5>Are you an industry partner on a similar mission or have an idea for a project we could collaborate on for smart buildings and intelligent environments?</h5>
                     </div>
                     <div className="industry_partners">
@@ -212,11 +212,10 @@ function Collaborations() {
                 */}
             </Container>
 
-            <Container sectionName='theme3_section'>
+            {/*<Container sectionName='theme3_section'>
                 <div className="title">
                     <h1>Previous Projects</h1>
                 </div>
-                {/*
                 <div className="whole_theme">
                     <div className='theme_section'>
                         <div className="theme_details">
@@ -248,11 +247,9 @@ function Collaborations() {
                         </div>
                     </div>
                 </div>
-                */}
-            </Container>
+            </Container>*/}
 
-            <Container useOrange={true} sectionName='theme4_section'>
-                {/*
+            {/*<Container useOrange={true} sectionName='theme4_section'>
                 <div className="title">
                     <h1>Intelligent Environments</h1>
                 </div>
@@ -274,8 +271,7 @@ function Collaborations() {
                         </div>
                     </div>
                 </div>
-                */}
-            </Container>
+            </Container>*/}
 
             <Footer />
         </div>

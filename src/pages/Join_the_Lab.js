@@ -701,7 +701,7 @@ function Join_the_Lab() {
                                     description={item.description}
                                 />
                             ))}
-                            <p className='sub_title'><b>Country-specific Eligibility</b></p>
+                            <p className='sub_title'><b>Country-Specific Eligibility</b></p>
                             {filteredCountrySpecificEligibilityScholarships.map((item, index) => (
                                 <ScholarshipItem
                                     key={index}
