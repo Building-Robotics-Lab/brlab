@@ -6,6 +6,7 @@ import './News.css'
 import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
+import KaiPublication2 from './../components/Website Data/kai_paper2.jpg'
 import RiccardoPublication2 from './../components/Website Data/riccardo-publication2.png'
 import IqbalPublication2 from './../components/Website Data/1-s2.0-S0360132323009319-gr3_lrg.jpg'
 import PierrePic from './../components/Website Individual Information/Pierre-Louis/image.jpg';
@@ -67,6 +68,18 @@ function News() {
     }, []);
 
     const newsData = [
+        {
+            NewsSectionName: 'KaiPublication2',
+            imageSrc: KaiPublication2,
+            altText: "A graphical abstract of the publication.",
+            date: '03/12/2023',
+            title: '<i>Building and Environment</i> publication announcement!',
+            content: (
+                <>
+                    <Link to="/profile/Kai"><b>Kai</b></Link> and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/a_transformer-based" ><b>A transformer-based architecture for predicting preferred temperature setpoints leveraging big data</b></Link>. They proposed a transformer-based architecture for setpoint prediction via pre-trained models. This included clustering pre-trained models to capture diverse thermostat preferences and enocoding user interactions to adapt to occupant preferences. As a result, they found a diverse spectrum of setpoint/outdoor temperature relationships, and achieved a predictive performance of R2 = 0.77 and MAE = 0.65ºC. Congratulations you two!
+                </>
+            ),
+        },
         {
             NewsSectionName: 'RiccardoPublication2',
             imageSrc: RiccardoPublication2,

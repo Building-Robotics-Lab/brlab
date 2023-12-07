@@ -1,3 +1,4 @@
+import KaiPublication2 from './Publication Images/1-s2.0-S0360132323011125-gr4_lrg.jpg'
 import RiccardoPublication2 from './Publication Images/riccardo_pub2.png'
 import IqbalPublication1 from './Publication Images/iqbal_pub1.jpg'
 import IqbalPublication2 from './Publication Images/1-s2.0-S0360132323009319-gr3_lrg.jpg'
@@ -46,6 +47,38 @@ const JournalData = [
     {
         year: "2023",
         publications: [
+            {
+                title: "A transformer-based architecture for predicting preferred temperature setpoints leveraging big data",
+                journal: "Building and Environment [In Press]",
+                volume: "", issue: "",
+                page: "111085",
+                authors: [
+                    { name: "*CHEN Kai", link: "/profile/Kai" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" }
+                ],
+                minRead: "",
+                profiles: ["Kai", "Prof"],
+                links: [
+                    { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2023.111085" },
+                    { type: "ComfortGPT", url: "/brlab/#/comfortgpt" }
+                ],
+                keywords: [
+                    "Personal Comfort Model",
+                    "Long-Term Comfort Modeling",
+                    "ECOBEE",
+                    "Generative-Pre-Trained Transformers",
+                    "Comfort Archetypes"
+                ],
+                highlights: [
+                    "Proposed a transformer-based architecture for setpoint prediction via pre-trained models.",
+                    "Clustered pre-trained models to capture diverse thermostat preferences.",
+                    "Encoded user interactions to adapt to occupant preferences.",
+                    "Found a diverse spectrum of setpoint/outdoor temperature relationships.",
+                    "Achieved predictive performance of R2 = 0.77 and MAE = 0.65°C."
+                ],
+                abstract: "The transformation of personal comfort models into a scalable solution has been hindered by their heavy reliance on occupant feedback across a wide range of environmental conditions, and their inability to adapt to changes in preferences. However, these challenges could be addressed by leveraging large-scale databases to build pre-trained models and using limited occupant interactions to select the most representative model, while simultaneously detecting potential changes in preferences. This paper introduces a novel transformer-based architecture (ComfortGPT), which employs pre-trained models built on the data derived from ECOBEE Donate Your Data program through a uniquely crafted cleaning process. The pre-trained models are derived through clustering the supervised learning models applied to each user's data, thereby capturing the diverse range of thermostat preferences. Due to their generative nature, these models can predict setpoints across a wide range of environmental conditions. In order to adapt to variations in occupant preferences, we adopted a transformer mechanism to encode user thermostat interactions based on time sequence and relevance. We applied an exhaustive search to identify the optimal hyperparameters and achieved R2 of 0.77 and Mean Absolute Error (MAE) of 0.65 °C. We also found that the pre-trained models represent a spectrum of setpoint/outdoor temperature relationships ranging from warm-likers to cool-likers and referred to them as comfort archetypes. These archetypes could be employed in energy simulations and design applications, facilitating more personalized and energy-efficient indoor environments.",
+                display_image: KaiPublication2
+            },
             {
                 title: "Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns",
                 journal: "Buildings",
@@ -234,7 +267,6 @@ const JournalData = [
                 profiles: ["Kai", "Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2022.109919" },
-                    { type: "ComfortGPT", url: "/brlab/comfortgpt" }
                 ],
                 keywords: [
                     "Personal Comfort Model",

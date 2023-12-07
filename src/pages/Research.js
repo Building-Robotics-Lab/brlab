@@ -104,8 +104,8 @@ function Research() {
                         </div>
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">
+                            <p>Chen, K. and Ghahramani, A., 2023. <Link to="/publication/a_transformer-based"><b>A transformer-based architecture for predicting preferred temperature setpoints leveraging big data</b></Link>. <i>Building and Environment [In Press]</i>, 111085.</p>
                             <p>Chen, K., Xu, Q., Leow, B. and Ghahramani, A., 2022. <Link to="/publication/personal_thermal"><b>Personal thermal comfort models based on physiological measurements-A design of experiments based review</b></Link>. <i>Building and Environment</i>, <i>228</i>, 109919.</p>
-                            <p>Chen, K. and Ghahramani, A., 2023. <b>A Transformer-based Architecture for Predicting Preferred Temperature Setpoints Leveraging Big Data</b>. [under review]</p>
                         </div>
                         <p className='tool_links'><Link to="/ComfortGPT"><b>ComfortGPT</b></Link></p>
                     </div>
@@ -119,8 +119,8 @@ function Research() {
                         </div>
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">
-                            <p>Talami, R., Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/publication/demystifying_energy"><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. <i>Energy and Built Environment</i>.</p>
                             <p>Talami, R., Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/publication/quantifying_energy"><b>Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns</b></Link>. <i>Buildings, 13</i>(12), 2998.</p>
+                            <p>Talami, R., Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/publication/demystifying_energy"><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. <i>Energy and Built Environment</i>.</p>
                         </div>
                         <p className='tool_links'><Link to="/otst"><b>Optimal Temperature Setpoint Tool</b></Link></p>
                     </div>

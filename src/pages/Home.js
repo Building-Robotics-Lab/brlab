@@ -14,6 +14,7 @@ import FourthResearchImage from './../components/Website Data/resilient@2x.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers } from '@fortawesome/free-solid-svg-icons';
 
+import PublicationsKaiNews2 from './../components/Website Data/kai_paper2.jpg'
 import PublicationsRiccardoNews2 from './../components/Website Data/riccardo-publication2.png'
 import PublicationsIqbalNews2 from './../components/Website Data/1-s2.0-S0360132323009319-gr3_lrg.jpg'
 import GuillaumeNews from './../components/Website Individual Information/Guillaume/image.jpg'
@@ -27,6 +28,12 @@ import ConnorNews from './../components/Website Individual Information/Connor/im
 import PublicationsIqbalNews from './../components/Website Data//iqbal-publication.jpg'
 
 const slides = [
+    {
+        image: PublicationsKaiNews2,
+        title: '<b><i>Building and Environment</i> publication announcement!</b>',
+        date: '03/12/2023',
+        link: 'FourthNewsSection',
+    },
     {
         image: PublicationsRiccardoNews2,
         title: '<b><i>Buildings</i> publication announcement!</b>',

@@ -111,9 +111,15 @@ const profiles = [
         Featured_Publications: [
             (
                 <>
-                    <b>Chen, K.</b>, Xu, Q., Leow, B. and Ghahramani, A., 2022. <Link to="/publication/personal_thermal" ><b>Personal thermal comfort models based on physiological measurements–A design of experiments based review</b></Link>. <i>Building and Environment</i>, <i>228</i>, 109919.    
+                    <b>Chen, K.</b> and Ghahramani, A., 2023. <Link to="/publication/a_transformer-based" ><b>A transformer-based architecture for predicting preferred temperature setpoints leveraging big data</b></Link>. <i>Building and Environment [In Press]</i>, 111085.    
                 </>
             ),
+            (
+                <>
+                    <b>Chen, K.</b>, Xu, Q., Leow, B. and Ghahramani, A., 2022. <Link to="/publication/personal_thermal" ><b>Personal thermal comfort models based on physiological measurements–A design of experiments based review</b></Link>. <i>Building and Environment</i>, <i>228</i>, 109919.    
+                </>
+            )
+           
         ],
         Contacts: [
             { href: "tel:+6590503813", icon: faPhone, text: "+65 9050 3813" },
