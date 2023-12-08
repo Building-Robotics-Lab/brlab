@@ -111,7 +111,7 @@ const profiles = [
         Featured_Publications: [
             (
                 <>
-                    <b>Chen, K.</b> and Ghahramani, A., 2023. <Link to="/publication/a_transformer-based" ><b>A transformer-based architecture for predicting preferred temperature setpoints leveraging big data</b></Link>. <i>Building and Environment [In Press]</i>, 111085.    
+                    <b>Chen, K.</b> and Ghahramani, A., 2023. <Link to="/publication/a_transformer-based" ><b>ComfortGPT: a transformer-based architecture for predicting preferred temperature setpoints leveraging big data</b></Link>. <i>Building and Environment</i>, <i>248</i>, 111085.    
                 </>
             ),
             (

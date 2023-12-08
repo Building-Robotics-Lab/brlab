@@ -48,9 +48,9 @@ const JournalData = [
         year: "2023",
         publications: [
             {
-                title: "A transformer-based architecture for predicting preferred temperature setpoints leveraging big data",
-                journal: "Building and Environment [In Press]",
-                volume: "", issue: "",
+                title: "ComfortGPT: a transformer-based architecture for predicting preferred temperature setpoints leveraging big data",
+                journal: "Building and Environment",
+                volume: "248", issue: "",
                 page: "111085",
                 authors: [
                     { name: "*CHEN Kai", link: "/profile/Kai" },
@@ -76,7 +76,7 @@ const JournalData = [
                     "Found a diverse spectrum of setpoint/outdoor temperature relationships.",
                     "Achieved predictive performance of R2 = 0.77 and MAE = 0.65°C."
                 ],
-                abstract: "The transformation of personal comfort models into a scalable solution has been hindered by their heavy reliance on occupant feedback across a wide range of environmental conditions, and their inability to adapt to changes in preferences. However, these challenges could be addressed by leveraging large-scale databases to build pre-trained models and using limited occupant interactions to select the most representative model, while simultaneously detecting potential changes in preferences. This paper introduces a novel transformer-based architecture (ComfortGPT), which employs pre-trained models built on the data derived from ECOBEE Donate Your Data program through a uniquely crafted cleaning process. The pre-trained models are derived through clustering the supervised learning models applied to each user's data, thereby capturing the diverse range of thermostat preferences. Due to their generative nature, these models can predict setpoints across a wide range of environmental conditions. In order to adapt to variations in occupant preferences, we adopted a transformer mechanism to encode user thermostat interactions based on time sequence and relevance. We applied an exhaustive search to identify the optimal hyperparameters and achieved R2 of 0.77 and Mean Absolute Error (MAE) of 0.65 °C. We also found that the pre-trained models represent a spectrum of setpoint/outdoor temperature relationships ranging from warm-likers to cool-likers and referred to them as comfort archetypes. These archetypes could be employed in energy simulations and design applications, facilitating more personalized and energy-efficient indoor environments.",
+                abstract: "The transformation of personal comfort models into a scalable solution has been hindered by their heavy reliance on occupant feedback across a wide range of environmental conditions, and their inability to adapt to changes in preferences. However, these challenges could be addressed by leveraging large-scale databases to build pre-trained models and using limited occupant interactions to select the most representative model, while simultaneously detecting potential changes in preferences. This paper introduces a novel transformer-based architecture (ComfortGPT), which employs pre-trained models built on the data derived from ECOBEE Donate Your Data program through a uniquely crafted cleaning process. The pre-trained models are derived through clustering the supervised learning models applied to each user's data, thereby capturing the diverse range of thermostat preferences. Due to their generative nature, these models can predict setpoints across a wide range of environmental conditions. In order to adapt to variations in occupant preferences, we adopted a transformer mechanism to encode user thermostat interactions based on time sequence and relevance. We applied an exhaustive search to identify the optimal hyperparameters and achieved R2 of 0.77 and Mean Absolute Error (MAE) of 0.65°C. We also found that the pre-trained models represent a spectrum of setpoint/outdoor temperature relationships ranging from warm-likers to cool-likers and referred to them as comfort archetypes. These archetypes could be employed in energy simulations and design applications, facilitating more personalized and energy-efficient indoor environments.",
                 display_image: KaiPublication2
             },
             {
