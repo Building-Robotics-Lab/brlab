@@ -74,7 +74,7 @@ function Research() {
                         <div class="each_theme">
                             <Link to="#" onClick={() => handleThemeClick('theme3_section')}>
                                 <img src={Theme3} alt="The NUS Tropical Technologies Laboratory with building greenery, building-integrated photovoltaic, and various façades for the Resilient Cooling theme."></img>
-                                <h4><b>RESILIENT COOLING</b></h4>
+                                <h4><b>NATURE-BASED TECHNOLOGIES</b></h4>
                             </Link>
                             <p>Our focus is on façade technologies, which involves developing innovative building envelope systems that reduce the energy needed for cooling while also providing increased thermal comfort for occupants. This includes research developments and technology integration for enhancing the cooling effects of current urban greening systems, such as vertical greenery systems (VGS).</p>
                         </div>
@@ -182,7 +182,7 @@ function Research() {
 
             <Container sectionName='theme3_section'>
                 <div className="title">
-                    <h1>Resilient Cooling</h1>
+                    <h1>Nature-Based Technologies</h1>
                 </div>
                 <div className="whole_theme">
                     <div className='theme_section'>

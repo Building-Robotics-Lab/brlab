@@ -155,7 +155,7 @@ function Home() {
                 />
 
                 <ResearchSection
-                    title="RESILIENT COOLING"
+                    title="NATURE-BASED TECHNOLOGIES"
                     text="Our focus is on façade technologies, which involves developing <b><i>innovative building
                     envelope systems</i></b> that reduce the energy needed for cooling while also providing
                     increased thermal comfort for occupants. This includes research developments and technology
