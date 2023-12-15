@@ -46,7 +46,7 @@ function Collaborations() {
                 <div className="first_section">
                     <div className="title_section">
                         <h1><b>Industry Collaborations</b></h1>
-                        <h3><b>Through our interdisciplinary approach, we aim to create a sustainable future by leveraging sensing, learning, and control systems, and other cutting-edge technologies for smart buildings that prioritise environmental sustainability and improve the human experience.</b></h3>
+                        <h3><b>Our interdisciplinary approach aims to create a sustainable future by leveraging sensing, learning, control systems, and other smart building technologies that prioritise environmental sustainability and the human experience.</b></h3>
                         <h5>Are you an industry partner on a similar mission or have an idea for a project we could collaborate on for smart buildings and intelligent environments?</h5>
                     </div>
                     <div className="industry_partners">

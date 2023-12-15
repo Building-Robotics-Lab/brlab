@@ -46,7 +46,7 @@ function Research() {
                 <div className="first_section">
                     <div className="title_section">
                         <h1><b>Research Thrusts</b></h1>
-                        <h3><b>We strive to integrate robotics and human-centred AI into the built environment in an effort to improve energy efficiency and occupant well-being throughout the existing and forthcoming building stock.</b></h3>
+                        <h3><b>We strive to integrate robotics and human-centred AI into the built environment in an effort to improve energy efficiency and occupant well-being throughout the building stock.</b></h3>
                     </div>
                 </div>
             </Container>
