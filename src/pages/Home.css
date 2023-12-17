@@ -30,58 +30,73 @@
     padding-bottom: 3.3vmax;
 }
 
-/*.Home .second_section_Title h4 {
-    font-size: 1.5rem;
-    padding: 0px 25px 3.3vmax 25px;
-    font-weight: 500;
-}*/
-
 .Home .Each_Section {
     display: flex;
     flex-direction: row;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
-.Home .Each_Section .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.Home .Each_Section .grid-item {
-    width: 100%;
-}
-
-.Home .Each_Section .ResearchImage {
+.Home .Each_Section .grid-container,
+.Home .Each_Section .grid-container_right {
+    display: flex;
+    flex-direction: row;
     position: relative;
-    width: 100%;
-    padding-bottom: 100%;
-    overflow: hidden;
-    border-radius: 50%;
-    left: -315px;
+
 }
 
-.Home .Each_Section .ResearchImage img {
+.Home .Each_Section .grid-container::before {
+    content: "";
     position: absolute;
-    object-fit: cover;
-    object-position: left center;
-    width: 100%;
+    top: 0;
+    right: 0;
+    width: 85%;
     height: 100%;
+    background-color: white;
+    box-shadow: -1px 1px 20px 9px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border-radius: 10px;
+    z-index: 0;
 }
 
-.Home .Each_Section .ResearchText {
+.Home .Each_Section .grid-container_right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 100%;
+    background-color: white;
+    box-shadow: -1px 1px 20px 9px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.Home .Each_Section .ResearchImage,
+.Home .Each_Section .ResearchImage_right {
+    flex: 3;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.Home .Each_Section .ResearchImage img,
+.Home .Each_Section .ResearchImage_right img {
+    object-fit: contain;
+    width: 400px;
+    height: 400px;
+}
+
+.Home .Each_Section .ResearchText,
+.Home .Each_Section .ResearchText_right {
+    flex: 7;
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
     margin: auto;
-    margin-left: -30%;
-    width: 130%;
+    padding: 5rem;
     z-index: 1;
-    padding: 7.5rem;
-    box-shadow: -1px 1px 20px 9px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    font-size: larger;
 }
 
 .Home .Each_Section .ResearchText p,
@@ -90,22 +105,6 @@
     text-align: justify;
     text-justify: inter-word;
     line-height: 1.5;
-}
-
-.Home .Each_Section .ResearchText_right {
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    justify-content: center;
-    background-color: white;
-    margin: auto;
-    margin-right: -30%;
-    width: 130%;
-    z-index: 1;
-    padding: 7.5rem;
-    box-shadow: -1px 1px 20px 9px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    font-size: larger;
 }
 
 .Home .HomeButtons {
@@ -251,36 +250,39 @@
         padding-bottom: calc(0.7 * 3.3vmax);
     }
 
-    /*.Home .second_section_Title h4 {
-        font-size: calc(0.7 * 1.5rem);
-        padding: 0px calc(0.7 * 25px) calc(0.7 * 3.3vmax) calc(0.7 * 25px);
-    }*/
+    .Home .Each_Section h2 {
+        font-size: calc(0.7 * 2rem);
+    }
 
     .Home .Each_Section {
-        padding-bottom: calc(0.7 * 2rem);
+        padding-bottom: calc(0.7 * 4rem);
     }
 
-    .Home .Each_Section .grid-container {
-        grid-template-columns: calc(0.7 * 1fr) calc(0.7 * 1fr);
+    .Home .Each_Section .ResearchImage img,
+    .Home .Each_Section .ResearchImage_right img {
+        width: calc(0.7 * 400px);
+        height: calc(0.7 * 400px);
     }
 
-    .Home .Each_Section .ResearchText {
-        padding: calc(0.7 * 7.5rem);
+    .Home .Each_Section .grid-container::before {
+        box-shadow: -1px 1px calc(0.7 * 20px) calc(0.7 * 9px) rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+
+    .Home .Each_Section .grid-container_right::before {
         box-shadow: -1px 1px calc(0.7 * 20px) calc(0.7 * 9px) rgba(0, 0, 0, 0.3);
         border-radius: calc(0.7 * 10px);
+    }
+
+    .Home .Each_Section .ResearchText,
+    .Home .Each_Section .ResearchText_right {
+        padding: calc(0.7 * 5rem);
         font-size: 0.7rem;
     }
 
     .Home .Each_Section .ResearchText p,
     .Home .Each_Section .ResearchText_right p {
         margin-top: calc(0.7 * 0.5rem);
-    }
-
-    .Home .Each_Section .ResearchText_right {
-        padding: calc(0.7 * 7.5rem);
-        box-shadow: -1px 1px calc(0.7 * 20px) calc(0.7 * 9px) rgba(0, 0, 0, 0.3);
-        border-radius: calc(0.7 * 10px);
-        font-size: 0.7rem;
     }
 
     /* Third Section */
@@ -360,39 +362,42 @@
 
     .Home .second_section_Title h2 {
         font-size: calc(0.4 * 2rem);
-        padding-bottom: calc(0.4 * 3.3vmax)
+        padding-bottom: calc(0.4 * 3.3vmax);
     }
 
-    /*.Home .second_section_Title h4 {
-        font-size: calc(0.4 * 1.5rem);
-        padding: 0px calc(0.4 * 25px) calc(0.4 * 3.3vmax) calc(0.4 * 25px);
-    }*/
+    .Home .Each_Section h2 {
+        font-size: calc(0.4 * 2rem);
+    }
 
     .Home .Each_Section {
-        padding-bottom: calc(0.4 * 2rem);
+        padding-bottom: calc(0.4 * 4rem);
     }
 
-    .Home .Each_Section .grid-container {
-        grid-template-columns: calc(0.4 * 1fr) calc(0.4 * 1fr);
+    .Home .Each_Section .ResearchImage img,
+    .Home .Each_Section .ResearchImage_right img {
+        width: calc(0.4 * 400px);
+        height: calc(0.4 * 400px);
     }
 
-    .Home .Each_Section .ResearchText {
-        padding: calc(0.4 * 7.5rem);
+    .Home .Each_Section .grid-container::before {
+        box-shadow: -1px 1px calc(0.4 * 20px) calc(0.4 * 9px) rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+
+    .Home .Each_Section .grid-container_right::before {
         box-shadow: -1px 1px calc(0.4 * 20px) calc(0.4 * 9px) rgba(0, 0, 0, 0.3);
         border-radius: calc(0.4 * 10px);
-        font-size: 0.5rem;
+    }
+
+    .Home .Each_Section .ResearchText,
+    .Home .Each_Section .ResearchText_right {
+        padding: calc(0.4 * 5rem);
     }
 
     .Home .Each_Section .ResearchText p,
     .Home .Each_Section .ResearchText_right p {
         margin-top: calc(0.4 * 0.5rem);
-    }
-
-    .Home .Each_Section .ResearchText_right {
-        padding: calc(0.4 * 7.5rem);
-        box-shadow: -1px 1px calc(0.4 * 20px) calc(0.4 * 9px) rgba(0, 0, 0, 0.3);
-        border-radius: calc(0.4 * 10px);
-        font-size: 0.5rem;
+        font-size: 0.4rem;
     }
 
     /* Third Section */
@@ -475,35 +480,38 @@
         padding-bottom: calc(0.3 * 3.3vmax);
     }
 
-    /*.Home .second_section_Title h4 {
-        font-size: calc(0.3 * 1.5rem);
-        padding: 0px calc(0.3 * 25px) calc(0.3 * 3.3vmax) calc(0.3 * 25px);
-    }*/
-
     .Home .Each_Section {
-        padding-bottom: calc(0.3 * 2rem);
+        padding-bottom: calc(0.3 * 4rem);
     }
 
-    .Home .Each_Section .grid-container {
-        grid-template-columns: calc(0.3 * 1fr) calc(0.3 * 1fr);
+    .Home .Each_Section h2 {
+        font-size: calc(0.3 * 2rem);
     }
 
-    .Home .Each_Section .ResearchText {
-        padding: calc(0.3 * 7.5rem);
+    .Home .Each_Section .ResearchImage img,
+    .Home .Each_Section .ResearchImage_right img {
+        width: calc(0.3 * 400px);
+        height: calc(0.3 * 400px);
+    }
+
+    .Home .Each_Section .grid-container::before {
+        box-shadow: -1px 1px calc(0.3 * 20px) calc(0.3 * 9px) rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+
+    .Home .Each_Section .grid-container_right::before {
         box-shadow: -1px 1px calc(0.3 * 20px) calc(0.3 * 9px) rgba(0, 0, 0, 0.3);
         border-radius: calc(0.3 * 10px);
-        font-size: 0.3rem;
+    }
+
+    .Home .Each_Section .ResearchText,
+    .Home .Each_Section .ResearchText_right {
+        padding: calc(0.3 * 5rem);
     }
 
     .Home .Each_Section .ResearchText p,
     .Home .Each_Section .ResearchText_right p {
         margin-top: calc(0.3 * 0.5rem);
-    }
-
-    .Home .Each_Section .ResearchText_right {
-        padding: calc(0.3 * 7.5rem);
-        box-shadow: -1px 1px calc(0.3 * 20px) calc(0.3 * 9px) rgba(0, 0, 0, 0.3);
-        border-radius: calc(0.3 * 10px);
         font-size: 0.3rem;
     }
 

@@ -244,6 +244,16 @@
     margin-bottom: 1.65vmax;
 }
 
+.ComfortGPT .third_section .guidelines_text .paper_link {
+    color: rgb(45, 99, 83);
+}
+
+.ComfortGPT .third_section .guidelines_text .paper_link:hover {
+    background-color: rgb(45, 99, 83);
+    color: white;
+    border-radius: 0.25rem;
+}
+
 .ComfortGPT .third_section .guidelines_text ul {
     padding-left: 1rem;
 }

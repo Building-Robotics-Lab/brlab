@@ -135,8 +135,8 @@
 .Research .whole_theme>*:not(:last-child) {
     position: relative;
     /* Needed for positioning the pseudo-element */
-    margin-bottom: 3.3vmax;
-    padding-bottom: 3.3vmax;
+    margin-bottom: calc(3.3vmax + 0.5rem);
+    padding-bottom: calc(3.3vmax + 0.5rem);
 }
 
 .Research .whole_theme>*:not(:last-child)::after {
@@ -281,8 +281,8 @@
     }
 
     .Research .whole_theme>*:not(:last-child) {
-        margin-bottom: calc(0.7 * 3.3vmax);
-        padding-bottom: calc(0.7 * 3.3vmax);
+        margin-bottom: calc(0.7 * calc(3.3vmax + 0.5rem));
+        padding-bottom: calc(0.7 * calc(3.3vmax + 0.5rem));
     }
 
     .Research .whole_theme>*:not(:last-child)::after {
@@ -401,8 +401,8 @@
     }
 
     .Research .whole_theme>*:not(:last-child) {
-        margin-bottom: calc(0.4 * 3.3vmax);
-        padding-bottom: calc(0.4 * 3.3vmax);
+        margin-bottom: calc(0.4 * calc(3.3vmax + 0.5rem));
+        padding-bottom: calc(0.4 * calc(3.3vmax + 0.5rem));
     }
 
     .Research .whole_theme>*:not(:last-child)::after {
@@ -521,8 +521,8 @@
     }
 
     .Research .whole_theme>*:not(:last-child) {
-        margin-bottom: calc(0.3 * 3.3vmax);
-        padding-bottom: calc(0.3 * 3.3vmax);
+        margin-bottom: calc(0.3 * calc(3.3vmax + 0.5rem));
+        padding-bottom: calc(0.3 * calc(3.3vmax + 0.5rem));
     }
 
     .Research .whole_theme>*:not(:last-child)::after {

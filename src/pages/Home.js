@@ -6,10 +6,16 @@ import Footer from '../components/Footer';
 import Carousel from './../components/Carousel';
 import Container from './../components/Container';
 import LandingPageVideo from './../components/Website Data/3xLandingPageVideo.mp4'
-import FirstResearchImage from './../components/Website Data/sensing@2x.png'
-import SecondResearchImage from './../components/Website Data/Human-centric@2x.png'
-import ThirdResearchImage from './../components/Website Data/resilient@2x.png'
-import FourthResearchImage from './../components/Website Data/resilient@2x.png'
+
+import FirstResearchImage from './../components/Website Data/sensing_2x-removebg.png'
+import SecondResearchImage from './../components/Website Data/Human-centric_2x-removebg.png'
+import ThirdResearchImage from './../components/Website Data/resilient_2x-removebg.png'
+import FourthResearchImage from './../components/Website Data/resilient_2x-removebg.png'
+
+// import FirstResearchImage from './../components/Website Data/sensing@2x.png'
+// import SecondResearchImage from './../components/Website Data/Human-centric@2x.png'
+// import ThirdResearchImage from './../components/Website Data/resilient@2x.png'
+// import FourthResearchImage from './../components/Website Data/resilient@2x.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers } from '@fortawesome/free-solid-svg-icons';
@@ -290,7 +296,7 @@ const ResearchSection = ({ title, text, imageUrl, researchAltText }) => {
 const ResearchSectionRight = ({ title, text, imageUrl, researchAltText }) => {
     return (
         <div className='Each_Section'>
-            <div className="grid-container">
+            <div className="grid-container_right">
                 <div className='ResearchText_right grid-item'>
                     <h2><b>{title}</b></h2>
                     <p dangerouslySetInnerHTML={{ __html: text }} />
