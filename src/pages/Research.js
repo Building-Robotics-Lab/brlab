@@ -104,7 +104,7 @@ function Research() {
                         </div>
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">
-                            <p>Chen, K. and Ghahramani, A., 2023. <Link to="/publication/a_transformer-based"><b>ComfortGPT: a transformer-based architecture for predicting preferred temperature setpoints leveraging big data</b></Link>. <i>Building and Environment</i>, <i>248</i>, 111085.</p>
+                            <p>Chen, K. and Ghahramani, A., 2023. <Link to="/publication/comfortgpt:_a"><b>ComfortGPT: a transformer-based architecture for predicting preferred temperature setpoints leveraging big data</b></Link>. <i>Building and Environment</i>, <i>248</i>, 111085.</p>
                             <p>Chen, K., Xu, Q., Leow, B. and Ghahramani, A., 2022. <Link to="/publication/personal_thermal"><b>Personal thermal comfort models based on physiological measurements-A design of experiments based review</b></Link>. <i>Building and Environment</i>, <i>228</i>, 109919.</p>
                         </div>
                         <p className='tool_links'><Link to="/ComfortGPT"><b>ComfortGPT</b></Link></p>
