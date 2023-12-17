@@ -50,7 +50,7 @@ const slides = [
         image: GuillaumeNews,
         title: '<b>Please welcome Guillaume Lecronier to the lab!</b>',
         date: '21/09/2023',
-        link: 'FourthNewsSection',
+        link: 'ThirdNewsSection',
     },
     {
         image: PierreNews,
@@ -68,7 +68,7 @@ const slides = [
         image: PublicationsRiccardoNews,
         title: '<b><i>Energy and Built Environment</i> publication announcement!</b>',
         date: '04/07/2023',
-        link: 'ThirdNewsSection',
+        link: 'SecondNewsSection',
     },
     {
         image: KellyNews,
@@ -86,7 +86,7 @@ const slides = [
         image: PublicationsKaiNews,
         title: '<b><i>Building and Environment</i> publication announcement!</b>',
         date: '15/01/2023',
-        link: 'SecondNewsSection',
+        link: 'FirstNewsSection',
     },
     {
         image: ConnorNews,

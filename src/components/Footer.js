@@ -1,15 +1,51 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react';
 import './Footer.css';
 import NUSLogo from './Website Data/nus_logo_full-horizontal.jpg'
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
+    const leftTextRef = useRef(null);
+    const midTextRef = useRef(null);
+    const rightTextRef = useRef(null);
+
+    useEffect(() => {
+        const updateMargins = () => {
+            // const leftTextHeight = leftTextRef.current.offsetHeight;
+            const brlFooter = leftTextRef.current.querySelector('.BRL_Footer');
+            const brlFooterHeight = brlFooter.offsetHeight + 1.65 * window.innerWidth / 100;
+            const leftTextH3 = leftTextRef.current.querySelector('.left_text h3');
+            const leftTextH3Height = leftTextH3.offsetHeight + parseFloat(window.getComputedStyle(leftTextH3).marginBottom);
+            const totalHeight = leftTextH3Height + brlFooterHeight;
+
+            // Calculate mid_text h3 height and subtract it from totalHeight
+            const midTextH3Height = midTextRef.current.offsetHeight;
+            const remainingHeightMid = totalHeight - midTextH3Height;
+            midTextRef.current.style.marginBottom = `${remainingHeightMid}px`;
+
+            // Calculate right_text h3 height and subtract it from totalHeight
+            const rightTextH3Height = rightTextRef.current.offsetHeight;
+            const remainingHeightRight = totalHeight - rightTextH3Height;
+            rightTextRef.current.style.marginBottom = `${remainingHeightRight}px`;
+        };
+
+        // Initial adjustment
+        updateMargins();
+
+        // Update on window resize
+        window.addEventListener('resize', updateMargins);
+
+        // Cleanup
+        return () => {
+            window.removeEventListener('resize', updateMargins);
+        };
+    }, []);
+
     return (
         <>
             <div className="Footer">
                 <div className="footer-container">
-                    <div className="left">
+                    <div className="left" ref={leftTextRef}>
                         <div className="left_text">
                             <h3>Building Robotics Laboratory</h3>
                             <div className="BRL_Footer">
@@ -44,7 +80,7 @@ const Footer = () => {
                     </div>
                     <div className="mid">
                         <div className="mid_text">
-                            <h3>Mailing Address</h3>
+                            <h3 ref={midTextRef}>Mailing Address</h3>
                             <p>Building Robotics Laboratory</p>
                             <p>Department of the Built Environment</p>
                             <p>College of Design and Engineering</p>
@@ -55,7 +91,7 @@ const Footer = () => {
                     </div>
                     <div className="right">
                         <div className="right_text">
-                            <h3>Quick Links</h3>
+                            <h3 ref={rightTextRef}>Quick Links</h3>
                             <Link to={`/`}>
                                 <p>Home</p>
                             </Link>

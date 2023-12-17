@@ -30,42 +30,42 @@ function News() {
 
     const [highlightedSection, setHighlightedSection] = useState(null);
 
-    // useEffect(() => {
-    //     const hashes = window.location.hash.split("#");
-    //     if (hashes.length > 2) {
-    //         const sectionID = hashes[2];
-    //         const section = document.getElementById(sectionID);
-    //         if (section) {
-    //             section.scrollIntoView({ behavior: 'smooth' });
-    //             setHighlightedSection(sectionID);
-    //         }
-    //     }
-    // }, []);
-
     useEffect(() => {
-        const scrollToSection = () => {
-            const hashes = window.location.hash.split("#");
-            if (hashes.length > 1) {
-                const sectionID = hashes[1]; // Get the second part of the hash
-                const section = document.getElementById(sectionID);
-                if (section) {
-                    section.scrollIntoView({ behavior: 'smooth' });
-                    setHighlightedSection(sectionID);
-                }
+        const hashes = window.location.hash.split("#");
+        if (hashes.length > 2) {
+            const sectionID = hashes[2];
+            const section = document.getElementById(sectionID);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+                setHighlightedSection(sectionID);
             }
         }
-
-        // Initial scroll when component mounts
-        scrollToSection();
-
-        // Add an event listener for hash changes
-        window.addEventListener('hashchange', scrollToSection);
-
-        // Cleanup the event listener when the component unmounts
-        return () => {
-            window.removeEventListener('hashchange', scrollToSection);
-        };
     }, []);
+
+    // useEffect(() => {
+    //     const scrollToSection = () => {
+    //         const hashes = window.location.hash.split("#");
+    //         if (hashes.length > 1) {
+    //             const sectionID = hashes[1]; // Get the second part of the hash
+    //             const section = document.getElementById(sectionID);
+    //             if (section) {
+    //                 section.scrollIntoView({ behavior: 'smooth' });
+    //                 setHighlightedSection(sectionID);
+    //             }
+    //         }
+    //     }
+
+    //     // Initial scroll when component mounts
+    //     scrollToSection();
+
+    //     // Add an event listener for hash changes
+    //     window.addEventListener('hashchange', scrollToSection);
+
+    //     // Cleanup the event listener when the component unmounts
+    //     return () => {
+    //         window.removeEventListener('hashchange', scrollToSection);
+    //     };
+    // }, []);
 
     const newsData = [
         {
