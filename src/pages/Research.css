@@ -135,8 +135,8 @@
 .Research .whole_theme>*:not(:last-child) {
     position: relative;
     /* Needed for positioning the pseudo-element */
-    margin-bottom: calc(3.3vmax + 0.5rem);
-    padding-bottom: calc(3.3vmax + 0.5rem);
+    margin-bottom: calc(3.3vmax + 0.25vmax);
+    padding-bottom: calc(3.3vmax + 0.25vmax);
 }
 
 .Research .whole_theme>*:not(:last-child)::after {

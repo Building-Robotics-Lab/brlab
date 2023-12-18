@@ -99,9 +99,9 @@ const profiles = [
         ProfileName: 'Kai',
         ProfileLink: "/profile/Kai",
         ProfilePic: KaiPic,
-        Name: 'CHEN Kai',
+        Name: 'Chen Kai',
         Position: 'PhD Student',
-        Biography: 'CHEN Kai is a third-year PhD candidate at the National University of Singapore - Department of the Built Environment and is currently engaged in research that focuses on thermal comfort modelling, long-term thermal comfort prediction, and energy conservation in HVAC systems. He firmly believes that accurately addressing occupants\' comfort is vital for optimising energy consumption and enhancing human well-being. In addition to his research on these topics, Kai has conducted research on biomass heating for domestic and commercial buildings in the UK, performed analysis on building systems\' components, and gained experience in energy simulation and optimisation.',
+        Biography: 'Chen Kai is a third-year PhD candidate at the National University of Singapore - Department of the Built Environment and is currently engaged in research that focuses on thermal comfort modelling, long-term thermal comfort prediction, and energy conservation in HVAC systems. He firmly believes that accurately addressing occupants\' comfort is vital for optimising energy consumption and enhancing human well-being. In addition to his research on these topics, Kai has conducted research on biomass heating for domestic and commercial buildings in the UK, performed analysis on building systems\' components, and gained experience in energy simulation and optimisation.',
         Education: [
             'PhD, National University of Singapore (NUS), Built Environment (current)',
             'MSc (<i>Merit</i>), University College London (UCL), Smart Buildings and Digital Engineering (2021)',

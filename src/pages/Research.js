@@ -96,11 +96,11 @@ function Research() {
                 <div className="whole_theme">
                     <div className='theme_section'>
                         <div className="theme_details">
-                            <img src={Theme1} alt="A thermal comfort graph with Predicted Setpoint Temperature on the y-axis and Daily Mean Outdoor Temperature on the x-axis from a related publication by CHEN Kai."></img>
+                            <img src={Theme1} alt="A thermal comfort graph with Predicted Setpoint Temperature on the y-axis and Daily Mean Outdoor Temperature on the x-axis from a related publication Chen Kai."></img>
                             <h4><b>Optimising Thermal Comfort in the Built Environment</b></h4>
                             <h6><b>By bridging physiological signals and variations of comfort preferences of occupants with modern data analytics, we are developing innovative approaches and models to accurately capture occupants' comfort preferences over time and benefit human well-being. </b></h6>
                             <p>In the evolving landscape of building climate control, there's a growing recognition that standard thermal settings often fall short in addressing the diversity of human comfort. Physiological measurements have emerged as a crucial component in capturing individualised thermal comfort profiles, underscoring the fact that comfort isn't merely a subjective feeling but deeply rooted in our bodily responses. However, harnessing this rich physiological data at scale has been a challenge. Traditional methods, with their heavy reliance on continuous occupant interactions, are not only cumbersome but also limited in their adaptability. Recently, transformer-based architectures, which employ pre-trained models built on users' historical data, become the solutions to minimise the need for constant occupant feedback while accurately predicting preferred temperature setpoint. Our research is exploring different approaches to accurately capture variations of occupants' comfort preferences over time and apply them to real-world applications to benefit human health and well-being.</p>
-                            <p>This project is led by <Link to="/profile/Kai"><b>CHEN Kai</b></Link>.</p>
+                            <p>This project is led by <Link to="/profile/Kai"><b>Chen Kai</b></Link>.</p>
                         </div>
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">

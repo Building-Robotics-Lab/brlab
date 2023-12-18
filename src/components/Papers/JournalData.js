@@ -53,7 +53,7 @@ const JournalData = [
                 volume: "248", issue: "",
                 page: "111085",
                 authors: [
-                    { name: "*CHEN Kai", link: "/profile/Kai" },
+                    { name: "*Chen Kai", link: "/profile/Kai" },
                     { name: "Ali Ghahramani", link: "/team#prof_profile" }
                 ],
                 minRead: "",
@@ -258,7 +258,7 @@ const JournalData = [
                 volume: "228", issue: "",
                 page: "109919",
                 authors: [
-                    { name: "*CHEN Kai", link: "/profile/Kai" },
+                    { name: "*Chen Kai", link: "/profile/Kai" },
                     { name: "*Qian Xu" },
                     { name: "Berlynette Leow" },
                     { name: "Ali Ghahramani", link: "/team#prof_profile" }

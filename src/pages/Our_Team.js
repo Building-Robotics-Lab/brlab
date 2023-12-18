@@ -45,7 +45,7 @@ function Our_Team() {
             link: 'Riccardo'
         },
         {
-            name: 'CHEN Kai',
+            name: 'Chen Kai',
             role: 'PhD Student',
             skills: 'Building Energy Efficiency; Thermal Comfort; Smart Buildings',
             imgSrc: KaiPic,
