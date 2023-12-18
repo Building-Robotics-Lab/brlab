@@ -8,9 +8,9 @@ import Container from './../components/Container';
 import LandingPageVideo from './../components/Website Data/3xLandingPageVideo.mp4'
 
 import FirstResearchImage from './../components/Website Data/sensing_2x-removebg.png'
-import SecondResearchImage from './../components/Website Data/Human-centric_2x-removebg.png'
+import SecondResearchImage from './../components/Website Data/Thermal still.jpg'
 import ThirdResearchImage from './../components/Website Data/resilient_2x-removebg.png'
-import FourthResearchImage from './../components/Website Data/resilient_2x-removebg.png'
+import FourthResearchImage from './../components/Website Data/Interface-merged.png'
 
 // import FirstResearchImage from './../components/Website Data/sensing@2x.png'
 // import SecondResearchImage from './../components/Website Data/Human-centric@2x.png'

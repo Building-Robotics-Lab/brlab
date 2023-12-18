@@ -82,9 +82,9 @@
 
 .Home .Each_Section .ResearchImage img,
 .Home .Each_Section .ResearchImage_right img {
-    object-fit: contain;
-    width: 400px;
-    height: 400px;
+    object-fit: fill;
+    width: 330px;
+    height: 320px;
 }
 
 .Home .Each_Section .ResearchText,

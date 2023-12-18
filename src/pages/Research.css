@@ -94,8 +94,8 @@
 
 .Research .second_section .themes .each_theme img {
     width: 100%;
-    height: 300px;
-    object-fit: contain;
+    height: 200px;
+    object-fit: fill;
 }
 
 .Research .second_section .themes .each_theme h4 {
@@ -164,14 +164,18 @@
     width: 30%;
     height: auto;
     float: right;
+    margin-right: 0;
     margin-left: 2rem;
-    margin-right: 0rem;
+    margin-bottom: 1rem;
 }
 
 .Research .theme_section:nth-child(odd) .theme_details img {
+    width: 30%;
+    height: auto;
     float: left;
     margin-left: 0;
     margin-right: 2rem;
+    margin-bottom: 1rem;
 }
 
 .Research .theme_section .theme_details h4 {

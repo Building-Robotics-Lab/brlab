@@ -10,17 +10,17 @@ import TraneLogo from './../components/Website Data/tt_logo_color_rgb.jpg'
 import GreenologyLogo from './../components/Website Data/Greenology logo2.png'
 import CoLogo from './../components/Website Data/Co Innovation lab logo.jpg'
 
-import Theme1 from './../components/Website Data/Kai_OPC.jpg'
-import Theme1_2 from './../components/Website Data/Riccardo1.jpg'
+import Theme1 from './../components/Website Data/kai_paper2.jpg'
+import Theme1_2 from './../components/Website Data/riccardo-publication2.png'
 
 import Theme2 from './../components/Website Data/Iqbal_DT2.png'
 import Theme2_1 from './../components/Website Data/Ilyas_rPPG@2x.png'
 import Theme2_2 from './../components/Website Data/Riccardo2.jpg'
 
 import Theme3_0 from './../components/Website Data/Iqbal_VGS.jpg'
-import Theme3 from './../components/Website Data/Kelly_T2.jpg'
+import Theme3 from './../components/Website Data/Kelly_T2.png'
 
-import Theme4 from './../components/Website Data/Connor_VPP.jpg'
+import Theme4 from './../components/Website Data/Interface-merged.png'
 
 function Research() {
 

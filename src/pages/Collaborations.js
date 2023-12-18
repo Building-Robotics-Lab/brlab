@@ -18,7 +18,7 @@ import Theme2_1 from './../components/Website Data/Ilyas_rPPG@2x.png'
 import Theme2_2 from './../components/Website Data/Riccardo2.jpg'
 
 import Theme3_0 from './../components/Website Data/Iqbal_VGS.jpg'
-import Theme3 from './../components/Website Data/Kelly_T2.jpg'
+import Theme3 from './../components/Website Data/Kelly_T2.png'
 
 import Theme4 from './../components/Website Data/Connor_VPP.jpg'
 
@@ -214,7 +214,7 @@ function Collaborations() {
 
             <Container sectionName='theme3_section'>
                 <div className="title">
-                    <h1>Previous Publications</h1>
+                    <h1>Previous Deliverables</h1>
                 </div>
                 {/*
                 <div className="whole_theme">
