@@ -80,7 +80,7 @@ function Collaborations() {
             <Container useOrange={true}>
                 <div className="second_section">
                     <div className="title_section">
-                        <h2><b>[Currently Under Construction]</b></h2>
+                        <h2><b>[Coming soon]</b></h2>
                     </div>
                     {/*
                     <div className="themes">
@@ -212,10 +212,11 @@ function Collaborations() {
                 */}
             </Container>
 
-            {/*<Container sectionName='theme3_section'>
+            <Container sectionName='theme3_section'>
                 <div className="title">
-                    <h1>Previous Projects</h1>
+                    <h1>Previous Publications</h1>
                 </div>
+                {/*
                 <div className="whole_theme">
                     <div className='theme_section'>
                         <div className="theme_details">
@@ -246,8 +247,8 @@ function Collaborations() {
                             <p>Determine the VGS design that optimally suits tropical climates, considering factors like wall type, plant selection, substrate, geometry, orientation, and irrigation method to achieve maximal benefits.</p>
                         </div>
                     </div>
-                </div>
-            </Container>*/}
+                </div>*/}
+            </Container>
 
             {/*<Container useOrange={true} sectionName='theme4_section'>
                 <div className="title">
