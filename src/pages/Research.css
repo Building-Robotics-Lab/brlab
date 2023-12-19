@@ -95,7 +95,7 @@
 .Research .second_section .themes .each_theme img {
     width: 100%;
     height: 200px;
-    object-fit: fill;
+    object-fit: contain;
 }
 
 .Research .second_section .themes .each_theme h4 {
@@ -259,7 +259,7 @@
     }
 
     .Research .second_section .themes .each_theme img {
-        height: calc(0.7 * 300px);
+        height: calc(0.4 * 300px);
     }
 
     .Research .second_section .themes .each_theme h4 {
@@ -379,7 +379,7 @@
     }
 
     .Research .second_section .themes .each_theme img {
-        height: calc(0.4 * 300px);
+        height: calc(0.2 * 300px);
     }
 
     .Research .second_section .themes .each_theme h4 {
@@ -499,7 +499,7 @@
     }
 
     .Research .second_section .themes .each_theme img {
-        height: calc(0.3 * 300px);
+        height: calc(0.2 * 300px);
     }
 
     .Research .second_section .themes .each_theme h4 {

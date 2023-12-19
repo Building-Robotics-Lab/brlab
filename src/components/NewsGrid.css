@@ -7,7 +7,7 @@
 .NewsGrid .NewsPic img {
     width: 100%;
     height: 300px;
-    object-fit: fill;
+    object-fit: contain;
     margin-bottom: 1.5rem;
 }
 
