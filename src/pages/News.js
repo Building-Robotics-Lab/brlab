@@ -6,7 +6,7 @@ import './News.css'
 import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
-import KaiPublication2 from './../components/Website Data/kai_paper2.jpg'
+import KaiPublication2 from './../components/Website Data/kai_paper2 copy.jpg'
 import RiccardoPublication2 from './../components/Website Data/riccardo-publication2.png'
 import IqbalPublication2 from './../components/Website Data/1-s2.0-S0360132323009319-gr3_lrg.jpg'
 import PierrePic from './../components/Website Individual Information/Pierre-Louis/image copy.jpg';
