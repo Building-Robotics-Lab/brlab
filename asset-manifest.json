@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/brlab/static/css/main.df1bcd11.css",
-    "main.js": "/brlab/static/js/main.4ac4903a.js",
+    "main.css": "/brlab/static/css/main.b4dbf17c.css",
+    "main.js": "/brlab/static/js/main.219f2381.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
     "static/media/Iqbal_DT2.png": "/brlab/static/media/Iqbal_DT2.73b332b29a8b111f14a7.png",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
     "static/media/image.jpg": "/brlab/static/media/image.2821a7faca5269b477c9.jpg",
     "static/media/1-s2.0-S-gr2_lrg.jpg": "/brlab/static/media/1-s2.0-S0306261915016888-gr2_lrg.6d077d348833c7a56185.jpg",
     "static/media/1-s2.0-S-gr1_lrg.jpg": "/brlab/static/media/1-s2.0-S0360132318302518-gr1_lrg.b499839525f32d8b4461.jpg",
+    "static/media/Iqbal_DT2 copy.png": "/brlab/static/media/Iqbal_DT2 copy.90e00b2f73465b1ecdc0.png",
     "static/media/OTSToutput_example2.png": "/brlab/static/media/OTSToutput_example2.0ad7b46d87573c525439.png",
     "static/media/figure1.jpg": "/brlab/static/media/figure1.0da7989ea1f76cbd3d8a.jpg",
     "static/media/Screenshot 2023-11-19 at 20.50.54.png": "/brlab/static/media/Screenshot 2023-11-19 at 20.50.54.4d80071a24ee60dd8b93.png",
@@ -19,6 +20,7 @@
     "static/media/1-s2.0-S-gr3_lrg.jpg": "/brlab/static/media/1-s2.0-S0360132323009319-gr3_lrg.b3fd37da5c12209b3fdb.jpg",
     "static/media/1-s2.0-S-gr4_lrg.jpg": "/brlab/static/media/1-s2.0-S2352710219305200-gr4_lrg.b2aef02f62642b5a14e1.jpg",
     "static/media/kai_paper2.jpg": "/brlab/static/media/kai_paper2.2238426e1982f1899af4.jpg",
+    "static/media/Interface-merged copy.png": "/brlab/static/media/Interface-merged copy.8aa9807764f5763f845d.png",
     "static/media/fbuil-06-00049-g007.jpeg": "/brlab/static/media/fbuil-06-00049-g007.94946d82915fc9db4774.jpeg",
     "static/media/1-s2.0-S-gr13_lrg.jpg": "/brlab/static/media/1-s2.0-S0378778817323988-gr13_lrg.23c5e915a9a3be649484.jpg",
     "static/media/Screenshot 2023-11-19 at 20.55.33.png": "/brlab/static/media/Screenshot 2023-11-19 at 20.55.33.616bea6589fb2f06a408.png",
@@ -34,6 +36,7 @@
     "static/media/Interface-merged.png": "/brlab/static/media/Interface-merged.3895dd81522454cb7763.png",
     "static/media/COMFORTGPToutput_example1.png": "/brlab/static/media/COMFORTGPToutput_example1.584aecdb7008dd946320.png",
     "static/media/1-s2.0-S-gr8_lrg.jpg": "/brlab/static/media/1-s2.0-S0306261918312571-gr8_lrg.b0a66aa96de0753383e6.jpg",
+    "static/media/image copy.jpg": "/brlab/static/media/image copy.c99ac1e1288d5872e5a8.jpg",
     "static/media/1-s2.0-S-gr5_lrg.jpg": "/brlab/static/media/1-s2.0-S0306261917316409-gr5_lrg.1a76f858288efa494cf4.jpg",
     "static/media/kai_paper.png": "/brlab/static/media/kai_paper.cdc7943c49a7594f5783.png",
     "static/media/kai_pub1.png": "/brlab/static/media/kai_pub1.cdc7943c49a7594f5783.png",
@@ -43,6 +46,7 @@
     "static/media/1-s2.0-S-gr6_lrg.jpg": "/brlab/static/media/1-s2.0-S0360132315001833-gr6_lrg.0bca638a42af346f7470.jpg",
     "static/media/7408228-fig-1-source-large.gif": "/brlab/static/media/7408228-fig-1-source-large.df55b59972ac4f9e8c23.gif",
     "static/media/Connor_VPP.jpg": "/brlab/static/media/Connor_VPP.c02e2101d87dcdd46baf.jpg",
+    "static/media/kai_paper2 copy.jpg": "/brlab/static/media/kai_paper2 copy.db710c4542ce57d6cb21.jpg",
     "static/media/nus_logo_full-horizontal.jpg": "/brlab/static/media/nus_logo_full-horizontal.e540176bda557a3d95f3.jpg",
     "static/media/Co Innovation lab logo.jpg": "/brlab/static/media/Co Innovation lab logo.48ffd48af54883eafeb2.jpg",
     "static/media/1-s2.0-S-gr2.jpg": "/brlab/static/media/1-s2.0-S0360132316303456-gr2.4c6266128fa578738812.jpg",
@@ -69,11 +73,11 @@
     "static/media/tt_logo_color_rgb.jpg": "/brlab/static/media/tt_logo_color_rgb.b8c960c7e4476b1e552a.jpg",
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
-    "main.df1bcd11.css.map": "/brlab/static/css/main.df1bcd11.css.map",
-    "main.4ac4903a.js.map": "/brlab/static/js/main.4ac4903a.js.map"
+    "main.b4dbf17c.css.map": "/brlab/static/css/main.b4dbf17c.css.map",
+    "main.219f2381.js.map": "/brlab/static/js/main.219f2381.js.map"
   },
   "entrypoints": [
-    "static/css/main.df1bcd11.css",
-    "static/js/main.4ac4903a.js"
+    "static/css/main.b4dbf17c.css",
+    "static/js/main.219f2381.js"
   ]
 }
