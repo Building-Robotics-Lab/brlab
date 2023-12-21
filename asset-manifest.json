@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/brlab/static/css/main.b4dbf17c.css",
-    "main.js": "/brlab/static/js/main.219f2381.js",
+    "main.js": "/brlab/static/js/main.e59b0edd.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
     "static/media/Iqbal_DT2.png": "/brlab/static/media/Iqbal_DT2.73b332b29a8b111f14a7.png",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
-    "static/media/image.jpg": "/brlab/static/media/image.2821a7faca5269b477c9.jpg",
+    "static/media/image.jpg": "/brlab/static/media/image.65f8a5ac6b0f7ad8545d.jpg",
     "static/media/1-s2.0-S-gr2_lrg.jpg": "/brlab/static/media/1-s2.0-S0306261915016888-gr2_lrg.6d077d348833c7a56185.jpg",
     "static/media/1-s2.0-S-gr1_lrg.jpg": "/brlab/static/media/1-s2.0-S0360132318302518-gr1_lrg.b499839525f32d8b4461.jpg",
     "static/media/Iqbal_DT2 copy.png": "/brlab/static/media/Iqbal_DT2 copy.90e00b2f73465b1ecdc0.png",
@@ -17,7 +17,7 @@
     "static/media/sensing_2x-removebg.png": "/brlab/static/media/sensing_2x-removebg.9caed712842350fd6cd2.png",
     "static/media/1-s2.0-S-gr7_lrg.jpg": "/brlab/static/media/1-s2.0-S0378778814007932-gr7_lrg.a784b47c804f1975b535.jpg",
     "static/media/Thermal still.jpg": "/brlab/static/media/Thermal still.b16af68e245e4a2f5734.jpg",
-    "static/media/1-s2.0-S-gr3_lrg.jpg": "/brlab/static/media/1-s2.0-S0360132323009319-gr3_lrg.b3fd37da5c12209b3fdb.jpg",
+    "static/media/1-s2.0-S-gr3_lrg.jpg": "/brlab/static/media/1-s2.0-S0360132323009319-gr3_lrg.c37c6b2414a32b6a7776.jpg",
     "static/media/1-s2.0-S-gr4_lrg.jpg": "/brlab/static/media/1-s2.0-S2352710219305200-gr4_lrg.b2aef02f62642b5a14e1.jpg",
     "static/media/kai_paper2.jpg": "/brlab/static/media/kai_paper2.2238426e1982f1899af4.jpg",
     "static/media/Interface-merged copy.png": "/brlab/static/media/Interface-merged copy.8aa9807764f5763f845d.png",
@@ -41,6 +41,7 @@
     "static/media/kai_paper.png": "/brlab/static/media/kai_paper.cdc7943c49a7594f5783.png",
     "static/media/kai_pub1.png": "/brlab/static/media/kai_pub1.cdc7943c49a7594f5783.png",
     "static/media/sensors-22-03444-g006.png": "/brlab/static/media/sensors-22-03444-g006.c977a12d488fa900341c.png",
+    "static/media/riccardo-publication2.png": "/brlab/static/media/riccardo-publication2.c08333e03c3ba35d7a15.png",
     "static/media/iqbal-publication.jpg": "/brlab/static/media/iqbal-publication.bfa85cffe211e5f5fec4.jpg",
     "static/media/iqbal_pub1.jpg": "/brlab/static/media/iqbal_pub1.bfa85cffe211e5f5fec4.jpg",
     "static/media/1-s2.0-S-gr6_lrg.jpg": "/brlab/static/media/1-s2.0-S0360132315001833-gr6_lrg.0bca638a42af346f7470.jpg",
@@ -58,7 +59,6 @@
     "static/media/ghahr1-p4-ghahr-large.gif": "/brlab/static/media/ghahr1-p4-ghahr-large.71d75c87838a80e17d70.gif",
     "static/media/Greenology logo2.png": "/brlab/static/media/Greenology logo2.1fa7b117f0ba87dabc9e.png",
     "static/media/ghahr8-2920648-large.gif": "/brlab/static/media/ghahr8-2920648-large.c93332a2b793792dc07a.gif",
-    "static/media/riccardo-publication2.png": "/brlab/static/media/riccardo-publication2.c9e0cb2bfd351bb4c627.png",
     "static/media/riccardo_pub2.png": "/brlab/static/media/riccardo_pub2.c9e0cb2bfd351bb4c627.png",
     "static/media/ina12735-fig-0002-m.jpg": "/brlab/static/media/ina12735-fig-0002-m.aec67e0f30aae7831d64.jpg",
     "static/media/7408505-fig-1-source-large.gif": "/brlab/static/media/7408505-fig-1-source-large.01dc5da1d70c5c9270ea.gif",
@@ -74,10 +74,10 @@
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
     "main.b4dbf17c.css.map": "/brlab/static/css/main.b4dbf17c.css.map",
-    "main.219f2381.js.map": "/brlab/static/js/main.219f2381.js.map"
+    "main.e59b0edd.js.map": "/brlab/static/js/main.e59b0edd.js.map"
   },
   "entrypoints": [
     "static/css/main.b4dbf17c.css",
-    "static/js/main.219f2381.js"
+    "static/js/main.e59b0edd.js"
   ]
 }
