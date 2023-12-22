@@ -10,7 +10,7 @@ import LandingPageVideo from './../components/Website Data/3xLandingPageVideo.mp
 import FirstResearchImage from './../components/Website Data/sensing_2x-removebg.png'
 import SecondResearchImage from './../components/Website Data/Thermal still.jpg'
 import ThirdResearchImage from './../components/Website Data/resilient_2x-removebg.png'
-import FourthResearchImage from './../components/Website Data/Interface-merged.png'
+import FourthResearchImage from './../components/Website Data/Interface_theme.png'
 
 // import FirstResearchImage from './../components/Website Data/sensing@2x.png'
 // import SecondResearchImage from './../components/Website Data/Human-centric@2x.png'
@@ -22,16 +22,16 @@ import { faBook, faUsers } from '@fortawesome/free-solid-svg-icons';
 
 import PublicationsKaiNews2 from './../components/Website Data/kai_paper2.jpg'
 import PublicationsRiccardoNews2 from './../components/Website Data/riccardo-publication2.png'
-import PublicationsIqbalNews2 from './../components/Website Data/1-s2.0-S0360132323009319-gr3_lrg.jpg'
-import GuillaumeNews from './../components/Website Individual Information/Guillaume/image.jpg'
-import PierreNews from './../components/Website Individual Information/Pierre-Louis/image.jpg'
-import PegahNews from './../components/Website Individual Information/Pegah/image.jpg'
+import PublicationsIqbalNews2 from './../components/Website Data/iqbal-publication2.jpg'
+import GuillaumeNews from './../components/Website Individual Information/Guillaume/image_news.jpg'
+import PierreNews from './../components/Website Individual Information/Pierre-Louis/image_news.jpg'
+import PegahNews from './../components/Website Individual Information/Pegah/image_news.jpg'
 import PublicationsRiccardoNews from './../components/Website Data/riccardo-publication.jpg'
-import KellyNews from './../components/Website Individual Information/Kelly/image.jpg'
-import XiaosongNews from './../components/Website Individual Information/Xiaosong/image.jpg'
+import KellyNews from './../components/Website Individual Information/Kelly/image_news.jpg'
+import XiaosongNews from './../components/Website Individual Information/Xiaosong/image_news.jpg'
 import PublicationsKaiNews from './../components/Website Data//kai_paper.png'
-import ConnorNews from './../components/Website Individual Information/Connor/image.jpg'
-import PublicationsIqbalNews from './../components/Website Data//iqbal-publication.jpg'
+import ConnorNews from './../components/Website Individual Information/Connor/image_news.jpg'
+import PublicationsIqbalNews from './../components/Website Data//iqbal-publication.jpeg'
 
 const slides = [
     {

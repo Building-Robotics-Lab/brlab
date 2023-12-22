@@ -1,6 +1,6 @@
 import KaiPublication2 from './Publication Images/1-s2.0-S0360132323011125-gr4_lrg.jpg'
 import RiccardoPublication2 from './Publication Images/riccardo_pub2.png'
-import IqbalPublication1 from './Publication Images/iqbal_pub1.jpg'
+import IqbalPublication1 from './Publication Images/iqbal_publication1.jpg'
 import IqbalPublication2 from './Publication Images/1-s2.0-S0360132323009319-gr3_lrg.jpg'
 import KatePublication1 from './Publication Images/kate_pub1.png'
 import RiccardoPublication1 from './Publication Images/riccardo_pub1.jpg'

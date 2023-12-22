@@ -20,7 +20,6 @@ import Theme2_2 from './../components/Website Data/Riccardo2.jpg'
 import Theme3_0 from './../components/Website Data/Iqbal_VGS.jpg'
 import Theme3 from './../components/Website Data/Kelly_T2.png'
 
-import Theme4 from './../components/Website Data/Connor_VPP.jpg'
 
 function Collaborations() {
 

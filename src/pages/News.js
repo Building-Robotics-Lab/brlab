@@ -6,18 +6,18 @@ import './News.css'
 import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
-import KaiPublication2 from './../components/Website Data/kai_paper2 copy.jpg'
+import KaiPublication2 from './../components/Website Data/kai_paper2.jpg'
 import RiccardoPublication2 from './../components/Website Data/riccardo-publication2.png'
-import IqbalPublication2 from './../components/Website Data/1-s2.0-S0360132323009319-gr3_lrg.jpg'
-import PierrePic from './../components/Website Individual Information/Pierre-Louis/image copy.jpg';
-import GuillaumePic from './../components/Website Individual Information/Guillaume/image.jpg';
-import PegahPic from './../components/Website Individual Information/Pegah/image.jpg';
+import IqbalPublication2 from './../components/Website Data/iqbal-publication2.jpg'
+import PierrePic from './../components/Website Individual Information/Pierre-Louis/image_news.jpg';
+import GuillaumePic from './../components/Website Individual Information/Guillaume/image_news.jpg';
+import PegahPic from './../components/Website Individual Information/Pegah/image_news.jpg';
 import RiccardoPublication from './../components/Website Data/riccardo-publication.jpg'
-import KellyPic from './../components/Website Individual Information/Kelly/image.jpg';
-import XiaosongPic from './../components/Website Individual Information/Xiaosong/image.jpg';
+import KellyPic from './../components/Website Individual Information/Kelly/image_news.jpg';
+import XiaosongPic from './../components/Website Individual Information/Xiaosong/image_news.jpg';
 import KaiPublication from './../components/Website Data/kai_paper.png'
-import ConnorPic from './../components/Website Individual Information/Connor/image.jpg';
-import IqbalPublication from './../components/Website Data/iqbal-publication.jpg'
+import ConnorPic from './../components/Website Individual Information/Connor/image_news.jpg';
+import IqbalPublication from './../components/Website Data/iqbal-publication.jpeg'
 
 function News() {
 
