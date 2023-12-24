@@ -44,6 +44,44 @@ const Carousel = ({ slides }) => {
         });
     };
 
+    useEffect(() => {
+        const updateMinHeight = () => {
+            const AllImagesHeight = sliderRef.current.querySelectorAll('.carouselImage');
+
+            // Reset heights to auto before recalculating
+            AllImagesHeight.forEach((each_image) => {
+                each_image.style.height = 'auto';
+            });
+
+            let AllHeight = [];
+            AllImagesHeight.forEach((each_image) => {
+                const style = getComputedStyle(each_image);
+                const height =
+                    each_image.clientHeight -
+                    parseFloat(style.paddingTop) -
+                    parseFloat(style.paddingBottom);
+                AllHeight.push(height);
+            });
+
+            const minHeight = Math.min(...AllHeight);
+
+            AllImagesHeight.forEach((each_image) => {
+                each_image.style.height = `${minHeight}px`;
+            });
+        };
+
+        // Initial update
+        updateMinHeight();
+
+        // Update on window resize
+        window.addEventListener('resize', updateMinHeight);
+
+        // Cleanup the event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', updateMinHeight);
+        };
+    }, [slides, slidesState]);
+
     return (
         <div className="carousel">
             <button className="btn btn-left" onClick={() => { moveBackward(); resetTimer(); }}>&#8592;</button>

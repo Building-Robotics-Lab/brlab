@@ -4,9 +4,14 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.NewsGrid .NewsPic {
+    display: flex;
+    justify-content: center;
+}
+
 .NewsGrid .NewsPic img {
-    width: 100%;
-    height: 375px;
+    width: 85%;
+    /* height: 375px; */
     object-fit: contain;
     margin-bottom: 0.75rem;
 }
@@ -15,13 +20,13 @@
     border-radius: 1rem;
 }
 
-.NewsGrid .NewsPic .date {
+.NewsGrid .NewsInformation .date {
     color: gray;
     font-size: smaller;
     margin-bottom: 0.25rem;
 }
 
-.NewsGrid .NewsPic h4 {
+.NewsGrid .NewsInformation h4 {
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
 }
@@ -92,7 +97,7 @@
     }
 
     .NewsGrid .NewsPic img {
-        height: calc(0.7 * 375px);
+        /* height: calc(0.7 * 375px); */
         margin-bottom: calc(0.7 * 0.75rem);
     }
 
@@ -100,12 +105,12 @@
         border-radius: calc(0.7 * 1rem);
     }
 
-    .NewsGrid .NewsPic .date {
+    .NewsGrid .NewsInformation .date {
         font-size: x-small;
         margin-bottom: calc(0.7 * 0.25rem);
     }
 
-    .NewsGrid .NewsPic h4 {
+    .NewsGrid .NewsInformation h4 {
         font-size: calc(0.7 * 1.5rem);
         margin-bottom: calc(0.7 * 0.75rem);
     }
@@ -126,7 +131,7 @@
     }
 
     .NewsGrid .NewsPic img {
-        height: calc(0.4 * 375px);
+        /* height: calc(0.4 * 375px); */
         margin-bottom: calc(0.4 * 0.75rem);
     }
 
@@ -134,12 +139,12 @@
         border-radius: calc(0.4 * 1rem);
     }
 
-    .NewsGrid .NewsPic .date {
+    .NewsGrid .NewsInformation .date {
         font-size: 0.4rem;
         margin-bottom: calc(0.4 * 0.25rem);
     }
 
-    .NewsGrid .NewsPic h4 {
+    .NewsGrid .NewsInformation h4 {
         font-size: calc(0.4 * 1.5rem);
         margin-bottom: calc(0.4 * 0.45rem);
     }
@@ -160,7 +165,7 @@
     }
 
     .NewsGrid .NewsPic img {
-        height: calc(0.3 * 375px);
+        /* height: calc(0.3 * 375px); */
         margin-bottom: calc(0.3 * 0.75rem);
     }
 
@@ -168,12 +173,12 @@
         border-radius: calc(0.3 * 1rem);
     }
 
-    .NewsGrid .NewsPic .date {
+    .NewsGrid .NewsInformation .date {
         font-size: 0.3rem;
         margin-bottom: calc(0.3 * 0.25rem);
     }
 
-    .NewsGrid .NewsPic h4 {
+    .NewsGrid .NewsInformation h4 {
         font-size: calc(0.3 * 1.5rem);
         margin-bottom: calc(0.3 * 0.35rem);
     }

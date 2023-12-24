@@ -9,14 +9,14 @@ import { Link } from 'react-router-dom';
 import KaiPublication2 from './../components/Website Data/kai_paper2.jpg'
 import RiccardoPublication2 from './../components/Website Data/riccardo-publication2.png'
 import IqbalPublication2 from './../components/Website Data/iqbal-publication2.jpg'
-import PierrePic from './../components/Website Individual Information/Pierre-Louis/image_news.jpg';
-import GuillaumePic from './../components/Website Individual Information/Guillaume/image_news.jpg';
-import PegahPic from './../components/Website Individual Information/Pegah/image_news.jpg';
+import PierrePic from './../components/Website Individual Information/Pierre-Louis/image.jpg';
+import GuillaumePic from './../components/Website Individual Information/Guillaume/image.jpg';
+import PegahPic from './../components/Website Individual Information/Pegah/image.jpg';
 import RiccardoPublication from './../components/Website Data/riccardo-publication.jpg'
-import KellyPic from './../components/Website Individual Information/Kelly/image_news.jpg';
-import XiaosongPic from './../components/Website Individual Information/Xiaosong/image_news.jpg';
+import KellyPic from './../components/Website Individual Information/Kelly/image.jpg';
+import XiaosongPic from './../components/Website Individual Information/Xiaosong/image.jpg';
 import KaiPublication from './../components/Website Data/kai_paper.png'
-import ConnorPic from './../components/Website Individual Information/Connor/image_news.jpg';
+import ConnorPic from './../components/Website Individual Information/Connor/image.jpg';
 import IqbalPublication from './../components/Website Data/iqbal-publication.jpeg'
 
 function News() {
@@ -79,6 +79,7 @@ function News() {
                     <Link to="/profile/Kai"><b>Kai</b></Link> and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/comfortgpt:_a" ><b>ComfortGPT: a transformer-based architecture for predicting preferred temperature setpoints leveraging big data</b></Link>. They proposed a transformer-based architecture for setpoint prediction via pre-trained models. This included clustering pre-trained models to capture diverse thermostat preferences and enocoding user interactions to adapt to occupant preferences. As a result, they found a diverse spectrum of setpoint/outdoor temperature relationships, and achieved a predictive performance of R2 = 0.77 and MAE = 0.65ºC. Congratulations you two!
                 </>
             ),
+            sectionName: 'FourthNewsSection'
         },
         {
             NewsSectionName: 'RiccardoPublication2',
@@ -91,6 +92,7 @@ function News() {
                     <Link to="/profile/Riccardo"><b>Riccardo</b></Link>, <Link to="/profile/Ilyas"><b>Ilyas</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/quantifying_energy"><b>Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns</b></Link>. They investigated three fixed and optimal setpoint and setback selection strategies. They found that fixed setpoint achieves 5.48% energy reduction due to lower occupant head loads and an additional 11.80% energy savings are obtained from incorporating fixed setbacks. Overall, the optimal selection of setpoint and setback provides additional 34-38% energy savings. Congratulations everyone!
                 </>
             ),
+            sectionName: 'FourthNewsSection'
         },
         {
             NewsSectionName: 'IqbalPublication2',
@@ -103,6 +105,7 @@ function News() {
                     <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/porous_plant"><b>Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems</b></Link>. A few of the highlights include the finding that porous plant growth form in VGS amplifies cooling effect by up to 1°C within 800 mm, a negative VGS façade heat flux of -2.32 W/m2 was achieved with porous plant growth form, and there was a 16% higher rate of evaporative cooling from growing media found in porous VGS. Congratulations everyone!
                 </>
             ),
+            sectionName: 'FourthNewsSection'
         },
         {
             NewsSectionName: 'Guillaume',
@@ -115,6 +118,7 @@ function News() {
                     The Building Robotics Lab is happy to have Guillaume joining us from Switzerland as a visiting MSc student at ETH Zürich studying Mechanical Engineering and Robotics. His research revolves around Robotics, Embedded Systems, IoT, Sensor Data Analysis, and Machine Learning. Check out his full profile <Link to="/profile/Guillaume"><b>here</b></Link> to get to know him more!
                 </>
             ),
+            sectionName: 'ThirdNewsSection'
         },
         {
             NewsSectionName: 'Pierre',
@@ -127,6 +131,7 @@ function News() {
                     The Building Robotics Lab is happy to have Pierre-Louis joining us from Switzerland as a visiting MSc student at ETH Zürich studying Mechanical Engineering and Computer Science. His research revolves around Machine Learning, Optimisation, Computer Vision, and Energy. Check out his full profile <Link to="/profile/Pierre"><b>here</b></Link> to get to know him more!
                 </>
             ),
+            sectionName: 'ThirdNewsSection'
         },
         {
             NewsSectionName: 'Pegah',
@@ -139,6 +144,7 @@ function News() {
                     The Building Robotics Lab is happy to have Pegah joining us from Iran as a visiting PhD candidate at Shahid Beheshti University studying Buildings in the Department of Construction. Her research revolves around Building Energy Efficiency, Machine Learning, Urban Building Energy Modelling, Indoor Environmental Quality, and Thermal Comfort. Check out her full profile <Link to="/profile/Pegah"><b>here</b></Link> to get to know her more!
                 </>
             ),
+            sectionName: 'ThirdNewsSection'
         },
         {
             NewsSectionName: 'RiccardoPublication',
@@ -151,6 +157,7 @@ function News() {
                     <Link to="/profile/Riccardo"><b>Riccardo</b></Link>, <Link to="/profile/Ilyas"><b>Ilyas</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/demystifying_energy"><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. They found that both fixed and dynamic setpoints ensure 2-4% energy reduction due to lower heat generated by occupants at lower occupancy rates. However, at outdoor temperatures ranging from 5°C to 32°C, where occupant heat loads can shift the building between heating, free-running, and cooling modes, dynamic setpoints can achieve additional 2-10% energy savings compared to fixed setpoints. Congratulations everyone!
                 </>
             ),
+            sectionName: 'SecondNewsSection'
         },
         {
             NewsSectionName: 'Kelly',
@@ -163,6 +170,7 @@ function News() {
                     The Building Robotics Lab is happy to have Kelly joining us as a PhD student in the Department of the Built Environment after she recently completed her BSc in Project and Facilities Management at NUS. Her research revolves around Building Energy Efficiency, Building Greenery, Building Finance, and Building Information Modelling. Check out her full profile <Link to="/profile/Kelly"><b>here</b></Link> to get to know her more!
                 </>
             ),
+            sectionName: 'SecondNewsSection'
         },
         {
             NewsSectionName: 'Xiaosong',
@@ -175,6 +183,7 @@ function News() {
                     The Building Robotics Lab is happy to have Song joining us from China as a visiting PhD candidate at Hunan University studying Heating, Ventilation and Air-Conditioning (HVAC) in the Department of Civil Engineering. His research revolves around Building Energy Efficiency, Energy-Efficient Building Envelope, Building-Integrated Photovoltaics, and Radiant Cooling Technology in Buildings. Check out his full profile <Link to="/profile/Xiaosong"><b>here</b></Link> to get to know him more!
                 </>
             ),
+            sectionName: 'SecondNewsSection'
         },
         {
             NewsSectionName: 'KaiPublication',
@@ -187,6 +196,7 @@ function News() {
                     <Link to="/profile/Kai"><b>Kai</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/personal_thermal"><b>Personal thermal comfort models based on physiological measurements -- A design of experiments based review</b></Link>. This study aims to provide a systematic, comprehensive, and DOE-framework-based review of the physiological sensing methods to predict personal thermal comfort. This is Kai's inaugural first-author article! Chapeau!
                 </>
             ),
+            sectionName: 'FirstNewsSection'
         },
         {
             NewsSectionName: 'Connor',
@@ -199,6 +209,7 @@ function News() {
                     The Building Robotics Lab is happy to have Connor joining us as a PhD student in the Department of the Built Environment after he recently completed his MSc in Built Environment: Environmental Design and Engineering at UCL in the Bartlett Faculty of the Built Environment. His research revolves around Virtual Power Plants, Building-Occupant Network Dynamics, Smart Buildings, Human-Building Interaction, and Decarbonisation. Check out his full profile <Link to="/profile/Connor"><b>here</b></Link> to get to know him more!
                 </>
             ),
+            sectionName: 'FirstNewsSection'
         },
         {
             NewsSectionName: 'IqbalPublication',
@@ -210,7 +221,8 @@ function News() {
                 <>
                     <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/thermal_transfer"><b>Thermal transfer and temperature reductions from shading systems on opaque façades: Quantifying the impacts of influential factors</b></Link>. It investigates the effects of shading systems on opaque facades that is currently unaccounted for in simplified Overall Thermal Transfer Value (OTTV) calculations throughout standards adopted by many countries. This is Iqbal's inaugural first-author article! Chapeau!
                 </>
-            )
+            ),
+            sectionName: 'FirstNewsSection'
         },
     ];
 
@@ -228,19 +240,19 @@ function News() {
             </Container>
 
             <Container useOrange={true} sectionName='FourthNewsSection'>
-                <NewsGrid newsData={newsData.slice(0, 3)} highlightedSection={highlightedSection} />
+                <NewsGrid newsData={newsData.slice(0, 3)} highlightedSection={highlightedSection} sectionName='FourthNewsSection' />
             </Container>
 
             <Container sectionName='ThirdNewsSection'>
-                <NewsGrid newsData={newsData.slice(3, 6)} highlightedSection={highlightedSection} />
+                <NewsGrid newsData={newsData.slice(3, 6)} highlightedSection={highlightedSection} sectionName='ThirdNewsSection' />
             </Container>
 
             <Container useOrange={true} sectionName='SecondNewsSection'>
-                <NewsGrid newsData={newsData.slice(6, 9)} highlightedSection={highlightedSection} />
+                <NewsGrid newsData={newsData.slice(6, 9)} highlightedSection={highlightedSection} sectionName='SecondNewsSection' />
             </Container>
 
             <Container sectionName='FirstNewsSection'>
-                <NewsGrid newsData={newsData.slice(9, 12)} highlightedSection={highlightedSection} />
+                <NewsGrid newsData={newsData.slice(9, 12)} highlightedSection={highlightedSection} sectionName='FirstNewsSection' />
             </Container>
 
             <Footer />
