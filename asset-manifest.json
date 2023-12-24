@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brlab/static/css/main.8cd6ca08.css",
-    "main.js": "/brlab/static/js/main.adc174bd.js",
+    "main.css": "/brlab/static/css/main.cf430afc.css",
+    "main.js": "/brlab/static/js/main.47bcbf4f.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
     "static/media/Iqbal_DT2.png": "/brlab/static/media/Iqbal_DT2.73b332b29a8b111f14a7.png",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
@@ -41,7 +41,6 @@
     "static/media/riccardo-publication2.png": "/brlab/static/media/riccardo-publication2.4c3c85fedb454325728c.png",
     "static/media/kai_pub1.png": "/brlab/static/media/kai_pub1.cdc7943c49a7594f5783.png",
     "static/media/sensors-22-03444-g006.png": "/brlab/static/media/sensors-22-03444-g006.c977a12d488fa900341c.png",
-    "static/media/image_news.jpg": "/brlab/static/media/image_news.50e0b982df112972219a.jpg",
     "static/media/Ilyas_rPPG@2x.png": "/brlab/static/media/Ilyas_rPPG@2x.2029d637418099c0d5e4.png",
     "static/media/riccardo-publication2_research.png": "/brlab/static/media/riccardo-publication2_research.8686ea1e8b79dc67c3fe.png",
     "static/media/1-s2.0-S-gr6_lrg.jpg": "/brlab/static/media/1-s2.0-S0360132315001833-gr6_lrg.0bca638a42af346f7470.jpg",
@@ -74,11 +73,11 @@
     "static/media/tt_logo_color_rgb.jpg": "/brlab/static/media/tt_logo_color_rgb.b8c960c7e4476b1e552a.jpg",
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
-    "main.8cd6ca08.css.map": "/brlab/static/css/main.8cd6ca08.css.map",
-    "main.adc174bd.js.map": "/brlab/static/js/main.adc174bd.js.map"
+    "main.cf430afc.css.map": "/brlab/static/css/main.cf430afc.css.map",
+    "main.47bcbf4f.js.map": "/brlab/static/js/main.47bcbf4f.js.map"
   },
   "entrypoints": [
-    "static/css/main.8cd6ca08.css",
-    "static/js/main.adc174bd.js"
+    "static/css/main.cf430afc.css",
+    "static/js/main.47bcbf4f.js"
   ]
 }
