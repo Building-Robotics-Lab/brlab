@@ -13,10 +13,10 @@ import PierrePic from './../components/Website Individual Information/Pierre-Lou
 import GuillaumePic from './../components/Website Individual Information/Guillaume/image.jpg';
 import PegahPic from './../components/Website Individual Information/Pegah/image.jpg';
 import RiccardoPublication from './../components/Website Data/riccardo-publication.jpg'
-import KellyPic from './../components/Website Individual Information/Kelly/image.jpg';
-import XiaosongPic from './../components/Website Individual Information/Xiaosong/image.jpg';
+import KellyPic from './../components/Website Individual Information/Kelly/image_news.jpg';
+import XiaosongPic from './../components/Website Individual Information/Xiaosong/image_news.jpg';
 import KaiPublication from './../components/Website Data/kai_paper.png'
-import ConnorPic from './../components/Website Individual Information/Connor/image.jpg';
+import ConnorPic from './../components/Website Individual Information/Connor/image_news.jpg';
 import IqbalPublication from './../components/Website Data/iqbal-publication.jpeg'
 
 function News() {
