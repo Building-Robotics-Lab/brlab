@@ -94,7 +94,7 @@ const Carousel = ({ slides }) => {
                             <h3 className='carouselTitle' dangerouslySetInnerHTML={{ __html: slide.title }}></h3>
                         </div>
                         <div className="slide_down">
-                            <Link className='carouselLink' to={`/news#${slide.link}`}>Read more</Link>
+                            <Link className='carouselLink' to={`publication#${slide.link}`}>Read more</Link>
                         </div>
                     </div>
                 ))}
