@@ -73,14 +73,14 @@ function Our_Team() {
             link: 'Kelly'
         },
         {
-            name: 'HU Xinhao',
+            name: 'Hu Xinhao',
             role: 'Visiting PhD Candidate (Hunan University)',
             skills: 'Indoor Thermal Comfort; Indoor Environmental Quality; Building Energy Conservation',
             imgSrc: StellaPic,
             link: 'Stella'
         },
         {
-            name: 'SU Xiaosong',
+            name: 'Su Xiaosong',
             role: 'Visiting PhD Candidate (Hunan University)',
             skills: 'Building Energy Efficiency; Energy-Efficient Building Envelope; Building-Integrated Photovoltaics; Radiant Cooling Technology in Buildings',
             imgSrc: XiaosongPic,
@@ -118,7 +118,7 @@ function Our_Team() {
             link: 'Ilyas'
         },
         {
-            name: 'QI Xuanning',
+            name: 'Qi Xuanning',
             role: 'PhD Candidate (Harbin Institute of Technology)',
             skills: 'Computational Design; Daylight Design; Occupant Behaviour; Visual Cognition',
             imgSrc: MichellePic,

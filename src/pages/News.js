@@ -177,7 +177,7 @@ function News() {
             imageSrc: XiaosongPic,
             altText: "A headshot of SU Xiaosong.",
             date: '26/01/2023',
-            title: 'Please welcome SU Xiaosong to the lab!',
+            title: 'Please welcome Su Xiaosong to the lab!',
             content: (
                 <>
                     The Building Robotics Lab is happy to have Song joining us from China as a visiting PhD candidate at Hunan University studying Heating, Ventilation and Air-Conditioning (HVAC) in the Department of Civil Engineering. His research revolves around Building Energy Efficiency, Energy-Efficient Building Envelope, Building-Integrated Photovoltaics, and Radiant Cooling Technology in Buildings. Check out his full profile <Link to="/profile/Xiaosong"><b>here</b></Link> to get to know him more!

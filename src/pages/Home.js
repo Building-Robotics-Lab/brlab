@@ -84,7 +84,7 @@ const slides = [
     },
     {
         image: XiaosongNews,
-        title: '<b>Please welcome SU Xiaosong to the lab!</b>',
+        title: '<b>Please welcome Su Xiaosong to the lab!</b>',
         date: '26/01/2023',
         link: 'SecondNewsSection',
     },
