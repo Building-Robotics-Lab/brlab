@@ -147,55 +147,49 @@ function Collaborations() {
                     <div className="themes">
                         <div class="each_theme">
                             <div className='each_theme_image'>
-                                <FontAwesomeIcon icon={faTreeCity} />
+                                <FontAwesomeIcon icon={faTreeCity} /><h4><b>FIELD DEPLOYMENT</b></h4>
                             </div>
                             <div className='each_theme_data'>
-                                <h4><b>FIELD DEPLOYMENT</b></h4>
                                 <p>Our research lab offers a unique advantage to industry partners through our expertise in field deployment and access to local experiments. By collaborating with us, private companies gain the opportunity to conduct real-world trials and experiments within diverse built environments. This capability allows for the validation and optimisation of solutions in actual operational conditions, ensuring that innovations are robust and effective in practical applications. Whether testing new technologies, monitoring system performance, or assessing user interactions, our lab provides a valuable platform for industry partners to refine and validate their products in a variety of settings.</p>
                             </div>
                         </div>
                         <div class="each_theme">
                             <div className='each_theme_image'>
-                                <FontAwesomeIcon icon={faHouseSignal} />
+                                <FontAwesomeIcon icon={faHouseSignal} /><h4><b>SENSING & AUTOMATION</b></h4>
                             </div>
                             <div className='each_theme_data'>
-                                <h4><b>SENSING & AUTOMATION</b></h4>
                                 <p>Our lab specialises in sensing & automation systems. Elevate your data collection capabilities with cutting-edge thermal sensors, non-intrusive health monitoring devices, and more. Leverage our expertise to integrate state-of-the-art sensing solutions into your products, enhancing precision and depth of data for improved decision-making and system performance. Streamline operations and enhance sustainability with cutting-edge automation solutions that revolutionise routine tasks and resource consumption. Collaborate to integrate adaptive and responsive automation, ensuring your products align with the principles of efficiency and sustainability.</p>
                             </div>
                         </div>
                         <div class="each_theme">
                             <div className='each_theme_image'>
-                                <FontAwesomeIcon icon={faBuildingLock} />
+                                <FontAwesomeIcon icon={faBuildingLock} /><h4><b>CONTROLS</b></h4>
                             </div>
                             <div className='each_theme_data'>
-                                <h4><b>CONTROLS</b></h4>
                                 <p>Our lab excels in designing and implementing advanced control strategies for building systems. Efficient and responsive control systems are essential for achieving optimal performance in smart buildings. Whether it's optimising HVAC temperature setpoints for energy efficiency or resilient cooling solutions for urban landscapes, our control systems are tailored to meet the specific needs of the built environment. Industry collaborators can benefit from our expertise in developing adaptive and intelligent control algorithms, ensuring that their technologies are at the forefront of building automation and energy management.</p>
                             </div>
                         </div>
                         <div class="each_theme">
                             <div className='each_theme_image'>
-                                <FontAwesomeIcon icon={faHouseLaptop} />
+                                <FontAwesomeIcon icon={faHouseLaptop} /><h4><b>ARTIFICIAL INTELLIGENCE</b></h4>
                             </div>
                             <div className='each_theme_data'>
-                                <h4><b>ARTIFICIAL INTELLIGENCE</b></h4>
                                 <p>Harnessing the power of artificial intelligence (AI) is a key focus of our research lab. Our expertise in human-centred AI and semantics-driven digital twins opens new possibilities for industry partners. By collaborating with us, private companies can integrate AI-driven solutions that enhance the intelligence of their products, improving adaptability, learning capabilities, and overall system performance. Whether it's optimising thermal comfort or developing user-centric AI interfaces, our lab's proficiency in AI technologies ensures that industry collaborators stay at the forefront of innovation in smart building solutions.</p>
                             </div>
                         </div>
                         <div class="each_theme">
                             <div className='each_theme_image'>
-                                <FontAwesomeIcon icon={faBuildingUser} />
+                                <FontAwesomeIcon icon={faBuildingUser} /><h4><b>USER INTERFACES</b></h4>
                             </div>
                             <div className='each_theme_data'>
-                                <h4><b>USER INTERFACES</b></h4>
                                 <p>In the realm of human-building interaction, our lab places a strong emphasis on creating intuitive and user-friendly interfaces. We understand the importance of engaging and accessible interfaces for smart building technologies. By partnering with us, private companies can benefit from our expertise in designing interfaces that prioritise user experience and promote efficient interaction with building systems. Our focus on user-centric design ensures that industry collaborators can deliver solutions that are not only technologically advanced, but also easy to use, fostering a positive and seamless experience for end-users.</p>
                             </div>
                         </div>
                         <div class="each_theme">
                             <div className='each_theme_image'>
-                                <FontAwesomeIcon icon={faHouse} />
+                                <FontAwesomeIcon icon={faHouse} /><h4><b>ADDITIONAL RELATED AREAS</b></h4>
                             </div>
                             <div className='each_theme_data'>
-                                <h4><b>ADDITIONAL RELATED AREAS</b></h4>
                                 <p>Beyond the core capabilities mentioned, our lab is equipped to address a wide array of challenges in the realm of smart buildings. Whether it's exploring novel cooling technologies for building façades or democratising virtual power plants for optimal monetisation and grid flexibility, our diverse team is ready to tackle unique and multifaceted projects. Industry partners collaborating with us gain access to a wealth of knowledge, experience, and innovative thinking that extends beyond traditional boundaries, opening up new possibilities for collaboration and advancement in the field of building science.</p>
                             </div>
                         </div>

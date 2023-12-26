@@ -98,19 +98,21 @@
 
 .Collaborations .second_section .themes .each_theme .each_theme_image {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 2rem;
     color: rgb(45, 99, 83);
 }
 
 .Collaborations .second_section .themes .each_theme .each_theme_image .svg-inline--fa {
-    width: 25%;
-    height: auto;
+    width: 75px;
+    height: 75px;
     object-fit: contain;
 }
 
 .Collaborations .second_section .themes .each_theme h4 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    /* margin-top: 1rem;
+    margin-bottom: 1rem; */
     color: black;
     font-size: 1.25rem;
     /* min-height: 50px; */
@@ -120,6 +122,7 @@
 .Collaborations .second_section .themes .each_theme p {
     text-align: justify;
     text-justify: inter-word;
+    margin-top: 1rem;
     font-size: 1rem;
 }
 
@@ -268,14 +271,21 @@
         height: calc(0.7 * 300px);
     } */
 
+    .Collaborations .second_section .themes .each_theme .each_theme_image {
+        gap: calc(0.7 * 2rem);
+    }
+
+    .Collaborations .second_section .themes .each_theme .each_theme_image .svg-inline--fa {
+        width: calc(0.7 * 75px);
+        height: calc(0.7 * 75px);
+    }
+
     .Collaborations .second_section .themes .each_theme h4 {
-        margin-top: calc(0.7 * 1rem);
-        margin-bottom: calc(0.7 * 1rem);
         font-size: calc(0.7 * 1.25rem);
-        /* min-height: calc(0.7 * 50px); */
     }
 
     .Collaborations .second_section .themes .each_theme p {
+        margin-top: calc(0.7 * 1rem);
         font-size: calc(0.7 * 1rem);
     }
 
@@ -388,14 +398,21 @@
         height: calc(0.4 * 300px);
     } */
 
+    .Collaborations .second_section .themes .each_theme .each_theme_image {
+        gap: calc(0.4 * 2rem);
+    }
+
+    .Collaborations .second_section .themes .each_theme .each_theme_image .svg-inline--fa {
+        width: calc(0.4 * 75px);
+        height: calc(0.4 * 75px);
+    }
+
     .Collaborations .second_section .themes .each_theme h4 {
-        margin-top: calc(0.4 * 1rem);
-        margin-bottom: calc(0.4 * 1rem);
         font-size: calc(0.4 * 1.25rem);
-        /* min-height: calc(0.4 * 50px); */
     }
 
     .Collaborations .second_section .themes .each_theme p {
+        margin-top: calc(0.4 * 1rem);
         font-size: calc(0.4 * 1rem);
     }
 
@@ -508,14 +525,21 @@
         height: calc(0.3 * 300px);
     } */
 
+    .Collaborations .second_section .themes .each_theme .each_theme_image {
+        gap: calc(0.3 * 2rem);
+    }
+
+    .Collaborations .second_section .themes .each_theme .each_theme_image .svg-inline--fa {
+        width: calc(0.3 * 75px);
+        height: calc(0.3 * 75px);
+    }
+
     .Collaborations .second_section .themes .each_theme h4 {
-        margin-top: calc(0.3 * 1rem);
-        margin-bottom: 0rem;
         font-size: calc(0.3 * 1.25rem);
-        /* min-height: calc(0.3 * 50px); */
     }
 
     .Collaborations .second_section .themes .each_theme p {
+        margin-top: calc(0.3 * 1rem);
         font-size: calc(0.3 * 1rem);
     }
 
