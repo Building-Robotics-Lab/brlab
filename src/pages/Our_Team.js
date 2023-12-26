@@ -74,35 +74,35 @@ function Our_Team() {
         },
         {
             name: 'Hu Xinhao',
-            role: 'Visiting PhD Candidate (Hunan University)',
+            role: 'Visiting PhD Candidate',
             skills: 'Indoor Thermal Comfort; Indoor Environmental Quality; Building Energy Conservation',
             imgSrc: StellaPic,
             link: 'Stella'
         },
         {
             name: 'Su Xiaosong',
-            role: 'Visiting PhD Candidate (Hunan University)',
+            role: 'Visiting PhD Candidate',
             skills: 'Building Energy Efficiency; Energy-Efficient Building Envelope; Building-Integrated Photovoltaics; Radiant Cooling Technology in Buildings',
             imgSrc: XiaosongPic,
             link: 'Xiaosong'
         },
         {
             name: 'Pegah Eshraghi',
-            role: 'Visiting PhD Candidate (Shahid Beheshti University)',
+            role: 'Visiting PhD Candidate',
             skills: 'Building Energy Efficiency; Machine Learning; Urban Building Energy Modelling; Indoor Environmental Quality; Thermal Comfort',
             imgSrc: PegahPic,
             link: 'Pegah'
         },
         {
             name: 'Pierre-Louis David',
-            role: "Visiting MSc Student (ETH Zürich)",
+            role: "Visiting MSc Student",
             skills: 'Machine Learning; Optimisation; Computer Vision; Energy',
             imgSrc: PierrePic,
             link: 'Pierre'
         },
         {
             name: 'Guillaume Lecronier',
-            role: "Visiting MSc Student (ETH Zürich)",
+            role: "Visiting MSc Student",
             skills: 'Robotics; Embedded Systems; IoT; Sensor Data Analysis; Machine Learning',
             imgSrc: GuillaumePic,
             link: 'Guillaume'
@@ -112,14 +112,14 @@ function Our_Team() {
     const alumnis = [
         {
             name: 'Ilyas Dawoodjee',
-            role: 'MSc Student (University of Manitoba)',
+            role: 'MSc Student',
             skills: 'Machine Vision; Robotics; Machine Learning; Automation',
             imgSrc: IlyasPic,
             link: 'Ilyas'
         },
         {
             name: 'Qi Xuanning',
-            role: 'PhD Candidate (Harbin Institute of Technology)',
+            role: 'PhD Candidate',
             skills: 'Computational Design; Daylight Design; Occupant Behaviour; Visual Cognition',
             imgSrc: MichellePic,
             link: 'Michelle'

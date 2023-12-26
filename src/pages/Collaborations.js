@@ -108,8 +108,8 @@ function Collaborations() {
                 <div className="first_section">
                     <div className="title_section">
                         <h1><b>Industry Collaborations [work in progress]</b></h1>
-                        <h3><b>Our interdisciplinary approach aims to create a sustainable future by leveraging sensing, learning, control systems, and other smart building technologies that prioritise environmental sustainability and the human experience.</b></h3>
-                        <h5>Are you an industry partner on a similar mission or have an idea for a project we could collaborate on for smart buildings and intelligent environments?</h5>
+                        <h3><b>Our interdisciplinary approach aims to create a sustainable future by leveraging smart building technologies that prioritise environmental sustainability and the human experience.</b></h3>
+                        <h5>Are you an industry partner on a similar mission or have a project idea we could collaborate on for intelligent environments?</h5>
                     </div>
                     <div className="industry_partners">
                         <a href="https://aws.amazon.com/" target="_blank">
@@ -147,11 +147,20 @@ function Collaborations() {
                     <div className="themes">
                         <div class="each_theme">
                             <div className='each_theme_image'>
-                                <FontAwesomeIcon icon={faHouseSignal} />
+                                <FontAwesomeIcon icon={faTreeCity} />
                             </div>
                             <div className='each_theme_data'>
                                 <h4><b>FIELD DEPLOYMENT</b></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Our research lab offers a unique advantage to industry partners through our expertise in field deployment and access to local experiments. By collaborating with us, private companies gain the opportunity to conduct real-world trials and experiments within diverse built environments. This capability allows for the validation and optimisation of solutions in actual operational conditions, ensuring that innovations are robust and effective in practical applications. Whether testing new technologies, monitoring system performance, or assessing user interactions, our lab provides a valuable platform for industry partners to refine and validate their products in a variety of settings.</p>
+                            </div>
+                        </div>
+                        <div class="each_theme">
+                            <div className='each_theme_image'>
+                                <FontAwesomeIcon icon={faHouseSignal} />
+                            </div>
+                            <div className='each_theme_data'>
+                                <h4><b>SENSING & AUTOMATION</b></h4>
+                                <p>Our lab specialises in sensing & automation systems. Elevate your data collection capabilities with cutting-edge thermal sensors, non-intrusive health monitoring devices, and more. Leverage our expertise to integrate state-of-the-art sensing solutions into your products, enhancing precision and depth of data for improved decision-making and system performance. Streamline operations and enhance sustainability with cutting-edge automation solutions that revolutionise routine tasks and resource consumption. Collaborate to integrate adaptive and responsive automation, ensuring your products align with the principles of efficiency and sustainability.</p>
                             </div>
                         </div>
                         <div class="each_theme">
@@ -159,17 +168,8 @@ function Collaborations() {
                                 <FontAwesomeIcon icon={faBuildingLock} />
                             </div>
                             <div className='each_theme_data'>
-                                <h4><b>SENSING & AUTOMATION</b></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-                        <div class="each_theme">
-                            <div className='each_theme_image'>
-                                <FontAwesomeIcon icon={faBuildingUser} />
-                            </div>
-                            <div className='each_theme_data'>
                                 <h4><b>CONTROLS</b></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Our lab excels in designing and implementing advanced control strategies for building systems. Efficient and responsive control systems are essential for achieving optimal performance in smart buildings. Whether it's optimising HVAC temperature setpoints for energy efficiency or resilient cooling solutions for urban landscapes, our control systems are tailored to meet the specific needs of the built environment. Industry collaborators can benefit from our expertise in developing adaptive and intelligent control algorithms, ensuring that their technologies are at the forefront of building automation and energy management.</p>
                             </div>
                         </div>
                         <div class="each_theme">
@@ -178,16 +178,16 @@ function Collaborations() {
                             </div>
                             <div className='each_theme_data'>
                                 <h4><b>ARTIFICIAL INTELLIGENCE</b></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Harnessing the power of artificial intelligence (AI) is a key focus of our research lab. Our expertise in human-centred AI and semantics-driven digital twins opens new possibilities for industry partners. By collaborating with us, private companies can integrate AI-driven solutions that enhance the intelligence of their products, improving adaptability, learning capabilities, and overall system performance. Whether it's optimising thermal comfort or developing user-centric AI interfaces, our lab's proficiency in AI technologies ensures that industry collaborators stay at the forefront of innovation in smart building solutions.</p>
                             </div>
                         </div>
                         <div class="each_theme">
                             <div className='each_theme_image'>
-                                <FontAwesomeIcon icon={faTreeCity} />
+                                <FontAwesomeIcon icon={faBuildingUser} />
                             </div>
                             <div className='each_theme_data'>
                                 <h4><b>USER INTERFACES</b></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>In the realm of human-building interaction, our lab places a strong emphasis on creating intuitive and user-friendly interfaces. We understand the importance of engaging and accessible interfaces for smart building technologies. By partnering with us, private companies can benefit from our expertise in designing interfaces that prioritise user experience and promote efficient interaction with building systems. Our focus on user-centric design ensures that industry collaborators can deliver solutions that are not only technologically advanced, but also easy to use, fostering a positive and seamless experience for end-users.</p>
                             </div>
                         </div>
                         <div class="each_theme">
@@ -196,7 +196,7 @@ function Collaborations() {
                             </div>
                             <div className='each_theme_data'>
                                 <h4><b>ADDITIONAL RELATED AREAS</b></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Beyond the core capabilities mentioned, our lab is equipped to address a wide array of challenges in the realm of smart buildings. Whether it's exploring novel cooling technologies for building façades or democratising virtual power plants for optimal monetisation and grid flexibility, our diverse team is ready to tackle unique and multifaceted projects. Industry partners collaborating with us gain access to a wealth of knowledge, experience, and innovative thinking that extends beyond traditional boundaries, opening up new possibilities for collaboration and advancement in the field of building science.</p>
                             </div>
                         </div>
                     </div>
@@ -210,34 +210,38 @@ function Collaborations() {
                 <div className="whole_theme">
                     <div className='theme_section'>
                         <div className="theme_details">
-                            <img src={T2Lab} alt="A thermal comfort graph with Predicted Setpoint Temperature on the y-axis and Daily Mean Outdoor Temperature on the x-axis from a related publication by CHEN Kai."></img>
+                            <img src={T2Lab} alt="The FEC1 Living Lab--the day-to-day home of the Building Robotics Lab."></img>
                             <h4><b>FEC1 Living Lab</b></h4>
-                            <h6><b>BLAH BLAH BLAH BLAH. </b></h6>
+                            <h6><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</b></h6>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
                     </div>
                     <div className='theme_section' id='theme1_section'>
                         <div className="theme_details">
-                            <img src={T2Lab} alt="A HVAC optimisation graph with Setpoint Temperature on the y-axis and Outdoor Temperature on the x-axis from a related publication by Riccardo Talami."></img>
-                            <h4><b>Smart HVAC Lab</b></h4>
-                            <h6><b>BLAH BLAH BLAH BLAH.</b></h6>
+                            <img src={T2Lab} alt="The Smart HVAC Lab."></img>
+                            <h4><b>Smart HVAC Lab [under construction]</b></h4>
+                            <h6><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</b></h6>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
                     </div>
                     <div className='theme_section'>
                         <div className="theme_details">
-                            <img src={T2Lab} alt="The NUS Tropical Technologies Laboratory with building greenery, building-integrated photovoltaic, and various façades."></img>
+                            <img src={T2Lab} alt="The NUS-CDL Tropical Technologies Laboratory."></img>
                             <h4><b>NUS-CDL Tropical Technologies Lab</b></h4>
-                            <h6><b>BLAH BLAH BLAH BLAH. </b></h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <h6><b>Experience innovation in the 107 m2 NUS-CDL T2 Lab, an adaptable indoor-outdoor research space completed in December 2016.</b></h6>
+                            <p>Managed by the School’s Department of Architecture, this dynamic laboratory redefines possibilities for testing lifestyle scenarios, space-use configurations, and cutting-edge technologies. Picture a space dedicated to exploring themes like "healthy, green living" and "future lifestyles," unravelling the secrets to a sustainable and adaptable Singaporean home.</p>
+                            <p>Located on the NUS Kent Ridge campus, this state-of-the-art laboratory is constructed on an existing structure, designed with flexibility to adapt to new functions while testing high-performance materials and environmental systems. Engage in experimental studies that redefine building façade design, construction, and operation tailored to Singapore’s climatic conditions. Dive into projects exploring the integration of solar panels with building façades, evaluating the feasibility and efficiency of sun-shading shutters paired with solar membranes and panels. Be part of a collaborative journey reshaping the very fabric of sustainable living and innovative urban design.</p>
+                            <p>Possible studies that can be carried out at the facility include examining biomimicry building envelop devices and systems for harvesting of energy from renewable resources (sun, wind, daylight); solar control and shading; vertical and edible garden; solar chimney; and smart building materials. In addition, the test-bed can be used to explore how architecture and building design deal with extremities of weather, air pollution, and rising sea water levels.</p>
                         </div>
                     </div>
                     <div className='theme_section' id='theme1_section'>
                         <div className="theme_details">
-                            <img src={T2Lab} alt="A HVAC optimisation graph with Setpoint Temperature on the y-axis and Outdoor Temperature on the x-axis from a related publication by Riccardo Talami."></img>
+                            <img src={T2Lab} alt="The NUS-CDL Smart Green Home."></img>
                             <h4><b>NUS-CDL Smart Green Home</b></h4>
-                            <h6><b>BLAH BLAH BLAH BLAH.</b></h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <h6><b>Step into the future of sustainable living with the NUS-CDL Smart Green Home, a cutting-edge 100 m2 indoor test-bed environment completed in December 2017.</b></h6>
+                            <p>This world-class facility, nestled within the NUS College of Design and Engineering, serves as a dynamic platform for holistic experimental studies. Immerse yourself in a real-life environment designed for testing, analysing, and piloting smart home innovations with a "plug-and-play" approach. It aims to harness research to develop innovative solutions to create homes that are safe and secure, healthy and comfortable, and acoustically pleasing.</p>
+                            <p>Explore the possibilities within the home, where at least one façade is meticulously designed for plug-and-play experimentation. This visionary facility is a playground for researchers delving into human-centred smart materials, technologies, and knowledge platforms. The facility has a re-configurable structure to enable comparative research through flexible experimental setup, testing, and monitoring. Our commitment to enhancing health, comfort, and quality of life sets the stage for a sustainable and connected future. Some ideas that can be tested here include energy efficiency, quality of indoor environment, and sustainable homes of the future.</p>
+                            <p>Participate in ground-breaking projects, such as developing an intelligent system that enhances indoor comfort. Join us in crafting novel façades and building envelopes that integrate smart nanomaterials, sensor-based controls, and analytics. Together, we shape a future where buildings adapt to occupants, balancing comfort and energy efficiency seamlessly.</p>
                         </div>
                     </div>
                 </div>

@@ -99,6 +99,7 @@
 .Collaborations .second_section .themes .each_theme .each_theme_image {
     display: flex;
     justify-content: center;
+    color: rgb(45, 99, 83);
 }
 
 .Collaborations .second_section .themes .each_theme .each_theme_image .svg-inline--fa {
