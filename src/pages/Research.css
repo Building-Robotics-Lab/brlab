@@ -62,7 +62,7 @@
     margin-bottom: 1rem;
     color: black;
     font-size: 1.25rem;
-    min-height: 50px;
+    /* min-height: 50px; */
     overflow: hidden;
 }
 
@@ -225,7 +225,7 @@
         margin-top: calc(0.7 * 1rem);
         margin-bottom: calc(0.7 * 1rem);
         font-size: calc(0.7 * 1.25rem);
-        min-height: calc(0.7 * 50px);
+        /* min-height: calc(0.7 * 50px); */
     }
 
     .Research .second_section .themes .each_theme p {
@@ -347,7 +347,7 @@
         margin-top: calc(0.4 * 1rem);
         margin-bottom: calc(0.4 * 1rem);
         font-size: calc(0.4 * 1.25rem);
-        min-height: calc(0.4 * 50px);
+        /* min-height: calc(0.4 * 50px); */
     }
 
     .Research .second_section .themes .each_theme p {
@@ -469,7 +469,7 @@
         margin-top: calc(0.3 * 1rem);
         margin-bottom: 0rem;
         font-size: calc(0.3 * 1.25rem);
-        min-height: calc(0.3 * 50px);
+        /* min-height: calc(0.3 * 50px); */
     }
 
     .Research .second_section .themes .each_theme p {

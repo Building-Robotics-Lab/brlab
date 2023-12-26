@@ -51,6 +51,11 @@ const Carousel = ({ slides }) => {
             // Reset heights to auto before recalculating
             AllImagesHeight.forEach((each_image) => {
                 each_image.style.height = 'auto';
+
+                // Add load event listener for each image
+                each_image.addEventListener('load', () => {
+                    updateMinHeight();
+                });
             });
 
             let AllHeight = [];
@@ -81,6 +86,7 @@ const Carousel = ({ slides }) => {
             window.removeEventListener('resize', updateMinHeight);
         };
     }, [slides, slidesState]);
+
 
     return (
         <div className="carousel">

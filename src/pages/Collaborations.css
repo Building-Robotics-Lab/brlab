@@ -37,6 +37,10 @@
     overflow: hidden;
 }
 
+.Collaborations .first_section .industry_partners a:hover {
+    border: 3px solid rgb(45, 99, 83);
+}
+
 .Collaborations .first_section .industry_partners img {
     object-fit: cover;
     width: 100%;
@@ -92,8 +96,13 @@
     grid-template-rows: auto 2fr;
 }
 
-.Collaborations .second_section .themes .each_theme img {
-    width: 100%;
+.Collaborations .second_section .themes .each_theme .each_theme_image {
+    display: flex;
+    justify-content: center;
+}
+
+.Collaborations .second_section .themes .each_theme .each_theme_image .svg-inline--fa {
+    width: 25%;
     height: auto;
     object-fit: contain;
 }
@@ -103,7 +112,7 @@
     margin-bottom: 1rem;
     color: black;
     font-size: 1.25rem;
-    min-height: 50px;
+    /* min-height: 50px; */
     overflow: hidden;
 }
 
@@ -246,7 +255,7 @@
     }
 
     .Collaborations .second_section .themes {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: calc(0.7 * 4rem);
     }
 
@@ -254,15 +263,15 @@
         grid-template-rows: auto calc(0.7 * 1fr);
     }
 
-    .Collaborations .second_section .themes .each_theme img {
+    /* .Collaborations .second_section .themes .each_theme img {
         height: calc(0.7 * 300px);
-    }
+    } */
 
     .Collaborations .second_section .themes .each_theme h4 {
         margin-top: calc(0.7 * 1rem);
         margin-bottom: calc(0.7 * 1rem);
         font-size: calc(0.7 * 1.25rem);
-        min-height: calc(0.7 * 50px);
+        /* min-height: calc(0.7 * 50px); */
     }
 
     .Collaborations .second_section .themes .each_theme p {
@@ -366,7 +375,7 @@
     }
 
     .Collaborations .second_section .themes {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: calc(0.4 * 4rem);
     }
 
@@ -374,15 +383,15 @@
         grid-template-rows: auto calc(0.4 * 1fr);
     }
 
-    .Collaborations .second_section .themes .each_theme img {
+    /* .Collaborations .second_section .themes .each_theme img {
         height: calc(0.4 * 300px);
-    }
+    } */
 
     .Collaborations .second_section .themes .each_theme h4 {
         margin-top: calc(0.4 * 1rem);
         margin-bottom: calc(0.4 * 1rem);
         font-size: calc(0.4 * 1.25rem);
-        min-height: calc(0.4 * 50px);
+        /* min-height: calc(0.4 * 50px); */
     }
 
     .Collaborations .second_section .themes .each_theme p {
@@ -494,15 +503,15 @@
         grid-template-rows: auto calc(0.3 * 1fr);
     }
 
-    .Collaborations .second_section .themes .each_theme img {
+    /* .Collaborations .second_section .themes .each_theme img {
         height: calc(0.3 * 300px);
-    }
+    } */
 
     .Collaborations .second_section .themes .each_theme h4 {
         margin-top: calc(0.3 * 1rem);
         margin-bottom: 0rem;
         font-size: calc(0.3 * 1.25rem);
-        min-height: calc(0.3 * 50px);
+        /* min-height: calc(0.3 * 50px); */
     }
 
     .Collaborations .second_section .themes .each_theme p {

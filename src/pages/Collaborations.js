@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Carousel from './../components/Carousel2';
 import Container from '../components/Container';
 import './Collaborations.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouseSignal, faBuildingLock, faBuildingUser, faHouseLaptop, faTreeCity, faHouse } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
@@ -45,6 +46,7 @@ const slides = [
 ];
 
 function Collaborations() {
+    const collabRef = useRef(null);
 
     useEffect(() => {
         document.title = 'BRL - Collaborations';
@@ -60,8 +62,46 @@ function Collaborations() {
         }
     }
 
+    useEffect(() => {
+        const updateMinHeightTitle = () => {
+            const AllH4Height = collabRef.current.querySelectorAll('.themes .each_theme .each_theme_data h4')
+
+            // Reset heights to auto before recalculating
+            AllH4Height.forEach((each_h4) => {
+                each_h4.style.height = 'auto';
+            });
+
+            let AllHeight = [];
+            AllH4Height.forEach((each_h4) => {
+                const style = getComputedStyle(each_h4);
+                const height =
+                    each_h4.clientHeight -
+                    parseFloat(style.paddingTop) -
+                    parseFloat(style.paddingBottom);
+                AllHeight.push(height);
+            });
+
+            const minHeight = Math.max(...AllHeight);
+
+            AllH4Height.forEach((each_h4) => {
+                each_h4.style.height = `${minHeight}px`;
+            });
+        }
+
+        // Initial update
+        updateMinHeightTitle();
+
+        // Update on window resize
+        window.addEventListener('resize', updateMinHeightTitle);
+
+        // Cleanup the event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', updateMinHeightTitle);
+        };
+    }, []);
+
     return (
-        <div className="Collaborations">
+        <div className="Collaborations" ref={collabRef}>
             <NavBar />
 
             <Container>
@@ -106,46 +146,58 @@ function Collaborations() {
                     </div>
                     <div className="themes">
                         <div class="each_theme">
-                            <Link to="#" onClick={() => handleThemeClick('theme1_section')}>
-                                <img src={T2Lab} alt="A generic icon of trees next to a building to illustrate field deployment in the built environment."></img>
+                            <div className='each_theme_image'>
+                                <FontAwesomeIcon icon={faHouseSignal} />
+                            </div>
+                            <div className='each_theme_data'>
                                 <h4><b>FIELD DEPLOYMENT</b></h4>
-                            </Link>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
                         </div>
                         <div class="each_theme">
-                            <Link to="#" onClick={() => handleThemeClick('theme2_section')}>
-                                <img src={T2Lab} alt="A generic icon depicting an electronic signal interacting with a house to illustrate building automation."></img>
+                            <div className='each_theme_image'>
+                                <FontAwesomeIcon icon={faBuildingLock} />
+                            </div>
+                            <div className='each_theme_data'>
                                 <h4><b>SENSING & AUTOMATION</b></h4>
-                            </Link>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
                         </div>
                         <div class="each_theme">
-                            <Link to="#" onClick={() => handleThemeClick('theme3_section')}>
-                                <img src={T2Lab} alt="A generic icon depicting a lock interacting with a building to illustrate building controls."></img>
+                            <div className='each_theme_image'>
+                                <FontAwesomeIcon icon={faBuildingUser} />
+                            </div>
+                            <div className='each_theme_data'>
                                 <h4><b>CONTROLS</b></h4>
-                            </Link>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
                         </div>
                         <div class="each_theme">
-                            <Link to="#" onClick={() => handleThemeClick('theme4_section')}>
-                                <img src={T2Lab} alt="A generic icon depicting a laptop interacting with a house to illustrate building artifical intelligence."></img>
+                            <div className='each_theme_image'>
+                                <FontAwesomeIcon icon={faHouseLaptop} />
+                            </div>
+                            <div className='each_theme_data'>
                                 <h4><b>ARTIFICIAL INTELLIGENCE</b></h4>
-                            </Link>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
                         </div>
                         <div class="each_theme">
-                            <Link to="#" onClick={() => handleThemeClick('theme4_section')}>
-                                <img src={T2Lab} alt="A generic icon depicting a person interacting with a building to illustrate building user interfaces."></img>
+                            <div className='each_theme_image'>
+                                <FontAwesomeIcon icon={faTreeCity} />
+                            </div>
+                            <div className='each_theme_data'>
                                 <h4><b>USER INTERFACES</b></h4>
-                            </Link>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
                         </div>
                         <div class="each_theme">
-                            <Link to="#" onClick={() => handleThemeClick('theme4_section')}>
-                                <img src={T2Lab} alt="A generic icon of trees next to a building to illustrate the general built environment landscape."></img>
+                            <div className='each_theme_image'>
+                                <FontAwesomeIcon icon={faHouse} />
+                            </div>
+                            <div className='each_theme_data'>
                                 <h4><b>ADDITIONAL RELATED AREAS</b></h4>
-                            </Link>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -191,7 +243,7 @@ function Collaborations() {
                 </div>
             </Container>
 
-            <Container useOrange={true} sectionName='theme2_section'>                
+            <Container useOrange={true} sectionName='theme2_section'>
                 <div className="title">
                     <h1>Past Deliverables</h1>
                     <Carousel slides={slides} />

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Container from '../components/Container';
@@ -18,6 +18,7 @@ import Theme3 from './../components/Website Data/Kelly_T2_theme.png'
 import Theme4 from './../components/Website Data/Interface_theme.png'
 
 function Research() {
+    const researchRef = useRef(null);
 
     useEffect(() => {
         document.title = 'BRL - Research';
@@ -33,8 +34,46 @@ function Research() {
         }
     }
 
+    useEffect(() => {
+        const updateMinHeightTitle = () => {
+            const AllH4Height = researchRef.current.querySelectorAll('.themes .each_theme .each_theme_data h4')
+
+            // Reset heights to auto before recalculating
+            AllH4Height.forEach((each_h4) => {
+                each_h4.style.height = 'auto';
+            });
+
+            let AllHeight = [];
+            AllH4Height.forEach((each_h4) => {
+                const style = getComputedStyle(each_h4);
+                const height =
+                    each_h4.clientHeight -
+                    parseFloat(style.paddingTop) -
+                    parseFloat(style.paddingBottom);
+                AllHeight.push(height);
+            });
+
+            const minHeight = Math.max(...AllHeight);
+
+            AllH4Height.forEach((each_h4) => {
+                each_h4.style.height = `${minHeight}px`;
+            });
+        }
+
+        // Initial update
+        updateMinHeightTitle();
+
+        // Update on window resize
+        window.addEventListener('resize', updateMinHeightTitle);
+
+        // Cleanup the event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', updateMinHeightTitle);
+        };
+    }, []);
+
     return (
-        <div className="Research">
+        <div className="Research" ref={researchRef}>
             <NavBar />
 
             <Container>
@@ -55,30 +94,38 @@ function Research() {
                         <div class="each_theme">
                             <Link to="#" onClick={() => handleThemeClick('theme1_section')}>
                                 <img src={Theme1} alt="A thermal comfort graph with Predicted Setpoint on the y-axis and Daily Mean Outdoor Temperature on the x-axis from a publication for the Sensing Human Health and Comfort theme."></img>
-                                <h4><b>SENSING HUMAN HEALTH AND COMFORT</b></h4>
                             </Link>
-                            <p>Our focus on sensing human health and comfort enables us to create smarter buildings that prioritise the well-being of their occupants while reducing energy consumption and promoting environmental sustainability. Projects include adaptive comfort modelling, vision-based systems for remote physiological measurements, and multi-sensing devices for human-centric indoor environmental quality (IEQ).</p>
+                            <div className='each_theme_data'>
+                                <h4><b>SENSING HUMAN HEALTH AND COMFORT</b></h4>
+                                <p>Our focus on sensing human health and comfort enables us to create smarter buildings that prioritise the well-being of their occupants while reducing energy consumption and promoting environmental sustainability. Projects include adaptive comfort modelling, vision-based systems for remote physiological measurements, and multi-sensing devices for human-centric indoor environmental quality (IEQ).</p>
+                            </div>
                         </div>
                         <div class="each_theme">
                             <Link to="#" onClick={() => handleThemeClick('theme2_section')}>
                                 <img src={Theme2} alt="A split-screen of a simulated human walking around the lab and automatically being detected by the building systems as the real human walks around testing the program for the Human-Centred AI theme."></img>
-                                <h4><b>HUMAN-CENTRED AI</b></h4>
                             </Link>
-                            <p>Human-centred AI puts people at the forefront of technology development, ensuring that AI systems are designed to meet human needs and improve the quality of life for individuals and society as a whole. Projects include integrating and optimising personal comfort system devices into the control loop of HVAC systems, developing advanced sensors, ontology automation, and a semantically-connected digital twin.</p>
+                            <div className='each_theme_data'>
+                                <h4><b>HUMAN-CENTRED AI</b></h4>
+                                <p>Human-centred AI puts people at the forefront of technology development, ensuring that AI systems are designed to meet human needs and improve the quality of life for individuals and society as a whole. Projects include integrating and optimising personal comfort system devices into the control loop of HVAC systems, developing advanced sensors, ontology automation, and a semantically-connected digital twin.</p>
+                            </div>
                         </div>
                         <div class="each_theme">
                             <Link to="#" onClick={() => handleThemeClick('theme3_section')}>
                                 <img src={Theme3} alt="The NUS Tropical Technologies Laboratory with building greenery, building-integrated photovoltaic, and various façades for the Resilient Cooling theme."></img>
-                                <h4><b>NATURE-BASED TECHNOLOGIES</b></h4>
                             </Link>
-                            <p>Our focus is on façade technologies, which involves developing innovative building envelope systems that reduce the energy needed for cooling while also providing increased thermal comfort for occupants. This includes research developments and technology integration for enhancing the cooling effects of current urban greening systems, such as vertical greenery systems (VGS).</p>
+                            <div className='each_theme_data'>
+                                <h4><b>NATURE-BASED TECHNOLOGIES</b></h4>
+                                <p>Our focus is on façade technologies, which involves developing innovative building envelope systems that reduce the energy needed for cooling while also providing increased thermal comfort for occupants. This includes research developments and technology integration for enhancing the cooling effects of current urban greening systems, such as vertical greenery systems (VGS).</p>
+                            </div>
                         </div>
                         <div class="each_theme">
                             <Link to="#" onClick={() => handleThemeClick('theme4_section')}>
                                 <img src={Theme4} alt="Illustration of the basic concept of a democratised virtual power plant (VPP) with the power grid supplying energy to the democratised VPP, which allows a two-way relationship for pre-purchase with prosumers and a two-way relationship for selling with consumers for the Intelligent Environments theme."></img>
-                                <h4><b>INTELLIGENT ENVIRONMENTS</b></h4>
                             </Link>
-                            <p>Our research investigates the democratisation of virtual power plants (VPP) for optimal monetisation and grid flexibility to empower end-users to participate effectively. By leveraging AI, we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into two halves: one explores user impacts on VPPs and behaviour modeling, while the other employs machine learning for automated energy market participation.</p>
+                            <div className='each_theme_data'>
+                                <h4><b>INTELLIGENT ENVIRONMENTS</b></h4>
+                                <p>Our research investigates the democratisation of virtual power plants (VPP) for optimal monetisation and grid flexibility to empower end-users to participate effectively. By leveraging AI, we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into two halves: one explores user impacts on VPPs and behaviour modeling, while the other employs machine learning for automated energy market participation.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
