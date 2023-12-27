@@ -111,7 +111,7 @@ const slides = [
 function Home() {
 
     useEffect(() => {
-        document.title = 'NUS Building Robotics Lab';
+        document.title = 'BRL - Home';
         return () => {
             document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
         };
