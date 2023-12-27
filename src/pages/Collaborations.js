@@ -13,14 +13,6 @@ import TraneLogo from './../components/Website Data/tt_logo_color_rgb.jpg'
 import GreenologyLogo from './../components/Website Data/Greenology logo2.png'
 import CoLogo from './../components/Website Data/Co Innovation lab logo.jpg'
 
-import Theme1 from './../components/Website Data/Kai_OPC.jpg'
-import Theme1_2 from './../components/Website Data/Riccardo1.jpg'
-
-import Theme2 from './../components/Website Data/Iqbal_DT2.png'
-import Theme2_1 from './../components/Website Data/Ilyas_rPPG@2x.png'
-import Theme2_2 from './../components/Website Data/Riccardo2.jpg'
-
-import Theme3_0 from './../components/Website Data/Iqbal_VGS.jpg'
 import FEC1 from './../components/Website Data/SDE2-FEC1.png'
 import T2Lab from './../components/Website Data/Kelly_T2.png'
 
@@ -56,12 +48,12 @@ function Collaborations() {
         };
     }, []); // Empty dependency array ensures this runs only once when the component mounts.
 
-    function handleThemeClick(themeId) {
+    /*function handleThemeClick(themeId) {
         const themeElement = document.getElementById(themeId);
         if (themeElement) {
             themeElement.scrollIntoView({ behavior: 'smooth' });
         }
-    }
+    }*/
 
     useEffect(() => {
         const updateMinHeightTitle = () => {
@@ -213,8 +205,9 @@ function Collaborations() {
                     </div>
                     <div className='theme_section' id='theme1_section'>
                         <div className="theme_details">
-                            <img src={T2Lab} alt="The Smart HVAC Lab."></img>
-                            <h4><b>Smart HVAC Lab [under construction]</b></h4>
+                        <FontAwesomeIcon icon={faImage} />   
+                            {/*<img src={T2Lab} alt="The Smart HVAC Lab."></img>*/}
+                            <h4><b>Smart HVAC Lab [under construction; expected completion February 2024]</b></h4>
                             <h6><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</b></h6>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
@@ -231,7 +224,8 @@ function Collaborations() {
                     </div>
                     <div className='theme_section' id='theme1_section'>
                         <div className="theme_details">
-                            <img src={T2Lab} alt="The NUS-CDL Smart Green Home."></img>
+                        <FontAwesomeIcon icon={faImage} /> 
+                            {/*<img src={T2Lab} alt="The NUS-CDL Smart Green Home."></img>*/}
                             <h4><b>NUS-CDL Smart Green Home</b></h4>
                             <h6><b>Step into the future of sustainable living with the NUS-CDL Smart Green Home, a cutting-edge 100 m2 indoor test-bed environment completed in December 2017.</b></h6>
                             <p>This world-class facility, nestled within the NUS College of Design and Engineering, serves as a dynamic platform for holistic experimental studies. Immerse yourself in a real-life environment designed for testing, analysing, and piloting smart home innovations with a "plug-and-play" approach. It aims to harness research to develop innovative solutions to create homes that are safe and secure, healthy and comfortable, and acoustically pleasing.</p>

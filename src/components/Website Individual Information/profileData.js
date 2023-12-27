@@ -522,7 +522,7 @@ const profiles = [
             { href: "mailto:r.talami@nus.edu.sg", icon: faEnvelope, text: "michelle@hit.edu.cn" },
         ],
         Links: [
-            /*{ href: MichelleCV, icon: faUser, text: 'CV' },*/
+            { href: MichelleCV, icon: faUser, text: 'CV' },
             { href: 'https://www.researchgate.net/profile/Xuanning-Qi', icon: faResearchgate, text: 'ResearchGate' }
         ],
         Interests: [
