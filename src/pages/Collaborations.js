@@ -5,7 +5,7 @@ import Carousel from './../components/Carousel2';
 import Container from '../components/Container';
 import './Collaborations.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouseSignal, faBuildingLock, faBuildingUser, faHouseLaptop, faTreeCity, faHouse } from '@fortawesome/free-solid-svg-icons';
+import { faHouseSignal, faBuildingLock, faBuildingUser, faHouseLaptop, faTreeCity, faHouse, faImage } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 import AWSLogo from './../components/Website Data/AWS logo21.png'
@@ -21,6 +21,7 @@ import Theme2_1 from './../components/Website Data/Ilyas_rPPG@2x.png'
 import Theme2_2 from './../components/Website Data/Riccardo2.jpg'
 
 import Theme3_0 from './../components/Website Data/Iqbal_VGS.jpg'
+import FEC1 from './../components/Website Data/SDE2-FEC1.png'
 import T2Lab from './../components/Website Data/Kelly_T2.png'
 
 import IqbalPublication2 from './../components/Website Data/iqbal-publication2.jpg'
@@ -204,8 +205,8 @@ function Collaborations() {
                 <div className="whole_theme">
                     <div className='theme_section'>
                         <div className="theme_details">
-                            <img src={T2Lab} alt="The FEC1 Living Lab--the day-to-day home of the Building Robotics Lab."></img>
-                            <h4><b>FEC1 Living Lab</b></h4>
+                            <img src={FEC1} alt="The FEC1 Living Lab--the day-to-day home of the Building Robotics Lab."></img>
+                            <h4><b>SDE2-FEC1 Living Lab</b></h4>
                             <h6><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</b></h6>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
