@@ -187,7 +187,7 @@ function Collaborations() {
                         </div>
                         <div class="each_theme">
                             <div className='each_theme_image'>
-                                <FontAwesomeIcon icon={faHouse} /><h4><b>ADDITIONAL RELATED AREAS</b></h4>
+                                <FontAwesomeIcon icon={faHouse} /><h4><b>ADDITIONAL DISCIPLINES</b></h4>
                             </div>
                             <div className='each_theme_data'>
                                 <p>Beyond the core capabilities mentioned, our lab is equipped to address a wide array of challenges in the realm of smart buildings. Whether it's exploring novel cooling technologies for building façades or democratising virtual power plants for optimal monetisation and grid flexibility, our diverse team is ready to tackle unique and multifaceted projects. Industry partners collaborating with us gain access to a wealth of knowledge, experience, and innovative thinking that extends beyond traditional boundaries, opening up new possibilities for collaboration and advancement in the field of building science.</p>
