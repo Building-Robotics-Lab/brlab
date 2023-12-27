@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Main Tab URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/research</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/team</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/news</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publications</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/join</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/collaborations</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/comfortgpt</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/otst</loc>
+    </url>
+
+    <!-- Subpage Individual Profile URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/profile/Riccardo</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/profile/Kai</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/profile/Iqbal</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/profile/Connor</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/profile/Kelly</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/profile/Stella</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/profile/Xiaosong</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/profile/Pegah</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/profile/Pierre</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/profile/Guillaume</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/profile/Ilyas</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/profile/Michelle</loc>
+    </url>
+    
+    <!-- Subpage Individual News URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/news#FourthNewsSection</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/news#ThirdNewsSection</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/news#SecondNewsSection</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/news#FirstNewsSection</loc>
+    </url>
+
+    <!-- Subpage 2023 Journal Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/comfortgpt:_a_transformer-based</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/quantifying_energy_savings</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/porous_plant_form-induced</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/towards_democratization_of</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/demystifying_energy_savings</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/smart_detection_of</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/personal_thermal_comfort</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/thermal_transfer_and</loc>
+    </url>
+    <!-- Subpage 2022 Journal Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/the_field_of</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/ten_questions_concerning</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/bridging_the_gap</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/infrared-fused_vision-based_thermoregulation</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/towards_personalization_of</loc>
+    </url>
+    <!-- Subpage 2021 Journal Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/the_effect_of</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/test_rooms_to</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/passive_cooling_and</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/three-dimensional_analysis_of</loc>
+    </url>
+    <!-- Subpage 2020 Journal Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/isea:_iot-based_smartphone</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/artificial_intelligence_for</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/measuring_3d_indoor</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/personal_co2_cloud:</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/high-density_thermal_sensitivity</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/towards_utilizing_internet</loc>
+    </url>
+    <!-- Subpage 2019 Journal Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/extracting_occupants’_energy-use</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/measuring_air_speed</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/personal_co2_bubble:</loc>
+    </url>
+    <!-- Subpage 2018 Journal Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/the_uncertainty_of</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/learning_occupants’_workplace</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/thermal_comfort_evaluated</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/energy_trade_off</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/individual_difference_in</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/real-time_activity_recognition</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/towards_unsupervised_learning</loc>
+    </url>
+    <!-- Subpage 2017 Journal Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/hvac_system_energy</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/monitoring_fatigue_in</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/one_size_does</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/analyzing_the_performance</loc>
+    </url>
+    <!-- Subpage 2016 Journal Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/infrared_thermography_of</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/building_occupancy_diversity</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/energy_savings_from</loc>
+    </url>
+    <!-- Subpage 2015 Journal Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/an_online_learning</loc>
+    </url>
+    <!-- Subpage 2014 Journal Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/a_knowledge_based</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/user-led_decentralized_thermal</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/situational_awareness_for</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/human-building_interaction_framework</loc>
+    </url>
+    
+    <!-- Subpage 2019 Conference Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/an_inexpensive_low-power</loc>
+    </url>
+    <!-- Subpage 2018 Conference Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/heating_and_cooling</loc>
+    </url>
+    <!-- Subpage 2017 Conference Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/can_immersive_virtual</loc>
+    </url>
+    <!-- Subpage 2015 Conference Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/quantifying_the_influence</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/iterative_reassignment_algorithm:</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/a_study_of</loc>
+    </url>
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/effects_of_variant</loc>
+    </url>
+    <!-- Subpage 2013 Conference Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/personalized_thermal_comfort-driven</loc>
+    </url>
+    
+    <!-- Subpage 2022 Patent Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/ultrasonic_anemometers_systems</loc>
+    </url>
+    <!-- Subpage 2017 Patent Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/iglass:_infrared_thermography</loc>
+    </url>
+    <!-- Subpage 2014 Patent Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/human-building_interaction_framework</loc>
+    </url>
+
+    <!-- Subpage 2022 Thesis Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/the_sequential_design</loc>
+    </url>
+    <!-- Subpage 2016 Thesis Publication URLs -->
+    <url>
+        <loc>https://building-robotics-lab.github.io/brlab/#/publication/learning_personal_thermal</loc>
+    </url>
+</urlset>
