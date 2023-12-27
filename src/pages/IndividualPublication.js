@@ -20,7 +20,7 @@ function IndividualPublication() {
 
     useEffect(() => {
         if (publication) {
-            document.title = 'BRL - ' + publication.id.replace("_", " ").charAt(0).toUpperCase() + publication.id.replace("_", " ").slice(1).toLowerCase();
+            document.title = 'BRL - ' + publication.id.replace("_", " ").charAt(0).toUpperCase() + publication.id.replace("_", " ").slice(2).toLowerCase();
         } else {
             document.title = 'BRL - Publication Not Found';
         }

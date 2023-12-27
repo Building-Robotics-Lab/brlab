@@ -1629,7 +1629,7 @@ const JournalData = [
 // Function to generate ID from the title
 const generateIdFromTitle = (title) => {
     // Take the first two words from the title
-    const firstTwoWords = title.split(" ").slice(0, 2).join("_").toLowerCase();
+    const firstTwoWords = title.split(" ").slice(0, 3).join("_").toLowerCase();
     return firstTwoWords;
 };
 

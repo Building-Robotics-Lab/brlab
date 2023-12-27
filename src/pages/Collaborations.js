@@ -32,17 +32,17 @@ const slides = [
     {
         image: IqbalPublication2,
         title: '<b><i>Building and Environment</i> publication announcement!</b>',
-        link: '/publication/porous_plant',
+        link: '/publication/porous_plant_form-induced',
     },
     {
         image: AliPublication6,
         title: '<b><i>Sensors</i> publication announcement!</b>',
-        link: '/publication/towards_personalization',
+        link: '/publication/towards_personalization_of',
     },
     {
         image: AliPublication12,
         title: '<b><i>Frontiers in Built Environment</i> publication announcement!</b>',
-        link: '/publication/artificial_intelligence',
+        link: '/publication/artificial_intelligence_for',
     },
 ];
 
