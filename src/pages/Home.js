@@ -18,7 +18,7 @@ import FourthResearchImage from './../components/Website Data/Interface_theme.pn
 // import FourthResearchImage from './../components/Website Data/resilient@2x.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBook, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faBook, faUsers, faPeopleGroup, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 import PublicationsKaiNews2 from './../components/Website Data/kai_paper2.jpg'
 import PublicationsRiccardoNews2 from './../components/Website Data/riccardo-publication2.png'
@@ -116,9 +116,80 @@ function Home() {
             document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
         };
     }, []); // Empty dependency array ensures this runs only once when the component mounts.
-    
+
+    const homeRef = useRef(null);
+
+    useEffect(() => {
+        const updateBoxHeight = () => {
+            const AllpHeight = homeRef.current.querySelectorAll('.second_section .research_section p')
+
+            // Reset heights to auto before recalculating
+            AllpHeight.forEach((each_box) => {
+                each_box.style.height = 'auto';
+            });
+
+            let AllHeight = [];
+            AllpHeight.forEach((each_box) => {
+                const style = getComputedStyle(each_box);
+                const height = each_box.clientHeight;
+                AllHeight.push(height);
+            });
+
+            const maxHeight = Math.max(...AllHeight);
+            console.log(maxHeight)
+
+            // Set all box heights to the max height
+            AllpHeight.forEach((each_box) => {
+                const style = getComputedStyle(each_box);
+                const height = each_box.clientHeight;
+                each_box.style.paddingBottom = `${maxHeight - height + 16}px`;
+                console.log(maxHeight - height)
+            });
+
+            // 
+            
+            const Allh3height = homeRef.current.querySelectorAll('.second_section .research_section h3')
+
+            // Reset heights to auto before recalculating
+            Allh3height.forEach((each_box) => {
+                each_box.style.height = 'auto';
+            });
+
+            let Allh3Heights = [];
+            Allh3height.forEach((each_box) => {
+                const style = getComputedStyle(each_box);
+                const height = each_box.clientHeight;
+                Allh3Heights.push(height);
+            });
+
+            const maxH3Height = Math.max(...Allh3Heights);
+            console.log(maxH3Height)
+
+            // Set all box heights to the max height
+            Allh3height.forEach((each_box) => {
+                const style = getComputedStyle(each_box);
+                const height = each_box.clientHeight;
+                const allPadding = maxH3Height - height + 8
+                each_box.style.paddingTop = `${allPadding/2}px`;
+                each_box.style.paddingBottom = `${allPadding/2}px`;
+                console.log(maxH3Height - height)
+            });
+        }
+
+        // Initial update
+        updateBoxHeight();
+
+        // Update on window resize
+        window.addEventListener('resize', updateBoxHeight);
+
+        // Cleanup the event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', updateBoxHeight);
+        };
+    }, []);
+
     return (
-        <div className="Home">
+        <div className="Home" ref={homeRef}>
             <NavBar />
 
             <Container>
@@ -133,11 +204,46 @@ function Home() {
             </Container>
 
             <Container useOrange={true}>
-            <div className='second_section_Title'>
-                        <h2><b>A Little About Our Research Themes</b></h2>
+                <div className='second_section_Title'>
+                    <h2><b>A Little About Our Research Themes</b></h2>
+                </div>
+                <div className='second_section'>
+                    <div className='research_section'>
+                        <h3><b>SENSING HUMAN HEALTH AND COMFORT</b></h3>
+                        <p>Sensing human health and comfort enables us to create smarter buildings that
+                            prioritise the well-being of their occupants while reducing energy consumption and promoting
+                            environmental sustainability. Projects include <b><i>adaptive comfort</i></b> modelling,
+                            vision-based systems for <b><i>remote physiological measurements</i></b>, and
+                            <b><i> multi-sensing devices</i></b> for <b><i>human-centric indoor environmental quality (IEQ)</i></b>.</p>
                     </div>
-            <div className='second_section'>
-                    <div className="sensing">
+                    <div className='research_section'>
+                        <h3><b>HUMAN-CENTRED AI</b></h3>
+                        <p>Human-centred AI puts people at the forefront of technology development, ensuring that AI
+                            systems are designed to meet human needs and improve the quality of life for individuals and
+                            society as a whole. Projects include <b><i>integrating</i></b> and <b><i>optimising personal
+                                comfort system devices</i></b> into the control loop of <b><i>HVAC systems</i></b>, developing
+                            <b><i>advanced sensors</i></b>, <b><i>ontology automation,</i></b> and a <b><i>semantically
+                                connected digital twin</i></b>.</p>
+                    </div>
+                    <div className='research_section'>
+                        <h3><b>NATURE-BASED TECHNOLOGIES</b></h3>
+                        <p>Our focus is on façade technologies, which involves developing <b><i>innovative building
+                            envelope systems</i></b> that reduce the energy needed for  cooling while also providing
+                            increased thermal comfort for occupants. This includes research developments and technology
+                            integration for enhancing the <b><i>cooling effects</i></b> of current urban greening systems,
+                            such as <b><i>vertical greenery systems (VGS)</i></b>.</p>
+                    </div>
+                    <div className='research_section'>
+                        <h3><b>INTELLIGENT ENVIRONMENTS</b></h3>
+                        <p>Our research investigates the <b><i>democratisation of virtual power plants</i></b> (VPP) for <b><i>optimal
+                            monetisation</i></b> and <b><i>grid flexibility</i></b> to empower end-users to participate effectively. By leveraging AI,
+                            we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into
+                            two halves: one explores <b><i>user impacts on VPPs</i></b> and <b><i>energy consumption behaviour modelling</i></b>,
+                            while the other employs <b><i>machine learning for automated energy market participation</i></b>.</p>
+                    </div>
+
+
+                    {/* <div className="sensing">
                         <div className="sensing_text">
                             <p id='sensing_text_left'>
                                 <h3><b>SENSING HUMAN HEALTH AND COMFORT</b></h3>
@@ -156,9 +262,9 @@ function Home() {
                                 Human-centred AI puts people at the forefront of technology development, ensuring that AI
                                 systems are designed to meet human needs and improve the quality of life for individuals and
                                 society as a whole. Projects include <b><i>integrating</i></b> and <b><i>optimising personal
-                                comfort system devices</i></b> into the control loop of <b><i>HVAC systems</i></b>, developing 
-                                <b><i>advanced sensors</i></b>, <b><i>ontology automation,</i></b> and a <b><i>semantically 
-                                connected digital twin</i></b>.
+                                    comfort system devices</i></b> into the control loop of <b><i>HVAC systems</i></b>, developing
+                                <b><i>advanced sensors</i></b>, <b><i>ontology automation,</i></b> and a <b><i>semantically
+                                    connected digital twin</i></b>.
                             </p>
                         </div>
                     </div>
@@ -167,7 +273,7 @@ function Home() {
                             <p id='nature_text_left'>
                                 <h3><b>NATURE-BASED TECHNOLOGIES</b></h3>
                                 Our focus is on façade technologies, which involves developing <b><i>innovative building
-                                envelope systems</i></b> that reduce the energy needed for  cooling while also providing
+                                    envelope systems</i></b> that reduce the energy needed for  cooling while also providing
                                 increased thermal comfort for occupants. This includes research developments and technology
                                 integration for enhancing the <b><i>cooling effects</i></b> of current urban greening systems,
                                 such as <b><i>vertical greenery systems (VGS)</i></b>.
@@ -178,20 +284,20 @@ function Home() {
                         <div className="VPP_text">
                             <p id='VPP_text_right'>
                                 <h3><b>INTELLIGENT ENVIRONMENTS</b></h3>
-                                Our research investigates the <b><i>democratisation of virtual power plants</i></b> (VPP) for <b><i>optimal 
-                                monetisation</i></b> and <b><i>grid flexibility</i></b> to empower end-users to participate effectively. By leveraging AI, 
-                                we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into 
-                                two halves: one explores <b><i>user impacts on VPPs</i></b> and <b><i>energy consumption behaviour modelling</i></b>, 
+                                Our research investigates the <b><i>democratisation of virtual power plants</i></b> (VPP) for <b><i>optimal
+                                    monetisation</i></b> and <b><i>grid flexibility</i></b> to empower end-users to participate effectively. By leveraging AI,
+                                we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into
+                                two halves: one explores <b><i>user impacts on VPPs</i></b> and <b><i>energy consumption behaviour modelling</i></b>,
                                 while the other employs <b><i>machine learning for automated energy market participation</i></b>.
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
-    <div className="HomeButtons">
-        <Link to="/research"><p id='JoinButton'>LEARN MORE ABOUT OUR RESEARCH</p></Link>
-    </div>
-</Container>
-                {/*
+                <div className="HomeButtons">
+                    <Link to="/research"><p id='JoinButton'>LEARN MORE ABOUT OUR RESEARCH</p></Link>
+                </div>
+            </Container>
+            {/*
                 <ResearchSection
                     title="SENSING HUMAN HEALTH AND COMFORT"
                     text="Sensing human health and comfort enables us to create smarter buildings that
@@ -261,7 +367,6 @@ function Home() {
                             <FontAwesomeIcon icon={faBook} />
                         </div>
                         <div className="publications_text">
-
                             <p id='publications_text_right'>
                                 <h2><b>Publications</b></h2>
                                 Our research involves the use of both
@@ -288,18 +393,53 @@ function Home() {
             </Container>
 
             <Container>
+                <div className='fifth_section_Title'>
+                    <h2><b>Collaborate with Us!</b></h2>
+                </div>
                 <div className='fifth_section'>
-                    <div className='fifth_section_Title'>
-                        <h2><b>Collaborate with Us!</b></h2>
-                    </div>
-                    <div className="fifth_section_texts">
-                        <div className="fifth_section_text_left">
-                            <p id='text_left'>
+
+                    <div className="collaborate">
+                        <div className="collaborate_image">
+                            <FontAwesomeIcon icon={faPeopleGroup} />
+                        </div>
+                        <div className="collaborate_text">
+                            <p id='collaborate_left'>
                                 As a research lab, we place a strong emphasis on developing practical solutions that can be readily implemented
                                 in real-world scenarios. Our team is dedicated to working closely with industry stakeholders to understand their
                                 needs and to develop innovative solutions that drive change and make a positive impact in their respective fields.
                                 By partnering with us, organisations can leverage our expertise to create sustainable solutions that are tailored to
                                 their unique challenges and goals.
+                            </p>
+                            <div className="HomeButtons">
+                                <Link to="/collaborations"><p className='join_the_lab_fifth_section_left' id='JoinButton'>WORK WITH US</p></Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="join_the_lab">
+                        <div className="join_the_lab_image">
+                            <FontAwesomeIcon icon={faUserPlus} />
+                        </div>
+                        <div className="join_the_lab_text">
+                            <p id='join_the_lab_right'>
+                                Our research involves the use of both
+                                quantitative and qualitative techniques to comprehend the impact of our built environment and
+                                AI on individuals. Our objective is to create interventions and adaptations
+                                that promote human well-being. Furthermore, we disseminate our findings through peer-reviewed
+                                journals, workshop and conference proceedings, and encourage readers to explore our approaches
+                                and discoveries.
+                            </p>
+                            <div className="HomeButtons">
+                                <Link to="/join"><p className='join_the_lab_fifth_section_right' id='JoinButton'>JOIN THE LAB</p></Link>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <div className="fifth_section_texts">
+                        <div className="fifth_section_text_left">
+                            <p id='text_left'>
+                                Our research lab provides a collaborative and interdisciplinary environment that encourages creativity and innovation,
+                                offering a platform for academics and students to gain practical experience in developing solutions that prioritise human
+                                well-being and environmental sustainability, and conduct cutting-edge research that can have a real impact on society. If
+                                your interests align with these values, visit our link below to learn more about our members and current opportunities!
                             </p>
                             <div className="HomeButtons">
                                 <Link to="/collaborations"><p className='join_the_lab_fifth_section_left' id='JoinButton'>WORK WITH US</p></Link>
@@ -316,7 +456,7 @@ function Home() {
                                 <Link to="/join"><p className='join_the_lab_fifth_section_right' id='JoinButton'>JOIN THE LAB</p></Link>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </Container>
 
