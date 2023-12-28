@@ -268,105 +268,105 @@
     /* First Section */
 
     .IndividualPublication .first_section .title {
-        margin-bottom: calc(0.4 * 1.65vmax);
-        font-size: calc(0.4 * 1.5rem);
+        margin-bottom: calc(0.5 * 1.65vmax);
+        font-size: calc(0.5 * 1.5rem);
     }
 
     .IndividualPublication .first_section .title h2 {
-        margin-top: calc(0.4 * 1.65vmax);
-        font-size: calc(0.4 * 1.5rem);
+        margin-top: calc(0.5 * 1.65vmax);
+        font-size: calc(0.5 * 1.5rem);
     }
 
     .IndividualPublication .first_section .title p {
-        margin-top: calc(0.4 * 1.65vmax);
-        font-size: calc(0.4 * 1rem);
+        margin-top: calc(0.5 * 1.65vmax);
+        font-size: calc(0.5 * 1rem);
     }
 
 
     .IndividualPublication .first_section .links {
-        gap: calc(0.4 * 1rem);
-        margin-bottom: calc(0.4 * 1.65vmax);
+        gap: calc(0.5 * 1rem);
+        margin-bottom: calc(0.5 * 1.65vmax);
     }
 
     .IndividualPublication .first_section .keywords {
-        gap: calc(0.4 * 1rem);
-        font-size: calc(0.4 * 1rem);
+        gap: calc(0.5 * 1rem);
+        font-size: calc(0.5 * 1rem);
     }
 
     .IndividualPublication .first_section .keywords>* {
-        padding: calc(0.4 * 0.25rem);
-        border-radius: calc(0.4 * 0.5rem);
+        padding: calc(0.5 * 0.25rem);
+        border-radius: calc(0.5 * 0.5rem);
     }
 
     /* Second Section */
 
     .IndividualPublication .second_section {
-        gap: calc(0.4 * 3.3vmax);
+        gap: calc(0.5 * 3.3vmax);
     }
 
     .IndividualPublication .second_section .highlights {
-        margin-bottom: calc(0.4 * 3.3vmax);
+        margin-bottom: calc(0.5 * 3.3vmax);
     }
 
     .IndividualPublication .second_section .highlights h3 {
-        margin-bottom: calc(0.4 * 1.65vmax);
-        font-size: calc(0.4 * 1.17rem);
+        margin-bottom: calc(0.5 * 1.65vmax);
+        font-size: calc(0.5 * 1.17rem);
     }
 
     .IndividualPublication .second_section .highlights ul li {
-        font-size: calc(0.4 * 1rem);
+        font-size: calc(0.5 * 1rem);
     }
 
     .IndividualPublication .second_section .highlights ul li:not(:last-child) {
-        margin-bottom: calc(0.4 * 0.25rem);
+        margin-bottom: calc(0.5 * 0.25rem);
     }
 
     .IndividualPublication .second_section h3 {
-        margin-bottom: calc(0.4 * 1.65vmax);
-        font-size: calc(0.4 * 1.17rem);
+        margin-bottom: calc(0.5 * 1.65vmax);
+        font-size: calc(0.5 * 1.17rem);
     }
 
     .IndividualPublication .second_section .abstract p {
-        font-size: calc(0.4 * 1rem);
+        font-size: calc(0.5 * 1rem);
     }
 
     /* Third Section */
 
     .IndividualPublication .third_section {
-        gap: calc(0.4 * 20px);
+        gap: calc(0.5 * 20px);
     }
 
     .IndividualPublication .third_section .profile_image img {
-        width: calc(0.4 * 124.8px);
-        height: calc(0.4 * 124.8px);
+        width: calc(0.5 * 124.8px);
+        height: calc(0.5 * 124.8px);
     }
 
     .IndividualPublication .third_section .profile_data {
-        margin-left: calc(0.4 * 20px);
-        height: calc(0.4 * 120px);
+        margin-left: calc(0.5 * 20px);
+        height: calc(0.5 * 120px);
     }
 
     .IndividualPublication .third_section .profile_links {
-        gap: calc(0.4 * 10px);
+        gap: calc(0.5 * 10px);
     }
 
     .IndividualPublication .third_section .profile_icons {
-        font-size: calc(0.4 * 1.5rem);
+        font-size: calc(0.5 * 1.5rem);
     }
 
     .IndividualPublication .third_section .profile_data h5,
     .IndividualPublication .third_section .profile_data p {
-        font-size: calc(0.4 * 1rem);
+        font-size: calc(0.5 * 1rem);
     }
 
     .IndividualPublication .third_section .profile_data h5:hover {
-        border-radius: calc(0.4 * 0.25rem);
+        border-radius: calc(0.5 * 0.25rem);
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 426px) {}
     /* First Section */
-
+/*
     .IndividualPublication .first_section .title {
         margin-bottom: calc(0.3 * 1.65vmax);
         font-size: calc(0.3 * 1.5rem);
@@ -397,9 +397,9 @@
         padding: calc(0.3 * 0.25rem);
         border-radius: calc(0.3 * 0.5rem);
     }
-
+*/
     /* Second Section */
-
+/*
     .IndividualPublication .second_section {
         gap: calc(0.3 * 3.3vmax);
     }
@@ -434,9 +434,9 @@
     .IndividualPublication .second_section .abstract p {
         font-size: calc(0.3 * 1rem);
     }
-
+*/
     /* Third Section */
-
+/*
     .IndividualPublication .third_section {
         gap: calc(0.3 * 20px);
     }
@@ -467,4 +467,4 @@
     .IndividualPublication .third_section .profile_data h5:hover {
         border-radius: calc(0.3 * 0.25rem);
     }
-}
+}*/

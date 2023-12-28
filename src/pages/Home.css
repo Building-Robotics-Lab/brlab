@@ -21,6 +21,14 @@
 
 /* Second Section */
 
+.Home .second_section {
+    display: grid;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .Home .second_section_Title {
     text-align: center;
 }
@@ -30,10 +38,79 @@
     padding-bottom: 3.3vmax;
 }
 
-.Home .Each_Section {
+/*.second_section .sensing,
+.second_section .human,
+.second_section .nature,
+.second_section .VPP {
+    flex: 1;
+    /* Make them take equal widths */
+    /*display: flex;*/
+    /*display: grid;
+    /* Make these flex containers too */
+    /*flex-direction: column;
+    /* Stack children vertically *//*
+}*/
+
+.sensing_text,
+.human_text,
+.nature_text,
+.VPP_text {
+    flex-grow: 1;
+    /* This will ensure the text container takes up all available space, pushing the button to the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* This will ensure maximum space between the text and the button */
+}
+
+.Home .sensing_text,
+.Home .human_text,
+.Home .nature_text,
+.Home .VPP_text {
+    margin: auto;
+    z-index: 2;
+    padding: 7%;
+    box-shadow: -1px 1px 20px 9px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+
+
+.Home .sensing_text h3,
+.Home .human_text h3,
+.Home .nature_text h3,
+.Home .VPP_text h3 {
+    text-align: center;
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+}
+
+.Home .sensing #sensing_text_left,
+.Home .human_text #human_text_right,
+.Home .nature_text #nature_text_left,
+.Home .VPP_text #VPP_text_right {
+    text-align: center;
+    text-justify: inter-word;
+    line-height: 1.5;
+    font-size: larger;
+    padding-bottom: 1rem;
+}
+
+.Home .HomeButtons {
+    justify-content: center;
+    display: flex;
+    margin-top: 2rem;
+}
+
+/*
+
+/*--*/
+
+/*.Home .Each_Section {
     display: flex;
     flex-direction: row;
-    padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
 }
 
 .Home .Each_Section .grid-container,
@@ -71,7 +148,7 @@
     z-index: 0;
 } */
 
-.Home .Each_Section .ResearchImage,
+/*.Home .Each_Section .ResearchImage,
 .Home .Each_Section .ResearchImage_right {
     flex: 3;
     z-index: 1;
@@ -83,7 +160,7 @@
 .Home .Each_Section .ResearchImage img,
 .Home .Each_Section .ResearchImage_right img {
     object-fit: contain;
-    /* width: 400px; */
+    /* width: 400px; *//*
     width: 100%;
     height: 400px;
 }
@@ -96,7 +173,7 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    padding: 5rem;
+    padding: 3.5rem;
     z-index: 1;
     background-color: white;
     box-shadow: -1px 1px 20px 9px rgba(0, 0, 0, 0.3);
@@ -116,11 +193,7 @@
     text-justify: inter-word;
     line-height: 1.5;
 }
-
-.Home .HomeButtons {
-    justify-content: center;
-    display: flex;
-}
+*/
 
 /* Third Section */
 
@@ -260,7 +333,7 @@
     }
 
     .Home .Each_Section {
-        padding-bottom: calc(0.7 * 3rem);
+        padding-bottom: calc(0.7 * 1.5rem);
     }
 
     .Home .Each_Section .grid-container,
@@ -373,7 +446,7 @@
     }
 
     .Home .Each_Section {
-        padding-bottom: calc(0.4 * 3rem);
+        padding-bottom: calc(0.4 * 1.5rem);
     }
     
     .Home .Each_Section .grid-container,
@@ -470,23 +543,23 @@
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 426px) {}
     /* First Section */
-
+/*
     .Home .first_section2 {
         font-size: calc(0.3 * 1.25rem);
         padding-top: calc(0.3 * 3.3vmax);
     }
-
+*/
     /* Second Section */
-
+/*
     .Home .second_section_Title h2 {
         font-size: calc(0.3 * 2rem);
         padding-bottom: calc(0.3 * 3.3vmax);
     }
 
     .Home .Each_Section {
-        padding-bottom: calc(0.3 * 3rem);
+        padding-bottom: calc(0.3 * 1.5);
     }
 
     .Home .Each_Section .grid-container,
@@ -496,7 +569,7 @@
 
     .Home .Each_Section .ResearchImage img,
     .Home .Each_Section .ResearchImage_right img {
-        /* width: calc(0.3 * 400px); */
+        /* width: calc(0.3 * 400px); *//*
         height: calc(0.3 * 400px);
     }
 
@@ -517,9 +590,9 @@
         font-size: calc(0.3 * 1rem);
         margin-top: calc(0.3 * 0.5rem);
     }
-
+*/
     /* Third Section */
-
+/*
     .Home .third_section {
         gap: calc(0.3 * 10rem);
     }
@@ -548,8 +621,9 @@
         font-size: 0.3rem;
         padding-bottom: calc(0.3 * 1rem);
     }
-
+*/
     /* Fourth Section */
+/*    
     .Home .fourth_section_title {
         font-size: calc(0.3 * 2rem);
         padding-bottom: calc(0.3 * 3.3vmax);
@@ -558,9 +632,9 @@
     .Home #fourth_section_button {
         margin-top: calc(0.3 * 2rem);
     }
-
+*/
     /* Fifth Section */
-
+/*
     .Home .fifth_section_Title h2 {
         font-size: calc(0.3 * 2rem);
         padding-bottom: calc(0.3 * 3.3vmax);
@@ -581,4 +655,4 @@
         font-size: 0.3rem;
         padding-bottom: calc(0.3 * 1rem);
     }
-}
+}*/

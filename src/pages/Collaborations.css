@@ -514,6 +514,17 @@
 }
 
 @media screen and (max-width: 426px) {
+    .Collaborations .second_section .themes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: calc(0.3 * 4rem);
+    }
+
+    .Collaborations .second_section .themes .each_theme {
+        grid-template-rows: auto calc(0.3 * 1fr);
+    }
+}
+
+@media screen and (max-width: 376px) {
     /* First Section */
 
     .Collaborations .first_section .title_section h1 {

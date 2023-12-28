@@ -422,6 +422,17 @@
 }
 
 @media screen and (max-width: 426px) {
+.Research .second_section .themes {
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc(0.4 * 4rem);
+}
+
+.Research .second_section .themes .each_theme {
+    grid-template-rows: auto calc(0.4 * 1fr);
+}
+}
+
+@media screen and (max-width: 376px) {
     /* First Section */
 
     .Research .first_section .title_section h1 {
