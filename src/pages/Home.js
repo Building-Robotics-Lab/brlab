@@ -18,7 +18,7 @@ import FourthResearchImage from './../components/Website Data/Interface_theme.pn
 // import FourthResearchImage from './../components/Website Data/resilient@2x.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBook, faUsers, faPeopleGroup, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 import PublicationsKaiNews2 from './../components/Website Data/kai_paper2.jpg'
 import PublicationsRiccardoNews2 from './../components/Website Data/riccardo-publication2.png'
@@ -368,7 +368,7 @@ function Home() {
                         </div>
                         <div className="publications_text">
                             <p id='publications_text_right'>
-                                <h2><b>Publications</b></h2>
+                                <h2><b>Browse Our Publications</b></h2>
                                 Our research involves the use of both
                                 quantitative and qualitative techniques to comprehend the impact of our built environment and
                                 AI on individuals. Our objective is to create interventions and adaptations
@@ -393,17 +393,14 @@ function Home() {
             </Container>
 
             <Container>
-                <div className='fifth_section_Title'>
-                    <h2><b>Collaborate with Us!</b></h2>
-                </div>
                 <div className='fifth_section'>
-
                     <div className="collaborate">
                         <div className="collaborate_image">
-                            <FontAwesomeIcon icon={faPeopleGroup} />
+                            <FontAwesomeIcon icon={faPeopleArrows} />
                         </div>
                         <div className="collaborate_text">
                             <p id='collaborate_left'>
+                                <h2><b>Collaborate</b></h2>
                                 As a research lab, we place a strong emphasis on developing practical solutions that can be readily implemented
                                 in real-world scenarios. Our team is dedicated to working closely with industry stakeholders to understand their
                                 needs and to develop innovative solutions that drive change and make a positive impact in their respective fields.
@@ -421,12 +418,11 @@ function Home() {
                         </div>
                         <div className="join_the_lab_text">
                             <p id='join_the_lab_right'>
-                                Our research involves the use of both
-                                quantitative and qualitative techniques to comprehend the impact of our built environment and
-                                AI on individuals. Our objective is to create interventions and adaptations
-                                that promote human well-being. Furthermore, we disseminate our findings through peer-reviewed
-                                journals, workshop and conference proceedings, and encourage readers to explore our approaches
-                                and discoveries.
+                                <h2><b>Apply</b></h2>
+                                Our research lab provides a collaborative and interdisciplinary environment that encourages creativity and innovation,
+                                offering a platform for academics and students to gain practical experience in developing solutions that prioritise human
+                                well-being and environmental sustainability, and conduct cutting-edge research that can have a real impact on society. If
+                                your interests align with these values, visit our link below to learn more about our members and current opportunities!
                             </p>
                             <div className="HomeButtons">
                                 <Link to="/join"><p className='join_the_lab_fifth_section_right' id='JoinButton'>JOIN THE LAB</p></Link>

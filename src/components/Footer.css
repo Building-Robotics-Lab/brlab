@@ -90,7 +90,6 @@
 
 .logo-buttons-wrapper img {
     width: 219px;
-
 }
 
 /* ALL MID */
@@ -124,6 +123,7 @@
 
     .Footer .BRL_Footer {
         font-size: calc(0.7 * 1rem);
+        margin-bottom: 1rem;
     }
 
     #footer_Button {
@@ -168,7 +168,7 @@
 
     .Footer .BRL_Footer {
         font-size: calc(0.4 * 1rem);
-        margin-bottom: 0.5rem;
+        margin-bottom: .75rem;
     }
 
     #footer_Button {
@@ -210,6 +210,7 @@
 
     .Footer .BRL_Footer {
         font-size: calc(0.3 * 1rem);
+        margin-bottom: 0.5rem;
     }
 
     #footer_Button {
@@ -246,7 +247,6 @@
     .Footer .left_text h3 {
         margin-bottom: 0.25rem;
     }
-
 
     .Footer .mid_text p,
     .Footer .right_text p {
