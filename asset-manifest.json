@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/brlab/static/css/main.e435ff72.css",
-    "main.js": "/brlab/static/js/main.7a6f41e8.js",
+    "main.css": "/brlab/static/css/main.8dfd0318.css",
+    "main.js": "/brlab/static/js/main.49bb4258.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
-    "static/media/Iqbal_DT2.png": "/brlab/static/media/Iqbal_DT2.73b332b29a8b111f14a7.png",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
     "static/media/image.jpg": "/brlab/static/media/image.396a4d1491c7488d67bb.jpg",
     "static/media/resilient_2x-removebg.png": "/brlab/static/media/resilient_2x-removebg.244a88c7ded1ae1f6931.png",
@@ -63,22 +62,20 @@
     "static/media/riccardo_pub2.png": "/brlab/static/media/riccardo_pub2.c9e0cb2bfd351bb4c627.png",
     "static/media/ina12735-fig-0002-m.jpg": "/brlab/static/media/ina12735-fig-0002-m.aec67e0f30aae7831d64.jpg",
     "static/media/7408505-fig-1-source-large.gif": "/brlab/static/media/7408505-fig-1-source-large.01dc5da1d70c5c9270ea.gif",
-    "static/media/Kai_OPC.jpg": "/brlab/static/media/Kai_OPC.4394c4e1aeacf583a731.jpg",
     "static/media/Riccardo2.jpg": "/brlab/static/media/Riccardo2.05c812ed2df27e60898b.jpg",
     "static/media/AWS logo21.png": "/brlab/static/media/AWS logo21.6eac98691494bb780db6.png",
     "static/media/OTSToutput_example3.png": "/brlab/static/media/OTSToutput_example3.d6c581c2e21c9d720c4e.png",
     "static/media/prof_pic.jpg": "/brlab/static/media/prof_pic.c3f590fb533559c77ce4.jpg",
     "static/media/41370_2019_179_Fig1_HTML.png": "/brlab/static/media/41370_2019_179_Fig1_HTML.f621fc4b3cc4cbb27744.png",
     "static/media/1-s2.0-S-gr4.jpg": "/brlab/static/media/1-s2.0-S0378778813007731-gr4.8c24134a6bf86746a1d7.jpg",
-    "static/media/Riccardo1.jpg": "/brlab/static/media/Riccardo1.e684976984904e794400.jpg",
     "static/media/tt_logo_color_rgb.jpg": "/brlab/static/media/tt_logo_color_rgb.b8c960c7e4476b1e552a.jpg",
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
-    "main.e435ff72.css.map": "/brlab/static/css/main.e435ff72.css.map",
-    "main.7a6f41e8.js.map": "/brlab/static/js/main.7a6f41e8.js.map"
+    "main.8dfd0318.css.map": "/brlab/static/css/main.8dfd0318.css.map",
+    "main.49bb4258.js.map": "/brlab/static/js/main.49bb4258.js.map"
   },
   "entrypoints": [
-    "static/css/main.e435ff72.css",
-    "static/js/main.7a6f41e8.js"
+    "static/css/main.8dfd0318.css",
+    "static/js/main.49bb4258.js"
   ]
 }
