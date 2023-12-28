@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/brlab/static/css/main.8dfd0318.css",
+    "main.css": "/brlab/static/css/main.60210672.css",
     "main.js": "/brlab/static/js/main.49bb4258.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
@@ -71,11 +71,11 @@
     "static/media/tt_logo_color_rgb.jpg": "/brlab/static/media/tt_logo_color_rgb.b8c960c7e4476b1e552a.jpg",
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
-    "main.8dfd0318.css.map": "/brlab/static/css/main.8dfd0318.css.map",
+    "main.60210672.css.map": "/brlab/static/css/main.60210672.css.map",
     "main.49bb4258.js.map": "/brlab/static/js/main.49bb4258.js.map"
   },
   "entrypoints": [
-    "static/css/main.8dfd0318.css",
+    "static/css/main.60210672.css",
     "static/js/main.49bb4258.js"
   ]
 }
