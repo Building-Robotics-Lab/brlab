@@ -493,8 +493,8 @@
 
     .Home .collaborate #collaborate_left h2,
     .Home .join_the_lab #join_the_lab_right h2 {
-        font-size: calc (0.7 * 2rem);
-        padding-bottom: calc (0.7 * 0.5rem);
+        font-size: calc(0.7 * 2rem);
+        padding-bottom: calc(0.7 * 0.5rem);
     }
 
     .Home .collaborate #collaborate_left,
@@ -598,10 +598,10 @@
         border-radius: calc(0.4 * 10px);
     }
 
-    .Home .collaborate #collaborate_lef h2,
+    .Home .collaborate #collaborate_left h2,
     .Home .join_the_lab #join_the_lab_right h2 {
-        font-size: calc (0.4 * 2rem);
-        padding-bottom: calc (0.4 * 0.5rem);
+        font-size: calc(0.4 * 2rem);
+        padding-bottom: calc(0.4 * 0.5rem);
     }
 
     .Home .collaborate #collaborate_left,
