@@ -230,90 +230,90 @@
     /* First Section */
 
     .IndividualProfile .first_section .profile_pic img {
-        border-radius: calc(0.4 * 1rem);
+        border-radius: calc(0.5 * 1rem);
     }
 
     .IndividualProfile .first_section .profile_name h1 {
-        font-size: calc(0.4 * 2.5rem);
-        margin-bottom: calc(0.4 * 1.65vmax);
+        font-size: calc(0.5 * 2.5rem);
+        margin-bottom: calc(0.5 * 1.65vmax);
     }
 
     .IndividualProfile .first_section .profile_name h3 {
-        font-size: calc(0.4 * 1.75rem);
+        font-size: calc(0.5 * 1.75rem);
     }
 
     /* Second Section */
 
     .IndividualProfile .second_section .second_section_left h3 {
-        font-size: calc(0.4 * 1.75rem);
-        margin-bottom: calc(0.4 * 1.65vmax);
+        font-size: calc(0.5 * 1.75rem);
+        margin-bottom: calc(0.5 * 1.65vmax);
     }
 
     .IndividualProfile .second_section .second_section_left p {
-        font-size: calc(0.4 * 1rem);
-        margin-bottom: calc(0.4 * 3.3vmax);
+        font-size: calc(0.5 * 1rem);
+        margin-bottom: calc(0.5 * 3.3vmax);
     }
 
     .IndividualProfile .second_section .second_section_left ul {
-        padding-left: calc(0.4 * 1.25rem);
+        padding-left: calc(0.5 * 1.25rem);
     }
 
     .IndividualProfile .second_section .second_section_left a:hover {
-        border-radius: calc(0.4 * 0.25rem);
+        border-radius: calc(0.5 * 0.25rem);
     }
 
     .IndividualProfile .second_section .second_section_right {
-        padding-left: calc(0.4 * 3rem);
+        padding-left: calc(0.5 * 3rem);
     }
 
     .IndividualProfile .second_section .second_section_right .second_section_right_each_section {
-        margin-bottom: calc(0.4 * 3.3vmax);
+        margin-bottom: calc(0.5 * 3.3vmax);
     }
 
     .IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_title {
-        margin-bottom: calc(0.4 * 1.65vmax);
+        margin-bottom: calc(0.5 * 1.65vmax);
     }
 
     .IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_title .mainIcon {
-        margin-right: calc(0.4 * 1rem);
-        font-size: calc(0.4 * 2rem);
+        margin-right: calc(0.5 * 1rem);
+        font-size: calc(0.5 * 2rem);
     }
 
     .IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_title h2 {
-        font-size: calc(0.4 * 1.75rem);
+        font-size: calc(0.5 * 1.75rem);
     }
 
     .IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_content>* {
-        margin-bottom: calc(0.4 * 1rem);
+        margin-bottom: calc(0.5 * 1rem);
     }
 
     .IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_content .subIcon {
-        margin-right: calc(0.4 * 1rem);
-        font-size: calc(0.4 * 1.5rem);
+        margin-right: calc(0.5 * 1rem);
+        font-size: calc(0.5 * 1.5rem);
     }
 
     .IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_content a {
-        font-size: calc(0.4 * 1rem);
+        font-size: calc(0.5 * 1rem);
     }
 
     .IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_content a:hover {
-        font-size: calc(0.4 * 1.1rem);
+        font-size: calc(0.5 * 1.1rem);
     }
 
 
     .IndividualProfile .second_section .second_section_right .each_section_title .mainIcon,
     .IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_content .subIcon {
-        min-width: calc(0.4 * 3rem);
+        min-width: calc(0.5 * 3rem);
     }
 
     .IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_content p {
-        font-size: calc(0.4 * 1rem);
+        font-size: calc(0.5 * 1rem);
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 426px) {}
     /* First Section */
-
+/*
     .IndividualProfile .first_section .profile_pic img {
         border-radius: calc(0.3 * 1rem);
     }
@@ -326,9 +326,9 @@
     .IndividualProfile .first_section .profile_name h3 {
         font-size: calc(0.3 * 1.75rem);
     }
-
+*/
     /* Second Section */
-
+/*
     .IndividualProfile .second_section .second_section_left h3 {
         font-size: calc(0.3 * 1.75rem);
         margin-bottom: calc(0.3 * 1.65vmax);
@@ -394,4 +394,4 @@
     .IndividualProfile .second_section .second_section_right .second_section_right_each_section .each_section_content p {
         font-size: calc(0.3 * 1rem);
     }
-}
+}*/
