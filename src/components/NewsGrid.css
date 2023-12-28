@@ -158,14 +158,15 @@
     }
 }
 
-@media screen and (max-width: 426px) {
-    .NewsGrid {
+@media screen and (max-width: 426px) {}
+/* 
+.NewsGrid {
         gap: calc(0.3 * 4rem);
         grid-template-columns: repeat(3, calc(0.3 * 1fr));
     }
 
     .NewsGrid .NewsPic img {
-        /* height: calc(0.3 * 375px); */
+        /* height: calc(0.3 * 375px); *//*
         margin-bottom: calc(0.3 * 0.75rem);
     }
 
@@ -190,4 +191,4 @@
     .NewsGrid .NewsInformation .content a:hover {
         border-radius: calc(0.3 * 0.25rem);
     }
-}
+}*/
