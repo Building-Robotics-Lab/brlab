@@ -210,20 +210,12 @@ function Home() {
                 <div className='second_section'>
                     <div className='research_section'>
                         <h3><b>SENSING HUMAN HEALTH AND COMFORT</b></h3>
-                        <p>Sensing human health and comfort enables us to create smarter buildings that
-                            prioritise the well-being of their occupants while reducing energy consumption and promoting
-                            environmental sustainability. Projects include <b><i>adaptive comfort</i></b> modelling,
-                            vision-based systems for <b><i>remote physiological measurements</i></b>, and
-                            <b><i> multi-sensing devices</i></b> for <b><i>human-centric indoor environmental quality (IEQ)</i></b>.</p>
+                        <p>Sensing human health and comfort enables us to create smarter buildings that prioritise the well-being of their occupants while reducing energy consumption and promoting environmental sustainability. Projects include <b><i>adaptive comfort</i></b> modelling,vision-based systems for <b><i>remote physiological measurements</i></b>, and
+                        <b><i> multi-sensing devices</i></b> for <b><i>human-centric indoor environmental quality (IEQ)</i></b>.</p>
                     </div>
                     <div className='research_section'>
                         <h3><b>HUMAN-CENTRED AI</b></h3>
-                        <p>Human-centred AI puts people at the forefront of technology development, ensuring that AI
-                            systems are designed to meet human needs and improve the quality of life for individuals and
-                            society as a whole. Projects include <b><i>integrating</i></b> and <b><i>optimising personal
-                                comfort system devices</i></b> into the control loop of <b><i>HVAC systems</i></b>, developing
-                            <b><i>advanced sensors</i></b>, <b><i>ontology automation,</i></b> and a <b><i>semantically
-                                connected digital twin</i></b>.</p>
+                        <p>Human-centred AI puts people at the forefront of technology development, ensuring that AI systems are designed to meet human needs and improve the quality of life for individuals and society as a whole. Projects include <b><i>integrating</i></b> and <b><i>optimising personal comfort system devices</i></b> into the control loop of <b><i>HVAC systems</i></b>, developing  <b><i>advanced sensors</i></b>, <b><i>ontology automation,</i></b> and a <b><i>semantically connected digital twin</i></b>.</p>
                     </div>
                     <div className='research_section'>
                         <h3><b>NATURE-BASED TECHNOLOGIES</b></h3>
@@ -231,15 +223,12 @@ function Home() {
                             envelope systems</i></b> that reduce the energy needed for  cooling while also providing
                             increased thermal comfort for occupants. This includes research developments and technology
                             integration for enhancing the <b><i>cooling effects</i></b> of current urban greening systems,
-                            such as <b><i>vertical greenery systems (VGS)</i></b>.</p>
+                            such as <b><i>vertical greenery systems (VGS), heat-reflective paints, and shading systems</i></b>.</p>
                     </div>
                     <div className='research_section'>
                         <h3><b>INTELLIGENT ENVIRONMENTS</b></h3>
-                        <p>Our research investigates the <b><i>democratisation of virtual power plants</i></b> (VPP) for <b><i>optimal
-                            monetisation</i></b> and <b><i>grid flexibility</i></b> to empower end-users to participate effectively. By leveraging AI,
-                            we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into
-                            two halves: one explores <b><i>user impacts on VPPs</i></b> and <b><i>energy consumption behaviour modelling</i></b>,
-                            while the other employs <b><i>machine learning for automated energy market participation</i></b>.</p>
+                        <p>The <b><i>democratisation of virtual power plants</i></b> (VPP) for <b><i>optimal
+                            monetisation</i></b> and <b><i>grid flexibility</i></b> would empower end-users to participate effectively. By leveraging AI, we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into: (1) <b><i>user impacts on VPPs</i></b> and <b><i>energy consumption behaviour modelling</i></b>; and (2) <b><i>machine learning for automated energy market participation</i></b>.</p>
                     </div>
 
 
@@ -353,9 +342,8 @@ function Home() {
                                 <h2><b>Meet Our Team</b></h2>
                                 We are a team of researchers with diverse backgrounds, enabling us to effectively innovate. Our
                                 goal is to create smart buildings that enhance the quality of life for occupants and contribute
-                                to a greener planet. Our lab members come from various academic backgrounds and cultures, which
-                                contribute to a collaborative and dynamic environment. We believe in fostering a culture of
-                                open communication, mutual respect, and a strong work ethic.
+                                to a greener planet. Our lab members come from various academic backgrounds, which
+                                contribute to a collaborative and dynamic environment through a culture of open communication, mutual respect, and strong work ethic.
                             </p>
                             <div className="HomeButtons">
                                 <Link to="/team"><p className='our_team_button' id='JoinButton'>OUR LAB</p></Link>
@@ -369,9 +357,7 @@ function Home() {
                         <div className="publications_text">
                             <p id='publications_text_right'>
                                 <h2><b>Browse Our Publications</b></h2>
-                                Our research involves the use of both
-                                quantitative and qualitative techniques to comprehend the impact of our built environment and
-                                AI on individuals. Our objective is to create interventions and adaptations
+                                Our research involves the use of both quantitative and qualitative techniques to comprehend the impact of our built environment and AI on individuals. Our objective is to create interventions and adaptations
                                 that promote human well-being. Furthermore, we disseminate our findings through peer-reviewed
                                 journals, workshop and conference proceedings, and encourage readers to explore our approaches
                                 and discoveries.
