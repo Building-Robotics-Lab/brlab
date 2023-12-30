@@ -592,7 +592,7 @@ function Join_the_Lab() {
             <Container>
                 <div className="first_section">
                     <div className="title_section">
-                        <h3><b>Are you interested in smart buildings, building robotics, human-centred AI, building energy efficiency, human-building interaction, building simulation, thermal comfort, or IEQ?</b></h3>
+                        <h3><b>Interested in smart buildings, building robotics, human-centred AI, building energy efficiency, human-building interaction, building simulation, thermal comfort, or IEQ?</b></h3>
                         <h1><b>Become the newest member of the Building Robotics Lab!</b></h1>
                     </div>
                     <div className="lab_bio">

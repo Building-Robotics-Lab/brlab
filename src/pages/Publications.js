@@ -508,7 +508,7 @@ function ConferenceSection({ year, publications, className }) {
                                 {pub.month && pub.location && ' | '}
                                 {pub.location}
                             </h4>
-                            <h5>
+                            <h5 id='author_names'>
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
@@ -543,7 +543,7 @@ function PatentSection({ year, publications, className }) {
                             <h3><Link to={`/publication/${pub.id}`} target="_blank">{pub.title}</Link></h3>
                             {/* <h3>{pub.title}</h3> */}
                             <h4>{pub.patent}</h4>
-                            <h5>
+                            <h5 id='author_names'>
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
@@ -578,7 +578,7 @@ function ThesesSection({ year, publications, className }) {
                             <h3><Link to={`/publication/${pub.id}`} target="_blank">{pub.title}</Link></h3>
                             {/* <h3>{pub.title}</h3> */}
                             <h4>{pub.university}</h4>
-                            <h5>
+                            <h5 id='author_names'>
                                 {pub.authors.map((author, i) => (
                                     <React.Fragment key={i}>
                                         {author.link ? (
