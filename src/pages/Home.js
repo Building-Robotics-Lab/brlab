@@ -223,7 +223,7 @@ function Home() {
                             envelope systems</i></b> that reduce the energy needed for  cooling while also providing
                             increased thermal comfort for occupants. This includes research developments and technology
                             integration for enhancing the <b><i>cooling effects</i></b> of current urban greening systems,
-                            such as <b><i>vertical greenery systems (VGS), heat-reflective paints, and shading systems</i></b>.</p>
+                            such as <b><i>vertical greenery systems (VGS), heat-reflective paints, and façade shading systems</i></b>.</p>
                     </div>
                     <div className='research_section'>
                         <h3><b>INTELLIGENT ENVIRONMENTS</b></h3>
@@ -340,10 +340,9 @@ function Home() {
                         <div className="meet_our_team_text">
                             <p id='meet_our_team_text_left'>
                                 <h2><b>Meet Our Team</b></h2>
-                                We are a team of researchers with diverse backgrounds, enabling us to effectively innovate. Our
+                                We are a team of researchers with diverse backgrounds, which enables us to effectively innovate. Our
                                 goal is to create smart buildings that enhance the quality of life for occupants and contribute
-                                to a greener planet. Our lab members come from various academic backgrounds, which
-                                contribute to a collaborative and dynamic environment through a culture of open communication, mutual respect, and strong work ethic.
+                                to a greener planet. Our lab members come from various  backgrounds that contribute to a collaborative and dynamic environment through a culture of open communication, mutual respect, and strong work ethic.
                             </p>
                             <div className="HomeButtons">
                                 <Link to="/team"><p className='our_team_button' id='JoinButton'>OUR LAB</p></Link>
@@ -357,9 +356,9 @@ function Home() {
                         <div className="publications_text">
                             <p id='publications_text_right'>
                                 <h2><b>Browse Our Publications</b></h2>
-                                Our research involves the use of both quantitative and qualitative techniques to comprehend the impact of our built environment and AI on individuals. Our objective is to create interventions and adaptations
+                                Our research involves the use of both quantitative and qualitative techniques to comprehend the impact of our built environment and AI on individuals with the objective to create interventions and adaptations
                                 that promote human well-being. Furthermore, we disseminate our findings through peer-reviewed
-                                journals, workshop and conference proceedings, and encourage readers to explore our approaches
+                                journals, workshops, and conference proceedings, and encourage readers to explore our approaches
                                 and discoveries.
                             </p>
                             <div className="HomeButtons">
@@ -405,9 +404,9 @@ function Home() {
                         <div className="join_the_lab_text">
                             <p id='join_the_lab_right'>
                                 <h2><b>Apply</b></h2>
-                                Our research lab provides a collaborative and interdisciplinary environment that encourages creativity and innovation,
-                                offering a platform for academics and students to gain practical experience in developing solutions that prioritise human
-                                well-being and environmental sustainability, and conduct cutting-edge research that can have a real impact on society. If
+                                Our research lab provides a collaborative and interdisciplinary environment that encourages creativity and innovation. By
+                                offering a platform for academics to gain practical experience in developing solutions that prioritise human
+                                well-being and environmental sustainability, we conduct cutting-edge research that can have a real impact on society. If
                                 your interests align with these values, visit our link below to learn more about our members and current opportunities!
                             </p>
                             <div className="HomeButtons">

@@ -115,7 +115,7 @@ function Research() {
                             </Link>
                             <div className='each_theme_data'>
                                 <h4><b>NATURE-BASED TECHNOLOGIES</b></h4>
-                                <p>Our focus is on façade technologies, which involves developing innovative building envelope systems that reduce the energy needed for cooling while also providing increased thermal comfort for occupants. This includes research developments and technology integration for enhancing the cooling effects of current urban greening systems, such as vertical greenery systems (VGS).</p>
+                                <p>Our focus is on façade technologies, which involves developing innovative building envelope systems that reduce the energy needed for cooling while also providing increased thermal comfort for occupants. This includes research developments and technology integration for enhancing the cooling effects of current urban greening systems, such as vertical greenery systems (VGS), heat-reflective paints, and façade shading systems.</p>
                             </div>
                         </div>
                         <div class="each_theme">
