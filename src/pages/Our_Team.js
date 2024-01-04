@@ -46,7 +46,7 @@ function Our_Team() {
         },
         {
             name: 'Chen Kai',
-            role: 'PhD Student',
+            role: 'PhD Candidate',
             skills: 'Building Energy Efficiency; Thermal Comfort; Smart Buildings',
             imgSrc: KaiPic,
             link: 'Kai'
@@ -151,7 +151,7 @@ function Our_Team() {
                         </div>
                     </div>
                     <div className="prof_bio">
-                        <h3><b>Meet the PI</b></h3>
+                        <h3><b>Meet the Director</b></h3>
                         <h1><b>Ali Ghahramani, PhD</b></h1>
                         <h5><b>Assistant Professor (PYP) at the National University of Singapore</b></h5>
                         <p>I am Dr. Ali Ghahramani, an Assistant Professor (Presidential Young Professor) at the Department of the Built Environment,
