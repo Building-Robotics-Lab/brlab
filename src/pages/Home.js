@@ -120,73 +120,147 @@ function Home() {
     const homeRef = useRef(null);
 
     useEffect(() => {
-        const updateBoxHeight = () => {
-            const AllpHeight = homeRef.current.querySelectorAll('.second_section .research_section p')
+        const updateMinHeightTitle = () => {
+            const AllH4Height = homeRef.current.querySelectorAll('.Home .second_section .research_section h3')
 
             // Reset heights to auto before recalculating
-            AllpHeight.forEach((each_box) => {
-                each_box.style.height = 'auto';
+            AllH4Height.forEach((each_h3) => {
+                each_h3.style.height = 'auto';
             });
 
             let AllHeight = [];
-            AllpHeight.forEach((each_box) => {
-                const style = getComputedStyle(each_box);
-                const height = each_box.clientHeight;
+            AllH4Height.forEach((each_h3) => {
+                const style = getComputedStyle(each_h3);
+                const height =
+                    each_h3.clientHeight -
+                    parseFloat(style.paddingTop) -
+                    parseFloat(style.paddingBottom);
                 AllHeight.push(height);
             });
 
-            const maxHeight = Math.max(...AllHeight);
-            console.log(maxHeight)
+            const minHeight = Math.max(...AllHeight);
 
-            // Set all box heights to the max height
-            AllpHeight.forEach((each_box) => {
-                const style = getComputedStyle(each_box);
-                const height = each_box.clientHeight;
-                each_box.style.paddingBottom = `${maxHeight - height + 16}px`;
-                console.log(maxHeight - height)
-            });
-
-            // 
-            
-            const Allh3height = homeRef.current.querySelectorAll('.second_section .research_section h3')
-
-            // Reset heights to auto before recalculating
-            Allh3height.forEach((each_box) => {
-                each_box.style.height = 'auto';
-            });
-
-            let Allh3Heights = [];
-            Allh3height.forEach((each_box) => {
-                const style = getComputedStyle(each_box);
-                const height = each_box.clientHeight;
-                Allh3Heights.push(height);
-            });
-
-            const maxH3Height = Math.max(...Allh3Heights);
-            console.log(maxH3Height)
-
-            // Set all box heights to the max height
-            Allh3height.forEach((each_box) => {
-                const style = getComputedStyle(each_box);
-                const height = each_box.clientHeight;
-                const allPadding = maxH3Height - height + 8
-                each_box.style.paddingTop = `${allPadding/2}px`;
-                each_box.style.paddingBottom = `${allPadding/2}px`;
-                console.log(maxH3Height - height)
+            AllH4Height.forEach((each_h3) => {
+                each_h3.style.height = `${minHeight}px`;
             });
         }
 
-        // Initial update
-        updateBoxHeight();
+        const updateMinHeightTitlethirdsection = () => {
+            const AllH4Height = [];
+
+            AllH4Height.push(...homeRef.current.querySelectorAll('.Home .meet_our_team h2'));
+            AllH4Height.push(...homeRef.current.querySelectorAll('.Home .publications_text h2'));
+
+            console.log(AllH4Height);
+
+
+            // Reset heights to auto before recalculating
+            AllH4Height.forEach((each_h3) => {
+                each_h3.style.height = 'auto';
+            });
+
+            let AllHeight = [];
+            AllH4Height.forEach((each_h3) => {
+                const style = getComputedStyle(each_h3);
+                const height =
+                    each_h3.clientHeight -
+                    parseFloat(style.paddingTop) -
+                    parseFloat(style.paddingBottom);
+                AllHeight.push(height);
+            });
+
+            console.log(AllHeight)
+
+            const minHeight = Math.max(...AllHeight);
+
+            AllH4Height.forEach((each_h3) => {
+                each_h3.style.height = `${minHeight}px`;
+            });
+        }
+
+        // Initial update first section
+        updateMinHeightTitle();
+        updateMinHeightTitlethirdsection();
 
         // Update on window resize
-        window.addEventListener('resize', updateBoxHeight);
+        window.addEventListener('resize', updateMinHeightTitle);
+        window.addEventListener('resize', updateMinHeightTitlethirdsection);
 
         // Cleanup the event listener on component unmount
         return () => {
-            window.removeEventListener('resize', updateBoxHeight);
+            window.removeEventListener('resize', updateMinHeightTitle);
+            window.removeEventListener('resize', updateMinHeightTitlethirdsection);
         };
     }, []);
+
+    // useEffect(() => {
+    //     const updateBoxHeight = () => {
+    //         const AllpHeight = homeRef.current.querySelectorAll('.second_section .research_section p')
+
+    //         // Reset heights to auto before recalculating
+    //         AllpHeight.forEach((each_box) => {
+    //             each_box.style.height = 'auto';
+    //         });
+
+    //         let AllHeight = [];
+    //         AllpHeight.forEach((each_box) => {
+    //             const style = getComputedStyle(each_box);
+    //             const height = each_box.clientHeight;
+    //             AllHeight.push(height);
+    //         });
+
+    //         const maxHeight = Math.max(...AllHeight);
+    //         console.log(maxHeight)
+
+    //         // Set all box heights to the max height
+    //         AllpHeight.forEach((each_box) => {
+    //             const style = getComputedStyle(each_box);
+    //             const height = each_box.clientHeight;
+    //             each_box.style.paddingBottom = `${maxHeight - height + 16}px`;
+    //             console.log(maxHeight - height)
+    //         });
+
+    //         // 
+
+    //         const Allh3height = homeRef.current.querySelectorAll('.second_section .research_section h3')
+
+    //         // Reset heights to auto before recalculating
+    //         Allh3height.forEach((each_box) => {
+    //             each_box.style.height = 'auto';
+    //         });
+
+    //         let Allh3Heights = [];
+    //         Allh3height.forEach((each_box) => {
+    //             const style = getComputedStyle(each_box);
+    //             const height = each_box.clientHeight;
+    //             Allh3Heights.push(height);
+    //         });
+
+    //         const maxH3Height = Math.max(...Allh3Heights);
+    //         console.log(maxH3Height)
+
+    //         // Set all box heights to the max height
+    //         Allh3height.forEach((each_box) => {
+    //             const style = getComputedStyle(each_box);
+    //             const height = each_box.clientHeight;
+    //             const allPadding = maxH3Height - height + 8
+    //             each_box.style.paddingTop = `${allPadding/2}px`;
+    //             each_box.style.paddingBottom = `${allPadding/2}px`;
+    //             console.log(maxH3Height - height)
+    //         });
+    //     }
+
+    //     // Initial update
+    //     updateBoxHeight();
+
+    //     // Update on window resize
+    //     window.addEventListener('resize', updateBoxHeight);
+
+    //     // Cleanup the event listener on component unmount
+    //     return () => {
+    //         window.removeEventListener('resize', updateBoxHeight);
+    //     };
+    // }, []);
 
     return (
         <div className="Home" ref={homeRef}>
@@ -211,7 +285,7 @@ function Home() {
                     <div className='research_section'>
                         <h3><b>SENSING HUMAN HEALTH AND COMFORT</b></h3>
                         <p>Sensing human health and comfort enables us to create smarter buildings that prioritise the well-being of their occupants while reducing energy consumption and promoting environmental sustainability. Projects include <b><i>adaptive comfort</i></b> modelling,vision-based systems for <b><i>remote physiological measurements</i></b>, and
-                        <b><i> multi-sensing devices</i></b> for <b><i>human-centric indoor environmental quality (IEQ)</i></b>.</p>
+                            <b><i> multi-sensing devices</i></b> for <b><i>human-centric indoor environmental quality (IEQ)</i></b>.</p>
                     </div>
                     <div className='research_section'>
                         <h3><b>HUMAN-CENTRED AI</b></h3>

@@ -302,6 +302,7 @@
 
     .IndividualPublication .second_section {
         gap: calc(0.5 * 3.3vmax);
+        flex-direction: column;
     }
 
     .IndividualPublication .second_section .highlights {

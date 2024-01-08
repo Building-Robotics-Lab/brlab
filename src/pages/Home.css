@@ -23,10 +23,10 @@
 
 .Home .second_section {
     display: grid;
-    justify-content: space-between;
-    flex-direction: column;
     gap: 5rem 10rem;
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    grid-auto-rows: 1fr;
 }
 
 .Home .second_section_Title {
@@ -39,7 +39,6 @@
 }
 
 .Home .second_section .research_section {
-    margin: auto;
     z-index: 2;
     padding: 7%;
     box-shadow: -1px 1px 20px 9px rgba(0, 0, 0, 0.3);
