@@ -15,6 +15,7 @@ import CoLogo from './../components/Website Data/Co Innovation lab logo.jpg'
 
 import FEC1 from './../components/Website Data/SDE2-FEC1.png'
 import T2Lab from './../components/Website Data/Kelly_T2.png'
+import SGH from './../components/Website Data/Smart-Green-Home.jpg'
 
 import IqbalPublication2 from './../components/Website Data/iqbal-publication2.jpg'
 import AliPublication6 from './../components/Website Data/sensors-22-03444-g006.png'
@@ -206,10 +207,10 @@ function Collaborations() {
                     <div className='theme_section' id='theme1_section'>
                         <div className="theme_details">
                         <FontAwesomeIcon icon={faImage} />   
-                            {/*<img src={T2Lab} alt="The Smart HVAC Lab."></img>*/}
-                            <h4><b>Smart HVAC and Well-being Lab [under construction; expected completion March 2024]</b></h4>
-                            <h6><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</b></h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            {/*<img src={T2Lab} alt="The Smart HVAC and Well-being Lab."></img>*/}
+                            <h4><b>Smart HVAC and Well-being Lab</b></h4>
+                            <h6><b>Stay tuned. Under construction with an expected completion of March 2024.</b></h6>
+                            <p>Stay tuned. Under construction with an expected completion of March 2024.</p>
                         </div>
                     </div>
                     <div className='theme_section'>
@@ -224,8 +225,7 @@ function Collaborations() {
                     </div>
                     <div className='theme_section' id='theme1_section'>
                         <div className="theme_details">
-                        <FontAwesomeIcon icon={faImage} /> 
-                            {/*<img src={T2Lab} alt="The NUS-CDL Smart Green Home."></img>*/}
+                            <img src={SGH} alt="The NUS-CDL Smart Green Home."></img>
                             <h4><b>NUS-CDL Smart Green Home</b></h4>
                             <h6><b>Step into the future of sustainable living with the NUS-CDL Smart Green Home, a cutting-edge 100 m2 indoor test-bed environment completed in December 2017.</b></h6>
                             <p>This world-class facility, nestled within the NUS College of Design and Engineering, serves as a dynamic platform for holistic experimental studies. Immerse yourself in a real-life environment designed for testing, analysing, and piloting smart home innovations with a "plug-and-play" approach. It aims to harness research to develop innovative solutions to create homes that are safe and secure, healthy and comfortable, and acoustically pleasing.</p>
