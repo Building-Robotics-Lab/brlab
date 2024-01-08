@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brlab/static/css/main.c8e6ff30.css",
-    "main.js": "/brlab/static/js/main.810a8607.js",
+    "main.js": "/brlab/static/js/main.f2118a0d.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
     "static/media/image.jpg": "/brlab/static/media/image.396a4d1491c7488d67bb.jpg",
@@ -55,6 +55,7 @@
     "static/media/riccardo_pub1.jpg": "/brlab/static/media/riccardo_pub1.6b0317da42f65f02f46d.jpg",
     "static/media/41598_2022_25047_Fig3_HTML.webp": "/brlab/static/media/41598_2022_25047_Fig3_HTML.7e5320b76a238e3984f6.webp",
     "static/media/1-s2.0-S030626191731601X-gr4_lrg.jpg": "/brlab/static/media/1-s2.0-S030626191731601X-gr4_lrg.a4bbd62aa0f806058a6e.jpg",
+    "static/media/Smart-Green-Home.jpg": "/brlab/static/media/Smart-Green-Home.d6b2505eb90d161f2c3c.jpg",
     "static/media/Iqbal_VGS.jpg": "/brlab/static/media/Iqbal_VGS.94da5d2090eb77485e7a.jpg",
     "static/media/ghahr1-p4-ghahr-large.gif": "/brlab/static/media/ghahr1-p4-ghahr-large.71d75c87838a80e17d70.gif",
     "static/media/Greenology logo2.png": "/brlab/static/media/Greenology logo2.1fa7b117f0ba87dabc9e.png",
@@ -72,10 +73,10 @@
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
     "main.c8e6ff30.css.map": "/brlab/static/css/main.c8e6ff30.css.map",
-    "main.810a8607.js.map": "/brlab/static/js/main.810a8607.js.map"
+    "main.f2118a0d.js.map": "/brlab/static/js/main.f2118a0d.js.map"
   },
   "entrypoints": [
     "static/css/main.c8e6ff30.css",
-    "static/js/main.810a8607.js"
+    "static/js/main.f2118a0d.js"
   ]
 }
