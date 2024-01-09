@@ -13,7 +13,7 @@ import TraneLogo from './../components/Website Data/tt_logo_color_rgb.jpg'
 import GreenologyLogo from './../components/Website Data/Greenology logo2.png'
 import CoLogo from './../components/Website Data/Co Innovation lab logo.jpg'
 
-import FEC1 from './../components/Website Data/SDE2-FEC1.png'
+import FEC1 from './../components/Website Data/FEC1.png'
 import T2Lab from './../components/Website Data/Kelly_T2.png'
 import SGH from './../components/Website Data/Smart-Green-Home.jpg'
 
@@ -200,8 +200,10 @@ function Collaborations() {
                         <div className="theme_details">
                             <img src={FEC1} alt="The FEC1 Living Lab--the day-to-day home of the Building Robotics Lab."></img>
                             <h4><b>SDE2-FEC1 Living Lab</b></h4>
-                            <h6><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</b></h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <h6><b>Embrace the future here: discover, test and, deploy cutting-edge smart building technologies in this 73 m2 innovative space.</b></h6>
+                            <p>In this lab, we are actively pioneering in the realm of smart buildings, primarily through the development and integration of digital twin systems and interfaces. Our interface, a brainchild of our team, orchestrates a suite of advanced technologies to enhance the indoor experience.</p>
+                            <p>Central to our efforts are the development and exploration of adaptive positioning fans and task lights. These are designed to boost comfort and efficiency in work environments. Supporting these are our development works in advanced sensing technologies, including indoor positioning systems (using Bluetooth Low Energy and machine vision), remote heart rate detection (via machine vision), and Internet of Things (IoT) environmental sensors.</p>
+                            <p>Importantly, our lab goes beyond traditional research confines. It serves as a dynamic workspace for 11 occupants, whose daily interactions and feedback with these technologies are invaluable. Their real-world experiences ensure that our innovations are not just cutting-edge, but also closely aligned with practical applications and user needs.</p>
                         </div>
                     </div>
                     <div className='theme_section' id='theme1_section'>
@@ -209,8 +211,8 @@ function Collaborations() {
                         <FontAwesomeIcon icon={faImage} />   
                             {/*<img src={T2Lab} alt="The Smart HVAC and Well-being Lab."></img>*/}
                             <h4><b>Smart HVAC and Well-being Lab</b></h4>
-                            <h6><b>Stay tuned. Under construction with an expected completion of March 2024.</b></h6>
-                            <p>Stay tuned. Under construction with an expected completion of March 2024.</p>
+                            <h6><b>Stay tuned! Under construction with an expected completion of March 2024.</b></h6>
+                            {/*<p>Stay tuned. Under construction with an expected completion of March 2024.</p>*/}
                         </div>
                     </div>
                     <div className='theme_section'>
