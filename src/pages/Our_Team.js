@@ -73,13 +73,6 @@ function Our_Team() {
             link: 'Kelly'
         },
         {
-            name: 'Hu Xinhao',
-            role: 'Visiting PhD Candidate',
-            skills: 'Indoor Thermal Comfort; Indoor Environmental Quality; Building Energy Conservation',
-            imgSrc: StellaPic,
-            link: 'Stella'
-        },
-        {
             name: 'Su Xiaosong',
             role: 'Visiting PhD Candidate',
             skills: 'Building Energy Efficiency; Energy-Efficient Building Envelope; Building-Integrated Photovoltaics; Radiant Cooling Technology in Buildings',
@@ -110,6 +103,13 @@ function Our_Team() {
     ];
 
     const alumnis = [
+        {
+            name: 'Hu Xinhao',
+            role: 'PhD Candidate',
+            skills: 'Indoor Thermal Comfort; Indoor Environmental Quality; Building Energy Conservation',
+            imgSrc: StellaPic,
+            link: 'Stella'
+        },
         {
             name: 'Ilyas Dawoodjee',
             role: 'MSc Student',

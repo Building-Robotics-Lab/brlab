@@ -190,7 +190,7 @@ const profiles = [
         ProfilePic: ConnorPic,
         Name: 'Connor Aucremanne',
         Position: 'PhD Student',
-        Biography: 'Connor Aucremanne is a second-year PhD student at the National University of Singapore (NUS) studying in the College of Design & Engineering\'s Department of the Built Environment. His current research experience concerns the democratisation of virtual power plants for optimal monetisation and grid flexibility, occupant observability and controllability within the digital twin UI/UX, and residential indoor soundscape perception in the context of occupant well-being and biophilic building science. In the past, he also conducted valuable research during his time at the Pacific Northwest National Laboratory (PNNL), UF Center for Undergraduate Research, and Bob Graham Center for Public Service regarding net-zero energy and zero-carbon residential buildings, Floridian residential rooftop solar PV, and Floridian climate change policy and public health. Through his passion, determination, and collaboration for his studies, Connor strives to answer the questions that no one has even thought of to ask. Outside of academia, he enjoys curating Spotify playlists of all genres, rock climbing, collecting coffee table books, and appreciating all forms of art expressed through fashion.',
+        Biography: 'Connor Aucremanne is a second-year PhD student at the National University of Singapore (NUS) studying in the College of Design & Engineering\'s Department of the Built Environment. His primary research concerns the democratisation of virtual power plants for optimal monetisation and grid flexibility, as well as secondary projects revolving around digital twin development, resilient cooling, and decarbonisation. In the past, he also conducted valuable research during his time at the Pacific Northwest National Laboratory (PNNL), UCL, UF Center for Undergraduate Research, and Bob Graham Center for Public Service regarding net-zero energy and zero-carbon residential buildings, residential indoor soundscape perpcetion, Floridian residential rooftop solar PV, and Floridian climate change policy and public health. Through his passion, determination, and collaboration for his studies, Connor strives to answer the questions that no one has even thought of to ask. Outside of academia, he enjoys curating Spotify playlists of all genres, rock climbing, collecting coffee table books, and appreciating all forms of art expressed through fashion.',
         Education: [
             'PhD, National University of Singapore (NUS), Built Environment (current)',
             'MSc, University College London (UCL), Built Environment: Environmental Design and Engineering (2023)',
@@ -296,9 +296,9 @@ const profiles = [
         ProfileLink: "/profile/Stella",
         ProfilePic: StellaPic,
         Name: 'Hu Xinhao',
-        Position: 'Visiting PhD Candidate',
+        Position: 'PhD Candidate',
         Position2: 'Hunan University (China)',
-        Biography: 'Hu Xinhao is a fourth-year PhD candidate from the Building Environment and Energy Application Department at Hunan University, P. R. China, and is a visiting student in Assistant Professor Ghahramani\'s group in the Department of the Built Environment at the National University of Singapore. Her research focuses on thermal comfort and building energy efficiency, and her current research project is on the comfort characterising of indoor occupants with personal comfort systems under solar radiation.',
+        Biography: 'Hu Xinhao is a fourth-year PhD candidate from the Building Environment and Energy Application Department at Hunan University, P. R. China, and was a visiting student in Assistant Professor Ghahramani\'s group in the Department of the Built Environment at the National University of Singapore from January 2023 to January 2024. Her research focuses on thermal comfort and building energy efficiency, and her current research project is on the comfort characterising of indoor occupants with personal comfort systems under solar radiation.',
         Education: [
             'PhD, Hunan University (HNU), Civil Engineering (current)',
             'MEng, Nanjing Normal University, Heating, Gas Supply, Ventilating and Air Conditioning Engineering (2020)',
@@ -323,10 +323,10 @@ const profiles = [
             ),
         ],
         Contacts: [
-            { href: "tel:+6588648925", icon: faPhone, text: "+65 8864 8925" },
+            /*{ href: "tel:+6588648925", icon: faPhone, text: "+65 8864 8925" },*/
             { href: "tel:+8615605188905", icon: faPhone, text: "+86 156 0518 8905" },
             { href: "mailto:xinhaohu@outlook.com", icon: faEnvelope, text: "xinhaohu@outlook.com" },
-            { href: "mailto:e1115313@u.nus.edu", icon: faEnvelope, text: "e1115313@u.nus.edu" },
+            /*{ href: "mailto:e1115313@u.nus.edu", icon: faEnvelope, text: "e1115313@u.nus.edu" },*/
         ],
         Links: [
             { href: StellaCV, icon: faUser, text: 'CV' }

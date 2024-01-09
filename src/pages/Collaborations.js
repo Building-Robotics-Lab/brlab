@@ -101,7 +101,7 @@ function Collaborations() {
             <Container>
                 <div className="first_section">
                     <div className="title_section">
-                        <h1><b>Industry Collaborations [work in progress]</b></h1>
+                        <h1><b>Industry Collaborations</b></h1>
                         <h3><b>Our interdisciplinary approach aims to create a sustainable future by leveraging smart building technologies that prioritise environmental sustainability and the human experience.</b></h3>
                         <h5>Are you an industry partner on a similar mission or have a project idea we could collaborate on for intelligent environments?</h5>
                     </div>
