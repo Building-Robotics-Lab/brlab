@@ -206,15 +206,6 @@ function Collaborations() {
                             <p>Importantly, our lab goes beyond traditional research confines. It serves as a dynamic workspace for 11 occupants, whose daily interactions and feedback with these technologies are invaluable. Their real-world experiences ensure that our innovations are not just cutting-edge, but also closely aligned with practical applications and user needs.</p>
                         </div>
                     </div>
-                    <div className='theme_section' id='theme1_section'>
-                        <div className="theme_details">
-                        <FontAwesomeIcon icon={faImage} />   
-                            {/*<img src={T2Lab} alt="The Smart HVAC and Well-being Lab."></img>*/}
-                            <h4><b>Smart HVAC and Well-being Lab</b></h4>
-                            <h6><b>Stay tuned! Under construction with an expected completion of March 2024.</b></h6>
-                            {/*<p>Stay tuned. Under construction with an expected completion of March 2024.</p>*/}
-                        </div>
-                    </div>
                     <div className='theme_section'>
                         <div className="theme_details">
                             <img src={T2Lab} alt="The NUS-CDL Tropical Technologies Laboratory."></img>
@@ -233,6 +224,15 @@ function Collaborations() {
                             <p>This world-class facility, nestled within the NUS College of Design and Engineering, serves as a dynamic platform for holistic experimental studies. Immerse yourself in a real-life environment designed for testing, analysing, and piloting smart home innovations with a "plug-and-play" approach. It aims to harness research to develop innovative solutions to create homes that are safe and secure, healthy and comfortable, and acoustically pleasing.</p>
                             <p>Explore the possibilities within the home, where at least one façade is meticulously designed for plug-and-play experimentation. This visionary facility is a playground for researchers delving into human-centred smart materials, technologies, and knowledge platforms. The facility has a re-configurable structure to enable comparative research through flexible experimental setup, testing, and monitoring. Our commitment to enhancing health, comfort, and quality of life sets the stage for a sustainable and connected future. Some ideas that can be tested here include energy efficiency, quality of indoor environment, and sustainable homes of the future.</p>
                             <p>Participate in ground-breaking projects, such as developing an intelligent system that enhances indoor comfort. Join us in crafting novel façades and building envelopes that integrate smart nanomaterials, sensor-based controls, and analytics. Together, we shape a future where buildings adapt to occupants, balancing comfort and energy efficiency seamlessly.</p>
+                        </div>
+                    </div>
+                    <div className='theme_section' id='theme1_section'>
+                        <div className="theme_details">
+                        <FontAwesomeIcon icon={faImage} />   
+                            {/*<img src={T2Lab} alt="The Smart HVAC and Well-being Lab."></img>*/}
+                            <h4><b>Smart HVAC and Well-being Lab</b></h4>
+                            <h6><b>Stay tuned! Under construction with an expected completion of March 2024.</b></h6>
+                            {/*<p>Stay tuned. Under construction with an expected completion of March 2024.</p>*/}
                         </div>
                     </div>
                 </div>
