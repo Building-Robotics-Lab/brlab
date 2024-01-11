@@ -44,9 +44,16 @@ function Our_Team() {
             imgSrc: RiccardoPic,
             link: 'Riccardo'
         },
+        /*{
+            name: 'Du Heng, PhD',
+            role: 'Research Fellow',
+            skills: 'Architectural Engineering; Building Performance Simulation; Optimisation; Energy-Efficient Buildings; Sustainable Architecture',
+            imgSrc: HengPic,
+            link: 'Heng'
+        },*/
         {
             name: 'Chen Kai',
-            role: 'PhD Candidate',
+            role: 'PhD Student',
             skills: 'Building Energy Efficiency; Thermal Comfort; Smart Buildings',
             imgSrc: KaiPic,
             link: 'Kai'
