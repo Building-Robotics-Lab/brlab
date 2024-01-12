@@ -43,6 +43,14 @@
     margin-bottom: 3rem;
 }
 
+.Our_Team .team-grid>*>div {
+    display: block;
+    width: 60%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
 .Our_Team .team-grid>*>.individual-info {
     text-align: center;
     margin-top: 1.5rem;
@@ -51,6 +59,11 @@
 }
 
 .Our_Team .team-grid>*>.individual-info>a {
+    text-decoration: none;
+    color: rgb(45, 99, 83);
+}
+
+.Our_Team .team-grid>*>.individual-info>div {
     text-decoration: none;
     color: rgb(45, 99, 83);
 }
@@ -123,6 +136,12 @@
         margin-bottom: calc(0.7 * 3rem);
     }
 
+    .Our_Team .team-grid>*>div {
+        width: 60%;
+        margin-top: calc(0.7 * 3rem);
+        margin-bottom: calc (0.7 * 3rem);
+    }
+
     .Our_Team .team-grid>*>.individual-info {
         margin-top: calc(0 * 1.5rem);
     }
@@ -174,6 +193,12 @@
     }
 
     .Our_Team .team-grid>*>a {
+        width: 60%;
+        margin-top: calc(0.4 * 3rem);
+        margin-bottom: calc(0.4 * 3rem);
+    }
+
+    .Our_Team .team-grid>*>div {
         width: 60%;
         margin-top: calc(0.4 * 3rem);
         margin-bottom: calc(0.4 * 3rem);
@@ -233,6 +258,12 @@
         width: 60%;
         margin-top: calc(0.3 * 3rem);
         margin-bottom: calc(0.3 * 3rem);
+    }
+
+    .Our_Team .team-grid>*>div {
+        width: 60%;
+        margin-top: calc(0.3 * 3rem);
+        margin-bottom: calc(0.3* 3rem);
     }
     
     .Our_Team .team-grid>*>.individual-info {

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaGoogle, FaOrcid, FaResearchgate } from 'react-icons/fa';
 import './Our_Team.css';
 import TeamGrid from '../components/TeamGrid';
+import TeamGrid2 from '../components/TeamGrid2';
 
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
@@ -24,8 +25,8 @@ import XiaosongPic from './../components/Website Individual Information/Xiaosong
 import PegahPic from './../components/Website Individual Information/Pegah/image.jpg';
 import PierrePic from './../components/Website Individual Information/Pierre-Louis/image.jpg';
 import GuillaumePic from './../components/Website Individual Information/Guillaume/image.jpg';
-
 import MichellePic from './../components/Website Individual Information/Michelle/image.jpg';
+import QianPic from './../components/Website Individual Information/Qian/image.jpeg';
 
 function Our_Team() {
 
@@ -112,24 +113,51 @@ function Our_Team() {
     const alumnis = [
         {
             name: 'Hu Xinhao',
-            role: 'PhD Candidate',
-            skills: 'Indoor Thermal Comfort; Indoor Environmental Quality; Building Energy Conservation',
+            role: (
+                <>
+                PhD Candidate <br />
+                Hunan University (China)
+                </>
+            ),
+            skills: 'Visiting PhD Candidate (January 2023 - January 2024)',
             imgSrc: StellaPic,
-            link: 'Stella'
+            /*link: 'Stella'*/
         },
         {
             name: 'Ilyas Dawoodjee',
-            role: 'MSc Student',
-            skills: 'Machine Vision; Robotics; Machine Learning; Automation',
+            role: (
+                <>
+                MSc Student <br />
+                University of Manitoba (Canada)
+                </>
+            ),
+            skills: 'Research Engineer (April 2022 - December 2023)',
             imgSrc: IlyasPic,
-            link: 'Ilyas'
+            /*link: 'Ilyas'*/
         },
         {
             name: 'Qi Xuanning',
-            role: 'PhD Candidate',
-            skills: 'Computational Design; Daylight Design; Occupant Behaviour; Visual Cognition',
+            role: (
+                <>
+                PhD Candidate <br />
+                Harbin Institute of Technology (China)
+                </>
+            ),
+            skills: 'Visiting PhD Candidate (August 2022 - August 2023)',
             imgSrc: MichellePic,
-            link: 'Michelle'
+            /*link: 'Michelle'*/
+        },
+        {
+            name: 'Qian Xu, PhD',
+            role: (
+                <>
+                Lecturer <br />
+                University of Lincoln (United Kingdom)
+                </>
+            ),
+            skills: 'Postdoctoral Scholar (January 2022 - December 2022)',
+            imgSrc: QianPic,
+            /*link: 'Michelle'*/
         }
     ];
 
@@ -190,7 +218,7 @@ function Our_Team() {
                 <div class="position">
                     <h4><b>Alumni</b></h4>
                 </div>
-                <TeamGrid members={alumnis} />
+                <TeamGrid2 members={alumnis} />
             </Container>
 
             <Container useOrange={true}>
