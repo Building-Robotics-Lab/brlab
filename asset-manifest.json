@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brlab/static/css/main.da8efbb0.css",
-    "main.js": "/brlab/static/js/main.9854dd9b.js",
+    "main.css": "/brlab/static/css/main.0b91f38c.css",
+    "main.js": "/brlab/static/js/main.b88f1050.js",
     "static/media/3xLandingPageVideo.mp4": "/brlab/static/media/3xLandingPageVideo.4e731ffefb98cc704929.mp4",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
     "static/media/image.jpg": "/brlab/static/media/image.396a4d1491c7488d67bb.jpg",
@@ -65,6 +65,7 @@
     "static/media/7408505-fig-1-source-large.gif": "/brlab/static/media/7408505-fig-1-source-large.01dc5da1d70c5c9270ea.gif",
     "static/media/Riccardo2.jpg": "/brlab/static/media/Riccardo2.05c812ed2df27e60898b.jpg",
     "static/media/AWS logo21.png": "/brlab/static/media/AWS logo21.6eac98691494bb780db6.png",
+    "static/media/image.jpeg": "/brlab/static/media/image.19341c3f72a5db628987.jpeg",
     "static/media/OTSToutput_example3.png": "/brlab/static/media/OTSToutput_example3.d6c581c2e21c9d720c4e.png",
     "static/media/prof_pic.jpg": "/brlab/static/media/prof_pic.c3f590fb533559c77ce4.jpg",
     "static/media/41370_2019_179_Fig1_HTML.png": "/brlab/static/media/41370_2019_179_Fig1_HTML.f621fc4b3cc4cbb27744.png",
@@ -72,11 +73,11 @@
     "static/media/tt_logo_color_rgb.jpg": "/brlab/static/media/tt_logo_color_rgb.b8c960c7e4476b1e552a.jpg",
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
-    "main.da8efbb0.css.map": "/brlab/static/css/main.da8efbb0.css.map",
-    "main.9854dd9b.js.map": "/brlab/static/js/main.9854dd9b.js.map"
+    "main.0b91f38c.css.map": "/brlab/static/css/main.0b91f38c.css.map",
+    "main.b88f1050.js.map": "/brlab/static/js/main.b88f1050.js.map"
   },
   "entrypoints": [
-    "static/css/main.da8efbb0.css",
-    "static/js/main.9854dd9b.js"
+    "static/css/main.0b91f38c.css",
+    "static/js/main.b88f1050.js"
   ]
 }
