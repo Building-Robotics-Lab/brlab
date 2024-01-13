@@ -280,6 +280,7 @@
     width: 100%;
     border: 2px solid black;
     height: auto;
+    border-radius: 1rem;
 }
 
 @keyframes shaking {
@@ -522,6 +523,7 @@
 
     .ComfortGPT .third_section .guidelines_image img {
         border: calc(0.7 * 2px) solid black;
+        border-radius: calc(0.7 * 1rem);
     }
 
     .ComfortGPT .red-button {
@@ -730,6 +732,7 @@
 
     .ComfortGPT .third_section .guidelines_image img {
         border: calc(0.4 * 2px) solid black;
+        border-radius: calc(0.4 * 1rem);
     }
 
     .ComfortGPT .red-button {
@@ -936,6 +939,7 @@
 
     .ComfortGPT .third_section .guidelines_image img {
         border: calc(0.3 * 2px) solid black;
+        border-radius: calc(0.3 * 1rem);
     }
 
     .ComfortGPT .red-button {

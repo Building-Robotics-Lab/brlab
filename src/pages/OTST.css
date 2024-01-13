@@ -270,9 +270,10 @@
     border: 2px solid black;
     height: auto;
     margin-bottom: 1.65vmax;
+    border-radius: 1rem;
 }
 
-.OTST .third_section .guidelines_image2 {
+/*.OTST .third_section .guidelines_image2 {
     flex: 2;
 }
 
@@ -280,7 +281,8 @@
     width: 100%;
     border: 2px solid black;
     height: auto;
-}
+    border-radius: 1rem;
+}*/
 
 @keyframes shake {
     0% {
@@ -552,6 +554,7 @@
     .OTST .third_section .guidelines_image img {
         margin-bottom: calc(0.7 * 1.65vmax);
         border: calc(0.7 * 2px) solid black;
+        border-radius: calc(0.7 * 1rem);
     }
 }
 
@@ -745,6 +748,7 @@
     .OTST .third_section .guidelines_image img {
         margin-bottom: calc(0.4 * 1.65vmax);
         border: calc(0.4 * 2px) solid black;
+        border-radius: calc(0.4 * 1rem);
     }
 
     .OTST .third_section .guidelines_text a {
@@ -941,5 +945,6 @@
     .OTST .third_section .guidelines_image img {
         margin-bottom: calc(0.3 * 1.65vmax);
         border: calc(0.3 * 2px) solid black;
+        border-radius: calc(0.3 * 1rem);
     }
 }

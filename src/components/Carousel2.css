@@ -15,14 +15,14 @@
     object-fit: contain;
 }
 
-.carouselDate {
+/*.carouselDate {
     box-sizing: border-box;
     width: 100%;
     padding: 0 1rem;
     text-align: left;
     color: gray;
     font-size: smaller;
-}
+}*/
 
 .carouselLink {
     box-sizing: border-box;
@@ -101,10 +101,10 @@
         padding: 0rem calc(0.7 * 1rem) calc(0.7 * 1rem) calc(0.7 * 1rem);
     }
 
-    .carouselDate {
+    /*.carouselDate {
         padding: 0 calc(0.7 * 1rem);
         font-size: 0.7rem;
-    }
+    }*/
 
     .carouselLink {
         padding: 0 calc(0.7 * 1rem);
@@ -138,10 +138,10 @@
         padding: 0rem calc(0.4 * 1rem) calc(0.4 * 1rem) calc(0.4 * 1rem);
     }
 
-    .carouselDate {
+    /*.carouselDate {
         padding: 0 calc(0.4 * 1rem);
         font-size: 0.5rem;
-    }
+    }*/
 
     .carouselLink {
         padding: 0 calc(0.4 * 1rem);
@@ -176,10 +176,10 @@
         padding: 0rem calc(0.3 * 1rem) calc(0.3 * 1rem) calc(0.3 * 1rem);
     }
 
-    .carouselDate {
+    /*.carouselDate {
         padding: 0 calc(0.3 * 1rem);
         font-size: 0.3rem;
-    }
+    }*/
 
     .carouselLink {
         padding: 0 calc(0.3 * 1rem);

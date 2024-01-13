@@ -65,6 +65,7 @@
 .IndividualPublication .second_section img {
     max-width: 100%;
     height: auto;
+    border-radius: 1rem;
 }
 
 .IndividualPublication .second_section .highlights {
@@ -204,6 +205,10 @@
         gap: calc(0.7 * 3.3vmax);
     }
 
+    .IndividualPublication .second_section img {
+        border-radius: calc(0.7 * 1rem);
+    }
+
     .IndividualPublication .second_section .highlights {
         margin-bottom: calc(0.7 * 3.3vmax);
     }
@@ -303,6 +308,10 @@
     .IndividualPublication .second_section {
         gap: calc(0.5 * 3.3vmax);
         flex-direction: column;
+    }
+
+    .IndividualPublication .second_section img {
+        border-radius: calc(0.5 * 1rem);
     }
 
     .IndividualPublication .second_section .highlights {

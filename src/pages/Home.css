@@ -11,6 +11,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 1rem;
 }
 
 .Home .first_section2 {
@@ -399,6 +400,10 @@
 @media screen and (max-width: 1025px) {
     /* First Section */
 
+    .Home .first_section video {
+        border-radius: calc(0.7 * 1rem);
+    }
+    
     .Home .first_section2 {
         font-size: calc(0.7 * 1.25rem);
         padding-top: calc(0.7 * 3.3vmax);
@@ -506,6 +511,10 @@
 @media screen and (max-width: 769px) {
     /* First Section */
 
+    .Home .first_section video {
+        border-radius: calc(0.4 * 1rem);
+    }
+    
     .Home .first_section2 {
         font-size: calc(0.4 * 1.25rem);
         padding-top: calc(0.4 * 3.3vmax);

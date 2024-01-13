@@ -179,12 +179,14 @@
     float: right;
     margin-left: 2rem;
     margin-right: 0rem;
+    border-radius: 1rem;
 }
 
 .Collaborations .theme_section:nth-child(odd) .theme_details img {
     float: left;
     margin-left: 0;
     margin-right: 2rem;
+    border-radius: 1rem;
 }
 
 .Collaborations .theme_section .theme_details .svg-inline--fa {
@@ -331,10 +333,12 @@
 
     .Collaborations .theme_section .theme_details img {
         margin-left: calc(0.7 * 2rem);
+        border-radius: calc(0.7 * 1rem);
     }
 
     .Collaborations .theme_section:nth-child(odd) .theme_details img {
         margin-right: calc(0.7 * 2rem);
+        border-radius: calc(0.7 * 1rem);
     }
 
     .Collaborations .theme_section .theme_details .svg-inline--fa {
@@ -466,10 +470,12 @@
 
     .Collaborations .theme_section .theme_details img {
         margin-left: calc(0.4 * 2rem);
+        border-radius: calc(0.4 * 1rem);
     }
 
     .Collaborations .theme_section:nth-child(odd) .theme_details img {
         margin-right: calc(0.4 * 2rem);
+        border-radius: calc(0.4 * 1rem);
     }
 
     .Collaborations .theme_section .theme_details .svg-inline--fa {
@@ -612,10 +618,12 @@
 
     .Collaborations .theme_section .theme_details img {
         margin-left: calc(0.3 * 2rem);
+        border-radius: calc(0.3 * 1rem);
     }
 
     .Collaborations .theme_section:nth-child(odd) .theme_details img {
         margin-right: calc(0.3 * 2rem);
+        border-radius: calc(0.3 * 1rem);
     }
 
     .Collaborations .theme_section .theme_details .svg-inline--fa {

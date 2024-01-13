@@ -12,8 +12,9 @@
 .NewsGrid .NewsPic img {
     width: 85%;
     /* height: 375px; */
-    object-fit: contain;
+    object-fit: cover;
     margin-bottom: 0.75rem;
+    border-radius: 1rem;
 }
 
 .NewsGrid .NewsSection {
@@ -99,6 +100,7 @@
     .NewsGrid .NewsPic img {
         /* height: calc(0.7 * 375px); */
         margin-bottom: calc(0.7 * 0.75rem);
+        border-radius: calc(0.7 * 1rem);
     }
 
     .NewsGrid .NewsSection {
@@ -133,6 +135,7 @@
     .NewsGrid .NewsPic img {
         /* height: calc(0.4 * 375px); */
         margin-bottom: calc(0.4 * 0.75rem);
+        border-radius: calc(0.4 * 1rem);
     }
 
     .NewsGrid .NewsSection {
