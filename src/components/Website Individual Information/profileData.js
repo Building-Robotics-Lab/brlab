@@ -1,6 +1,9 @@
 import RiccardoPic from './Riccardo/image.jpg'
 import RiccardoCV from './Riccardo/CV.pdf'
 
+/*import HengPic from './Heng/image.jpg'*/
+import HengCV from './Heng/CV.pdf'
+
 import KaiPic from './Kai/image.jpg'
 import KaiCV from './Kai/CV.pdf'
 
@@ -37,7 +40,7 @@ import MichelleCV from './Michelle/CV.pdf'
 import ProfPic from './prof_pic.jpg'
 import ProfCV from './prof_CV.pdf'
 
-import { faPhone, faEnvelope, faUser, faTemperatureHalf, faPerson, faS } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faUser, faTemperatureHalf, faPerson, faS, faImage } from '@fortawesome/free-solid-svg-icons';
 import { faGoogle, faLinkedin, faResearchgate, faOrcid, faGit, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom'
 
@@ -532,59 +535,72 @@ const profiles = [
             'Visual Cognition'
         ],
     },
-    /*{
+    {
         ProfileName: 'Heng',
         ProfileLink: "/profile/Heng",
-        ProfilePic: HengPic,
+        ProfilePic: GuillaumePic,
         Name: 'Du Heng',
         Position: 'Research Fellow',
-        Biography: 'Heng Du, PhD, is a Research Fellow at the National University of Singapore (NUS) - Department of the Built Environment.',
+        Biography: 'Heng Du, PhD, is a Research Fellow in the Department of the Built Environment, National University of Singapore (NUS). He received in PhD in Architecture from Shanghai Jiao Tong University (SJTU) in 2023. His previous research has focused on methods for designing thermal environments and evaluating human thermal comfort. In particular, he has re-evaluated traditional thermal comfort models such as predictive mean vote (PMV) and standard effective temperature (SET). He has extended to exploring the impact of various contextual factors (e.g. season, climate zone, building type, HVAC mode, circadian rhythm) and individual factors (e.g. gender and age) on thermal comfort. He has investigated the application of statistical methods to indoor environmental quality (IEQ) research, such as methods for determining appropriate sample sizes and statistical methods at different research aims. He has attempted to establish data-driven thermal comfort models. Looking ahead, Du Heng is committed to dedicating his efforts to exploring innovative methods that contribute to improving human well-being and promoting environmental sustainability. His passion extends to interdisciplinary research collaborations where he seeks to bring together diverse perspectives for impactful outcomes. In addition to his academic research, Du Heng is a certified local master of the Xiangqi (Chinese Chess) Association and has achieved many championships and outstanding rankings at the university and open levels. He also enjoys playing ultimate frisbee and has been selected as a practice player for the SJTU Frisbee Team.',
         Education: [
-            'PhD, Loughborough University, Building Engineering (2022)',
-            'MSc, Università Iuav di Venezia (IUAV), Architecture and Innovation (Sustainable Design) (2017)',
-            'BSc, Università Iuav di Venezia (IUAV), Architecture (2014)'
+            'PhD, Shanghai Jiao Tong University (SJTU), Architecture/Building Technology (2023)',
+            'MEng, Hunan University, Heating, Ventilation, and Air-Conditioning (HVAC) (2019)',
+            'BEng, Xiangtan University, Building Environment and Equipment Engineering (2015)'
         ],
         Awards: [
-            'UK Engineering and Physical Sciences Research Council Scholarship, Engineering and Physical Sciences Research Council (2019 - 2022)',
-            'Winner of Best Poster Award for <a href="https://buildingsimulation2019.org/best-poster-award/" ><b>"Subjective and Measured Evidence for Residential Lighting Metrics in the Tropics"</b></a> (in collaboration with Jakubiec, J. Alstan; Srisamranrungruang, Thanyalak; Kong, Zhe; Quek, Geraldine), 16th International IBPSA Conference (2019)'
+            'Outstanding Graduate of Shanghai, Shanghai Jiao Tong University (2023)',
+            'Best Paper Award, Healthy Buildings 2023 Asia and Pacific Rim (2023)',
+            'China National Scholarship for Graduate Students, Ministry of Education of the People\'s Republic of China (2022)',
+            'Outstanding Scholarship of Shanghai Jiao Tong University, Shanghai Jiao Tong University (2021)',
         ],
         Featured_Publications: [
             (
                 <>
-                    <b>Talami, R.</b>, Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/publication/quantifying_energy_savings" ><b>Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns</b></Link>. <i>Buildings 13</i>(12), 2998.
+                    <b>Du, H.</b>, Lian, Z., Lai, D., Duanmu, L., Zhai, Y., Cao, B., Zhang, Y., Zhou, X., Wang, Z., Zhang, X. and Hou, Z., 2022. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778819333614" ><b>Evaluation of the accuracy of PMV and its several revised models using the Chinese thermal comfort Database</b></a>. <i>Energy and Buildings, 271</i>, 112334.
                 </>
             ),
             (
                 <>
-                    <b>Talami, R.</b>, Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/publication/demystifying_energy_savings" ><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. <i>Energy and Built Environment [In Press]</i>.
+                    <b>Du, H.</b>, Lian, Z., Lai, D., Duanmu, L., Zhai, Y., Cao, B., Zhang, Y., Zhou, X., Wang, Z., Zhang, X. and Hou, Z., 2022. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0360132321010751" ><b>Comparison of thermal comfort between radiant and convective systems using field test data from the Chinese Thermal Comfort Database</b></a>. <i>Building and Environment, 209</i>, 108685.
                 </>
             ),
             (
                 <>
-                    <b>Talami, R.</b> and  Jakubiec, J.A., 2020. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778819333614" ><b>Early-design sensitivity of radiant cooled office buildings in the tropics for building performance</b></a>. <i>Energy and Buildings, 223</i>, 110177.
+                    <b>Du, H.</b>, Lian, Z., Lai, D., Liu, W., Duanmu, L., Zhai, Y., Cao, B., Zhang, Y., Zhou, X., Wang, Z. and Zhang, X., 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778821002048" ><b>Method of determining acceptable air temperature thresholds in Chinese HVAC buildings based on a data-driven model</b></a>. <i>Energy and Buildings, 241</i>, 110920.
+                </>
+            ),
+            (
+                <>
+                    <b>Du, H.</b>, Lian, Z., Lan, L. and Lai, D., 2023. <a href="https://link.springer.com/article/10.1007/s12273-022-0970-4" ><b>Application of statistical analysis of sample size: How many occupant responses are required for an indoor environmental quality (IEQ) field study</b></a>. <i>Building Simulation, 16</i>(4), 577-588.
+                </>
+            ),
+            (
+                <>
+                    <b>Du, H.</b>, Zhao, Z., Lyu, J., Li, J., Li, X., Yang, Y., Lan, L. and Lian, Z., 2023. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778823005753" ><b>Gender differences in thermal comfort under coupled environmental factors</b></a>. <i>Energy and Buildings, 295</i>, 113345.
                 </>
             )
         ],
         Contacts: [
-            { href: "tel:+6580446551", icon: faPhone, text: "+65 8044 6551" },
-            { href: "mailto:r.talami@nus.edu.sg", icon: faEnvelope, text: "r.talami@nus.edu.sg" },
+            { href: "tel:+6591216046", icon: faPhone, text: "+65 9121 6046" },
+            { href: "tel:+8615200323707", icon: faPhone, text: "+86 152 0032 3707" },
+            /*{ href: "mailto:r.talami@nus.edu.sg", icon: faEnvelope, text: "r.talami@nus.edu.sg" }*/
         ],
         Links: [
-            { href: RiccardoCV, icon: faUser, text: 'CV' },
-            { href: 'https://scholar.google.com/citations?user=EmFyzowAAAAJ&hl=en&oi=ao', icon: faGoogle, text: 'Google Scholar' },
-            { href: 'https://www.researchgate.net/profile/Riccardo-Talami', icon: faResearchgate, text: 'ResearchGate' },
-            { href: 'https://www.linkedin.com/in/riccardo-talami12/', icon: faLinkedin, text: 'LinkedIn' },
-            { href: 'https://orcid.org/0000-0002-5173-339X', icon: faOrcid, text: 'ORCID' },
-            { href: '/optimal_temperature_setpoint_tool', icon: faTemperatureHalf, text: 'Optimal Temperature Setpoint Tool', isReactLink: true }
+            { href: HengCV, icon: faUser, text: 'CV' },
+            { href: 'https://scholar.google.com/citations?user=JZtMKNAAAAAJ&hl=en', icon: faGoogle, text: 'Google Scholar' },
+            { href: 'https://www.researchgate.net/profile/Heng-Du-11', icon: faResearchgate, text: 'ResearchGate' },
+            { href: 'https://www.scopus.com/authid/detail.uri?authorId=57219307089', icon: faS, text: 'Scopus' },
+            { href: 'https://www.linkedin.com/in/heng-du-148802285/', icon: faLinkedin, text: 'LinkedIn' },
+            { href: 'https://orcid.org/0000-0002-7519-5629', icon: faOrcid, text: 'ORCID' },
         ],
         Interests: [
-            'Architectural Engineering',
-            'Building Performance Simulation',
-            'Building Optimisation',
-            'Energy-Efficient Buildings',
-            'Sustainable Architecture'
+            'Thermal Comfort',
+            'Human Well-Being',
+            'Environmental Sustainability',
+            'Smart Buildings',
+            'Data-Driven Models'
         ],
-    },*/
+    },
     {
         ProfileName: 'Prof',
         ProfileLink: "/team",

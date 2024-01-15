@@ -68,19 +68,19 @@ function News() {
     // }, []);
 
     const newsData = [
-        /*{
+        {
             NewsSectionName: 'Heng',
-            imageSrc: HengPic,
+            imageSrc: GuillaumePic,
             altText: "A headshot of Du Heng.",
             date: '11/01/2024',
             title: 'Please welcome Du Heng to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Guillaume joining us from Switzerland as a visiting MSc student at ETH Zürich studying Mechanical Engineering and Robotics. His research revolves around Robotics, Embedded Systems, IoT, Sensor Data Analysis, and Machine Learning. Check out his full profile <Link to="/profile/Guillaume"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Heng joining us as a Research Fellow after he recently completed his PhD in Architecture/Building Technology at Shanghai Jiao Tong University (SJTU). His research revolves around Thermal Comfort, Human Well-Being, Environmental Sustainability, Smart Buildings, and Data-Driven Models. Check out his full profile <Link to="/profile/Heng"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'FifthNewsSection'
-        },*/
+        },
         {
             NewsSectionName: 'KaiPublication2',
             imageSrc: KaiPublication2,

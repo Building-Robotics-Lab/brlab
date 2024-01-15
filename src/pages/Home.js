@@ -34,12 +34,12 @@ import ConnorNews from './../components/Website Individual Information/Connor/im
 import PublicationsIqbalNews from './../components/Website Data//iqbal-publication.jpeg'
 
 const slides = [
-    /*{
-        image: HengNews,
+    {
+        image: GuillaumeNews,
         title: '<b>Please welcome Du Heng to the lab!</b>',
         date: '11/01/2024',
         link: 'FifthNewsSection',
-    },*/
+    },
     {
         image: PublicationsKaiNews2,
         title: '<b><i>Building and Environment</i> publication announcement!</b>',

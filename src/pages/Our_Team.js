@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGoogle, FaOrcid, FaResearchgate } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faImage } from '@fortawesome/free-solid-svg-icons';
 import './Our_Team.css';
 import TeamGrid from '../components/TeamGrid';
 import TeamGrid2 from '../components/TeamGrid2';
@@ -45,13 +47,13 @@ function Our_Team() {
             imgSrc: RiccardoPic,
             link: 'Riccardo'
         },
-        /*{
+        {
             name: 'Du Heng, PhD',
             role: 'Research Fellow',
-            skills: 'Architectural Engineering; Building Performance Simulation; Optimisation; Energy-Efficient Buildings; Sustainable Architecture',
-            imgSrc: HengPic,
+            skills: 'Thermal Comfort; Human Well-Being; Environmental Sustainability; Smart Buildings; Data-Driven Models',
+            imgSrc: GuillaumePic,
             link: 'Heng'
-        },*/
+        },
         {
             name: 'Chen Kai',
             role: 'PhD Student',
