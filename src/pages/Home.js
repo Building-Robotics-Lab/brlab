@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Carousel from './../components/Carousel';
 import Container from './../components/Container';
-import LandingPageVideo from './../components/Website Data/3xLandingPageVideo.mp4'
+import LandingPageVideo from './../components/Website Data/Smart Building Full Animation - 3x.mp4'
 
 import FirstResearchImage from './../components/Website Data/sensing_2x-removebg.png'
 import SecondResearchImage from './../components/Website Data/Thermal still.jpg'
