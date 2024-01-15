@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Carousel from './../components/Carousel';
 import Container from './../components/Container';
-import LandingPageVideo from './../components/Website Data/Smart Building Full Animation (clipped) 1.5x.mp4'
+import LandingPageVideo from './../components/Website Data/Smart Building Full Animation FINAL.mp4'
 
 import FirstResearchImage from './../components/Website Data/sensing_2x-removebg.png'
 import SecondResearchImage from './../components/Website Data/Thermal still.jpg'
@@ -275,7 +275,7 @@ function Home() {
 
             <Container>
                 <div className="first_section">
-                    <video playsInline autoPlay loop muted>
+                    <video playsInline autoPlay loop muted controls>
                         <source src={LandingPageVideo} type="video/mp4" alt="A short informational animation that touches on the various topics that the Building Robotics Lab researches, including building sensors today, IoT hardware in buildings today, sensing individuals, cognitive control, and low-power and high-performance IoT hardware."></source>
                     </video>
                 </div>
