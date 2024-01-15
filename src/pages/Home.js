@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Carousel from './../components/Carousel';
 import Container from './../components/Container';
-import LandingPageVideo from './../components/Website Data/Smart Building Full Animation - 3x.mp4'
+import LandingPageVideo from './../components/Website Data/Smart Building Full Animation (clipped) 1.5x.mp4'
 
 import FirstResearchImage from './../components/Website Data/sensing_2x-removebg.png'
 import SecondResearchImage from './../components/Website Data/Thermal still.jpg'
@@ -20,6 +20,7 @@ import FourthResearchImage from './../components/Website Data/Interface_theme.pn
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
+import HengNews from './../components/Website Individual Information/Heng/image.jpeg'
 import PublicationsKaiNews2 from './../components/Website Data/kai_paper2.jpg'
 import PublicationsRiccardoNews2 from './../components/Website Data/riccardo-publication2.png'
 import PublicationsIqbalNews2 from './../components/Website Data/iqbal-publication2.jpg'
@@ -35,7 +36,7 @@ import PublicationsIqbalNews from './../components/Website Data//iqbal-publicati
 
 const slides = [
     {
-        image: GuillaumeNews,
+        image: HengNews,
         title: '<b>Please welcome Du Heng to the lab!</b>',
         date: '11/01/2024',
         link: 'FifthNewsSection',

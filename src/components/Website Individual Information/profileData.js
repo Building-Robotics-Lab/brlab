@@ -1,7 +1,7 @@
 import RiccardoPic from './Riccardo/image.jpg'
 import RiccardoCV from './Riccardo/CV.pdf'
 
-/*import HengPic from './Heng/image.jpg'*/
+import HengPic from './Heng/image.jpeg'
 import HengCV from './Heng/CV.pdf'
 
 import KaiPic from './Kai/image.jpg'
@@ -538,7 +538,7 @@ const profiles = [
     {
         ProfileName: 'Heng',
         ProfileLink: "/profile/Heng",
-        ProfilePic: GuillaumePic,
+        ProfilePic: HengPic,
         Name: 'Du Heng',
         Position: 'Research Fellow',
         Biography: 'Heng Du, PhD, is a Research Fellow in the Department of the Built Environment, National University of Singapore (NUS). He received in PhD in Architecture from Shanghai Jiao Tong University (SJTU) in 2023. His previous research has focused on methods for designing thermal environments and evaluating human thermal comfort. In particular, he has re-evaluated traditional thermal comfort models such as predictive mean vote (PMV) and standard effective temperature (SET). He has extended to exploring the impact of various contextual factors (e.g. season, climate zone, building type, HVAC mode, circadian rhythm) and individual factors (e.g. gender and age) on thermal comfort. He has investigated the application of statistical methods to indoor environmental quality (IEQ) research, such as methods for determining appropriate sample sizes and statistical methods at different research aims. He has attempted to establish data-driven thermal comfort models. Looking ahead, Du Heng is committed to dedicating his efforts to exploring innovative methods that contribute to improving human well-being and promoting environmental sustainability. His passion extends to interdisciplinary research collaborations where he seeks to bring together diverse perspectives for impactful outcomes. In addition to his academic research, Du Heng is a certified local master of the Xiangqi (Chinese Chess) Association and has achieved many championships and outstanding rankings at the university and open levels. He also enjoys playing ultimate frisbee and has been selected as a practice player for the SJTU Frisbee Team.',
@@ -583,7 +583,7 @@ const profiles = [
         Contacts: [
             { href: "tel:+6591216046", icon: faPhone, text: "+65 9121 6046" },
             { href: "tel:+8615200323707", icon: faPhone, text: "+86 152 0032 3707" },
-            /*{ href: "mailto:r.talami@nus.edu.sg", icon: faEnvelope, text: "r.talami@nus.edu.sg" }*/
+            { href: "mailto:duheng@nus.edu.sg", icon: faEnvelope, text: "duheng@nus.edu.sg" }
         ],
         Links: [
             { href: HengCV, icon: faUser, text: 'CV' },

@@ -6,6 +6,7 @@ import './News.css'
 import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
+import HengPic from './../components/Website Individual Information/Heng/image.jpeg';
 import KaiPublication2 from './../components/Website Data/kai_paper2.jpg'
 import RiccardoPublication2 from './../components/Website Data/riccardo-publication2.png'
 import IqbalPublication2 from './../components/Website Data/iqbal-publication2.jpg'
@@ -70,7 +71,7 @@ function News() {
     const newsData = [
         {
             NewsSectionName: 'Heng',
-            imageSrc: GuillaumePic,
+            imageSrc: HengPic,
             altText: "A headshot of Du Heng.",
             date: '11/01/2024',
             title: 'Please welcome Du Heng to the lab!',

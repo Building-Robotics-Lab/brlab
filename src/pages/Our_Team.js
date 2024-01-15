@@ -29,6 +29,7 @@ import PierrePic from './../components/Website Individual Information/Pierre-Lou
 import GuillaumePic from './../components/Website Individual Information/Guillaume/image.jpg';
 import MichellePic from './../components/Website Individual Information/Michelle/image.jpg';
 import QianPic from './../components/Website Individual Information/Qian/image.jpeg';
+import HengPic from './../components/Website Individual Information/Heng/image.jpeg';
 
 function Our_Team() {
 
@@ -51,7 +52,7 @@ function Our_Team() {
             name: 'Du Heng, PhD',
             role: 'Research Fellow',
             skills: 'Thermal Comfort; Human Well-Being; Environmental Sustainability; Smart Buildings; Data-Driven Models',
-            imgSrc: GuillaumePic,
+            imgSrc: HengPic,
             link: 'Heng'
         },
         {
