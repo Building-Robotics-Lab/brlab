@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/brlab/static/css/main.6a0b5622.css",
-    "main.js": "/brlab/static/js/main.727b890a.js",
+    "main.js": "/brlab/static/js/main.05770dc8.js",
     "static/media/Smart Building Full Animation FINAL.mp4": "/brlab/static/media/Smart Building Full Animation FINAL.b723fcb722c246f88f8e.mp4",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
-    "static/media/image.jpg": "/brlab/static/media/image.396a4d1491c7488d67bb.jpg",
+    "static/media/image.jpg": "/brlab/static/media/image.61b0727789a61943c549.jpg",
     "static/media/resilient_2x-removebg.png": "/brlab/static/media/resilient_2x-removebg.244a88c7ded1ae1f6931.png",
     "static/media/1-s2.0-S-gr2_lrg.jpg": "/brlab/static/media/1-s2.0-S0306261915016888-gr2_lrg.6d077d348833c7a56185.jpg",
     "static/media/1-s2.0-S-gr1_lrg.jpg": "/brlab/static/media/1-s2.0-S0360132318302518-gr1_lrg.b499839525f32d8b4461.jpg",
@@ -43,7 +43,6 @@
     "static/media/kai_pub1.png": "/brlab/static/media/kai_pub1.cdc7943c49a7594f5783.png",
     "static/media/Ilyas_rPPG@2x.png": "/brlab/static/media/Ilyas_rPPG@2x.2029d637418099c0d5e4.png",
     "static/media/riccardo-publication2_research.png": "/brlab/static/media/riccardo-publication2_research.8686ea1e8b79dc67c3fe.png",
-    "static/media/image.jpeg": "/brlab/static/media/image.19341c3f72a5db628987.jpeg",
     "static/media/1-s2.0-S-gr6_lrg.jpg": "/brlab/static/media/1-s2.0-S0360132315001833-gr6_lrg.0bca638a42af346f7470.jpg",
     "static/media/7408228-fig-1-source-large.gif": "/brlab/static/media/7408228-fig-1-source-large.df55b59972ac4f9e8c23.gif",
     "static/media/kai_paper2.jpg": "/brlab/static/media/kai_paper2.263cf18372fc749d383a.jpg",
@@ -66,6 +65,7 @@
     "static/media/7408505-fig-1-source-large.gif": "/brlab/static/media/7408505-fig-1-source-large.01dc5da1d70c5c9270ea.gif",
     "static/media/Riccardo2.jpg": "/brlab/static/media/Riccardo2.05c812ed2df27e60898b.jpg",
     "static/media/AWS logo21.png": "/brlab/static/media/AWS logo21.6eac98691494bb780db6.png",
+    "static/media/image.jpeg": "/brlab/static/media/image.19341c3f72a5db628987.jpeg",
     "static/media/OTSToutput_example3.png": "/brlab/static/media/OTSToutput_example3.d6c581c2e21c9d720c4e.png",
     "static/media/prof_pic.jpg": "/brlab/static/media/prof_pic.c3f590fb533559c77ce4.jpg",
     "static/media/41370_2019_179_Fig1_HTML.png": "/brlab/static/media/41370_2019_179_Fig1_HTML.f621fc4b3cc4cbb27744.png",
@@ -74,10 +74,10 @@
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
     "main.6a0b5622.css.map": "/brlab/static/css/main.6a0b5622.css.map",
-    "main.727b890a.js.map": "/brlab/static/js/main.727b890a.js.map"
+    "main.05770dc8.js.map": "/brlab/static/js/main.05770dc8.js.map"
   },
   "entrypoints": [
     "static/css/main.6a0b5622.css",
-    "static/js/main.727b890a.js"
+    "static/js/main.05770dc8.js"
   ]
 }
