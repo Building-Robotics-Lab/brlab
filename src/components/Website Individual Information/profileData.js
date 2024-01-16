@@ -1,7 +1,7 @@
 import RiccardoPic from './Riccardo/image.jpg'
 import RiccardoCV from './Riccardo/CV.pdf'
 
-import HengPic from './Heng/image.jpeg'
+import HengPic from './Heng/image.jpg'
 import HengCV from './Heng/CV.pdf'
 
 import KaiPic from './Kai/image.jpg'

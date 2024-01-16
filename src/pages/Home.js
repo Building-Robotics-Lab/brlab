@@ -20,7 +20,7 @@ import FourthResearchImage from './../components/Website Data/Interface_theme.pn
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
-import HengNews from './../components/Website Individual Information/Heng/image.jpeg'
+import HengNews from './../components/Website Individual Information/Heng/image.jpg'
 import PublicationsKaiNews2 from './../components/Website Data/kai_paper2.jpg'
 import PublicationsRiccardoNews2 from './../components/Website Data/riccardo-publication2.png'
 import PublicationsIqbalNews2 from './../components/Website Data/iqbal-publication2.jpg'
