@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brlab/static/css/main.30103d55.css",
-    "main.js": "/brlab/static/js/main.37a7d5cd.js",
+    "main.js": "/brlab/static/js/main.defd7974.js",
     "static/media/Smart Building Full Animation FINAL.mp4": "/brlab/static/media/Smart Building Full Animation FINAL.b723fcb722c246f88f8e.mp4",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
     "static/media/image.jpg": "/brlab/static/media/image.61b0727789a61943c549.jpg",
@@ -74,10 +74,10 @@
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
     "main.30103d55.css.map": "/brlab/static/css/main.30103d55.css.map",
-    "main.37a7d5cd.js.map": "/brlab/static/js/main.37a7d5cd.js.map"
+    "main.defd7974.js.map": "/brlab/static/js/main.defd7974.js.map"
   },
   "entrypoints": [
     "static/css/main.30103d55.css",
-    "static/js/main.37a7d5cd.js"
+    "static/js/main.defd7974.js"
   ]
 }
