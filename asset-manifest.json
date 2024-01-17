@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brlab/static/css/main.6a0b5622.css",
-    "main.js": "/brlab/static/js/main.6a17fe28.js",
+    "main.css": "/brlab/static/css/main.30103d55.css",
+    "main.js": "/brlab/static/js/main.37a7d5cd.js",
     "static/media/Smart Building Full Animation FINAL.mp4": "/brlab/static/media/Smart Building Full Animation FINAL.b723fcb722c246f88f8e.mp4",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
     "static/media/image.jpg": "/brlab/static/media/image.61b0727789a61943c549.jpg",
@@ -33,7 +33,6 @@
     "static/media/kai_paper.png": "/brlab/static/media/kai_paper.46ede2a66aa4a666e501.png",
     "static/media/1-s2.0-S235271022100293X-ga1_lrg.jpg": "/brlab/static/media/1-s2.0-S235271022100293X-ga1_lrg.46bd20e7a76701ab5959.jpg",
     "static/media/1-s2.0-S-fx1_lrg.jpg": "/brlab/static/media/1-s2.0-S0378778819331044-fx1_lrg.b82ee2b7719fa90f4e6a.jpg",
-    "static/media/Lab_Image_1.png": "/brlab/static/media/Lab_Image_1.34d5ee0ffb568c71bd1d.png",
     "static/media/COMFORTGPToutput_example1.png": "/brlab/static/media/COMFORTGPToutput_example1.584aecdb7008dd946320.png",
     "static/media/1-s2.0-S-gr8_lrg.jpg": "/brlab/static/media/1-s2.0-S0306261918312571-gr8_lrg.b0a66aa96de0753383e6.jpg",
     "static/media/iqbal-publication.jpeg": "/brlab/static/media/iqbal-publication.63d389053097f999c292.jpeg",
@@ -66,6 +65,7 @@
     "static/media/Riccardo2.jpg": "/brlab/static/media/Riccardo2.05c812ed2df27e60898b.jpg",
     "static/media/AWS logo21.png": "/brlab/static/media/AWS logo21.6eac98691494bb780db6.png",
     "static/media/image.jpeg": "/brlab/static/media/image.19341c3f72a5db628987.jpeg",
+    "static/media/BRL_Linkedin-Banner.png": "/brlab/static/media/BRL_Linkedin-Banner.ab0c844ba35fc98bbfa1.png",
     "static/media/OTSToutput_example3.png": "/brlab/static/media/OTSToutput_example3.d6c581c2e21c9d720c4e.png",
     "static/media/prof_pic.jpg": "/brlab/static/media/prof_pic.c3f590fb533559c77ce4.jpg",
     "static/media/41370_2019_179_Fig1_HTML.png": "/brlab/static/media/41370_2019_179_Fig1_HTML.f621fc4b3cc4cbb27744.png",
@@ -73,11 +73,11 @@
     "static/media/tt_logo_color_rgb.jpg": "/brlab/static/media/tt_logo_color_rgb.b8c960c7e4476b1e552a.jpg",
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
-    "main.6a0b5622.css.map": "/brlab/static/css/main.6a0b5622.css.map",
-    "main.6a17fe28.js.map": "/brlab/static/js/main.6a17fe28.js.map"
+    "main.30103d55.css.map": "/brlab/static/css/main.30103d55.css.map",
+    "main.37a7d5cd.js.map": "/brlab/static/js/main.37a7d5cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a0b5622.css",
-    "static/js/main.6a17fe28.js"
+    "static/css/main.30103d55.css",
+    "static/js/main.37a7d5cd.js"
   ]
 }
