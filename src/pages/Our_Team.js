@@ -11,7 +11,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Container from '../components/Container';
 
-import LabImage1 from './../components/Website Data/Lab_Image_1.png';
+import LabImage1 from './../components/Website Data/BRL_Linkedin-Banner.png';
 
 import ProfCV from './../components/Website Individual Information/prof_CV.pdf';
 
@@ -226,9 +226,6 @@ function Our_Team() {
 
             <Container useOrange={true}>
                 <img className='LadImage1' src={LabImage1} alt="All the current members of the lab together." />
-            </Container>
-
-            <Container>
                 <div class="fifth_section">
                     <div>
                         <h3><b>Our mission at the Building Robotics Lab is to create a sustainable future by developing innovative solutions for building energy efficiency and human-building interaction. </b></h3>
@@ -239,6 +236,18 @@ function Our_Team() {
                     </div>
                 </div>
             </Container>
+
+            {/*<Container>
+                <div class="fifth_section">
+                    <div>
+                        <h3><b>Our mission at the Building Robotics Lab is to create a sustainable future by developing innovative solutions for building energy efficiency and human-building interaction. </b></h3>
+                        <p>If you are a potential student or postdoctoral scholar interested in the Building Robotics Lab, please do not hesitate to get in touch with us. Our creative and collaborative lab is open for applicants with diverse experiences, backgrounds, abilities, and perspectives to apply.</p>
+                    </div>
+                    <div className="HomeButtons">
+                        <Link to="/join"><p id='JoinButton'>JOIN THE LAB</p></Link>
+                    </div>
+                </div>
+    </Container>*/}
 
             <Footer />
         </div>

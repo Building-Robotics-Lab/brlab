@@ -97,7 +97,7 @@
 
 .Our_Team .fifth_section h3 {
     font-size: 1.75rem;
-    margin: 0rem 3.3vmax 3.3vmax 3.3vmax;
+    margin: 1.65vmax 3.3vmax 3.3vmax 3.3vmax;
     text-align: center;
 }
 
@@ -176,7 +176,7 @@
 
     .Our_Team .fifth_section h3 {
         font-size: calc(0.7 * 1.75rem);
-        margin: 0rem calc(0.7 * 3.3vmax) calc(0.7 * 3.3vmax) calc(0.7 * 3.3vmax);
+        margin: calc(0.7 * 1.65vmax) calc(0.7 * 3.3vmax) calc(0.7 * 3.3vmax) calc(0.7 * 3.3vmax);
     }
 
     .Our_Team .fifth_section p {
@@ -244,7 +244,7 @@
 
     .Our_Team .fifth_section h3 {
         font-size: calc(0.4 * 1.75rem);
-        margin: 0rem calc(0.4 * 3.3vmax) calc(0.4 * 3.3vmax) calc(0.4 * 3.3vmax);
+        margin: calc(0.4 * 1.65vmax) calc(0.4 * 3.3vmax) calc(0.4 * 3.3vmax) calc(0.4 * 3.3vmax);
     }
 
     .Our_Team .fifth_section p {
@@ -312,7 +312,7 @@
 
     .Our_Team .fifth_section h3 {
         font-size: calc(0.3 * 1.75rem);
-        margin: 0rem calc(0.3 * 3.3vmax) calc(0.3 * 3.3vmax) calc(0.3 * 3.3vmax);
+        margin: calc(0.3 * 1.65vmax) calc(0.3 * 3.3vmax) calc(0.3 * 3.3vmax) calc(0.3 * 3.3vmax);
     }
 
     .Our_Team .fifth_section p {
