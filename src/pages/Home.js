@@ -46,13 +46,13 @@ const slides = [
         image: PublicationsKaiNews2,
         title: '<b><i>Building and Environment</i> publication announcement!</b>',
         date: '03/12/2023',
-        link: 'FourthNewsSection',
+        link: 'FifthNewsSection',
     },
     {
         image: PublicationsRiccardoNews2,
         title: '<b><i>Buildings</i> publication announcement!</b>',
         date: '30/11/2023',
-        link: 'FourthNewsSection',
+        link: 'FifthNewsSection',
     },
     {
         image: PublicationsIqbalNews2,
@@ -64,13 +64,13 @@ const slides = [
         image: GuillaumeNews,
         title: '<b>Please welcome Guillaume Lecronier to the lab!</b>',
         date: '21/09/2023',
-        link: 'ThirdNewsSection',
+        link: 'FourthNewsSection',
     },
     {
         image: PierreNews,
         title: '<b>Please welcome Pierre-Louis David to the lab!</b>',
         date: '18/09/2023',
-        link: 'ThirdNewsSection',
+        link: 'FourthNewsSection',
     },
     {
         image: PegahNews,
@@ -82,13 +82,13 @@ const slides = [
         image: PublicationsRiccardoNews,
         title: '<b><i>Energy and Built Environment</i> publication announcement!</b>',
         date: '04/07/2023',
-        link: 'SecondNewsSection',
+        link: 'ThirdNewsSection',
     },
     {
         image: KellyNews,
         title: '<b>Please welcome Kelly Loh to the lab!</b>',
         date: '15/05/2023',
-        link: 'SecondNewsSection',
+        link: 'ThirdNewsSection',
     },
     {
         image: XiaosongNews,
@@ -100,13 +100,13 @@ const slides = [
         image: PublicationsKaiNews,
         title: '<b><i>Building and Environment</i> publication announcement!</b>',
         date: '15/01/2023',
-        link: 'FirstNewsSection',
+        link: 'SecondNewsSection',
     },
     {
         image: ConnorNews,
         title: '<b>Please welcome Connor Aucremanne to the lab!</b>',
         date: '09/01/2023',
-        link: 'FirstNewsSection',
+        link: 'SecondNewsSection',
     },
     {
         image: PublicationsIqbalNews,
@@ -279,11 +279,11 @@ function Home() {
                     <video playsInline autoPlay loop muted controls preload='metadata'>
                         <source src={LandingPageVideo} type="video/mp4" alt="A short informational animation that touches on the various topics that the Building Robotics Lab researches, including building sensors today, IoT hardware in buildings today, sensing individuals, cognitive control, and low-power and high-performance IoT hardware."></source>
                     </video>
-                    {/* <LazyLoadVideo
+                    {/*<LazyLoadVideo
                         src={LandingPageVideo}
                         type="video/mp4"
                         alt="A short informational animation that touches on the various topics that the Building Robotics Lab researches, including building sensors today, IoT hardware in buildings today, sensing individuals, cognitive control, and low-power and high-performance IoT hardware."
-                    /> */}
+                    />*/}
                 </div>
                 <div className="first_section2">
                     <h2><b>The Building Robotics Lab's mission is to create a sustainable future by developing innovative solutions to advance building energy efficiency and human-building interaction.</b></h2>
