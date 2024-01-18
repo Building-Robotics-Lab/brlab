@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-function LazyLoadVideo({ src, type, alt }) {
+function LazyLoadVideo({ src, type, alt, poster }) {
     const [isVideoVisible, setIsVideoVisible] = useState(false);
     const videoRef = useRef(null);
 
@@ -14,7 +14,7 @@ function LazyLoadVideo({ src, type, alt }) {
                     }
                 });
             },
-            { threshold: 0.01 } // Trigger when 25% of the video is in view
+            { threshold: 0.01 }
         );
 
         if (videoRef.current) {
@@ -29,14 +29,24 @@ function LazyLoadVideo({ src, type, alt }) {
     }, []);
 
     return (
-        <div ref={videoRef}>
-            {isVideoVisible && (
-                <video playsInline autoPlay loop muted controls>
+        <div ref={videoRef} style={{ width: '100%' }}>
+            {isVideoVisible ? (
+                <video playsInline autoPlay loop muted controls poster={poster} aria-label={alt}>
                     <source src={src} type={type} />
-                    {alt}
                 </video>
+            ) : (
+                <div style={{ 
+                    width: '100%', 
+                    paddingTop: '56.25%', // for 16:9 aspect ratio
+                    backgroundImage: `url(${poster})`, 
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundColor: '#f0f0f0', // default background
+                    borderRadius: '1rem'
+                }}>
+                    {/* Placeholder content here */}
+                </div>
             )}
-            {!isVideoVisible && <div>Loading video...</div>}
         </div>
     );
 }
