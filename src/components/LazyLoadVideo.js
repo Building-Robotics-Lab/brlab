@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-function LazyLoadVideo({ src, type, alt, poster }) {
+function LazyLoadVideo({ src, type, alt }) {
     const [isVideoVisible, setIsVideoVisible] = useState(false);
     const videoRef = useRef(null);
 
@@ -14,7 +14,7 @@ function LazyLoadVideo({ src, type, alt, poster }) {
                     }
                 });
             },
-            { threshold: 0.01 }
+            { threshold: 0.25 } // Trigger when 25% of the video is in view
         );
 
         if (videoRef.current) {
@@ -29,26 +29,72 @@ function LazyLoadVideo({ src, type, alt, poster }) {
     }, []);
 
     return (
-        <div ref={videoRef} style={{ width: '100%' }}>
-            {isVideoVisible ? (
-                <video playsInline autoPlay loop muted controls poster={poster} aria-label={alt}>
+        <div ref={videoRef}>
+            {isVideoVisible && (
+                <video playsInline autoPlay loop muted controls>
                     <source src={src} type={type} />
+                    {alt}
                 </video>
-            ) : (
-                <div style={{ 
-                    width: '100%', 
-                    paddingTop: '56.25%', // for 16:9 aspect ratio
-                    backgroundImage: `url(${poster})`, 
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundColor: '#f0f0f0', // default background
-                    borderRadius: '1rem'
-                }}>
-                    {/* Placeholder content here */}
-                </div>
             )}
+            {!isVideoVisible && <div>Loading video...</div>}
         </div>
     );
 }
 
 export default LazyLoadVideo;
+
+// import React, { useState, useEffect, useRef } from 'react';
+
+// function LazyLoadVideo({ src, type, alt, poster }) {
+//     const [isVideoVisible, setIsVideoVisible] = useState(false);
+//     const videoRef = useRef(null);
+
+//     useEffect(() => {
+//         const observer = new IntersectionObserver(
+//             (entries, observer) => {
+//                 entries.forEach(entry => {
+//                     if (entry.isIntersecting) {
+//                         setIsVideoVisible(true);
+//                         observer.unobserve(entry.target);
+//                     }
+//                 });
+//             },
+//             { threshold: 0.25 }
+//         );
+
+//         if (videoRef.current) {
+//             observer.observe(videoRef.current);
+//         }
+
+//         return () => {
+//             if (videoRef.current) {
+//                 observer.unobserve(videoRef.current);
+//             }
+//         };
+//     }, []);
+
+//     return (
+//         <div ref={videoRef} style={{ width: '100%' }}>
+//             {isVideoVisible ? (
+//                 <video playsInline autoPlay loop muted controls poster={poster} aria-label={alt}>
+//                     <source src={src} type={type} />
+//                 </video>
+//             ) : (
+//                 <div style={{ 
+//                     width: '100%', 
+//                     paddingTop: '56.25%', // for 16:9 aspect ratio
+//                     backgroundImage: `url(${poster})`, 
+//                     backgroundSize: 'cover',
+//                     backgroundPosition: 'center',
+//                     backgroundColor: '#f0f0f0', // default background
+//                     borderRadius: '1rem'
+//                 }}>
+//                     {/* Placeholder content here */}
+//                 </div>
+//             )}
+//         </div>
+//     );
+// }
+
+// export default LazyLoadVideo;
+

@@ -278,15 +278,14 @@ function Home() {
 
             <Container>
                 <div className="first_section">
-                    {/* <video playsInline autoPlay loop muted controls preload='metadata'>
+                    <video playsInline autoPlay loop muted controls preload='metadata'>
                         <source src={LandingPageVideo} type="video/mp4" alt="A short informational animation that touches on the various topics that the Building Robotics Lab researches, including building sensors today, IoT hardware in buildings today, sensing individuals, cognitive control, and low-power and high-performance IoT hardware."></source>
-                    </video> */}
-                    <LazyLoadVideo
-                        poster={LandingPagePoster}
+                    </video>
+                    {/* <LazyLoadVideo
                         src={LandingPageVideo}
                         type="video/mp4"
                         alt="A short informational animation that touches on the various topics that the Building Robotics Lab researches, including building sensors today, IoT hardware in buildings today, sensing individuals, cognitive control, and low-power and high-performance IoT hardware."
-                    />
+                    /> */}
                 </div>
                 <div className="first_section2">
                     <h2><b>The Building Robotics Lab's mission is to create a sustainable future by developing innovative solutions to advance building energy efficiency and human-building interaction.</b></h2>
