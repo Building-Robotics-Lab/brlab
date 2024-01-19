@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import NavBar from '../components/NavBar';
@@ -119,15 +119,22 @@ const slides = [
 ];
 
 function Home() {
+    const [isMobile, setIsMobile] = useState(false);
+    const homeRef = useRef(null);
 
     useEffect(() => {
         document.title = 'NUS Building Robotics Lab';
+        // Detect if the user is on a mobile device
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        if (/android|ipad|iphone|ipod/i.test(userAgent) && !window.MSStream) {
+            setIsMobile(true);
+        }
         return () => {
             document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
         };
     }, []); // Empty dependency array ensures this runs only once when the component mounts.
 
-    const homeRef = useRef(null);
+    /*const homeRef = useRef(null);*/
 
     useEffect(() => {
         const updateMinHeightTitle = () => {
@@ -278,8 +285,8 @@ function Home() {
 
             <Container>
                 <div className="first_section">
-                    <video playsInline loop muted controls preload='metadata'>
-                        <source src={LandingPageVideoSmaller} type="video/mp4" alt="A short informational animation that touches on the various topics that the Building Robotics Lab researches, including building sensors today, IoT hardware in buildings today, sensing individuals, cognitive control, and low-power and high-performance IoT hardware."></source>
+                    <video playsInline loop muted controls preload='metadata' autoPlay={!isMobile}>
+                        <source src={LandingPageVideo} type="video/mp4" alt="A short informational animation that touches on the various topics that the Building Robotics Lab researches, including building sensors today, IoT hardware in buildings today, sensing individuals, cognitive control, and low-power and high-performance IoT hardware."></source>
                     </video>
                     {/* <LazyLoadVideo
                         src={LandingPageVideo}
