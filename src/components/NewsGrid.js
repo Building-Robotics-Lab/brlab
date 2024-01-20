@@ -4,6 +4,13 @@ import { Link } from 'react-router-dom';
 
 function NewsGrid({ newsData, sectionName, highlightedSection }) {
     const newsGridRef = useRef(null);
+    const handleImageError = (e) => {
+        const attempt = e.target.getAttribute('data-attempt') || 1;
+        if (attempt < 3) { // Retry up to 3 times
+            e.target.src = e.target.src;
+            e.target.setAttribute('data-attempt', attempt + 1);
+        }
+    };
 
     // useEffect(() => {
     //     const titles = newsGridRef.current.querySelectorAll('.NewsPic h4');
@@ -92,7 +99,12 @@ function NewsGrid({ newsData, sectionName, highlightedSection }) {
             {newsData.map((news, index) => (
                 <div key={index} className={`NewsSection ${highlightedSection === news.NewsSectionName ? 'highlighted-section' : ''}`} id={news.NewsSectionName}>
                     <div className="NewsPic">
-                        <img src={news.imageSrc} alt={news.altText} />
+                    <img 
+                        src={news.imageSrc} 
+                        alt={news.altText} 
+                        loading="lazy"
+                        onError={handleImageError}
+/>
                     </div>
                     <div className="NewsInformation">
                         <p className='date'>{news.date}</p>

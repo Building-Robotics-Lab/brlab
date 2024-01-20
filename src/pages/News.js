@@ -5,7 +5,6 @@ import Container from '../components/Container';
 import './News.css'
 import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
-import usePreloadImages from '../components/usePreloadImages';
 
 import HengPic from './../components/Website Individual Information/Heng/image.jpg';
 import KaiPublication2 from './../components/Website Data/kai_paper2.jpg'
@@ -30,8 +29,6 @@ function News() {
         };
     }, []); // Empty dependency array ensures this runs only once when the component mounts.
 
-    const [highlightedSection, setHighlightedSection] = useState(null);
-
     useEffect(() => {
         const hashes = window.location.hash.split("#");
         if (hashes.length > 2) {
@@ -43,14 +40,19 @@ function News() {
             }
         }
     }, []);
+    
+    const [key, setKey] = useState(0);
 
-    const imagesToPreload = [
-        HengPic, KaiPublication2, RiccardoPublication2, IqbalPublication2, 
-        PierrePic, GuillaumePic, PegahPic, RiccardoPublication, KellyPic, 
-        XiaosongPic, KaiPublication, ConnorPic, IqbalPublication
-    ];
+    useEffect(() => {
+        // Set a timeout to trigger a re-render after a delay
+        const timer = setTimeout(() => {
+            setKey(prevKey => prevKey + 1);
+        }, 100);
 
-    usePreloadImages(imagesToPreload);
+        return () => clearTimeout(timer);
+    }, []);
+
+    const [highlightedSection, setHighlightedSection] = useState(null);
 
     // useEffect(() => {
     //     const scrollToSection = () => {
@@ -250,7 +252,7 @@ function News() {
     ];
 
     return (
-        <div className="News">
+        <div className="News" key={key}>
             <NavBar />
 
             <Container>
