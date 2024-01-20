@@ -47,7 +47,7 @@ function News() {
         // Set a timeout to trigger a re-render after a delay
         const timer = setTimeout(() => {
             setKey(prevKey => prevKey + 1);
-        }, 100);
+        }, 1000);
 
         return () => clearTimeout(timer);
     }, []);
