@@ -5,6 +5,7 @@ import Container from '../components/Container';
 import './News.css'
 import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
+import usePreloadImages from '../components/usePreloadImages';
 
 import HengPic from './../components/Website Individual Information/Heng/image.jpg';
 import KaiPublication2 from './../components/Website Data/kai_paper2.jpg'
@@ -42,6 +43,14 @@ function News() {
             }
         }
     }, []);
+
+    const imagesToPreload = [
+        HengPic, KaiPublication2, RiccardoPublication2, IqbalPublication2, 
+        PierrePic, GuillaumePic, PegahPic, RiccardoPublication, KellyPic, 
+        XiaosongPic, KaiPublication, ConnorPic, IqbalPublication
+    ];
+
+    usePreloadImages(imagesToPreload);
 
     // useEffect(() => {
     //     const scrollToSection = () => {
