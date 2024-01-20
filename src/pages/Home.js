@@ -73,8 +73,8 @@ const slides = [
         title: '<b>Please welcome Pierre-Louis David to the lab!</b>',
         date: '18/09/2023',
         link: 'FourthNewsSection',
-    },
-    {
+    }
+    /*{
         image: PegahNews,
         title: '<b>Please welcome Pegah Eshraghi to the lab!</b>',
         date: '14/08/2023',
@@ -115,7 +115,7 @@ const slides = [
         title: '<b><i>Energy and Buildings</i> publication announcement!</b>',
         date: '01/01/2023',
         link: 'FirstNewsSection',
-    }
+    }*/
 ];
 
 function Home() {
@@ -466,7 +466,7 @@ function Home() {
             </Container>
 
             <Container useOrange={true}>
-                <h2 className='fourth_section_title'><b>News & Updates</b></h2>
+                <h2 className='fourth_section_title'><b>Latest News & Updates</b></h2>
                 <Carousel slides={slides} />
                 <div className="HomeButtons" id='fourth_section_button'>
                     <Link to="/news"><p id='JoinButton'>SEE ALL NEWS</p></Link>

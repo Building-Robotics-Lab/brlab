@@ -4,14 +4,29 @@ import { Link } from 'react-router-dom';
 
 const Carousel = ({ slides }) => {
     const [startIndex, setStartIndex] = useState(0);
-    const [slidesState, setSlidesState] = useState(slides);
+    // Initialize with the first 6 slides or fewer if there aren't enough slides
+    const [slidesState, setSlidesState] = useState(slides.slice(0, Math.min(6, slides.length)));
     const sliderRef = useRef(null);
     let timerRef = useRef(null);
 
     useEffect(() => {
         setTimer();
         return () => clearInterval(timerRef.current);
-    }, [slides, slidesState]);
+    }, []);
+
+    const moveForward = () => {
+        setStartIndex(prevIndex => {
+            // Reset to the first slide when reaching the 6th slide
+            if (prevIndex === 3) { // 4 because we start counting from 0
+                return 0;
+            }
+            return (prevIndex + 1) % slidesState.length;
+        });
+    };
+
+    const moveBackward = () => {
+        setStartIndex(prevIndex => (prevIndex > 0 ? prevIndex - 1 : slidesState.length - 1));
+    };
 
     const setTimer = () => {
         timerRef.current = setInterval(() => {
@@ -24,69 +39,47 @@ const Carousel = ({ slides }) => {
         setTimer();
     };
 
-    const moveForward = () => {
-        setStartIndex(prevIndex => {
-            let nextIndex = prevIndex + 1;
-            if (nextIndex >= slidesState.length - 2) {
-                setSlidesState(prevSlides => [...prevSlides, ...slides]);
-            }
-            return nextIndex;
-        });
+/*    const checkAndLoadMoreSlides = () => {
+        // Load more slides if nearing the end of the current set and there are more slides available
+        if (startIndex >= slidesState.length - 2 && slidesState.length < slides.length) {
+            loadMoreSlides();
+        }
     };
 
-    const moveBackward = () => {
-        setStartIndex(prevIndex => {
-            let nextIndex = prevIndex - 1;
-            if (nextIndex < 0) {
-                nextIndex = 0; // Prevent going back past the first slide
-            }
-            return nextIndex;
-        });
-    };
+    const loadMoreSlides = () => {
+        // Load more images when user navigates to the end of loaded slides
+        if (slidesState.length < slides.length) {
+            setSlidesState(prevState => {
+                const nextSet = slides.slice(prevState.length, prevState.length + 3);
+                return [...prevState, ...nextSet];
+            });
+        }
+    };*/
 
     useEffect(() => {
         const updateMinHeight = () => {
             const AllImagesHeight = sliderRef.current.querySelectorAll('.carouselImage');
 
-            // Reset heights to auto before recalculating
             AllImagesHeight.forEach((each_image) => {
                 each_image.style.height = 'auto';
-
-                // Add load event listener for each image
-                each_image.addEventListener('load', () => {
-                    updateMinHeight();
-                });
+                each_image.addEventListener('load', () => updateMinHeight());
             });
 
             let AllHeight = [];
             AllImagesHeight.forEach((each_image) => {
                 const style = getComputedStyle(each_image);
-                const height =
-                    each_image.clientHeight -
-                    parseFloat(style.paddingTop) -
-                    parseFloat(style.paddingBottom);
+                const height = each_image.clientHeight - parseFloat(style.paddingTop) - parseFloat(style.paddingBottom);
                 AllHeight.push(height);
             });
 
             const minHeight = Math.min(...AllHeight);
-
-            AllImagesHeight.forEach((each_image) => {
-                each_image.style.height = `${minHeight}px`;
-            });
+            AllImagesHeight.forEach((each_image) => each_image.style.height = `${minHeight}px`);
         };
 
-        // Initial update
         updateMinHeight();
-
-        // Update on window resize
         window.addEventListener('resize', updateMinHeight);
-
-        // Cleanup the event listener on component unmount
-        return () => {
-            window.removeEventListener('resize', updateMinHeight);
-        };
+        return () => window.removeEventListener('resize', updateMinHeight);
     }, [slides, slidesState]);
-
 
     return (
         <div className="carousel">
