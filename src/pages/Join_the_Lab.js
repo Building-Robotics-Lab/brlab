@@ -546,7 +546,6 @@ function Join_the_Lab() {
         }
     }
 
-
     const [isPositionOpen, setPositionOpen] = useState(false);
     const [isCountryOpen, setCountryOpen] = useState(false);
     const [isDurationOpen, setDurationOpen] = useState(false);
@@ -692,7 +691,7 @@ function Join_the_Lab() {
                                     <Link onClick={Reset}><p id='JoinButton'>Reset</p></Link>
                                 </div>
                             </div>
-                            <p className='sub_title'><b>Open Eligibility</b></p>
+                            <p className='sub_title' style={{ display: filteredOpenEligibilityScholarships.length === 0 ? 'none' : 'block' }}><b>Open Eligibility</b></p>
                             {filteredOpenEligibilityScholarships.map((item, index) => (
                                 <ScholarshipItem
                                     key={index}
@@ -701,7 +700,7 @@ function Join_the_Lab() {
                                     description={item.description}
                                 />
                             ))}
-                            <p className='sub_title'><b>Country-Specific Eligibility</b></p>
+                            <p className='sub_title' style={{ display: filteredCountrySpecificEligibilityScholarships.length === 0 ? 'none' : 'block' }}><b>Country-Specific Eligibility</b></p>
                             {filteredCountrySpecificEligibilityScholarships.map((item, index) => (
                                 <ScholarshipItem
                                     key={index}
