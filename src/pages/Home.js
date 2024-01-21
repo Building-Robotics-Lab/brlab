@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Carousel from './../components/Carousel';
 import Container from './../components/Container';
-import LandingPageVideo from './../components/Website Data/Smart Building Full Animation FINAL.mp4'
+import LandingPageVideo from './../components/Website Data/Smart Building Full Animation (Compressed).mp4'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
