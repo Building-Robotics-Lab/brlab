@@ -277,7 +277,6 @@ const profiles = [
         ],
         Featured_Publications: [],
         Contacts: [
-            /*{ href: "tel:+6586869527", icon: faPhone, text: "+65 8686 9527" },*/
             { href: "mailto:dawoodji@myumanitoba.ca", icon: faEnvelope, text: "dawoodji@myumanitoba.ca" },
         ],
         Links: [
@@ -326,10 +325,8 @@ const profiles = [
             ),
         ],
         Contacts: [
-            /*{ href: "tel:+6588648925", icon: faPhone, text: "+65 8864 8925" },*/
             { href: "tel:+8615605188905", icon: faPhone, text: "+86 156 0518 8905" },
-            { href: "mailto:xinhaohu@outlook.com", icon: faEnvelope, text: "xinhaohu@outlook.com" },
-            /*{ href: "mailto:e1115313@u.nus.edu", icon: faEnvelope, text: "e1115313@u.nus.edu" },*/
+            { href: "mailto:xinhaohu@outlook.com", icon: faEnvelope, text: "xinhaohu@outlook.com" }
         ],
         Links: [
             { href: StellaCV, icon: faUser, text: 'CV' }

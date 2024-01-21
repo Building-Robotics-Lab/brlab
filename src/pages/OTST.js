@@ -23,7 +23,7 @@ function OTST() {
         return () => {
             document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
         };
-    }, []); // Empty dependency array ensures this runs only once when the component mounts.
+    }, []);
 
     // State for screen width and target height
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -238,6 +238,7 @@ function OTST() {
     const [exceedValue, setexceedValue] = useState(false)
     const [usescale, setusescale] = useState();
     const [usebaseline, setusebaseline] = useState();
+    
     useEffect(() => {
         const drawGraph = () => {
             if (!loading) {
@@ -687,50 +688,6 @@ function OTST() {
                 </div>
             </Container>
 
-            {/* <Container>
-                <div className="first_section">
-                    <div className='contacts'>
-                        <div>
-                            <h3>Tool Contacts</h3>
-                        </div>
-                        <div className='Main'>
-                            {mainUserProfile.map((profile, index) => (
-                                <div className="each_profile" key={index}>
-                                    <div className="profile_image">
-                                        <Link to={`/profile/${profile.ProfileName}`} target="_blank">
-                                            <img src={profile.ProfilePic} alt={profile.Name} />
-                                        </Link>
-                                    </div>
-                                    <div className="profile_data">
-                                        <a href={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
-                                            <h5><b>{profile.Name}</b></h5>
-                                        </a>
-                                        <p>{Roles[0]}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        <div className='Supports'>
-                            {supportUserProfiles.map((profile, index) => (
-                                <div className="each_profile" key={index}>
-                                    <div className="profile_image">
-                                        <Link to={profile.ProfileName !== 'Prof' ? `/profile/${profile.ProfileName}` : profile.ProfileLink} target="_blank">
-                                            <img src={profile.ProfilePic} alt={profile.Name} />
-                                        </Link>
-                                    </div>
-                                    <div className="profile_data">
-                                        <a href={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
-                                            <h5><b>{profile.Name}</b></h5>
-                                        </a>
-                                        <p>{Roles.slice(1, Roles.length)[index]}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </Container> */}
-
             <Footer />
         </div>
     )
@@ -819,4 +776,3 @@ function findClosestIndex(array, target) {
 
     return index;
 }
-

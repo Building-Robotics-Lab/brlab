@@ -273,17 +273,6 @@
     border-radius: 1rem;
 }
 
-/*.OTST .third_section .guidelines_image2 {
-    flex: 2;
-}
-
-.OTST .third_section .guidelines_image2 img {
-    width: 100%;
-    border: 2px solid black;
-    height: auto;
-    border-radius: 1rem;
-}*/
-
 @keyframes shake {
     0% {
         transform: translateX(0);
@@ -317,7 +306,6 @@
 .loading_thing {
     font-size: 5rem;
 }
-
 
 .tooltip {
     position: absolute;

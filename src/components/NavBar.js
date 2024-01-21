@@ -33,7 +33,6 @@ function NavBar() {
     setShowResearchSublinks(!showResearchSublinks);
   };
 
-
   // Ensure that scrolling is re-enabled when the component unmounts
   // Handle window resize
   useEffect(() => {

@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGoogle, FaOrcid, FaResearchgate } from 'react-icons/fa';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faImage } from '@fortawesome/free-solid-svg-icons';
 import './Our_Team.css';
 import TeamGrid from '../components/TeamGrid';
 import TeamGrid2 from '../components/TeamGrid2';
@@ -38,7 +36,7 @@ function Our_Team() {
         return () => {
             document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
         };
-    }, []); // Empty dependency array ensures this runs only once when the component mounts.
+    }, []);
 
     const teamMembers = [
         {
@@ -124,7 +122,6 @@ function Our_Team() {
             ),
             skills: 'Visiting PhD Candidate (January 2023 - January 2024)',
             imgSrc: StellaPic,
-            /*link: 'Stella'*/
         },
         {
             name: 'Ilyas Dawoodjee',
@@ -136,7 +133,6 @@ function Our_Team() {
             ),
             skills: 'Research Engineer (April 2022 - December 2023)',
             imgSrc: IlyasPic,
-            /*link: 'Ilyas'*/
         },
         {
             name: 'Qi Xuanning',
@@ -148,7 +144,6 @@ function Our_Team() {
             ),
             skills: 'Visiting PhD Candidate (August 2022 - August 2023)',
             imgSrc: MichellePic,
-            /*link: 'Michelle'*/
         },
         {
             name: 'Qian Xu, PhD',
@@ -160,7 +155,6 @@ function Our_Team() {
             ),
             skills: 'Postdoctoral Scholar (January 2022 - December 2022)',
             imgSrc: QianPic,
-            /*link: 'Michelle'*/
         }
     ];
 
@@ -236,18 +230,6 @@ function Our_Team() {
                     </div>
                 </div>
             </Container>
-
-            {/*<Container>
-                <div class="fifth_section">
-                    <div>
-                        <h3><b>Our mission at the Building Robotics Lab is to create a sustainable future by developing innovative solutions for building energy efficiency and human-building interaction. </b></h3>
-                        <p>If you are a potential student or postdoctoral scholar interested in the Building Robotics Lab, please do not hesitate to get in touch with us. Our creative and collaborative lab is open for applicants with diverse experiences, backgrounds, abilities, and perspectives to apply.</p>
-                    </div>
-                    <div className="HomeButtons">
-                        <Link to="/join"><p id='JoinButton'>JOIN THE LAB</p></Link>
-                    </div>
-                </div>
-    </Container>*/}
 
             <Footer />
         </div>

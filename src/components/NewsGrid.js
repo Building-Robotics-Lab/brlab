@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import './NewsGrid.css';
-import { Link } from 'react-router-dom';
 
 function NewsGrid({ newsData, sectionName, highlightedSection }) {
     const newsGridRef = useRef(null);
@@ -104,7 +103,7 @@ function NewsGrid({ newsData, sectionName, highlightedSection }) {
                         alt={news.altText} 
                         loading="lazy"
                         onError={handleImageError}
-/>
+                    />
                     </div>
                     <div className="NewsInformation">
                         <p className='date'>{news.date}</p>

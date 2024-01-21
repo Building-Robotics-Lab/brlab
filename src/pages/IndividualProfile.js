@@ -150,7 +150,6 @@ function IndividualProfile() {
                 </div>
             </Container>
 
-
             <Footer />
         </div>
     )

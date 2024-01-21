@@ -12,13 +12,12 @@ import PatentData from '../components/Papers/PatentData';
 import ThesesData from '../components/Papers/ThesesData';
 
 function Publications() {
-
     useEffect(() => {
         document.title = 'BRL - Publications';
         return () => {
             document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
         };
-    }, []); // Empty dependency array ensures this runs only once when the component mounts.
+    }, []);
 
     const [, setWindowSize] = useState(window.innerWidth);
 
@@ -455,14 +454,12 @@ function JournalSection({ year, publications, className }) {
                         <li key={index}>
                             <h3>
                                 <Link to={`/publication/${pub.id}`} target="_blank">{pub.title}</Link>
-                                {/* <Link to="/research">{pub.title}</Link> */}
                             </h3>
                             <h4>
                                 <i>{pub.journal}</i>
                                 {(pub.journal && (pub.issue || pub.volume || pub.page)) && ', '}
                                 {pub.volume && <i>{pub.volume}</i>}
                                 {pub.issue && `(${pub.issue})`}
-                                {/* {pub.issue && <i>{pub.issue}</i>} */}
                                 {(pub.issue || pub.volume) && pub.page && ', '}
                                 {pub.page}
                             </h4>
@@ -471,7 +468,6 @@ function JournalSection({ year, publications, className }) {
                                     <React.Fragment key={i}>
                                         {author.link ? (
                                             <Link to={author.link} target="_blank">{author.name}</Link>
-                                            // <Link to="/research">{author.name}</Link>
                                         ) : (
                                             author.name
                                         )}
@@ -541,7 +537,6 @@ function PatentSection({ year, publications, className }) {
                     {publications.map((pub, index) => (
                         <li key={index}>
                             <h3><Link to={`/publication/${pub.id}`} target="_blank">{pub.title}</Link></h3>
-                            {/* <h3>{pub.title}</h3> */}
                             <h4>{pub.patent}</h4>
                             <h5 id='author_names'>
                                 {pub.authors.map((author, i) => (
@@ -576,7 +571,6 @@ function ThesesSection({ year, publications, className }) {
                     {publications.map((pub, index) => (
                         <li key={index}>
                             <h3><Link to={`/publication/${pub.id}`} target="_blank">{pub.title}</Link></h3>
-                            {/* <h3>{pub.title}</h3> */}
                             <h4>{pub.university}</h4>
                             <h5 id='author_names'>
                                 {pub.authors.map((author, i) => (

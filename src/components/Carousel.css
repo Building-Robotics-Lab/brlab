@@ -8,7 +8,6 @@
     display: flex;
     align-items: left;
     justify-content: center;
-    /* height: 375px; */
     margin-bottom: .5rem;
     padding: 0rem 1rem 1rem 1rem;
     width: 75%;
@@ -96,7 +95,6 @@
 
 @media screen and (max-width: 1025px) {
     .carouselImage {
-        /* height: calc(0.7 * 375px); */
         margin-bottom: calc(0.7 * .5rem);
         padding: 0rem calc(0.7 * 1rem) calc(0.7 * 1rem) calc(0.7 * 1rem);
     }
@@ -133,7 +131,6 @@
 
 @media screen and (max-width: 769px) {
     .carouselImage {
-        /* height: calc(0.4 * 375px); */
         margin-bottom: calc(0.4 * .5rem);
         padding: 0rem calc(0.4 * 1rem) calc(0.4 * 1rem) calc(0.4 * 1rem);
     }
@@ -169,8 +166,7 @@
 
 }
 
-@media screen and (max-width: 426px) {}
-/*
+/*@media screen and (max-width: 426px) {}
     .carouselImage {
         /* height: calc(0.3 * 375px); *//*
         margin-bottom: calc(0.3 * .5rem);

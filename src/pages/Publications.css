@@ -71,7 +71,6 @@
     border-bottom: none;
 }
 
-
 .Publications .publication_section .publication_year {
     flex: 1;
     margin-top: 3.3vmax;
@@ -357,8 +356,8 @@
     }
 }
 
-@media screen and (max-width: 426px) {}
-/*    
+/*@media screen and (max-width: 426px) {}
+  
 .arrow2 {
         border-width: 0 calc(0.3 * 3px) calc(0.3 * 3px) 0;
         padding: calc(0.3 * 2px);

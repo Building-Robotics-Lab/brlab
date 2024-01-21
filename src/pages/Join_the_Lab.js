@@ -235,7 +235,6 @@ function Join_the_Lab() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-
     const scholarship_position = [
         { value: "All", label: "All" },
         { value: "Post-Doc", label: "Post-Doc" },
@@ -274,7 +273,6 @@ function Join_the_Lab() {
             setAvailableCountries(scholarship_country);
         }
     }
-
 
     const scholarship_country = [
         { value: "All", label: "All" },
@@ -421,7 +419,6 @@ function Join_the_Lab() {
             setAvailableCountries(scholarship_country);
         }
     };
-
 
     // Extract the values from the scholarship_position, scholarship_country, and scholarship_duration for filtering
     const allPositions = scholarship_position.map(option => option.value);
@@ -582,7 +579,7 @@ function Join_the_Lab() {
         return () => {
             document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
         };
-    }, []); // Empty dependency array ensures this runs only once when the component mounts.
+    }, []);
 
     return (
         <div className="Join_the_Lab">

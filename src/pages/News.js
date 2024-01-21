@@ -21,13 +21,12 @@ import ConnorPic from './../components/Website Individual Information/Connor/ima
 import IqbalPublication from './../components/Website Data/iqbal-publication.jpeg'
 
 function News() {
-
     useEffect(() => {
         document.title = 'BRL - News';
         return () => {
             document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
         };
-    }, []); // Empty dependency array ensures this runs only once when the component mounts.
+    }, []);
 
     useEffect(() => {
         const hashes = window.location.hash.split("#");
@@ -48,7 +47,6 @@ function News() {
         const timer = setTimeout(() => {
             setKey(prevKey => prevKey + 1);
         }, 1000);
-
         return () => clearTimeout(timer);
     }, []);
 

@@ -20,7 +20,7 @@ function ComfortGPT() {
         return () => {
             document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
         };
-    }, []); // Empty dependency array ensures this runs only once when the component mounts.
+    }, []);
 
     // State for screen width and target height
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);

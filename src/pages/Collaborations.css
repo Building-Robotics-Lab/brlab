@@ -63,6 +63,7 @@
 }
 
 .Collaborations .first_section .industry_partners a:nth-child(3) img {
+    /* Greenology logo */
     scale: 1.05;
 }
 
@@ -98,7 +99,6 @@
 
 .Collaborations .second_section .themes .each_theme .each_theme_image {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     gap: 2rem;
     color: rgb(45, 99, 83);
@@ -111,11 +111,8 @@
 }
 
 .Collaborations .second_section .themes .each_theme h4 {
-    /* margin-top: 1rem;
-    margin-bottom: 1rem; */
     color: black;
     font-size: 1.25rem;
-    /* min-height: 50px; */
     overflow: hidden;
 }
 
@@ -285,10 +282,6 @@
         grid-template-rows: auto calc(0.7 * 1fr);
     }
 
-    /* .Collaborations .second_section .themes .each_theme img {
-        height: calc(0.7 * 300px);
-    } */
-
     .Collaborations .second_section .themes .each_theme .each_theme_image {
         gap: calc(0.7 * 2rem);
     }
@@ -421,10 +414,6 @@
     .Collaborations .second_section .themes .each_theme {
         grid-template-rows: auto calc(0.4 * 1fr);
     }
-
-    /* .Collaborations .second_section .themes .each_theme img {
-        height: calc(0.4 * 300px);
-    } */
 
     .Collaborations .second_section .themes .each_theme .each_theme_image {
         gap: calc(0.4 * 2rem);
@@ -569,10 +558,6 @@
     .Collaborations .second_section .themes .each_theme {
         grid-template-rows: auto calc(0.3 * 1fr);
     }
-
-    /* .Collaborations .second_section .themes .each_theme img {
-        height: calc(0.3 * 300px);
-    } */
 
     .Collaborations .second_section .themes .each_theme .each_theme_image {
         gap: calc(0.3 * 2rem);
