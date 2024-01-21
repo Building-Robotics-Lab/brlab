@@ -1,13 +1,10 @@
 {
   "files": {
     "main.css": "/brlab/static/css/main.30103d55.css",
-    "main.js": "/brlab/static/js/main.1f155a22.js",
+    "main.js": "/brlab/static/js/main.514d2cfe.js",
     "static/media/Smart Building Full Animation FINAL.mp4": "/brlab/static/media/Smart Building Full Animation FINAL.b723fcb722c246f88f8e.mp4",
-    "static/media/Smart Building Full Animation Final (smaller).mp4": "/brlab/static/media/Smart Building Full Animation Final (smaller).e0f6bea240fff30dbfc2.mp4",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
     "static/media/image.jpg": "/brlab/static/media/image.61b0727789a61943c549.jpg",
-    "static/media/resilient_2x-removebg.png": "/brlab/static/media/resilient_2x-removebg.244a88c7ded1ae1f6931.png",
-    "static/media/LandingPagePoster.png": "/brlab/static/media/LandingPagePoster.c864a8825c11224429f5.png",
     "static/media/1-s2.0-S-gr2_lrg.jpg": "/brlab/static/media/1-s2.0-S0306261915016888-gr2_lrg.6d077d348833c7a56185.jpg",
     "static/media/1-s2.0-S-gr1_lrg.jpg": "/brlab/static/media/1-s2.0-S0360132318302518-gr1_lrg.b499839525f32d8b4461.jpg",
     "static/media/Iqbal_DT2_theme.png": "/brlab/static/media/Iqbal_DT2_theme.90e00b2f73465b1ecdc0.png",
@@ -25,7 +22,6 @@
     "static/media/Interface_theme.png": "/brlab/static/media/Interface_theme.6999f69a37657c58ffa8.png",
     "static/media/1-s2.0-S-gr13_lrg.jpg": "/brlab/static/media/1-s2.0-S0378778817323988-gr13_lrg.23c5e915a9a3be649484.jpg",
     "static/media/Screenshot 2023-11-19 at 20.55.33.png": "/brlab/static/media/Screenshot 2023-11-19 at 20.55.33.616bea6589fb2f06a408.png",
-    "static/media/Thermal still.jpg": "/brlab/static/media/Thermal still.81e5f5042929bb45624e.jpg",
     "static/media/Kelly_T2.png": "/brlab/static/media/Kelly_T2.a5f127a5352b38622a6a.png",
     "static/media/Kelly_T2_theme.png": "/brlab/static/media/Kelly_T2_theme.a5f127a5352b38622a6a.png",
     "static/media/OTSToutput_example1.png": "/brlab/static/media/OTSToutput_example1.8074690ce3d653c5b2a5.png",
@@ -76,10 +72,10 @@
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
     "main.30103d55.css.map": "/brlab/static/css/main.30103d55.css.map",
-    "main.1f155a22.js.map": "/brlab/static/js/main.1f155a22.js.map"
+    "main.514d2cfe.js.map": "/brlab/static/js/main.514d2cfe.js.map"
   },
   "entrypoints": [
     "static/css/main.30103d55.css",
-    "static/js/main.1f155a22.js"
+    "static/js/main.514d2cfe.js"
   ]
 }
