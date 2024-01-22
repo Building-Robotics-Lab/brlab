@@ -46,6 +46,14 @@ function News() {
         // Set a timeout to trigger a re-render after a delay
         const timer = setTimeout(() => {
             setKey(prevKey => prevKey + 1);
+        }, 500);
+        return () => clearTimeout(timer);
+    }, []);
+
+    useEffect(() => {
+        // Set a timeout to trigger a re-render after a delay
+        const timer = setTimeout(() => {
+            setKey(prevKey => prevKey + 1);
         }, 1000);
         return () => clearTimeout(timer);
     }, []);
