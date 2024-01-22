@@ -37,10 +37,6 @@
     overflow: hidden;
 }
 
-/*.Collaborations .first_section .industry_partners a:hover {
-    border: 5px solid black;
-}*/
-
 .Collaborations .first_section .industry_partners img {
     object-fit: cover;
     width: 100%;
