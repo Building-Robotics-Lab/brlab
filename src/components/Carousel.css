@@ -170,8 +170,7 @@
 
 }
 
-@media screen and (max-width: 426px) {}
-    
+@media screen and (max-width: 426px) {
     /*.carouselImage {
         /* height: calc(0.3 * 375px); *//*
         margin-bottom: calc(0.3 * .5rem);
@@ -199,12 +198,13 @@
         height: calc(0.3 * 40px);
         font-size: calc(0.3 * 1.25rem);*/
     }
-    /*
     .btn-left {
-        left: calc(0.3 * -12px);
+        /*left: calc(0.3 * -12px);*/
+        left: 0px;
     }
 
     .btn-right {
-        right: calc(0.3 * -12px);
+        /*right: calc(0.3 * -12px);*/
+        right: 0px;
     }
-}*/
+}
