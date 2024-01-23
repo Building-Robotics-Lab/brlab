@@ -244,17 +244,17 @@ function Home() {
                         <p>Human-centred AI puts people at the forefront of technology development, ensuring that AI systems are designed to meet human needs and improve the quality of life for individuals and society as a whole. Projects include <b><i>integrating</i></b> and <b><i>optimising personal comfort system devices</i></b> into the control loop of <b><i>HVAC systems</i></b>, developing  <b><i>advanced sensors</i></b>, <b><i>ontology automation,</i></b> and a <b><i>semantically connected digital twin</i></b>.</p>
                     </div>
                     <div className='research_section'>
+                        <h3><b>INTELLIGENT ENVIRONMENTS</b></h3>
+                        <p>The <b><i>democratisation of virtual power plants</i></b> (VPP) for <b><i>optimal
+                            monetisation</i></b> and <b><i>grid flexibility</i></b> would empower end-users to participate effectively. By leveraging AI, we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into: (1) <b><i>user impacts on VPPs</i></b> and <b><i>energy consumption behaviour modelling</i></b>; and (2) <b><i>machine learning for automated energy market participation</i></b>.</p>
+                    </div>
+                    <div className='research_section'>
                         <h3><b>NATURE-BASED TECHNOLOGIES</b></h3>
                         <p>Our focus is on façade technologies, which involves developing <b><i>innovative building
                             envelope systems</i></b> that reduce the energy needed for  cooling while also providing
                             increased thermal comfort for occupants. This includes research developments and technology
                             integration for enhancing the <b><i>cooling effects</i></b> of current urban greening systems,
                             such as <b><i>vertical greenery systems (VGS), heat-reflective paints, and façade shading systems</i></b>.</p>
-                    </div>
-                    <div className='research_section'>
-                        <h3><b>INTELLIGENT ENVIRONMENTS</b></h3>
-                        <p>The <b><i>democratisation of virtual power plants</i></b> (VPP) for <b><i>optimal
-                            monetisation</i></b> and <b><i>grid flexibility</i></b> would empower end-users to participate effectively. By leveraging AI, we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into: (1) <b><i>user impacts on VPPs</i></b> and <b><i>energy consumption behaviour modelling</i></b>; and (2) <b><i>machine learning for automated energy market participation</i></b>.</p>
                     </div>
                 </div>
                 <div className="HomeButtons">

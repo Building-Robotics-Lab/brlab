@@ -110,21 +110,21 @@ function Research() {
                             </div>
                         </div>
                         <div class="each_theme">
-                            <Link to="#" onClick={() => handleThemeClick('theme3_section')}>
-                                <img src={Theme3} alt="The NUS Tropical Technologies Laboratory with building greenery, building-integrated photovoltaic, and various façades for the Resilient Cooling theme."></img>
-                            </Link>
-                            <div className='each_theme_data'>
-                                <h4><b>NATURE-BASED TECHNOLOGIES</b></h4>
-                                <p>Our focus is on façade technologies, which involves developing innovative building envelope systems that reduce the energy needed for cooling while also providing increased thermal comfort for occupants. This includes research developments and technology integration for enhancing the cooling effects of current urban greening systems, such as vertical greenery systems (VGS), heat-reflective paints, and façade shading systems.</p>
-                            </div>
-                        </div>
-                        <div class="each_theme">
                             <Link to="#" onClick={() => handleThemeClick('theme4_section')}>
                                 <img src={Theme4} alt="Illustration of the basic concept of a democratised virtual power plant (VPP) with the power grid supplying energy to the democratised VPP, which allows a two-way relationship for pre-purchase with prosumers and a two-way relationship for selling with consumers for the Intelligent Environments theme."></img>
                             </Link>
                             <div className='each_theme_data'>
                                 <h4><b>INTELLIGENT ENVIRONMENTS</b></h4>
                                 <p>Our research investigates the democratisation of virtual power plants (VPP) for optimal monetisation and grid flexibility to empower end-users to participate effectively. By leveraging AI, we seek to bridge existing gaps in user interaction and incentivise efficient energy behaviors. The research is divided into two halves: one explores user impacts on VPPs and behaviour modeling, while the other employs machine learning for automated energy market participation.</p>
+                            </div>
+                        </div>
+                        <div class="each_theme">
+                            <Link to="#" onClick={() => handleThemeClick('theme3_section')}>
+                                <img src={Theme3} alt="The NUS Tropical Technologies Laboratory with building greenery, building-integrated photovoltaic, and various façades for the Resilient Cooling theme."></img>
+                            </Link>
+                            <div className='each_theme_data'>
+                                <h4><b>NATURE-BASED TECHNOLOGIES</b></h4>
+                                <p>Our focus is on façade technologies, which involves developing innovative building envelope systems that reduce the energy needed for cooling while also providing increased thermal comfort for occupants. This includes research developments and technology integration for enhancing the cooling effects of current urban greening systems, such as vertical greenery systems (VGS), heat-reflective paints, and façade shading systems.</p>
                             </div>
                         </div>
                     </div>
@@ -222,7 +222,31 @@ function Research() {
                 </div>
             </Container>
 
-            <Container sectionName='theme3_section'>
+            <Container sectionName='theme4_section'>
+                <div className="title">
+                    <h1>Intelligent Environments</h1>
+                </div>
+                <div className="whole_theme">
+                    <div className='theme_section'>
+                        <div className="theme_details">
+                            <img src={Theme4} alt="Illustration of the basic concept of a democratised virtual power plant (VPP) with the power grid supplying energy to the democratised VPP, which allows a two-way relationship for pre-purchase with prosumers and a two-way relationship for selling with consumers."></img>
+                            <h4><b>Democratisation of Virtual Power Plants for Optimal Monetisation and Grid Flexibility</b></h4>
+                            <h6><b>Pave the way for a future where AI-driven technologies empower individuals to play an active role in shaping the energy landscape while reaping financial rewards, thus fostering sustainable energy practices and grid resilience.</b></h6>
+                            <p>In today's energy landscape, we witness a burgeoning wholesale electricity market alongside the increasing adoption of renewable energy sources, particularly photovoltaic (PV) batteries, driven by government subsidies and environmental motivations. While this transition holds immense promise, it also presents a real-world gap wherein end-users, despite having the potential to financially benefit from market participation, often lack the means to do so efficiently, frequently necessitating manual adjustments via mobile devices. The core motivation behind our research lies in harnessing the power of AI to facilitate seamless and user-friendly interactions with VPPs. We aim to bridge existing gaps by drawing insights from various disciplines beyond building science and algorithmic processes that have successfully incentivized behavioural change. Our overarching objectives revolve around transforming transient behaviors into enduring habits, quantifying and minimising uncertainty, and integrating users into the energy ecosystem to monetise their actions effectively.</p>
+                            <p>This project is led by <Link to="/profile/Connor"><b>Connor Aucremanne</b></Link> and supported by <Link to="/profile/Pierre"><b>Pierre-Louis David</b></Link>.</p>
+                        </div>
+                        <h4 className="keyObjs"><b>Key Objectives</b></h4>
+                        <div className="theme_deliverables">
+                            <p>Delve into the realm of advanced algorithms and employ machine learning methods for energy forecasting to empower household residents to seamlessly engage in the wholesale electricity market alongside their peers without the need for constant manual intervention, creating a pathway towards democratising VPPs for optimal monetisation and grid flexibility.</p>
+                            <p>Explore the multi-faceted ways in which occupants impact VPP performance, coupled with the development of models and predictive tools for behaviour and its associated uncertainties.</p>
+                            <p>In-depth examination of occupant behaviour modelling within VPP domains, emphasizing the mathematical aspects linked to energy consequences, which are pivotal for optimising energy transactions.</p>
+                            <p>Investigate the formation of behaviours and strategies to influence them, with a particular focus on financial incentives facilitated by VPPs, enabling the monetisation of user actions.</p>
+                        </div>
+                    </div>
+                </div>
+            </Container>
+
+            <Container useOrange={true} sectionName='theme3_section'>
                 <div className="title">
                     <h1>Nature-Based Technologies</h1>
                 </div>
@@ -254,30 +278,6 @@ function Research() {
                             <p>Assess and juxtapose the efficiency of distinct available VGS types in the market across economic, social, and environmental dimensions.</p>
                             <p>Explore variations in their influence under diverse climatic conditions by shedding light on how their impacts diverge across different climates.</p>
                             <p>Determine the VGS design that optimally suits tropical climates, considering factors like wall type, plant selection, substrate, geometry, orientation, and irrigation method to achieve maximal benefits.</p>
-                        </div>
-                    </div>
-                </div>
-            </Container>
-
-            <Container useOrange={true} sectionName='theme4_section'>
-                <div className="title">
-                    <h1>Intelligent Environments</h1>
-                </div>
-                <div className="whole_theme">
-                    <div className='theme_section'>
-                        <div className="theme_details">
-                            <img src={Theme4} alt="Illustration of the basic concept of a democratised virtual power plant (VPP) with the power grid supplying energy to the democratised VPP, which allows a two-way relationship for pre-purchase with prosumers and a two-way relationship for selling with consumers."></img>
-                            <h4><b>Democratisation of Virtual Power Plants for Optimal Monetisation and Grid Flexibility</b></h4>
-                            <h6><b>Pave the way for a future where AI-driven technologies empower individuals to play an active role in shaping the energy landscape while reaping financial rewards, thus fostering sustainable energy practices and grid resilience.</b></h6>
-                            <p>In today's energy landscape, we witness a burgeoning wholesale electricity market alongside the increasing adoption of renewable energy sources, particularly photovoltaic (PV) batteries, driven by government subsidies and environmental motivations. While this transition holds immense promise, it also presents a real-world gap wherein end-users, despite having the potential to financially benefit from market participation, often lack the means to do so efficiently, frequently necessitating manual adjustments via mobile devices. The core motivation behind our research lies in harnessing the power of AI to facilitate seamless and user-friendly interactions with VPPs. We aim to bridge existing gaps by drawing insights from various disciplines beyond building science and algorithmic processes that have successfully incentivized behavioural change. Our overarching objectives revolve around transforming transient behaviors into enduring habits, quantifying and minimising uncertainty, and integrating users into the energy ecosystem to monetise their actions effectively.</p>
-                            <p>This project is led by <Link to="/profile/Connor"><b>Connor Aucremanne</b></Link> and supported by <Link to="/profile/Pierre"><b>Pierre-Louis David</b></Link>.</p>
-                        </div>
-                        <h4 className="keyObjs"><b>Key Objectives</b></h4>
-                        <div className="theme_deliverables">
-                            <p>Delve into the realm of advanced algorithms and employ machine learning methods for energy forecasting to empower household residents to seamlessly engage in the wholesale electricity market alongside their peers without the need for constant manual intervention, creating a pathway towards democratising VPPs for optimal monetisation and grid flexibility.</p>
-                            <p>Explore the multi-faceted ways in which occupants impact VPP performance, coupled with the development of models and predictive tools for behaviour and its associated uncertainties.</p>
-                            <p>In-depth examination of occupant behaviour modelling within VPP domains, emphasizing the mathematical aspects linked to energy consequences, which are pivotal for optimising energy transactions.</p>
-                            <p>Investigate the formation of behaviours and strategies to influence them, with a particular focus on financial incentives facilitated by VPPs, enabling the monetisation of user actions.</p>
                         </div>
                     </div>
                 </div>
