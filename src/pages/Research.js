@@ -7,15 +7,15 @@ import { Link } from 'react-router-dom';
 
 import Theme1 from './../components/Website Data/kai_paper2_theme.jpg'
 import Theme1_2 from './../components/Website Data/riccardo-publication2_research.png'
+import Theme1_3 from './../components/Website Data/Ilyas_rPPG@2x.png'
 
 import Theme2 from './../components/Website Data/Iqbal_DT2_theme.png'
-import Theme2_1 from './../components/Website Data/Ilyas_rPPG@2x.png'
 import Theme2_2 from './../components/Website Data/Riccardo2.jpg'
 
-import Theme3_0 from './../components/Website Data/Iqbal_VGS.jpg'
-import Theme3 from './../components/Website Data/Kelly_T2_theme.png'
+import Theme3 from './../components/Website Data/Interface_theme.png'
 
-import Theme4 from './../components/Website Data/Interface_theme.png'
+import Theme4_0 from './../components/Website Data/Iqbal_VGS.jpg'
+import Theme4 from './../components/Website Data/Kelly_T2_theme.png'
 
 function Research() {
     const researchRef = useRef(null);
@@ -23,7 +23,7 @@ function Research() {
     useEffect(() => {
         document.title = 'BRL - Research';
         return () => {
-            document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
+            document.title = 'My React App';
         };
     }, []);
 
@@ -110,8 +110,8 @@ function Research() {
                             </div>
                         </div>
                         <div class="each_theme">
-                            <Link to="#" onClick={() => handleThemeClick('theme4_section')}>
-                                <img src={Theme4} alt="Illustration of the basic concept of a democratised virtual power plant (VPP) with the power grid supplying energy to the democratised VPP, which allows a two-way relationship for pre-purchase with prosumers and a two-way relationship for selling with consumers for the Intelligent Environments theme."></img>
+                            <Link to="#" onClick={() => handleThemeClick('theme3_section')}>
+                                <img src={Theme3} alt="Illustration of the basic concept of a democratised virtual power plant (VPP) with the power grid supplying energy to the democratised VPP, which allows a two-way relationship for pre-purchase with prosumers and a two-way relationship for selling with consumers for the Intelligent Environments theme."></img>
                             </Link>
                             <div className='each_theme_data'>
                                 <h4><b>INTELLIGENT ENVIRONMENTS</b></h4>
@@ -119,8 +119,8 @@ function Research() {
                             </div>
                         </div>
                         <div class="each_theme">
-                            <Link to="#" onClick={() => handleThemeClick('theme3_section')}>
-                                <img src={Theme3} alt="The NUS Tropical Technologies Laboratory with building greenery, building-integrated photovoltaic, and various façades for the Resilient Cooling theme."></img>
+                            <Link to="#" onClick={() => handleThemeClick('theme4_section')}>
+                                <img src={Theme4} alt="The NUS Tropical Technologies Laboratory with building greenery, building-integrated photovoltaic, and various façades for the Resilient Cooling theme."></img>
                             </Link>
                             <div className='each_theme_data'>
                                 <h4><b>NATURE-BASED TECHNOLOGIES</b></h4>
@@ -166,6 +166,22 @@ function Research() {
                         </div>
                         <p className='tool_links'><Link to="/otst"><b>Optimal Temperature Setpoint Tool</b></Link></p>
                     </div>
+                    <div className='theme_section' id='theme1_section'>
+                        <div className="theme_details">
+                            <img src={Theme1_3} alt="Showcasing various graphs and charts that highlight the variables that go into remote photoplethysmography (RPPG) research."></img>
+                            <h4><b>Non-Intrusive Sensing of Human Health</b></h4>
+                            <h6><b>To develop non-intrusive and scalable sensing systems for cardiovascular parameters such as human heart rate, respiration rate, and heart rate variability by leveraging novel, low-cost RGB cameras.</b></h6>
+                            <p>Cardiovascular parameters are commonly measured via electrocardiogram (ECG). Here, chest leads are attached to the patient’s chest and electrical signals are captured every time the heart beats. However, ECGs are difficult to run continuously. An alternative method, photoplethysmography (PPG), uses an optical technique to measure changes in blood volume in the microvascular bed of tissue by shining a light onto the skin and detecting the reflected light. PPG methods also require constant contact to the skin to obtain a continuous reading of cardiovascular parameters. Though such techniques can be labeled as non-invasive since they are typically embedded in smartwatches, they do remain intrusive and may be distracting in a work setting. Furthermore, some individuals find wearables uncomfortable or experience skin sensitivity issues. Remote PPG (rPPG) methods address these challenges by leveraging the base principle of PPG, and using the average reflected visible light from a specific region of a subject’s face captured via camera images as an input.</p>
+                            <p>This project was led by <Link to="/profile/Ilyas"><b>Ilyas Dawoodjee</b></Link>.</p>
+                        </div>
+                        <h4 className="keyObjs"><b>Key Objectives</b></h4>
+                        <div className="theme_deliverables">
+                            <p>Recreate and implement state-of-the-art algorithms as outlined from the 120+ papers filtered from the 2,000+ papers.</p>
+                            <p>Develop a user-friendly framework that allows future rPPG researchers to generate evaluation results at the click of a button.</p>
+                            <p>Apply these algorithms to widely-used public datasets to obtain results for a fair comparison.</p>
+                            <p>Visit <Link to="https://github.com/blank-ed/remote_PPG"><b>GitHub - rPPG</b></Link> to find the actual implementations of the state-of-the-art rPPG algorithms.</p>
+                        </div>
+                    </div>
                 </div>
             </Container>
 
@@ -192,22 +208,6 @@ function Research() {
                     </div>
                     <div className='theme_section' id='theme2_section'>
                         <div className="theme_details">
-                            <img src={Theme2_1} alt="Showcasing various graphs and charts that highlight the variables that go into remote photoplethysmography (RPPG) research."></img>
-                            <h4><b>Non-Intrusive Sensing of Human Health</b></h4>
-                            <h6><b>To develop non-intrusive and scalable sensing systems for cardiovascular parameters such as human heart rate, respiration rate, and heart rate variability by leveraging novel, low-cost RGB cameras.</b></h6>
-                            <p>Cardiovascular parameters are commonly measured via electrocardiogram (ECG). Here, chest leads are attached to the patient’s chest and electrical signals are captured every time the heart beats. However, ECGs are difficult to run continuously. An alternative method, photoplethysmography (PPG), uses an optical technique to measure changes in blood volume in the microvascular bed of tissue by shining a light onto the skin and detecting the reflected light. PPG methods also require constant contact to the skin to obtain a continuous reading of cardiovascular parameters. Though such techniques can be labeled as non-invasive since they are typically embedded in smartwatches, they do remain intrusive and may be distracting in a work setting. Furthermore, some individuals find wearables uncomfortable or experience skin sensitivity issues. Remote PPG (rPPG) methods address these challenges by leveraging the base principle of PPG, and using the average reflected visible light from a specific region of a subject’s face captured via camera images as an input.</p>
-                            <p>This project was led by <Link to="/profile/Ilyas"><b>Ilyas Dawoodjee</b></Link>.</p>
-                        </div>
-                        <h4 className="keyObjs"><b>Key Objectives</b></h4>
-                        <div className="theme_deliverables">
-                            <p>Recreate and implement state-of-the-art algorithms as outlined from the 120+ papers filtered from the 2,000+ papers.</p>
-                            <p>Develop a user-friendly framework that allows future rPPG researchers to generate evaluation results at the click of a button.</p>
-                            <p>Apply these algorithms to widely-used public datasets to obtain results for a fair comparison.</p>
-                            <p>Visit <Link to="https://github.com/blank-ed/remote_PPG"><b>GitHub - rPPG</b></Link> to find the actual implementations of the state-of-the-art rPPG algorithms.</p>
-                        </div>
-                    </div>
-                    <div className='theme_section' id='theme2_section'>
-                        <div className="theme_details">
                             <img src={Theme2_2} alt="Pointing out the various building elements that go into indoor environmental quality (IEQ) sensing: indoor air quality (carbon dioxide, particulate matter, total volatile organic compounds), visual (horizontal illuminance), acoustics (sound), and thermal (temperature and humidity)."></img>
                             <h4><b>Human-Centric Indoor Environmental Quality (IEQ) Sensing </b></h4>
                             <h6><b>This research aims to develop and deploy low-cost and user-friendly sensing devices for personal monitoring of IEQ and enhanced human well-being.</b></h6>
@@ -222,14 +222,14 @@ function Research() {
                 </div>
             </Container>
 
-            <Container sectionName='theme4_section'>
+            <Container sectionName='theme3_section'>
                 <div className="title">
                     <h1>Intelligent Environments</h1>
                 </div>
                 <div className="whole_theme">
                     <div className='theme_section'>
                         <div className="theme_details">
-                            <img src={Theme4} alt="Illustration of the basic concept of a democratised virtual power plant (VPP) with the power grid supplying energy to the democratised VPP, which allows a two-way relationship for pre-purchase with prosumers and a two-way relationship for selling with consumers."></img>
+                            <img src={Theme3} alt="Illustration of the basic concept of a democratised virtual power plant (VPP) with the power grid supplying energy to the democratised VPP, which allows a two-way relationship for pre-purchase with prosumers and a two-way relationship for selling with consumers."></img>
                             <h4><b>Democratisation of Virtual Power Plants for Optimal Monetisation and Grid Flexibility</b></h4>
                             <h6><b>Pave the way for a future where AI-driven technologies empower individuals to play an active role in shaping the energy landscape while reaping financial rewards, thus fostering sustainable energy practices and grid resilience.</b></h6>
                             <p>In today's energy landscape, we witness a burgeoning wholesale electricity market alongside the increasing adoption of renewable energy sources, particularly photovoltaic (PV) batteries, driven by government subsidies and environmental motivations. While this transition holds immense promise, it also presents a real-world gap wherein end-users, despite having the potential to financially benefit from market participation, often lack the means to do so efficiently, frequently necessitating manual adjustments via mobile devices. The core motivation behind our research lies in harnessing the power of AI to facilitate seamless and user-friendly interactions with VPPs. We aim to bridge existing gaps by drawing insights from various disciplines beyond building science and algorithmic processes that have successfully incentivized behavioural change. Our overarching objectives revolve around transforming transient behaviors into enduring habits, quantifying and minimising uncertainty, and integrating users into the energy ecosystem to monetise their actions effectively.</p>
@@ -246,14 +246,14 @@ function Research() {
                 </div>
             </Container>
 
-            <Container useOrange={true} sectionName='theme3_section'>
+            <Container useOrange={true} sectionName='theme4_section'>
                 <div className="title">
                     <h1>Nature-Based Technologies</h1>
                 </div>
                 <div className="whole_theme">
                     <div className='theme_section'>
                         <div className="theme_details">
-                            <img src={Theme3_0} alt="Illustration of the 4 themes that make up smart and resilient cooling system façades: vertical greenery systems (VGS), codensate water recycling, shading systems, and heat reflective paints, as well as various configurations of louvers and greenery on the façade."></img>
+                            <img src={Theme4_0} alt="Illustration of the 4 themes that make up smart and resilient cooling system façades: vertical greenery systems (VGS), codensate water recycling, shading systems, and heat reflective paints, as well as various configurations of louvers and greenery on the façade."></img>
                             <h4><b>Exploring Novel Cooling Technologies for Building Façades: Towards a Cooler and Resilient Urban Landscape</b></h4>
                             <h6><b>Our research looks into the synergistic potential of various façade technologies, such as shading systems, heat-reflective paints, and vertical greenery systems to pioneer innovative façade cooling solutions that enhance energy efficiency and urban resilience.</b></h6>
                             <p>The escalating effects of global warming, driven in part by anthropogenic activities, amplify the challenges posed by climate change. This, in turn, exacerbates the urban heat island (UHI) phenomenon, where metropolitan areas experience significantly warmer temperatures than their rural surroundings. This vicious cycle not only places additional strain on urban infrastructure, but also intensifies energy demands. Building façades, integral to a structure's thermal performance, emerge as a crucial intervention point in this scenario. Delving into the synergistic potential of various façade technologies, our research champions novel approaches that aim to break this cycle, leading to innovative cooling solutions that enhance energy efficiency and fortify urban resilience.</p>
@@ -267,7 +267,7 @@ function Research() {
                     </div>
                     <div className='theme_section' id='theme3_section'>
                         <div className="theme_details">
-                            <img src={Theme3} alt="The NUS Tropical Technologies Laboratory with building greenery, building-integrated photovoltaic, and various façades for the Resilient Cooling theme."></img>
+                            <img src={Theme4} alt="The NUS Tropical Technologies Laboratory with building greenery, building-integrated photovoltaic, and various façades for the Resilient Cooling theme."></img>
                             <h4><b>Exploring Novel Vertical Greenery Systems Design</b></h4>
                             <h6><b>By comprehensively examining the economic, environmental, and social impacts of various VGS designs, our objective is to identify and propose the most suitable design options for tropical climates.</b></h6>
                             <p>Vertical greenery systems (VGS) offer diverse advantages in tropical climates by impacting environmental sustainability, human well-being, urban aesthetics, and economic vitality. Effective VGS design demands equilibrium among ecological factors, societal needs, financial viability, and architectural integration. Given the varying climatic conditions across countries, a comprehensive approach encompassing wall type, plant selection, substrate choice, geometry, orientation, and irrigation method is essential during the design phase to fully unlock the benefits of VGSs.</p>
