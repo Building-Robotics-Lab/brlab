@@ -136,7 +136,7 @@ function Research() {
                     <h1>Sensing Human Health and Comfort</h1>
                 </div>
                 <div className="whole_theme">
-                    <div className='theme_section'>
+                    <div className='theme_section odd'>
                         <div className="theme_details">
                             <img src={Theme1} alt="A thermal comfort graph with Predicted Setpoint Temperature on the y-axis and Daily Mean Outdoor Temperature on the x-axis from a related publication Chen Kai."></img>
                             <h4><b>Optimising Thermal Comfort in the Built Environment</b></h4>
@@ -166,7 +166,7 @@ function Research() {
                         </div>
                         <p className='tool_links'><Link to="/otst"><b>Optimal Temperature Setpoint Tool</b></Link></p>
                     </div>
-                    <div className='theme_section' id='theme1_section'>
+                    <div className='theme_section odd' id='theme1_section'>
                         <div className="theme_details">
                             <img src={Theme1_3} alt="Showcasing various graphs and charts that highlight the variables that go into remote photoplethysmography (RPPG) research."></img>
                             <h4><b>Non-Intrusive Sensing of Human Health</b></h4>
@@ -206,7 +206,7 @@ function Research() {
                             <p>Through developing a semantically-connected digital twin system with user-centric interfaces, we aim to provide stakeholders a versatile tool for creating virtual replicas of various built environments for a true metaverse.</p>
                         </div>
                     </div>
-                    <div className='theme_section' id='theme2_section'>
+                    <div className='theme_section odd' id='theme2_section'>
                         <div className="theme_details">
                             <img src={Theme2_2} alt="Pointing out the various building elements that go into indoor environmental quality (IEQ) sensing: indoor air quality (carbon dioxide, particulate matter, total volatile organic compounds), visual (horizontal illuminance), acoustics (sound), and thermal (temperature and humidity)."></img>
                             <h4><b>Human-Centric Indoor Environmental Quality (IEQ) Sensing </b></h4>
@@ -251,7 +251,7 @@ function Research() {
                     <h1>Nature-Based Technologies</h1>
                 </div>
                 <div className="whole_theme">
-                    <div className='theme_section'>
+                    <div className='theme_section odd'>
                         <div className="theme_details">
                             <img src={Theme4_0} alt="Illustration of the 4 themes that make up smart and resilient cooling system façades: vertical greenery systems (VGS), codensate water recycling, shading systems, and heat reflective paints, as well as various configurations of louvers and greenery on the façade."></img>
                             <h4><b>Exploring Novel Cooling Technologies for Building Façades: Towards a Cooler and Resilient Urban Landscape</b></h4>

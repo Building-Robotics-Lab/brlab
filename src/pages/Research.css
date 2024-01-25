@@ -127,7 +127,7 @@
     border-radius: 1rem;
 }
 
-.Research .theme_section:nth-child(odd) .theme_details img {
+.Research .odd .theme_details img {
     width: 30%;
     height: auto;
     float: left;
