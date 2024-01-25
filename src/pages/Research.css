@@ -261,7 +261,7 @@
         border-radius: calc(0.7 * 1rem);
     }
 
-    .Research .theme_section:nth-child(odd) .theme_details img {
+    .Research .odd .theme_details img {
         margin-right: calc(0.7 * 2rem);
         margin-bottom: calc(0.7 * 1rem);
         border-radius: calc(0.7 * 1rem);
@@ -384,7 +384,7 @@
         border-radius: calc(0.4 * 1rem);
     }
 
-    .Research .theme_section:nth-child(odd) .theme_details img {
+    .Research .odd .theme_details img {
         margin-right: calc(0.4 * 2rem);
         margin-bottom: calc(0.4 * 1rem);
         border-radius: calc(0.4 * 1rem);
@@ -518,7 +518,7 @@
         border-radius: calc(0.3 * 1rem);
     }
 
-    .Research .theme_section:nth-child(odd) .theme_details img {
+    .Research .odd .theme_details img {
         margin-right: calc(0.3 * 2rem);
         margin-bottom: calc(0.3 * 1rem);
         border-radius: calc(0.3 * 1rem);
