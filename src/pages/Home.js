@@ -10,6 +10,7 @@ import LandingPageVideo from './../components/Website Data/Smart Building Full A
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
+//import XiaorongNews from './../components/Website Individual Information/Xiaorong/image.jpg'
 import HengNews from './../components/Website Individual Information/Heng/image.jpg'
 import PublicationsKaiNews2 from './../components/Website Data/kai_paper2.jpg'
 import PublicationsRiccardoNews2 from './../components/Website Data/riccardo-publication2.png'
@@ -18,6 +19,13 @@ import GuillaumeNews from './../components/Website Individual Information/Guilla
 import PierreNews from './../components/Website Individual Information/Pierre-Louis/image.jpg'
 
 const slides = [
+    //6 most-recent news
+    /*{
+        image: XiaorongNews,
+        title: '<b>Please welcome Wang Xiaorong to the lab!</b>',
+        date: '29/01/2024',
+        link: 'FifthNewsSection',
+    },*/
     {
         image: HengNews,
         title: '<b>Please welcome Du Heng to the lab!</b>',

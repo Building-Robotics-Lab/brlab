@@ -28,6 +28,7 @@ import GuillaumePic from './../components/Website Individual Information/Guillau
 import MichellePic from './../components/Website Individual Information/Michelle/image.jpg';
 import QianPic from './../components/Website Individual Information/Qian/image.jpeg';
 import HengPic from './../components/Website Individual Information/Heng/image.jpg';
+//import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpg';
 
 function Our_Team() {
 
@@ -95,6 +96,13 @@ function Our_Team() {
             imgSrc: PegahPic,
             link: 'Pegah'
         },
+        /*{
+            name: 'Wang Xiaorong',
+            role: 'Visiting PhD Candidate',
+            skills: 'Building Energy Efficiency; Machine Learning; Urban Building Energy Modelling; Indoor Environmental Quality; Thermal Comfort',
+            imgSrc: XiaorongPic,
+            link: 'Xiaorong'
+        },*/
         {
             name: 'Pierre-Louis David',
             role: "Visiting MSc Student",
