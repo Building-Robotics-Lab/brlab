@@ -97,13 +97,6 @@ function Our_Team() {
             link: 'Rezky'
         },*/
         {
-            name: 'Su Xiaosong',
-            role: 'Visiting PhD Candidate',
-            skills: 'Building Energy Efficiency; Energy-Efficient Building Envelope; Building-Integrated Photovoltaics; Radiant Cooling Technology in Buildings',
-            imgSrc: XiaosongPic,
-            link: 'Xiaosong'
-        },
-        {
             name: 'Pegah Eshraghi',
             role: 'Visiting PhD Candidate',
             skills: 'Building Energy Efficiency; Machine Learning; Urban Building Energy Modelling; Indoor Environmental Quality; Thermal Comfort',
@@ -134,6 +127,17 @@ function Our_Team() {
     ];
 
     const alumnis = [
+        {
+            name: 'Su Xiaosong',
+            role: (
+                <>
+                PhD Candidate <br />
+                Hunan University (China)
+                </>
+            ),
+            skills: 'Visiting PhD Candidate (January 2023 - January 2024)',
+            imgSrc: XiaosongPic,
+        },
         {
             name: 'Hu Xinhao',
             role: (
