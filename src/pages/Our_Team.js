@@ -54,6 +54,13 @@ function Our_Team() {
             imgSrc: HengPic,
             link: 'Heng'
         },
+        /*{
+            name: 'Diji, PhD',
+            role: 'Research Fellow',
+            skills: 'Thermal Comfort; Human Well-Being; Environmental Sustainability; Smart Buildings; Data-Driven Models',
+            imgSrc: DijiPic,
+            link: 'Diji'
+        },*/
         {
             name: 'Chen Kai',
             role: 'PhD Student',
@@ -82,6 +89,13 @@ function Our_Team() {
             imgSrc: KellyPic,
             link: 'Kelly'
         },
+        /*{
+            name: 'Rezky Nanda',
+            role: 'Research Engineer',
+            skills: 'Building Energy Efficiency; Building Greenery; Building Finance; Building Information Modelling',
+            imgSrc: RezkyPic,
+            link: 'Rezky'
+        },*/
         {
             name: 'Su Xiaosong',
             role: 'Visiting PhD Candidate',

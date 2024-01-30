@@ -6,6 +6,8 @@ import './News.css'
 import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
+//import RezkyPic from './../components/Website Individual Information/Rezky/image.jpg';
+//import DijiPic from './../components/Website Individual Information/Diji/image.jpg';
 //import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpg';
 import HengPic from './../components/Website Individual Information/Heng/image.jpg';
 import KaiPublication2 from './../components/Website Data/kai_paper2.jpg'
@@ -87,6 +89,32 @@ function News() {
     // }, []);
 
     const newsData = [
+        /*{
+            NewsSectionName: 'Xiaorong',
+            imageSrc: RezkyPic,
+            altText: "A headshot of Rezky Nanda.",
+            date: '29/01/2024',
+            title: 'Please welcome Rezky Nanda to the lab!',
+            content: (
+                <>
+                    The Building Robotics Lab is happy to have Xiaorong joining us from China as a visiting PhD candidate at XX studying Buildings in the Department of Construction. Her research revolves around Building Energy Efficiency, Machine Learning, Urban Building Energy Modelling, Indoor Environmental Quality, and Thermal Comfort. Check out her full profile <Link to="/profile/Xiaorong"><b>here</b></Link> to get to know her more!
+                </>
+            ),
+            sectionName: 'FifthNewsSection'
+        },*/
+        /*{
+            NewsSectionName: 'Diji',
+            imageSrc: DijiPic,
+            altText: "A headshot of Diji.",
+            date: '29/01/2024',
+            title: 'Please welcome Diji to the lab!',
+            content: (
+                <>
+                    The Building Robotics Lab is happy to have Xiaorong joining us from China as a visiting PhD candidate at XX studying Buildings in the Department of Construction. Her research revolves around Building Energy Efficiency, Machine Learning, Urban Building Energy Modelling, Indoor Environmental Quality, and Thermal Comfort. Check out her full profile <Link to="/profile/Xiaorong"><b>here</b></Link> to get to know her more!
+                </>
+            ),
+            sectionName: 'FifthNewsSection'
+        },*/
         /*{
             NewsSectionName: 'Xiaorong',
             imageSrc: XiaorongPic,

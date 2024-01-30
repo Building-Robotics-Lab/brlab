@@ -4,6 +4,9 @@ import RiccardoCV from './Riccardo/CV.pdf'
 import HengPic from './Heng/image.jpg'
 import HengCV from './Heng/CV.pdf'
 
+//import DijiPic from './Diji/image.jpg'
+//import DijiCV from './Diji/CV.pdf'
+
 import KaiPic from './Kai/image.jpg'
 import KaiCV from './Kai/CV.pdf'
 
@@ -15,6 +18,9 @@ import ConnorCV from './Connor/CV.pdf'
 
 import KellyPic from './Kelly/image.jpg'
 import KellyCV from './Kelly/CV.pdf'
+
+//import RezkyPic from './Rezky/image.jpg'
+//import RezkyCV from './Rezky/CV.pdf'
 
 import IlyasPic from './Ilyas/image.jpg'
 import IlyasCV from './Ilyas/CV.pdf'
@@ -428,49 +434,6 @@ const profiles = [
             'Thermal Comfort'
         ],
     },
-    /*{
-        ProfileName: 'Xiaorong',
-        ProfileLink: "/profile/Xiaorong",
-        ProfilePic: XiaorongPic,
-        Name: 'Wang Xiaorong',
-        Position: 'Visiting PhD Candidate',
-        Position2: 'Shahid Beheshti University (Iran)',
-        Biography: 'Pegah Eshraghi is a fourth-year PhD candidate of Architecture (with Energy background) at Shahid Beheshti University, Tehran, Iran. She is an enthusiastic student in building energy modelling and the environmental effects of buildings on different scales. Pegah is also currently a research assistant at NUS (National University of Singapore), College of Design & Engineering, Department of the Built Environment. With a strong passion for energy conservation, Pegah\'s focus is to create a framework at the urban block scale with the help of machine learning and various energy and environmental metrics in order to achieve the best morphology and density distribution. In addition to her interest in energy efficiency, Pegah is deeply fascinated by the developing frameworks based on sustainable guidelines helping architects and urban planners easily evaluate their alternatives at the very early stages of design, and provide services such as designing, consultation, optimisation, giving international certificates and energy labels for energy, daylighting, thermal comfort, indoor environmental quality, etc. She believes using these frameworks will help people to make decisions faster and more conveniently to live in an eco-friendly environment.',
-        Education: [
-            'PhD, Shahid Beheshti University (SBU), Buildings (current)',
-            'MArch, Shahid Beheshti University (SBU), Building Engineering (2020)',
-            'BArch (<i>First Class Honours</i>), Ferdowsi University of Mashhad (FUM), Architecture (2018)'
-        ],
-        Awards: [],
-        Featured_Publications: [
-            (
-                <>
-                    Sharif, S.A., Hammad, A. and <b>Eshraghi, P.</b>, 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778820304904" ><b>Generation of whole building renovation scenarios using variational autoencoders</b></a>. <i>Energy and Buildings, 230</i>, 110520.
-                </>
-            ),
-            (
-                <>
-                    Ahmadi Soleimani, S.M., <b>Eshraghi, P.</b>, Mirdamadi, M. and Zamardian, Z., 2022. <a href="https://soffeh.sbu.ac.ir/article_102765.html" ><b>Optimizing energy consumption of educational buildings, a case study: Shahid Beheshti University</b></a>. <i>Safa, 32(3)</i>, 49-65. [Persian]
-                </>
-            ),
-        ],
-        Contacts: [
-            { href: "tel:+6581597168", icon: faPhone, text: "+65 8159 7168" },
-            { href: "mailto:e1331313@u.nus.edu", icon: faEnvelope, text: "e1331313@u.nus.edu" },
-        ],
-        Links: [
-            { href: XiaorongCV, icon: faUser, text: 'CV' },
-            { href: 'https://www.researchgate.net/profile/Pegah-Eshraghi/research', icon: faResearchgate, text: 'ResearchGate' },
-            { href: 'https://www.linkedin.com/in/pegah-eshraghi-194228185/', icon: faLinkedin, text: 'LinkedIn' },
-        ],
-        Interests: [
-            'Building Energy Efficiency',
-            'Machine Learning',
-            'Urban Building Energy Modelling',
-            'Indoor Environmental Quality',
-            'Thermal Comfort'
-        ],
-    },*/
     {
         ProfileName: 'Pierre',
         ProfileLink: "/profile/Pierre",
@@ -644,6 +607,133 @@ const profiles = [
             'Data-Driven Models'
         ],
     },
+    /*{
+        ProfileName: 'Xiaorong',
+        ProfileLink: "/profile/Xiaorong",
+        ProfilePic: XiaorongPic,
+        Name: 'Wang Xiaorong',
+        Position: 'Visiting PhD Candidate',
+        Position2: 'Shahid Beheshti University (Iran)',
+        Biography: 'Pegah Eshraghi is a fourth-year PhD candidate of Architecture (with Energy background) at Shahid Beheshti University, Tehran, Iran. She is an enthusiastic student in building energy modelling and the environmental effects of buildings on different scales. Pegah is also currently a research assistant at NUS (National University of Singapore), College of Design & Engineering, Department of the Built Environment. With a strong passion for energy conservation, Pegah\'s focus is to create a framework at the urban block scale with the help of machine learning and various energy and environmental metrics in order to achieve the best morphology and density distribution. In addition to her interest in energy efficiency, Pegah is deeply fascinated by the developing frameworks based on sustainable guidelines helping architects and urban planners easily evaluate their alternatives at the very early stages of design, and provide services such as designing, consultation, optimisation, giving international certificates and energy labels for energy, daylighting, thermal comfort, indoor environmental quality, etc. She believes using these frameworks will help people to make decisions faster and more conveniently to live in an eco-friendly environment.',
+        Education: [
+            'PhD, Shahid Beheshti University (SBU), Buildings (current)',
+            'MArch, Shahid Beheshti University (SBU), Building Engineering (2020)',
+            'BArch (<i>First Class Honours</i>), Ferdowsi University of Mashhad (FUM), Architecture (2018)'
+        ],
+        Awards: [],
+        Featured_Publications: [
+            (
+                <>
+                    Sharif, S.A., Hammad, A. and <b>Eshraghi, P.</b>, 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778820304904" ><b>Generation of whole building renovation scenarios using variational autoencoders</b></a>. <i>Energy and Buildings, 230</i>, 110520.
+                </>
+            ),
+            (
+                <>
+                    Ahmadi Soleimani, S.M., <b>Eshraghi, P.</b>, Mirdamadi, M. and Zamardian, Z., 2022. <a href="https://soffeh.sbu.ac.ir/article_102765.html" ><b>Optimizing energy consumption of educational buildings, a case study: Shahid Beheshti University</b></a>. <i>Safa, 32(3)</i>, 49-65. [Persian]
+                </>
+            ),
+        ],
+        Contacts: [
+            { href: "tel:+6581597168", icon: faPhone, text: "+65 8159 7168" },
+            { href: "mailto:e1331313@u.nus.edu", icon: faEnvelope, text: "e1331313@u.nus.edu" },
+        ],
+        Links: [
+            { href: XiaorongCV, icon: faUser, text: 'CV' },
+            { href: 'https://www.researchgate.net/profile/Pegah-Eshraghi/research', icon: faResearchgate, text: 'ResearchGate' },
+            { href: 'https://www.linkedin.com/in/pegah-eshraghi-194228185/', icon: faLinkedin, text: 'LinkedIn' },
+        ],
+        Interests: [
+            'Building Energy Efficiency',
+            'Machine Learning',
+            'Urban Building Energy Modelling',
+            'Indoor Environmental Quality',
+            'Thermal Comfort'
+        ],
+    },*/
+    /*{
+        ProfileName: 'Diji',
+        ProfileLink: "/profile/Diji",
+        ProfilePic: DijiPic,
+        Name: 'Diji',
+        Position: 'Research Fellow',
+        Biography: 'Pegah Eshraghi is a fourth-year PhD candidate of Architecture (with Energy background) at Shahid Beheshti University, Tehran, Iran. She is an enthusiastic student in building energy modelling and the environmental effects of buildings on different scales. Pegah is also currently a research assistant at NUS (National University of Singapore), College of Design & Engineering, Department of the Built Environment. With a strong passion for energy conservation, Pegah\'s focus is to create a framework at the urban block scale with the help of machine learning and various energy and environmental metrics in order to achieve the best morphology and density distribution. In addition to her interest in energy efficiency, Pegah is deeply fascinated by the developing frameworks based on sustainable guidelines helping architects and urban planners easily evaluate their alternatives at the very early stages of design, and provide services such as designing, consultation, optimisation, giving international certificates and energy labels for energy, daylighting, thermal comfort, indoor environmental quality, etc. She believes using these frameworks will help people to make decisions faster and more conveniently to live in an eco-friendly environment.',
+        Education: [
+            'PhD, Shahid Beheshti University (SBU), Buildings (current)',
+            'MArch, Shahid Beheshti University (SBU), Building Engineering (2020)',
+            'BArch (<i>First Class Honours</i>), Ferdowsi University of Mashhad (FUM), Architecture (2018)'
+        ],
+        Awards: [],
+        Featured_Publications: [
+            (
+                <>
+                    Sharif, S.A., Hammad, A. and <b>Eshraghi, P.</b>, 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778820304904" ><b>Generation of whole building renovation scenarios using variational autoencoders</b></a>. <i>Energy and Buildings, 230</i>, 110520.
+                </>
+            ),
+            (
+                <>
+                    Ahmadi Soleimani, S.M., <b>Eshraghi, P.</b>, Mirdamadi, M. and Zamardian, Z., 2022. <a href="https://soffeh.sbu.ac.ir/article_102765.html" ><b>Optimizing energy consumption of educational buildings, a case study: Shahid Beheshti University</b></a>. <i>Safa, 32(3)</i>, 49-65. [Persian]
+                </>
+            ),
+        ],
+        Contacts: [
+            { href: "tel:+6581597168", icon: faPhone, text: "+65 8159 7168" },
+            { href: "mailto:e1331313@u.nus.edu", icon: faEnvelope, text: "e1331313@u.nus.edu" },
+        ],
+        Links: [
+            { href: XiaorongCV, icon: faUser, text: 'CV' },
+            { href: 'https://www.researchgate.net/profile/Pegah-Eshraghi/research', icon: faResearchgate, text: 'ResearchGate' },
+            { href: 'https://www.linkedin.com/in/pegah-eshraghi-194228185/', icon: faLinkedin, text: 'LinkedIn' },
+        ],
+        Interests: [
+            'Building Energy Efficiency',
+            'Machine Learning',
+            'Urban Building Energy Modelling',
+            'Indoor Environmental Quality',
+            'Thermal Comfort'
+        ],
+    },*/
+    /*{
+        ProfileName: 'Rezky',
+        ProfileLink: "/profile/Rezky",
+        ProfilePic: RezkyPic,
+        Name: 'Rezky Nanda',
+        Position: 'Research Engineer',
+        Biography: 'Pegah Eshraghi is a fourth-year PhD candidate of Architecture (with Energy background) at Shahid Beheshti University, Tehran, Iran. She is an enthusiastic student in building energy modelling and the environmental effects of buildings on different scales. Pegah is also currently a research assistant at NUS (National University of Singapore), College of Design & Engineering, Department of the Built Environment. With a strong passion for energy conservation, Pegah\'s focus is to create a framework at the urban block scale with the help of machine learning and various energy and environmental metrics in order to achieve the best morphology and density distribution. In addition to her interest in energy efficiency, Pegah is deeply fascinated by the developing frameworks based on sustainable guidelines helping architects and urban planners easily evaluate their alternatives at the very early stages of design, and provide services such as designing, consultation, optimisation, giving international certificates and energy labels for energy, daylighting, thermal comfort, indoor environmental quality, etc. She believes using these frameworks will help people to make decisions faster and more conveniently to live in an eco-friendly environment.',
+        Education: [
+            'PhD, Shahid Beheshti University (SBU), Buildings (current)',
+            'MArch, Shahid Beheshti University (SBU), Building Engineering (2020)',
+            'BArch (<i>First Class Honours</i>), Ferdowsi University of Mashhad (FUM), Architecture (2018)'
+        ],
+        Awards: [],
+        Featured_Publications: [
+            (
+                <>
+                    Sharif, S.A., Hammad, A. and <b>Eshraghi, P.</b>, 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778820304904" ><b>Generation of whole building renovation scenarios using variational autoencoders</b></a>. <i>Energy and Buildings, 230</i>, 110520.
+                </>
+            ),
+            (
+                <>
+                    Ahmadi Soleimani, S.M., <b>Eshraghi, P.</b>, Mirdamadi, M. and Zamardian, Z., 2022. <a href="https://soffeh.sbu.ac.ir/article_102765.html" ><b>Optimizing energy consumption of educational buildings, a case study: Shahid Beheshti University</b></a>. <i>Safa, 32(3)</i>, 49-65. [Persian]
+                </>
+            ),
+        ],
+        Contacts: [
+            { href: "tel:+6581597168", icon: faPhone, text: "+65 8159 7168" },
+            { href: "mailto:e1331313@u.nus.edu", icon: faEnvelope, text: "e1331313@u.nus.edu" },
+        ],
+        Links: [
+            { href: XiaorongCV, icon: faUser, text: 'CV' },
+            { href: 'https://www.researchgate.net/profile/Pegah-Eshraghi/research', icon: faResearchgate, text: 'ResearchGate' },
+            { href: 'https://www.linkedin.com/in/pegah-eshraghi-194228185/', icon: faLinkedin, text: 'LinkedIn' },
+        ],
+        Interests: [
+            'Building Energy Efficiency',
+            'Machine Learning',
+            'Urban Building Energy Modelling',
+            'Indoor Environmental Quality',
+            'Thermal Comfort'
+        ],
+    },*/
     {
         ProfileName: 'Prof',
         ProfileLink: "/team",

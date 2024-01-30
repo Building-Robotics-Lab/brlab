@@ -10,6 +10,8 @@ import LandingPageVideo from './../components/Website Data/Smart Building Full A
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
+//import RezkyNews from './../components/Website Individual Information/Rezky/image.jpg'
+//import DijiNews from './../components/Website Individual Information/Diji/image.jpg'
 //import XiaorongNews from './../components/Website Individual Information/Xiaorong/image.jpg'
 import HengNews from './../components/Website Individual Information/Heng/image.jpg'
 import PublicationsKaiNews2 from './../components/Website Data/kai_paper2.jpg'
@@ -20,6 +22,18 @@ import PierreNews from './../components/Website Individual Information/Pierre-Lo
 
 const slides = [
     //6 most-recent news
+    /*{
+        image: RezkyNews,
+        title: '<b>Please welcome Rezky Nanda to the lab!</b>',
+        date: '29/01/2024',
+        link: 'FifthNewsSection',
+    },*/
+    /*{
+        image: DijiNews,
+        title: '<b>Please welcome Diji to the lab!</b>',
+        date: '29/01/2024',
+        link: 'FifthNewsSection',
+    },*/
     /*{
         image: XiaorongNews,
         title: '<b>Please welcome Wang Xiaorong to the lab!</b>',
