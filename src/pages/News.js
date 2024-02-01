@@ -115,19 +115,19 @@ function News() {
             ),
             sectionName: 'FifthNewsSection'
         },*/
-        /*{
+        {
             NewsSectionName: 'Xiaorong',
-            imageSrc: XiaorongPic,
+            imageSrc: PegahPic,
             altText: "A headshot of Wang Xiaorong.",
             date: '29/01/2024',
             title: 'Please welcome Wang Xiaorong to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Xiaorong joining us from China as a visiting PhD candidate at XX studying Buildings in the Department of Construction. Her research revolves around Building Energy Efficiency, Machine Learning, Urban Building Energy Modelling, Indoor Environmental Quality, and Thermal Comfort. Check out her full profile <Link to="/profile/Xiaorong"><b>here</b></Link> to get to know her more!
+                    The Building Robotics Lab is happy to have Xiaorong joining us from China as a visiting PhD candidate at China University of Geosciences (CUG) studying Surveying and Mapping Science and Technology in the School of Geography and Information Engineering. Her research revolves around urban green infrastructure planning, nature-based land planning solutions, and building energy efficiency. Check out her full profile <Link to="/profile/Xiaorong"><b>here</b></Link> to get to know her more!
                 </>
             ),
             sectionName: 'FifthNewsSection'
-        },*/
+        },
         {
             NewsSectionName: 'Heng',
             imageSrc: HengPic,
@@ -136,7 +136,7 @@ function News() {
             title: 'Please welcome Du Heng to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Heng joining us as a Research Fellow after he recently completed his PhD in Architecture/Building Technology at Shanghai Jiao Tong University (SJTU). His research revolves around Thermal Comfort, Human Well-Being, Environmental Sustainability, Smart Buildings, and Data-Driven Models. Check out his full profile <Link to="/profile/Heng"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Heng joining us as a Research Fellow after he recently completed his PhD in Architecture/Building Technology at Shanghai Jiao Tong University (SJTU). His research revolves around thermal comfort, human well-being, environmental sustainability, smart buildings, and data-driven models. Check out his full profile <Link to="/profile/Heng"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'FifthNewsSection'
@@ -188,7 +188,7 @@ function News() {
             title: 'Please welcome Guillaume Lecronier to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Guillaume joining us from Switzerland as a visiting MSc student at ETH Zürich studying Mechanical Engineering and Robotics. His research revolves around Robotics, Embedded Systems, IoT, Sensor Data Analysis, and Machine Learning. Check out his full profile <Link to="/profile/Guillaume"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Guillaume joining us from Switzerland as a visiting MSc student at ETH Zürich studying Mechanical Engineering and Robotics in the Department of Mechanical and Process Engineering. His research revolves around robotics, embedded systems, IoT, sensor data analysis, and machine learning. Check out his full profile <Link to="/profile/Guillaume"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'FourthNewsSection'
@@ -201,7 +201,7 @@ function News() {
             title: 'Please welcome Pierre-Louis David to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Pierre-Louis joining us from Switzerland as a visiting MSc student at ETH Zürich studying Mechanical Engineering and Computer Science. His research revolves around Machine Learning, Optimisation, Computer Vision, and Energy. Check out his full profile <Link to="/profile/Pierre"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Pierre-Louis joining us from Switzerland as a visiting MSc student at ETH Zürich studying Mechanical Engineering and Computer Science in the Department of Mechanical and Process Engineering. His research revolves around machine learning, optimisation, computer vision, and energy. Check out his full profile <Link to="/profile/Pierre"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'ThirdNewsSection'
@@ -214,7 +214,7 @@ function News() {
             title: 'Please welcome Pegah Eshraghi to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Pegah joining us from Iran as a visiting PhD candidate at Shahid Beheshti University studying Buildings in the Department of Construction. Her research revolves around Building Energy Efficiency, Machine Learning, Urban Building Energy Modelling, Indoor Environmental Quality, and Thermal Comfort. Check out her full profile <Link to="/profile/Pegah"><b>here</b></Link> to get to know her more!
+                    The Building Robotics Lab is happy to have Pegah joining us from Iran as a visiting PhD candidate at Shahid Beheshti University studying Buildings in the Department of Construction. Her research revolves around building energy efficiency, machine learning, urban building energy modelling, indoor environmental quality, and thermal comfort. Check out her full profile <Link to="/profile/Pegah"><b>here</b></Link> to get to know her more!
                 </>
             ),
             sectionName: 'ThirdNewsSection'
@@ -240,7 +240,7 @@ function News() {
             title: 'Please welcome Kelly Loh to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Kelly joining us as a PhD student in the Department of the Built Environment after she recently completed her BSc in Project and Facilities Management at NUS. Her research revolves around Building Energy Efficiency, Building Greenery, Building Finance, and Building Information Modelling. Check out her full profile <Link to="/profile/Kelly"><b>here</b></Link> to get to know her more!
+                    The Building Robotics Lab is happy to have Kelly joining us as a PhD student in the Department of the Built Environment after she recently completed her BSc in Project and Facilities Management at NUS. Her research revolves around building energy efficiency, building greenery, building finance, and building information modelling. Check out her full profile <Link to="/profile/Kelly"><b>here</b></Link> to get to know her more!
                 </>
             ),
             sectionName: 'SecondNewsSection'
@@ -253,7 +253,7 @@ function News() {
             title: 'Please welcome Su Xiaosong to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Song joining us from China as a visiting PhD candidate at Hunan University studying Heating, Ventilation and Air-Conditioning (HVAC) in the Department of Civil Engineering. His research revolves around Building Energy Efficiency, Energy-Efficient Building Envelope, Building-Integrated Photovoltaics, and Radiant Cooling Technology in Buildings. Check out his full profile <Link to="/profile/Xiaosong"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Song joining us from China as a visiting PhD candidate at Hunan University studying Heating, Ventilation and Air-Conditioning (HVAC) in the Department of Civil Engineering. His research revolves around building energy efficiency, energy-efficient building envelope, building-integrated photovoltaics, and radiant cooling technology in buildings. Check out his full profile <Link to="/profile/Xiaosong"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'SecondNewsSection'
@@ -279,7 +279,7 @@ function News() {
             title: 'Please welcome Connor Aucremanne to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Connor joining us as a PhD student in the Department of the Built Environment after he recently completed his MSc in Built Environment: Environmental Design and Engineering at UCL in the Bartlett Faculty of the Built Environment. His research revolves around Virtual Power Plants, Building-Occupant Network Dynamics, Smart Buildings, Human-Building Interaction, and Decarbonisation. Check out his full profile <Link to="/profile/Connor"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Connor joining us as a PhD student in the Department of the Built Environment after he recently completed his MSc in Built Environment: Environmental Design and Engineering at UCL in the Bartlett Faculty of the Built Environment. His research revolves around virtual power plants, building-occupant network dynamics, smart buildings, human-building interaction, and decarbonisation. Check out his full profile <Link to="/profile/Connor"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'FirstNewsSection'

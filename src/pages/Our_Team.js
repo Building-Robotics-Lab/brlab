@@ -103,13 +103,13 @@ function Our_Team() {
             imgSrc: PegahPic,
             link: 'Pegah'
         },
-        /*{
+        {
             name: 'Wang Xiaorong',
             role: 'Visiting PhD Candidate',
-            skills: 'Building Energy Efficiency; Machine Learning; Urban Building Energy Modelling; Indoor Environmental Quality; Thermal Comfort',
-            imgSrc: XiaorongPic,
+            skills: 'Urban Green Infrastructure Planning; Nature-Based Land Planning Solutions; Building Energy Efficiency',
+            imgSrc: PegahPic,
             link: 'Xiaorong'
-        },*/
+        },
         {
             name: 'Pierre-Louis David',
             role: "Visiting MSc Student",

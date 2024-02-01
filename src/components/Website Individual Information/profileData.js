@@ -35,7 +35,7 @@ import PegahPic from './Pegah/image.jpg'
 import PegahCV from './Pegah/CV.pdf'
 
 //import XiaorongPic from './Xiaorong/image.jpg'
-//import XiaorongCV from './Xiaorong/CV.pdf'
+import XiaorongCV from './Xiaorong/CV.pdf'
 
 import PierrePic from './Pierre-Louis/image.jpg'
 import PierreCV from './Pierre-Louis/CV.pdf'
@@ -607,49 +607,39 @@ const profiles = [
             'Data-Driven Models'
         ],
     },
-    /*{
+    {
         ProfileName: 'Xiaorong',
         ProfileLink: "/profile/Xiaorong",
-        ProfilePic: XiaorongPic,
+        ProfilePic: PegahPic,
         Name: 'Wang Xiaorong',
         Position: 'Visiting PhD Candidate',
-        Position2: 'Shahid Beheshti University (Iran)',
-        Biography: 'Pegah Eshraghi is a fourth-year PhD candidate of Architecture (with Energy background) at Shahid Beheshti University, Tehran, Iran. She is an enthusiastic student in building energy modelling and the environmental effects of buildings on different scales. Pegah is also currently a research assistant at NUS (National University of Singapore), College of Design & Engineering, Department of the Built Environment. With a strong passion for energy conservation, Pegah\'s focus is to create a framework at the urban block scale with the help of machine learning and various energy and environmental metrics in order to achieve the best morphology and density distribution. In addition to her interest in energy efficiency, Pegah is deeply fascinated by the developing frameworks based on sustainable guidelines helping architects and urban planners easily evaluate their alternatives at the very early stages of design, and provide services such as designing, consultation, optimisation, giving international certificates and energy labels for energy, daylighting, thermal comfort, indoor environmental quality, etc. She believes using these frameworks will help people to make decisions faster and more conveniently to live in an eco-friendly environment.',
+        Position2: 'China University of Geosciences (China)',
+        Biography: 'Xiaorong Wang is a third-year PhD candidate in Surveying and Mapping Science and Technology, School of Geography and Information Engineering, China University of Geosciences (CUG). Her research interest is nature-based solutions for transition and practice of multi-scale urban green infrastructure governance. She is currently studying in the Building Robotics Lab as a visiting PhD candidate in the Department of the Built Environment, College of Design & Engineering, National University of Singapore (NUS). She has unique insights in answering the questions of how to achieve multi-objective, multi-criterion urban green infrastructure planning; how to incorporate humanism and environmental resilience into the assessment system of ecosystem services; and how to plan urban green infrastructure based on ecosystem services in a multi-dimensional perspective. In the past, she has been involved in various projects, such as geopark planning, ecological restoration planning, and resilient territorial spatial planning. She is now ready to get involved in lab projects as well, and she thinks this will be of great help to her research. Outside of her studies, Xiaorong Wang likes to be close to nature, such as hiking, and she has already learned about places in Singapore suitable for such.',
         Education: [
-            'PhD, Shahid Beheshti University (SBU), Buildings (current)',
-            'MArch, Shahid Beheshti University (SBU), Building Engineering (2020)',
-            'BArch (<i>First Class Honours</i>), Ferdowsi University of Mashhad (FUM), Architecture (2018)'
+            'PhD, China University of Geosciences (CUG), Surveying and Mapping Science and Technology (current)',
+            'MSc, China University of Geosciences (CUG), Geography (2019)',
+            'BSc, China University of Geosciences (CUG), Geography (2016)'
         ],
-        Awards: [],
-        Featured_Publications: [
-            (
-                <>
-                    Sharif, S.A., Hammad, A. and <b>Eshraghi, P.</b>, 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778820304904" ><b>Generation of whole building renovation scenarios using variational autoencoders</b></a>. <i>Energy and Buildings, 230</i>, 110520.
-                </>
-            ),
-            (
-                <>
-                    Ahmadi Soleimani, S.M., <b>Eshraghi, P.</b>, Mirdamadi, M. and Zamardian, Z., 2022. <a href="https://soffeh.sbu.ac.ir/article_102765.html" ><b>Optimizing energy consumption of educational buildings, a case study: Shahid Beheshti University</b></a>. <i>Safa, 32(3)</i>, 49-65. [Persian]
-                </>
-            ),
+        Awards: [
+            'First-class Scholarship for Graduate Students, China University of Geosciences (2022)',
+            'Outstanding Graduate Student, China University of Geosciences (2021)',
+            '2nd Prize of Scientific Paper Presentation, China University of Geosciences (2019)',
+            'China National Scholarship for Graduate Students, Ministry of Education of the People\'s Republic of China (2019)',
         ],
+        Featured_Publications: [],
         Contacts: [
-            { href: "tel:+6581597168", icon: faPhone, text: "+65 8159 7168" },
-            { href: "mailto:e1331313@u.nus.edu", icon: faEnvelope, text: "e1331313@u.nus.edu" },
+            { href: "tel:+6585476448", icon: faPhone, text: "+65 8547 6448" },
+            { href: "mailto:wang.xiaorong@u.nus.edu", icon: faEnvelope, text: "wang.xiaorong@u.nus.edu" },
         ],
         Links: [
             { href: XiaorongCV, icon: faUser, text: 'CV' },
-            { href: 'https://www.researchgate.net/profile/Pegah-Eshraghi/research', icon: faResearchgate, text: 'ResearchGate' },
-            { href: 'https://www.linkedin.com/in/pegah-eshraghi-194228185/', icon: faLinkedin, text: 'LinkedIn' },
         ],
         Interests: [
+            'Urban Green Infrastructure Planning',
+            'Nature-Based Land Planning Solutions',
             'Building Energy Efficiency',
-            'Machine Learning',
-            'Urban Building Energy Modelling',
-            'Indoor Environmental Quality',
-            'Thermal Comfort'
         ],
-    },*/
+    },
     /*{
         ProfileName: 'Diji',
         ProfileLink: "/profile/Diji",

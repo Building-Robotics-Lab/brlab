@@ -12,7 +12,7 @@ import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-s
 
 //import RezkyNews from './../components/Website Individual Information/Rezky/image.jpg'
 //import DijiNews from './../components/Website Individual Information/Diji/image.jpg'
-//import XiaorongNews from './../components/Website Individual Information/Xiaorong/image.jpg'
+import XiaorongNews from './../components/Website Individual Information/Pegah/image.jpg'
 import HengNews from './../components/Website Individual Information/Heng/image.jpg'
 import PublicationsKaiNews2 from './../components/Website Data/kai_paper2.jpg'
 import PublicationsRiccardoNews2 from './../components/Website Data/riccardo-publication2.png'
@@ -34,12 +34,12 @@ const slides = [
         date: '29/01/2024',
         link: 'FifthNewsSection',
     },*/
-    /*{
+    {
         image: XiaorongNews,
         title: '<b>Please welcome Wang Xiaorong to the lab!</b>',
         date: '29/01/2024',
         link: 'FifthNewsSection',
-    },*/
+    },
     {
         image: HengNews,
         title: '<b>Please welcome Du Heng to the lab!</b>',
