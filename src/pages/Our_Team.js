@@ -28,7 +28,7 @@ import GuillaumePic from './../components/Website Individual Information/Guillau
 import MichellePic from './../components/Website Individual Information/Michelle/image.jpg';
 import QianPic from './../components/Website Individual Information/Qian/image.jpeg';
 import HengPic from './../components/Website Individual Information/Heng/image.jpg';
-//import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpg';
+import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
 
 function Our_Team() {
 
@@ -107,7 +107,7 @@ function Our_Team() {
             name: 'Wang Xiaorong',
             role: 'Visiting PhD Candidate',
             skills: 'Urban Green Infrastructure Planning; Nature-Based Land Planning Solutions; Building Energy Efficiency',
-            imgSrc: PegahPic,
+            imgSrc: XiaorongPic,
             link: 'Xiaorong'
         },
         {

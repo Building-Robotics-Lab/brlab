@@ -12,7 +12,7 @@ import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-s
 
 //import RezkyNews from './../components/Website Individual Information/Rezky/image.jpg'
 //import DijiNews from './../components/Website Individual Information/Diji/image.jpg'
-import XiaorongNews from './../components/Website Individual Information/Pegah/image.jpg'
+import XiaorongNews from './../components/Website Individual Information/Xiaorong/image.jpeg'
 import HengNews from './../components/Website Individual Information/Heng/image.jpg'
 import PublicationsKaiNews2 from './../components/Website Data/kai_paper2.jpg'
 import PublicationsRiccardoNews2 from './../components/Website Data/riccardo-publication2.png'
@@ -70,12 +70,6 @@ const slides = [
         date: '21/09/2023',
         link: 'FourthNewsSection',
     },
-    {
-        image: PierreNews,
-        title: '<b>Please welcome Pierre-Louis David to the lab!</b>',
-        date: '18/09/2023',
-        link: 'FourthNewsSection',
-    }
 ];
 
 function Home() {

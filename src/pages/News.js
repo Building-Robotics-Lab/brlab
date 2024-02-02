@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 //import RezkyPic from './../components/Website Individual Information/Rezky/image.jpg';
 //import DijiPic from './../components/Website Individual Information/Diji/image.jpg';
-//import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpg';
+import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
 import HengPic from './../components/Website Individual Information/Heng/image.jpg';
 import KaiPublication2 from './../components/Website Data/kai_paper2.jpg'
 import RiccardoPublication2 from './../components/Website Data/riccardo-publication2.png'
@@ -117,7 +117,7 @@ function News() {
         },*/
         {
             NewsSectionName: 'Xiaorong',
-            imageSrc: PegahPic,
+            imageSrc: XiaorongPic,
             altText: "A headshot of Wang Xiaorong.",
             date: '29/01/2024',
             title: 'Please welcome Wang Xiaorong to the lab!',

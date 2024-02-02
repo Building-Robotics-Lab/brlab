@@ -34,7 +34,7 @@ import XiaosongCV from './Xiaosong/CV.pdf'
 import PegahPic from './Pegah/image.jpg'
 import PegahCV from './Pegah/CV.pdf'
 
-//import XiaorongPic from './Xiaorong/image.jpg'
+import XiaorongPic from './Xiaorong/image.jpeg'
 import XiaorongCV from './Xiaorong/CV.pdf'
 
 import PierrePic from './Pierre-Louis/image.jpg'
@@ -610,7 +610,7 @@ const profiles = [
     {
         ProfileName: 'Xiaorong',
         ProfileLink: "/profile/Xiaorong",
-        ProfilePic: PegahPic,
+        ProfilePic: XiaorongPic,
         Name: 'Wang Xiaorong',
         Position: 'Visiting PhD Candidate',
         Position2: 'China University of Geosciences (China)',
