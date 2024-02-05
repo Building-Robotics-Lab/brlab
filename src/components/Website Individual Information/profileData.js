@@ -4,7 +4,7 @@ import RiccardoCV from './Riccardo/CV.pdf'
 import HengPic from './Heng/image.jpg'
 import HengCV from './Heng/CV.pdf'
 
-//import KeshavPic from './Keshav/image.jpg'
+//import KeshavPic from './Keshav/image.jpeg'
 //import KeshavCV from './Keshav/CV.pdf'
 
 import KaiPic from './Kai/image.jpg'
@@ -58,7 +58,7 @@ const profiles = [
         ProfileName: 'Riccardo',
         ProfileLink: "/profile/Riccardo",
         ProfilePic: RiccardoPic,
-        Name: 'Riccardo Talami',
+        Name: 'Riccardo Talami, PhD',
         Position: 'Research Fellow',
         Biography: 'Riccardo Talami, PhD, is a Research Fellow at the National University of Singapore (NUS) - Department of the Built Environment. Riccardo focuses his effort on the energy- efficient design and operation of buildings while improving occupant comfort and well - being. He believes that through data - driven processes, building stakeholders can achieve sustainable, comfortable, and efficient built environments.He has experience in laboratory measurements, field studies, and building performance simulation & numerical optimisation techniques. Previously, he worked as a Research and Teaching Assistant at the Singapore University of Technology and Design (SUTD) - Design for Climate and Comfort Lab. To date, Riccardo has supervised three undergraduate students for their final year project dissertation. In his free time, he is an avid street / urban art prints and books collector, and enjoys hiking and travelling.',
         Education: [
@@ -545,7 +545,7 @@ const profiles = [
         ProfileName: 'Heng',
         ProfileLink: "/profile/Heng",
         ProfilePic: HengPic,
-        Name: 'Du Heng',
+        Name: 'Du Heng, PhD',
         Position: 'Research Fellow',
         Biography: 'Du Heng, PhD, is a Research Fellow in the Department of the Built Environment, National University of Singapore (NUS). He received in PhD in Architecture from Shanghai Jiao Tong University (SJTU) in 2023. His previous research has focused on methods for designing thermal environments and evaluating human thermal comfort. In particular, he has re-evaluated traditional thermal comfort models such as predictive mean vote (PMV) and standard effective temperature (SET). He has extended to exploring the impact of various contextual factors (e.g. season, climate zone, building type, HVAC mode, circadian rhythm) and individual factors (e.g. gender and age) on thermal comfort. He has investigated the application of statistical methods to indoor environmental quality (IEQ) research, such as methods for determining appropriate sample sizes and statistical methods at different research aims. He has attempted to establish data-driven thermal comfort models. Looking ahead, Du Heng is committed to dedicating his efforts to exploring innovative methods that contribute to improving human well-being and promoting environmental sustainability. His passion extends to interdisciplinary research collaborations where he seeks to bring together diverse perspectives for impactful outcomes. In addition to his academic research, Du Heng is a certified local master of the Xiangqi (Chinese Chess) Association and has achieved many championships and outstanding rankings at the university and open levels. He also enjoys playing ultimate frisbee and has been selected as a practice player for the SJTU Frisbee Team.',
         Education: [
@@ -644,7 +644,7 @@ const profiles = [
         ProfileName: 'Keshav',
         ProfileLink: "/profile/Keshav",
         ProfilePic: KeshavPic,
-        Name: 'Keshav',
+        Name: 'Keshav Kausik, PhD',
         Position: 'Research Fellow',
         Biography: 'Pegah Eshraghi is a fourth-year PhD candidate of Architecture (with Energy background) at Shahid Beheshti University, Tehran, Iran. She is an enthusiastic student in building energy modelling and the environmental effects of buildings on different scales. Pegah is also currently a research assistant at NUS (National University of Singapore), College of Design & Engineering, Department of the Built Environment. With a strong passion for energy conservation, Pegah\'s focus is to create a framework at the urban block scale with the help of machine learning and various energy and environmental metrics in order to achieve the best morphology and density distribution. In addition to her interest in energy efficiency, Pegah is deeply fascinated by the developing frameworks based on sustainable guidelines helping architects and urban planners easily evaluate their alternatives at the very early stages of design, and provide services such as designing, consultation, optimisation, giving international certificates and energy labels for energy, daylighting, thermal comfort, indoor environmental quality, etc. She believes using these frameworks will help people to make decisions faster and more conveniently to live in an eco-friendly environment.',
         Education: [

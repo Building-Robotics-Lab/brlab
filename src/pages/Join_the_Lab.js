@@ -610,11 +610,11 @@ function Join_the_Lab() {
 
                     <div className="apply_section">
                         <div className="position">
-                            <h4><b>Postdoctoral Scholars</b></h4>
+                            <h4><b>Research Fellows</b></h4>
                         </div>
                         <div className="position_information">
                             <p>I am constantly eager to receive communication from individuals who are close to finishing their studies or who have completed their doctoral studies, and are currently involved in research related to smart and sustainable building science. These individuals should have an interest in exploring smart buildings, building robotics, human-centred AI, building energy efficiency, human-building interaction, building simulation, thermal comfort, IEQ, or other related disciplines. These individuals are expected to primarily be independent and have showcased a portfolio of research expertise at this point in their career, and will continue to do so in the Lab by investigating new research avenues, taking part in grant funding, and advising younger members. I am willing to collaborate with those who express an interest in these areas of study to create proposals for funding as well.
-                                <br /><br />To contact me, please send an email to <a href="mailto:ghahramani@nus.edu.sg"><b>ghahramani@nus.edu.sg</b></a> with the subject line, <b>"Prospective Postdoctoral Scholar Position - [last name]."</b></p>
+                                <br /><br />To contact me, please send an email to <a href="mailto:ghahramani@nus.edu.sg"><b>ghahramani@nus.edu.sg</b></a> with the subject line, <b>"Prospective Research Fellow Position - [last name]."</b></p>
                         </div>
                     </div>
 
