@@ -55,11 +55,11 @@ function Our_Team() {
             link: 'Heng'
         },
         /*{
-            name: 'Diji, PhD',
+            name: 'Keshav Kaushik, PhD',
             role: 'Research Fellow',
             skills: 'Thermal Comfort; Human Well-Being; Environmental Sustainability; Smart Buildings; Data-Driven Models',
-            imgSrc: DijiPic,
-            link: 'Diji'
+            imgSrc: KeshavPic,
+            link: 'Keshav'
         },*/
         {
             name: 'Chen Kai',

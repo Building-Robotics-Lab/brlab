@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 //import RezkyNews from './../components/Website Individual Information/Rezky/image.jpg'
-//import DijiNews from './../components/Website Individual Information/Diji/image.jpg'
+//import KeshavNews from './../components/Website Individual Information/Keshav/image.jpg'
 import XiaorongNews from './../components/Website Individual Information/Xiaorong/image.jpeg'
 import HengNews from './../components/Website Individual Information/Heng/image.jpg'
 import PublicationsKaiNews2 from './../components/Website Data/kai_paper2.jpg'
@@ -29,7 +29,7 @@ const slides = [
         link: 'FifthNewsSection',
     },*/
     /*{
-        image: DijiNews,
+        image: KeshavNews,
         title: '<b>Please welcome Diji to the lab!</b>',
         date: '29/01/2024',
         link: 'FifthNewsSection',

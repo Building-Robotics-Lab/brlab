@@ -4,8 +4,8 @@ import RiccardoCV from './Riccardo/CV.pdf'
 import HengPic from './Heng/image.jpg'
 import HengCV from './Heng/CV.pdf'
 
-//import DijiPic from './Diji/image.jpg'
-//import DijiCV from './Diji/CV.pdf'
+//import KeshavPic from './Keshav/image.jpg'
+//import KeshavCV from './Keshav/CV.pdf'
 
 import KaiPic from './Kai/image.jpg'
 import KaiCV from './Kai/CV.pdf'
