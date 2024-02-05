@@ -641,14 +641,14 @@ const profiles = [
         ],
     },
     /*{
-        ProfileName: 'Diji',
-        ProfileLink: "/profile/Diji",
-        ProfilePic: DijiPic,
-        Name: 'Diji',
+        ProfileName: 'Keshav',
+        ProfileLink: "/profile/Keshav",
+        ProfilePic: KeshavPic,
+        Name: 'Keshav',
         Position: 'Research Fellow',
         Biography: 'Pegah Eshraghi is a fourth-year PhD candidate of Architecture (with Energy background) at Shahid Beheshti University, Tehran, Iran. She is an enthusiastic student in building energy modelling and the environmental effects of buildings on different scales. Pegah is also currently a research assistant at NUS (National University of Singapore), College of Design & Engineering, Department of the Built Environment. With a strong passion for energy conservation, Pegah\'s focus is to create a framework at the urban block scale with the help of machine learning and various energy and environmental metrics in order to achieve the best morphology and density distribution. In addition to her interest in energy efficiency, Pegah is deeply fascinated by the developing frameworks based on sustainable guidelines helping architects and urban planners easily evaluate their alternatives at the very early stages of design, and provide services such as designing, consultation, optimisation, giving international certificates and energy labels for energy, daylighting, thermal comfort, indoor environmental quality, etc. She believes using these frameworks will help people to make decisions faster and more conveniently to live in an eco-friendly environment.',
         Education: [
-            'PhD, Shahid Beheshti University (SBU), Buildings (current)',
+            'PhD, Birla Institute of Technology and Science, Pilani, Computer Science (2023)',
             'MArch, Shahid Beheshti University (SBU), Building Engineering (2020)',
             'BArch (<i>First Class Honours</i>), Ferdowsi University of Mashhad (FUM), Architecture (2018)'
         ],
@@ -670,16 +670,18 @@ const profiles = [
             { href: "mailto:e1331313@u.nus.edu", icon: faEnvelope, text: "e1331313@u.nus.edu" },
         ],
         Links: [
-            { href: XiaorongCV, icon: faUser, text: 'CV' },
-            { href: 'https://www.researchgate.net/profile/Pegah-Eshraghi/research', icon: faResearchgate, text: 'ResearchGate' },
-            { href: 'https://www.linkedin.com/in/pegah-eshraghi-194228185/', icon: faLinkedin, text: 'LinkedIn' },
+            { href: KeshavCV, icon: faUser, text: 'CV' },
+            { href: 'https://scholar.google.co.in/citations?user=68iHdyoAAAAJ&hl=en', icon: faGoogle, text: 'Google Scholar' },
+            { href: 'https://www.researchgate.net/profile/Keshav-Kaushik-5', icon: faResearchgate, text: 'ResearchGate' },
+            { href: 'https://www.linkedin.com/in/keshav-kaushik/', icon: faLinkedin, text: 'LinkedIn' },
+            { href: 'https://orcid.org/0000-0003-1329-3677', icon: faOrcid, text: 'ORCID' },
         ],
         Interests: [
-            'Building Energy Efficiency',
-            'Machine Learning',
-            'Urban Building Energy Modelling',
-            'Indoor Environmental Quality',
-            'Thermal Comfort'
+            'Wireless Sensor Networks',
+            'Mobile Computing',
+            'Wireless Body Area Networks',
+            'IoT',
+            'Machine Learning'
         ],
     },*/
     /*{

@@ -57,7 +57,7 @@ function Our_Team() {
         /*{
             name: 'Keshav Kaushik, PhD',
             role: 'Research Fellow',
-            skills: 'Thermal Comfort; Human Well-Being; Environmental Sustainability; Smart Buildings; Data-Driven Models',
+            skills: 'Wireless Sensor Networks; Mobile Computing; Wireless Body Area Networks; IoT; Machine Learning',
             imgSrc: KeshavPic,
             link: 'Keshav'
         },*/

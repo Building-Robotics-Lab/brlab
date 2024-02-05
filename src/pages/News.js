@@ -110,7 +110,7 @@ function News() {
             title: 'Please welcome Keshav to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Keshav joining us from China as a visiting PhD candidate at XX studying Buildings in the Department of Construction. Her research revolves around Building Energy Efficiency, Machine Learning, Urban Building Energy Modelling, Indoor Environmental Quality, and Thermal Comfort. Check out her full profile <Link to="/profile/Xiaorong"><b>here</b></Link> to get to know her more!
+                    The Building Robotics Lab is happy to have Keshav joining us as a Research Fellow after he recently completed his PhD in Computer Science at Birla Institute of Technology and Science, Pilani. His research revolves around wirless sensor networks, mobile computing, wireless body area networks, IoT, and machine learning. Check out his full profile <Link to="/profile/Keshav"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'FifthNewsSection'
@@ -123,7 +123,7 @@ function News() {
             title: 'Please welcome Wang Xiaorong to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Xiaorong joining us from China as a visiting PhD candidate at China University of Geosciences (CUG) studying Surveying and Mapping Science and Technology in the School of Geography and Information Engineering. Her research revolves around urban green infrastructure planning, nature-based land planning solutions, and building energy efficiency. Check out her full profile <Link to="/profile/Xiaorong"><b>here</b></Link> to get to know her more!
+                    The Building Robotics Lab is happy to have Xiaorong joining us as a Research Fellow from China as a visiting PhD candidate at China University of Geosciences (CUG) studying Surveying and Mapping Science and Technology in the School of Geography and Information Engineering. Her research revolves around urban green infrastructure planning, nature-based land planning solutions, and building energy efficiency. Check out her full profile <Link to="/profile/Xiaorong"><b>here</b></Link> to get to know her more!
                 </>
             ),
             sectionName: 'FifthNewsSection'
