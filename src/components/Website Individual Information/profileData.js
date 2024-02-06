@@ -5,7 +5,7 @@ import HengPic from './Heng/image.jpg'
 import HengCV from './Heng/CV.pdf'
 
 //import KeshavPic from './Keshav/image.jpeg'
-//import KeshavCV from './Keshav/CV.pdf'
+import KeshavCV from './Keshav/CV.pdf'
 
 import KaiPic from './Kai/image.jpg'
 import KaiCV from './Kai/CV.pdf'
@@ -329,7 +329,7 @@ const profiles = [
             ),
             (
                 <>
-                    <b>Hu, X.</b>, Zhang, Z. and Cai, D., 2020. <a href="https://www.mdpi.com/1996-1073/13/6/1436" ><b>A Mathematical Tightening of Instantaneous Indoor and Outdoor Dry-Bulb and Wet-Bulb Temperature Tolerances[J]</b></a>. <i>Energies, 13(6)</i>, 1436.
+                    <b>Hu, X.</b>, Zhang, Z. and Cai, D., 2020. <a href="https://www.mdpi.com/1996-1073/13/6/1436" ><b>A Mathematical Tightening of Instantaneous Indoor and Outdoor Dry-Bulb and Wet-Bulb Temperature Tolerances[J]</b></a>. <i>Energies, 13</i>(6), 1436.
                 </>
             ),
         ],
@@ -413,7 +413,7 @@ const profiles = [
             ),
             (
                 <>
-                    Ahmadi Soleimani, S.M., <b>Eshraghi, P.</b>, Mirdamadi, M. and Zamardian, Z., 2022. <a href="https://soffeh.sbu.ac.ir/article_102765.html" ><b>Optimizing energy consumption of educational buildings, a case study: Shahid Beheshti University</b></a>. <i>Safa, 32(3)</i>, 49-65. [Persian]
+                    Ahmadi Soleimani, S.M., <b>Eshraghi, P.</b>, Mirdamadi, M. and Zamardian, Z., 2022. <a href="https://soffeh.sbu.ac.ir/article_102765.html" ><b>Optimizing energy consumption of educational buildings, a case study: Shahid Beheshti University</b></a>. <i>Safa, 32</i>(3), 49-65. [Persian]
                 </>
             ),
         ],
@@ -646,28 +646,38 @@ const profiles = [
         ProfilePic: KeshavPic,
         Name: 'Keshav Kausik, PhD',
         Position: 'Research Fellow',
-        Biography: 'Pegah Eshraghi is a fourth-year PhD candidate of Architecture (with Energy background) at Shahid Beheshti University, Tehran, Iran. She is an enthusiastic student in building energy modelling and the environmental effects of buildings on different scales. Pegah is also currently a research assistant at NUS (National University of Singapore), College of Design & Engineering, Department of the Built Environment. With a strong passion for energy conservation, Pegah\'s focus is to create a framework at the urban block scale with the help of machine learning and various energy and environmental metrics in order to achieve the best morphology and density distribution. In addition to her interest in energy efficiency, Pegah is deeply fascinated by the developing frameworks based on sustainable guidelines helping architects and urban planners easily evaluate their alternatives at the very early stages of design, and provide services such as designing, consultation, optimisation, giving international certificates and energy labels for energy, daylighting, thermal comfort, indoor environmental quality, etc. She believes using these frameworks will help people to make decisions faster and more conveniently to live in an eco-friendly environment.',
+        Biography: 'Keshav Kaushik, PhD is a Research Fellow in the Department of the Built Environment at the National University of Singapore. His research focuses on using computer science to make sustainable and efficient built environments. He has experience in real-world system deployments for energy-efficient building systems. In his free time, he enjoys going on long walks.',
         Education: [
-            'PhD, Birla Institute of Technology and Science, Pilani, Computer Science (2023)',
-            'MArch, Shahid Beheshti University (SBU), Building Engineering (2020)',
-            'BArch (<i>First Class Honours</i>), Ferdowsi University of Mashhad (FUM), Architecture (2018)'
+            'PhD, Birla Institute of Technology and Science (BITS), Pilani, Computer Science & Information Systems (2023)',
+            'BTech, Guru Gobind Singh Indraprastha University (GGSIPU), Computer Science & Engineering (2018)',
+            'Diploma, Chhotu Ram Rural Institute Of Technology (CRRIT), Electronics Engineering (2015)'
         ],
-        Awards: [],
+        Awards: [
+            'Research Explorer Ruhr, Ruhr University Alliance (2023)',
+            'SIGMobile Community Grant, ACM SigMobile (2023)',
+            'Travel Grant, IEEE COMSNETS (2023)',
+            '2nd Position in 5 Minutes Innovation Challenge, International Conference on Secure Knowledge Management (2019)',
+        ],
         Featured_Publications: [
             (
                 <>
-                    Sharif, S.A., Hammad, A. and <b>Eshraghi, P.</b>, 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778820304904" ><b>Generation of whole building renovation scenarios using variational autoencoders</b></a>. <i>Energy and Buildings, 230</i>, 110520.
+                    <b>Kaushik, K.</b> and Naik, V., 2023, November. <a href="https://dl.acm.org/doi/10.1145/3600100.3623721" ><b>An Energy Consumption Dataset for Ductless-split Cooling Systems to Train Large Models</b></a>. In <i>Proceedings of the 10th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation</i>, 216-219.
                 </>
             ),
             (
                 <>
-                    Ahmadi Soleimani, S.M., <b>Eshraghi, P.</b>, Mirdamadi, M. and Zamardian, Z., 2022. <a href="https://soffeh.sbu.ac.ir/article_102765.html" ><b>Optimizing energy consumption of educational buildings, a case study: Shahid Beheshti University</b></a>. <i>Safa, 32(3)</i>, 49-65. [Persian]
+                    <b>Kaushik, K.</b> and Naik, V., 2023, October. <a href="https://www.computer.org/csdl/proceedings-article/e-science/2023/10254663/1QJgeSdKabe" ><b>OCSRL: An Model-Based Reinforcement Learning Approach to Optimize Energy Consumption of Cooling Systems</b></a>. In <i>2023 IEEE 19th International Conference on e-Science</i>, 1-10.
+                </>
+            ),
+            (
+                <>
+                    <b>Kaushik, K.</b> and Naik, V., 2023, December. <a href="https://link.springer.com/chapter/10.1007/978-3-031-48649-4_8" ><b>A Real-Time Non-Invasive Anomaly Detection Technique for Cooling Systems</b></a>. In <i>Energy Informatics Academy Conference</i>, 135-151.
                 </>
             ),
         ],
         Contacts: [
-            { href: "tel:+6581597168", icon: faPhone, text: "+65 8159 7168" },
-            { href: "mailto:e1331313@u.nus.edu", icon: faEnvelope, text: "e1331313@u.nus.edu" },
+            { href: "tel:+919999931905", icon: faPhone, text: "+91 99 9993 1905" },
+            { href: "mailto:keshav@nus.edu.sg", icon: faEnvelope, text: "keshav@nus.edu.sg" },
         ],
         Links: [
             { href: KeshavCV, icon: faUser, text: 'CV' },
@@ -677,11 +687,10 @@ const profiles = [
             { href: 'https://orcid.org/0000-0003-1329-3677', icon: faOrcid, text: 'ORCID' },
         ],
         Interests: [
-            'Wireless Sensor Networks',
-            'Mobile Computing',
-            'Wireless Body Area Networks',
-            'IoT',
-            'Machine Learning'
+            'IoT for Building Systems',
+            'Sustainable Buildings',
+            'AI-Enabled Building Management',
+            'Optimal Control'
         ],
     },*/
     /*{

@@ -31,7 +31,7 @@ const slides = [
     /*{
         image: KeshavNews,
         title: '<b>Please welcome Keshav to the lab!</b>',
-        date: '29/01/2024',
+        date: '05/02/2024',
         link: 'FifthNewsSection',
     },*/
     {

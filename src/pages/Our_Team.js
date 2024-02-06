@@ -58,7 +58,7 @@ function Our_Team() {
         /*{
             name: 'Keshav Kaushik, PhD',
             role: 'Research Fellow',
-            skills: 'Wireless Sensor Networks; Mobile Computing; Wireless Body Area Networks; IoT; Machine Learning',
+            skills: 'IoT for Building Systems; Sustainable Buildings; AI-Enabled Building Management; Optimal Control',
             imgSrc: KeshavPic,
             link: 'Keshav'
         },*/

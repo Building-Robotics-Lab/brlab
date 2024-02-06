@@ -106,11 +106,11 @@ function News() {
             NewsSectionName: 'Keshav',
             imageSrc: KeshavPic,
             altText: "A headshot of Keshav.",
-            date: '29/01/2024',
+            date: '05/02/2024',
             title: 'Please welcome Keshav to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Keshav joining us as a Research Fellow after he recently completed his PhD in Computer Science at Birla Institute of Technology and Science, Pilani. His research revolves around wirless sensor networks, mobile computing, wireless body area networks, IoT, and machine learning. Check out his full profile <Link to="/profile/Keshav"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Keshav joining us as a Research Fellow after he recently completed his PhD in Computer Science & Information Systems at Birla Institute of Technology and Science (BITS), Pilani. His research revolves around IoT for building systems, sustainable buildings, AI-enabled building management, and optimal control. Check out his full profile <Link to="/profile/Keshav"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'FifthNewsSection'
