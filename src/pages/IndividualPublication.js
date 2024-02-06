@@ -115,7 +115,8 @@ function IndividualPublication() {
                     {userProfiles.map((profile, index) => (
                         <div className="each_profile" key={index}>
                             <div className="profile_image">
-                                <Link to={`/profile/${profile.ProfileName}`} target="_blank">
+                                {/* <Link to={`/profile/${profile.ProfileName}`} target="_blank"> */}
+                                <Link to={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
                                     <img src={profile.ProfilePic} alt={profile.Name} />
                                 </Link>
                             </div>
