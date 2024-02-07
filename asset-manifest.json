@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brlab/static/css/main.f2f16964.css",
-    "main.js": "/brlab/static/js/main.93da4055.js",
+    "main.js": "/brlab/static/js/main.902983e0.js",
     "static/media/Smart Building Full Animation (compressed).mp4": "/brlab/static/media/Smart Building Full Animation (compressed).d2a5c408c0378fdec97a.mp4",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
     "static/media/image.jpg": "/brlab/static/media/image.61b0727789a61943c549.jpg",
@@ -48,6 +48,7 @@
     "static/media/nus_logo_full-horizontal.jpg": "/brlab/static/media/nus_logo_full-horizontal.e540176bda557a3d95f3.jpg",
     "static/media/Co Innovation lab logo.jpg": "/brlab/static/media/Co Innovation lab logo.48ffd48af54883eafeb2.jpg",
     "static/media/riccardo-publication.jpg": "/brlab/static/media/riccardo-publication.d2c5e269e21b7c133308.jpg",
+    "static/media/Untitled.jpeg": "/brlab/static/media/Untitled.860259f2c824e1348320.jpeg",
     "static/media/1-s2.0-S-gr2.jpg": "/brlab/static/media/1-s2.0-S0360132316303456-gr2.4c6266128fa578738812.jpg",
     "static/media/riccardo_pub1.jpg": "/brlab/static/media/riccardo_pub1.6b0317da42f65f02f46d.jpg",
     "static/media/41598_2022_25047_Fig3_HTML.webp": "/brlab/static/media/41598_2022_25047_Fig3_HTML.7e5320b76a238e3984f6.webp",
@@ -71,10 +72,10 @@
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
     "main.f2f16964.css.map": "/brlab/static/css/main.f2f16964.css.map",
-    "main.93da4055.js.map": "/brlab/static/js/main.93da4055.js.map"
+    "main.902983e0.js.map": "/brlab/static/js/main.902983e0.js.map"
   },
   "entrypoints": [
     "static/css/main.f2f16964.css",
-    "static/js/main.93da4055.js"
+    "static/js/main.902983e0.js"
   ]
 }
