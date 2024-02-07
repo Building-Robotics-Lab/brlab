@@ -29,7 +29,7 @@ import MichellePic from './../components/Website Individual Information/Michelle
 import QianPic from './../components/Website Individual Information/Qian/image.jpeg';
 import HengPic from './../components/Website Individual Information/Heng/image.jpg';
 import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
-//import KeshavPic from './../components/Website Individual Information/Keshav/image.jpeg';
+import KeshavPic from './../components/Website Individual Information/Untitled.jpeg';
 
 function Our_Team() {
 
@@ -55,13 +55,13 @@ function Our_Team() {
             imgSrc: HengPic,
             link: 'Heng'
         },
-        /*{
+        {
             name: 'Keshav Kaushik, PhD',
             role: 'Research Fellow',
             skills: 'IoT for Building Systems; Sustainable Buildings; AI-Enabled Building Management; Optimal Control',
             imgSrc: KeshavPic,
             link: 'Keshav'
-        },*/
+        },
         {
             name: 'Chen Kai',
             role: 'PhD Student',

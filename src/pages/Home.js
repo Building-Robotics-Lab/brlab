@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 //import RezkyNews from './../components/Website Individual Information/Rezky/image.jpg'
-//import KeshavNews from './../components/Website Individual Information/Keshav/image.jpeg'
+import KeshavNews from './../components/Website Individual Information/Untitled.jpeg'
 import XiaorongNews from './../components/Website Individual Information/Xiaorong/image.jpeg'
 import HengNews from './../components/Website Individual Information/Heng/image.jpg'
 import PublicationsKaiNews2 from './../components/Website Data/kai_paper2.jpg'
@@ -28,12 +28,12 @@ const slides = [
         date: '29/01/2024',
         link: 'FifthNewsSection',
     },*/
-    /*{
+    {
         image: KeshavNews,
         title: '<b>Please welcome Keshav to the lab!</b>',
         date: '05/02/2024',
         link: 'FifthNewsSection',
-    },*/
+    },
     {
         image: XiaorongNews,
         title: '<b>Please welcome Wang Xiaorong to the lab!</b>',
@@ -50,24 +50,18 @@ const slides = [
         image: PublicationsKaiNews2,
         title: '<b><i>Building and Environment</i> publication announcement!</b>',
         date: '03/12/2023',
-        link: 'FifthNewsSection',
+        link: 'FourthNewsSection',
     },
     {
         image: PublicationsRiccardoNews2,
         title: '<b><i>Buildings</i> publication announcement!</b>',
         date: '30/11/2023',
-        link: 'FifthNewsSection',
+        link: 'FourthNewsSection',
     },
     {
         image: PublicationsIqbalNews2,
         title: '<b><i>Building and Environment</i> publication announcement!</b>',
         date: '11/10/2023',
-        link: 'FourthNewsSection',
-    },
-    {
-        image: GuillaumeNews,
-        title: '<b>Please welcome Guillaume Lecronier to the lab!</b>',
-        date: '21/09/2023',
         link: 'FourthNewsSection',
     },
 ];

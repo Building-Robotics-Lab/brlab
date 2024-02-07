@@ -4,7 +4,7 @@ import RiccardoCV from './Riccardo/CV.pdf'
 import HengPic from './Heng/image.jpg'
 import HengCV from './Heng/CV.pdf'
 
-//import KeshavPic from './Keshav/image.jpeg'
+import KeshavPic from './Untitled.jpeg'
 import KeshavCV from './Keshav/CV.pdf'
 
 import KaiPic from './Kai/image.jpg'
@@ -640,7 +640,7 @@ const profiles = [
             'Building Energy Efficiency',
         ],
     },
-    /*{
+    {
         ProfileName: 'Keshav',
         ProfileLink: "/profile/Keshav",
         ProfilePic: KeshavPic,
@@ -692,7 +692,7 @@ const profiles = [
             'AI-Enabled Building Management',
             'Optimal Control'
         ],
-    },*/
+    },
     /*{
         ProfileName: 'Rezky',
         ProfileLink: "/profile/Rezky",
