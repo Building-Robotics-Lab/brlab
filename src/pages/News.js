@@ -7,7 +7,7 @@ import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
 //import RezkyPic from './../components/Website Individual Information/Rezky/image.jpg';
-import KeshavPic from './../components/Website Individual Information/Untitled.jpeg';
+import KeshavPic from './../components/Website Individual Information/Keshav/image.jpeg';
 import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
 import HengPic from './../components/Website Individual Information/Heng/image.jpg';
 import KaiPublication2 from './../components/Website Data/kai_paper2.jpg'

@@ -29,7 +29,7 @@ import MichellePic from './../components/Website Individual Information/Michelle
 import QianPic from './../components/Website Individual Information/Qian/image.jpeg';
 import HengPic from './../components/Website Individual Information/Heng/image.jpg';
 import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
-import KeshavPic from './../components/Website Individual Information/Untitled.jpeg';
+import KeshavPic from './../components/Website Individual Information/Keshav/image.jpeg';
 
 function Our_Team() {
 

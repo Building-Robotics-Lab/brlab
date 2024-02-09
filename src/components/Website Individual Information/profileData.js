@@ -4,7 +4,7 @@ import RiccardoCV from './Riccardo/CV.pdf'
 import HengPic from './Heng/image.jpg'
 import HengCV from './Heng/CV.pdf'
 
-import KeshavPic from './Untitled.jpeg'
+import KeshavPic from './Keshav/image.jpeg'
 import KeshavCV from './Keshav/CV.pdf'
 
 import KaiPic from './Kai/image.jpg'
