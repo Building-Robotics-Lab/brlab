@@ -250,7 +250,7 @@ function Our_Team() {
                 <div class="fifth_section">
                     <div>
                         <h3><b>Our mission at the Building Robotics Lab is to create a sustainable future by developing innovative solutions for building energy efficiency and human-building interaction. </b></h3>
-                        <p>If you are a potential student or postdoctoral scholar interested in the Building Robotics Lab, please do not hesitate to get in touch with us. Our creative and collaborative lab is open for applicants with diverse experiences, backgrounds, abilities, and perspectives to apply.</p>
+                        <p>If you are a potential student or research fellow interested in the Building Robotics Lab, please do not hesitate to get in touch with us. Our creative and collaborative lab is open for applicants with diverse experiences, backgrounds, abilities, and perspectives to apply.</p>
                     </div>
                     <div className="HomeButtons">
                         <Link to="/join"><p id='JoinButton'>JOIN THE LAB</p></Link>

@@ -125,7 +125,7 @@
 .Home .HomeButtons {
     justify-content: center;
     display: flex;
-    margin-top: 2rem;
+    margin-top: 3.3vmax;
 }
 
 /*
@@ -295,7 +295,7 @@
 }
 
 .Home #fourth_section_button {
-    margin-top: 2rem;
+    margin-top: 3.3vmax;
 }
 
 /* Fifth Section */
@@ -436,6 +436,10 @@
         padding-bottom: calc(0.7 * 1rem);
     }
 
+    .Home .HomeButtons {
+        margin-top: calc(0.7 * 3.3vmax);
+    }
+
     /* Third Section */
 
     .Home .third_section {
@@ -474,7 +478,7 @@
     }
 
     .Home #fourth_section_button {
-        margin-top: calc(0.7 * 2rem);
+        margin-top: calc(0.7 * 3.3vmax);
     }
 
     /* Fifth Section */
@@ -547,6 +551,10 @@
         padding-bottom: calc(0.4 * 1rem);
     }
 
+    .Home .HomeButtons {
+        margin-top: calc(0.4 * 3.3vmax);
+    }
+
     /* Third Section */
 
     .Home .third_section {
@@ -585,7 +593,7 @@
     }
 
     .Home #fourth_section_button {
-        margin-top: calc(0.4 * 2rem);
+        margin-top: calc(0.4 * 3.3vmax);
     }
 
     /* Fifth Section */
