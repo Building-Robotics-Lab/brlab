@@ -177,8 +177,8 @@ function Research() {
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">
                             <p>Recreate and implement state-of-the-art algorithms as outlined from the 120+ papers filtered from the 2,000+ papers.</p>
-                            <p>Develop a user-friendly framework that allows future rPPG researchers to generate evaluation results at the click of a button.</p>
                             <p>Apply these algorithms to widely-used public datasets to obtain results for a fair comparison.</p>
+                            <p>Develop a user-friendly framework that allows future rPPG researchers to generate evaluation results at the click of a button.</p>
                             <p>Visit <Link to="https://github.com/blank-ed/remote_PPG"><b>GitHub - rPPG</b></Link> to find the actual implementations of the state-of-the-art rPPG algorithms.</p>
                         </div>
                     </div>
@@ -196,13 +196,13 @@ function Research() {
                             <h4><b>Towards a Semantics-Driven Human-Centric Digital Twin</b></h4>
                             <h6><b>Our research delves into the creation of a semantically-enhanced digital twin by harnessing geospatially-tagged data and advanced sensors to empower users with intuitive controls and features that elevate indoor comfort and bolster building energy.</b></h6>
                             <p>In the realm of the built environment, a glaring gap persists: the lack of an effective digital twin tailored for the occupancy phase. Current systems are plagued by over 50% resource wastage due to inefficient utilisation of spaces, assets, and systems. Most building management systems (BMS) are siloed, focusing primarily on HVAC, and are ill-equipped to communicate with other systems or occupants. This fragmentation is exacerbated by non-standard naming conventions, which then cumulatively impede buildings from readily adopting smart building solutions. Beyond mere 3D representations, elements in the digital twin should mirror their real-world functional impacts, necessitating defined semantic relationships. Our research, which looks towards a semantics-driven human-centric digital twin, aims to remedy these challenges. By leveraging semantics, geospatial data, and advanced sensors, we envision a cohesive digital-physical built environment interface that enhances user experience, indoor comfort, and energy efficiency.</p>
-                            <p>This project is led by <Link to="/profile/Iqbal"><b>Iqbal Shah</b></Link> and supported by <Link to="/profile/Guillaume"><b>Guillaume Lecronier</b></Link>; previously supported by <Link to="/profile/Ilyas"><b>Ilyas Dawoodjee</b></Link>.</p>
+                            <p>This project is led by <Link to="/profile/Iqbal"><b>Iqbal Shah</b></Link>; previously supported by <Link to="/profile/Ilyas"><b>Ilyas Dawoodjee</b></Link> and <Link to="/profile/Guillaume"><b>Guillaume Lecronier</b></Link>.</p>
                         </div>
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">
                             <p>Development of automation algorithms focusing on the generation of semantics for digital twin applications.</p>
-                            <p>Smart personalised cooling systems utilising semantics to optimise and tailor cooling experiences for individual preferences.</p>
-                            <p>Human-centric smart interfaces that prioritise comfort and well-being, ensuring intuitive and adaptive interactions between users and the environment.</p>
+                            <p>Develop smart personalised cooling systems utilising semantics to optimise and tailor cooling experiences for individual preferences.</p>
+                            <p>Design human-centric smart interfaces that prioritise comfort and well-being, ensuring intuitive and adaptive interactions between users and the environment.</p>
                             <p>Through developing a semantically-connected digital twin system with user-centric interfaces, we aim to provide stakeholders a versatile tool for creating virtual replicas of various built environments for a true metaverse.</p>
                         </div>
                     </div>
@@ -233,14 +233,14 @@ function Research() {
                             <h4><b>Democratisation of Virtual Power Plants for Optimal Monetisation and Grid Flexibility</b></h4>
                             <h6><b>Pave the way for a future where AI-driven technologies empower individuals to play an active role in shaping the energy landscape while reaping financial rewards, thus fostering sustainable energy practices and grid resilience.</b></h6>
                             <p>In today's energy landscape, we witness a burgeoning wholesale electricity market alongside the increasing adoption of renewable energy sources, particularly photovoltaic (PV) batteries, driven by government subsidies and environmental motivations. While this transition holds immense promise, it also presents a real-world gap wherein end-users, despite having the potential to financially benefit from market participation, often lack the means to do so efficiently, frequently necessitating manual adjustments via mobile devices. The core motivation behind our research lies in harnessing the power of AI to facilitate seamless and user-friendly interactions with VPPs. We aim to bridge existing gaps by drawing insights from various disciplines beyond building science and algorithmic processes that have successfully incentivized behavioural change. Our overarching objectives revolve around transforming transient behaviors into enduring habits, quantifying and minimising uncertainty, and integrating users into the energy ecosystem to monetise their actions effectively.</p>
-                            <p>This project is led by <Link to="/profile/Connor"><b>Connor Aucremanne</b></Link> and supported by <Link to="/profile/Pierre"><b>Pierre-Louis David</b></Link>.</p>
+                            <p>This project is led by <Link to="/profile/Connor"><b>Connor Aucremanne</b></Link>; previously supported by <Link to="/profile/Pierre"><b>Pierre-Louis David</b></Link>.</p>
                         </div>
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">
-                            <p>Delve into the realm of advanced algorithms and employ machine learning methods for energy forecasting to empower household residents to seamlessly engage in the wholesale electricity market alongside their peers without the need for constant manual intervention, creating a pathway towards democratising VPPs for optimal monetisation and grid flexibility.</p>
-                            <p>Explore the multi-faceted ways in which occupants impact VPP performance, coupled with the development of models and predictive tools for behaviour and its associated uncertainties.</p>
-                            <p>In-depth examination of occupant behaviour modelling within VPP domains, emphasizing the mathematical aspects linked to energy consequences, which are pivotal for optimising energy transactions.</p>
-                            <p>Investigate the formation of behaviours and strategies to influence them, with a particular focus on financial incentives facilitated by VPPs, enabling the monetisation of user actions.</p>
+                            <p>Understand the determinants for building occupant energy consumption behaviors, and the influence of financial incentives</p>
+                            <p>Effectively communicate the information and provide recommendations to the building end-users under dynamic pricing schemes.</p>
+                            <p>Understand how to model and predict occupant consumption behaviors and their uncertainties under dynamic pricing schemes.</p>
+                            <p>Understand how to effectively incorporate dynamic end-user interactions with energy trading strategies?</p>
                         </div>
                     </div>
                 </div>

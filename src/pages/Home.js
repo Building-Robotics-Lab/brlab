@@ -69,6 +69,7 @@ const slides = [
 function Home() {
     const [isMobile, setIsMobile] = useState(false);
     const homeRef = useRef(null);
+    const videoRef = useRef(null); // Create a ref for the video element
 
     useEffect(() => {
         document.title = 'NUS Building Robotics Lab';
@@ -153,7 +154,10 @@ function Home() {
             window.removeEventListener('resize', updateMinHeightTitle);
             window.removeEventListener('resize', updateMinHeightTitlethirdsection);
         };
+
+
     }, []);
+
 
     // useEffect(() => {
     //     const updateBoxHeight = () => {
@@ -230,7 +234,7 @@ function Home() {
 
             <Container>
                 <div className="first_section">
-                    <video playsInline loop muted controls preload='metadata' autoPlay={!isMobile}>
+                    <video playsInline loop muted controls preload='metadata' autoPlay={!isMobile} onContextMenu={(e) => e.preventDefault()}>
                         <source src={LandingPageVideo} type="video/mp4" alt="A short informational animation that touches on the various topics that the Building Robotics Lab researches, including building sensors today, IoT hardware in buildings today, sensing individuals, cognitive control, and low-power and high-performance IoT hardware."></source>
                     </video>
                 </div>

@@ -117,7 +117,7 @@ const Footer = () => {
             <div className="uiux">
                 <div>
                     <div>
-                        <p>© 2023 Building Robotics Laboratory</p>
+                        <p>© 2024 Building Robotics Laboratory</p>
                     </div>
                     <div>
                         <p>Design by Connor Aucremanne. Code by Ilyas Dawoodjee. Multimedia by <a href="https://www.servicedesignlab.net/" target="_blank">Service Design Lab</a>.</p>
