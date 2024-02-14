@@ -237,10 +237,10 @@ function Research() {
                         </div>
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">
-                            <p>Understand the determinants for building occupant energy consumption behaviors, and the influence of financial incentives</p>
-                            <p>Effectively communicate the information and provide recommendations to the building end-users under dynamic pricing schemes.</p>
-                            <p>Understand how to model and predict occupant consumption behaviors and their uncertainties under dynamic pricing schemes.</p>
-                            <p>Understand how to effectively incorporate dynamic end-user interactions with energy trading strategies?</p>
+                            <p>Understand the determinants for building occupant energy consumption behaviors, and the influence of financial incentives upon them.</p>
+                            <p>Test how to effectively communicate financial incentive information and provide recommendations to the building end-users under dynamic pricing schemes with higher-level energy granularity.</p>
+                            <p>Determine how to model and predict occupant consumption behaviors and their uncertainties under dynamic pricing schemes.</p>
+                            <p>Investigate how to effectively incorporate dynamic end-user interactions with energy trading strategies.</p>
                         </div>
                     </div>
                 </div>
@@ -257,7 +257,7 @@ function Research() {
                             <h4><b>Exploring Novel Cooling Technologies for Building Façades: Towards a Cooler and Resilient Urban Landscape</b></h4>
                             <h6><b>Our research looks into the synergistic potential of various façade technologies, such as shading systems, heat-reflective paints, and vertical greenery systems to pioneer innovative façade cooling solutions that enhance energy efficiency and urban resilience.</b></h6>
                             <p>The escalating effects of global warming, driven in part by anthropogenic activities, amplify the challenges posed by climate change. This, in turn, exacerbates the urban heat island (UHI) phenomenon, where metropolitan areas experience significantly warmer temperatures than their rural surroundings. This vicious cycle not only places additional strain on urban infrastructure, but also intensifies energy demands. Building façades, integral to a structure's thermal performance, emerge as a crucial intervention point in this scenario. Delving into the synergistic potential of various façade technologies, our research champions novel approaches that aim to break this cycle, leading to innovative cooling solutions that enhance energy efficiency and fortify urban resilience.</p>
-                            <p>This project is led by <Link to="/profile/Iqbal"><b>Iqbal Shah</b></Link> and supported by <Link to="/profile/Pegah"><b>Pegah Eshraghi</b></Link>.</p>
+                            <p>This project is led by <Link to="/profile/Iqbal"><b>Iqbal Shah</b></Link>; previously supported by <Link to="/profile/Pegah"><b>Pegah Eshraghi</b></Link>.</p>
                         </div>
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">
@@ -271,7 +271,7 @@ function Research() {
                             <h4><b>Exploring Novel Vertical Greenery Systems Design</b></h4>
                             <h6><b>By comprehensively examining the economic, environmental, and social impacts of various VGS designs, our objective is to identify and propose the most suitable design options for tropical climates.</b></h6>
                             <p>Vertical greenery systems (VGS) offer diverse advantages in tropical climates by impacting environmental sustainability, human well-being, urban aesthetics, and economic vitality. Effective VGS design demands equilibrium among ecological factors, societal needs, financial viability, and architectural integration. Given the varying climatic conditions across countries, a comprehensive approach encompassing wall type, plant selection, substrate choice, geometry, orientation, and irrigation method is essential during the design phase to fully unlock the benefits of VGSs.</p>
-                            <p>This project is led by <Link to="/profile/Kelly"><b>Kelly Loh</b></Link> and supported by <Link to="/profile/Pegah"><b>Pegah Eshraghi</b></Link>.</p>
+                            <p>This project is led by <Link to="/profile/Kelly"><b>Kelly Loh</b></Link>; previously supported by <Link to="/profile/Pegah"><b>Pegah Eshraghi</b></Link>.</p>
                         </div>
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">
