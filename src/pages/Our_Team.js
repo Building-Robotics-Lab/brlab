@@ -43,21 +43,21 @@ function Our_Team() {
     const teamMembers = [
         {
             name: 'Riccardo Talami, PhD',
-            role: 'Research Fellow',
+            role: 'Postdoctoral Scholar',
             skills: 'Architectural Engineering; Building Performance Simulation; Optimisation; Energy-Efficient Buildings; Sustainable Architecture',
             imgSrc: RiccardoPic,
             link: 'Riccardo'
         },
         {
             name: 'Du Heng, PhD',
-            role: 'Research Fellow',
+            role: 'Postdoctoral Scholar',
             skills: 'Thermal Comfort; Human Well-Being; Environmental Sustainability; Smart Buildings; Data-Driven Models',
             imgSrc: HengPic,
             link: 'Heng'
         },
         {
             name: 'Keshav Kaushik, PhD',
-            role: 'Research Fellow',
+            role: 'Postdoctoral Scholar',
             skills: 'IoT for Building Systems; Sustainable Buildings; AI-Enabled Building Management; Optimal Control',
             imgSrc: KeshavPic,
             link: 'Keshav'

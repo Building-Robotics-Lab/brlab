@@ -110,7 +110,7 @@ function News() {
             title: 'Please welcome Keshav to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Keshav joining us as a Research Fellow after he recently completed his PhD in Computer Science & Information Systems at Birla Institute of Technology and Science (BITS), Pilani. His research revolves around IoT for building systems, sustainable buildings, AI-enabled building management, and optimal control. Check out his full profile <Link to="/profile/Keshav"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Keshav joining us as a postdoctoral scholar after he recently completed his PhD in Computer Science & Information Systems at Birla Institute of Technology and Science (BITS), Pilani. His research revolves around IoT for building systems, sustainable buildings, AI-enabled building management, and optimal control. Check out his full profile <Link to="/profile/Keshav"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'FifthNewsSection'
@@ -123,7 +123,7 @@ function News() {
             title: 'Please welcome Wang Xiaorong to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Xiaorong joining us as a Research Fellow from China as a visiting PhD candidate at China University of Geosciences (CUG) studying Surveying and Mapping Science and Technology in the School of Geography and Information Engineering. Her research revolves around urban green infrastructure planning, nature-based land planning solutions, and building energy efficiency. Check out her full profile <Link to="/profile/Xiaorong"><b>here</b></Link> to get to know her more!
+                    The Building Robotics Lab is happy to have Xiaorong joining us from China as a  visiting PhD candidate at China University of Geosciences (CUG) studying Surveying and Mapping Science and Technology in the School of Geography and Information Engineering. Her research revolves around urban green infrastructure planning, nature-based land planning solutions, and building energy efficiency. Check out her full profile <Link to="/profile/Xiaorong"><b>here</b></Link> to get to know her more!
                 </>
             ),
             sectionName: 'FifthNewsSection'
@@ -136,7 +136,7 @@ function News() {
             title: 'Please welcome Du Heng to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Heng joining us as a Research Fellow after he recently completed his PhD in Architecture/Building Technology at Shanghai Jiao Tong University (SJTU). His research revolves around thermal comfort, human well-being, environmental sustainability, smart buildings, and data-driven models. Check out his full profile <Link to="/profile/Heng"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Heng joining us as a postdoctoral scholar after he recently completed his PhD in Architecture/Building Technology at Shanghai Jiao Tong University (SJTU). His research revolves around thermal comfort, human well-being, environmental sustainability, smart buildings, and data-driven models. Check out his full profile <Link to="/profile/Heng"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'FifthNewsSection'
