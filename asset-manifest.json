@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brlab/static/css/main.ffd58da4.css",
-    "main.js": "/brlab/static/js/main.44d54aff.js",
+    "main.js": "/brlab/static/js/main.c1ac3a16.js",
     "static/media/Smart Building Full Animation (compressed).mp4": "/brlab/static/media/Smart Building Full Animation (compressed).d2a5c408c0378fdec97a.mp4",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
     "static/media/image.jpg": "/brlab/static/media/image.61b0727789a61943c549.jpg",
@@ -29,6 +29,7 @@
     "static/media/CV.pdf": "/brlab/static/media/CV.8df964af037d1af0377e.pdf",
     "static/media/kate_pub1.png": "/brlab/static/media/kate_pub1.7c9b4754e74f4e91cec8.png",
     "static/media/kai_paper.png": "/brlab/static/media/kai_paper.46ede2a66aa4a666e501.png",
+    "static/media/DennisKnight.jpeg": "/brlab/static/media/DennisKnight.3b40729f9e8e8168c67a.jpeg",
     "static/media/1-s2.0-S235271022100293X-ga1_lrg.jpg": "/brlab/static/media/1-s2.0-S235271022100293X-ga1_lrg.46bd20e7a76701ab5959.jpg",
     "static/media/1-s2.0-S-fx1_lrg.jpg": "/brlab/static/media/1-s2.0-S0378778819331044-fx1_lrg.b82ee2b7719fa90f4e6a.jpg",
     "static/media/image.jpeg": "/brlab/static/media/image.19341c3f72a5db628987.jpeg",
@@ -72,10 +73,10 @@
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
     "main.ffd58da4.css.map": "/brlab/static/css/main.ffd58da4.css.map",
-    "main.44d54aff.js.map": "/brlab/static/js/main.44d54aff.js.map"
+    "main.c1ac3a16.js.map": "/brlab/static/js/main.c1ac3a16.js.map"
   },
   "entrypoints": [
     "static/css/main.ffd58da4.css",
-    "static/js/main.44d54aff.js"
+    "static/js/main.c1ac3a16.js"
   ]
 }
