@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 //import RezkyNews from './../components/Website Individual Information/Rezky/image.jpg'
+import TeamNews2 from './../components/Website Individual Information/Team/DennisKnight.jpeg';
 import KeshavNews from './../components/Website Individual Information/Keshav/image.jpeg'
 import XiaorongNews from './../components/Website Individual Information/Xiaorong/image.jpeg'
 import TeamNews1 from './../components/Website Individual Information/Team/BukitTimah.jpeg'
@@ -30,6 +31,12 @@ const slides = [
         link: 'FifthNewsSection',
     },*/
     {
+        image: TeamNews2,
+        title: '<b>A visit by Dennis Knight, the incoming ASHRAE President!</b>',
+        date: '21/02/2024',
+        link: 'SixthNewsSection',
+    },
+    {
         image: KeshavNews,
         title: '<b>Please welcome Keshav to the lab!</b>',
         date: '05/02/2024',
@@ -45,7 +52,7 @@ const slides = [
         image: TeamNews1,
         title: '<b>Farewell to Pierre-Louis, Guillaume, and Pegah!</b>',
         date: '28/01/2024',
-        link: 'SixthNewsSection',
+        link: 'FifthNewsSection',
     },
     {
         image: HengNews,
@@ -57,12 +64,6 @@ const slides = [
         image: PublicationsKaiNews2,
         title: '<b><i>Building and Environment</i> publication announcement!</b>',
         date: '03/12/2023',
-        link: 'FifthNewsSection',
-    },
-    {
-        image: PublicationsRiccardoNews2,
-        title: '<b><i>Buildings</i> publication announcement!</b>',
-        date: '30/11/2023',
         link: 'FifthNewsSection',
     },
 ];
