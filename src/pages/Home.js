@@ -10,25 +10,28 @@ import LandingPageVideo from './../components/Website Data/Smart Building Full A
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
-//import RezkyNews from './../components/Website Individual Information/Rezky/image.jpg'
+//import JonathanNews from './../components/Website Individual Information/Jonathan/image.jpeg'
+//import RezkyNews from './../components/Website Individual Information/Rezky/image.jpeg'
 import TeamNews2 from './../components/Website Individual Information/Team/DennisKnight.jpeg';
 import KeshavNews from './../components/Website Individual Information/Keshav/image.jpeg'
 import XiaorongNews from './../components/Website Individual Information/Xiaorong/image.jpeg'
 import TeamNews1 from './../components/Website Individual Information/Team/BukitTimah.jpeg'
 import HengNews from './../components/Website Individual Information/Heng/image.jpg'
 import PublicationsKaiNews2 from './../components/Website Data/kai_paper2.jpg'
-import PublicationsRiccardoNews2 from './../components/Website Data/riccardo-publication2.png'
-import PublicationsIqbalNews2 from './../components/Website Data/iqbal-publication2.jpg'
-import GuillaumeNews from './../components/Website Individual Information/Guillaume/image.jpg'
-import PierreNews from './../components/Website Individual Information/Pierre-Louis/image.jpg'
 
 const slides = [
     //6 most-recent news
     /*{
+        image: JonathanNews,
+        title: '<b>Please welcome Jonathan Poon to the lab!</b>',
+        date: '29/01/2024',
+        link: 'SixthNewsSection',
+    },*/
+    /*{
         image: RezkyNews,
         title: '<b>Please welcome Rezky Nanda to the lab!</b>',
         date: '29/01/2024',
-        link: 'FifthNewsSection',
+        link: 'SixthNewsSection',
     },*/
     {
         image: TeamNews2,

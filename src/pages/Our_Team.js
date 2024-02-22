@@ -15,21 +15,23 @@ import ProfCV from './../components/Website Individual Information/prof_CV.pdf';
 
 import ProfPic from './../components/Website Individual Information/prof_pic.jpg';
 import RiccardoPic from './../components/Website Individual Information/Riccardo/image.jpg';
+import HengPic from './../components/Website Individual Information/Heng/image.jpg';
+import KeshavPic from './../components/Website Individual Information/Keshav/image.jpeg';
 import KaiPic from './../components/Website Individual Information/Kai/image.jpg';
 import IqbalPic from './../components/Website Individual Information/Iqbal/image.jpg';
 import ConnorPic from './../components/Website Individual Information/Connor/image.jpg';
 import KellyPic from './../components/Website Individual Information/Kelly/image.jpg';
-import IlyasPic from './../components/Website Individual Information/Ilyas/image.jpg';
-import StellaPic from './../components/Website Individual Information/Stella/image.jpg';
-import XiaosongPic from './../components/Website Individual Information/Xiaosong/image.jpg';
+//import RezkyPic from './../components/Website Individual Information/Rezky/image.jpeg';
+//import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpeg';
+import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
 import PegahPic from './../components/Website Individual Information/Pegah/image.jpg';
-import PierrePic from './../components/Website Individual Information/Pierre-Louis/image.jpg';
 import GuillaumePic from './../components/Website Individual Information/Guillaume/image.jpg';
+import PierrePic from './../components/Website Individual Information/Pierre-Louis/image.jpg';
+import XiaosongPic from './../components/Website Individual Information/Xiaosong/image.jpg';
+import StellaPic from './../components/Website Individual Information/Stella/image.jpg';
+import IlyasPic from './../components/Website Individual Information/Ilyas/image.jpg';
 import MichellePic from './../components/Website Individual Information/Michelle/image.jpg';
 import QianPic from './../components/Website Individual Information/Qian/image.jpeg';
-import HengPic from './../components/Website Individual Information/Heng/image.jpg';
-import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
-import KeshavPic from './../components/Website Individual Information/Keshav/image.jpeg';
 
 function Our_Team() {
 
@@ -92,18 +94,18 @@ function Our_Team() {
         },
         /*{
             name: 'Rezky Nanda',
-            role: 'Research Engineer',
-            skills: 'Building Energy Efficiency; Building Greenery; Building Finance; Building Information Modelling',
+            role: 'PhD Student',
+            skills: '',
             imgSrc: RezkyPic,
             link: 'Rezky'
         },*/
-        {
-            name: 'Pegah Eshraghi',
-            role: 'Visiting PhD Candidate',
-            skills: 'Building Energy Efficiency; Machine Learning; Urban Building Energy Modelling; Indoor Environmental Quality; Thermal Comfort',
-            imgSrc: PegahPic,
-            link: 'Pegah'
-        },
+        /*{
+            name: 'Jonathan Poon',
+            role: 'PhD Student',
+            skills: '',
+            imgSrc: JonathanPic,
+            link: 'Jonathan'
+        },*/
         {
             name: 'Wang Xiaorong',
             role: 'Visiting PhD Candidate',
@@ -111,23 +113,42 @@ function Our_Team() {
             imgSrc: XiaorongPic,
             link: 'Xiaorong'
         },
-        {
-            name: 'Pierre-Louis David',
-            role: "Visiting MSc Student",
-            skills: 'Machine Learning; Optimisation; Computer Vision; Energy',
-            imgSrc: PierrePic,
-            link: 'Pierre'
-        },
-        {
-            name: 'Guillaume Lecronier',
-            role: "Visiting MSc Student",
-            skills: 'Robotics; Embedded Systems; IoT; Sensor Data Analysis; Machine Learning',
-            imgSrc: GuillaumePic,
-            link: 'Guillaume'
-        }
     ];
 
     const alumnis = [
+        {
+            name: 'Pegah Eshraghi',
+            role: (
+                <>
+                PhD Candidate <br />
+                Shahid Beheshti University (Iran)
+                </>
+            ),
+            skills: 'Visiting PhD Candidate (August 2023 - February 2024)',
+            imgSrc: PegahPic,
+        },
+        {
+            name: 'Guillaume Lecronier',
+            role: (
+                <>
+                MSc Student <br />
+                ETH Zürich (Switzerland)
+                </>
+            ),
+            skills: 'Visiting MSc Student (September 2023 - February 2024)',
+            imgSrc: GuillaumePic,
+        },
+        {
+            name: 'Pierre-Louis David',
+            role: (
+                <>
+                Machine Learning Intern <br />
+                Pictet Group (Switzerland)
+                </>
+            ),
+            skills: 'Visiting MSc Student (September 2023 - February 2024)',
+            imgSrc: PierrePic,
+        },
         {
             name: 'Su Xiaosong',
             role: (

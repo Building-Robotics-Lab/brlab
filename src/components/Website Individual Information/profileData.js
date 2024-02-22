@@ -1,3 +1,6 @@
+import ProfPic from './prof_pic.jpg'
+import ProfCV from './prof_CV.pdf'
+
 import RiccardoPic from './Riccardo/image.jpg'
 import RiccardoCV from './Riccardo/CV.pdf'
 
@@ -19,41 +22,55 @@ import ConnorCV from './Connor/CV.pdf'
 import KellyPic from './Kelly/image.jpg'
 import KellyCV from './Kelly/CV.pdf'
 
-//import RezkyPic from './Rezky/image.jpg'
+//import RezkyPic from './Rezky/image.jpeg'
 //import RezkyCV from './Rezky/CV.pdf'
 
-import IlyasPic from './Ilyas/image.jpg'
-import IlyasCV from './Ilyas/CV.pdf'
-
-import StellaPic from './Stella/image.jpg'
-import StellaCV from './Stella/CV.pdf'
-
-import XiaosongPic from './Xiaosong/image.jpg'
-import XiaosongCV from './Xiaosong/CV.pdf'
-
-import PegahPic from './Pegah/image.jpg'
-import PegahCV from './Pegah/CV.pdf'
+//import JonathanPic from './Jonathan/image.jpeg'
+//import JonathanCV from './Jonathan/CV.pdf'
 
 import XiaorongPic from './Xiaorong/image.jpeg'
 import XiaorongCV from './Xiaorong/CV.pdf'
 
-import PierrePic from './Pierre-Louis/image.jpg'
-import PierreCV from './Pierre-Louis/CV.pdf'
+import PegahPic from './Pegah/image.jpg'
+import PegahCV from './Pegah/CV.pdf'
 
 import GuillaumePic from './Guillaume/image.jpg'
 import GuillaumeCV from './Guillaume/CV.pdf'
 
+import PierrePic from './Pierre-Louis/image.jpg'
+import PierreCV from './Pierre-Louis/CV.pdf'
+
+import XiaosongPic from './Xiaosong/image.jpg'
+import XiaosongCV from './Xiaosong/CV.pdf'
+
+import StellaPic from './Stella/image.jpg'
+import StellaCV from './Stella/CV.pdf'
+
+import IlyasPic from './Ilyas/image.jpg'
+import IlyasCV from './Ilyas/CV.pdf'
+
 import MichellePic from './Michelle/image.jpg'
 import MichelleCV from './Michelle/CV.pdf'
-
-import ProfPic from './prof_pic.jpg'
-import ProfCV from './prof_CV.pdf'
 
 import { faPhone, faEnvelope, faUser, faTemperatureHalf, faPerson, faS, faImage } from '@fortawesome/free-solid-svg-icons';
 import { faGoogle, faLinkedin, faResearchgate, faOrcid, faGit, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom'
 
 const profiles = [
+    {
+        ProfileName: 'Prof',
+        ProfileLink: "/team",
+        ProfilePic: ProfPic,
+        Name: 'Ali Ghahramani',
+        Position: 'Assistant Professor (PYP)',
+        Links: [
+            { href: ProfCV, icon: faUser, text: 'CV' },
+            { href: 'https://scholar.google.com/citations?user=9UACV-AAAAAJ&hl=en&oi=ao', icon: faGoogle, text: 'Google Scholar' },
+            { href: 'https://www.researchgate.net/profile/Ali-Ghahramani-4', icon: faResearchgate, text: 'ResearchGate' },
+            { href: 'https://www.linkedin.com/in/alighahramani/', icon: faLinkedin, text: 'LinkedIn' },
+            { href: 'https://orcid.org/0000-0003-2043-7261', icon: faOrcid, text: 'ORCID' }
+        ],
+    },
     {
         ProfileName: 'Riccardo',
         ProfileLink: "/profile/Riccardo",
@@ -105,6 +122,125 @@ const profiles = [
             'Building Optimisation',
             'Energy-Efficient Buildings',
             'Sustainable Architecture'
+        ],
+    },
+    {
+        ProfileName: 'Heng',
+        ProfileLink: "/profile/Heng",
+        ProfilePic: HengPic,
+        Name: 'Du Heng, PhD',
+        Position: 'Research Fellow',
+        Biography: 'Du Heng, PhD, is a Research Fellow in the Department of the Built Environment, National University of Singapore (NUS). He received in PhD in Architecture from Shanghai Jiao Tong University (SJTU) in 2023. His previous research has focused on methods for designing thermal environments and evaluating human thermal comfort. In particular, he has re-evaluated traditional thermal comfort models such as predictive mean vote (PMV) and standard effective temperature (SET). He has extended to exploring the impact of various contextual factors (e.g. season, climate zone, building type, HVAC mode, circadian rhythm) and individual factors (e.g. gender and age) on thermal comfort. He has investigated the application of statistical methods to indoor environmental quality (IEQ) research, such as methods for determining appropriate sample sizes and statistical methods at different research aims. He has attempted to establish data-driven thermal comfort models. Looking ahead, Du Heng is committed to dedicating his efforts to exploring innovative methods that contribute to improving human well-being and promoting environmental sustainability. His passion extends to interdisciplinary research collaborations where he seeks to bring together diverse perspectives for impactful outcomes. In addition to his academic research, Du Heng is a certified local master of the Xiangqi (Chinese Chess) Association and has achieved many championships and outstanding rankings at the university and open levels. He also enjoys playing ultimate frisbee and has been selected as a practice player for the SJTU Frisbee Team.',
+        Education: [
+            'PhD, Shanghai Jiao Tong University (SJTU), Architecture/Building Technology (2023)',
+            'MEng, Hunan University, Heating, Ventilation, and Air-Conditioning (HVAC) (2019)',
+            'BEng, Xiangtan University, Building Environment and Equipment Engineering (2015)'
+        ],
+        Awards: [
+            'Outstanding Graduate of Shanghai, Shanghai Municipal Commission of Education (2023)',
+            'Best Paper Award, Healthy Buildings 2023 Asia and Pacific Rim (2023)',
+            'China National Scholarship for Graduate Students, Ministry of Education of the People\'s Republic of China (2022)',
+            'Outstanding Scholarship of Shanghai Jiao Tong University, Shanghai Jiao Tong University (2021)',
+        ],
+        Featured_Publications: [
+            (
+                <>
+                    <b>Du, H.</b>, Lian, Z., Lai, D., Duanmu, L., Zhai, Y., Cao, B., Zhang, Y., Zhou, X., Wang, Z., Zhang, X. and Hou, Z., 2022. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778819333614" ><b>Evaluation of the accuracy of PMV and its several revised models using the Chinese thermal comfort Database</b></a>. <i>Energy and Buildings, 271</i>, 112334.
+                </>
+            ),
+            (
+                <>
+                    <b>Du, H.</b>, Lian, Z., Lai, D., Duanmu, L., Zhai, Y., Cao, B., Zhang, Y., Zhou, X., Wang, Z., Zhang, X. and Hou, Z., 2022. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0360132321010751" ><b>Comparison of thermal comfort between radiant and convective systems using field test data from the Chinese Thermal Comfort Database</b></a>. <i>Building and Environment, 209</i>, 108685.
+                </>
+            ),
+            (
+                <>
+                    <b>Du, H.</b>, Lian, Z., Lai, D., Liu, W., Duanmu, L., Zhai, Y., Cao, B., Zhang, Y., Zhou, X., Wang, Z. and Zhang, X., 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778821002048" ><b>Method of determining acceptable air temperature thresholds in Chinese HVAC buildings based on a data-driven model</b></a>. <i>Energy and Buildings, 241</i>, 110920.
+                </>
+            ),
+            (
+                <>
+                    <b>Du, H.</b>, Lian, Z., Lan, L. and Lai, D., 2023. <a href="https://link.springer.com/article/10.1007/s12273-022-0970-4" ><b>Application of statistical analysis of sample size: How many occupant responses are required for an indoor environmental quality (IEQ) field study</b></a>. <i>Building Simulation, 16</i>(4), 577-588.
+                </>
+            ),
+            (
+                <>
+                    <b>Du, H.</b>, Zhao, Z., Lyu, J., Li, J., Li, X., Yang, Y., Lan, L. and Lian, Z., 2023. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778823005753" ><b>Gender differences in thermal comfort under coupled environmental factors</b></a>. <i>Energy and Buildings, 295</i>, 113345.
+                </>
+            )
+        ],
+        Contacts: [
+            { href: "tel:+6591216046", icon: faPhone, text: "+65 9121 6046" },
+            { href: "tel:+8615200323707", icon: faPhone, text: "+86 152 0032 3707" },
+            { href: "mailto:duheng@nus.edu.sg", icon: faEnvelope, text: "duheng@nus.edu.sg" }
+        ],
+        Links: [
+            { href: HengCV, icon: faUser, text: 'CV' },
+            { href: 'https://scholar.google.com/citations?user=JZtMKNAAAAAJ&hl=en', icon: faGoogle, text: 'Google Scholar' },
+            { href: 'https://www.researchgate.net/profile/Heng-Du-11', icon: faResearchgate, text: 'ResearchGate' },
+            { href: 'https://www.scopus.com/authid/detail.uri?authorId=57219307089', icon: faS, text: 'Scopus' },
+            { href: 'https://www.linkedin.com/in/heng-du-148802285/', icon: faLinkedin, text: 'LinkedIn' },
+            { href: 'https://orcid.org/0000-0002-7519-5629', icon: faOrcid, text: 'ORCID' },
+        ],
+        Interests: [
+            'Thermal Comfort',
+            'Human Well-Being',
+            'Environmental Sustainability',
+            'Smart Buildings',
+            'Data-Driven Models'
+        ],
+    },
+    {
+        ProfileName: 'Keshav',
+        ProfileLink: "/profile/Keshav",
+        ProfilePic: KeshavPic,
+        Name: 'Keshav Kausik, PhD',
+        Position: 'Research Fellow',
+        Biography: 'Keshav Kaushik, PhD is a Research Fellow in the Department of the Built Environment at the National University of Singapore. His research focuses on using computer science to make sustainable and efficient built environments. He has experience in real-world system deployments for energy-efficient building systems. In his free time, he enjoys going on long walks.',
+        Education: [
+            'PhD, Birla Institute of Technology and Science (BITS), Pilani, Computer Science & Information Systems (2023)',
+            'BTech, Guru Gobind Singh Indraprastha University (GGSIPU), Computer Science & Engineering (2018)',
+            'Diploma, Chhotu Ram Rural Institute Of Technology (CRRIT), Electronics Engineering (2015)'
+        ],
+        Awards: [
+            'Research Explorer Ruhr, Ruhr University Alliance (2023)',
+            'SIGMobile Community Grant, ACM SigMobile (2023)',
+            'Travel Grant, IEEE COMSNETS (2023)',
+            '2nd Position in 5 Minutes Innovation Challenge, International Conference on Secure Knowledge Management (2019)',
+        ],
+        Featured_Publications: [
+            (
+                <>
+                    <b>Kaushik, K.</b> and Naik, V., 2023, November. <a href="https://dl.acm.org/doi/10.1145/3600100.3623721" ><b>An Energy Consumption Dataset for Ductless-split Cooling Systems to Train Large Models</b></a>. In <i>Proceedings of the 10th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation</i>, 216-219.
+                </>
+            ),
+            (
+                <>
+                    <b>Kaushik, K.</b> and Naik, V., 2023, October. <a href="https://www.computer.org/csdl/proceedings-article/e-science/2023/10254663/1QJgeSdKabe" ><b>OCSRL: An Model-Based Reinforcement Learning Approach to Optimize Energy Consumption of Cooling Systems</b></a>. In <i>2023 IEEE 19th International Conference on e-Science</i>, 1-10.
+                </>
+            ),
+            (
+                <>
+                    <b>Kaushik, K.</b> and Naik, V., 2023, December. <a href="https://link.springer.com/chapter/10.1007/978-3-031-48649-4_8" ><b>A Real-Time Non-Invasive Anomaly Detection Technique for Cooling Systems</b></a>. In <i>Energy Informatics Academy Conference</i>, 135-151.
+                </>
+            ),
+        ],
+        Contacts: [
+            { href: "tel:+919999931905", icon: faPhone, text: "+91 99 9993 1905" },
+            { href: "mailto:keshav@nus.edu.sg", icon: faEnvelope, text: "keshav@nus.edu.sg" },
+        ],
+        Links: [
+            { href: KeshavCV, icon: faUser, text: 'CV' },
+            { href: 'https://scholar.google.co.in/citations?user=68iHdyoAAAAJ&hl=en', icon: faGoogle, text: 'Google Scholar' },
+            { href: 'https://www.researchgate.net/profile/Keshav-Kaushik-5', icon: faResearchgate, text: 'ResearchGate' },
+            { href: 'https://www.linkedin.com/in/keshav-kaushik/', icon: faLinkedin, text: 'LinkedIn' },
+            { href: 'https://orcid.org/0000-0003-1329-3677', icon: faOrcid, text: 'ORCID' },
+        ],
+        Interests: [
+            'IoT for Building Systems',
+            'Sustainable Buildings',
+            'AI-Enabled Building Management',
+            'Optimal Control'
         ],
     },
     {
@@ -266,84 +402,204 @@ const profiles = [
             'Building Information Modelling'
         ],
     },
-    {
-        ProfileName: 'Ilyas',
-        ProfileLink: "/profile/Ilyas",
-        ProfilePic: IlyasPic,
-        Name: 'Ilyas Dawoodjee',
-        Position: 'MSc Student',
-        Position2: 'University of Manitoba (Canada)',
-        Biography: 'Ilyas Dawoodjee is currently a MSc Mechanical Engineering student at University of Manitoba where he researches in the Intelligent Digital Manufacturing Laboratory (IDML). From April 2022 to December 2023, he served as a Research Engineer in the Building Robotics Lab. His area of research involved the detection of physiological measurements through machine vision. Some of his previous projects include object detection, data classification, image segmentation, and image classification. He is well-versed in multiple aspects of engineering ranging from CAD/CAM, SPICE simulations, sensors & actuators, control systems, microcontrollers, and PLC, with hands-on experience in them. However, his main passion is robotics integrated with machine vision and machine learning. He is an avid programmer who spends most of his free time coding and is always eager to learn new programming techniques and technologies. Outside of work, he likes to play games and is a fan of movies and TV series. He is a huge fan of educational YouTubers such as Veritasium, StuffMadeHere, 3Blue1Brown, VSauce, C.G.P. Grey, Minute Physics, and more.',
+    /*{
+        ProfileName: 'Rezky',
+        ProfileLink: "/profile/Rezky",
+        ProfilePic: RezkyPic,
+        Name: 'Rezky Nanda',
+        Position: 'PhD Student',
+        Biography: '',
         Education: [
-            'MSc, University of Manitoba, Mechanical Engineering (current)',
-            'BEng (<i>First Class Honours w/ Distinction</i>), Asia Pacific University (APU), Mechatronics Engineering (2022)'
+            'PhD, National University of Singapore (NUS), Built Environment (current)',
+            'MSc, Institut Teknologi Bandung, Engineering Physics/Applied Physics (2022)'
+            'BSc, Institut Teknologi Bandung, Engineering Physics/Applied Physics (2021)'
         ],
         Awards: [
-            'International Graduate Student Entrance Scholarship (IGSES), University of Manitoba (current)',
-            'AI4S Program Inception Recipient, Asia Pacific University (2022)',
-            'Valedictorian, Asia Pacific University (2022)',
-            'Outstanding Achievement Award, Asia Pacific University (2022)'
+            '2nd Place in Research and Engineering Studies Petro Oxo Nusantara, PT Petro Oxo Nusantara (2021)',
+            '2nd Place in 2020 Applied Engineering Challenge, ASHRAE (2020)',
         ],
         Featured_Publications: [],
         Contacts: [
-            { href: "mailto:dawoodji@myumanitoba.ca", icon: faEnvelope, text: "dawoodji@myumanitoba.ca" },
+            { href: "tel:+65", icon: faPhone, text: "+65" },
+            { href: "mailto:@u.nus.edu", icon: faEnvelope, text: "@u.nus.edu" },
         ],
         Links: [
-            { href: IlyasCV, icon: faUser, text: 'CV' },
-            { href: 'https://scholar.google.com/citations?user=FlonsoAAAAAJ&hl=en&oi=ao', icon: faGoogle, text: 'Google Scholar' },
-            { href: 'https://www.linkedin.com/in/ilyas-dawoodjee-858011195/', icon: faLinkedin, text: 'LinkedIn' },
-            { href: 'https://github.com/blank-ed', icon: faGithub, text: 'GitHub' },
+            { href: RezkyCV, icon: faUser, text: 'CV' },
+            { href: 'https://www.linkedin.com/in/rezkymn28/', icon: faLinkedin, text: 'LinkedIn' },
         ],
         Interests: [
-            'Machine Vision',
-            'Robotics',
-            'Deep Learning/Machine Learning',
-            'Automation',
-            'Digital Signal Processing'
+            '',
+            '',
+            '',
+            '',
+            ''
+        ],
+    },*/
+    /*{
+        ProfileName: 'Jonathan',
+        ProfileLink: "/profile/Jonathan",
+        ProfilePic: JonathanPic,
+        Name: 'Jonathan Poon',
+        Position: 'PhD Student',
+        Biography: '',
+        Education: [
+            'PhD, National University of Singapore (NUS), Built Environment (current)',
+            'BSc (<i>Highest Distinction</i>), National University of Singapore (NUS), Project and Facilities Management (w/ minors in Infrastructure Management; Finance) (2024)'
+        ],
+        Awards: [],
+        Featured_Publications: [],
+        Contacts: [
+            { href: "tel:+65", icon: faPhone, text: "+65" },
+            { href: "mailto:@u.nus.edu", icon: faEnvelope, text: "@u.nus.edu" },
+        ],
+        Links: [
+            { href: JonathanCV, icon: faUser, text: 'CV' },
+            { href: 'https://www.linkedin.com/in/jonathanpwj/', icon: faLinkedin, text: 'LinkedIn' },
+        ],
+        Interests: [
+            '',
+            '',
+            '',
+            '',
+            ''
+        ],
+    },*/
+    {
+        ProfileName: 'Xiaorong',
+        ProfileLink: "/profile/Xiaorong",
+        ProfilePic: XiaorongPic,
+        Name: 'Wang Xiaorong',
+        Position: 'Visiting PhD Candidate',
+        Position2: 'China University of Geosciences (China)',
+        Biography: 'Xiaorong Wang is a third-year PhD candidate in Surveying and Mapping Science and Technology, School of Geography and Information Engineering, China University of Geosciences (CUG). Her research interest is nature-based solutions for transition and practice of multi-scale urban green infrastructure governance. She is currently studying in the Building Robotics Lab as a visiting PhD candidate in the Department of the Built Environment, College of Design & Engineering, National University of Singapore (NUS). She has unique insights in answering the questions of how to achieve multi-objective, multi-criterion urban green infrastructure planning; how to incorporate humanism and environmental resilience into the assessment system of ecosystem services; and how to plan urban green infrastructure based on ecosystem services in a multi-dimensional perspective. In the past, she has been involved in various projects, such as geopark planning, ecological restoration planning, and resilient territorial spatial planning. She is now ready to get involved in lab projects as well, and she thinks this will be of great help to her research. Outside of her studies, Xiaorong Wang likes to be close to nature, such as hiking, and she has already learned about places in Singapore suitable for such.',
+        Education: [
+            'PhD, China University of Geosciences (CUG), Surveying and Mapping Science and Technology (current)',
+            'MSc, China University of Geosciences (CUG), Geography (2019)',
+            'BSc, China University of Geosciences (CUG), Geography (2016)'
+        ],
+        Awards: [
+            'First-class Scholarship for Graduate Students, China University of Geosciences (2022)',
+            'Outstanding Graduate Student, China University of Geosciences (2021)',
+            '2nd Prize of Scientific Paper Presentation, China University of Geosciences (2019)',
+            'China National Scholarship for Graduate Students, Ministry of Education of the People\'s Republic of China (2019)',
+        ],
+        Featured_Publications: [],
+        Contacts: [
+            { href: "tel:+6585476448", icon: faPhone, text: "+65 8547 6448" },
+            { href: "mailto:wang.xiaorong@u.nus.edu", icon: faEnvelope, text: "wang.xiaorong@u.nus.edu" },
+        ],
+        Links: [
+            { href: XiaorongCV, icon: faUser, text: 'CV' },
+        ],
+        Interests: [
+            'Urban Green Infrastructure Planning',
+            'Nature-Based Land Planning Solutions',
+            'Building Energy Efficiency',
         ],
     },
     {
-        ProfileName: 'Stella',
-        ProfileLink: "/profile/Stella",
-        ProfilePic: StellaPic,
-        Name: 'Hu Xinhao',
-        Position: 'PhD Candidate',
-        Position2: 'Hunan University (China)',
-        Biography: 'Hu Xinhao is a fourth-year PhD candidate from the Building Environment and Energy Application Department at Hunan University, P. R. China, and was a visiting student in Assistant Professor Ghahramani\'s group in the Department of the Built Environment at the National University of Singapore from January 2023 to January 2024. Her research focuses on thermal comfort and building energy efficiency, and her current research project is on the comfort characterising of indoor occupants with personal comfort systems under solar radiation.',
+        ProfileName: 'Pegah',
+        ProfileLink: "/profile/Pegah",
+        ProfilePic: PegahPic,
+        Name: 'Pegah Eshraghi',
+        Position: 'Visiting PhD Candidate',
+        Position2: 'Shahid Beheshti University (Iran)',
+        Biography: 'Pegah Eshraghi is a fourth-year PhD candidate of Architecture (with Energy background) at Shahid Beheshti University, Tehran, Iran. She is an enthusiastic student in building energy modelling and the environmental effects of buildings on different scales. Pegah is also currently a research assistant at NUS (National University of Singapore), College of Design & Engineering, Department of the Built Environment. With a strong passion for energy conservation, Pegah\'s focus is to create a framework at the urban block scale with the help of machine learning and various energy and environmental metrics in order to achieve the best morphology and density distribution. In addition to her interest in energy efficiency, Pegah is deeply fascinated by the developing frameworks based on sustainable guidelines helping architects and urban planners easily evaluate their alternatives at the very early stages of design, and provide services such as designing, consultation, optimisation, giving international certificates and energy labels for energy, daylighting, thermal comfort, indoor environmental quality, etc. She believes using these frameworks will help people to make decisions faster and more conveniently to live in an eco-friendly environment.',
         Education: [
-            'PhD, Hunan University (HNU), Civil Engineering (current)',
-            'MEng, Nanjing Normal University, Heating, Gas Supply, Ventilating and Air Conditioning Engineering (2020)',
-            'BEng, Nanjing Normal University, Mechanical Engineering & Business English (2017)'
+            'PhD, Shahid Beheshti University (SBU), Buildings (current)',
+            'MArch, Shahid Beheshti University (SBU), Building Engineering (2020)',
+            'BArch (<i>First Class Honours</i>), Ferdowsi University of Mashhad (FUM), Architecture (2018)'
         ],
-        Awards: [
-            'Excellent Master\'s Thesis, Nanjing Normal University (2021)',
-            'Second Place, Youth Excellent Paper of Jiangsu Refrigeration Society (2018)',
-            'Third Place, 2018 World HVAC Student Technology Competition (2018)',
-            'First-Class Scholarship, Nanjing Normal University (2017 - 2019)'
-        ],
+        Awards: [],
         Featured_Publications: [
             (
                 <>
-                    <b>Hu, X.</b>, Zhang, Z., Yao, Y. and Wang, Q., 2018. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1359431118300796" ><b>Non-azeotropic refrigerant charge optimization for cold storage unit based on year-round performance evaluation</b></a>. <i>Applied Thermal Engineering, 139</i>, 395-401.  
+                    Sharif, S.A., Hammad, A. and <b>Eshraghi, P.</b>, 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778820304904" ><b>Generation of whole building renovation scenarios using variational autoencoders</b></a>. <i>Energy and Buildings, 230</i>, 110520.
                 </>
             ),
             (
                 <>
-                    <b>Hu, X.</b>, Zhang, Z. and Cai, D., 2020. <a href="https://www.mdpi.com/1996-1073/13/6/1436" ><b>A Mathematical Tightening of Instantaneous Indoor and Outdoor Dry-Bulb and Wet-Bulb Temperature Tolerances[J]</b></a>. <i>Energies, 13</i>(6), 1436.
+                    Ahmadi Soleimani, S.M., <b>Eshraghi, P.</b>, Mirdamadi, M. and Zamardian, Z., 2022. <a href="https://soffeh.sbu.ac.ir/article_102765.html" ><b>Optimizing energy consumption of educational buildings, a case study: Shahid Beheshti University</b></a>. <i>Safa, 32</i>(3), 49-65. [Persian]
                 </>
             ),
         ],
         Contacts: [
-            { href: "tel:+8615605188905", icon: faPhone, text: "+86 156 0518 8905" },
-            { href: "mailto:xinhaohu@outlook.com", icon: faEnvelope, text: "xinhaohu@outlook.com" }
+            { href: "tel:+6581597168", icon: faPhone, text: "+65 8159 7168" },
+            { href: "mailto:pegah.es@nus.edu.sg", icon: faEnvelope, text: "pegah.es@nus.edu.sg" },
         ],
         Links: [
-            { href: StellaCV, icon: faUser, text: 'CV' }
+            { href: PegahCV, icon: faUser, text: 'CV' },
+            { href: 'https://www.researchgate.net/profile/Pegah-Eshraghi/research', icon: faResearchgate, text: 'ResearchGate' },
+            { href: 'https://www.linkedin.com/in/pegah-eshraghi-194228185/', icon: faLinkedin, text: 'LinkedIn' },
         ],
         Interests: [
-            'Indoor Thermal Comfort',
-            'Indoor Environment Quality',
-            'Building Energy Conservation'
+            'Building Energy Efficiency',
+            'Machine Learning',
+            'Urban Building Energy Modelling',
+            'Indoor Environmental Quality',
+            'Thermal Comfort'
+        ],
+    },
+    {
+        ProfileName: 'Guillaume',
+        ProfileLink: "/profile/Guillaume",
+        ProfilePic: GuillaumePic,
+        Name: 'Guillaume Lecronier',
+        Position: 'Visiting MSc Student',
+        Position2: 'ETH Zürich (Switzerland)',
+        Biography: 'Guillaume Lecronier is a master student at ETH Zürich (Swiss Federal Institute of Technology) in Mechanical Engineering and Robotics. Originally from France, he\'s visiting the lab in order to conduct his master thesis. His research focuses on indoor environment monitoring and involves the use of bluetooth low energy (BLE) technology in the scope of indoor positioning systems using a digital twin interface. Guillaume has a strong interest in IoT applications and is keen on working with sensors and integrating them into electronic prototyping setups, especially with platforms like Raspberry Pis. He enjoys the process of collecting valuable and meaningful data from these for innovative projects. In his free time, Guillaume enjoys running and fitness as well as travelling.',
+        Education: [
+            'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Mechanical Engineering (current)',
+            'BSc, École Polytechnique Fédérale de Lausanne (EPFL), Mechanical Engineering (2021)'
+        ],
+        Awards: [],
+        Featured_Publications: [],
+        Contacts: [
+            { href: "tel:+6589185944", icon: faPhone, text: "+65 8918 5944" },
+            { href: "tel:+33761091396", icon: faPhone, text: "+33 (0) 7 61 09 13 96" },
+            { href: "mailto:glecronier@u.nus.edu", icon: faEnvelope, text: "glecronier@u.nus.edu" },
+            { href: "mailto:glecronier@me.com", icon: faEnvelope, text: "glecronier@me.com" },
+        ],
+        Links: [
+            { href: GuillaumeCV, icon: faUser, text: 'CV' },
+            { href: 'https://www.linkedin.com/in/guillaume-lecronier-990b67197/', icon: faLinkedin, text: 'LinkedIn' }
+        ],
+        Interests: [
+            'Robotics',
+            'Embedded Systems',
+            'IoT',
+            'Sensor Data Analysis',
+            'Machine Learning'
+        ],
+    },
+    {
+        ProfileName: 'Pierre',
+        ProfileLink: "/profile/Pierre",
+        ProfilePic: PierrePic,
+        Name: 'Pierre-Louis David',
+        Position: 'Visiting MSc Student',
+        Position2: 'ETH Zürich (Switzerland)',
+        Biography: 'Pierre-Louis David is honoured to be a Master\'s candidate from ETH Zürich, specialising in Mechanical Engineering with a significant emphasis on Computer Science. Currently, he is in the midst of completing his thesis at the Building Robotics Lab in the Department of the Built Environment at the National University of Singapore, with a concentrated effort on optimising virtual power plants and pioneering methods to forecast energy prices using ML techniques. In his previous role at the esteemed Paul Scherrer Institut, he had the privilege to work with computer vision in the innovative Center for Proton Therapy. The objective was to refine segmentation techniques for patients afflicted with eye tumors, enhancing the efficacy of proton therapy and subsequently, improving patient recovery outcomes. Beyond his academic and professional pursuits, he takes a keen interest in marathon running, and values the moments he spends chatting with friends and colleagues.',
+        Education: [
+            'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Mechanical Engineering and Computer Science (current)',
+            'BSc, École Polytechnique Fédérale de Lausanne (EPFL), Mechanical Engineering (2021)'
+        ],
+        Awards: [],
+        Featured_Publications: [],
+        Contacts: [
+            { href: "tel:+33(0)778434608", icon: faPhone, text: "+33 (0) 7 78 43 46 08" },
+            { href: "mailto:pierre.louis.david@u.nus.edu", icon: faEnvelope, text: "pierre.louis.david@u.nus.edu" },
+            { href: "mailto:pidavid@student.ethz.ch", icon: faEnvelope, text: "pidavid@student.ethz.ch" },
+        ],
+        Links: [
+            { href: PierreCV, icon: faUser, text: 'CV' },
+            { href: 'https://www.linkedin.com/in/pierre-louis-david', icon: faLinkedin, text: 'LinkedIn' }
+        ],
+        Interests: [
+            'Machine Learning',
+            'Optimisation',
+            'Computer Vision',
+            'Energy'
         ],
     },
     {
@@ -392,108 +648,83 @@ const profiles = [
         ],
     },
     {
-        ProfileName: 'Pegah',
-        ProfileLink: "/profile/Pegah",
-        ProfilePic: PegahPic,
-        Name: 'Pegah Eshraghi',
-        Position: 'Visiting PhD Candidate',
-        Position2: 'Shahid Beheshti University (Iran)',
-        Biography: 'Pegah Eshraghi is a fourth-year PhD candidate of Architecture (with Energy background) at Shahid Beheshti University, Tehran, Iran. She is an enthusiastic student in building energy modelling and the environmental effects of buildings on different scales. Pegah is also currently a research assistant at NUS (National University of Singapore), College of Design & Engineering, Department of the Built Environment. With a strong passion for energy conservation, Pegah\'s focus is to create a framework at the urban block scale with the help of machine learning and various energy and environmental metrics in order to achieve the best morphology and density distribution. In addition to her interest in energy efficiency, Pegah is deeply fascinated by the developing frameworks based on sustainable guidelines helping architects and urban planners easily evaluate their alternatives at the very early stages of design, and provide services such as designing, consultation, optimisation, giving international certificates and energy labels for energy, daylighting, thermal comfort, indoor environmental quality, etc. She believes using these frameworks will help people to make decisions faster and more conveniently to live in an eco-friendly environment.',
+        ProfileName: 'Stella',
+        ProfileLink: "/profile/Stella",
+        ProfilePic: StellaPic,
+        Name: 'Hu Xinhao',
+        Position: 'PhD Candidate',
+        Position2: 'Hunan University (China)',
+        Biography: 'Hu Xinhao is a fourth-year PhD candidate from the Building Environment and Energy Application Department at Hunan University, P. R. China, and was a visiting student in Assistant Professor Ghahramani\'s group in the Department of the Built Environment at the National University of Singapore from January 2023 to January 2024. Her research focuses on thermal comfort and building energy efficiency, and her current research project is on the comfort characterising of indoor occupants with personal comfort systems under solar radiation.',
         Education: [
-            'PhD, Shahid Beheshti University (SBU), Buildings (current)',
-            'MArch, Shahid Beheshti University (SBU), Building Engineering (2020)',
-            'BArch (<i>First Class Honours</i>), Ferdowsi University of Mashhad (FUM), Architecture (2018)'
+            'PhD, Hunan University (HNU), Civil Engineering (current)',
+            'MEng, Nanjing Normal University, Heating, Gas Supply, Ventilating and Air Conditioning Engineering (2020)',
+            'BEng, Nanjing Normal University, Mechanical Engineering & Business English (2017)'
         ],
-        Awards: [],
+        Awards: [
+            'Excellent Master\'s Thesis, Nanjing Normal University (2021)',
+            'Second Place, Youth Excellent Paper of Jiangsu Refrigeration Society (2018)',
+            'Third Place, 2018 World HVAC Student Technology Competition (2018)',
+            'First-Class Scholarship, Nanjing Normal University (2017 - 2019)'
+        ],
         Featured_Publications: [
             (
                 <>
-                    Sharif, S.A., Hammad, A. and <b>Eshraghi, P.</b>, 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778820304904" ><b>Generation of whole building renovation scenarios using variational autoencoders</b></a>. <i>Energy and Buildings, 230</i>, 110520.
+                    <b>Hu, X.</b>, Zhang, Z., Yao, Y. and Wang, Q., 2018. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1359431118300796" ><b>Non-azeotropic refrigerant charge optimization for cold storage unit based on year-round performance evaluation</b></a>. <i>Applied Thermal Engineering, 139</i>, 395-401.  
                 </>
             ),
             (
                 <>
-                    Ahmadi Soleimani, S.M., <b>Eshraghi, P.</b>, Mirdamadi, M. and Zamardian, Z., 2022. <a href="https://soffeh.sbu.ac.ir/article_102765.html" ><b>Optimizing energy consumption of educational buildings, a case study: Shahid Beheshti University</b></a>. <i>Safa, 32</i>(3), 49-65. [Persian]
+                    <b>Hu, X.</b>, Zhang, Z. and Cai, D., 2020. <a href="https://www.mdpi.com/1996-1073/13/6/1436" ><b>A Mathematical Tightening of Instantaneous Indoor and Outdoor Dry-Bulb and Wet-Bulb Temperature Tolerances[J]</b></a>. <i>Energies, 13</i>(6), 1436.
                 </>
             ),
         ],
         Contacts: [
-            { href: "tel:+6581597168", icon: faPhone, text: "+65 8159 7168" },
-            { href: "mailto:pegah.es@nus.edu.sg", icon: faEnvelope, text: "pegah.es@nus.edu.sg" },
+            { href: "tel:+8615605188905", icon: faPhone, text: "+86 156 0518 8905" },
+            { href: "mailto:xinhaohu@outlook.com", icon: faEnvelope, text: "xinhaohu@outlook.com" }
         ],
         Links: [
-            { href: PegahCV, icon: faUser, text: 'CV' },
-            { href: 'https://www.researchgate.net/profile/Pegah-Eshraghi/research', icon: faResearchgate, text: 'ResearchGate' },
-            { href: 'https://www.linkedin.com/in/pegah-eshraghi-194228185/', icon: faLinkedin, text: 'LinkedIn' },
+            { href: StellaCV, icon: faUser, text: 'CV' }
         ],
         Interests: [
-            'Building Energy Efficiency',
-            'Machine Learning',
-            'Urban Building Energy Modelling',
-            'Indoor Environmental Quality',
-            'Thermal Comfort'
+            'Indoor Thermal Comfort',
+            'Indoor Environment Quality',
+            'Building Energy Conservation'
         ],
     },
     {
-        ProfileName: 'Pierre',
-        ProfileLink: "/profile/Pierre",
-        ProfilePic: PierrePic,
-        Name: 'Pierre-Louis David',
-        Position: 'Visiting MSc Student',
-        Position2: 'ETH Zürich (Switzerland)',
-        Biography: 'Pierre-Louis David is honoured to be a Master\'s candidate from ETH Zürich, specialising in Mechanical Engineering with a significant emphasis on Computer Science. Currently, he is in the midst of completing his thesis at the Building Robotics Lab in the Department of the Built Environment at the National University of Singapore, with a concentrated effort on optimising virtual power plants and pioneering methods to forecast energy prices using ML techniques. In his previous role at the esteemed Paul Scherrer Institut, he had the privilege to work with computer vision in the innovative Center for Proton Therapy. The objective was to refine segmentation techniques for patients afflicted with eye tumors, enhancing the efficacy of proton therapy and subsequently, improving patient recovery outcomes. Beyond his academic and professional pursuits, he takes a keen interest in marathon running, and values the moments he spends chatting with friends and colleagues.',
+        ProfileName: 'Ilyas',
+        ProfileLink: "/profile/Ilyas",
+        ProfilePic: IlyasPic,
+        Name: 'Ilyas Dawoodjee',
+        Position: 'MSc Student',
+        Position2: 'University of Manitoba (Canada)',
+        Biography: 'Ilyas Dawoodjee is currently a MSc Mechanical Engineering student at University of Manitoba where he researches in the Intelligent Digital Manufacturing Laboratory (IDML). From April 2022 to December 2023, he served as a Research Engineer in the Building Robotics Lab. His area of research involved the detection of physiological measurements through machine vision. Some of his previous projects include object detection, data classification, image segmentation, and image classification. He is well-versed in multiple aspects of engineering ranging from CAD/CAM, SPICE simulations, sensors & actuators, control systems, microcontrollers, and PLC, with hands-on experience in them. However, his main passion is robotics integrated with machine vision and machine learning. He is an avid programmer who spends most of his free time coding and is always eager to learn new programming techniques and technologies. Outside of work, he likes to play games and is a fan of movies and TV series. He is a huge fan of educational YouTubers such as Veritasium, StuffMadeHere, 3Blue1Brown, VSauce, C.G.P. Grey, Minute Physics, and more.',
         Education: [
-            'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Mechanical Engineering and Computer Science (current)',
-            'BSc, École Polytechnique Fédérale de Lausanne (EPFL), Mechanical Engineering (2021)'
+            'MSc, University of Manitoba, Mechanical Engineering (current)',
+            'BEng (<i>First Class Honours w/ Distinction</i>), Asia Pacific University (APU), Mechatronics Engineering (2022)'
         ],
-        Awards: [],
+        Awards: [
+            'International Graduate Student Entrance Scholarship (IGSES), University of Manitoba (current)',
+            'AI4S Program Inception Recipient, Asia Pacific University (2022)',
+            'Valedictorian, Asia Pacific University (2022)',
+            'Outstanding Achievement Award, Asia Pacific University (2022)'
+        ],
         Featured_Publications: [],
         Contacts: [
-            { href: "tel:+33(0)778434608", icon: faPhone, text: "+33 (0) 7 78 43 46 08" },
-            { href: "mailto:pierre.louis.david@u.nus.edu", icon: faEnvelope, text: "pierre.louis.david@u.nus.edu" },
-            { href: "mailto:pidavid@student.ethz.ch", icon: faEnvelope, text: "pidavid@student.ethz.ch" },
+            { href: "mailto:dawoodji@myumanitoba.ca", icon: faEnvelope, text: "dawoodji@myumanitoba.ca" },
         ],
         Links: [
-            { href: PierreCV, icon: faUser, text: 'CV' },
-            { href: 'https://www.linkedin.com/in/pierre-louis-david', icon: faLinkedin, text: 'LinkedIn' }
+            { href: IlyasCV, icon: faUser, text: 'CV' },
+            { href: 'https://scholar.google.com/citations?user=FlonsoAAAAAJ&hl=en&oi=ao', icon: faGoogle, text: 'Google Scholar' },
+            { href: 'https://www.linkedin.com/in/ilyas-dawoodjee-858011195/', icon: faLinkedin, text: 'LinkedIn' },
+            { href: 'https://github.com/blank-ed', icon: faGithub, text: 'GitHub' },
         ],
         Interests: [
-            'Machine Learning',
-            'Optimisation',
-            'Computer Vision',
-            'Energy'
-        ],
-    },
-    {
-        ProfileName: 'Guillaume',
-        ProfileLink: "/profile/Guillaume",
-        ProfilePic: GuillaumePic,
-        Name: 'Guillaume Lecronier',
-        Position: 'Visiting MSc Student',
-        Position2: 'ETH Zürich (Switzerland)',
-        Biography: 'Guillaume Lecronier is a master student at ETH Zürich (Swiss Federal Institute of Technology) in Mechanical Engineering and Robotics. Originally from France, he\'s visiting the lab in order to conduct his master thesis. His research focuses on indoor environment monitoring and involves the use of bluetooth low energy (BLE) technology in the scope of indoor positioning systems using a digital twin interface. Guillaume has a strong interest in IoT applications and is keen on working with sensors and integrating them into electronic prototyping setups, especially with platforms like Raspberry Pis. He enjoys the process of collecting valuable and meaningful data from these for innovative projects. In his free time, Guillaume enjoys running and fitness as well as travelling.',
-        Education: [
-            'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Mechanical Engineering (current)',
-            'BSc, École Polytechnique Fédérale de Lausanne (EPFL), Mechanical Engineering (2021)'
-        ],
-        Awards: [],
-        Featured_Publications: [],
-        Contacts: [
-            { href: "tel:+6589185944", icon: faPhone, text: "+65 8918 5944" },
-            { href: "tel:+33761091396", icon: faPhone, text: "+33 (0) 7 61 09 13 96" },
-            { href: "mailto:glecronier@u.nus.edu", icon: faEnvelope, text: "glecronier@u.nus.edu" },
-            { href: "mailto:glecronier@me.com", icon: faEnvelope, text: "glecronier@me.com" },
-        ],
-        Links: [
-            { href: GuillaumeCV, icon: faUser, text: 'CV' },
-            { href: 'https://www.linkedin.com/in/guillaume-lecronier-990b67197/', icon: faLinkedin, text: 'LinkedIn' }
-        ],
-        Interests: [
+            'Machine Vision',
             'Robotics',
-            'Embedded Systems',
-            'IoT',
-            'Sensor Data Analysis',
-            'Machine Learning'
+            'Deep Learning/Machine Learning',
+            'Automation',
+            'Digital Signal Processing'
         ],
     },
     {
@@ -539,214 +770,6 @@ const profiles = [
             'Daylight Design',
             'Occupant Behaviour',
             'Visual Cognition'
-        ],
-    },
-    {
-        ProfileName: 'Heng',
-        ProfileLink: "/profile/Heng",
-        ProfilePic: HengPic,
-        Name: 'Du Heng, PhD',
-        Position: 'Research Fellow',
-        Biography: 'Du Heng, PhD, is a Research Fellow in the Department of the Built Environment, National University of Singapore (NUS). He received in PhD in Architecture from Shanghai Jiao Tong University (SJTU) in 2023. His previous research has focused on methods for designing thermal environments and evaluating human thermal comfort. In particular, he has re-evaluated traditional thermal comfort models such as predictive mean vote (PMV) and standard effective temperature (SET). He has extended to exploring the impact of various contextual factors (e.g. season, climate zone, building type, HVAC mode, circadian rhythm) and individual factors (e.g. gender and age) on thermal comfort. He has investigated the application of statistical methods to indoor environmental quality (IEQ) research, such as methods for determining appropriate sample sizes and statistical methods at different research aims. He has attempted to establish data-driven thermal comfort models. Looking ahead, Du Heng is committed to dedicating his efforts to exploring innovative methods that contribute to improving human well-being and promoting environmental sustainability. His passion extends to interdisciplinary research collaborations where he seeks to bring together diverse perspectives for impactful outcomes. In addition to his academic research, Du Heng is a certified local master of the Xiangqi (Chinese Chess) Association and has achieved many championships and outstanding rankings at the university and open levels. He also enjoys playing ultimate frisbee and has been selected as a practice player for the SJTU Frisbee Team.',
-        Education: [
-            'PhD, Shanghai Jiao Tong University (SJTU), Architecture/Building Technology (2023)',
-            'MEng, Hunan University, Heating, Ventilation, and Air-Conditioning (HVAC) (2019)',
-            'BEng, Xiangtan University, Building Environment and Equipment Engineering (2015)'
-        ],
-        Awards: [
-            'Outstanding Graduate of Shanghai, Shanghai Municipal Commission of Education (2023)',
-            'Best Paper Award, Healthy Buildings 2023 Asia and Pacific Rim (2023)',
-            'China National Scholarship for Graduate Students, Ministry of Education of the People\'s Republic of China (2022)',
-            'Outstanding Scholarship of Shanghai Jiao Tong University, Shanghai Jiao Tong University (2021)',
-        ],
-        Featured_Publications: [
-            (
-                <>
-                    <b>Du, H.</b>, Lian, Z., Lai, D., Duanmu, L., Zhai, Y., Cao, B., Zhang, Y., Zhou, X., Wang, Z., Zhang, X. and Hou, Z., 2022. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778819333614" ><b>Evaluation of the accuracy of PMV and its several revised models using the Chinese thermal comfort Database</b></a>. <i>Energy and Buildings, 271</i>, 112334.
-                </>
-            ),
-            (
-                <>
-                    <b>Du, H.</b>, Lian, Z., Lai, D., Duanmu, L., Zhai, Y., Cao, B., Zhang, Y., Zhou, X., Wang, Z., Zhang, X. and Hou, Z., 2022. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0360132321010751" ><b>Comparison of thermal comfort between radiant and convective systems using field test data from the Chinese Thermal Comfort Database</b></a>. <i>Building and Environment, 209</i>, 108685.
-                </>
-            ),
-            (
-                <>
-                    <b>Du, H.</b>, Lian, Z., Lai, D., Liu, W., Duanmu, L., Zhai, Y., Cao, B., Zhang, Y., Zhou, X., Wang, Z. and Zhang, X., 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778821002048" ><b>Method of determining acceptable air temperature thresholds in Chinese HVAC buildings based on a data-driven model</b></a>. <i>Energy and Buildings, 241</i>, 110920.
-                </>
-            ),
-            (
-                <>
-                    <b>Du, H.</b>, Lian, Z., Lan, L. and Lai, D., 2023. <a href="https://link.springer.com/article/10.1007/s12273-022-0970-4" ><b>Application of statistical analysis of sample size: How many occupant responses are required for an indoor environmental quality (IEQ) field study</b></a>. <i>Building Simulation, 16</i>(4), 577-588.
-                </>
-            ),
-            (
-                <>
-                    <b>Du, H.</b>, Zhao, Z., Lyu, J., Li, J., Li, X., Yang, Y., Lan, L. and Lian, Z., 2023. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778823005753" ><b>Gender differences in thermal comfort under coupled environmental factors</b></a>. <i>Energy and Buildings, 295</i>, 113345.
-                </>
-            )
-        ],
-        Contacts: [
-            { href: "tel:+6591216046", icon: faPhone, text: "+65 9121 6046" },
-            { href: "tel:+8615200323707", icon: faPhone, text: "+86 152 0032 3707" },
-            { href: "mailto:duheng@nus.edu.sg", icon: faEnvelope, text: "duheng@nus.edu.sg" }
-        ],
-        Links: [
-            { href: HengCV, icon: faUser, text: 'CV' },
-            { href: 'https://scholar.google.com/citations?user=JZtMKNAAAAAJ&hl=en', icon: faGoogle, text: 'Google Scholar' },
-            { href: 'https://www.researchgate.net/profile/Heng-Du-11', icon: faResearchgate, text: 'ResearchGate' },
-            { href: 'https://www.scopus.com/authid/detail.uri?authorId=57219307089', icon: faS, text: 'Scopus' },
-            { href: 'https://www.linkedin.com/in/heng-du-148802285/', icon: faLinkedin, text: 'LinkedIn' },
-            { href: 'https://orcid.org/0000-0002-7519-5629', icon: faOrcid, text: 'ORCID' },
-        ],
-        Interests: [
-            'Thermal Comfort',
-            'Human Well-Being',
-            'Environmental Sustainability',
-            'Smart Buildings',
-            'Data-Driven Models'
-        ],
-    },
-    {
-        ProfileName: 'Xiaorong',
-        ProfileLink: "/profile/Xiaorong",
-        ProfilePic: XiaorongPic,
-        Name: 'Wang Xiaorong',
-        Position: 'Visiting PhD Candidate',
-        Position2: 'China University of Geosciences (China)',
-        Biography: 'Xiaorong Wang is a third-year PhD candidate in Surveying and Mapping Science and Technology, School of Geography and Information Engineering, China University of Geosciences (CUG). Her research interest is nature-based solutions for transition and practice of multi-scale urban green infrastructure governance. She is currently studying in the Building Robotics Lab as a visiting PhD candidate in the Department of the Built Environment, College of Design & Engineering, National University of Singapore (NUS). She has unique insights in answering the questions of how to achieve multi-objective, multi-criterion urban green infrastructure planning; how to incorporate humanism and environmental resilience into the assessment system of ecosystem services; and how to plan urban green infrastructure based on ecosystem services in a multi-dimensional perspective. In the past, she has been involved in various projects, such as geopark planning, ecological restoration planning, and resilient territorial spatial planning. She is now ready to get involved in lab projects as well, and she thinks this will be of great help to her research. Outside of her studies, Xiaorong Wang likes to be close to nature, such as hiking, and she has already learned about places in Singapore suitable for such.',
-        Education: [
-            'PhD, China University of Geosciences (CUG), Surveying and Mapping Science and Technology (current)',
-            'MSc, China University of Geosciences (CUG), Geography (2019)',
-            'BSc, China University of Geosciences (CUG), Geography (2016)'
-        ],
-        Awards: [
-            'First-class Scholarship for Graduate Students, China University of Geosciences (2022)',
-            'Outstanding Graduate Student, China University of Geosciences (2021)',
-            '2nd Prize of Scientific Paper Presentation, China University of Geosciences (2019)',
-            'China National Scholarship for Graduate Students, Ministry of Education of the People\'s Republic of China (2019)',
-        ],
-        Featured_Publications: [],
-        Contacts: [
-            { href: "tel:+6585476448", icon: faPhone, text: "+65 8547 6448" },
-            { href: "mailto:wang.xiaorong@u.nus.edu", icon: faEnvelope, text: "wang.xiaorong@u.nus.edu" },
-        ],
-        Links: [
-            { href: XiaorongCV, icon: faUser, text: 'CV' },
-        ],
-        Interests: [
-            'Urban Green Infrastructure Planning',
-            'Nature-Based Land Planning Solutions',
-            'Building Energy Efficiency',
-        ],
-    },
-    {
-        ProfileName: 'Keshav',
-        ProfileLink: "/profile/Keshav",
-        ProfilePic: KeshavPic,
-        Name: 'Keshav Kausik, PhD',
-        Position: 'Research Fellow',
-        Biography: 'Keshav Kaushik, PhD is a Research Fellow in the Department of the Built Environment at the National University of Singapore. His research focuses on using computer science to make sustainable and efficient built environments. He has experience in real-world system deployments for energy-efficient building systems. In his free time, he enjoys going on long walks.',
-        Education: [
-            'PhD, Birla Institute of Technology and Science (BITS), Pilani, Computer Science & Information Systems (2023)',
-            'BTech, Guru Gobind Singh Indraprastha University (GGSIPU), Computer Science & Engineering (2018)',
-            'Diploma, Chhotu Ram Rural Institute Of Technology (CRRIT), Electronics Engineering (2015)'
-        ],
-        Awards: [
-            'Research Explorer Ruhr, Ruhr University Alliance (2023)',
-            'SIGMobile Community Grant, ACM SigMobile (2023)',
-            'Travel Grant, IEEE COMSNETS (2023)',
-            '2nd Position in 5 Minutes Innovation Challenge, International Conference on Secure Knowledge Management (2019)',
-        ],
-        Featured_Publications: [
-            (
-                <>
-                    <b>Kaushik, K.</b> and Naik, V., 2023, November. <a href="https://dl.acm.org/doi/10.1145/3600100.3623721" ><b>An Energy Consumption Dataset for Ductless-split Cooling Systems to Train Large Models</b></a>. In <i>Proceedings of the 10th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation</i>, 216-219.
-                </>
-            ),
-            (
-                <>
-                    <b>Kaushik, K.</b> and Naik, V., 2023, October. <a href="https://www.computer.org/csdl/proceedings-article/e-science/2023/10254663/1QJgeSdKabe" ><b>OCSRL: An Model-Based Reinforcement Learning Approach to Optimize Energy Consumption of Cooling Systems</b></a>. In <i>2023 IEEE 19th International Conference on e-Science</i>, 1-10.
-                </>
-            ),
-            (
-                <>
-                    <b>Kaushik, K.</b> and Naik, V., 2023, December. <a href="https://link.springer.com/chapter/10.1007/978-3-031-48649-4_8" ><b>A Real-Time Non-Invasive Anomaly Detection Technique for Cooling Systems</b></a>. In <i>Energy Informatics Academy Conference</i>, 135-151.
-                </>
-            ),
-        ],
-        Contacts: [
-            { href: "tel:+919999931905", icon: faPhone, text: "+91 99 9993 1905" },
-            { href: "mailto:keshav@nus.edu.sg", icon: faEnvelope, text: "keshav@nus.edu.sg" },
-        ],
-        Links: [
-            { href: KeshavCV, icon: faUser, text: 'CV' },
-            { href: 'https://scholar.google.co.in/citations?user=68iHdyoAAAAJ&hl=en', icon: faGoogle, text: 'Google Scholar' },
-            { href: 'https://www.researchgate.net/profile/Keshav-Kaushik-5', icon: faResearchgate, text: 'ResearchGate' },
-            { href: 'https://www.linkedin.com/in/keshav-kaushik/', icon: faLinkedin, text: 'LinkedIn' },
-            { href: 'https://orcid.org/0000-0003-1329-3677', icon: faOrcid, text: 'ORCID' },
-        ],
-        Interests: [
-            'IoT for Building Systems',
-            'Sustainable Buildings',
-            'AI-Enabled Building Management',
-            'Optimal Control'
-        ],
-    },
-    /*{
-        ProfileName: 'Rezky',
-        ProfileLink: "/profile/Rezky",
-        ProfilePic: RezkyPic,
-        Name: 'Rezky Nanda',
-        Position: 'Research Engineer',
-        Biography: 'Pegah Eshraghi is a fourth-year PhD candidate of Architecture (with Energy background) at Shahid Beheshti University, Tehran, Iran. She is an enthusiastic student in building energy modelling and the environmental effects of buildings on different scales. Pegah is also currently a research assistant at NUS (National University of Singapore), College of Design & Engineering, Department of the Built Environment. With a strong passion for energy conservation, Pegah\'s focus is to create a framework at the urban block scale with the help of machine learning and various energy and environmental metrics in order to achieve the best morphology and density distribution. In addition to her interest in energy efficiency, Pegah is deeply fascinated by the developing frameworks based on sustainable guidelines helping architects and urban planners easily evaluate their alternatives at the very early stages of design, and provide services such as designing, consultation, optimisation, giving international certificates and energy labels for energy, daylighting, thermal comfort, indoor environmental quality, etc. She believes using these frameworks will help people to make decisions faster and more conveniently to live in an eco-friendly environment.',
-        Education: [
-            'PhD, Shahid Beheshti University (SBU), Buildings (current)',
-            'MArch, Shahid Beheshti University (SBU), Building Engineering (2020)',
-            'BArch (<i>First Class Honours</i>), Ferdowsi University of Mashhad (FUM), Architecture (2018)'
-        ],
-        Awards: [],
-        Featured_Publications: [
-            (
-                <>
-                    Sharif, S.A., Hammad, A. and <b>Eshraghi, P.</b>, 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778820304904" ><b>Generation of whole building renovation scenarios using variational autoencoders</b></a>. <i>Energy and Buildings, 230</i>, 110520.
-                </>
-            ),
-            (
-                <>
-                    Ahmadi Soleimani, S.M., <b>Eshraghi, P.</b>, Mirdamadi, M. and Zamardian, Z., 2022. <a href="https://soffeh.sbu.ac.ir/article_102765.html" ><b>Optimizing energy consumption of educational buildings, a case study: Shahid Beheshti University</b></a>. <i>Safa, 32(3)</i>, 49-65. [Persian]
-                </>
-            ),
-        ],
-        Contacts: [
-            { href: "tel:+6581597168", icon: faPhone, text: "+65 8159 7168" },
-            { href: "mailto:e1331313@u.nus.edu", icon: faEnvelope, text: "e1331313@u.nus.edu" },
-        ],
-        Links: [
-            { href: XiaorongCV, icon: faUser, text: 'CV' },
-            { href: 'https://www.researchgate.net/profile/Pegah-Eshraghi/research', icon: faResearchgate, text: 'ResearchGate' },
-            { href: 'https://www.linkedin.com/in/pegah-eshraghi-194228185/', icon: faLinkedin, text: 'LinkedIn' },
-        ],
-        Interests: [
-            'Building Energy Efficiency',
-            'Machine Learning',
-            'Urban Building Energy Modelling',
-            'Indoor Environmental Quality',
-            'Thermal Comfort'
-        ],
-    },*/
-    {
-        ProfileName: 'Prof',
-        ProfileLink: "/team",
-        ProfilePic: ProfPic,
-        Name: 'Ali Ghahramani',
-        Position: 'Assistant Professor (PYP)',
-        Links: [
-            { href: ProfCV, icon: faUser, text: 'CV' },
-            { href: 'https://scholar.google.com/citations?user=9UACV-AAAAAJ&hl=en&oi=ao', icon: faGoogle, text: 'Google Scholar' },
-            { href: 'https://www.researchgate.net/profile/Ali-Ghahramani-4', icon: faResearchgate, text: 'ResearchGate' },
-            { href: 'https://www.linkedin.com/in/alighahramani/', icon: faLinkedin, text: 'LinkedIn' },
-            { href: 'https://orcid.org/0000-0003-2043-7261', icon: faOrcid, text: 'ORCID' }
         ],
     },
 ];
