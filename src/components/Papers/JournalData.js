@@ -1,3 +1,4 @@
+import MichellePublication from './Publication Images/1-s2.0-S2352710224004741-gr13_lrg.jpg'
 import KaiPublication2 from './Publication Images/1-s2.0-S0360132323011125-gr4_lrg.jpg'
 import RiccardoPublication2 from './Publication Images/riccardo_pub2.png'
 import IqbalPublication1 from './Publication Images/iqbal_publication1.jpg'
@@ -44,6 +45,43 @@ import AliPublication36 from './Publication Images/1-s2.0-S0379711213002269-gr2.
 import AliPublication37 from './Publication Images/figure1.jpg'
 
 const JournalData = [
+    {
+        year: "2024",
+        publications: [
+            {
+                title: "A study of subjective evaluation factors regarding visual effects of daylight in offices using machine learning",
+                journal: "Journal of Building Engineering [In Press]",
+                volume: "", issue: "",
+                page: "108906",
+                authors: [
+                    { name: "*Qi Xuanning", link: "/profile/Michelle" },
+                    { name: "Zhaoyang Luo" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
+                    { name: "Dian Zhuang" },
+                    { name: "Cheng Sun" }
+                ],
+                minRead: "",
+                profiles: ["Michelle", "Prof"],
+                links: [
+                    { type: "DOI", url: "https://doi.org/10.1016/j.jobe.2024.108906" },
+                ],
+                keywords: [
+                    "Daylight in Offices",
+                    "Visual Effects",
+                    "Influence Mechanism",
+                    "Machine Learning",
+                    "SHAP Value"
+                ],
+                highlights: [
+                    "Conducted an evaluation experiment on visual effects of daylight.",
+                    "Find two common factors related to visual effects of daylight.",
+                    "Analyze the influence mechanism of feature parameters on visual effects of daylight."
+                ],
+                abstract: "Daylight has a positive impact on the health, pleasure, and productivity of office workers. Analyzing how environmental parameters affect daylight's visual effects can help effectively evaluate daylight sensation and assist architects in creating more appropriate daylight environments. The study explores the impact of different daylight environments on occupants' perception via extensive controlled daylight experiments in Harbin, China. Based on the experimental results, we find two common factors in the visual effects of daylight through exploratory factor analysis and confirmatory factor analysis. Take the evaluation factors (daylight satisfaction and daylight complexity) with the highest factor loading coefficient in each common factor as an example, construct a predictive model based on the XGBoost algorithm and validate its performance. Then, the SHAP (SHapley Additive exPlanations) method is used to analyze the influence mechanism of feature parameters and their interaction combinations on the visual effects of daylight in office spaces. The results indicate that the feature parameter Ltask/Lm significantly impacts daylight satisfaction and complexity. The interaction combination between feature parameters Ltask/Lm and Ltask significantly influences daylight satisfaction evaluation. In contrast, the combination of Lmed and Daylight Glare Probability (DGP) contributes the most to daylight complexity. The study addresses theoretical and technical gaps in the visual effects study of daylight through questionnaire assessment and explanatory analysis, enhancing the precision and scientific rigor of daylighting design.",
+                display_image: MichellePublication
+            },
+        ],
+    },
     {
         year: "2023",
         publications: [

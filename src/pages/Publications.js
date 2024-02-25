@@ -140,10 +140,11 @@ function Publications() {
     const predefinedAuthors = [
         'Ali Ghahramani',
         'Riccardo Talami',
-        'CHEN Kai',
+        'Chen Kai',
         'Iqbal Shah',
         'Connor Aucremanne',
-        'Ilyas Dawoodjee'
+        'Ilyas Dawoodjee',
+        "Qi Xuanning"
     ];
 
     const getAllDataBasedOnType = () => {
@@ -214,6 +215,7 @@ function Publications() {
 
     const publication_year = [
         { value: 'all', label: 'All' },
+        { value: '2024', label: '2024' },
         { value: '2023', label: '2023' },
         { value: '2022', label: '2022' },
         { value: '2021', label: '2021' },
@@ -252,10 +254,11 @@ function Publications() {
         { value: 0, label: 'All' },
         { value: 1, label: 'Ali Ghahramani' },
         { value: 2, label: 'Riccardo Talami' },
-        { value: 3, label: 'CHEN Kai' },
+        { value: 3, label: 'Chen Kai' },
         { value: 4, label: 'Iqbal Shah' },
         { value: 5, label: 'Connor Aucremanne' },
         { value: 6, label: 'Ilyas Dawoodjee' },
+        { value: 7, label: 'Qi Xuanning' },
     ];
     const [pubauthor, setPubauthor] = useState([publication_author[0]]);
     const publicationAuthor = (selectedOptions) => {
