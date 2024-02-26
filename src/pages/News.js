@@ -109,7 +109,7 @@ function News() {
             NewsSectionName: 'Rezky',
             imageSrc: RezkyPic,
             altText: "A headshot of Rezky Nanda.",
-            date: '29/01/2024',
+            date: '04/03/2024',
             title: 'Please welcome Rezky Nanda to the lab!',
             content: (
                 <>
