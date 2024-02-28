@@ -41,7 +41,7 @@ const slides = [
     },
     {
         image: KeshavNews,
-        title: '<b>Please welcome Keshav to the lab!</b>',
+        title: '<b>Please welcome Keshav Kausik to the lab!</b>',
         date: '05/02/2024',
         link: 'SixthNewsSection',
     },
