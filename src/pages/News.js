@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 
 //import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpeg';
 //import RezkyPic from './../components/Website Individual Information/Rezky/image.jpeg';
+//import RitaStreblow from './../components/Website Individual Information/Team/RitaStreblow.jpeg';
 import DennisKnight from './../components/Website Individual Information/Team/DennisKnight.jpeg';
 import KeshavPic from './../components/Website Individual Information/Keshav/image.jpeg';
 import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
@@ -117,16 +118,29 @@ function News() {
                 </>
             ),
             sectionName: 'FifthNewsSection'
+        },
+        {
+            NewsSectionName: 'RitaStreblow',
+            imageSrc: RitaStreblow,
+            altText: "A group photo with Rita Streblow, Felix Rehmann, and the NUS Building Robotics Lab team.",
+            date: '29/02/2024',
+            title: 'A visit by Prof. Dr. Rita Streblow and Felix Rehmann!',
+            content: (
+                <>
+                    It was a joy to sit down and discuss with <Link to="https://www.digital-future.berlin/en/about-us/professors/prof-dr-rita-streblow/"><b>Prof. Dr. Rita Streblow</b></Link> and her PhD student, <Link to="https://www.tu.berlin/dvg/ueber-uns/team/felix-rehmann"><b>Felix Rehmann</b></Link>, about our shared interests in thermal comfort, digitized buildings, energy systems, and building resiliency! They come from the <Link to="https://www.digital-future.berlin/en/"><b>Einstein Center Digital Future (ECDF), TU Berlin</b></Link>, while Dr. Streblow also serves as Deputy Director of the <Link to="https://www.digital-future.berlin/en/"><b>Institute for Energy Efficienct Buildings and Indoor Climate, E.ON Energy Research Center, RWTH Aachen University</b></Link>. Thank you two very much for your time and we look forward to diving deeper into these topics with you in the future!
+                </>
+            ),
+            sectionName: 'SixthNewsSection'
         },*/
         {
             NewsSectionName: 'Dennis',
             imageSrc: DennisKnight,
-            altText: "A group photo with Dennis Knight, Chandra Sekhar, and the NUS Building Robotics Lab.",
+            altText: "A group photo with Dennis Knight, Chandra Sekhar, and the NUS Building Robotics Lab team.",
             date: '21/02/2024',
-            title: 'A visit by Dennis Knight, the incoming ASHRAE President!',
+            title: 'A visit by Dennis Knight!',
             content: (
                 <>
-                    It was a pleasure to host Dennis Knight, the incoming ASHRAE President, in our living lab for a discussion about the research projects we are conducting before he delivered his presentation, "Health and Wellness in the Built Environment," for the ASHRAE Singapore Chapter Distinguished Lecturer Event. Thank you very much for your time and thank you to Professor Chandra Sekhar for connecting us!
+                    It was a pleasure to host <Link to="https://www.ashrae.org/professional-development/learning-portal/instructor-led-training/ashrae-instructors/dennis-knight"><b>Dennis Knight</b></Link>, the incoming <Link to="https://www.ashrae.org/"><b>ASHRAE</b></Link> President, in our living lab all the way from the United States for a discussion about the research projects we are conducting before he delivered his presentation, "Health and Wellness in the Built Environment," for the ASHRAE Singapore Chapter Distinguished Lecturer Event. Thank you very much for your time and thank you to Professor Chandra Sekhar for connecting us!
                 </>
             ),
             sectionName: 'SixthNewsSection'
