@@ -36,7 +36,7 @@ const slides = [
     },
     {
         image: TeamNews3,
-        title: '<b>A visit by Prof. Dr. Rita Streblow and Felix Rehmann!</b>',
+        title: '<b>A visit by Prof. Dr.-Ing. Rita Streblow and Felix Rehmann!</b>',
         date: '29/02/2024',
         link: 'SixthNewsSection',
     },*/

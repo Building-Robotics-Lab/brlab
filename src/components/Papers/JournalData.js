@@ -50,8 +50,8 @@ const JournalData = [
         publications: [
             {
                 title: "A study of subjective evaluation factors regarding visual effects of daylight in offices using machine learning",
-                journal: "Journal of Building Engineering [In Press]",
-                volume: "", issue: "",
+                journal: "Journal of Building Engineering",
+                volume: "86", issue: "",
                 page: "108906",
                 authors: [
                     { name: "*Qi Xuanning", link: "/profile/Michelle" },
