@@ -31,6 +31,11 @@
       "src": "BRL_Linkedin-Profile1_512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "BRL_Linkedin-Profile1.png",
+      "type": "image/png",
+      "sizes": "600x600"
     }
   ],
   "start_url": ".",
