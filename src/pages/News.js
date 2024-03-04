@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 //import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpeg';
 //import RezkyPic from './../components/Website Individual Information/Rezky/image.jpeg';
-//import RitaStreblow from './../components/Website Individual Information/Team/RitaStreblow.jpeg';
+import RitaStreblow from './../components/Website Individual Information/Team/RitaStreblow.jpeg';
 import DennisKnight from './../components/Website Individual Information/Team/DennisKnight.jpeg';
 import KeshavPic from './../components/Website Individual Information/Keshav/image.jpeg';
 import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
@@ -118,20 +118,20 @@ function News() {
                 </>
             ),
             sectionName: 'FifthNewsSection'
-        },
+        },*/
         {
             NewsSectionName: 'RitaStreblow',
             imageSrc: RitaStreblow,
             altText: "A group photo with Rita Streblow, Felix Rehmann, and the NUS Building Robotics Lab team.",
             date: '29/02/2024',
-            title: 'A visit by Prof. Dr. Rita Streblow and Felix Rehmann!',
+            title: 'A visit by Prof. Dr.-Ing. Rita Streblow and Felix Rehmann!',
             content: (
                 <>
-                    It was a joy to sit down and discuss with <Link to="https://www.digital-future.berlin/en/about-us/professors/prof-dr-rita-streblow/"><b>Prof. Dr.-Ing. Rita Streblow</b></Link> and her PhD student, <Link to="https://www.tu.berlin/dvg/ueber-uns/team/felix-rehmann"><b>Felix Rehmann</b></Link>, about our shared interests in intelligent environments, thermal comfort, energy systems, and building resiliency! They come from the <Link to="https://www.digital-future.berlin/en/"><b>Einstein Center Digital Future (ECDF), TU Berlin</b></Link>, while Prof. Streblow also serves as Deputy Director and Team Leader of Digital Energy Neighborhoods at the <Link to="https://www.digital-future.berlin/en/"><b>Institute for Energy Efficienct Buildings and Indoor Climate, E.ON Energy Research Center, RWTH Aachen University</b></Link>. Thank you two very much for your time and we look forward to diving deeper into these topics with you in the future!
+                    It was a joy to sit down and discuss with <Link to="https://www.digital-future.berlin/en/about-us/professors/prof-dr-rita-streblow/"><b>Prof. Dr.-Ing. Rita Streblow</b></Link> and <Link to="https://www.tu.berlin/dvg/ueber-uns/team/felix-rehmann"><b>Felix Rehmann</b></Link> about our shared interests in intelligent environments, thermal comfort, energy systems, and building resiliency! They come from the <Link to="https://www.digital-future.berlin/en/"><b>Einstein Center Digital Future (ECDF), TU Berlin</b></Link>, while Prof. Streblow also serves as Deputy Director and Team Leader of Digital Energy Neighborhoods at the <Link to="https://www.ebc.eonerc.rwth-aachen.de/cms/~dmzz/e-on-erc-ebc/?lidx=1"><b>Institute for Energy Efficient Buildings and Indoor Climate, E.ON Energy Research Center, RWTH Aachen University</b></Link>. Thank you two very much for your time and we look forward to diving deeper into these topics with you in the future!
                 </>
             ),
             sectionName: 'SixthNewsSection'
-        },*/
+        },
         {
             NewsSectionName: 'Dennis',
             imageSrc: DennisKnight,
@@ -169,7 +169,7 @@ function News() {
                     The Building Robotics Lab is happy to have Xiaorong joining us from China as a  visiting PhD candidate at China University of Geosciences (CUG) studying Surveying and Mapping Science and Technology in the School of Geography and Information Engineering. Her research revolves around urban green infrastructure planning, nature-based land planning solutions, and building energy efficiency. Check out her full profile <Link to="/profile/Xiaorong"><b>here</b></Link> to get to know her more!
                 </>
             ),
-            sectionName: 'SixthNewsSection'
+            sectionName: 'FifthNewsSection'
         },
         {
             NewsSectionName: 'TeamBonding1',
@@ -208,7 +208,7 @@ function News() {
                     <Link to="/profile/Kai"><b>Kai</b></Link> and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/comfortgpt:_a_transformer-based" ><b>ComfortGPT: a transformer-based architecture for predicting preferred temperature setpoints leveraging big data</b></Link>. They proposed a transformer-based architecture for setpoint prediction via pre-trained models. This included clustering pre-trained models to capture diverse thermostat preferences and enocoding user interactions to adapt to occupant preferences. As a result, they found a diverse spectrum of setpoint/outdoor temperature relationships, and achieved a predictive performance of R2 = 0.77 and MAE = 0.65ºC. Congratulations you two!
                 </>
             ),
-            sectionName: 'FifthNewsSection'
+            sectionName: 'FourthNewsSection'
         },
         {
             NewsSectionName: 'RiccardoPublication2',
@@ -247,7 +247,7 @@ function News() {
                     The Building Robotics Lab is happy to have Guillaume joining us from Switzerland as a visiting MSc student at ETH Zürich studying Mechanical Engineering and Robotics in the Department of Mechanical and Process Engineering. His research revolves around robotics, embedded systems, IoT, sensor data analysis, and machine learning. Check out his full profile <Link to="/profile/Guillaume"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'FourthNewsSection'
+            sectionName: 'ThirdNewsSection'
         },
         {
             NewsSectionName: 'Pierre',
@@ -286,7 +286,7 @@ function News() {
                     <Link to="/profile/Riccardo"><b>Riccardo</b></Link>, <Link to="/profile/Ilyas"><b>Ilyas</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/demystifying_energy_savings"><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. They found that both fixed and dynamic setpoints ensure 2-4% energy reduction due to lower heat generated by occupants at lower occupancy rates. However, at outdoor temperatures ranging from 5°C to 32°C, where occupant heat loads can shift the building between heating, free-running, and cooling modes, dynamic setpoints can achieve additional 2-10% energy savings compared to fixed setpoints. Congratulations everyone!
                 </>
             ),
-            sectionName: 'ThirdNewsSection'
+            sectionName: 'SecondNewsSection'
         },
         {
             NewsSectionName: 'Kelly',
@@ -325,7 +325,7 @@ function News() {
                     <Link to="/profile/Kai"><b>Kai</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/personal_thermal_comfort"><b>Personal thermal comfort models based on physiological measurements -- A design of experiments based review</b></Link>. This study aims to provide a systematic, comprehensive, and DOE-framework-based review of the physiological sensing methods to predict personal thermal comfort. This is Kai's inaugural first-author article! Chapeau!
                 </>
             ),
-            sectionName: 'SecondNewsSection'
+            sectionName: 'FirstNewsSection'
         },
         {
             NewsSectionName: 'Connor',

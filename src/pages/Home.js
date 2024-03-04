@@ -12,13 +12,12 @@ import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-s
 
 //import JonathanNews from './../components/Website Individual Information/Jonathan/image.jpeg'
 //import RezkyNews from './../components/Website Individual Information/Rezky/image.jpeg'
-//import TeamNews3 from './../components/Website Individual Information/Team/RitaStreblow.jpeg';
+import TeamNews3 from './../components/Website Individual Information/Team/RitaStreblow.jpeg';
 import TeamNews2 from './../components/Website Individual Information/Team/DennisKnight.jpeg';
 import KeshavNews from './../components/Website Individual Information/Keshav/image.jpeg'
 import XiaorongNews from './../components/Website Individual Information/Xiaorong/image.jpeg'
 import TeamNews1 from './../components/Website Individual Information/Team/BukitTimah.jpeg'
 import HengNews from './../components/Website Individual Information/Heng/image.jpg'
-import PublicationsKaiNews2 from './../components/Website Data/kai_paper2.jpg'
 
 const slides = [
     //6 most-recent news
@@ -33,13 +32,13 @@ const slides = [
         title: '<b>Please welcome Rezky Nanda to the lab!</b>',
         date: '04/03/2024',
         link: 'SixthNewsSection',
-    },
+    },*/
     {
         image: TeamNews3,
         title: '<b>A visit by Prof. Dr.-Ing. Rita Streblow and Felix Rehmann!</b>',
         date: '29/02/2024',
         link: 'SixthNewsSection',
-    },*/
+    },
     {
         image: TeamNews2,
         title: '<b>A visit by Dennis Knight!</b>',
@@ -56,7 +55,7 @@ const slides = [
         image: XiaorongNews,
         title: '<b>Please welcome Wang Xiaorong to the lab!</b>',
         date: '29/01/2024',
-        link: 'SixthNewsSection',//'FifthNewsSection',
+        link: 'FifthNewsSection',
     },
     {
         image: TeamNews1,
@@ -68,12 +67,6 @@ const slides = [
         image: HengNews,
         title: '<b>Please welcome Du Heng to the lab!</b>',
         date: '11/01/2024',
-        link: 'FifthNewsSection',
-    },
-    {
-        image: PublicationsKaiNews2,
-        title: '<b><i>Building and Environment</i> publication announcement!</b>',
-        date: '03/12/2023',
         link: 'FifthNewsSection',
     },
 ];
