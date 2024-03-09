@@ -22,8 +22,8 @@ import ConnorCV from './Connor/CV.pdf'
 import KellyPic from './Kelly/image.jpg'
 import KellyCV from './Kelly/CV.pdf'
 
-//import RezkyPic from './Rezky/image.jpeg'
-//import RezkyCV from './Rezky/CV.pdf'
+import RezkyPic from './Untitled.jpeg'
+import RezkyCV from './Rezky/CV.pdf'
 
 //import JonathanPic from './Jonathan/image.jpeg'
 //import JonathanCV from './Jonathan/CV.pdf'
@@ -305,7 +305,7 @@ const profiles = [
         Featured_Publications: [
             (
                 <>
-                    <b>Shah, I.</b>, Lau, S.K., Sekaran, V., and Ghahramani, A., 2023. <Link to="/publication/porous_plant_form-induced" ><b>Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems</b></Link>. <i>Building and Environment</i>.
+                    <b>Shah, I.</b>, Lau, S.K., Sekaran, V., and Ghahramani, A., 2023. <Link to="/publication/porous_plant_form-induced" ><b>Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems</b></Link>. <i>Building and Environment, 245</i>, p.110904.
                 </>
             ),
             (
@@ -402,39 +402,46 @@ const profiles = [
             'Building Information Modelling'
         ],
     },
-    /*{
+    {
         ProfileName: 'Rezky',
         ProfileLink: "/profile/Rezky",
         ProfilePic: RezkyPic,
         Name: 'Rezky Nanda',
         Position: 'PhD Student',
-        Biography: '',
+        Biography: 'Rezky Nanda is a PhD student in the Department of the Built Environment, National University of Singapore (NUS). His research focuses on the utilization of artificial intelligence to manage building energy systems, seeking the optimal balance between energy efficiency and occupant comfort. Previously, Rezky worked as an ESD Engineer at AfogreenBuild Pte Ltd, a green building consultant company. During his tenure at AfogreenBuild Pte Ltd, he assisted in several green building certification projects, such as GreenMark and LEED. Outside of work and research, Rezky is an avid reader. At the moment, he likes reading novels by Haruki Murakami, a renowned Japanese writer. Rezky is also fond of classical music and occasionally plays violin. His favourite composers are J.S. Bach and G.F. Händel.',
         Education: [
             'PhD, National University of Singapore (NUS), Built Environment (current)',
-            'MSc, Institut Teknologi Bandung, Engineering Physics/Applied Physics (2022)'
-            'BSc, Institut Teknologi Bandung, Engineering Physics/Applied Physics (2021)'
+            'MSc (<i>cum laude</i>), Institut Teknologi Bandung, Engineering Physics (2022)',
+            'BSc (<i>cum laude</i>), Institut Teknologi Bandung, Engineering Physics (2021)'
         ],
         Awards: [
-            '2nd Place in Research and Engineering Studies Petro Oxo Nusantara, PT Petro Oxo Nusantara (2021)',
-            '2nd Place in 2020 Applied Engineering Challenge, ASHRAE (2020)',
+            'Dean Award: Highest GPA in Master\’s Program of Engineering Physics, Institut Teknologi Bandung (2022)',
+            'Ganesha Talent Assistantship Master Program Scholarship Awardee, Institut Teknologi Bandung (2021)',
+            '2nd Place in International Design Competition: Applied Engineering Challenge, American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE) (2020)'
         ],
-        Featured_Publications: [],
+        Featured_Publications: [  
+                <>
+                    Leksono, E., Mandhany, A., Haq, I.N., Pradipta, J., Handre, P., Utama, K., Iskandar, R.F. and <b>Nanda, R.M.</b>, 2023. <a href="https://doi.org/10.5614/j.eng.technol.sci.2023.55.2.1" ><b>Development of Non-Intrusive Load Monitoring of Electricity Load Classification with Low-Frequency Sampling Based on Support Vector Machine</b></a>. <i>Journal of Engineering & Technological Sciences, 55</i>(2).
+                </>
+        ],
         Contacts: [
-            { href: "tel:+65", icon: faPhone, text: "+65" },
-            { href: "mailto:@u.nus.edu", icon: faEnvelope, text: "@u.nus.edu" },
+            /*{ href: "tel:+65", icon: faPhone, text: "+65" },*/
+            { href: "mailto:rezkymn@u.nus.edu", icon: faEnvelope, text: "rezkymn@u.nus.edu" }
         ],
         Links: [
             { href: RezkyCV, icon: faUser, text: 'CV' },
+            { href: 'https://scholar.google.com/citations?hl=en&user=vUi_UGwAAAAJ', icon: faGoogle, text: 'Google Scholar' },
+            { href: 'https://www.researchgate.net/profile/Rezky-Nanda-2', icon: faResearchgate, text: 'ResearchGate' },
             { href: 'https://www.linkedin.com/in/rezkymn28/', icon: faLinkedin, text: 'LinkedIn' },
+            { href: 'https://orcid.org/0000-0002-1366-4397', icon: faOrcid, text: 'ORCID' }
         ],
         Interests: [
-            '',
-            '',
-            '',
-            '',
-            ''
+            'Smart Buildings',
+            'Thermal Comfort',
+            'Building Energy Efficiency',
+            'AI for Energy'
         ],
-    },*/
+    },
     /*{
         ProfileName: 'Jonathan',
         ProfileLink: "/profile/Jonathan",
