@@ -305,12 +305,12 @@ const profiles = [
         Featured_Publications: [
             (
                 <>
-                    <b>Shah, I.</b>, Lau, S.K., Sekaran, V., and Ghahramani, A., 2023. <Link to="/publication/porous_plant_form-induced" ><b>Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems</b></Link>. <i>Building and Environment, 245</i>, p.110904.
+                    <b>Shah, I.</b>, Lau, S.K., Sekaran, V., and Ghahramani, A., 2023. <Link to="/publication/porous_plant_form-induced" ><b>Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems</b></Link>. <i>Building and Environment, 245</i>, 110904.
                 </>
             ),
             (
                 <>
-                    <b>Shah, I.</b>, Soh, B., Lim, C., Lau, S. K., and Ghahramani, A., 2023. <Link to="/publication/thermal_transfer_and" ><b>Thermal transfer and temperature reductions from shading systems on opaque facades: Quantifying the impacts of influential factors</b></Link>. <i>Energy and Buildings, 278</i>, p.112604.      
+                    <b>Shah, I.</b>, Soh, B., Lim, C., Lau, S. K., and Ghahramani, A., 2023. <Link to="/publication/thermal_transfer_and" ><b>Thermal transfer and temperature reductions from shading systems on opaque facades: Quantifying the impacts of influential factors</b></Link>. <i>Energy and Buildings, 278</i>, 112604.      
                 </>
             ),
         ],
