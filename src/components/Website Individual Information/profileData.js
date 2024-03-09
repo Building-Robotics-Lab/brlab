@@ -407,10 +407,10 @@ const profiles = [
         ProfileLink: "/profile/Rezky",
         ProfilePic: RezkyPic,
         Name: 'Rezky Nanda',
-        Position: 'PhD Student',
-        Biography: 'Rezky Nanda is a PhD student in the Department of the Built Environment, National University of Singapore (NUS). His research focuses on the utilization of artificial intelligence to manage building energy systems, seeking the optimal balance between energy efficiency and occupant comfort. Previously, Rezky worked as an ESD Engineer at AfogreenBuild Pte Ltd, a green building consultant company. During his tenure at AfogreenBuild Pte Ltd, he assisted in several green building certification projects, such as GreenMark and LEED. Outside of work and research, Rezky is an avid reader. At the moment, he likes reading novels by Haruki Murakami, a renowned Japanese writer. Rezky is also fond of classical music and occasionally plays violin. His favourite composers are J.S. Bach and G.F. Händel.',
+        Position: 'Research Associate',
+        Biography: 'Rezky Nanda is a Research Associate in the Department of the Built Environment, National University of Singapore (NUS). His research focuses on the utilization of artificial intelligence to manage building energy systems, seeking the optimal balance between energy efficiency and occupant comfort. Previously, Rezky worked as an ESD Engineer at AfogreenBuild Pte Ltd, a green building consultant company. During his tenure at AfogreenBuild Pte Ltd, he assisted in several green building certification projects, such as GreenMark and LEED. Outside of work and research, Rezky is an avid reader. At the moment, he likes reading novels by Haruki Murakami, a renowned Japanese writer. Rezky is also fond of classical music and occasionally plays violin. His favourite composers are J.S. Bach and G.F. Händel.',
         Education: [
-            'PhD, National University of Singapore (NUS), Built Environment (current)',
+            //'PhD, National University of Singapore (NUS), Built Environment (current)',
             'MSc (<i>cum laude</i>), Institut Teknologi Bandung, Engineering Physics (2022)',
             'BSc (<i>cum laude</i>), Institut Teknologi Bandung, Engineering Physics (2021)'
         ],

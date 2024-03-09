@@ -94,7 +94,7 @@ function Our_Team() {
         },
         {
             name: 'Rezky Nanda',
-            role: 'PhD Student',
+            role: 'Research Associate',
             skills: 'Smart Buildings; Thermal Comfort; Building Energy Efficiency; AI for Energy',
             imgSrc: RezkyPic,
             link: 'Rezky'

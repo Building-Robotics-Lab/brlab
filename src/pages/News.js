@@ -114,7 +114,7 @@ function News() {
             title: 'Please welcome Rezky Nanda to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Rezky joining us as a PhD student in the Department of the Built Environment after he recently completed his MSc in Engineering Physics at Institut Teknologi Bandung. His research revolves around smart buildings, thermal comfort, building energy efficiency, and AI for energy. Check out his full profile <Link to="/profile/Rezky"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Rezky joining us as a Research Associate in the Department of the Built Environment after he recently completed his MSc in Engineering Physics at Institut Teknologi Bandung. His research revolves around smart buildings, thermal comfort, building energy efficiency, and AI for energy. Check out his full profile <Link to="/profile/Rezky"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'SeventhNewsSection'
