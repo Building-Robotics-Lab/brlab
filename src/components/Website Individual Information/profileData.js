@@ -425,7 +425,7 @@ const profiles = [
                 </>
         ],
         Contacts: [
-            /*{ href: "tel:+65", icon: faPhone, text: "+65" },*/
+            { href: "tel:+6586714876", icon: faPhone, text: "+65 8671 4876" },
             { href: "mailto:rezkymn@u.nus.edu", icon: faEnvelope, text: "rezkymn@u.nus.edu" }
         ],
         Links: [

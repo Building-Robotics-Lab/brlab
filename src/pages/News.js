@@ -368,31 +368,31 @@ function News() {
                 </div>
             </Container>
 
-            <Container sectionName='SeventhNewsSection'>
+            <Container useOrange={true} sectionName='SeventhNewsSection'>
                 <NewsGrid newsData={newsData.slice(0, 3)} highlightedSection={highlightedSection} sectionName='FifthNewsSection' />
             </Container>
 
-            <Container useOrange={true} sectionName='SixthNewsSection'>
+            <Container sectionName='SixthNewsSection'>
                 <NewsGrid newsData={newsData.slice(3, 6)} highlightedSection={highlightedSection} sectionName='SixthNewsSection' />
             </Container>
 
-            <Container sectionName='FifthNewsSection'>
+            <Container useOrange={true} sectionName='FifthNewsSection'>
                 <NewsGrid newsData={newsData.slice(6, 9)} highlightedSection={highlightedSection} sectionName='FifthNewsSection' />
             </Container>
             
-            <Container useOrange={true} sectionName='FourthNewsSection'>
+            <Container sectionName='FourthNewsSection'>
                 <NewsGrid newsData={newsData.slice(9, 12)} highlightedSection={highlightedSection} sectionName='FourthNewsSection' />
             </Container>
 
-            <Container sectionName='ThirdNewsSection'>
+            <Container useOrange={true} sectionName='ThirdNewsSection'>
                 <NewsGrid newsData={newsData.slice(12, 15)} highlightedSection={highlightedSection} sectionName='ThirdNewsSection' />
             </Container>
 
-            <Container useOrange={true} sectionName='SecondNewsSection'>
+            <Container sectionName='SecondNewsSection'>
                 <NewsGrid newsData={newsData.slice(15, 18)} highlightedSection={highlightedSection} sectionName='SecondNewsSection' />
             </Container>
 
-            <Container sectionName='FirstNewsSection'>
+            <Container useOrange={true} sectionName='FirstNewsSection'>
                 <NewsGrid newsData={newsData.slice(18, 21)} highlightedSection={highlightedSection} sectionName='FirstNewsSection' />
             </Container>
 
