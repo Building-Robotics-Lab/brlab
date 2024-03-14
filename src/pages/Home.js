@@ -11,13 +11,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 //import JonathanNews from './../components/Website Individual Information/Jonathan/image.jpeg'
-//import RezkyNews from './../components/Website Individual Information/Rezky/image.jpeg'
+import RezkyNews from './../components/Website Individual Information/Untitled.jpeg'
 import TeamNews3 from './../components/Website Individual Information/Team/RitaStreblow.jpeg';
 import TeamNews2 from './../components/Website Individual Information/Team/DennisKnight.jpeg';
 import KeshavNews from './../components/Website Individual Information/Keshav/image.jpeg'
 import XiaorongNews from './../components/Website Individual Information/Xiaorong/image.jpeg'
 import TeamNews1 from './../components/Website Individual Information/Team/BukitTimah.jpeg'
-import HengNews from './../components/Website Individual Information/Heng/image.jpg'
 
 const slides = [
     //6 most-recent news
@@ -27,23 +26,23 @@ const slides = [
         date: '29/01/2024',
         link: 'SixthNewsSection',
     },*/
-    /*{
+    {
         image: RezkyNews,
         title: '<b>Please welcome Rezky Nanda to the lab!</b>',
         date: '04/03/2024',
-        link: 'SixthNewsSection',
-    },*/
+        link: 'SeventhNewsSection',
+    },
     {
         image: TeamNews3,
         title: '<b>A visit by Prof. Dr.-Ing. Rita Streblow and Felix Rehmann!</b>',
         date: '29/02/2024',
-        link: 'SixthNewsSection',
+        link: 'SeventhNewsSection',
     },
     {
         image: TeamNews2,
         title: '<b>A visit by Dennis Knight!</b>',
         date: '21/02/2024',
-        link: 'SixthNewsSection',
+        link: 'SeventhNewsSection',
     },
     {
         image: KeshavNews,
@@ -55,19 +54,13 @@ const slides = [
         image: XiaorongNews,
         title: '<b>Please welcome Wang Xiaorong to the lab!</b>',
         date: '29/01/2024',
-        link: 'FifthNewsSection',
+        link: 'SixthNewsSection',
     },
     {
         image: TeamNews1,
         title: '<b>Farewell to Pierre-Louis, Guillaume, and Pegah!</b>',
         date: '28/01/2024',
-        link: 'FifthNewsSection',
-    },
-    {
-        image: HengNews,
-        title: '<b>Please welcome Du Heng to the lab!</b>',
-        date: '11/01/2024',
-        link: 'FifthNewsSection',
+        link: 'SixthNewsSection',
     },
 ];
 

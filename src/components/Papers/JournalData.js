@@ -1,3 +1,4 @@
+import AliPublication38 from './Publication Images/1-s2.0-S0378778824001798-ga1_lrg.jpg'
 import MichellePublication from './Publication Images/1-s2.0-S2352710224004741-gr13_lrg.jpg'
 import KaiPublication2 from './Publication Images/1-s2.0-S0360132323011125-gr4_lrg.jpg'
 import RiccardoPublication2 from './Publication Images/riccardo_pub2.png'
@@ -49,6 +50,52 @@ const JournalData = [
         year: "2024",
         publications: [
             {
+                title: "Hot, cold, or just right? An infrared biometric sensor to improve occupant comfort and reduce overcooling in buildings via closed-loop control",
+                journal: "Energy and Buildings [In Press]",
+                volume: "", issue: "",
+                page: "114063",
+                authors: [
+                    { name: "Ronnen Levinson" },
+                    { name: "Donghun Kim" },
+                    { name: "Howdy Goudey" },
+                    { name: "Sharon Chen" },
+                    { name: "Hui Zhang" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
+                    { name: "Charlie Huizenga" },
+                    { name: "Yingdong He" },
+                    { name: "Akihisa Nomoto" },
+                    { name: "Edward Arens" },
+                    { name: "Ana Álvarez Suárez" },
+                    { name: "David Ritter" },
+                    { name: "Markus Tarin" },
+                    { name: "Robert Prickett" },
+                ],
+                minRead: "",
+                profiles: ["Prof"],
+                links: [
+                    { type: "DOI", url: "https://doi.org/10.1016/j.enbuild.2024.114063" },
+                ],
+                keywords: [
+                    "Air Conditioning",
+                    "Overcooling",
+                    "Thermal Comfort",
+                    "Skin Temperature",
+                    "Infrared Thermography",
+                    "Machine Vision",
+                    "Closed-loop Control",
+                    "Energy Savings"
+                ],
+                highlights: [
+                    "Thermostatic air-conditioning control can discomfort occupants by overcooling spaces.",
+                    "Machine vision + infrared thermography measures face, nose, and hand temperatures.",
+                    "Human skin temperature distribution predicts cool/neutral/warm thermal sensation.",
+                    "Infrared biometric sensor-controller targets neutral-to-slightly warm sensation.",
+                    "Office-building trial demonstrated comfort improvement and 42% cooling-load reduction."
+                ],
+                abstract: "To improve occupant comfort and save energy in buildings, we have developed a closed-loop air conditioning (AC) sensor-controller that predicts occupant thermal sensation from the thermographic measurement of skin temperature distribution, then uses this information to reduce overcooling (cooling-energy overuse that discomforts occupants) by regulating AC output. Taking measures to protect privacy, it combines thermal-infrared (TIR) and color (visible spectrum) cameras with machine vision to measure the skin-surface temperature profile. Since the human thermoregulation system uses skin blood flow to maintain thermoneutrality, the distribution of skin temperature can be used to predict warm, neutral, and cool thermal states. We conducted a series of human-subject thermal-sensation trials in cold-to-hot environments, measuring skin temperatures and recording thermal sensation votes. We then trained random-forest classification machine-learning models (classifiers)—to estimate thermal sensation from skin temperatures or skin-temperature differences. The estimated thermal sensation was input to a PI control algorithm for the AC, targeting a sensation level between neutral and warm. Our sensor-controller includes a sensor assembly, server software, and client software. The server software orients the cameras and transmits images to the client software, which in turn assesses occupant skin temperature distribution, estimates occupant thermal sensation, and controls AC operation. A demonstration conducted in a conference room in an office building near Houston, TX showed that our system reduced overcooling, decreasing AC load by 42% when the room was occupied while improving occupant comfort (fraction of “comfortable” votes) by 15 percentage points.",
+                display_image: AliPublication38
+            },
+            {
                 title: "A study of subjective evaluation factors regarding visual effects of daylight in offices using machine learning",
                 journal: "Journal of Building Engineering",
                 volume: "86", issue: "",
@@ -79,7 +126,7 @@ const JournalData = [
                 ],
                 abstract: "Daylight has a positive impact on the health, pleasure, and productivity of office workers. Analyzing how environmental parameters affect daylight's visual effects can help effectively evaluate daylight sensation and assist architects in creating more appropriate daylight environments. The study explores the impact of different daylight environments on occupants' perception via extensive controlled daylight experiments in Harbin, China. Based on the experimental results, we find two common factors in the visual effects of daylight through exploratory factor analysis and confirmatory factor analysis. Take the evaluation factors (daylight satisfaction and daylight complexity) with the highest factor loading coefficient in each common factor as an example, construct a predictive model based on the XGBoost algorithm and validate its performance. Then, the SHAP (SHapley Additive exPlanations) method is used to analyze the influence mechanism of feature parameters and their interaction combinations on the visual effects of daylight in office spaces. The results indicate that the feature parameter Ltask/Lm significantly impacts daylight satisfaction and complexity. The interaction combination between feature parameters Ltask/Lm and Ltask significantly influences daylight satisfaction evaluation. In contrast, the combination of Lmed and Daylight Glare Probability (DGP) contributes the most to daylight complexity. The study addresses theoretical and technical gaps in the visual effects study of daylight through questionnaire assessment and explanatory analysis, enhancing the precision and scientific rigor of daylighting design.",
                 display_image: MichellePublication
-            },
+            }
         ],
     },
     {

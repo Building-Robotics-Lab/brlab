@@ -653,7 +653,7 @@ function Join_the_Lab() {
                             <h4><b>Current Opportunities</b></h4>
                         </div>
                         <div className="position_information">
-                            <p>There is available workload and physical space in the Lab (as of February 2024).</p>
+                            <p>There is available workload and physical space in the Lab (as of March 2024).</p>
                         </div>
                     </div>
 

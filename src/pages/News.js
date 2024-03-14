@@ -7,7 +7,7 @@ import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
 //import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpeg';
-//import RezkyPic from './../components/Website Individual Information/Rezky/image.jpeg';
+import RezkyPic from './../components/Website Individual Information/Untitled.jpeg';
 import RitaStreblow from './../components/Website Individual Information/Team/RitaStreblow.jpeg';
 import DennisKnight from './../components/Website Individual Information/Team/DennisKnight.jpeg';
 import KeshavPic from './../components/Website Individual Information/Keshav/image.jpeg';
@@ -106,7 +106,7 @@ function News() {
             ),
             sectionName: 'FifthNewsSection'
         },*/
-        /*{
+        {
             NewsSectionName: 'Rezky',
             imageSrc: RezkyPic,
             altText: "A headshot of Rezky Nanda.",
@@ -114,11 +114,11 @@ function News() {
             title: 'Please welcome Rezky Nanda to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Rezky joining us as a PhD student in the Department of the Built Environment after he recently completed his MSc in Engineering Physics/Applied Physics at Institut Teknologi Bandung. His research revolves around. Check out his full profile <Link to="/profile/Rezky"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Rezky joining us as a Research Associate in the Department of the Built Environment after he recently completed his MSc in Engineering Physics at Institut Teknologi Bandung. His research revolves around smart buildings, thermal comfort, building energy efficiency, and AI for energy. Check out his full profile <Link to="/profile/Rezky"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'FifthNewsSection'
-        },*/
+            sectionName: 'SeventhNewsSection'
+        },
         {
             NewsSectionName: 'RitaStreblow',
             imageSrc: RitaStreblow,
@@ -130,7 +130,7 @@ function News() {
                     It was a joy to sit down and discuss with <Link to="https://www.digital-future.berlin/en/about-us/professors/prof-dr-rita-streblow/"><b>Prof. Dr.-Ing. Rita Streblow</b></Link> and <Link to="https://www.tu.berlin/dvg/ueber-uns/team/felix-rehmann"><b>Felix Rehmann</b></Link> about our shared interests in intelligent environments, thermal comfort, energy systems, and building resiliency! They come from the <Link to="https://www.digital-future.berlin/en/"><b>Einstein Center Digital Future (ECDF), TU Berlin</b></Link>, while Prof. Streblow also serves as Deputy Director and Team Leader of Digital Energy Neighborhoods at the <Link to="https://www.ebc.eonerc.rwth-aachen.de/cms/~dmzz/e-on-erc-ebc/?lidx=1"><b>Institute for Energy Efficient Buildings and Indoor Climate, E.ON Energy Research Center, RWTH Aachen University</b></Link>. Thank you two very much for your time and we look forward to diving deeper into these topics with you in the future!
                 </>
             ),
-            sectionName: 'SixthNewsSection'
+            sectionName: 'SeventhNewsSection'
         },
         {
             NewsSectionName: 'Dennis',
@@ -143,7 +143,7 @@ function News() {
                     It was a pleasure to host <Link to="https://www.ashrae.org/professional-development/learning-portal/instructor-led-training/ashrae-instructors/dennis-knight"><b>Dennis Knight</b></Link>, the incoming <Link to="https://www.ashrae.org/"><b>ASHRAE</b></Link> President, in our living lab all the way from the United States for a discussion about the research projects we are conducting before he delivered his presentation, "Health and Wellness in the Built Environment," for the ASHRAE Singapore Chapter Distinguished Lecturer Event. Thank you very much for your time and thank you to Professor Chandra Sekhar for connecting us!
                 </>
             ),
-            sectionName: 'SixthNewsSection'
+            sectionName: 'SeventhNewsSection'
         },
         {
             NewsSectionName: 'Keshav',
@@ -169,7 +169,7 @@ function News() {
                     The Building Robotics Lab is happy to have Xiaorong joining us from China as a  visiting PhD candidate at China University of Geosciences (CUG) studying Surveying and Mapping Science and Technology in the School of Geography and Information Engineering. Her research revolves around urban green infrastructure planning, nature-based land planning solutions, and building energy efficiency. Check out her full profile <Link to="/profile/Xiaorong"><b>here</b></Link> to get to know her more!
                 </>
             ),
-            sectionName: 'FifthNewsSection'
+            sectionName: 'SixthNewsSection'
         },
         {
             NewsSectionName: 'TeamBonding1',
@@ -182,7 +182,7 @@ function News() {
                     Our team was able to gather at Bukit Timah Nature Reserve to swap out our usual lab setting for some deserving time outdoors as we bid farewell to our three visiting students: <Link to="/profile/Pierre"><b>Pierre-Louis</b></Link>, <Link to="/profile/Guillaume"><b>Guillaume</b></Link>, and <Link to="/profile/Pegah"><b>Pegah</b></Link>! The former two have now completed their excellent MSc dissertations for ETH Zürich on advanced reinforcement learning strategies for power trading in smart grids and indoor positioning systems using Bluetooth LE and machine vision, and the latter is returning to Shahid Beheshti University to complete the final year of her PhD thesis on optimal distribution of urban density. Thank you to all three for spending time with us and good luck to you all in your future endeavours!
                 </>
             ),
-            sectionName: 'FifthNewsSection'
+            sectionName: 'SixthNewsSection'
         },
         {
             NewsSectionName: 'Heng',
@@ -208,7 +208,7 @@ function News() {
                     <Link to="/profile/Kai"><b>Kai</b></Link> and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/comfortgpt:_a_transformer-based" ><b>ComfortGPT: a transformer-based architecture for predicting preferred temperature setpoints leveraging big data</b></Link>. They proposed a transformer-based architecture for setpoint prediction via pre-trained models. This included clustering pre-trained models to capture diverse thermostat preferences and enocoding user interactions to adapt to occupant preferences. As a result, they found a diverse spectrum of setpoint/outdoor temperature relationships, and achieved a predictive performance of R2 = 0.77 and MAE = 0.65ºC. Congratulations you two!
                 </>
             ),
-            sectionName: 'FourthNewsSection'
+            sectionName: 'FifthNewsSection'
         },
         {
             NewsSectionName: 'RiccardoPublication2',
@@ -221,7 +221,7 @@ function News() {
                     <Link to="/profile/Riccardo"><b>Riccardo</b></Link>, <Link to="/profile/Ilyas"><b>Ilyas</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/quantifying_energy_savings"><b>Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns</b></Link>. They investigated three fixed and optimal setpoint and setback selection strategies. They found that fixed setpoint achieves 5.48% energy reduction due to lower occupant head loads and an additional 11.80% energy savings are obtained from incorporating fixed setbacks. Overall, the optimal selection of setpoint and setback provides additional 34-38% energy savings. Congratulations everyone!
                 </>
             ),
-            sectionName: 'FourthNewsSection'
+            sectionName: 'FifthNewsSection'
         },
         {
             NewsSectionName: 'IqbalPublication2',
@@ -247,7 +247,7 @@ function News() {
                     The Building Robotics Lab is happy to have Guillaume joining us from Switzerland as a visiting MSc student at ETH Zürich studying Mechanical Engineering and Robotics in the Department of Mechanical and Process Engineering. His research revolves around robotics, embedded systems, IoT, sensor data analysis, and machine learning. Check out his full profile <Link to="/profile/Guillaume"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'ThirdNewsSection'
+            sectionName: 'FourthNewsSection'
         },
         {
             NewsSectionName: 'Pierre',
@@ -260,7 +260,7 @@ function News() {
                     The Building Robotics Lab is happy to have Pierre-Louis joining us from Switzerland as a visiting MSc student at ETH Zürich studying Mechanical Engineering and Computer Science in the Department of Mechanical and Process Engineering. His research revolves around machine learning, optimisation, computer vision, and energy. Check out his full profile <Link to="/profile/Pierre"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'ThirdNewsSection'
+            sectionName: 'FourthNewsSection'
         },
         {
             NewsSectionName: 'Pegah',
@@ -286,7 +286,7 @@ function News() {
                     <Link to="/profile/Riccardo"><b>Riccardo</b></Link>, <Link to="/profile/Ilyas"><b>Ilyas</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/demystifying_energy_savings"><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. They found that both fixed and dynamic setpoints ensure 2-4% energy reduction due to lower heat generated by occupants at lower occupancy rates. However, at outdoor temperatures ranging from 5°C to 32°C, where occupant heat loads can shift the building between heating, free-running, and cooling modes, dynamic setpoints can achieve additional 2-10% energy savings compared to fixed setpoints. Congratulations everyone!
                 </>
             ),
-            sectionName: 'SecondNewsSection'
+            sectionName: 'ThirdNewsSection'
         },
         {
             NewsSectionName: 'Kelly',
@@ -299,7 +299,7 @@ function News() {
                     The Building Robotics Lab is happy to have Kelly joining us as a PhD student in the Department of the Built Environment after she recently completed her BSc in Project and Facilities Management at NUS. Her research revolves around building energy efficiency, building greenery, building finance, and building information modelling. Check out her full profile <Link to="/profile/Kelly"><b>here</b></Link> to get to know her more!
                 </>
             ),
-            sectionName: 'SecondNewsSection'
+            sectionName: 'ThirdNewsSection'
         },
         {
             NewsSectionName: 'Xiaosong',
@@ -325,7 +325,7 @@ function News() {
                     <Link to="/profile/Kai"><b>Kai</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/personal_thermal_comfort"><b>Personal thermal comfort models based on physiological measurements -- A design of experiments based review</b></Link>. This study aims to provide a systematic, comprehensive, and DOE-framework-based review of the physiological sensing methods to predict personal thermal comfort. This is Kai's inaugural first-author article! Chapeau!
                 </>
             ),
-            sectionName: 'FirstNewsSection'
+            sectionName: 'SecondNewsSection'
         },
         {
             NewsSectionName: 'Connor',
@@ -338,7 +338,7 @@ function News() {
                     The Building Robotics Lab is happy to have Connor joining us as a PhD student in the Department of the Built Environment after he recently completed his MSc in Built Environment: Environmental Design and Engineering at UCL in the Bartlett Faculty of the Built Environment. His research revolves around virtual power plants, building-occupant network dynamics, smart buildings, human-building interaction, and decarbonisation. Check out his full profile <Link to="/profile/Connor"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'FirstNewsSection'
+            sectionName: 'SecondNewsSection'
         },
         {
             NewsSectionName: 'IqbalPublication',
@@ -368,28 +368,32 @@ function News() {
                 </div>
             </Container>
 
-            <Container useOrange={true} sectionName='SixthNewsSection'>
-                <NewsGrid newsData={newsData.slice(0, 3)} highlightedSection={highlightedSection} sectionName='SixthNewsSection' />
+            <Container useOrange={true} sectionName='SeventhNewsSection'>
+                <NewsGrid newsData={newsData.slice(0, 3)} highlightedSection={highlightedSection} sectionName='FifthNewsSection' />
             </Container>
 
-            <Container sectionName='FifthNewsSection'>
-                <NewsGrid newsData={newsData.slice(3, 6)} highlightedSection={highlightedSection} sectionName='FifthNewsSection' />
+            <Container sectionName='SixthNewsSection'>
+                <NewsGrid newsData={newsData.slice(3, 6)} highlightedSection={highlightedSection} sectionName='SixthNewsSection' />
+            </Container>
+
+            <Container useOrange={true} sectionName='FifthNewsSection'>
+                <NewsGrid newsData={newsData.slice(6, 9)} highlightedSection={highlightedSection} sectionName='FifthNewsSection' />
             </Container>
             
-            <Container useOrange={true} sectionName='FourthNewsSection'>
-                <NewsGrid newsData={newsData.slice(6, 9)} highlightedSection={highlightedSection} sectionName='FourthNewsSection' />
+            <Container sectionName='FourthNewsSection'>
+                <NewsGrid newsData={newsData.slice(9, 12)} highlightedSection={highlightedSection} sectionName='FourthNewsSection' />
             </Container>
 
-            <Container sectionName='ThirdNewsSection'>
-                <NewsGrid newsData={newsData.slice(9, 12)} highlightedSection={highlightedSection} sectionName='ThirdNewsSection' />
+            <Container useOrange={true} sectionName='ThirdNewsSection'>
+                <NewsGrid newsData={newsData.slice(12, 15)} highlightedSection={highlightedSection} sectionName='ThirdNewsSection' />
             </Container>
 
-            <Container useOrange={true} sectionName='SecondNewsSection'>
-                <NewsGrid newsData={newsData.slice(12, 15)} highlightedSection={highlightedSection} sectionName='SecondNewsSection' />
+            <Container sectionName='SecondNewsSection'>
+                <NewsGrid newsData={newsData.slice(15, 18)} highlightedSection={highlightedSection} sectionName='SecondNewsSection' />
             </Container>
 
-            <Container sectionName='FirstNewsSection'>
-                <NewsGrid newsData={newsData.slice(15, 18)} highlightedSection={highlightedSection} sectionName='FirstNewsSection' />
+            <Container useOrange={true} sectionName='FirstNewsSection'>
+                <NewsGrid newsData={newsData.slice(18, 21)} highlightedSection={highlightedSection} sectionName='FirstNewsSection' />
             </Container>
 
             <Footer />
