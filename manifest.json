@@ -3,6 +3,11 @@
   "name": "Create React App Sample",
   "icons": [
     {
+      "src": "%PUBLIC_URL%/BRL_Logo.ico",
+      "type": "image/x-icon",
+      "sizes": "16x16"
+    },
+    {
       "src": "BRL_Linkedin-Profile1_16.png",
       "type": "image/png",
       "sizes": "16x16"
@@ -35,7 +40,7 @@
     {
       "src": "BRL_Linkedin-Profile1.png",
       "type": "image/png",
-      "sizes": "600x600"
+      "sizes": "64x64 32x32 24x24 16x16"
     }
   ],
   "start_url": ".",
