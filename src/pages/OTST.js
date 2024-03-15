@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Container from '../components/Container';
@@ -551,6 +552,10 @@ function OTST() {
 
     return (
         <div className='OTST'>
+            <Helmet>
+                <title>Optimal Temperature Setpoint Tool</title>
+                <meta name="description" content="The Optimal Temperature Setpoint Tool allows the user to identify the optimal setpoint based on occupancy rates, patterns, and outdoor air temperature values in order to facilitate practical applications." />
+            </Helmet>
             <NavBar />
 
             <Container>

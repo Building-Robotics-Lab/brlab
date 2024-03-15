@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Container from '../components/Container';
@@ -74,6 +75,10 @@ function Research() {
 
     return (
         <div className="Research" ref={researchRef}>
+            <Helmet>
+                <title>NUS Building Robotics Lab Research Thrusts</title>
+                <meta name="description" content="Dive into the NUS Building Robotics Lab's cutting-edge research in sensing human health and comfort, human centred-AI, intelligent environments, and nature-based technologies throughout the built environment." />
+            </Helmet>
             <NavBar />
 
             <Container>

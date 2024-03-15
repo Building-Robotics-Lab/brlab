@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Helmet } from 'react-helmet';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Carousel from './../components/Carousel2';
@@ -89,6 +90,10 @@ function Collaborations() {
 
     return (
         <div className="Collaborations" ref={collabRef}>
+            <Helmet>
+                <title>NUS Building Robotics Lab Industry Collaborations</title>
+                <meta name="description" content="Explore industry collaboration opportunities with the NUS Building Robotics Lab. Join us in advancing smart building technologies for sustainable futures." />
+            </Helmet>
             <NavBar />
 
             <Container>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { Helmet } from 'react-helmet';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Container from '../components/Container';
@@ -583,6 +584,10 @@ function Join_the_Lab() {
 
     return (
         <div className="Join_the_Lab">
+            <Helmet>
+                <title>Join the NUS Building Robotics Lab</title>
+                <meta name="Join the NUS Building Robotics Lab and contribute to pioneering research in smart buildings, thermal comfort, human-centred AI, and sustainability. Explore postdoctoral, PhD, and visiting researcher opportunities, and find funding options to support your journey with us." />
+            </Helmet>
             <NavBar />
 
             <Container>

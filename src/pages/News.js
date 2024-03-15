@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Container from '../components/Container';
@@ -357,6 +358,10 @@ function News() {
 
     return (
         <div className="News" key={key}>
+            <Helmet>
+                <title>NUS Building Robotics Lab News</title>
+                <meta name="Stay updated with the latest news, achievements, and publications from the Building Robotics Lab, highlighting our team's efforts in advancing smart building technologies and sustainability research." />
+            </Helmet>
             <NavBar />
 
             <Container>

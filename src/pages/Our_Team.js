@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { FaGoogle, FaOrcid, FaResearchgate } from 'react-icons/fa';
 import './Our_Team.css';
@@ -209,6 +210,10 @@ function Our_Team() {
 
     return (
         <div className="Our_Team">
+            <Helmet>
+                <title>NUS Building Robotics Lab Team</title>
+                <meta name="Meet the dedicated team at the NUS Building Robotics Lab, driving innovation in smart building technologies and sustainable solutions for a better future." />
+            </Helmet>
             <NavBar />
 
             <Container>

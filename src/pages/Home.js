@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import NavBar from '../components/NavBar';
@@ -228,6 +229,10 @@ function Home() {
 
     return (
         <div className="Home" ref={homeRef}>
+            <Helmet>
+                <title>NUS Building Robotics Lab</title>
+                <meta name="description" content="Research group in the National University of Singapore\’s Department of the Built Environment under the direction of Asst Prof Ali Ghahramani." />
+            </Helmet>
             <NavBar />
 
             <Container>

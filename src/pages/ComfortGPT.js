@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Container from '../components/Container'
@@ -683,6 +684,10 @@ function ComfortGPT() {
 
     return (
         <div className='ComfortGPT'>
+            <Helmet>
+                <title>ComfortGPT</title>
+                <meta name="description" content="ComfortGPT employs generative pre-trained models built on the data from thousands of ECOBEE thermostat users, to directly predict temperature setpoints while minimizing the reliance on occupant interactions." />
+            </Helmet>
             <NavBar />
 
             <Container>
