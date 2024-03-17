@@ -229,7 +229,7 @@ function Collaborations() {
                         <FontAwesomeIcon icon={faImage} />   
                             {/*<img src={T2Lab} alt="The Smart HVAC and Well-being Lab."></img>*/}
                             <h4><b>Smart HVAC and Well-Being Lab</b></h4>
-                            <h6><b>Stay tuned! Under construction with an expected completion of March 2024.</b></h6>
+                            <h6><b>Stay tuned! Under construction with an expected completion of June 2024.</b></h6>
                         </div>
                     </div>
                 </div>
