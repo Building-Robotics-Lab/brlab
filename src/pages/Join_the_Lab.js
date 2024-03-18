@@ -8,6 +8,9 @@ import './Join_the_Lab.css'
 import Select, { components } from 'react-select';
 
 function Join_the_Lab() {
+    let currentDate = new Date();
+    let month = currentDate.getUTCMonth();
+    let year = currentDate.getFullYear();
 
     const openEligibility = [
         {
@@ -658,7 +661,7 @@ function Join_the_Lab() {
                             <h4><b>Current Opportunities</b></h4>
                         </div>
                         <div className="position_information">
-                            <p>There is available workload and physical space in the Lab (as of March 2024).</p>
+                            <p>There is available workload and physical space in the Lab (as of {getMonthName(month)} {year}).</p>
                         </div>
                     </div>
 
@@ -822,3 +825,11 @@ const customStyles = {
         }
     }),
 };
+
+function getMonthName(monthIndex) {
+    const months = [
+      'January', 'February', 'March', 'April', 'May', 'June',
+      'July', 'August', 'September', 'October', 'November', 'December'
+    ];
+    return months[monthIndex];
+  }
