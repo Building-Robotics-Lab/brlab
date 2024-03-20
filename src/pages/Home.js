@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 //import JonathanNews from './../components/Website Individual Information/Jonathan/image.jpeg'
-import RezkyNews from './../components/Website Individual Information/Untitled.jpeg'
+import RezkyNews from './../components/Website Individual Information/Rezky/Image.jpeg'
 import TeamNews3 from './../components/Website Individual Information/Team/RitaStreblow.jpeg';
 import TeamNews2 from './../components/Website Individual Information/Team/DennisKnight.jpeg';
 import KeshavNews from './../components/Website Individual Information/Keshav/image.jpeg'

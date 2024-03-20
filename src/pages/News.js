@@ -8,7 +8,7 @@ import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
 //import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpeg';
-import RezkyPic from './../components/Website Individual Information/Untitled.jpeg';
+import RezkyPic from './../components/Website Individual Information/Rezky/Image.jpeg';
 import RitaStreblow from './../components/Website Individual Information/Team/RitaStreblow.jpeg';
 import DennisKnight from './../components/Website Individual Information/Team/DennisKnight.jpeg';
 import KeshavPic from './../components/Website Individual Information/Keshav/image.jpeg';

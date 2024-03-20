@@ -22,7 +22,7 @@ import ConnorCV from './Connor/CV.pdf'
 import KellyPic from './Kelly/image.jpg'
 import KellyCV from './Kelly/CV.pdf'
 
-import RezkyPic from './Untitled.jpeg'
+import RezkyPic from './Rezky/Image.jpeg'
 import RezkyCV from './Rezky/CV.pdf'
 
 //import JonathanPic from './Jonathan/image.jpeg'
