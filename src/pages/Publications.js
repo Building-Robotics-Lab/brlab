@@ -426,7 +426,7 @@ function Publications() {
     return (
         <div className="Publications">
             <Helmet>
-                <title>NUS Building Robotics Lab Publications</title>
+                <title>BRL Publications</title>
                 <meta name="Explore the extensive range of publications from the NUS Building Robotics Lab, featuring groundbreaking research in smart buildings, thermal comfort, robotics, and sustainability across peer-reviewed journals, conferences, patents, and academic theses." />
             </Helmet>
             <NavBar />

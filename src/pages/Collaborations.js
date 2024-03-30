@@ -91,7 +91,7 @@ function Collaborations() {
     return (
         <div className="Collaborations" ref={collabRef}>
             <Helmet>
-                <title>NUS Building Robotics Lab Industry Collaborations</title>
+                <title>BRL Industry Collaborations</title>
                 <meta name="description" content="Explore industry collaboration opportunities with the NUS Building Robotics Lab. Join us in advancing smart building technologies for sustainable futures." />
             </Helmet>
             <NavBar />

@@ -76,7 +76,7 @@ function Research() {
     return (
         <div className="Research" ref={researchRef}>
             <Helmet>
-                <title>NUS Building Robotics Lab Research Thrusts</title>
+                <title>BRL Research</title>
                 <meta name="description" content="Dive into the NUS Building Robotics Lab's cutting-edge research in sensing human health and comfort, human centred-AI, intelligent environments, and nature-based technologies throughout the built environment." />
             </Helmet>
             <NavBar />

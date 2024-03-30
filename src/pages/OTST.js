@@ -553,7 +553,7 @@ function OTST() {
     return (
         <div className='OTST'>
             <Helmet>
-                <title>Optimal Temperature Setpoint Tool</title>
+                <title>OTST</title>
                 <meta name="description" content="The Optimal Temperature Setpoint Tool allows the user to identify the optimal setpoint based on occupancy rates, patterns, and outdoor air temperature values in order to facilitate practical applications." />
             </Helmet>
             <NavBar />

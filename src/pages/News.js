@@ -359,7 +359,7 @@ function News() {
     return (
         <div className="News" key={key}>
             <Helmet>
-                <title>NUS Building Robotics Lab News</title>
+                <title>BRL News</title>
                 <meta name="Stay updated with the latest news, achievements, and publications from the Building Robotics Lab, highlighting our team's efforts in advancing smart building technologies and sustainability research." />
             </Helmet>
             <NavBar />

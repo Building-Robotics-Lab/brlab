@@ -211,7 +211,7 @@ function Our_Team() {
     return (
         <div className="Our_Team">
             <Helmet>
-                <title>NUS Building Robotics Lab Team</title>
+                <title>BRL Team</title>
                 <meta name="Meet the dedicated team at the NUS Building Robotics Lab, driving innovation in smart building technologies and sustainable solutions for a better future." />
             </Helmet>
             <NavBar />
