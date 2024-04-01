@@ -374,7 +374,7 @@ function News() {
             </Container>
 
             <Container useOrange={true} sectionName='SeventhNewsSection'>
-                <NewsGrid newsData={newsData.slice(0, 3)} highlightedSection={highlightedSection} sectionName='FifthNewsSection' />
+                <NewsGrid newsData={newsData.slice(0, 3)} highlightedSection={highlightedSection} sectionName='SeventhNewsSection' />
             </Container>
 
             <Container sectionName='SixthNewsSection'>
