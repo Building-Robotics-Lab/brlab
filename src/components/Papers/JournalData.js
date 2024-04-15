@@ -1,3 +1,4 @@
+import IqbalPublication3 from './Publication Images/1-s2.0-S2666123324000461-ga1_lrg.jpg'
 import AliPublication38 from './Publication Images/1-s2.0-S0378778824001798-ga1_lrg.jpg'
 import MichellePublication from './Publication Images/1-s2.0-S2352710224004741-gr13_lrg.jpg'
 import KaiPublication2 from './Publication Images/1-s2.0-S0360132323011125-gr4_lrg.jpg'
@@ -49,6 +50,38 @@ const JournalData = [
     {
         year: "2024",
         publications: [
+            {
+                title: "Enhancing Building Envelopes: Parametric Analysis of Shading Systems for Opaque Facades and Their Comparison with Cool Paints",
+                journal: "Energy and Built Environment [In Press]",
+                volume: "", issue: "",
+                page: "",
+                authors: [
+                    { name: "*Iqbal Shah", link: "/profile/Iqbal" },
+                    { name: "*Su Xiaosong", link: "/profile/Xiaosong" },
+                    { name: "*Riccardo Talami", link: "/profile/Riccardo" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
+                ],
+                minRead: "",
+                profiles: ["Prof"],
+                links: [
+                    { type: "DOI", url: "https://doi.org/10.1016/j.enbenv.2024.04.001" },
+                ],
+                keywords: [
+                    "Façade Shading",
+                    "Cool Coating",
+                    "Envelope Thermal Performance",
+                    "Building Design Optimization",
+                    "Energy Savings",
+                ],
+                highlights: [
+                    "Shading on opaque facades alone could reduce cooling loads by 8-28%.",
+                    "Cool paints on opaque facades alone could reduce cooling loads by 10-35%.",
+                    "Combine use of shading and cool paint further reduces cooling loads by 10-40%.",
+                    "Optimal performance needs a balanced mix of shading and paint for specific climates.",
+                ],
+                abstract: "Heat gain through the buildings opaque facades significantly contributes to the energy consumption of Heating, Ventilation, and Air Conditioning (HVAC) systems. In the post-construction phase, retrofitting options for reducing façade heat gain are limited, with cool paints being the prevalent strategy. However, the efficacy of shading systems as an alternative strategy remains underexplored as existing research predominantly focuses on proof-of-concept validation, often overlooking a comprehensive assessment of shading system configurations across diverse climates and building typologies. Moreover, a comparative analysis of the performance and potential synergies between cool paints and shading systems on opaque facades is crucial to understand their actual effectiveness in real-world applications. To address these gaps, our study undertakes an extensive parametric simulation, taking into account variables such as shading configurations, cool paints with varying facade solar absorbance values, facade orientation, diverse climates, and different building typologies. The results demonstrate that the use of shading on opaque facades alone could result in a HVAC energy saving of 8-28%, while the application of cool paints (façade absorptance value of 0.2) alone could reduce the HVAC energy consumption by 10-35%. By combining the use of shading and cool paints, the HVAC energy savings are further increased by 2-5%. The findings of this study offer a novel perspective on the selection of opaque façade technologies, broadening the sustainable design and retrofit options.",
+                display_image: IqbalPublication3
+            },
             {
                 title: "Hot, cold, or just right? An infrared biometric sensor to improve occupant comfort and reduce overcooling in buildings via closed-loop control",
                 journal: "Energy and Buildings [In Press]",

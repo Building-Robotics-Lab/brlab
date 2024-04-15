@@ -305,6 +305,11 @@ const profiles = [
         Featured_Publications: [
             (
                 <>
+                    <b>Shah, I.</b>, Su, X., Talami, R. and Ghahramani, A., 2024. <Link to="/publication/enhancing_building_envelopes:" ><b>Enhancing Building Envelopes: Parametric Analysis of Shading Systems for Opaque Facades and Their Comparison with Cool Paints</b></Link>. <i>Energy and Built Environment</i>.
+                </>
+            ),
+            (
+                <>
                     <b>Shah, I.</b>, Lau, S.K., Sekaran, V., and Ghahramani, A., 2023. <Link to="/publication/porous_plant_form-induced" ><b>Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems</b></Link>. <i>Building and Environment, 245</i>, 110904.
                 </>
             ),

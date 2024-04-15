@@ -12,12 +12,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 //import JonathanNews from './../components/Website Individual Information/Jonathan/image.jpeg'
+import IqbalNews from './../components/Website Data/iqbal-publication3.jpg'
 import RezkyNews from './../components/Website Individual Information/Rezky/Image.jpeg'
 import TeamNews3 from './../components/Website Individual Information/Team/RitaStreblow.jpeg';
 import TeamNews2 from './../components/Website Individual Information/Team/DennisKnight.jpeg';
 import KeshavNews from './../components/Website Individual Information/Keshav/image.jpeg'
 import XiaorongNews from './../components/Website Individual Information/Xiaorong/image.jpeg'
-import TeamNews1 from './../components/Website Individual Information/Team/BukitTimah.jpeg'
 
 const slides = [
     //6 most-recent news
@@ -27,6 +27,12 @@ const slides = [
         date: '29/01/2024',
         link: 'SixthNewsSection',
     },*/
+    {
+        image: IqbalNews,
+        title: '<b><i>Energy and Built Environment</i> publication announcement!</b>',
+        date: '15/04/2024',
+        link: 'SeventhNewsSection',
+    },
     {
         image: RezkyNews,
         title: '<b>Please welcome Rezky Nanda to the lab!</b>',
@@ -43,7 +49,7 @@ const slides = [
         image: TeamNews2,
         title: '<b>A visit by Dennis Knight!</b>',
         date: '21/02/2024',
-        link: 'SeventhNewsSection',
+        link: 'SixthNewsSection',
     },
     {
         image: KeshavNews,
@@ -55,12 +61,6 @@ const slides = [
         image: XiaorongNews,
         title: '<b>Please welcome Wang Xiaorong to the lab!</b>',
         date: '29/01/2024',
-        link: 'SixthNewsSection',
-    },
-    {
-        image: TeamNews1,
-        title: '<b>Farewell to Pierre-Louis, Guillaume, and Pegah!</b>',
-        date: '28/01/2024',
         link: 'SixthNewsSection',
     },
 ];

@@ -8,6 +8,7 @@ import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
 //import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpeg';
+import IqbalPublication3 from './../components/Website Data/iqbal-publication3.jpg'
 import RezkyPic from './../components/Website Individual Information/Rezky/Image.jpeg';
 import RitaStreblow from './../components/Website Individual Information/Team/RitaStreblow.jpeg';
 import DennisKnight from './../components/Website Individual Information/Team/DennisKnight.jpeg';
@@ -108,6 +109,19 @@ function News() {
             sectionName: 'FifthNewsSection'
         },*/
         {
+            NewsSectionName: 'KaiPublication3',
+            imageSrc: IqbalPublication3,
+            altText: "A graphical abstract of the publication.",
+            date: '15/04/2024',
+            title: '<i>Energy and Built Environment</i> publication announcement!',
+            content: (
+                <>
+                    <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/profile/Xiaosong"><b>Song</b></Link>, <Link to="/profile/Riccardo"><b>Riccardo</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/enhancing_building_envelopes:" ><b>Enhancing Building Envelopes: Parametric Analysis of Shading Systems for Opaque Facades and Their Comparison with Cool Paints</b></Link>. Their study undertook an extensive parametric simulation, taking into account variables such as shading configurations, cool paints with varying facade solar absorbance values, facade orientation, diverse climates, and different building typologies. Ultimately, they found that shading on opaque facades alone could reduce cooling loads by 8-28%, cool paints on opaque facades alone could reduce cooling loads by 10-35%, and the combined use of shading and cool paint further reduces cooling loads by 10-40%. Congratulations to you all!
+                </>
+            ),
+            sectionName: 'SeventhNewsSection'
+        },
+        {
             NewsSectionName: 'Rezky',
             imageSrc: RezkyPic,
             altText: "A headshot of Rezky Nanda.",
@@ -144,7 +158,7 @@ function News() {
                     It was a pleasure to host <Link to="https://www.ashrae.org/professional-development/learning-portal/instructor-led-training/ashrae-instructors/dennis-knight"><b>Dennis Knight</b></Link>, the incoming <Link to="https://www.ashrae.org/"><b>ASHRAE</b></Link> President, in our living lab all the way from the United States for a discussion about the research projects we are conducting before he delivered his presentation, "Health and Wellness in the Built Environment," for the ASHRAE Singapore Chapter Distinguished Lecturer Event. Thank you very much for your time and thank you to Professor Chandra Sekhar for connecting us!
                 </>
             ),
-            sectionName: 'SeventhNewsSection'
+            sectionName: 'SixthNewsSection'
         },
         {
             NewsSectionName: 'Keshav',
@@ -183,7 +197,7 @@ function News() {
                     Our team was able to gather at Bukit Timah Nature Reserve to swap out our usual lab setting for some deserving time outdoors as we bid farewell to our three visiting students: <Link to="/profile/Pierre"><b>Pierre-Louis</b></Link>, <Link to="/profile/Guillaume"><b>Guillaume</b></Link>, and <Link to="/profile/Pegah"><b>Pegah</b></Link>! The former two have now completed their excellent MSc dissertations for ETH Zürich on advanced reinforcement learning strategies for power trading in smart grids and indoor positioning systems using Bluetooth LE and machine vision, and the latter is returning to Shahid Beheshti University to complete the final year of her PhD thesis on optimal distribution of urban density. Thank you to all three for spending time with us and good luck to you all in your future endeavours!
                 </>
             ),
-            sectionName: 'SixthNewsSection'
+            sectionName: 'FifthNewsSection'
         },
         {
             NewsSectionName: 'Heng',
@@ -222,7 +236,7 @@ function News() {
                     <Link to="/profile/Riccardo"><b>Riccardo</b></Link>, <Link to="/profile/Ilyas"><b>Ilyas</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/quantifying_energy_savings"><b>Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns</b></Link>. They investigated three fixed and optimal setpoint and setback selection strategies. They found that fixed setpoint achieves 5.48% energy reduction due to lower occupant head loads and an additional 11.80% energy savings are obtained from incorporating fixed setbacks. Overall, the optimal selection of setpoint and setback provides additional 34-38% energy savings. Congratulations everyone!
                 </>
             ),
-            sectionName: 'FifthNewsSection'
+            sectionName: 'FourthNewsSection'
         },
         {
             NewsSectionName: 'IqbalPublication2',
@@ -261,7 +275,7 @@ function News() {
                     The Building Robotics Lab is happy to have Pierre-Louis joining us from Switzerland as a visiting MSc student at ETH Zürich studying Mechanical Engineering and Computer Science in the Department of Mechanical and Process Engineering. His research revolves around machine learning, optimisation, computer vision, and energy. Check out his full profile <Link to="/profile/Pierre"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'FourthNewsSection'
+            sectionName: 'ThirdNewsSection'
         },
         {
             NewsSectionName: 'Pegah',
@@ -300,7 +314,7 @@ function News() {
                     The Building Robotics Lab is happy to have Kelly joining us as a PhD student in the Department of the Built Environment after she recently completed her BSc in Project and Facilities Management at NUS. Her research revolves around building energy efficiency, building greenery, building finance, and building information modelling. Check out her full profile <Link to="/profile/Kelly"><b>here</b></Link> to get to know her more!
                 </>
             ),
-            sectionName: 'ThirdNewsSection'
+            sectionName: 'SecondNewsSection'
         },
         {
             NewsSectionName: 'Xiaosong',
@@ -339,7 +353,7 @@ function News() {
                     The Building Robotics Lab is happy to have Connor joining us as a PhD student in the Department of the Built Environment after he recently completed his MSc in Built Environment: Environmental Design and Engineering at UCL in the Bartlett Faculty of the Built Environment. His research revolves around virtual power plants, building-occupant network dynamics, smart buildings, human-building interaction, and decarbonisation. Check out his full profile <Link to="/profile/Connor"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'SecondNewsSection'
+            sectionName: 'FirstNewsSection'
         },
         {
             NewsSectionName: 'IqbalPublication',
