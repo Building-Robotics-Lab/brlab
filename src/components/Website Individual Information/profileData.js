@@ -369,9 +369,9 @@ const profiles = [
             { href: 'https://orcid.org/0009-0006-7468-788X', icon: faOrcid, text: 'ORCID' }
         ],
         Interests: [
-            'Virtual Power Plants',
-            'Building-Occupant Network Dynamics',
             'Smart Buildings',
+            'Building-Occupant Network Dynamics',
+            'Virtual Power Plants',
             'Human-Building Interaction',
             'Decarbonisation'
         ],
