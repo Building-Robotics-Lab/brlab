@@ -167,7 +167,7 @@ function Research() {
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">
                             <p>Talami, R., Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/publication/quantifying_energy_savings"><b>Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns</b></Link>. <i>Buildings, 13</i>(12), 2998.</p>
-                            <p>Talami, R., Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/publication/demystifying_energy_savings"><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. <i>Energy and Built Environment</i>.</p>
+                            <p>Talami, R., Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/publication/demystifying_energy_savings"><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. <i>Energy and Built Environment, 5</i>(6), 878-888.</p>
                         </div>
                         <p className='tool_links'><Link to="/otst"><b>Optimal Temperature Setpoint Tool</b></Link></p>
                     </div>

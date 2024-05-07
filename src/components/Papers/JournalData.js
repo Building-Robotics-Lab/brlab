@@ -84,8 +84,8 @@ const JournalData = [
             },
             {
                 title: "Hot, cold, or just right? An infrared biometric sensor to improve occupant comfort and reduce overcooling in buildings via closed-loop control",
-                journal: "Energy and Buildings [In Press]",
-                volume: "", issue: "",
+                journal: "Energy and Buildings",
+                volume: "312", issue: "",
                 page: "114063",
                 authors: [
                     { name: "Ronnen Levinson" },
@@ -300,9 +300,9 @@ const JournalData = [
             },
             {
                 title: "Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability",
-                journal: "Energy and Built Environment [In Press]",
-                volume: "", issue: "",
-                page: "",
+                journal: "Energy and Built Environment",
+                volume: "5", issue: "6",
+                page: "878-888",
                 authors: [
                     { name: "*Riccardo Talami", link: "/profile/Riccardo" },
                     { name: "*Ilyas Dawoodjee", link: "/profile/Ilyas" },
