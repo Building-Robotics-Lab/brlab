@@ -1,3 +1,4 @@
+//import KatePublication2 from './Publication Images/kate_pub2.png'
 import IqbalPublication3 from './Publication Images/1-s2.0-S2666123324000461-ga1_lrg.jpg'
 import AliPublication38 from './Publication Images/1-s2.0-S0378778824001798-ga1_lrg.jpg'
 import MichellePublication from './Publication Images/1-s2.0-S2352710224004741-gr13_lrg.jpg'
@@ -50,6 +51,40 @@ const JournalData = [
     {
         year: "2024",
         publications: [
+            /*{
+                title: "Context Matters: Exploring Occupant Preferences for Digital Twin-based User Interfaces and Data Sharing in Commercial Buildings",
+                journal: "",
+                volume: "", issue: "",
+                page: "",
+                authors: [
+                    { name: "Kate Sangwon Lee" },
+                    { name: "*Iqbal Shah", link: "/profile/Iqbal" },
+                    { name: "*Connor Aucremanne", link: "/profile/Connor" },
+                    { name: "Jung-Joo Lee" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" }
+                ],
+                minRead: "",
+                profiles: ["Iqbal","Connor", "Prof"],
+                links: [
+                    { type: "DOI", url: "" }
+                ],
+                keywords: [
+                    "Digital Twin",
+                    "Data Privacy in Smart Buildings",
+                    "User Experience",
+                    "Human-Building Interaction",
+                    "User Feedback Mechanisms",
+                    "Human-in-the-Loop"
+                ],
+                highlights: [
+                    "Importance of considering occupants’ dynamic contexts in occupant-centric digital twin (DT) design.",
+                    "Scenario-based, multidimensional DT interface for flexibility and autonomy for occupants.",
+                    "Found occupants’ context-dependent preferences to interface types.",
+                    "Found occupants’ needs for human-in-the-loop decision-making."
+                ],
+                abstract: "In the domain of commercial building management, the passive role of occupants in controlling their environmental conditions has led to great dissatisfaction. This notable challenge highlights the need for innovative approaches that not only address environmental control, but also actively involve occupants in the management process. Digital twin (DT) technologies present unique opportunities to bridge this gap by offering dynamic solutions that cater to individual preferences and behaviors. Yet, the integration of such technologies into building management systems necessitates a deep understanding of user interface (UI) design and privacy considerations. This study addresses this issue by developing and evaluating a multidimensional DT interface, combining person-based, object-based, and recommendation-based UIs, and investigates its effectiveness in controlling thermal and lighting conditions in occupants’ dynamic situations. A comprehensive study involving 120 participants proved their distinct UI preferences for different situations, indicating that the proposed multidimensional interface provides flexibility and agency for occupants to choose UIs suitable for their contexts. The study also identified participants’ willingness to share personal data, especially when assured of the benefits and privacy safeguards. The study proposes design implications for DT interfaces by advocating for a human-in-the-loop approach that puts occupant comfort and energy efficiency at the forefront.",
+                display_image: KatePublication2
+            },*/
             {
                 title: "Enhancing Building Envelopes: Parametric Analysis of Shading Systems for Opaque Facades and Their Comparison with Cool Paints",
                 journal: "Energy and Built Environment [In Press]",
