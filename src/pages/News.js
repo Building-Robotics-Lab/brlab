@@ -7,6 +7,8 @@ import './News.css'
 import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
+//import China2Pic from './../components/Website Individual Information/China2/image.jpeg';
+//import China1Pic from './../components/Website Individual Information/China1/image.jpeg';
 //import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpeg';
 import IqbalPublication3 from './../components/Website Data/iqbal-publication3.jpg'
 import RezkyPic from './../components/Website Individual Information/Rezky/Image.jpeg';
@@ -96,6 +98,32 @@ function News() {
 
     const newsData = [
         /*{
+            NewsSectionName: 'China1',
+            imageSrc: China2Pic,
+            altText: "A headshot of China2.",
+            date: '29/01/2024',
+            title: 'Please welcome China2 to the lab!',
+            content: (
+                <>
+                    The Building Robotics Lab is happy to have China2 joining us as a PhD student in the Department of the Built Environment after he recently completed his . His research revolves around. Check out his full profile <Link to="/profile/China1"><b>here</b></Link> to get to know him more!
+                </>
+            ),
+            sectionName: 'EighthNewsSection'
+        },*/
+        /*{
+            NewsSectionName: 'China1',
+            imageSrc: China1Pic,
+            altText: "A headshot of China1.",
+            date: '29/01/2024',
+            title: 'Please welcome China1 to the lab!',
+            content: (
+                <>
+                    The Building Robotics Lab is happy to have China1 joining us as a PhD student in the Department of the Built Environment after he recently completed his . His research revolves around. Check out his full profile <Link to="/profile/China1"><b>here</b></Link> to get to know him more!
+                </>
+            ),
+            sectionName: 'EighthNewsSection'
+        },*/
+        /*{
             NewsSectionName: 'Jonathan',
             imageSrc: JonathanPic,
             altText: "A headshot of Jonathan Poon.",
@@ -106,10 +134,10 @@ function News() {
                     The Building Robotics Lab is happy to have Jonathan joining us as a PhD student in the Department of the Built Environment after he recently completed his BSc in Project and Facilities Management at NUS. His research revolves around. Check out his full profile <Link to="/profile/Jonathan"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'FifthNewsSection'
+            sectionName: 'EighthNewsSection'
         },*/
         {
-            NewsSectionName: 'KaiPublication3',
+            NewsSectionName: 'IqbalPublication3',
             imageSrc: IqbalPublication3,
             altText: "A graphical abstract of the publication.",
             date: '15/04/2024',

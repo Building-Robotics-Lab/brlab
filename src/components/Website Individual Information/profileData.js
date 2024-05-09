@@ -28,6 +28,12 @@ import RezkyCV from './Rezky/CV.pdf'
 //import JonathanPic from './Jonathan/image.jpeg'
 //import JonathanCV from './Jonathan/CV.pdf'
 
+//import China1 from './China1/image.jpeg'
+//import China1CV from './China1/CV.pdf'
+
+//import China2 from './China2/image.jpeg'
+//import China2CV from './China2/CV.pdf'
+
 import XiaorongPic from './Xiaorong/image.jpeg'
 import XiaorongCV from './Xiaorong/CV.pdf'
 
@@ -467,6 +473,64 @@ const profiles = [
         Links: [
             { href: JonathanCV, icon: faUser, text: 'CV' },
             { href: 'https://www.linkedin.com/in/jonathanpwj/', icon: faLinkedin, text: 'LinkedIn' },
+        ],
+        Interests: [
+            '',
+            '',
+            '',
+            '',
+            ''
+        ],
+    },*/
+    /*{
+        ProfileName: 'China1',
+        ProfileLink: "/profile/China1",
+        ProfilePic: China1Pic,
+        Name: 'China1',
+        Position: 'PhD Student',
+        Biography: '',
+        Education: [
+            'PhD, National University of Singapore (NUS), Built Environment (current)',
+            ''
+        ],
+        Awards: [],
+        Featured_Publications: [],
+        Contacts: [
+            //{ href: "tel:+65", icon: faPhone, text: "+65" },
+            { href: "mailto:@u.nus.edu", icon: faEnvelope, text: "@u.nus.edu" }
+        ],
+        Links: [
+            { href: China1CV, icon: faUser, text: 'CV' },
+            { href: 'https://www.linkedin.com/in/China1/', icon: faLinkedin, text: 'LinkedIn' },
+        ],
+        Interests: [
+            '',
+            '',
+            '',
+            '',
+            ''
+        ],
+    },*/
+    /*{
+        ProfileName: 'China2',
+        ProfileLink: "/profile/China2",
+        ProfilePic: China2Pic,
+        Name: 'China2',
+        Position: 'PhD Student',
+        Biography: '',
+        Education: [
+            'PhD, National University of Singapore (NUS), Built Environment (current)',
+            ''
+        ],
+        Awards: [],
+        Featured_Publications: [],
+        Contacts: [
+            //{ href: "tel:+65", icon: faPhone, text: "+65" },
+            { href: "mailto:@u.nus.edu", icon: faEnvelope, text: "@u.nus.edu" }
+        ],
+        Links: [
+            { href: China1CV, icon: faUser, text: 'CV' },
+            { href: 'https://www.linkedin.com/in/China2/', icon: faLinkedin, text: 'LinkedIn' },
         ],
         Interests: [
             '',

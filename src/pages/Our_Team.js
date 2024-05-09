@@ -24,6 +24,8 @@ import ConnorPic from './../components/Website Individual Information/Connor/ima
 import KellyPic from './../components/Website Individual Information/Kelly/image.jpg';
 import RezkyPic from './../components/Website Individual Information/Rezky/Image.jpeg';
 //import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpeg';
+//import China1Pic from './../components/Website Individual Information/China1/image.jpeg';
+//import China2Pic from './../components/Website Individual Information/China2/image.jpeg';
 import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
 import PegahPic from './../components/Website Individual Information/Pegah/image.jpg';
 import GuillaumePic from './../components/Website Individual Information/Guillaume/image.jpg';
@@ -106,6 +108,20 @@ function Our_Team() {
             skills: '',
             imgSrc: JonathanPic,
             link: 'Jonathan'
+        },*/
+        /*{
+            name: 'China1',
+            role: 'PhD Student',
+            skills: '',
+            imgSrc: China1Pic,
+            link: 'China1'
+        },*/
+        /*{
+            name: 'China2',
+            role: 'PhD Student',
+            skills: '',
+            imgSrc: China2Pic,
+            link: 'China2'
         },*/
         {
             name: 'Wang Xiaorong',
