@@ -458,7 +458,7 @@ const profiles = [
         ProfileLink: "/profile/Jonathan",
         ProfilePic: JonathanPic,
         Name: 'Jonathan Poon',
-        Position: 'PhD Student',
+        Position: 'Research Engineer',
         Biography: '',
         Education: [
             'PhD, National University of Singapore (NUS), Built Environment (current)',

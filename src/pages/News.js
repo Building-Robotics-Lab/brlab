@@ -146,7 +146,7 @@ function News() {
             title: 'Please welcome Jonathan Poon to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Jonathan joining us as a PhD student in the Department of the Built Environment after he recently completed his BSc in Project and Facilities Management at NUS. His research revolves around. Check out his full profile <Link to="/profile/Jonathan"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Jonathan joining us as a Research Engineer before he begins his PhD in the fall within the Department of the Built Environment after he recently completed his BSc in Project and Facilities Management at NUS. His research revolves around XXX. Check out his full profile <Link to="/profile/Jonathan"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'EighthNewsSection'

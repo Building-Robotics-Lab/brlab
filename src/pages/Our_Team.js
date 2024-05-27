@@ -104,7 +104,7 @@ function Our_Team() {
         },
         /*{
             name: 'Jonathan Poon',
-            role: 'PhD Student',
+            role: 'Research Engineer',
             skills: '',
             imgSrc: JonathanPic,
             link: 'Jonathan'
