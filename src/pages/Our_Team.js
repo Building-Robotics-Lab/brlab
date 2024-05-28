@@ -148,8 +148,8 @@ function Our_Team() {
             name: 'Guillaume Lecronier',
             role: (
                 <>
-                MSc Student <br />
-                ETH Zürich (Switzerland)
+                Data & Analytics Consultant <br />
+                BearingPoint (France)
                 </>
             ),
             skills: 'Visiting MSc Student (September 2023 - February 2024)',
@@ -159,7 +159,7 @@ function Our_Team() {
             name: 'Pierre-Louis David',
             role: (
                 <>
-                Machine Learning Intern <br />
+                Data Scientist Intern <br />
                 Pictet Group (Switzerland)
                 </>
             ),
