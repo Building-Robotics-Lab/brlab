@@ -19,7 +19,7 @@ function Join_the_Lab() {
             description: "Applicants to the NUS Presidential Fellowship have obtained their PhD within the past year or will be within the next year, have displayed exceptional intellectual ability to produce original work of the highest quality, and exhibited a strong potential to lead their research projects. In return, the awardees will receive a 2-year fellowship with automatic conversion to Tenure Track Assistant Professor with an internationally competitive salary package and start-up research grant, among other features.",
             tags: {
                 position: ["Post-Doc"],
-                country: ["Open to all Countries"],
+                country: ["Open to all countries"],
                 duration: ["1-2 years", "2+ years"]
             }
         },
@@ -29,7 +29,7 @@ function Join_the_Lab() {
             description: "Awarded to PhD candidates who show exceptional promise or accomplishment in research. A number of PhD candidates are selected each semester by the University for the award. The following Fellowships are donor-funded: President’s Graduate Fellowship (funded by Lee Kong Chian Scholarship) and President’s Graduate Fellowship (funded by Jasmine Scholarship). Additionally, the candidate must have an exemplary academic record, strong research potential, and strong ethical character and high potential to succeed in the PhD program.",
             tags: {
                 position: ["PhD"],
-                country: ["Open to all Countries"],
+                country: ["Open to all countries"],
                 duration: ["2+ years"]
             }
         },
@@ -39,7 +39,7 @@ function Join_the_Lab() {
             description: "Awarded to outstanding graduate students for research leading to a higher degree at the University. The Scholarship consists of a monthly stipend plus a tuition fee subsidy. The candidate must have graduated with an undergraduate degree with at least Second Class Honours or equivalent, have been offered admission to a full-time graduate research programme at NUS, and be eligible for MOE subsidy.",
             tags: {
                 position: ["PhD"],
-                country: ["Open to all Countries"],
+                country: ["Open to all countries"],
                 duration: ["2+ years"]
             }
         },
@@ -49,7 +49,7 @@ function Join_the_Lab() {
             description: "Awarded to all nationalities, the candidate must satisfy criteria for and seek admission to a PhD or EngD programme, have obtained at least a Second Upper Class Honours or equivalent, and have a strong interest in a research career. The award consists of full tuition fees, a monthly sustenance allowance, and support for up to 12 months of overseas attachment.",
             tags: {
                 position: ["PhD"],
-                country: ["Open to all Countries"],
+                country: ["Open to all countries"],
                 duration: ["2+ years"]
             }
         },
@@ -59,7 +59,7 @@ function Join_the_Lab() {
             description: "Awarded to outstanding graduate students for research leading to a higher degree at the University. The award does not consist of a monthly stipend. Additionally, the candidate must have graduated with an undergraduate degree with at least Second Class Honours or equivalent, have been offered admission to a full-time higher degree by research at NUS, and be eligible for MOE subsidy.",
             tags: {
                 position: ["PhD"],
-                country: ["Open to all Countries"],
+                country: ["Open to all countries"],
                 duration: ["2+ years"]
             }
         },
@@ -69,7 +69,7 @@ function Join_the_Lab() {
             description: "Offers an opportunity for postdocs in all areas of the natural and social sciences and engineering who have conceived an original and independent research idea that falls outside the scope of large-scale research projects. Fellows are encouraged to choose the best possible location for their research, anywhere in the world. They will receive support for up to five years. They decide themselves how the financial resources will be allocated.",
             tags: {
                 position: ["Post-Doc"],
-                country: ["Open to all Countries"],
+                country: ["Open to all countries"],
                 duration: ["2+ years"]
             }
         },
@@ -79,7 +79,7 @@ function Join_the_Lab() {
             description: "A global program designed to encourage and support promising doctoral students who are engaged in innovative and relevant research in areas related to computer science and engineering at an accredited university. Winners of the Fellowship are entitled to receive two years of paid tuition and fees, an annual stipend to cover living costs, various opportunities to engage with Meta researchers, and an invitation to the annual Fellowship summit.",
             tags: {
                 position: ["PhD"],
-                country: ["Open to all Countries"],
+                country: ["Open to all countries"],
                 duration: ["1-2 years"]
             }
         },
@@ -89,7 +89,7 @@ function Join_the_Lab() {
             description: "Have found this program to be a great way to support academia in its pursuit of cutting edge innovation, as well as an ideal avenue to introduce NVIDIA to the future leaders of our industry. It provides funding in the form of a single-year stipend to PhD students who are researching topics that will lead to major advanves in accelerated computing and its applications. NVIDIA particularly invites submissions from students pushing the envelope in artificial intelligence, robotics, autonomous vehicles, and related fields.",
             tags: {
                 position: ["PhD"],
-                country: ["Open to all Countries"],
+                country: ["Open to all countries"],
                 duration: ["One-time award"]
             }
         },
@@ -99,7 +99,7 @@ function Join_the_Lab() {
             description: "Was created to recognize outstanding graduate students doing exceptional and innovative research in areas relevant to computer science and related fields. The award consists of up to a three-year fellowship, which includes a yearly stipend for living costs and research-related activities and a Google Research Mentor.",
             tags: {
                 position: ["PhD"],
-                country: ["Open to all Countries"],
+                country: ["Open to all countries"],
                 duration: ["2+ years"]
             }
         },
@@ -109,7 +109,7 @@ function Join_the_Lab() {
             description: "Identifies the next generation of research leaders through a unique program that offers a combination of mentorship, research, networking, and academic opportunities to promosing young candidates. The award consists of a stipend for research initiatives and academic endeavors, the opportunity for intensive and individualized mentorship programs with a dedicated senior researcher, and the opportunity to attend the Microsoft Research Asia Academic Conference.",
             tags: {
                 position: ["PhD"],
-                country: ["Open to all Countries"],
+                country: ["Open to all countries"],
                 duration: ["One-time award"]
             }
         },
@@ -280,7 +280,7 @@ function Join_the_Lab() {
 
     const scholarship_country = [
         { value: "All", label: "All" },
-        { value: "Open to all Countries", label: "Open to all Countries" },
+        { value: "Open to all countries", label: "Open to all countries" },
         { value: "Non-Singaporean", label: "International/Non-Singaporean" },
         { value: "Antigua and Barbuda", label: "Antigua and Barbuda" },
         { value: "Australia", label: "Australia" },
