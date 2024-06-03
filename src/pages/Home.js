@@ -14,7 +14,7 @@ import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-s
 //import KateNews from './../components/Website Data/kate_pub2.png'
 //import China2Pic from './../components/Website Individual Information/China2/image.jpeg';
 //import China1Pic from './../components/Website Individual Information/China1/image.jpeg';
-//import JonathanNews from './../components/Website Individual Information/Jonathan/image.jpeg'
+import JonathanNews from './../components/Website Individual Information/Untitled.jpeg'
 import IqbalNews from './../components/Website Data/iqbal-publication3.jpg'
 import RezkyNews from './../components/Website Individual Information/Rezky/Image.jpeg'
 import TeamNews3 from './../components/Website Individual Information/Team/RitaStreblow.jpeg';
@@ -42,23 +42,23 @@ const slides = [
         date: '//2024',
         link: 'EighthNewsSection',
     },*/
-    /*{
+    {
         image: JonathanNews,
         title: '<b>Please welcome Jonathan Poon to the lab!</b>',
-        date: '//2024',
+        date: '20/05/2024',
         link: 'EighthNewsSection',
-    },*/
+    },
     {
         image: IqbalNews,
         title: '<b><i>Energy and Built Environment</i> publication announcement!</b>',
         date: '15/04/2024',
-        link: 'SeventhNewsSection',
+        link: 'EighthNewsSection',
     },
     {
         image: RezkyNews,
         title: '<b>Please welcome Rezky Nanda to the lab!</b>',
         date: '04/03/2024',
-        link: 'SeventhNewsSection',
+        link: 'EighthNewsSection',
     },
     {
         image: TeamNews3,
@@ -70,19 +70,13 @@ const slides = [
         image: TeamNews2,
         title: '<b>A visit by Dennis Knight!</b>',
         date: '21/02/2024',
-        link: 'SixthNewsSection',
+        link: 'SeventhNewsSection',
     },
     {
         image: KeshavNews,
         title: '<b>Please welcome Keshav Kausik to the lab!</b>',
         date: '05/02/2024',
-        link: 'SixthNewsSection',
-    },
-    {
-        image: XiaorongNews,
-        title: '<b>Please welcome Wang Xiaorong to the lab!</b>',
-        date: '29/01/2024',
-        link: 'SixthNewsSection',
+        link: 'SeventhNewsSection',
     },
 ];
 

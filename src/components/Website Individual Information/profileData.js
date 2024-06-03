@@ -25,8 +25,8 @@ import KellyCV from './Kelly/CV.pdf'
 import RezkyPic from './Rezky/Image.jpeg'
 import RezkyCV from './Rezky/CV.pdf'
 
-//import JonathanPic from './Jonathan/image.jpeg'
-//import JonathanCV from './Jonathan/CV.pdf'
+import JonathanPic from './Untitled.jpeg'
+import JonathanCV from './Jonathan/CV.pdf'
 
 //import China1 from './China1/image.jpeg'
 //import China1CV from './China1/CV.pdf'
@@ -257,7 +257,7 @@ const profiles = [
         Position: 'PhD Student',
         Biography: 'Chen Kai is a third-year PhD candidate at the National University of Singapore - Department of the Built Environment and is currently engaged in research that focuses on thermal comfort modelling, long-term thermal comfort prediction, and energy conservation in HVAC systems. He firmly believes that accurately addressing occupants\' comfort is vital for optimising energy consumption and enhancing human well-being. In addition to his research on these topics, Kai has conducted research on biomass heating for domestic and commercial buildings in the UK, performed analysis on building systems\' components, and gained experience in energy simulation and optimisation.',
         Education: [
-            'PhD, National University of Singapore (NUS), Built Environment (current)',
+            'PhD, National University of Singapore (NUS), Built Environment (Current)',
             'MSc (<i>Merit</i>), University College London (UCL), Smart Buildings and Digital Engineering (2021)',
             'BEng (<i>Honours</i>), University of Nottingham, Architectural Environment Engineering (2020)'
         ],
@@ -300,13 +300,16 @@ const profiles = [
         Position: 'PhD Student',
         Biography: 'Iqbal Shah is a second-year PhD student (President\'s Graduate Fellow) at the National University of Singapore (NUS), College of Design & Engineering, Department of the Built Environment. His current research focuses on innovative façade technologies, urban greening solutions, as well as digital twin interface development, actuations, and ontology automation. Further expressing his interest in the technicalities and developments of heating and cooling systems, Iqbal is also currently a student member in the American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE) Singapore Chapter. He believes that a well-implemented semantic digital twin could bridge the gap between humans, systems, and the environment, allowing for true sustainability to be attained. To date, Iqbal has supervised eight undergraduate students for their final year project dissertation. Beyond academia and his research interests, Iqbal is passionate in volunteering work, and has participated as a mentor in multiple programmes. He lives by the quotes, “No one has ever become poor by giving.” - Anne Frank, and, “Those who are happiest are those who do the most for others.” - Booker T. Washington.',
         Education: [
-            'PhD, National University of Singapore (NUS), Built Environment (current)',
-            'BSc (<i>Highest Distinction</i>), National University of Singapore (NUS), Project & Facilities Management (2021)'
+            'PhD, National University of Singapore (NUS), Built Environment (Current)',
+            'BSc (<i>Highest Distinction</i>), National University of Singapore (NUS), Project & Facilities Management (2021)',
+            'Diploma (<i>Merit</i>), Temasek Polytechnic, Integrated Facility Management (2016)'
         ],
         Awards: [
-            'NUS President\'s Graduate Fellowship, National University of Singapore (2022 - Current)',
-            'Dean\'s List, National University of Singapore (2019 - 2021)',
-            'Best BIMx Award, Graphisoft (2020)'
+            'NUS President\'s Graduate Fellowship, National University of Singapore (2022 - Present)',
+            'iBuildSG Industry Sponsorship, Building and Construction Authority (2018 - Present)',
+            'Dean\'s List, National University of Singapore (2019, 2020, 2021)',
+            'Best BIMx Award, Graphisoft (2020)',
+            'Director\'s List, Temasek Polytechnic (2014, 2015)'
         ],
         Featured_Publications: [
             (
@@ -351,12 +354,12 @@ const profiles = [
         Position: 'PhD Student',
         Biography: 'Connor Aucremanne is a second-year PhD student at the National University of Singapore (NUS) studying in the College of Design & Engineering\'s Department of the Built Environment. His primary research concerns the democratisation of virtual power plants for optimal monetisation and grid flexibility, as well as secondary projects revolving around digital twin development, resilient cooling, and decarbonisation. In the past, he also conducted valuable research during his time at the Pacific Northwest National Laboratory (PNNL), UCL, UF Center for Undergraduate Research, and Bob Graham Center for Public Service regarding net-zero energy and zero-carbon residential buildings, residential indoor soundscape perpcetion, Floridian residential rooftop solar PV, and Floridian climate change policy and public health. Through his passion, determination, and collaboration for his studies, Connor strives to answer the questions that no one has even thought of to ask. Outside of academia, he enjoys curating Spotify playlists of all genres (except country), rock climbing, collecting coffee table books, and appreciating (most) forms of expression throughout the arts.',
         Education: [
-            'PhD, National University of Singapore (NUS), Built Environment (current)',
+            'PhD, National University of Singapore (NUS), Built Environment (Current)',
             'MSc, University College London (UCL), Built Environment: Environmental Design and Engineering (2023)',
             'BSc (<i>summa cum laude</i>), University of Florida (UF), Sustainability and the Built Environment (w/ minors in Economics; Agricultural and Natural Resource Ethics & Policy) (2021)'
         ],
         Awards: [
-            'NUS Research Scholarship (Ring Fence Award), National University of Singapore (2023 - present)',
+            'NUS Research Scholarship (Ring Fence Award), National University of Singapore (2023 - Present)',
             'Bright Futures Academic Scholarship, University of Florida (2017 - 2021)',
             'Dean\'s List, University of Florida (2020, 2021)',
             'University Scholars Program Scholarship, University of Florida (2020 - 2021)',
@@ -390,11 +393,11 @@ const profiles = [
         Position: 'PhD Student',
         Biography: 'Kelly Loh Li Ting is an ambitious and dedicated individual who is a first-year PhD student at NUS CDE (National University of Singapore College of Design and Engineering). Recognized for her outstanding academic achievements and potential, Kelly has been awarded the esteemed President\'s Graduate Fellowship. Kelly\'s research endeavors revolve around exploring innovative uses for condensate collected from condensate recovery systems in Air Handling Units (AHU) to optimise building efficiency. With a strong passion for energy efficiency, she aims to contribute to the development of sustainable practices that enhance building performance and reduce environmental impact. In addition to her interest in energy efficiency, Kelly is deeply fascinated by the intersection of building finance and technology. She is particularly keen on leveraging Building Information Modelling (BIM) to analyze life cycle costs associated with building projects. By integrating financial considerations into the design and construction phases, Kelly envisions a future where buildings are not only energy-efficient but also economically sustainable. Kelly\'s long-term aspiration is to become a leading researcher and advocate in the field of sustainable building practices. She is determined to bridge the gap between academia and industry by translating research findings into practical solutions. By addressing the complex challenges of energy efficiency, building finance, and life cycle costs, Kelly aims to promote sustainable development and facilitate the creation of environmentally conscious built environments.',
         Education: [
-            'PhD, National University of Singapore (NUS), Built Environment (current)',
+            'PhD, National University of Singapore (NUS), Built Environment (Current)',
             'BSc (<i>Highest Distinction</i>), National University of Singapore (NUS), Project and Facilities Management (2023)'
         ],
         Awards: [
-            'NUS President\'s Graduate Fellowship, National University of Singapore (2023 - current)',
+            'NUS President\'s Graduate Fellowship, National University of Singapore (2023 - Present)',
             'Outstanding Case Submission of the NUS-CHS Case Competition, National University of Singapore (2021)'
         ],
         Featured_Publications: [],
@@ -421,7 +424,7 @@ const profiles = [
         Position: 'Research Associate',
         Biography: 'Rezky Nanda is a Research Associate in the Department of the Built Environment, National University of Singapore (NUS). His research focuses on the utilization of artificial intelligence to manage building energy systems, seeking the optimal balance between energy efficiency and occupant comfort. Previously, Rezky worked as an ESD Engineer at AfogreenBuild Pte Ltd, a green building consultant company. During his tenure at AfogreenBuild Pte Ltd, he assisted in several green building certification projects, such as GreenMark and LEED. Outside of work and research, Rezky is an avid reader. At the moment, he likes reading novels by Haruki Murakami, a renowned Japanese writer. Rezky is also fond of classical music and occasionally plays violin. His favourite composers are J.S. Bach and G.F. Händel.',
         Education: [
-            //'PhD, National University of Singapore (NUS), Built Environment (current)',
+            //'PhD, National University of Singapore (NUS), Built Environment (Current)',
             'MSc (<i>cum laude</i>), Institut Teknologi Bandung, Engineering Physics (2022)',
             'BSc (<i>cum laude</i>), Institut Teknologi Bandung, Engineering Physics (2021)'
         ],
@@ -453,35 +456,38 @@ const profiles = [
             'AI for Energy'
         ],
     },
-    /*{
+    {
         ProfileName: 'Jonathan',
         ProfileLink: "/profile/Jonathan",
         ProfilePic: JonathanPic,
         Name: 'Jonathan Poon',
-        Position: 'Research Engineer',
-        Biography: '',
+        Position: 'Research Assistant',
+        Biography: 'Jonathan Poon is a Research Assistant in the Department of the Built Environment at the National University of Singapore (NUS). His research focuses on building performance simulation and energy efficiency. Jonathan is engaged in exploring the feasibility of generating energy reference models that accurately represent buildings in high-density tropical climate cities. Out of the office, Jonathan is usually found volunteering in his church on the weekends or occasionally playing console games. His recent favourite is The Legend of Zelda: Tears of the Kingdom.',
         Education: [
-            'PhD, National University of Singapore (NUS), Built Environment (current)',
-            'BSc (<i>Highest Distinction</i>), National University of Singapore (NUS), Project and Facilities Management (w/ minors in Infrastructure Management; Finance) (2024)'
+            /*'PhD, National University of Singapore (NUS), Built Environment (Current)',*/
+            'BSc (<i>Highest Distinction</i>), National University of Singapore (NUS), Project and Facilities Management (w/ minor in Infrastructure & Finance Management) (2024)',
+            'Diploma (<i>Merit</i>), Temasek Polytechnic, Aerospace Engineering'
         ],
-        Awards: [],
+        Awards: [
+            'Dean\'s List, National University of Singapore (AY23/24 S1, AY22/23 S2)',
+            'CCA Merit (Leadership), Temasek Polytechnic (2016, 2017, 2018)',
+            'Director\'s List Award, Temasek Polytechnic (2017)'
+        ],
         Featured_Publications: [],
         Contacts: [
             //{ href: "tel:+65", icon: faPhone, text: "+65" },
-            { href: "mailto:@u.nus.edu", icon: faEnvelope, text: "@u.nus.edu" }
+            { href: "mailto:jpwj@nus.edu.sg", icon: faEnvelope, text: "jpwj@nus.edu.sg" }
         ],
         Links: [
             { href: JonathanCV, icon: faUser, text: 'CV' },
             { href: 'https://www.linkedin.com/in/jonathanpwj/', icon: faLinkedin, text: 'LinkedIn' },
         ],
         Interests: [
-            '',
-            '',
-            '',
-            '',
-            ''
+            'Building Performance Simulation',
+            'Building Energy Efficiency',
+            'Building Envelope Materials'
         ],
-    },*/
+    },
     /*{
         ProfileName: 'China1',
         ProfileLink: "/profile/China1",
@@ -490,7 +496,7 @@ const profiles = [
         Position: 'PhD Student',
         Biography: '',
         Education: [
-            'PhD, National University of Singapore (NUS), Built Environment (current)',
+            'PhD, National University of Singapore (NUS), Built Environment (Current)',
             ''
         ],
         Awards: [],
@@ -519,7 +525,7 @@ const profiles = [
         Position: 'PhD Student',
         Biography: '',
         Education: [
-            'PhD, National University of Singapore (NUS), Built Environment (current)',
+            'PhD, National University of Singapore (NUS), Built Environment (Current)',
             ''
         ],
         Awards: [],
@@ -549,7 +555,7 @@ const profiles = [
         Position2: 'China University of Geosciences (China)',
         Biography: 'Xiaorong Wang is a third-year PhD candidate in Surveying and Mapping Science and Technology, School of Geography and Information Engineering, China University of Geosciences (CUG). Her research interest is nature-based solutions for transition and practice of multi-scale urban green infrastructure governance. She is currently studying in the Building Robotics Lab as a visiting PhD candidate in the Department of the Built Environment, College of Design & Engineering, National University of Singapore (NUS). She has unique insights in answering the questions of how to achieve multi-objective, multi-criterion urban green infrastructure planning; how to incorporate humanism and environmental resilience into the assessment system of ecosystem services; and how to plan urban green infrastructure based on ecosystem services in a multi-dimensional perspective. In the past, she has been involved in various projects, such as geopark planning, ecological restoration planning, and resilient territorial spatial planning. She is now ready to get involved in lab projects as well, and she thinks this will be of great help to her research. Outside of her studies, Xiaorong Wang likes to be close to nature, such as hiking, and she has already learned about places in Singapore suitable for such.',
         Education: [
-            'PhD, China University of Geosciences (CUG), Surveying and Mapping Science and Technology (current)',
+            'PhD, China University of Geosciences (CUG), Surveying and Mapping Science and Technology (Current)',
             'MSc, China University of Geosciences (CUG), Geography (2019)',
             'BSc, China University of Geosciences (CUG), Geography (2016)'
         ],
@@ -582,7 +588,7 @@ const profiles = [
         Position2: 'Shahid Beheshti University (Iran)',
         Biography: 'Pegah Eshraghi is a fourth-year PhD candidate of Architecture (with Energy background) at Shahid Beheshti University, Tehran, Iran. She is an enthusiastic student in building energy modelling and the environmental effects of buildings on different scales. Pegah is also currently a research assistant at NUS (National University of Singapore), College of Design & Engineering, Department of the Built Environment. With a strong passion for energy conservation, Pegah\'s focus is to create a framework at the urban block scale with the help of machine learning and various energy and environmental metrics in order to achieve the best morphology and density distribution. In addition to her interest in energy efficiency, Pegah is deeply fascinated by the developing frameworks based on sustainable guidelines helping architects and urban planners easily evaluate their alternatives at the very early stages of design, and provide services such as designing, consultation, optimisation, giving international certificates and energy labels for energy, daylighting, thermal comfort, indoor environmental quality, etc. She believes using these frameworks will help people to make decisions faster and more conveniently to live in an eco-friendly environment.',
         Education: [
-            'PhD, Shahid Beheshti University (SBU), Buildings (current)',
+            'PhD, Shahid Beheshti University (SBU), Buildings (Current)',
             'MArch, Shahid Beheshti University (SBU), Building Engineering (2020)',
             'BArch (<i>First Class Honours</i>), Ferdowsi University of Mashhad (FUM), Architecture (2018)'
         ],
@@ -625,7 +631,7 @@ const profiles = [
         Position2: 'ETH Zürich (Switzerland)',
         Biography: 'Guillaume Lecronier is a master student at ETH Zürich (Swiss Federal Institute of Technology) in Mechanical Engineering and Robotics. Originally from France, he\'s visiting the lab in order to conduct his master thesis. His research focuses on indoor environment monitoring and involves the use of bluetooth low energy (BLE) technology in the scope of indoor positioning systems using a digital twin interface. Guillaume has a strong interest in IoT applications and is keen on working with sensors and integrating them into electronic prototyping setups, especially with platforms like Raspberry Pis. He enjoys the process of collecting valuable and meaningful data from these for innovative projects. In his free time, Guillaume enjoys running and fitness as well as travelling.',
         Education: [
-            'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Mechanical Engineering (current)',
+            'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Mechanical Engineering (2024)',
             'BSc, École Polytechnique Fédérale de Lausanne (EPFL), Mechanical Engineering (2021)'
         ],
         Awards: [],
@@ -657,7 +663,7 @@ const profiles = [
         Position2: 'ETH Zürich (Switzerland)',
         Biography: 'Pierre-Louis David is honoured to be a Master\'s candidate from ETH Zürich, specialising in Mechanical Engineering with a significant emphasis on Computer Science. Currently, he is in the midst of completing his thesis at the Building Robotics Lab in the Department of the Built Environment at the National University of Singapore, with a concentrated effort on optimising virtual power plants and pioneering methods to forecast energy prices using ML techniques. In his previous role at the esteemed Paul Scherrer Institut, he had the privilege to work with computer vision in the innovative Center for Proton Therapy. The objective was to refine segmentation techniques for patients afflicted with eye tumors, enhancing the efficacy of proton therapy and subsequently, improving patient recovery outcomes. Beyond his academic and professional pursuits, he takes a keen interest in marathon running, and values the moments he spends chatting with friends and colleagues.',
         Education: [
-            'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Mechanical Engineering and Computer Science (current)',
+            'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Mechanical Engineering and Computer Science (2024)',
             'BSc, École Polytechnique Fédérale de Lausanne (EPFL), Mechanical Engineering (2021)'
         ],
         Awards: [],
@@ -687,14 +693,14 @@ const profiles = [
         Position2: 'Hunan University (China)',
         Biography: 'Song is a final-year visiting PhD student at NUS, coming from Hunan University in China. His research focuses on building energy efficiency with advanced technology and innovative building envelope, such as building-integrated photovoltaics, light-transmitting concrete, and radiant cooling systems. In addition, he is curious about data science and other new technology and tries to integrate them with his research.',
         Education: [
-            'PhD, Hunan University (HNU), Heating, Ventilation and Air-Conditioning (HVAC) (current)',
+            'PhD, Hunan University (HNU), Heating, Ventilation and Air-Conditioning (HVAC) (Current)',
             'BEng, Hunan University (HNU), Building Environment and Energy Engineering (2018)'
         ],
         Awards: [
-            'China National Scholarship for Graduate Students, Ministry of Education of the People\'s Republic of China (2018, 2022)',
+            'China National Scholarship for Graduate Students, Ministry of Education of the People\'s Republic of China (2018 - Present)',
             'Presidential Scholarship for Doctoral Students, Hunan University (2021)',
-            'First-Class Graduate Student Scholarship, Hunan University (2019 - 2022)',
-            'Excellent Graduate Students of Hunan University, Hunan University (2019 - 2022)',
+            'First-Class Graduate Student Scholarship, Hunan University (2019, 2020, 2021, 2022)',
+            'Excellent Graduate Students of Hunan University, Hunan University (2019, 2020, 2021, 2022)',
             'Top Ten Graduate Students in College of Civil Engineering (academic performance and research achievements), Hunan University (2022)'
         ],
         Featured_Publications: [
@@ -732,7 +738,7 @@ const profiles = [
         Position2: 'Hunan University (China)',
         Biography: 'Hu Xinhao is a fourth-year PhD candidate from the Building Environment and Energy Application Department at Hunan University, P. R. China, and was a visiting student in Assistant Professor Ghahramani\'s group in the Department of the Built Environment at the National University of Singapore from January 2023 to January 2024. Her research focuses on thermal comfort and building energy efficiency, and her current research project is on the comfort characterising of indoor occupants with personal comfort systems under solar radiation.',
         Education: [
-            'PhD, Hunan University (HNU), Civil Engineering (current)',
+            'PhD, Hunan University (HNU), Civil Engineering (Current)',
             'MEng, Nanjing Normal University, Heating, Gas Supply, Ventilating and Air Conditioning Engineering (2020)',
             'BEng, Nanjing Normal University, Mechanical Engineering & Business English (2017)'
         ],
@@ -776,11 +782,12 @@ const profiles = [
         Position2: 'University of Manitoba (Canada)',
         Biography: 'Ilyas Dawoodjee is currently a MSc Mechanical Engineering student at University of Manitoba where he researches in the Intelligent Digital Manufacturing Laboratory (IDML). From April 2022 to December 2023, he served as a Research Engineer in the Building Robotics Lab. His area of research involved the detection of physiological measurements through machine vision. Some of his previous projects include object detection, data classification, image segmentation, and image classification. He is well-versed in multiple aspects of engineering ranging from CAD/CAM, SPICE simulations, sensors & actuators, control systems, microcontrollers, and PLC, with hands-on experience in them. However, his main passion is robotics integrated with machine vision and machine learning. He is an avid programmer who spends most of his free time coding and is always eager to learn new programming techniques and technologies. Outside of work, he likes to play games and is a fan of movies and TV series. He is a huge fan of educational YouTubers such as Veritasium, StuffMadeHere, 3Blue1Brown, VSauce, C.G.P. Grey, Minute Physics, and more.',
         Education: [
-            'MSc, University of Manitoba, Mechanical Engineering (current)',
+            'MSc, University of Manitoba, Mechanical Engineering (Current)',
             'BEng (<i>First Class Honours w/ Distinction</i>), Asia Pacific University (APU), Mechatronics Engineering (2022)'
         ],
         Awards: [
-            'International Graduate Student Entrance Scholarship (IGSES), University of Manitoba (current)',
+            'Graduate Fellowship, University of Manitoba (2024 - Present)',
+            'International Graduate Student Entrance Scholarship (IGSES), University of Manitoba (2024 - Present)',
             'AI4S Program Inception Recipient, Asia Pacific University (2022)',
             'Valedictorian, Asia Pacific University (2022)',
             'Outstanding Achievement Award, Asia Pacific University (2022)'
@@ -812,7 +819,7 @@ const profiles = [
         Position2: 'Harbin Insitute of Technology (China)',
         Biography: 'Qi Xuanning is currently pursuing a doctoral degree in architecture at the Harbin Institute of Technology, and was a visiting PhD candidate at the National University of Singapore from August 2022 to August 2023. She is also a student member of the Architectural Society of China. In her academic career, she has published five papers in academic conferences and journals, and has contributed to the compilation of ‘Unified Standard for Civil Building Design Illustrations’ (20J813). In addition, she has been granted three invention patents and one utility model patent. QI Xuanning has also participated in the design of over ten architectural projects and was recognized with the third-place prize in the architectural survey and design competition in Heilongjiang Province in 2022. Her research interests include computational design, daylight design, occupant behaviour, and visual cognition. In her free time, QI Xuanning enjoys exploring new cities and experiencing different cultures. She also likes to engage in outdoor activities, such as hiking and cycling, which inspire her to think creatively about the relationship between architecture and the natural environment.',
         Education: [
-            'PhD, Harbin Institute of Technology, Architecture Design and Theory (current)',
+            'PhD, Harbin Institute of Technology, Architecture Design and Theory (Current)',
             'BArch, Central South University, Architecture Design and Theory (2018)'
         ],
         Awards: [

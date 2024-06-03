@@ -23,7 +23,7 @@ import IqbalPic from './../components/Website Individual Information/Iqbal/image
 import ConnorPic from './../components/Website Individual Information/Connor/image.jpg';
 import KellyPic from './../components/Website Individual Information/Kelly/image.jpg';
 import RezkyPic from './../components/Website Individual Information/Rezky/Image.jpeg';
-//import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpeg';
+import JonathanPic from './../components/Website Individual Information/Untitled.jpeg';
 //import China1Pic from './../components/Website Individual Information/China1/image.jpeg';
 //import China2Pic from './../components/Website Individual Information/China2/image.jpeg';
 import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
@@ -102,13 +102,13 @@ function Our_Team() {
             imgSrc: RezkyPic,
             link: 'Rezky'
         },
-        /*{
+        {
             name: 'Jonathan Poon',
-            role: 'Research Engineer',
-            skills: '',
+            role: 'Research Assistant',
+            skills: 'Building Performance Simulation; Building Energy Efficiency; Building Envelope Materials',
             imgSrc: JonathanPic,
             link: 'Jonathan'
-        },*/
+        },
         /*{
             name: 'China1',
             role: 'PhD Student',
