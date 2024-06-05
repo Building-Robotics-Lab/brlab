@@ -14,13 +14,12 @@ import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-s
 //import KateNews from './../components/Website Data/kate_pub2.png'
 //import China2Pic from './../components/Website Individual Information/China2/image.jpeg';
 //import China1Pic from './../components/Website Individual Information/China1/image.jpeg';
+import TeamNews4 from './../components/Website Individual Information/Team/WCS2024.jpeg';
 import JonathanNews from './../components/Website Individual Information/Untitled.jpeg'
 import IqbalNews from './../components/Website Data/iqbal-publication3.jpg'
 import RezkyNews from './../components/Website Individual Information/Rezky/Image.jpeg'
 import TeamNews3 from './../components/Website Individual Information/Team/RitaStreblow.jpeg';
 import TeamNews2 from './../components/Website Individual Information/Team/DennisKnight.jpeg';
-import KeshavNews from './../components/Website Individual Information/Keshav/image.jpeg'
-import XiaorongNews from './../components/Website Individual Information/Xiaorong/image.jpeg'
 
 const slides = [
     //6 most-recent news
@@ -43,6 +42,12 @@ const slides = [
         link: 'EighthNewsSection',
     },*/
     {
+        image: TeamNews4,
+        title: '<b>Iqbal at the World Cities Summit (WCS) 2024!</b>',
+        date: '05/06/2024',
+        link: 'EighthNewsSection',
+    },
+    {
         image: JonathanNews,
         title: '<b>Please welcome Jonathan Poon to the lab!</b>',
         date: '20/05/2024',
@@ -58,7 +63,7 @@ const slides = [
         image: RezkyNews,
         title: '<b>Please welcome Rezky Nanda to the lab!</b>',
         date: '04/03/2024',
-        link: 'EighthNewsSection',
+        link: 'SeventhNewsSection',
     },
     {
         image: TeamNews3,
@@ -70,12 +75,6 @@ const slides = [
         image: TeamNews2,
         title: '<b>A visit by Dennis Knight!</b>',
         date: '21/02/2024',
-        link: 'SeventhNewsSection',
-    },
-    {
-        image: KeshavNews,
-        title: '<b>Please welcome Keshav Kausik to the lab!</b>',
-        date: '05/02/2024',
         link: 'SeventhNewsSection',
     },
 ];

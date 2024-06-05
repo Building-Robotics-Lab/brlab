@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 //import KatePublication2 from './../components/Website Data/kate_pub2.png';
 //import China2Pic from './../components/Website Individual Information/China2/image.jpeg';
 //import China1Pic from './../components/Website Individual Information/China1/image.jpeg';
+import WCS from './../components/Website Individual Information/Team/WCS2024.jpeg';
 import JonathanPic from './../components/Website Individual Information/Untitled.jpeg';
 import IqbalPublication3 from './../components/Website Data/iqbal-publication3.jpg'
 import RezkyPic from './../components/Website Individual Information/Rezky/Image.jpeg';
@@ -139,6 +140,19 @@ function News() {
             sectionName: 'EighthNewsSection'
         },*/
         {
+            NewsSectionName: 'WCS',
+            imageSrc: WCS,
+            altText: "A small group discussing research on an unseeable television screen.",
+            date: '05/06/2024',
+            title: 'Iqbal at the World Cities Summit (WCS) 2024!',
+            content: (
+                <>
+                    Over the past several days, our PhD Student, <Link to="/profile/Iqbal"><b>Iqbal Shah</b></Link>, did a wonderful job representing both our lab and NUS at the <Link to="https://www.worldcitiessummit.com.sg/"><b>World Cities Summit (WCS) 2024</b></Link> as he showcased our research on the Human-Centric Smart Built Environment for Future Cities to public and private attendees. A sincere appreciation goes to <Link to="https://cde.nus.edu.sg/nuscities/"><b>NUS Cities</b></Link> for inviting us and providing the opportunity to present in their booth. See the full LinkedIn post <Link to="https://www.linkedin.com/feed/update/urn:li:activity:7203957876317450240"><b>here</b></Link>.
+                </>
+            ),
+            sectionName: 'EighthNewsSection'
+        },
+        {
             NewsSectionName: 'Jonathan',
             imageSrc: JonathanPic,
             altText: "A headshot of Jonathan Poon.",
@@ -175,7 +189,7 @@ function News() {
                     The Building Robotics Lab is happy to have Rezky joining us as a Research Associate in the Department of the Built Environment after he recently completed his MSc in Engineering Physics at Institut Teknologi Bandung. His research revolves around smart buildings, thermal comfort, building energy efficiency, and AI for energy. Check out his full profile <Link to="/profile/Rezky"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'EighthNewsSection'
+            sectionName: 'SeventhNewsSection'
         },
         {
             NewsSectionName: 'RitaStreblow',
@@ -214,7 +228,7 @@ function News() {
                     The Building Robotics Lab is happy to have Keshav joining us as a postdoctoral scholar after he recently completed his PhD in Computer Science & Information Systems at Birla Institute of Technology and Science (BITS), Pilani. His research revolves around IoT for building systems, sustainable buildings, AI-enabled building management, and optimal control. Check out his full profile <Link to="/profile/Keshav"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'SeventhNewsSection'
+            sectionName: 'SixthNewsSection'
         },
         {
             NewsSectionName: 'Xiaorong',
@@ -253,7 +267,7 @@ function News() {
                     The Building Robotics Lab is happy to have Heng joining us as a postdoctoral scholar after he recently completed his PhD in Architecture/Building Technology at Shanghai Jiao Tong University (SJTU). His research revolves around thermal comfort, human well-being, environmental sustainability, smart buildings, and data-driven models. Check out his full profile <Link to="/profile/Heng"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'SixthNewsSection'
+            sectionName: 'FifthNewsSection'
         },
         {
             NewsSectionName: 'KaiPublication2',
@@ -292,7 +306,7 @@ function News() {
                     <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/porous_plant_form-induced"><b>Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems</b></Link>. A few of the highlights include the finding that porous plant growth form in VGS amplifies cooling effect by up to 1°C within 800 mm, a negative VGS façade heat flux of -2.32 W/m2 was achieved with porous plant growth form, and there was a 16% higher rate of evaporative cooling from growing media found in porous VGS. Congratulations everyone!
                 </>
             ),
-            sectionName: 'FifthNewsSection'
+            sectionName: 'FourthNewsSection'
         },
         {
             NewsSectionName: 'Guillaume',
@@ -331,7 +345,7 @@ function News() {
                     Dr. Kate Sangwon Lee, Asst Prof Lee, <Link to="/profile/Connor"><b>Connor</b></Link>, <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/towards_democratization_of"><b>Towards democratization of digital twins: Design principles for transformation into a human-building interface</b></Link>. They developed design principles for a digital twin as an occupant-building interface, discovered occupants' needs for informed decision-making through digital twins, and included occupants as end users od digital twins for occupant-centric buildings. Congratulations everyone!
                 </>
             ),
-            sectionName: 'FourthNewsSection'
+            sectionName: 'ThirdhNewsSection'
         },
         {
             NewsSectionName: 'Pegah',
@@ -370,7 +384,7 @@ function News() {
                     The Building Robotics Lab is happy to have Kelly joining us as a PhD student in the Department of the Built Environment after she recently completed her BSc in Project and Facilities Management at NUS. Her research revolves around building energy efficiency, building greenery, building finance, and building information modelling. Check out her full profile <Link to="/profile/Kelly"><b>here</b></Link> to get to know her more!
                 </>
             ),
-            sectionName: 'ThirdNewsSection'
+            sectionName: 'SecondNewsSection'
         },
         {
             NewsSectionName: 'Xiaosong',
@@ -409,7 +423,7 @@ function News() {
                     The Building Robotics Lab is happy to have Connor joining us as a PhD student in the Department of the Built Environment after he recently completed his MSc in Built Environment: Environmental Design and Engineering at UCL in the Bartlett Faculty of the Built Environment. His research revolves around virtual power plants, building-occupant network dynamics, smart buildings, human-building interaction, and decarbonisation. Check out his full profile <Link to="/profile/Connor"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'SecondNewsSection'
+            sectionName: 'FirstNewsSection'
         },
         {
             NewsSectionName: 'IqbalPublication',
