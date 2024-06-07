@@ -565,8 +565,8 @@ function OTST() {
                         <h3>For source code and to report bugs</h3>
                         <div className="Github_stuff">
                             <div className="GitHub_Code">
-                                <b><a className='icon' href="https://github.com/Building-Robotics-Lab/brlab" rel="noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a></b>
-                                <b><a className='text' href="https://github.com/Building-Robotics-Lab/brlab" rel="noreferrer" target="_blank">Code</a></b>
+                                <b><a className='icon' href="https://github.com/Building-Robotics-Lab/brlab/blob/main/src/pages/OTST.js" rel="noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a></b>
+                                <b><a className='text' href="https://github.com/Building-Robotics-Lab/brlab/blob/main/src/pages/OTST.js" rel="noreferrer" target="_blank">Code</a></b>
                             </div>
                             <div className="GitHub_Bugs">
                                 <b><a className='icon' href="https://github.com/Building-Robotics-Lab/brlab/issues/new" rel="noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub} /></a></b>
