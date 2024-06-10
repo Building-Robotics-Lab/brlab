@@ -145,7 +145,8 @@ function Publications() {
         'Iqbal Shah',
         'Connor Aucremanne',
         'Ilyas Dawoodjee',
-        "Qi Xuanning"
+        'Qi Xuanning',
+        'Su Xiaosong'
     ];
 
     const getAllDataBasedOnType = () => {
@@ -260,6 +261,7 @@ function Publications() {
         { value: 5, label: 'Connor Aucremanne' },
         { value: 6, label: 'Ilyas Dawoodjee' },
         { value: 7, label: 'Qi Xuanning' },
+        { value: 8, label: 'Su Xiaosong' }
     ];
     const [pubauthor, setPubauthor] = useState([publication_author[0]]);
     const publicationAuthor = (selectedOptions) => {
