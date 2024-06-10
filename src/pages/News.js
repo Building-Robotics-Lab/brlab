@@ -11,9 +11,9 @@ import { Link } from 'react-router-dom';
 //import China2Pic from './../components/Website Individual Information/China2/image.jpeg';
 //import China1Pic from './../components/Website Individual Information/China1/image.jpeg';
 import WCS from './../components/Website Individual Information/Team/WCS2024.jpeg';
-import JonathanPic from './../components/Website Individual Information/Untitled.jpeg';
+import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpg';
 import IqbalPublication3 from './../components/Website Data/iqbal-publication3.jpg'
-import RezkyPic from './../components/Website Individual Information/Rezky/Image.jpeg';
+import RezkyPic from './../components/Website Individual Information/Rezky/image.jpeg';
 import RitaStreblow from './../components/Website Individual Information/Team/RitaStreblow.jpeg';
 import DennisKnight from './../components/Website Individual Information/Team/DennisKnight.jpeg';
 import KeshavPic from './../components/Website Individual Information/Keshav/image.jpeg';
