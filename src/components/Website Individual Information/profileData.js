@@ -28,8 +28,8 @@ import RezkyCV from './Rezky/CV.pdf'
 import JonathanPic from './Jonathan/image.jpg'
 import JonathanCV from './Jonathan/CV.pdf'
 
-//import China1 from './China1/image.jpeg'
-//import China1CV from './China1/CV.pdf'
+//import HuanxiangPic from './Website Individual Information/Untitled.jpeg'
+//import HuanxiangCV from './Huanxiang/CV.pdf'
 
 //import China2 from './China2/image.jpeg'
 //import China2CV from './China2/CV.pdf'
@@ -111,8 +111,6 @@ const profiles = [
             )
         ],
         Contacts: [
-            //{ href: "tel:+6580446551", icon: faPhone, text: "+65 8044 6551" },
-            { href: "mailto:r.talami@nus.edu.sg", icon: faEnvelope, text: "r.talami@nus.edu.sg" }
         ],
         Links: [
             { href: RiccardoCV, icon: faUser, text: 'CV' },
@@ -176,8 +174,6 @@ const profiles = [
             )
         ],
         Contacts: [
-            /*{ href: "tel:+6591216046", icon: faPhone, text: "+65 9121 6046" },
-            { href: "tel:+8615200323707", icon: faPhone, text: "+86 152 0032 3707" },*/
             { href: "mailto:duheng@nus.edu.sg", icon: faEnvelope, text: "duheng@nus.edu.sg" }
         ],
         Links: [
@@ -232,7 +228,6 @@ const profiles = [
             ),
         ],
         Contacts: [
-            //{ href: "tel:+919999931905", icon: faPhone, text: "+91 99 9993 1905" },
             { href: "mailto:keshav@nus.edu.sg", icon: faEnvelope, text: "keshav@nus.edu.sg" }
         ],
         Links: [
@@ -276,7 +271,6 @@ const profiles = [
            
         ],
         Contacts: [
-            //{ href: "tel:+6590503813", icon: faPhone, text: "+65 9050 3813" },
             { href: "mailto:e0918494@u.nus.edu", icon: faEnvelope, text: "e0918494@u.nus.edu" }
         ],
         Links: [
@@ -329,7 +323,6 @@ const profiles = [
             ),
         ],
         Contacts: [
-            //{ href: "tel:+6581126774", icon: faPhone, text: "+65 8112 6774" },
             { href: "mailto:iqbal_shah@u.nus.edu", icon: faEnvelope, text: "iqbal_shah@u.nus.edu" }
         ],
         Links: [
@@ -367,8 +360,6 @@ const profiles = [
         ],
         Featured_Publications: [],
         Contacts: [
-            /*{ href: "tel:+6590969616", icon: faPhone, text: "+65 9096 9616" },
-            { href: "tel:+1(317)3789409", icon: faPhone, text: "+1 317 378 9409" },*/
             { href: "mailto:aucremanne@u.nus.edu", icon: faEnvelope, text: "aucremanne@u.nus.edu" }
         ],
         Links: [
@@ -402,7 +393,6 @@ const profiles = [
         ],
         Featured_Publications: [],
         Contacts: [
-            //{ href: "tel:+6598356852", icon: faPhone, text: "+65 9835 6852" },
             { href: "mailto:kelly_loh_li_ting@u.nus.edu", icon: faEnvelope, text: "kelly_loh_li_ting@u.nus.edu" }
         ],
         Links: [
@@ -439,7 +429,6 @@ const profiles = [
                 </>
         ],
         Contacts: [
-            //{ href: "tel:+6586714876", icon: faPhone, text: "+65 8671 4876" },
             { href: "mailto:rezkymn@u.nus.edu", icon: faEnvelope, text: "rezkymn@u.nus.edu" }
         ],
         Links: [
@@ -456,6 +445,36 @@ const profiles = [
             'AI for Energy'
         ],
     },
+    /*{
+        ProfileName: 'Huanxiang',
+        ProfileLink: "/profile/Huanxiang",
+        ProfilePic: HuanxiangPic,
+        Name: 'Huanxiang Gao',
+        Position: 'Research Associate',
+        Biography: '',
+        Education: [
+            /*'PhD, National University of Singapore (NUS), Built Environment (Current)',*//*
+            ''
+        ],
+        Awards: [],
+        Featured_Publications: [],
+        Contacts: [
+            { href: "mailto:h.x.gao@nus.edu.sg", icon: faEnvelope, text: "h.x.gao@nus.edu.sg" }
+        ],
+        Links: [
+            { href: HuanxiangCV, icon: faUser, text: 'CV' },
+            { href: 'https://scholar.google.com/citations?user=bUKuJ5sAAAAJ&hl=zh-CN', icon: faGoogle, text: 'Google Scholar' },
+            { href: 'https://www.researchgate.net/profile/Huanxiang-Gao', icon: faResearchgate, text: 'ResearchGate' },
+            { href: 'https://www.linkedin.com/in/China1/', icon: faLinkedin, text: 'LinkedIn' },
+        ],
+        Interests: [
+            'Thermal Comfort',
+            '',
+            '',
+            '',
+            ''
+        ],
+    },*/
     {
         ProfileName: 'Jonathan',
         ProfileLink: "/profile/Jonathan",
@@ -475,7 +494,6 @@ const profiles = [
         ],
         Featured_Publications: [],
         Contacts: [
-            //{ href: "tel:+65", icon: faPhone, text: "+65" },
             { href: "mailto:jpwj@nus.edu.sg", icon: faEnvelope, text: "jpwj@nus.edu.sg" }
         ],
         Links: [
@@ -488,35 +506,6 @@ const profiles = [
             'Building Envelope Materials'
         ],
     },
-    /*{
-        ProfileName: 'China1',
-        ProfileLink: "/profile/China1",
-        ProfilePic: China1Pic,
-        Name: 'China1',
-        Position: 'PhD Student',
-        Biography: '',
-        Education: [
-            'PhD, National University of Singapore (NUS), Built Environment (Current)',
-            ''
-        ],
-        Awards: [],
-        Featured_Publications: [],
-        Contacts: [
-            //{ href: "tel:+65", icon: faPhone, text: "+65" },
-            { href: "mailto:@u.nus.edu", icon: faEnvelope, text: "@u.nus.edu" }
-        ],
-        Links: [
-            { href: China1CV, icon: faUser, text: 'CV' },
-            { href: 'https://www.linkedin.com/in/China1/', icon: faLinkedin, text: 'LinkedIn' },
-        ],
-        Interests: [
-            '',
-            '',
-            '',
-            '',
-            ''
-        ],
-    },*/
     /*{
         ProfileName: 'China2',
         ProfileLink: "/profile/China2",
@@ -531,7 +520,6 @@ const profiles = [
         Awards: [],
         Featured_Publications: [],
         Contacts: [
-            //{ href: "tel:+65", icon: faPhone, text: "+65" },
             { href: "mailto:@u.nus.edu", icon: faEnvelope, text: "@u.nus.edu" }
         ],
         Links: [
@@ -567,7 +555,6 @@ const profiles = [
         ],
         Featured_Publications: [],
         Contacts: [
-            //{ href: "tel:+6585476448", icon: faPhone, text: "+65 8547 6448" },
             { href: "mailto:wang.xiaorong@u.nus.edu", icon: faEnvelope, text: "wang.xiaorong@u.nus.edu" }
         ],
         Links: [
@@ -606,8 +593,6 @@ const profiles = [
             ),
         ],
         Contacts: [
-            /*{ href: "tel:+6581597168", icon: faPhone, text: "+65 8159 7168" },
-            { href: "mailto:pegah.es@nus.edu.sg", icon: faEnvelope, text: "pegah.es@nus.edu.sg" }*/
         ],
         Links: [
             { href: PegahCV, icon: faUser, text: 'CV' },
@@ -637,9 +622,6 @@ const profiles = [
         Awards: [],
         Featured_Publications: [],
         Contacts: [
-            /*{ href: "tel:+6589185944", icon: faPhone, text: "+65 8918 5944" },
-            { href: "tel:+33761091396", icon: faPhone, text: "+33 (0) 7 61 09 13 96" },
-            { href: "mailto:glecronier@u.nus.edu", icon: faEnvelope, text: "glecronier@u.nus.edu" },*/
             { href: "mailto:glecronier@me.com", icon: faEnvelope, text: "glecronier@me.com" }
         ],
         Links: [
@@ -669,8 +651,6 @@ const profiles = [
         Awards: [],
         Featured_Publications: [],
         Contacts: [
-            /*{ href: "tel:+33(0)778434608", icon: faPhone, text: "+33 (0) 7 78 43 46 08" },
-            { href: "mailto:pierre.louis.david@u.nus.edu", icon: faEnvelope, text: "pierre.louis.david@u.nus.edu" },*/
             { href: "mailto:pidavid@student.ethz.ch", icon: faEnvelope, text: "pidavid@student.ethz.ch" }
         ],
         Links: [
@@ -761,7 +741,6 @@ const profiles = [
             ),
         ],
         Contacts: [
-            //{ href: "tel:+8615605188905", icon: faPhone, text: "+86 156 0518 8905" },
             { href: "mailto:xinhaohu@outlook.com", icon: faEnvelope, text: "xinhaohu@outlook.com" }
         ],
         Links: [

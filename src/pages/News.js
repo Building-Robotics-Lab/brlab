@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 //import KatePublication2 from './../components/Website Data/kate_pub2.png';
 //import China2Pic from './../components/Website Individual Information/China2/image.jpeg';
-//import China1Pic from './../components/Website Individual Information/China1/image.jpeg';
+//import HuanxiangPic from './../components/Website Individual Information/Untitled.jpeg';
 import WCS from './../components/Website Individual Information/Team/WCS2024.jpeg';
 import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpg';
 import IqbalPublication3 from './../components/Website Data/iqbal-publication3.jpg'
@@ -114,7 +114,7 @@ function News() {
             sectionName: 'NinthNewsSection'
         },*/
         /*{
-            NewsSectionName: 'China1',
+            NewsSectionName: 'China2',
             imageSrc: China2Pic,
             altText: "A headshot of China2.",
             date: '29/01/2024',
@@ -127,14 +127,14 @@ function News() {
             sectionName: 'EighthNewsSection'
         },*/
         /*{
-            NewsSectionName: 'China1',
-            imageSrc: China1Pic,
-            altText: "A headshot of China1.",
-            date: '29/01/2024',
-            title: 'Please welcome China1 to the lab!',
+            NewsSectionName: 'Huanxiang',
+            imageSrc: HuanxiangPic,
+            altText: "A headshot of Huanxiang Gao.",
+            date: '18/06/2024',
+            title: 'Please welcome Huanxiang Gao to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have China1 joining us as a PhD student in the Department of the Built Environment after he recently completed his . His research revolves around. Check out his full profile <Link to="/profile/China1"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Huanxiang joining us as a Research Associate before he begins his PhD in the fall within the Department of the Built Environment after he recently completed his . His research revolves around. Check out his full profile <Link to="/profile/Huanxiang"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'EighthNewsSection'

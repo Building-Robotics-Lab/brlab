@@ -36,9 +36,9 @@ const slides = [
         link: 'EighthNewsSection',
     },*/
     /*{
-        image: China1News,
-        title: '<b>Please welcome China1 to the lab!</b>',
-        date: '//2024',
+        image: HuanxiangNews,
+        title: '<b>Please welcome Huanxiang Gao to the lab!</b>',
+        date: '18/06/2024',
         link: 'EighthNewsSection',
     },*/
     {
