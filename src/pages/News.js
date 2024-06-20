@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 //import KatePublication2 from './../components/Website Data/kate_pub2.png';
 //import China2Pic from './../components/Website Individual Information/China2/image.jpeg';
-//import HuanxiangPic from './../components/Website Individual Information/Untitled.jpeg';
+import HuanxiangPic from './../components/Website Individual Information/Untitled.jpeg';
 import WCS from './../components/Website Individual Information/Team/WCS2024.jpeg';
 import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpg';
 import IqbalPublication3 from './../components/Website Data/iqbal-publication3.jpg'
@@ -126,7 +126,7 @@ function News() {
             ),
             sectionName: 'EighthNewsSection'
         },*/
-        /*{
+        {
             NewsSectionName: 'Huanxiang',
             imageSrc: HuanxiangPic,
             altText: "A headshot of Huanxiang Gao.",
@@ -134,11 +134,11 @@ function News() {
             title: 'Please welcome Huanxiang Gao to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Huanxiang joining us as a Research Associate before he begins his PhD in the fall within the Department of the Built Environment after he recently completed his . His research revolves around. Check out his full profile <Link to="/profile/Huanxiang"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Huanxiang joining us as a Research Associate before he begins his PhD in the fall within the Department of the Built Environment after he recently completed his MEng in Civil and Environmental Engineering at Harbin Institute of Technology. His research revolves around computer vision, thermal comfort, and energy conservation. Check out his full profile <Link to="/profile/Huanxiang"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'EighthNewsSection'
-        },*/
+        },
         {
             NewsSectionName: 'WCS',
             imageSrc: WCS,
@@ -176,7 +176,7 @@ function News() {
                     <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/profile/Xiaosong"><b>Song</b></Link>, <Link to="/profile/Riccardo"><b>Riccardo</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/enhancing_building_envelopes:" ><b>Enhancing Building Envelopes: Parametric Analysis of Shading Systems for Opaque Facades and Their Comparison with Cool Paints</b></Link>. Their study undertook an extensive parametric simulation, taking into account variables such as shading configurations, cool paints with varying facade solar absorbance values, facade orientation, diverse climates, and different building typologies. Ultimately, they found that shading on opaque facades alone could reduce cooling loads by 8-28%, cool paints on opaque facades alone could reduce cooling loads by 10-35%, and the combined use of shading and cool paint further reduces cooling loads by 10-40%. Congratulations to you all!
                 </>
             ),
-            sectionName: 'EighthNewsSection'
+            sectionName: 'SeventhNewsSection'
         },
         {
             NewsSectionName: 'Rezky',
@@ -215,7 +215,7 @@ function News() {
                     It was a pleasure to host <Link to="https://www.ashrae.org/professional-development/learning-portal/instructor-led-training/ashrae-instructors/dennis-knight"><b>Dennis Knight</b></Link>, the incoming <Link to="https://www.ashrae.org/"><b>ASHRAE</b></Link> President, in our living lab all the way from the United States for a discussion about the research projects we are conducting before he delivered his presentation, "Health and Wellness in the Built Environment," for the ASHRAE Singapore Chapter Distinguished Lecturer Event. Thank you very much for your time and thank you to Professor Chandra Sekhar for connecting us!
                 </>
             ),
-            sectionName: 'SeventhNewsSection'
+            sectionName: 'SixthNewsSection'
         },
         {
             NewsSectionName: 'Keshav',
@@ -254,7 +254,7 @@ function News() {
                     Our team was able to gather at Bukit Timah Nature Reserve to swap out our usual lab setting for some deserving time outdoors as we bid farewell to our three visiting students: <Link to="/profile/Pierre"><b>Pierre-Louis</b></Link>, <Link to="/profile/Guillaume"><b>Guillaume</b></Link>, and <Link to="/profile/Pegah"><b>Pegah</b></Link>! The former two have now completed their excellent MSc dissertations for ETH Zürich on advanced reinforcement learning strategies for power trading in smart grids and indoor positioning systems using Bluetooth LE and machine vision, and the latter is returning to Shahid Beheshti University to complete the final year of her PhD thesis on optimal distribution of urban density. Thank you to all three for spending time with us and good luck to you all in your future endeavours!
                 </>
             ),
-            sectionName: 'SixthNewsSection'
+            sectionName: 'FifthNewsSection'
         },
         {
             NewsSectionName: 'Heng',
@@ -293,7 +293,7 @@ function News() {
                     <Link to="/profile/Riccardo"><b>Riccardo</b></Link>, <Link to="/profile/Ilyas"><b>Ilyas</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/quantifying_energy_savings"><b>Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns</b></Link>. They investigated three fixed and optimal setpoint and setback selection strategies. They found that fixed setpoint achieves 5.48% energy reduction due to lower occupant head loads and an additional 11.80% energy savings are obtained from incorporating fixed setbacks. Overall, the optimal selection of setpoint and setback provides additional 34-38% energy savings. Congratulations everyone!
                 </>
             ),
-            sectionName: 'FifthNewsSection'
+            sectionName: 'FourthNewsSection'
         },
         {
             NewsSectionName: 'IqbalPublication2',
@@ -332,7 +332,7 @@ function News() {
                     The Building Robotics Lab is happy to have Pierre-Louis joining us from Switzerland as a visiting MSc student at ETH Zürich studying Mechanical Engineering and Computer Science in the Department of Mechanical and Process Engineering. His research revolves around machine learning, optimisation, computer vision, and energy. Check out his full profile <Link to="/profile/Pierre"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'FourthNewsSection'
+            sectionName: 'ThirdNewsSection'
         },
         {
             NewsSectionName: 'KatePublication1',
@@ -371,7 +371,7 @@ function News() {
                     <Link to="/profile/Riccardo"><b>Riccardo</b></Link>, <Link to="/profile/Ilyas"><b>Ilyas</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/demystifying_energy_savings"><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. They found that both fixed and dynamic setpoints ensure 2-4% energy reduction due to lower heat generated by occupants at lower occupancy rates. However, at outdoor temperatures ranging from 5°C to 32°C, where occupant heat loads can shift the building between heating, free-running, and cooling modes, dynamic setpoints can achieve additional 2-10% energy savings compared to fixed setpoints. Congratulations everyone!
                 </>
             ),
-            sectionName: 'ThirdNewsSection'
+            sectionName: 'SecondNewsSection'
         },
         {
             NewsSectionName: 'Kelly',
@@ -410,7 +410,7 @@ function News() {
                     <Link to="/profile/Kai"><b>Kai</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/personal_thermal_comfort"><b>Personal thermal comfort models based on physiological measurements -- A design of experiments based review</b></Link>. This study aims to provide a systematic, comprehensive, and DOE-framework-based review of the physiological sensing methods to predict personal thermal comfort. This is Kai's inaugural first-author article! Chapeau!
                 </>
             ),
-            sectionName: 'SecondNewsSection'
+            sectionName: 'FirstNewsSection'
         },
         {
             NewsSectionName: 'Connor',

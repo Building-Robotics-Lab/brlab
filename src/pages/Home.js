@@ -13,7 +13,7 @@ import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-s
 
 //import KateNews from './../components/Website Data/kate_pub2.png'
 //import China2Pic from './../components/Website Individual Information/China2/image.jpeg';
-//import China1Pic from './../components/Website Individual Information/China1/image.jpeg';
+import HuanxiangNews from './../components/Website Individual Information/Untitled.jpeg';
 import TeamNews4 from './../components/Website Individual Information/Team/WCS2024_news.jpeg';
 import JonathanNews from './../components/Website Individual Information/Jonathan/image_news.jpg'
 import IqbalNews from './../components/Website Data/iqbal-publication3_news.jpg'
@@ -35,12 +35,12 @@ const slides = [
         date: '//2024',
         link: 'EighthNewsSection',
     },*/
-    /*{
+    {
         image: HuanxiangNews,
         title: '<b>Please welcome Huanxiang Gao to the lab!</b>',
         date: '18/06/2024',
         link: 'EighthNewsSection',
-    },*/
+    },
     {
         image: TeamNews4,
         title: '<b>Iqbal at the World Cities Summit (WCS) 2024!</b>',
@@ -70,13 +70,7 @@ const slides = [
         title: '<b>A visit by Prof. Dr.-Ing. Rita Streblow and Felix Rehmann!</b>',
         date: '29/02/2024',
         link: 'SeventhNewsSection',
-    },
-    {
-        image: TeamNews2,
-        title: '<b>A visit by Dennis Knight!</b>',
-        date: '21/02/2024',
-        link: 'SeventhNewsSection',
-    },
+    }
 ];
 
 function Home() {

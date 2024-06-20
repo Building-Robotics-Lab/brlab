@@ -28,8 +28,8 @@ import RezkyCV from './Rezky/CV.pdf'
 import JonathanPic from './Jonathan/image.jpg'
 import JonathanCV from './Jonathan/CV.pdf'
 
-//import HuanxiangPic from './Website Individual Information/Untitled.jpeg'
-//import HuanxiangCV from './Huanxiang/CV.pdf'
+import HuanxiangPic from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
+import HuanxiangCV from './Huanxiang/CV.pdf'
 
 //import China2 from './China2/image.jpeg'
 //import China2CV from './China2/CV.pdf'
@@ -445,19 +445,44 @@ const profiles = [
             'AI for Energy'
         ],
     },
-    /*{
+    {
         ProfileName: 'Huanxiang',
         ProfileLink: "/profile/Huanxiang",
         ProfilePic: HuanxiangPic,
         Name: 'Huanxiang Gao',
         Position: 'Research Associate',
-        Biography: '',
+        Biography: 'Gao Huanxiang is a Research Assosiate at the National University of Singapore - Department of the Built Environment and is currently engaged in research that focuses on applying computer vision to improve thermal comfort and energy conservation in HVAC systems. He is engaged in exploring novel computer vision algorithms that can effectively and non-invasively capture features of occupants and analyze their thermal requirements. Out of the office, he likes playing badminton.',
         Education: [
-            /*'PhD, National University of Singapore (NUS), Built Environment (Current)',*//*
-            ''
+            /*'PhD, National University of Singapore (NUS), Built Environment (Current)',*/
+            'MEng, Harbin Institute of Technology, Civil and Environmental Engineering (2024)',
+            'BEng, Nanchang University, Civil Engineering (2021)'
         ],
-        Awards: [],
-        Featured_Publications: [],
+        Awards: [
+            'First Prize of University Scholarship, Harbin Institute of Technology (2021 - 2023)',
+            'First Prize of University Scholarship, Nanchang University (2017 - 2021)'
+        ],
+        Featured_Publications: [
+            (
+                <>
+                    <b>Gao, H.</b>, Hu, G., Zhang, D., Jiang, W., Tse, K.T., Kwok, K.C.S. and Kareem, A., 2024. <a href="https://doi.org/10.1111/mice.13147" ><b>Urban wind field prediction based on sparse sensors and physics-informed graph-assisted auto-encoder</b></a>. <i>Computer‐Aided Civil and Infrastructure Engineering</i>.
+                </>
+            ),
+            (
+                <>
+                    <b>Gao, H.</b>, Hu, G., Zhang, D., Jiang, W., Ren, H. and Chen, W., 2024. <a href="https://doi.org/10.1016/j.apenergy.2023.122099" ><b>Prediction of wind fields in mountains at multiple elevations using deep learning models</b></a>. <i>Applied Energy, 353</i>, 122099.
+                </>
+            ),
+            (
+                <>
+                    <b>Gao, H.</b>, Liu, J., Lin, P., Li, C., Xiao, Y. and Hu, G., 2022. <a href="https://doi.org/10.1016/j.buildenv.2022.109745" ><b>Pedestrian level wind flow field of elevated tall buildings with dense tandem arrangement</b></a>. <i>Building and Environment, 226</i>, 109745.      
+                </>
+            ),
+            (
+                <>
+                    <b>Gao, H.</b>, Liu, J., Lin, P., Hu, G., Patruno, L., Xiao, Y., Tse, K.T. and Kwok, K.C.S., 2023. <a href="https://doi.org/10.1016/j.buildenv.2023.110803" ><b>An optimal sensor placement scheme for wind flow and pressure field monitoring</b></a>. <i>Building and Environment, 244</i>, 110803.      
+                </>
+            )
+        ],
         Contacts: [
             { href: "mailto:h.x.gao@nus.edu.sg", icon: faEnvelope, text: "h.x.gao@nus.edu.sg" }
         ],
@@ -465,16 +490,13 @@ const profiles = [
             { href: HuanxiangCV, icon: faUser, text: 'CV' },
             { href: 'https://scholar.google.com/citations?user=bUKuJ5sAAAAJ&hl=zh-CN', icon: faGoogle, text: 'Google Scholar' },
             { href: 'https://www.researchgate.net/profile/Huanxiang-Gao', icon: faResearchgate, text: 'ResearchGate' },
-            { href: 'https://www.linkedin.com/in/China1/', icon: faLinkedin, text: 'LinkedIn' },
         ],
         Interests: [
+            'Computer Vision',
             'Thermal Comfort',
-            '',
-            '',
-            '',
-            ''
+            'Energy Conservation'
         ],
-    },*/
+    },
     {
         ProfileName: 'Jonathan',
         ProfileLink: "/profile/Jonathan",
