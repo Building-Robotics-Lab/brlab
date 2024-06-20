@@ -490,6 +490,7 @@ const profiles = [
             { href: HuanxiangCV, icon: faUser, text: 'CV' },
             { href: 'https://scholar.google.com/citations?user=bUKuJ5sAAAAJ&hl=zh-CN', icon: faGoogle, text: 'Google Scholar' },
             { href: 'https://www.researchgate.net/profile/Huanxiang-Gao', icon: faResearchgate, text: 'ResearchGate' },
+            { href: 'https://www.linkedin.com/in/%E7%84%95%E7%BF%94-%E9%AB%98-291a33314/', icon: faLinkedin, text: 'LinkedIn' },
         ],
         Interests: [
             'Computer Vision',
