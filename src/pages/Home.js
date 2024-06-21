@@ -13,13 +13,12 @@ import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-s
 
 //import KateNews from './../components/Website Data/kate_pub2.png'
 //import China2Pic from './../components/Website Individual Information/China2/image.jpeg';
-import HuanxiangNews from './../components/Website Individual Information/Untitled.jpeg';
+import HuanxiangNews from './../components/Website Individual Information/Huanxiang/image_news.jpeg';
 import TeamNews4 from './../components/Website Individual Information/Team/WCS2024_news.jpeg';
 import JonathanNews from './../components/Website Individual Information/Jonathan/image_news.jpg'
 import IqbalNews from './../components/Website Data/iqbal-publication3_news.jpg'
 import RezkyNews from './../components/Website Individual Information/Rezky/image_news.jpeg'
 import TeamNews3 from './../components/Website Individual Information/Team/RitaStreblow_news.jpeg';
-import TeamNews2 from './../components/Website Individual Information/Team/DennisKnight_news.jpeg';
 
 const slides = [
     //6 most-recent news

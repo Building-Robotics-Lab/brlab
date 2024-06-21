@@ -23,7 +23,7 @@ import ConnorPic from './../components/Website Individual Information/Connor/ima
 import KellyPic from './../components/Website Individual Information/Kelly/image.jpg';
 import RezkyPic from './../components/Website Individual Information/Rezky/image.jpeg';
 import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpg';
-import HuanxiangPic from './../components/Website Individual Information/Untitled.jpeg';
+import HuanxiangPic from './../components/Website Individual Information/Huanxiang/image.jpeg';
 //import China2Pic from './../components/Website Individual Information/China2/image.jpeg';
 import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
 import PegahPic from './../components/Website Individual Information/Pegah/image.jpg';
@@ -45,13 +45,6 @@ function Our_Team() {
     }, []);
 
     const teamMembers = [
-        {
-            name: 'Riccardo Talami, PhD',
-            role: 'Postdoctoral Scholar',
-            skills: 'Architectural Engineering; Building Performance Simulation; Optimisation; Energy-Efficient Buildings; Sustainable Architecture',
-            imgSrc: RiccardoPic,
-            link: 'Riccardo'
-        },
         {
             name: 'Du Heng, PhD',
             role: 'Postdoctoral Scholar',
@@ -132,6 +125,17 @@ function Our_Team() {
     ];
 
     const alumnis = [
+        {
+            name: 'Riccardo Talami',
+            role: (
+                <>
+                Research Fellow <br />
+                National University of Singapore (Singapore)
+                </>
+            ),
+            skills: 'Postdoctoral Scholar (May 2022 - May 2024)',
+            imgSrc: RiccardoPic,
+        },
         {
             name: 'Pegah Eshraghi',
             role: (

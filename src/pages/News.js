@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 //import KatePublication2 from './../components/Website Data/kate_pub2.png';
 //import China2Pic from './../components/Website Individual Information/China2/image.jpeg';
-import HuanxiangPic from './../components/Website Individual Information/Untitled.jpeg';
+import HuanxiangPic from './../components/Website Individual Information/Huanxiang/image.jpeg';
 import WCS from './../components/Website Individual Information/Team/WCS2024.jpeg';
 import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpg';
 import IqbalPublication3 from './../components/Website Data/iqbal-publication3.jpg'

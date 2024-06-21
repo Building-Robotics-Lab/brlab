@@ -28,7 +28,7 @@ import RezkyCV from './Rezky/CV.pdf'
 import JonathanPic from './Jonathan/image.jpg'
 import JonathanCV from './Jonathan/CV.pdf'
 
-import HuanxiangPic from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
+import HuanxiangPic from './Huanxiang/image.jpeg'
 import HuanxiangCV from './Huanxiang/CV.pdf'
 
 //import China2 from './China2/image.jpeg'
