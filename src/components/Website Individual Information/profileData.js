@@ -245,6 +245,59 @@ const profiles = [
         ],
     },
     {
+        ProfileName: 'Iqbal',
+        ProfileLink: "/profile/Iqbal",
+        ProfilePic: IqbalPic,
+        Name: 'Iqbal Shah',
+        Position: 'PhD Candidate',
+        Biography: 'Iqbal Shah is a third-year PhD candidate (President\'s Graduate Fellow) at the National University of Singapore (NUS), College of Design & Engineering, Department of the Built Environment. His current research focuses on innovative façade technologies, urban greening solutions, as well as digital twin interface development, actuations, and ontology automation. Further expressing his interest in the technicalities and developments of heating and cooling systems, Iqbal is also currently a student member in the American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE) Singapore Chapter. He believes that a well-implemented semantic digital twin could bridge the gap between humans, systems, and the environment, allowing for true sustainability to be attained. To date, Iqbal has supervised eight undergraduate students for their final year project dissertation. Beyond academia and his research interests, Iqbal is passionate in volunteering work, and has participated as a mentor in multiple programmes. He lives by the quotes, “No one has ever become poor by giving.” - Anne Frank, and, “Those who are happiest are those who do the most for others.” - Booker T. Washington.',
+        Education: [
+            'PhD, National University of Singapore (NUS), Built Environment (Current)',
+            'BSc (<i>Highest Distinction</i>), National University of Singapore (NUS), Project & Facilities Management (2021)',
+            'Diploma (<i>Merit</i>), Temasek Polytechnic, Integrated Facility Management (2016)'
+        ],
+        Awards: [
+            'NUS President\'s Graduate Fellowship, National University of Singapore (2022 - Present)',
+            'iBuildSG Industry Sponsorship, Building and Construction Authority (2018 - Present)',
+            'Dean\'s List, National University of Singapore (2019, 2020, 2021)',
+            'Best BIMx Award, Graphisoft (2020)',
+            'Director\'s List, Temasek Polytechnic (2014, 2015)'
+        ],
+        Featured_Publications: [
+            (
+                <>
+                    <b>Shah, I.</b>, Su, X., Talami, R. and Ghahramani, A., 2024. <Link to="/publication/enhancing_building_envelopes:" ><b>Enhancing Building Envelopes: Parametric Analysis of Shading Systems for Opaque Facades and Their Comparison with Cool Paints</b></Link>. <i>Energy and Built Environment</i>.
+                </>
+            ),
+            (
+                <>
+                    <b>Shah, I.</b>, Lau, S.K., Sekaran, V., and Ghahramani, A., 2023. <Link to="/publication/porous_plant_form-induced" ><b>Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems</b></Link>. <i>Building and Environment, 245</i>, 110904.
+                </>
+            ),
+            (
+                <>
+                    <b>Shah, I.</b>, Soh, B., Lim, C., Lau, S. K., and Ghahramani, A., 2023. <Link to="/publication/thermal_transfer_and" ><b>Thermal transfer and temperature reductions from shading systems on opaque facades: Quantifying the impacts of influential factors</b></Link>. <i>Energy and Buildings, 278</i>, 112604.      
+                </>
+            ),
+        ],
+        Contacts: [
+            { href: "mailto:iqbal_shah@u.nus.edu", icon: faEnvelope, text: "iqbal_shah@u.nus.edu" }
+        ],
+        Links: [
+            { href: IqbalCV, icon: faUser, text: 'CV' },
+            { href: 'https://scholar.google.com/citations?user=dxE-nuEAAAAJ&hl=en&oi=sra', icon: faGoogle, text: 'Google Scholar' },
+            { href: 'https://www.linkedin.com/in/iqbal-s-834035224/', icon: faLinkedin, text: 'LinkedIn' },
+            { href: 'https://orcid.org/0000-0002-8006-1078', icon: faOrcid, text: 'ORCID' }
+        ],
+        Interests: [
+            'Resilient Façade Systems',
+            'Urban Greening',
+            'Urban Heat Island',
+            'Digital Twin Development',
+            'Building Optimisation & Automation'
+        ],
+    },
+    {
         ProfileName: 'Kai',
         ProfileLink: "/profile/Kai",
         ProfilePic: KaiPic,
@@ -291,8 +344,8 @@ const profiles = [
         ProfileLink: "/profile/Iqbal",
         ProfilePic: IqbalPic,
         Name: 'Iqbal Shah',
-        Position: 'PhD Student',
-        Biography: 'Iqbal Shah is a second-year PhD student (President\'s Graduate Fellow) at the National University of Singapore (NUS), College of Design & Engineering, Department of the Built Environment. His current research focuses on innovative façade technologies, urban greening solutions, as well as digital twin interface development, actuations, and ontology automation. Further expressing his interest in the technicalities and developments of heating and cooling systems, Iqbal is also currently a student member in the American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE) Singapore Chapter. He believes that a well-implemented semantic digital twin could bridge the gap between humans, systems, and the environment, allowing for true sustainability to be attained. To date, Iqbal has supervised eight undergraduate students for their final year project dissertation. Beyond academia and his research interests, Iqbal is passionate in volunteering work, and has participated as a mentor in multiple programmes. He lives by the quotes, “No one has ever become poor by giving.” - Anne Frank, and, “Those who are happiest are those who do the most for others.” - Booker T. Washington.',
+        Position: 'PhD Candidate',
+        Biography: 'Iqbal Shah is a third-year PhD candidate (President\'s Graduate Fellow) at the National University of Singapore (NUS), College of Design & Engineering, Department of the Built Environment. His current research focuses on innovative façade technologies, urban greening solutions, as well as digital twin interface development, actuations, and ontology automation. Further expressing his interest in the technicalities and developments of heating and cooling systems, Iqbal is also currently a student member in the American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE) Singapore Chapter. He believes that a well-implemented semantic digital twin could bridge the gap between humans, systems, and the environment, allowing for true sustainability to be attained. To date, Iqbal has supervised eight undergraduate students for their final year project dissertation. Beyond academia and his research interests, Iqbal is passionate in volunteering work, and has participated as a mentor in multiple programmes. He lives by the quotes, “No one has ever become poor by giving.” - Anne Frank, and, “Those who are happiest are those who do the most for others.” - Booker T. Washington.',
         Education: [
             'PhD, National University of Singapore (NUS), Built Environment (Current)',
             'BSc (<i>Highest Distinction</i>), National University of Singapore (NUS), Project & Facilities Management (2021)',
@@ -382,7 +435,7 @@ const profiles = [
         ProfilePic: KellyPic,
         Name: 'Kelly Loh',
         Position: 'PhD Student',
-        Biography: 'Kelly Loh Li Ting is an ambitious and dedicated individual who is a first-year PhD student at NUS CDE (National University of Singapore College of Design and Engineering). Recognized for her outstanding academic achievements and potential, Kelly has been awarded the esteemed President\'s Graduate Fellowship. Kelly\'s research endeavors revolve around exploring innovative uses for condensate collected from condensate recovery systems in Air Handling Units (AHU) to optimise building efficiency. With a strong passion for energy efficiency, she aims to contribute to the development of sustainable practices that enhance building performance and reduce environmental impact. In addition to her interest in energy efficiency, Kelly is deeply fascinated by the intersection of building finance and technology. She is particularly keen on leveraging Building Information Modelling (BIM) to analyze life cycle costs associated with building projects. By integrating financial considerations into the design and construction phases, Kelly envisions a future where buildings are not only energy-efficient but also economically sustainable. Kelly\'s long-term aspiration is to become a leading researcher and advocate in the field of sustainable building practices. She is determined to bridge the gap between academia and industry by translating research findings into practical solutions. By addressing the complex challenges of energy efficiency, building finance, and life cycle costs, Kelly aims to promote sustainable development and facilitate the creation of environmentally conscious built environments.',
+        Biography: 'Kelly Loh Li Ting is an ambitious and dedicated individual who is a second-year PhD student at NUS CDE (National University of Singapore College of Design and Engineering). Recognized for her outstanding academic achievements and potential, Kelly has been awarded the esteemed President\'s Graduate Fellowship. Kelly\'s research endeavors revolve around exploring innovative uses for condensate collected from condensate recovery systems in Air Handling Units (AHU) to optimise building efficiency. With a strong passion for energy efficiency, she aims to contribute to the development of sustainable practices that enhance building performance and reduce environmental impact. In addition to her interest in energy efficiency, Kelly is deeply fascinated by the intersection of building finance and technology. She is particularly keen on leveraging Building Information Modelling (BIM) to analyze life cycle costs associated with building projects. By integrating financial considerations into the design and construction phases, Kelly envisions a future where buildings are not only energy-efficient but also economically sustainable. Kelly\'s long-term aspiration is to become a leading researcher and advocate in the field of sustainable building practices. She is determined to bridge the gap between academia and industry by translating research findings into practical solutions. By addressing the complex challenges of energy efficiency, building finance, and life cycle costs, Kelly aims to promote sustainable development and facilitate the creation of environmentally conscious built environments.',
         Education: [
             'PhD, National University of Singapore (NUS), Built Environment (Current)',
             'BSc (<i>Highest Distinction</i>), National University of Singapore (NUS), Project and Facilities Management (2023)'

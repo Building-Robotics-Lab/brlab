@@ -60,18 +60,18 @@ function Our_Team() {
             link: 'Keshav'
         },
         {
+            name: 'Iqbal Shah',
+            role: 'PhD Candidate',
+            skills: 'Resilient Façade Systems; Urban Greening; Urban Heat Island; Digital Twin Development; Building Optimisation & Automation',
+            imgSrc: IqbalPic,
+            link: 'Iqbal'
+        },
+        {
             name: 'Chen Kai',
             role: 'PhD Student',
             skills: 'Building Energy Efficiency; Thermal Comfort; Smart Buildings',
             imgSrc: KaiPic,
             link: 'Kai'
-        },
-        {
-            name: 'Iqbal Shah',
-            role: 'PhD Student',
-            skills: 'Resilient Façade Systems; Urban Greening; Urban Heat Island; Digital Twin Development; Building Optimisation & Automation',
-            imgSrc: IqbalPic,
-            link: 'Iqbal'
         },
         {
             name: 'Connor Aucremanne',
