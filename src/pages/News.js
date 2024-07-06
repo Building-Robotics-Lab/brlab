@@ -8,7 +8,7 @@ import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
 //import KatePublication2 from './../components/Website Data/kate_pub2.png';
-//import China2Pic from './../components/Website Individual Information/China2/image.jpeg';
+//import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
 import HuanxiangPic from './../components/Website Individual Information/Huanxiang/image.jpeg';
 import WCS from './../components/Website Individual Information/Team/WCS2024.jpeg';
 import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpg';
@@ -121,7 +121,7 @@ function News() {
             title: 'Please welcome China2 to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have China2 joining us as a PhD student in the Department of the Built Environment after he recently completed his . His research revolves around. Check out his full profile <Link to="/profile/China1"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Chenxi joining us as a Research Associate before she begins her PhD within the Department of the Built Environment after she recently completed her . Her research revolves around. Check out her full profile <Link to="/profile/Chenxi"><b>here</b></Link> to get to know her more!
                 </>
             ),
             sectionName: 'EighthNewsSection'
@@ -129,12 +129,12 @@ function News() {
         {
             NewsSectionName: 'Huanxiang',
             imageSrc: HuanxiangPic,
-            altText: "A headshot of Huanxiang Gao.",
+            altText: "A headshot of Gao Huanxiang.",
             date: '18/06/2024',
-            title: 'Please welcome Huanxiang Gao to the lab!',
+            title: 'Please welcome Gao Huanxiang to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Huanxiang joining us as a Research Associate before he begins his PhD in the fall within the Department of the Built Environment after he recently completed his MEng in Civil and Environmental Engineering at Harbin Institute of Technology. His research revolves around computer vision, thermal comfort, and energy conservation. Check out his full profile <Link to="/profile/Huanxiang"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Huanxiang joining us as a Research Associate before he begins his PhD within the Department of the Built Environment after he recently completed his MEng in Civil and Environmental Engineering at Harbin Institute of Technology. His research revolves around computer vision, thermal comfort, and energy conservation. Check out his full profile <Link to="/profile/Huanxiang"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'EighthNewsSection'
@@ -160,7 +160,7 @@ function News() {
             title: 'Please welcome Jonathan Poon to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Jonathan joining us as a Research Assistant before he begins his PhD in the fall within the Department of the Built Environment after he recently completed his BSc in Project and Facilities Management at NUS. His research revolves around building performance simulation, building energy efficiency, and building envelope materials. Check out his full profile <Link to="/profile/Jonathan"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Jonathan joining us as a Research Assistant before he begins his PhD within the Department of the Built Environment after he recently completed his BSc in Project and Facilities Management at NUS. His research revolves around building performance simulation, building energy efficiency, and building envelope materials. Check out his full profile <Link to="/profile/Jonathan"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'EighthNewsSection'
@@ -186,7 +186,7 @@ function News() {
             title: 'Please welcome Rezky Nanda to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Rezky joining us as a Research Associate in the Department of the Built Environment after he recently completed his MSc in Engineering Physics at Institut Teknologi Bandung. His research revolves around smart buildings, thermal comfort, building energy efficiency, and AI for energy. Check out his full profile <Link to="/profile/Rezky"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Rezky joining us as a Research Associate before he begins his PhD within the Department of the Built Environment after he recently completed his MSc in Engineering Physics at Institut Teknologi Bandung. His research revolves around smart buildings, thermal comfort, building energy efficiency, and AI for energy. Check out his full profile <Link to="/profile/Rezky"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'SeventhNewsSection'

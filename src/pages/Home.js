@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 //import KateNews from './../components/Website Data/kate_pub2.png'
-//import China2Pic from './../components/Website Individual Information/China2/image.jpeg';
+//import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
 import HuanxiangNews from './../components/Website Individual Information/Huanxiang/image_news.jpeg';
 import TeamNews4 from './../components/Website Individual Information/Team/WCS2024_news.jpeg';
 import JonathanNews from './../components/Website Individual Information/Jonathan/image_news.jpg'
@@ -29,14 +29,14 @@ const slides = [
         link: 'NinthNewsSection',
     },*/
     /*{
-        image: China2News,
-        title: '<b>Please welcome China2 to the lab!</b>',
-        date: '//2024',
+        image: ChenxiNews,
+        title: '<b>Please welcome Lei Chenxi to the lab!</b>',
+        date: '05/07/2024',
         link: 'EighthNewsSection',
     },*/
     {
         image: HuanxiangNews,
-        title: '<b>Please welcome Huanxiang Gao to the lab!</b>',
+        title: '<b>Please welcome Gao Huanxiang to the lab!</b>',
         date: '18/06/2024',
         link: 'EighthNewsSection',
     },

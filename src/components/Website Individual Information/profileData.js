@@ -1,9 +1,6 @@
 import ProfPic from './prof_pic.jpg'
 import ProfCV from './prof_CV.pdf'
 
-import RiccardoPic from './Riccardo/image.jpg'
-import RiccardoCV from './Riccardo/CV.pdf'
-
 import HengPic from './Heng/image.jpg'
 import HengCV from './Heng/CV.pdf'
 
@@ -25,17 +22,20 @@ import KellyCV from './Kelly/CV.pdf'
 import RezkyPic from './Rezky/image.jpeg'
 import RezkyCV from './Rezky/CV.pdf'
 
-import JonathanPic from './Jonathan/image.jpg'
-import JonathanCV from './Jonathan/CV.pdf'
-
 import HuanxiangPic from './Huanxiang/image.jpeg'
 import HuanxiangCV from './Huanxiang/CV.pdf'
 
-//import China2 from './China2/image.jpeg'
-//import China2CV from './China2/CV.pdf'
+//import ChenxiPic from './Chenxi/image.jpeg'
+//import ChenxiPic from './Chenxi/CV.pdf'
+
+import JonathanPic from './Jonathan/image.jpg'
+import JonathanCV from './Jonathan/CV.pdf'
 
 import XiaorongPic from './Xiaorong/image.jpeg'
 import XiaorongCV from './Xiaorong/CV.pdf'
+
+import RiccardoPic from './Riccardo/image.jpg'
+import RiccardoCV from './Riccardo/CV.pdf'
 
 import PegahPic from './Pegah/image.jpg'
 import PegahCV from './Pegah/CV.pdf'
@@ -75,57 +75,6 @@ const profiles = [
             { href: 'https://www.researchgate.net/profile/Ali-Ghahramani-4', icon: faResearchgate, text: 'ResearchGate' },
             { href: 'https://www.linkedin.com/in/alighahramani/', icon: faLinkedin, text: 'LinkedIn' },
             { href: 'https://orcid.org/0000-0003-2043-7261', icon: faOrcid, text: 'ORCID' }
-        ],
-    },
-    {
-        ProfileName: 'Riccardo',
-        ProfileLink: "/profile/Riccardo",
-        ProfilePic: RiccardoPic,
-        Name: 'Riccardo Talami, PhD',
-        Position: 'Research Fellow',
-        Biography: 'Riccardo Talami, PhD, is a Research Fellow at the National University of Singapore (NUS) - Department of the Built Environment. Riccardo focuses his effort on the energy- efficient design and operation of buildings while improving occupant comfort and well - being. He believes that through data - driven processes, building stakeholders can achieve sustainable, comfortable, and efficient built environments.He has experience in laboratory measurements, field studies, and building performance simulation & numerical optimisation techniques. Previously, he worked as a Research and Teaching Assistant at the Singapore University of Technology and Design (SUTD) - Design for Climate and Comfort Lab. To date, Riccardo has supervised three undergraduate students for their final year project dissertation. In his free time, he is an avid street / urban art prints and books collector, and enjoys hiking and travelling.',
-        Education: [
-            'PhD, Loughborough University, Building Engineering (2022)',
-            'MSc, Università Iuav di Venezia (IUAV), Architecture and Innovation (Sustainable Design) (2017)',
-            'BSc, Università Iuav di Venezia (IUAV), Architecture (2014)'
-        ],
-        Awards: [
-            'UK Engineering and Physical Sciences Research Council Scholarship, Engineering and Physical Sciences Research Council (2019 - 2022)',
-            'Winner of Best Poster Award for <a href="https://buildingsimulation2019.org/best-poster-award/" ><b>"Subjective and Measured Evidence for Residential Lighting Metrics in the Tropics"</b></a> (in collaboration with Jakubiec, J. Alstan; Srisamranrungruang, Thanyalak; Kong, Zhe; Quek, Geraldine), 16th International IBPSA Conference (2019)'
-        ],
-        Featured_Publications: [
-            (
-                <>
-                    <b>Talami, R.</b>, Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/publication/quantifying_energy_savings" ><b>Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns</b></Link>. <i>Buildings, 13</i>(12), 2998.
-                </>
-            ),
-            (
-                <>
-                    <b>Talami, R.</b>, Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/publication/demystifying_energy_savings" ><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. <i>Energy and Built Environment, 5</i>(6), 878-888.
-                </>
-            ),
-            (
-                <>
-                    <b>Talami, R.</b> and  Jakubiec, J.A., 2020. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778819333614" ><b>Early-design sensitivity of radiant cooled office buildings in the tropics for building performance</b></a>. <i>Energy and Buildings, 223</i>, 110177.
-                </>
-            )
-        ],
-        Contacts: [
-        ],
-        Links: [
-            { href: RiccardoCV, icon: faUser, text: 'CV' },
-            { href: 'https://scholar.google.com/citations?user=EmFyzowAAAAJ&hl=en&oi=ao', icon: faGoogle, text: 'Google Scholar' },
-            { href: 'https://www.researchgate.net/profile/Riccardo-Talami', icon: faResearchgate, text: 'ResearchGate' },
-            { href: 'https://www.linkedin.com/in/riccardo-talami12/', icon: faLinkedin, text: 'LinkedIn' },
-            { href: 'https://orcid.org/0000-0002-5173-339X', icon: faOrcid, text: 'ORCID' },
-            { href: '/optimal_temperature_setpoint_tool', icon: faTemperatureHalf, text: 'Optimal Temperature Setpoint Tool', isReactLink: true }
-        ],
-        Interests: [
-            'Architectural Engineering',
-            'Building Performance Simulation',
-            'Building Optimisation',
-            'Energy-Efficient Buildings',
-            'Sustainable Architecture'
         ],
     },
     {
@@ -502,7 +451,7 @@ const profiles = [
         ProfileName: 'Huanxiang',
         ProfileLink: "/profile/Huanxiang",
         ProfilePic: HuanxiangPic,
-        Name: 'Huanxiang Gao',
+        Name: 'Gao Huanxiang',
         Position: 'Research Associate',
         Biography: 'Gao Huanxiang is a Research Assosiate at the National University of Singapore - Department of the Built Environment and is currently engaged in research that focuses on applying computer vision to improve thermal comfort and energy conservation in HVAC systems. He is engaged in exploring novel computer vision algorithms that can effectively and non-invasively capture features of occupants and analyze their thermal requirements. Out of the office, he likes playing badminton.',
         Education: [
@@ -551,6 +500,34 @@ const profiles = [
             'Energy Conservation'
         ],
     },
+    /*{
+        ProfileName: 'Chenxi',
+        ProfileLink: "/profile/Chenxi",
+        ProfilePic: ChenxiPic,
+        Name: 'Lei Chenxi',
+        Position: 'Research Associate',
+        Biography: '',
+        Education: [
+            'PhD, National University of Singapore (NUS), Built Environment (Current)',
+            ''
+        ],
+        Awards: [],
+        Featured_Publications: [],
+        Contacts: [
+            { href: "mailto:l_chenxi@nus.edu.sg", icon: faEnvelope, text: "l_chenxi@nus.edu.sg" }
+        ],
+        Links: [
+            { href: China1CV, icon: faUser, text: 'CV' },
+            { href: 'https://www.linkedin.com/in/China2/', icon: faLinkedin, text: 'LinkedIn' },
+        ],
+        Interests: [
+            '',
+            '',
+            '',
+            '',
+            ''
+        ],
+    },*/
     {
         ProfileName: 'Jonathan',
         ProfileLink: "/profile/Jonathan",
@@ -582,34 +559,6 @@ const profiles = [
             'Building Envelope Materials'
         ],
     },
-    /*{
-        ProfileName: 'China2',
-        ProfileLink: "/profile/China2",
-        ProfilePic: China2Pic,
-        Name: 'China2',
-        Position: 'PhD Student',
-        Biography: '',
-        Education: [
-            'PhD, National University of Singapore (NUS), Built Environment (Current)',
-            ''
-        ],
-        Awards: [],
-        Featured_Publications: [],
-        Contacts: [
-            { href: "mailto:@u.nus.edu", icon: faEnvelope, text: "@u.nus.edu" }
-        ],
-        Links: [
-            { href: China1CV, icon: faUser, text: 'CV' },
-            { href: 'https://www.linkedin.com/in/China2/', icon: faLinkedin, text: 'LinkedIn' },
-        ],
-        Interests: [
-            '',
-            '',
-            '',
-            '',
-            ''
-        ],
-    },*/
     {
         ProfileName: 'Xiaorong',
         ProfileLink: "/profile/Xiaorong",
@@ -640,6 +589,57 @@ const profiles = [
             'Urban Green Infrastructure Planning',
             'Nature-Based Land Planning Solutions',
             'Building Energy Efficiency',
+        ],
+    },
+    {
+        ProfileName: 'Riccardo',
+        ProfileLink: "/profile/Riccardo",
+        ProfilePic: RiccardoPic,
+        Name: 'Riccardo Talami, PhD',
+        Position: 'Research Fellow',
+        Biography: 'Riccardo Talami, PhD, is a Research Fellow at the National University of Singapore (NUS) - Department of the Built Environment. Riccardo focuses his effort on the energy- efficient design and operation of buildings while improving occupant comfort and well - being. He believes that through data - driven processes, building stakeholders can achieve sustainable, comfortable, and efficient built environments.He has experience in laboratory measurements, field studies, and building performance simulation & numerical optimisation techniques. Previously, he worked as a Research and Teaching Assistant at the Singapore University of Technology and Design (SUTD) - Design for Climate and Comfort Lab. To date, Riccardo has supervised three undergraduate students for their final year project dissertation. In his free time, he is an avid street / urban art prints and books collector, and enjoys hiking and travelling.',
+        Education: [
+            'PhD, Loughborough University, Building Engineering (2022)',
+            'MSc, Università Iuav di Venezia (IUAV), Architecture and Innovation (Sustainable Design) (2017)',
+            'BSc, Università Iuav di Venezia (IUAV), Architecture (2014)'
+        ],
+        Awards: [
+            'UK Engineering and Physical Sciences Research Council Scholarship, Engineering and Physical Sciences Research Council (2019 - 2022)',
+            'Winner of Best Poster Award for <a href="https://buildingsimulation2019.org/best-poster-award/" ><b>"Subjective and Measured Evidence for Residential Lighting Metrics in the Tropics"</b></a> (in collaboration with Jakubiec, J. Alstan; Srisamranrungruang, Thanyalak; Kong, Zhe; Quek, Geraldine), 16th International IBPSA Conference (2019)'
+        ],
+        Featured_Publications: [
+            (
+                <>
+                    <b>Talami, R.</b>, Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/publication/quantifying_energy_savings" ><b>Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns</b></Link>. <i>Buildings, 13</i>(12), 2998.
+                </>
+            ),
+            (
+                <>
+                    <b>Talami, R.</b>, Dawoodjee, I. and Ghahramani, A., 2023. <Link to="/publication/demystifying_energy_savings" ><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. <i>Energy and Built Environment, 5</i>(6), 878-888.
+                </>
+            ),
+            (
+                <>
+                    <b>Talami, R.</b> and  Jakubiec, J.A., 2020. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778819333614" ><b>Early-design sensitivity of radiant cooled office buildings in the tropics for building performance</b></a>. <i>Energy and Buildings, 223</i>, 110177.
+                </>
+            )
+        ],
+        Contacts: [
+        ],
+        Links: [
+            { href: RiccardoCV, icon: faUser, text: 'CV' },
+            { href: 'https://scholar.google.com/citations?user=EmFyzowAAAAJ&hl=en&oi=ao', icon: faGoogle, text: 'Google Scholar' },
+            { href: 'https://www.researchgate.net/profile/Riccardo-Talami', icon: faResearchgate, text: 'ResearchGate' },
+            { href: 'https://www.linkedin.com/in/riccardo-talami12/', icon: faLinkedin, text: 'LinkedIn' },
+            { href: 'https://orcid.org/0000-0002-5173-339X', icon: faOrcid, text: 'ORCID' },
+            { href: '/optimal_temperature_setpoint_tool', icon: faTemperatureHalf, text: 'Optimal Temperature Setpoint Tool', isReactLink: true }
+        ],
+        Interests: [
+            'Architectural Engineering',
+            'Building Performance Simulation',
+            'Building Optimisation',
+            'Energy-Efficient Buildings',
+            'Sustainable Architecture'
         ],
     },
     {

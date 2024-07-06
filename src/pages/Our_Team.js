@@ -14,7 +14,6 @@ import LabImage1 from './../components/Website Data/BRL_Linkedin-Banner.png';
 import ProfCV from './../components/Website Individual Information/prof_CV.pdf';
 
 import ProfPic from './../components/Website Individual Information/prof_pic.jpg';
-import RiccardoPic from './../components/Website Individual Information/Riccardo/image.jpg';
 import HengPic from './../components/Website Individual Information/Heng/image.jpg';
 import KeshavPic from './../components/Website Individual Information/Keshav/image.jpeg';
 import KaiPic from './../components/Website Individual Information/Kai/image.jpg';
@@ -22,10 +21,11 @@ import IqbalPic from './../components/Website Individual Information/Iqbal/image
 import ConnorPic from './../components/Website Individual Information/Connor/image.jpg';
 import KellyPic from './../components/Website Individual Information/Kelly/image.jpg';
 import RezkyPic from './../components/Website Individual Information/Rezky/image.jpeg';
-import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpg';
 import HuanxiangPic from './../components/Website Individual Information/Huanxiang/image.jpeg';
-//import China2Pic from './../components/Website Individual Information/China2/image.jpeg';
+//import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
+import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpg';
 import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
+import RiccardoPic from './../components/Website Individual Information/Riccardo/image.jpg';
 import PegahPic from './../components/Website Individual Information/Pegah/image.jpg';
 import GuillaumePic from './../components/Website Individual Information/Guillaume/image.jpg';
 import PierrePic from './../components/Website Individual Information/Pierre-Louis/image.jpg';
@@ -95,12 +95,19 @@ function Our_Team() {
             link: 'Rezky'
         },
         {
-            name: 'Huanxiang Gao',
+            name: 'Gao Huanxiang',
             role: 'Research Associate',
             skills: 'Computer Vision; Thermal Comfort; Energy Conservation',
             imgSrc: HuanxiangPic,
             link: 'Huanxiang'
         },
+        /*{
+            name: 'Lei Chenxi',
+            role: 'Research Associate',
+            skills: '',
+            imgSrc: ChenxiPic,
+            link: 'Chenxi'
+        },*/
         {
             name: 'Jonathan Poon',
             role: 'Research Assistant',
@@ -108,13 +115,6 @@ function Our_Team() {
             imgSrc: JonathanPic,
             link: 'Jonathan'
         },
-        /*{
-            name: 'China2',
-            role: 'PhD Student',
-            skills: '',
-            imgSrc: China2Pic,
-            link: 'China2'
-        },*/
         {
             name: 'Wang Xiaorong',
             role: 'Visiting PhD Candidate',
