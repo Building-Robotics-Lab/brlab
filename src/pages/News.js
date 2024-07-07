@@ -252,7 +252,7 @@ function News() {
             imageSrc: RitaStreblow,
             altText: "A group photo with Rita Streblow, Felix Rehmann, and the NUS Building Robotics Lab team.",
             date: '29/02/2024',
-            title: 'A visit Einster Center Digital Future (TU Berlin) and E.ON Energy Research Center (RWTH Aachen University)!',
+            title: 'A visit from Einster Center Digital Future (TU Berlin) and E.ON Energy Research Center (RWTH Aachen University)!',
             content: (
                 <>
                     It was a joy to sit down and discuss with <Link to="https://www.digital-future.berlin/en/about-us/professors/prof-dr-rita-streblow/"><b>Prof. Dr.-Ing. Rita Streblow</b></Link> and <Link to="https://www.tu.berlin/dvg/ueber-uns/team/felix-rehmann"><b>Felix Rehmann</b></Link> about our shared interests in intelligent environments, thermal comfort, energy systems, and building resiliency! They come from the <Link to="https://www.digital-future.berlin/en/"><b>Einstein Center Digital Future (ECDF), TU Berlin</b></Link>, while Prof. Streblow also serves as Deputy Director and Team Leader of Digital Energy Neighborhoods at the <Link to="https://www.ebc.eonerc.rwth-aachen.de/cms/~dmzz/e-on-erc-ebc/?lidx=1"><b>Institute for Energy Efficient Buildings and Indoor Climate, E.ON Energy Research Center, RWTH Aachen University</b></Link>. Thank you two very much for your time and we look forward to diving deeper into these topics with you in the future!
