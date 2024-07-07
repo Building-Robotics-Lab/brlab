@@ -354,7 +354,7 @@ const profiles = [
             'BSc (<i>summa cum laude</i>), University of Florida (UF), Sustainability and the Built Environment (w/ minors in Economics; Agricultural and Natural Resource Ethics & Policy) (2021)'
         ],
         Awards: [
-            'NUS Research Scholarship (Ring Fence Award), National University of Singapore (2023 - Present)',
+            'NUS Research Scholarship (Ring-fenced Award), National University of Singapore (2023 - Present)',
             'Bright Futures Academic Scholarship, University of Florida (2017 - 2021)',
             'Dean\'s List, University of Florida (2020, 2021)',
             'University Scholars Program Scholarship, University of Florida (2020 - 2021)',
@@ -421,6 +421,7 @@ const profiles = [
             'BSc (<i>cum laude</i>), Institut Teknologi Bandung, Engineering Physics (2021)'
         ],
         Awards: [
+            //'Singapore International Graduate Award (SINGA), Agency for Science, Technology and Research (A*STAR) (2024 - Present)'
             'Dean Award: Highest GPA in Master\’s Program of Engineering Physics, Institut Teknologi Bandung (2022)',
             'Ganesha Talent Assistantship Master Program Scholarship Awardee, Institut Teknologi Bandung (2021)',
             '2nd Place in International Design Competition: Applied Engineering Challenge, American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE) (2020)'
@@ -541,6 +542,7 @@ const profiles = [
             'Diploma (<i>Merit</i>), Temasek Polytechnic, Aerospace Engineering'
         ],
         Awards: [
+            //'NUS President\'s Graduate Fellowship, National University of Singapore (2024 - Present)',
             'Dean\'s List, National University of Singapore (AY23/24 S1, AY22/23 S2)',
             'CCA Merit (Leadership), Temasek Polytechnic (2016, 2017, 2018)',
             'Director\'s List Award, Temasek Polytechnic (2017)'
