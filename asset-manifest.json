@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brlab/static/css/main.ffd58da4.css",
-    "main.js": "/brlab/static/js/main.ba549d69.js",
+    "main.js": "/brlab/static/js/main.1ea37b40.js",
     "static/media/Smart_Building_Full_Animation_(Compressed).mp4": "/brlab/static/media/Smart_Building_Full_Animation_(Compressed).d2a5c408c0378fdec97a.mp4",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
     "static/media/1-s2.0-S-gr13_lrg.jpg": "/brlab/static/media/1-s2.0-S0378778817323988-gr13_lrg.23c5e915a9a3be649484.jpg",
@@ -18,17 +18,19 @@
     "static/media/1-s2.0-S-gr3_lrg.jpg": "/brlab/static/media/1-s2.0-S0360132323009319-gr3_lrg.b3fd37da5c12209b3fdb.jpg",
     "static/media/FEC1.png": "/brlab/static/media/FEC1.b8f97c2f419e6768295c.png",
     "static/media/1-s2.0-S-ga1_lrg.jpg": "/brlab/static/media/1-s2.0-S0378778824001798-ga1_lrg.b42a47b92a791f96ffed.jpg",
+    "static/media/Trane.jpg": "/brlab/static/media/Trane.a018a7abe1d0f4c0d1c5.jpg",
     "static/media/iqbal_publication1.jpg": "/brlab/static/media/iqbal_publication1.2222d40fdb19fb3dfd40.jpg",
     "static/media/1-s2.0-S-gr4_lrg.jpg": "/brlab/static/media/1-s2.0-S2352710219305200-gr4_lrg.b2aef02f62642b5a14e1.jpg",
+    "static/media/Trane_news.jpg": "/brlab/static/media/Trane_news.2545624e2aceb296bc2a.jpg",
     "static/media/WCS2024.jpeg": "/brlab/static/media/WCS2024.5c6ae0bdb7433a165e66.jpeg",
     "static/media/fbuil-06-00049-g007.jpeg": "/brlab/static/media/fbuil-06-00049-g007.1d30b4958aba5bf8bc13.jpeg",
     "static/media/BukitTimah.jpeg": "/brlab/static/media/BukitTimah.76d468cb71e9989816fb.jpeg",
     "static/media/Interface_theme.png": "/brlab/static/media/Interface_theme.6999f69a37657c58ffa8.png",
     "static/media/iqbal-publication3.jpg": "/brlab/static/media/iqbal-publication3.dbb6e75bb838ff183ccd.jpg",
     "static/media/WCS2024_news.jpeg": "/brlab/static/media/WCS2024_news.27fc6e79fc08313e084f.jpeg",
-    "static/media/RitaStreblow_news.jpeg": "/brlab/static/media/RitaStreblow_news.eec56c3f97275112f163.jpeg",
     "static/media/Screenshot 2023-11-19 at 20.55.33.png": "/brlab/static/media/Screenshot 2023-11-19 at 20.55.33.616bea6589fb2f06a408.png",
     "static/media/iqbal-publication3_news.jpg": "/brlab/static/media/iqbal-publication3_news.c79829a8dae74c387874.jpg",
+    "static/media/PMO.jpg": "/brlab/static/media/PMO.f2f576c15bdbba8b7572.jpg",
     "static/media/Kelly_T2.png": "/brlab/static/media/Kelly_T2.a5f127a5352b38622a6a.png",
     "static/media/Kelly_T2_theme.png": "/brlab/static/media/Kelly_T2_theme.a5f127a5352b38622a6a.png",
     "static/media/OTSToutput_example1.png": "/brlab/static/media/OTSToutput_example1.8074690ce3d653c5b2a5.png",
@@ -37,6 +39,7 @@
     "static/media/prof_CV.pdf": "/brlab/static/media/prof_CV.05de42cacba81e714ecf.pdf",
     "static/media/CV.pdf": "/brlab/static/media/CV.8df964af037d1af0377e.pdf",
     "static/media/DennisKnight.jpeg": "/brlab/static/media/DennisKnight.c0098296f62ead335f8d.jpeg",
+    "static/media/PMO_news.jpg": "/brlab/static/media/PMO_news.e156273ddf40a3c0c36f.jpg",
     "static/media/kate_pub1.png": "/brlab/static/media/kate_pub1.d64c13a83eaa9ef75cff.png",
     "static/media/iqbal-publication.jpeg": "/brlab/static/media/iqbal-publication.85eb9c7ada1a0b7037b9.jpeg",
     "static/media/1-s2.0-S235271022100293X-ga1_lrg.jpg": "/brlab/static/media/1-s2.0-S235271022100293X-ga1_lrg.46bd20e7a76701ab5959.jpg",
@@ -44,8 +47,8 @@
     "static/media/COMFORTGPToutput_example1.png": "/brlab/static/media/COMFORTGPToutput_example1.584aecdb7008dd946320.png",
     "static/media/riccardo-publication2.png": "/brlab/static/media/riccardo-publication2.445ef5b3f66dd930bfc6.png",
     "static/media/1-s2.0-S-gr8_lrg.jpg": "/brlab/static/media/1-s2.0-S0306261918312571-gr8_lrg.b0a66aa96de0753383e6.jpg",
-    "static/media/image_news.jpeg": "/brlab/static/media/image_news.25c1c8f05b35ce7f9e28.jpeg",
     "static/media/1-s2.0-S-gr5_lrg.jpg": "/brlab/static/media/1-s2.0-S0306261917316409-gr5_lrg.1a76f858288efa494cf4.jpg",
+    "static/media/image_news.jpeg": "/brlab/static/media/image_news.25c1c8f05b35ce7f9e28.jpeg",
     "static/media/sensors-22-03444-g006.png": "/brlab/static/media/sensors-22-03444-g006.c977a12d488fa900341c.png",
     "static/media/image_news.jpg": "/brlab/static/media/image_news.a390e9797eb9882c8337.jpg",
     "static/media/kai_pub1.png": "/brlab/static/media/kai_pub1.cdc7943c49a7594f5783.png",
@@ -82,10 +85,10 @@
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
     "main.ffd58da4.css.map": "/brlab/static/css/main.ffd58da4.css.map",
-    "main.ba549d69.js.map": "/brlab/static/js/main.ba549d69.js.map"
+    "main.1ea37b40.js.map": "/brlab/static/js/main.1ea37b40.js.map"
   },
   "entrypoints": [
     "static/css/main.ffd58da4.css",
-    "static/js/main.ba549d69.js"
+    "static/js/main.1ea37b40.js"
   ]
 }
