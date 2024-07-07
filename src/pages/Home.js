@@ -13,38 +13,58 @@ import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-s
 
 //import KateNews from './../components/Website Data/kate_pub2.png'
 //import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
+//import TeamNews8 from './../components/Website Individual Information/Team/Kajima_news.jpg';
+//import TeamNews7 from './../components/Website Individual Information/Team/ThomasParkinson_news.jpg';
 import HuanxiangNews from './../components/Website Individual Information/Huanxiang/image_news.jpeg';
-import TeamNews4 from './../components/Website Individual Information/Team/WCS2024_news.jpeg';
+import TeamNews6 from './../components/Website Individual Information/Team/PMO_news.jpg';
+import TeamNews5 from './../components/Website Individual Information/Team/WCS2024_news.jpeg';
 import JonathanNews from './../components/Website Individual Information/Jonathan/image_news.jpg'
+import TeamNews4 from './../components/Website Individual Information/Team/Trane_news.jpg';
 import IqbalNews from './../components/Website Data/iqbal-publication3_news.jpg'
-import RezkyNews from './../components/Website Individual Information/Rezky/image_news.jpeg'
-import TeamNews3 from './../components/Website Individual Information/Team/RitaStreblow_news.jpeg';
 
 const slides = [
     //6 most-recent news
     /*{
-        image: KateNews,
-        title: '<b><i></i> publication announcement!</b>',
+        image: KateNews2,
+        title: '<b><i>Journal of Building Engineering</i> publication announcement!</b>',
         date: '//2024',
-        link: 'NinthNewsSection',
+        link: 'TenthNewsSection',
     },*/
     /*{
         image: ChenxiNews,
         title: '<b>Please welcome Lei Chenxi to the lab!</b>',
         date: '05/07/2024',
-        link: 'EighthNewsSection',
+        link: 'TenthNewsSection',
+    },*/
+    /*{
+        image: TeamNews8,
+        title: '<b>A visit from the Kajima Technical Research Institute Singapore (KaTRIS)!</b>',
+        date: '05/07/2024',
+        link: 'TenthNewsSection',
+    },*/
+    /*{
+        image: TeamNews7,
+        title: '<b>A visit from the IEQ Lab (University of Sydney)!</b>',
+        date: '03/07/2024',
+        link: 'NinthNewsSection',
     },*/
     {
         image: HuanxiangNews,
         title: '<b>Please welcome Gao Huanxiang to the lab!</b>',
         date: '18/06/2024',
-        link: 'EighthNewsSection',
+        link: 'NinthhNewsSection',
     },
     {
-        image: TeamNews4,
+        image: TeamNews6,
+        title: '<b>A visit from the Climate Change & Sustainability Science & Technology Division, National Climate Change Secretariat!</b>',
+        date: '18/06/2024',
+        link: 'NinthNewsSection',
+    },
+    {
+        image: TeamNews5,
         title: '<b>Iqbal at the World Cities Summit (WCS) 2024!</b>',
         date: '05/06/2024',
-        link: 'EighthNewsSection',
+        link: 'NinthNewsSection',
     },
     {
         image: JonathanNews,
@@ -53,23 +73,17 @@ const slides = [
         link: 'EighthNewsSection',
     },
     {
+        image: TeamNews4,
+        title: '<b>A visit from Trane Technologies!</b>',
+        date: '03/05/2024',
+        link: 'EighthNewsSection',
+    },
+    {
         image: IqbalNews,
         title: '<b><i>Energy and Built Environment</i> publication announcement!</b>',
         date: '15/04/2024',
         link: 'EighthNewsSection',
     },
-    {
-        image: RezkyNews,
-        title: '<b>Please welcome Rezky Nanda to the lab!</b>',
-        date: '04/03/2024',
-        link: 'SeventhNewsSection',
-    },
-    {
-        image: TeamNews3,
-        title: '<b>A visit by Prof. Dr.-Ing. Rita Streblow and Felix Rehmann!</b>',
-        date: '29/02/2024',
-        link: 'SeventhNewsSection',
-    }
 ];
 
 function Home() {

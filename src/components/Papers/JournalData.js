@@ -52,7 +52,7 @@ const JournalData = [
         year: "2024",
         publications: [
             /*{
-                title: "Context Matters: Exploring Occupant Preferences for Digital Twin-based User Interfaces and Data Sharing in Commercial Buildings",
+                title: "Occupant-Centric Digital Twin Interfaces for Buildings: Navigating User Preferences, Control, and Privacy",
                 journal: "",
                 volume: "", issue: "",
                 page: "",
@@ -69,20 +69,20 @@ const JournalData = [
                     { type: "DOI", url: "" }
                 ],
                 keywords: [
-                    "Digital Twin",
+                    "User Interface",
+                    "Occupant-centric",
                     "Data Privacy in Smart Buildings",
-                    "User Experience",
-                    "Human-Building Interaction",
                     "User Feedback Mechanisms",
-                    "Human-in-the-Loop"
+                    "Indoor Environmental Quality"
                 ],
                 highlights: [
-                    "Importance of considering occupants’ dynamic contexts in occupant-centric digital twin (DT) design.",
-                    "Scenario-based, multidimensional DT interface for flexibility and autonomy for occupants.",
-                    "Found occupants’ context-dependent preferences to interface types.",
-                    "Found occupants’ needs for human-in-the-loop decision-making."
+                    "Experiments show significant shifts in UI preferences in different scenarios.",
+                    "Scenario-based UI preferences underscores need for adaptable digital environments.",
+                    "Provision for multiple UI types enhances overall digital twin satisfaction level.",
+                    "Privacy concerns critically influence user engagement and trust in the system.",
+                    "Anonymity significantly increases participant's willingness to share personal data."
                 ],
-                abstract: "In the domain of commercial building management, the passive role of occupants in controlling their environmental conditions has led to great dissatisfaction. This notable challenge highlights the need for innovative approaches that not only address environmental control, but also actively involve occupants in the management process. Digital twin (DT) technologies present unique opportunities to bridge this gap by offering dynamic solutions that cater to individual preferences and behaviors. Yet, the integration of such technologies into building management systems necessitates a deep understanding of user interface (UI) design and privacy considerations. This study addresses this issue by developing and evaluating a multidimensional DT interface, combining person-based, object-based, and recommendation-based UIs, and investigates its effectiveness in controlling thermal and lighting conditions in occupants’ dynamic situations. A comprehensive study involving 120 participants proved their distinct UI preferences for different situations, indicating that the proposed multidimensional interface provides flexibility and agency for occupants to choose UIs suitable for their contexts. The study also identified participants’ willingness to share personal data, especially when assured of the benefits and privacy safeguards. The study proposes design implications for DT interfaces by advocating for a human-in-the-loop approach that puts occupant comfort and energy efficiency at the forefront.",
+                abstract: "Occupants in buildings often play a passive role in controlling their environmental settings, leading to significant dissatisfaction and energy wastage. This challenge underscores the need for innovative approaches that not only enhance environmental control but also actively engage occupants in the process. To address these challenges, this study introduces a novel occupantcentric Digital Twin (DT) framework, examining the impact of three distinct user interface (UI) types: person-based, object-based, and recommendation-based controls on user satisfaction, preferences under different scenarios, and data sharing preferences. Through experiments involving 120 participants, this study revealed that preferences for specific user interface (UI) types vary significantly across different scenarios. Furthermore, the study delves into occupant responses to personal data and privacy measures associated with DT systems, highlighting their crucial role in building trust and facilitating data sharing. The findings advocate for a personalized approach in occupant-centric DT implementations, suggesting that flexible and adaptive UIs can significantly enhance occupant engagement and satisfaction
                 display_image: KatePublication2
             },*/
             {

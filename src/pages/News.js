@@ -9,9 +9,13 @@ import { Link } from 'react-router-dom';
 
 //import KatePublication2 from './../components/Website Data/kate_pub2.png';
 //import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
+//import Kajima from './../components/Website Individual Information/Team/Kajima.jpg'
+//import ThomasParkinson from './../components/Website Individual Information/Team/ThomasParkinson.jpg'
 import HuanxiangPic from './../components/Website Individual Information/Huanxiang/image.jpeg';
+import PMO from './../components/Website Individual Information/Team/PMO.jpg'
 import WCS from './../components/Website Individual Information/Team/WCS2024.jpeg';
 import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpg';
+import Trane from './../components/Website Individual Information/Team/Trane.jpg'
 import IqbalPublication3 from './../components/Website Data/iqbal-publication3.jpg'
 import RezkyPic from './../components/Website Individual Information/Rezky/image.jpeg';
 import RitaStreblow from './../components/Website Individual Information/Team/RitaStreblow.jpeg';
@@ -105,26 +109,52 @@ function News() {
             imageSrc: KatePublication2,
             altText: "A graphical abstract of the publication.",
             date: '//2024',
-            title: '<i></i> publication announcement!',
+            title: '<i>Journal of Building Engineering</i> publication announcement!',
             content: (
                 <>
-                    Dr. Kate Sangwon Lee, <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/profile/Connor"><b>Connor</b></Link>, Asst Prof Lee, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/context_matters:_ exploring"><b>Context Matters: Exploring Occupant Preferences for Digital Twin-based User Interfaces and Data Sharing in Commercial Buildings</b></Link>. They Congratulations everyone!
+                    Dr. Kate Sangwon Lee, <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/profile/Connor"><b>Connor</b></Link>, Asst Prof Lee, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/occupant-centric_digital_twins"><b>Occupant-Centric Digital Twin Interfaces for Buildings: Navigating User Preferences, Control, and Privacy</b></Link>. They XXX. Congratulations everyone!
                 </>
             ),
-            sectionName: 'NinthNewsSection'
+            sectionName: 'TenthNewsSection'
         },*/
         /*{
-            NewsSectionName: 'China2',
-            imageSrc: China2Pic,
-            altText: "A headshot of China2.",
-            date: '29/01/2024',
-            title: 'Please welcome China2 to the lab!',
+            NewsSectionName: 'Chenxi',
+            imageSrc: ChenxiPic,
+            altText: "A headshot of Chenxi.",
+            date: '05/07/2024',
+            title: 'Please welcome Chenxi to the lab!',
             content: (
                 <>
                     The Building Robotics Lab is happy to have Chenxi joining us as a Research Associate before she begins her PhD within the Department of the Built Environment after she recently completed her . Her research revolves around. Check out her full profile <Link to="/profile/Chenxi"><b>here</b></Link> to get to know her more!
                 </>
             ),
-            sectionName: 'EighthNewsSection'
+            sectionName: 'TenthNewsSection'
+        },*/
+        /*{
+            NewsSectionName: 'Kajima',
+            imageSrc: Kajima,
+            altText: "A group photo with Junya Morita, Olivia Quek Mizumura, Daniel Hii Jun Chung, Sohei Arisaka, and the NUS Building Robotics Lab team.",
+            date: '05/07/2024',
+            title: 'A visit from the Kajima Technical Research Institute Singapore (KaTRIS)!',
+            content: (
+                <>
+                    We had an intuitive and collaborative meeting with <Link to="https://www.linkedin.com/in/junya-morita-0508ba2/"><b>Junya Morita</b></Link>, <Link to="https://www.linkedin.com/in/olivia-quek-mizumura-305254172/"><b>Dr. Olivia Quek Mizumura</b></Link>, <Link to="https://www.linkedin.com/in/daniel-jun-chung-hii-a9094a12/"><b>Dr. Daniel Hii Jun Chung</b></Link>, and <Link to="https://www.linkedin.com/in/sohei-arisaka-6ba229241/"><b>Sohei Arisaka</b></Link> from the <Link to="https://www.kajima.co.jp/english/tech/katris/"><b>Kajima Technical Research Institute Singapore (KaTRIS)</b></Link> on what the future of smart buildings looks like! Our dialogue focused on how we can enhance the built environment and improve the well-being of occupants by field-testing our technologies within the R&D labs of <Link to="https://www.thegear.sg/"><b>The GEAR: Kajima Lab for Global Engineering, Architecture, and Real Estate</b></Link>. Thank you, Junya, Olivia, Daniel, and Sohei, for taking the time to visit our lab and sharing your insights on the subjects. We look forward to the exciting opportunities that lie ahead in our partnership!
+                </>
+            ),
+            sectionName: 'TenthNewsSection'
+        },*/
+        /*{
+            NewsSectionName: 'ThomasParkinson',
+            imageSrc: ThomasParkinson,
+            altText: "A group photo with Thomas Parkinson and the NUS Building Robotics Lab team.",
+            date: '03/07/2024',
+            title: 'A visit from the IEQ Lab (University of Sydney)!',
+            content: (
+                <>
+                    We were happy to have a bit of a <Link to="https://cbe.berkeley.edu/"><b>Center for the Built Environment</b></Link> reunion as <Link to="https://www.linkedin.com/in/thomas-c-parkinson/"><b>Dr. Thomas Parkinson</b></Link> (Assistant Professor and Deputy Director of the<Link to="https://www.sydney.edu.au/architecture/our-research/research-labs-and-facilities/indoor-environmental-quality-lab.html"><b>IEQ Lab, University of Sydney)</b></Link> stopped by our lab to discuss and experience our ongoing research projects. Looking forward to future collaborations with the IEQ Lab, as we share a common vision for healthy and sustainable built environments!
+                </>
+            ),
+            sectionName: 'NinthNewsSection'
         },*/
         {
             NewsSectionName: 'Huanxiang',
@@ -137,7 +167,20 @@ function News() {
                     The Building Robotics Lab is happy to have Huanxiang joining us as a Research Associate before he begins his PhD within the Department of the Built Environment after he recently completed his MEng in Civil and Environmental Engineering at Harbin Institute of Technology. His research revolves around computer vision, thermal comfort, and energy conservation. Check out his full profile <Link to="/profile/Huanxiang"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'EighthNewsSection'
+            sectionName: 'NinthNewsSection'
+        },
+        {
+            NewsSectionName: 'PMO',
+            imageSrc: PMO,
+            altText: "A group photo with Kee Chun POON, Leonard Chia, and the NUS Building Robotics Lab team.",
+            date: '18/06/2024',
+            title: 'A visit from the Climate Change & Sustainability Science & Technology Division, National Climate Change Secretariat!',
+            content: (
+                <>
+                    We had a fruitful session with <Link to="https://www.linkedin.com/in/kee-chun-poon/"><b>Dr. Kee Chun POON</b></Link> (Head) and <Link to="https://www.linkedin.com/in/leonardchia4/"><b>Dr. Leonard Chia</b></Link> (Deputy Director) from the Climate Change & Sustainability Science & Technology division at the <Link to="https://www.nccs.gov.sg/"><b>National Climate Change Secretariat, Singapore</b></Link> under the <Link to="https://www.strategygroup.gov.sg/"><b>Strategy Group, Prime Minister's Office</b></Link>! Their visit to our lab led to productive discussions on how to benefit people, place, and planet in the Singaporean context through daytime radiative cooling and novel façade technologies, smart built environments with indoor positioning systems, the use of ComfortGPT, and democratized virtual power planets. Thanks for stopping by, Kee Chun and Leonard! We're excited about the potential to push our research forward and make significant strides together through future collaborations.
+                </>
+            ),
+            sectionName: 'NinthNewsSection'
         },
         {
             NewsSectionName: 'WCS',
@@ -150,7 +193,7 @@ function News() {
                     Over the past several days, our PhD Student, <Link to="/profile/Iqbal"><b>Iqbal Shah</b></Link>, did a wonderful job representing both our lab and NUS at the <Link to="https://www.worldcitiessummit.com.sg/"><b>World Cities Summit (WCS) 2024</b></Link> as he showcased our research on the Human-Centric Smart Built Environment for Future Cities to public and private attendees. A sincere appreciation goes to <Link to="https://cde.nus.edu.sg/nuscities/"><b>NUS Cities</b></Link> for inviting us and providing the opportunity to present in their booth. See the full LinkedIn post <Link to="https://www.linkedin.com/feed/update/urn:li:activity:7203957876317450240"><b>here</b></Link>.
                 </>
             ),
-            sectionName: 'EighthNewsSection'
+            sectionName: 'NinthNewsSection'
         },
         {
             NewsSectionName: 'Jonathan',
@@ -166,6 +209,19 @@ function News() {
             sectionName: 'EighthNewsSection'
         },
         {
+            NewsSectionName: 'Trane',
+            imageSrc: Trane,
+            altText: "A group photo with Oakley Roberts, Cheng Sin Yew, Zubin Varghese, and the NUS Building Robotics Lab team.",
+            date: '03/05/2024',
+            title: 'A visit from Trane Technologies!',
+            content: (
+                <>
+                    Always a good time when we get together with the team from <Link to="https://www.tranetechnologies.com/en/index.html"><b>Trane Technologies</b></Link>--a global leader in sustainability, well known for their HVAC solutions! This week, <Link to="https://www.linkedin.com/in/oakleyroberts/"><b>Oakley Roberts</b></Link> (VP of Innovation), Cheng Sin Yew (VP of Mature Markets), and <Link to="https://www.linkedin.com/in/zubin-varghese-935b4421/"><b>Dr. Zubin Varghese</b></Link> (Senior Director) joined us at our lab in Singapore for an in-depth discussion on our joint research initiatives. This included exploring a range of projects from ComfortGPT, occupant-centric digital twins, and personal cooling systems to democratized virtual power plants and daytime radiative cooling. Our lab deeply appreciates <Link to="https://www.trane.com/index.html"><b>Trane</b></Link>'s continued support over the years, which has been crucial in advancing our research and shaping our academic journey. We're excited about the future and look forward to continued collaboration!
+                </>
+            ),
+            sectionName: 'EighthNewsSection'
+        },
+        {
             NewsSectionName: 'IqbalPublication3',
             imageSrc: IqbalPublication3,
             altText: "A graphical abstract of the publication.",
@@ -176,7 +232,7 @@ function News() {
                     <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/profile/Xiaosong"><b>Song</b></Link>, <Link to="/profile/Riccardo"><b>Riccardo</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/enhancing_building_envelopes:" ><b>Enhancing Building Envelopes: Parametric Analysis of Shading Systems for Opaque Facades and Their Comparison with Cool Paints</b></Link>. Their study undertook an extensive parametric simulation, taking into account variables such as shading configurations, cool paints with varying facade solar absorbance values, facade orientation, diverse climates, and different building typologies. Ultimately, they found that shading on opaque facades alone could reduce cooling loads by 8-28%, cool paints on opaque facades alone could reduce cooling loads by 10-35%, and the combined use of shading and cool paint further reduces cooling loads by 10-40%. Congratulations to you all!
                 </>
             ),
-            sectionName: 'SeventhNewsSection'
+            sectionName: 'EighthNewsSection'
         },
         {
             NewsSectionName: 'Rezky',
@@ -196,7 +252,7 @@ function News() {
             imageSrc: RitaStreblow,
             altText: "A group photo with Rita Streblow, Felix Rehmann, and the NUS Building Robotics Lab team.",
             date: '29/02/2024',
-            title: 'A visit by Prof. Dr.-Ing. Rita Streblow and Felix Rehmann!',
+            title: 'A visit Einster Center Digital Future (TU Berlin) and E.ON Energy Research Center (RWTH Aachen University)!',
             content: (
                 <>
                     It was a joy to sit down and discuss with <Link to="https://www.digital-future.berlin/en/about-us/professors/prof-dr-rita-streblow/"><b>Prof. Dr.-Ing. Rita Streblow</b></Link> and <Link to="https://www.tu.berlin/dvg/ueber-uns/team/felix-rehmann"><b>Felix Rehmann</b></Link> about our shared interests in intelligent environments, thermal comfort, energy systems, and building resiliency! They come from the <Link to="https://www.digital-future.berlin/en/"><b>Einstein Center Digital Future (ECDF), TU Berlin</b></Link>, while Prof. Streblow also serves as Deputy Director and Team Leader of Digital Energy Neighborhoods at the <Link to="https://www.ebc.eonerc.rwth-aachen.de/cms/~dmzz/e-on-erc-ebc/?lidx=1"><b>Institute for Energy Efficient Buildings and Indoor Climate, E.ON Energy Research Center, RWTH Aachen University</b></Link>. Thank you two very much for your time and we look forward to diving deeper into these topics with you in the future!
@@ -209,13 +265,13 @@ function News() {
             imageSrc: DennisKnight,
             altText: "A group photo with Dennis Knight, Chandra Sekhar, and the NUS Building Robotics Lab team.",
             date: '21/02/2024',
-            title: 'A visit by Dennis Knight!',
+            title: 'A visit from ASHRAE!',
             content: (
                 <>
                     It was a pleasure to host <Link to="https://www.ashrae.org/professional-development/learning-portal/instructor-led-training/ashrae-instructors/dennis-knight"><b>Dennis Knight</b></Link>, the incoming <Link to="https://www.ashrae.org/"><b>ASHRAE</b></Link> President, in our living lab all the way from the United States for a discussion about the research projects we are conducting before he delivered his presentation, "Health and Wellness in the Built Environment," for the ASHRAE Singapore Chapter Distinguished Lecturer Event. Thank you very much for your time and thank you to Professor Chandra Sekhar for connecting us!
                 </>
             ),
-            sectionName: 'SixthNewsSection'
+            sectionName: 'SeventhNewsSection'
         },
         {
             NewsSectionName: 'Keshav',
@@ -254,7 +310,7 @@ function News() {
                     Our team was able to gather at Bukit Timah Nature Reserve to swap out our usual lab setting for some deserving time outdoors as we bid farewell to our three visiting students: <Link to="/profile/Pierre"><b>Pierre-Louis</b></Link>, <Link to="/profile/Guillaume"><b>Guillaume</b></Link>, and <Link to="/profile/Pegah"><b>Pegah</b></Link>! The former two have now completed their excellent MSc dissertations for ETH Zürich on advanced reinforcement learning strategies for power trading in smart grids and indoor positioning systems using Bluetooth LE and machine vision, and the latter is returning to Shahid Beheshti University to complete the final year of her PhD thesis on optimal distribution of urban density. Thank you to all three for spending time with us and good luck to you all in your future endeavours!
                 </>
             ),
-            sectionName: 'FifthNewsSection'
+            sectionName: 'SixthNewsSection'
         },
         {
             NewsSectionName: 'Heng',
@@ -293,7 +349,7 @@ function News() {
                     <Link to="/profile/Riccardo"><b>Riccardo</b></Link>, <Link to="/profile/Ilyas"><b>Ilyas</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/quantifying_energy_savings"><b>Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns</b></Link>. They investigated three fixed and optimal setpoint and setback selection strategies. They found that fixed setpoint achieves 5.48% energy reduction due to lower occupant head loads and an additional 11.80% energy savings are obtained from incorporating fixed setbacks. Overall, the optimal selection of setpoint and setback provides additional 34-38% energy savings. Congratulations everyone!
                 </>
             ),
-            sectionName: 'FourthNewsSection'
+            sectionName: 'FifthNewsSection'
         },
         {
             NewsSectionName: 'IqbalPublication2',
@@ -332,7 +388,7 @@ function News() {
                     The Building Robotics Lab is happy to have Pierre-Louis joining us from Switzerland as a visiting MSc student at ETH Zürich studying Mechanical Engineering and Computer Science in the Department of Mechanical and Process Engineering. His research revolves around machine learning, optimisation, computer vision, and energy. Check out his full profile <Link to="/profile/Pierre"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'ThirdNewsSection'
+            sectionName: 'FourthNewsSection'
         },
         {
             NewsSectionName: 'KatePublication1',
@@ -371,7 +427,7 @@ function News() {
                     <Link to="/profile/Riccardo"><b>Riccardo</b></Link>, <Link to="/profile/Ilyas"><b>Ilyas</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/demystifying_energy_savings"><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. They found that both fixed and dynamic setpoints ensure 2-4% energy reduction due to lower heat generated by occupants at lower occupancy rates. However, at outdoor temperatures ranging from 5°C to 32°C, where occupant heat loads can shift the building between heating, free-running, and cooling modes, dynamic setpoints can achieve additional 2-10% energy savings compared to fixed setpoints. Congratulations everyone!
                 </>
             ),
-            sectionName: 'SecondNewsSection'
+            sectionName: 'ThirdNewsSection'
         },
         {
             NewsSectionName: 'Kelly',
@@ -410,7 +466,7 @@ function News() {
                     <Link to="/profile/Kai"><b>Kai</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/personal_thermal_comfort"><b>Personal thermal comfort models based on physiological measurements -- A design of experiments based review</b></Link>. This study aims to provide a systematic, comprehensive, and DOE-framework-based review of the physiological sensing methods to predict personal thermal comfort. This is Kai's inaugural first-author article! Chapeau!
                 </>
             ),
-            sectionName: 'FirstNewsSection'
+            sectionName: 'SecondNewsSection'
         },
         {
             NewsSectionName: 'Connor',
@@ -457,43 +513,41 @@ function News() {
                 </div>
             </Container>
 
-            {
-                //<Container useOrange={true} sectionName='NinthNewsSection'>
-                //<NewsGrid newsData={newsData.slice(0, 3)} highlightedSection={highlightedSection} sectionName='NinthNewsSection' />
-                //</Container>
-            }
             
-            {
-            <Container useOrange={true} sectionName='EighthNewsSection'>
-                <NewsGrid newsData={newsData.slice(0, 3)} highlightedSection={highlightedSection} sectionName='EighthNewsSection' />
-            </Container>
-            }
-            <Container sectionName='SeventhNewsSection'>
-                <NewsGrid newsData={newsData.slice(3, 6)} highlightedSection={highlightedSection} sectionName='SeventhNewsSection' />
-            </Container>
-
-            <Container useOrange={true} sectionName='SixthNewsSection'>
-                <NewsGrid newsData={newsData.slice(6, 9)} highlightedSection={highlightedSection} sectionName='SixthNewsSection' />
-            </Container>
-
-            <Container sectionName='FifthNewsSection'>
-                <NewsGrid newsData={newsData.slice(9, 12)} highlightedSection={highlightedSection} sectionName='FifthNewsSection' />
+            <Container useOrange={true} sectionName='NinthNewsSection'>
+                <NewsGrid newsData={newsData.slice(0, 3)} highlightedSection={highlightedSection} sectionName='NinthNewsSection' />
+             </Container>
+            
+            <Container sectionName='EighthNewsSection'>
+                <NewsGrid newsData={newsData.slice(3, 6)} highlightedSection={highlightedSection} sectionName='EighthNewsSection' />
             </Container>
             
-            <Container useOrange={true} sectionName='FourthNewsSection'>
-                <NewsGrid newsData={newsData.slice(12, 15)} highlightedSection={highlightedSection} sectionName='FourthNewsSection' />
+            <Container useOrange={true} sectionName='SeventhNewsSection'>
+                <NewsGrid newsData={newsData.slice(6, 9)} highlightedSection={highlightedSection} sectionName='SeventhNewsSection' />
             </Container>
 
-            <Container sectionName='ThirdNewsSection'>
-                <NewsGrid newsData={newsData.slice(15, 18)} highlightedSection={highlightedSection} sectionName='ThirdNewsSection' />
+            <Container sectionName='SixthNewsSection'>
+                <NewsGrid newsData={newsData.slice(9, 12)} highlightedSection={highlightedSection} sectionName='SixthNewsSection' />
             </Container>
 
-            <Container useOrange={true} sectionName='SecondNewsSection'>
-                <NewsGrid newsData={newsData.slice(18, 21)} highlightedSection={highlightedSection} sectionName='SecondNewsSection' />
+            <Container useOrange={true} sectionName='FifthNewsSection'>
+                <NewsGrid newsData={newsData.slice(12, 15)} highlightedSection={highlightedSection} sectionName='FifthNewsSection' />
+            </Container>
+            
+            <Container sectionName='FourthNewsSection'>
+                <NewsGrid newsData={newsData.slice(15, 18)} highlightedSection={highlightedSection} sectionName='FourthNewsSection' />
             </Container>
 
-            <Container sectionName='FirstNewsSection'>
-                <NewsGrid newsData={newsData.slice(21, 24)} highlightedSection={highlightedSection} sectionName='FirstNewsSection' />
+            <Container useOrange={true} sectionName='ThirdNewsSection'>
+                <NewsGrid newsData={newsData.slice(18, 21)} highlightedSection={highlightedSection} sectionName='ThirdNewsSection' />
+            </Container>
+
+            <Container sectionName='SecondNewsSection'>
+                <NewsGrid newsData={newsData.slice(21, 24)} highlightedSection={highlightedSection} sectionName='SecondNewsSection' />
+            </Container>
+
+            <Container useOrange={true} sectionName='FirstNewsSection'>
+                <NewsGrid newsData={newsData.slice(24, 27)} highlightedSection={highlightedSection} sectionName='FirstNewsSection' />
             </Container>
 
             <Footer />
