@@ -414,7 +414,7 @@ const profiles = [
         ProfilePic: RezkyPic,
         Name: 'Rezky Nanda',
         Position: 'Research Associate',
-        Biography: 'Rezky Nanda is a Research Associate in the Department of the Built Environment, National University of Singapore (NUS). His research focuses on the utilization of artificial intelligence to manage building energy systems, seeking the optimal balance between energy efficiency and occupant comfort. Previously, Rezky worked as an ESD Engineer at AfogreenBuild Pte Ltd, a green building consultant company. During his tenure at AfogreenBuild Pte Ltd, he assisted in several green building certification projects, such as GreenMark and LEED. Outside of work and research, Rezky is an avid reader. At the moment, he likes reading novels by Haruki Murakami, a renowned Japanese writer. Rezky is also fond of classical music and occasionally plays violin. His favourite composers are J.S. Bach and G.F. Händel.',
+        Biography: 'Rezky Nanda is currently a Research Associate in the Department of the Built Environment, National University of Singapore (NUS) before he begins his PhD in August 2024 under the A*STAR SINGA. His research focuses on the utilization of artificial intelligence to manage building energy systems, seeking the optimal balance between energy efficiency and occupant comfort. Previously, Rezky worked as an ESD Engineer at AfogreenBuild Pte Ltd, a green building consultant company. During his tenure at AfogreenBuild Pte Ltd, he assisted in several green building certification projects, such as GreenMark and LEED. Outside of work and research, Rezky is an avid reader. At the moment, he likes reading novels by Haruki Murakami, a renowned Japanese writer. Rezky is also fond of classical music and occasionally plays violin. His favourite composers are J.S. Bach and G.F. Händel.',
         Education: [
             //'PhD, National University of Singapore (NUS), Built Environment (Current)',
             'MSc (<i>cum laude</i>), Institut Teknologi Bandung, Engineering Physics (2022)',
@@ -453,7 +453,7 @@ const profiles = [
         ProfilePic: HuanxiangPic,
         Name: 'Gao Huanxiang',
         Position: 'Research Associate',
-        Biography: 'Gao Huanxiang is a Research Assosiate at the National University of Singapore - Department of the Built Environment and is currently engaged in research that focuses on applying computer vision to improve thermal comfort and energy conservation in HVAC systems. He is engaged in exploring novel computer vision algorithms that can effectively and non-invasively capture features of occupants and analyze their thermal requirements. Out of the office, he likes playing badminton.',
+        Biography: 'Gao Huanxiang is currently a Research Associate at the National University of Singapore - Department of the Built Environment before he begins his PhD in January 2025, and is currently engaged in research that focuses on applying computer vision to improve thermal comfort and energy conservation in HVAC systems. He is engaged in exploring novel computer vision algorithms that can effectively and non-invasively capture features of occupants and analyze their thermal requirements. Out of the office, he likes playing badminton.',
         Education: [
             /*'PhD, National University of Singapore (NUS), Built Environment (Current)',*/
             'MEng, Harbin Institute of Technology, Civil and Environmental Engineering (2024)',
@@ -517,8 +517,8 @@ const profiles = [
             { href: "mailto:l_chenxi@nus.edu.sg", icon: faEnvelope, text: "l_chenxi@nus.edu.sg" }
         ],
         Links: [
-            { href: China1CV, icon: faUser, text: 'CV' },
-            { href: 'https://www.linkedin.com/in/China2/', icon: faLinkedin, text: 'LinkedIn' },
+            { href: ChenxiCV, icon: faUser, text: 'CV' },
+            { href: 'https://www.linkedin.com/in/Chenxi/', icon: faLinkedin, text: 'LinkedIn' },
         ],
         Interests: [
             '',
@@ -534,7 +534,7 @@ const profiles = [
         ProfilePic: JonathanPic,
         Name: 'Jonathan Poon',
         Position: 'Research Assistant',
-        Biography: 'Jonathan Poon is a Research Assistant in the Department of the Built Environment at the National University of Singapore (NUS). His research focuses on building performance simulation and energy efficiency. Jonathan is engaged in exploring the feasibility of generating energy reference models that accurately represent buildings in high-density tropical climate cities. Out of the office, Jonathan is usually found volunteering in his church on the weekends or occasionally playing console games. His recent favourite is The Legend of Zelda: Tears of the Kingdom.',
+        Biography: 'Jonathan Poon is currently a Research Assistant in the Department of the Built Environment at the National University of Singapore (NUS) before he begins his PhD in August 2024 under the President\'s Graduate Fellowship. His research focuses on building performance simulation and energy efficiency. Jonathan is engaged in exploring the feasibility of generating energy reference models that accurately represent buildings in high-density tropical climate cities. Out of the office, Jonathan is usually found volunteering in his church on the weekends or occasionally playing console games. His recent favourite is The Legend of Zelda: Tears of the Kingdom.',
         Education: [
             /*'PhD, National University of Singapore (NUS), Built Environment (Current)',*/
             'BSc (<i>Highest Distinction</i>), National University of Singapore (NUS), Project and Facilities Management (w/ minor in Infrastructure & Finance Management) (2024)',
