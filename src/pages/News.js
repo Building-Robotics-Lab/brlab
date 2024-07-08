@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 //import KatePublication2 from './../components/Website Data/kate_pub2.png';
 //import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
-//import Kajima from './../components/Website Individual Information/Team/Kajima.jpg'
+import Kajima from './../components/Website Individual Information/Team/Kajima.jpg'
 //import ThomasParkinson from './../components/Website Individual Information/Team/ThomasParkinson.jpg'
 import HuanxiangPic from './../components/Website Individual Information/Huanxiang/image.jpeg';
 import PMO from './../components/Website Individual Information/Team/PMO.jpg'
@@ -130,7 +130,7 @@ function News() {
             ),
             sectionName: 'TenthNewsSection'
         },*/
-        /*{
+        {
             NewsSectionName: 'Kajima',
             imageSrc: Kajima,
             altText: "A group photo with Junya Morita, Olivia Quek Mizumura, Daniel Hii Jun Chung, Sohei Arisaka, and the NUS Building Robotics Lab team.",
@@ -142,7 +142,7 @@ function News() {
                 </>
             ),
             sectionName: 'TenthNewsSection'
-        },*/
+        },
         /*{
             NewsSectionName: 'ThomasParkinson',
             imageSrc: ThomasParkinson,
