@@ -20,7 +20,6 @@ import TeamNews6 from './../components/Website Individual Information/Team/PMO_n
 import TeamNews5 from './../components/Website Individual Information/Team/WCS2024_news.jpeg';
 import JonathanNews from './../components/Website Individual Information/Jonathan/image_news.jpg'
 import TeamNews4 from './../components/Website Individual Information/Team/Trane_news.jpg';
-import IqbalNews from './../components/Website Data/iqbal-publication3_news.jpg'
 
 const slides = [
     //6 most-recent news
@@ -76,12 +75,6 @@ const slides = [
         image: TeamNews4,
         title: '<b>A visit from Trane Technologies!</b>',
         date: '03/05/2024',
-        link: 'EighthNewsSection',
-    },
-    {
-        image: IqbalNews,
-        title: '<b><i>Energy and Built Environment</i> publication announcement!</b>',
-        date: '15/04/2024',
         link: 'EighthNewsSection',
     },
 ];
