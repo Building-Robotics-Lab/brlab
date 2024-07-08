@@ -151,7 +151,7 @@ function Our_Team() {
             name: 'Guillaume Lecronier',
             role: (
                 <>
-                Data & Analytics Consultant <br />
+                Data Science & AI Consultant <br />
                 BearingPoint (France)
                 </>
             ),
@@ -162,8 +162,8 @@ function Our_Team() {
             name: 'Pierre-Louis David',
             role: (
                 <>
-                Data Scientist Intern <br />
-                Pictet Group (Switzerland)
+                Analyst <br />
+                MONTFORT (Switzerland)
                 </>
             ),
             skills: 'Visiting MSc Student (September 2023 - February 2024)',
