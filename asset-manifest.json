@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brlab/static/css/main.ffd58da4.css",
-    "main.js": "/brlab/static/js/main.79941618.js",
+    "main.js": "/brlab/static/js/main.0b33a484.js",
     "static/media/Smart_Building_Full_Animation_(Compressed).mp4": "/brlab/static/media/Smart_Building_Full_Animation_(Compressed).d2a5c408c0378fdec97a.mp4",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
     "static/media/1-s2.0-S-gr13_lrg.jpg": "/brlab/static/media/1-s2.0-S0378778817323988-gr13_lrg.23c5e915a9a3be649484.jpg",
@@ -26,8 +26,10 @@
     "static/media/fbuil-06-00049-g007.jpeg": "/brlab/static/media/fbuil-06-00049-g007.1d30b4958aba5bf8bc13.jpeg",
     "static/media/BukitTimah.jpeg": "/brlab/static/media/BukitTimah.76d468cb71e9989816fb.jpeg",
     "static/media/Interface_theme.png": "/brlab/static/media/Interface_theme.6999f69a37657c58ffa8.png",
+    "static/media/Kajima.jpg": "/brlab/static/media/Kajima.b9398c93cc91683a3438.jpg",
     "static/media/iqbal-publication3.jpg": "/brlab/static/media/iqbal-publication3.dbb6e75bb838ff183ccd.jpg",
     "static/media/WCS2024_news.jpeg": "/brlab/static/media/WCS2024_news.27fc6e79fc08313e084f.jpeg",
+    "static/media/Kajima_news.jpg": "/brlab/static/media/Kajima_news.d97d3840f89f632ab40c.jpg",
     "static/media/Screenshot 2023-11-19 at 20.55.33.png": "/brlab/static/media/Screenshot 2023-11-19 at 20.55.33.616bea6589fb2f06a408.png",
     "static/media/iqbal-publication3_news.jpg": "/brlab/static/media/iqbal-publication3_news.c79829a8dae74c387874.jpg",
     "static/media/PMO.jpg": "/brlab/static/media/PMO.f2f576c15bdbba8b7572.jpg",
@@ -85,10 +87,10 @@
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
     "main.ffd58da4.css.map": "/brlab/static/css/main.ffd58da4.css.map",
-    "main.79941618.js.map": "/brlab/static/js/main.79941618.js.map"
+    "main.0b33a484.js.map": "/brlab/static/js/main.0b33a484.js.map"
   },
   "entrypoints": [
     "static/css/main.ffd58da4.css",
-    "static/js/main.79941618.js"
+    "static/js/main.0b33a484.js"
   ]
 }
