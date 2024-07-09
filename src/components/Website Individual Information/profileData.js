@@ -25,8 +25,8 @@ import RezkyCV from './Rezky/CV.pdf'
 import HuanxiangPic from './Huanxiang/image.jpeg'
 import HuanxiangCV from './Huanxiang/CV.pdf'
 
-//import ChenxiPic from './Chenxi/image.jpeg'
-//import ChenxiPic from './Chenxi/CV.pdf'
+import ChenxiPic from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
+import ChenxiCV from './Chenxi/CV.pdf'
 
 import JonathanPic from './Jonathan/image.jpg'
 import JonathanCV from './Jonathan/CV.pdf'
@@ -501,34 +501,44 @@ const profiles = [
             'Energy Conservation'
         ],
     },
-    /*{
+    {
         ProfileName: 'Chenxi',
         ProfileLink: "/profile/Chenxi",
         ProfilePic: ChenxiPic,
         Name: 'Lei Chenxi',
         Position: 'Research Associate',
-        Biography: '',
+        Biography: 'Lei Chenxi is currently a Research Associate in the Department of the Built Environment, National University of Singapore before she begins her PhD in January 2025. Her research interests lie in understanding occupants\' behaviors and preferences from a human-centered perspective. Her previous research focused on developing tools and methods aimed at optimizing indoor physical environments and energy usage during the early stages of building design, as well as exploring how individuals perceive and interact with the built environment. Outside of the office, she likes to find delicious food and watch movies. She also occasionally plays the piano and dances.',
         Education: [
-            'PhD, National University of Singapore (NUS), Built Environment (Current)',
-            ''
+            //'PhD, National University of Singapore (NUS), Built Environment (Current)',
+            'MArch, Tianjin University, Architectural Technology and Science (2024)',
+            'BArch, Wuhan University of Technology, Architecture (2021)'
         ],
-        Awards: [],
-        Featured_Publications: [],
+        Awards: [
+            'Outstanding Graduate, Tianjin University (2024)',
+            'Postgraduate Scholarship (First Class), Tianjin University (2021-2024)',
+            'Outstanding Graduate, Wuhan University of Technology (2021)'
+        ],
+        Featured_Publications: [
+            (
+                <>
+                    <b>Lei, C.</b>, Kang, Z., Han, Z., Li, X., Liu, C., Liu, X. and Liu, G., 2023, December. <a href="https://doi.org/10.26868/25222708.2023.1514" ><b>A user-centered interactive optimization approach based on immersive virtual reality</b></a>. In <i>Proceedings of Building Simulation 2023: 18th Conference of IBPSA</i>, 458-465.      
+                </>
+            )
+        ],
         Contacts: [
             { href: "mailto:l_chenxi@nus.edu.sg", icon: faEnvelope, text: "l_chenxi@nus.edu.sg" }
         ],
         Links: [
             { href: ChenxiCV, icon: faUser, text: 'CV' },
-            { href: 'https://www.linkedin.com/in/Chenxi/', icon: faLinkedin, text: 'LinkedIn' },
+            { href: 'https://www.researchgate.net/profile/Chenxi-Lei-2', icon: faResearchgate, text: 'ResearchGate' },
+            { href: 'https://www.linkedin.com/in/chenxi-lei-6061a1298/', icon: faLinkedin, text: 'LinkedIn' },
         ],
         Interests: [
-            '',
-            '',
-            '',
-            '',
-            ''
+            'User-Centered Design',
+            'Building Performance Simulation and Optimization',
+            'Human-Building Interaction'
         ],
-    },*/
+    },
     {
         ProfileName: 'Jonathan',
         ProfileLink: "/profile/Jonathan",

@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 //import KateNews from './../components/Website Data/kate_pub2.png'
-//import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
+import ChenxiNews from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg';
 import TeamNews8 from './../components/Website Individual Information/Team/Kajima_news.jpg';
 //import TeamNews7 from './../components/Website Individual Information/Team/ThomasParkinson_news.jpg';
 import HuanxiangNews from './../components/Website Individual Information/Huanxiang/image_news.jpeg';
@@ -29,12 +29,12 @@ const slides = [
         date: '//2024',
         link: 'TenthNewsSection',
     },*/
-    /*{
+    {
         image: ChenxiNews,
         title: '<b>Please welcome Lei Chenxi to the lab!</b>',
         date: '05/07/2024',
         link: 'TenthNewsSection',
-    },*/
+    },
     {
         image: TeamNews8,
         title: '<b>A visit from the Kajima Technical Research Institute Singapore (KaTRIS)!</b>',

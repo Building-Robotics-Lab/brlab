@@ -22,7 +22,7 @@ import ConnorPic from './../components/Website Individual Information/Connor/ima
 import KellyPic from './../components/Website Individual Information/Kelly/image.jpg';
 import RezkyPic from './../components/Website Individual Information/Rezky/image.jpeg';
 import HuanxiangPic from './../components/Website Individual Information/Huanxiang/image.jpeg';
-//import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
+import ChenxiPic from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
 import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpg';
 import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
 import RiccardoPic from './../components/Website Individual Information/Riccardo/image.jpg';
@@ -101,13 +101,13 @@ function Our_Team() {
             imgSrc: HuanxiangPic,
             link: 'Huanxiang'
         },
-        /*{
+        {
             name: 'Lei Chenxi',
             role: 'Research Associate',
-            skills: '',
+            skills: 'User-Centered Design; Building Performance Simulation and Optimization; Human-Building Interaction',
             imgSrc: ChenxiPic,
             link: 'Chenxi'
-        },*/
+        },
         {
             name: 'Jonathan Poon',
             role: 'Research Assistant',

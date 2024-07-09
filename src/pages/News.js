@@ -8,7 +8,7 @@ import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
 //import KatePublication2 from './../components/Website Data/kate_pub2.png';
-//import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
+import ChenxiPic from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg';
 import Kajima from './../components/Website Individual Information/Team/Kajima.jpg'
 //import ThomasParkinson from './../components/Website Individual Information/Team/ThomasParkinson.jpg'
 import HuanxiangPic from './../components/Website Individual Information/Huanxiang/image.jpeg';
@@ -117,7 +117,7 @@ function News() {
             ),
             sectionName: 'TenthNewsSection'
         },*/
-        /*{
+        {
             NewsSectionName: 'Chenxi',
             imageSrc: ChenxiPic,
             altText: "A headshot of Chenxi.",
@@ -125,11 +125,11 @@ function News() {
             title: 'Please welcome Chenxi to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Chenxi joining us as a Research Associate before she begins her PhD within the Department of the Built Environment after she recently completed her . Her research revolves around. Check out her full profile <Link to="/profile/Chenxi"><b>here</b></Link> to get to know her more!
+                    The Building Robotics Lab is happy to have Chenxi joining us as a Research Associate before she begins her PhD within the Department of the Built Environment after she recently completed her MArch in Architectural Technology and Science at Tianjin University. Her research revolves around user-centered design, building performance simulation and optimization, and human-building interaction. Check out her full profile <Link to="/profile/Chenxi"><b>here</b></Link> to get to know her more!
                 </>
             ),
             sectionName: 'TenthNewsSection'
-        },*/
+        },
         {
             NewsSectionName: 'Kajima',
             imageSrc: Kajima,
@@ -167,7 +167,7 @@ function News() {
                     The Building Robotics Lab is happy to have Huanxiang joining us as a Research Associate before he begins his PhD within the Department of the Built Environment after he recently completed his MEng in Civil and Environmental Engineering at Harbin Institute of Technology. His research revolves around computer vision, thermal comfort, and energy conservation. Check out his full profile <Link to="/profile/Huanxiang"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'NinthNewsSection'
+            sectionName: 'TenthNewsSection'
         },
         {
             NewsSectionName: 'PMO',
@@ -206,7 +206,7 @@ function News() {
                     The Building Robotics Lab is happy to have Jonathan joining us as a Research Assistant before he begins his PhD within the Department of the Built Environment after he recently completed his BSc in Project and Facilities Management at NUS. His research revolves around building performance simulation, building energy efficiency, and building envelope materials. Check out his full profile <Link to="/profile/Jonathan"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'EighthNewsSection'
+            sectionName: 'NinthNewsSection'
         },
         {
             NewsSectionName: 'Trane',
@@ -245,7 +245,7 @@ function News() {
                     The Building Robotics Lab is happy to have Rezky joining us as a Research Associate before he begins his PhD within the Department of the Built Environment after he recently completed his MSc in Engineering Physics at Institut Teknologi Bandung. His research revolves around smart buildings, thermal comfort, building energy efficiency, and AI for energy. Check out his full profile <Link to="/profile/Rezky"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'SeventhNewsSection'
+            sectionName: 'EighthNewsSection'
         },
         {
             NewsSectionName: 'RitaStreblow',
@@ -284,7 +284,7 @@ function News() {
                     The Building Robotics Lab is happy to have Keshav joining us as a postdoctoral scholar after he recently completed his PhD in Computer Science & Information Systems at Birla Institute of Technology and Science (BITS), Pilani. His research revolves around IoT for building systems, sustainable buildings, AI-enabled building management, and optimal control. Check out his full profile <Link to="/profile/Keshav"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'SixthNewsSection'
+            sectionName: 'SeventhNewsSection'
         },
         {
             NewsSectionName: 'Xiaorong',
@@ -323,7 +323,7 @@ function News() {
                     The Building Robotics Lab is happy to have Heng joining us as a postdoctoral scholar after he recently completed his PhD in Architecture/Building Technology at Shanghai Jiao Tong University (SJTU). His research revolves around thermal comfort, human well-being, environmental sustainability, smart buildings, and data-driven models. Check out his full profile <Link to="/profile/Heng"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'FifthNewsSection'
+            sectionName: 'SixthNewsSection'
         },
         {
             NewsSectionName: 'KaiPublication2',
@@ -362,7 +362,7 @@ function News() {
                     <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/porous_plant_form-induced"><b>Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems</b></Link>. A few of the highlights include the finding that porous plant growth form in VGS amplifies cooling effect by up to 1°C within 800 mm, a negative VGS façade heat flux of -2.32 W/m2 was achieved with porous plant growth form, and there was a 16% higher rate of evaporative cooling from growing media found in porous VGS. Congratulations everyone!
                 </>
             ),
-            sectionName: 'FourthNewsSection'
+            sectionName: 'FifthNewsSection'
         },
         {
             NewsSectionName: 'Guillaume',
@@ -401,7 +401,7 @@ function News() {
                     Dr. Kate Sangwon Lee, Asst Prof Lee, <Link to="/profile/Connor"><b>Connor</b></Link>, <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/towards_democratization_of"><b>Towards democratization of digital twins: Design principles for transformation into a human-building interface</b></Link>. They developed design principles for a digital twin as an occupant-building interface, discovered occupants' needs for informed decision-making through digital twins, and included occupants as end users od digital twins for occupant-centric buildings. Congratulations everyone!
                 </>
             ),
-            sectionName: 'ThirdhNewsSection'
+            sectionName: 'FourthNewsSection'
         },
         {
             NewsSectionName: 'Pegah',
@@ -440,7 +440,7 @@ function News() {
                     The Building Robotics Lab is happy to have Kelly joining us as a PhD student in the Department of the Built Environment after she recently completed her BSc in Project and Facilities Management at NUS. Her research revolves around building energy efficiency, building greenery, building finance, and building information modelling. Check out her full profile <Link to="/profile/Kelly"><b>here</b></Link> to get to know her more!
                 </>
             ),
-            sectionName: 'SecondNewsSection'
+            sectionName: 'ThirdNewsSection'
         },
         {
             NewsSectionName: 'Xiaosong',
@@ -479,7 +479,7 @@ function News() {
                     The Building Robotics Lab is happy to have Connor joining us as a PhD student in the Department of the Built Environment after he recently completed his MSc in Built Environment: Environmental Design and Engineering at UCL in the Bartlett Faculty of the Built Environment. His research revolves around virtual power plants, building-occupant network dynamics, smart buildings, human-building interaction, and decarbonisation. Check out his full profile <Link to="/profile/Connor"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'FirstNewsSection'
+            sectionName: 'SecondNewsSection'
         },
         {
             NewsSectionName: 'IqbalPublication',
@@ -514,40 +514,44 @@ function News() {
             </Container>
 
             
-            <Container useOrange={true} sectionName='NinthNewsSection'>
+            <Container useOrange={true} sectionName='TenthNewsSection'>
                 <NewsGrid newsData={newsData.slice(0, 3)} highlightedSection={highlightedSection} sectionName='NinthNewsSection' />
              </Container>
             
-            <Container sectionName='EighthNewsSection'>
-                <NewsGrid newsData={newsData.slice(3, 6)} highlightedSection={highlightedSection} sectionName='EighthNewsSection' />
+            <Container sectionName='NinthNewsSection'>
+                <NewsGrid newsData={newsData.slice(3, 6)} highlightedSection={highlightedSection} sectionName='NinthNewsSection' />
+             </Container>
+            
+            <Container useOrange={true} sectionName='EighthNewsSection'>
+                <NewsGrid newsData={newsData.slice(6, 9)} highlightedSection={highlightedSection} sectionName='EighthNewsSection' />
             </Container>
             
-            <Container useOrange={true} sectionName='SeventhNewsSection'>
-                <NewsGrid newsData={newsData.slice(6, 9)} highlightedSection={highlightedSection} sectionName='SeventhNewsSection' />
+            <Container sectionName='SeventhNewsSection'>
+                <NewsGrid newsData={newsData.slice(9, 12)} highlightedSection={highlightedSection} sectionName='SeventhNewsSection' />
             </Container>
 
-            <Container sectionName='SixthNewsSection'>
-                <NewsGrid newsData={newsData.slice(9, 12)} highlightedSection={highlightedSection} sectionName='SixthNewsSection' />
+            <Container useOrange={true} sectionName='SixthNewsSection'>
+                <NewsGrid newsData={newsData.slice(12, 15)} highlightedSection={highlightedSection} sectionName='SixthNewsSection' />
             </Container>
 
-            <Container useOrange={true} sectionName='FifthNewsSection'>
-                <NewsGrid newsData={newsData.slice(12, 15)} highlightedSection={highlightedSection} sectionName='FifthNewsSection' />
+            <Container sectionName='FifthNewsSection'>
+                <NewsGrid newsData={newsData.slice(15, 18)} highlightedSection={highlightedSection} sectionName='FifthNewsSection' />
             </Container>
             
-            <Container sectionName='FourthNewsSection'>
-                <NewsGrid newsData={newsData.slice(15, 18)} highlightedSection={highlightedSection} sectionName='FourthNewsSection' />
+            <Container useOrange={true} sectionName='FourthNewsSection'>
+                <NewsGrid newsData={newsData.slice(18, 21)} highlightedSection={highlightedSection} sectionName='FourthNewsSection' />
             </Container>
 
-            <Container useOrange={true} sectionName='ThirdNewsSection'>
-                <NewsGrid newsData={newsData.slice(18, 21)} highlightedSection={highlightedSection} sectionName='ThirdNewsSection' />
+            <Container sectionName='ThirdNewsSection'>
+                <NewsGrid newsData={newsData.slice(21, 24)} highlightedSection={highlightedSection} sectionName='ThirdNewsSection' />
             </Container>
 
-            <Container sectionName='SecondNewsSection'>
-                <NewsGrid newsData={newsData.slice(21, 24)} highlightedSection={highlightedSection} sectionName='SecondNewsSection' />
+            <Container useOrange={true} sectionName='SecondNewsSection'>
+                <NewsGrid newsData={newsData.slice(24, 27)} highlightedSection={highlightedSection} sectionName='SecondNewsSection' />
             </Container>
 
-            <Container useOrange={true} sectionName='FirstNewsSection'>
-                <NewsGrid newsData={newsData.slice(24, 27)} highlightedSection={highlightedSection} sectionName='FirstNewsSection' />
+            <Container sectionName='FirstNewsSection'>
+                <NewsGrid newsData={newsData.slice(27, 30)} highlightedSection={highlightedSection} sectionName='FirstNewsSection' />
             </Container>
 
             <Footer />
