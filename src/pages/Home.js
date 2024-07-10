@@ -12,14 +12,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 //import KateNews from './../components/Website Data/kate_pub2.png'
-import ChenxiNews from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg';
+import ChenxiNews from './../components/Website Individual Information/Chenxi/image_news.jpeg';
 import TeamNews8 from './../components/Website Individual Information/Team/Kajima_news.jpg';
-//import TeamNews7 from './../components/Website Individual Information/Team/ThomasParkinson_news.jpg';
+import TeamNews7 from './../components/Website Individual Information/Team/ThomasParkinson_news.jpg';
 import HuanxiangNews from './../components/Website Individual Information/Huanxiang/image_news.jpeg';
 import TeamNews6 from './../components/Website Individual Information/Team/PMO_news.jpg';
 import TeamNews5 from './../components/Website Individual Information/Team/WCS2024_news.jpeg';
-import JonathanNews from './../components/Website Individual Information/Jonathan/image_news.jpg'
-import TeamNews4 from './../components/Website Individual Information/Team/Trane_news.jpg';
 
 const slides = [
     //6 most-recent news
@@ -41,12 +39,12 @@ const slides = [
         date: '05/07/2024',
         link: 'TenthNewsSection',
     },
-    /*{
+    {
         image: TeamNews7,
         title: '<b>A visit from the IEQ Lab (University of Sydney)!</b>',
         date: '03/07/2024',
-        link: 'NinthNewsSection',
-    },*/
+        link: 'TenthNewsSection',
+    },
     {
         image: HuanxiangNews,
         title: '<b>Please welcome Gao Huanxiang to the lab!</b>',
@@ -64,18 +62,6 @@ const slides = [
         title: '<b>Iqbal at the World Cities Summit (WCS) 2024!</b>',
         date: '05/06/2024',
         link: 'NinthNewsSection',
-    },
-    {
-        image: JonathanNews,
-        title: '<b>Please welcome Jonathan Poon to the lab!</b>',
-        date: '20/05/2024',
-        link: 'EighthNewsSection',
-    },
-    {
-        image: TeamNews4,
-        title: '<b>A visit from Trane Technologies!</b>',
-        date: '03/05/2024',
-        link: 'EighthNewsSection',
     },
 ];
 

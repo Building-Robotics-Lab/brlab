@@ -8,9 +8,9 @@ import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
 //import KatePublication2 from './../components/Website Data/kate_pub2.png';
-import ChenxiPic from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg';
+import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
 import Kajima from './../components/Website Individual Information/Team/Kajima.jpg'
-//import ThomasParkinson from './../components/Website Individual Information/Team/ThomasParkinson.jpg'
+import ThomasParkinson from './../components/Website Individual Information/Team/ThomasParkinson.jpg'
 import HuanxiangPic from './../components/Website Individual Information/Huanxiang/image.jpeg';
 import PMO from './../components/Website Individual Information/Team/PMO.jpg'
 import WCS from './../components/Website Individual Information/Team/WCS2024.jpeg';
@@ -143,7 +143,7 @@ function News() {
             ),
             sectionName: 'TenthNewsSection'
         },
-        /*{
+        {
             NewsSectionName: 'ThomasParkinson',
             imageSrc: ThomasParkinson,
             altText: "A group photo with Thomas Parkinson and the NUS Building Robotics Lab team.",
@@ -151,11 +151,11 @@ function News() {
             title: 'A visit from the IEQ Lab (University of Sydney)!',
             content: (
                 <>
-                    We were happy to have a bit of a <Link to="https://cbe.berkeley.edu/"><b>Center for the Built Environment</b></Link> reunion as <Link to="https://www.linkedin.com/in/thomas-c-parkinson/"><b>Dr. Thomas Parkinson</b></Link> (Assistant Professor and Deputy Director of the<Link to="https://www.sydney.edu.au/architecture/our-research/research-labs-and-facilities/indoor-environmental-quality-lab.html"><b>IEQ Lab, University of Sydney)</b></Link> stopped by our lab to discuss and experience our ongoing research projects. Looking forward to future collaborations with the IEQ Lab, as we share a common vision for healthy and sustainable built environments!
+                    We were happy to have a bit of a <Link to="https://cbe.berkeley.edu/"><b>Center for the Built Environment</b></Link> reunion as <Link to="https://www.linkedin.com/in/thomas-c-parkinson/"><b>Dr. Thomas Parkinson</b></Link> (Assistant Professor and Deputy Director of the <Link to="https://www.sydney.edu.au/architecture/our-research/research-labs-and-facilities/indoor-environmental-quality-lab.html"><b>IEQ Lab, University of Sydney)</b></Link> stopped by our lab to discuss and experience our ongoing research projects. Looking forward to future collaborations with the IEQ Lab, as we share a common vision for healthy and sustainable built environments!
                 </>
             ),
-            sectionName: 'NinthNewsSection'
-        },*/
+            sectionName: 'TenthNewsSection'
+        },
         {
             NewsSectionName: 'Huanxiang',
             imageSrc: HuanxiangPic,
@@ -167,7 +167,7 @@ function News() {
                     The Building Robotics Lab is happy to have Huanxiang joining us as a Research Associate before he begins his PhD within the Department of the Built Environment after he recently completed his MEng in Civil and Environmental Engineering at Harbin Institute of Technology. His research revolves around computer vision, thermal comfort, and energy conservation. Check out his full profile <Link to="/profile/Huanxiang"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'TenthNewsSection'
+            sectionName: 'NinthNewsSection'
         },
         {
             NewsSectionName: 'PMO',
@@ -206,7 +206,7 @@ function News() {
                     The Building Robotics Lab is happy to have Jonathan joining us as a Research Assistant before he begins his PhD within the Department of the Built Environment after he recently completed his BSc in Project and Facilities Management at NUS. His research revolves around building performance simulation, building energy efficiency, and building envelope materials. Check out his full profile <Link to="/profile/Jonathan"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'NinthNewsSection'
+            sectionName: 'EighthNewsSection'
         },
         {
             NewsSectionName: 'Trane',
@@ -245,7 +245,7 @@ function News() {
                     The Building Robotics Lab is happy to have Rezky joining us as a Research Associate before he begins his PhD within the Department of the Built Environment after he recently completed his MSc in Engineering Physics at Institut Teknologi Bandung. His research revolves around smart buildings, thermal comfort, building energy efficiency, and AI for energy. Check out his full profile <Link to="/profile/Rezky"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'EighthNewsSection'
+            sectionName: 'SeventhNewsSection'
         },
         {
             NewsSectionName: 'RitaStreblow',
@@ -284,7 +284,7 @@ function News() {
                     The Building Robotics Lab is happy to have Keshav joining us as a postdoctoral scholar after he recently completed his PhD in Computer Science & Information Systems at Birla Institute of Technology and Science (BITS), Pilani. His research revolves around IoT for building systems, sustainable buildings, AI-enabled building management, and optimal control. Check out his full profile <Link to="/profile/Keshav"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'SeventhNewsSection'
+            sectionName: 'SixthNewsSection'
         },
         {
             NewsSectionName: 'Xiaorong',
@@ -323,7 +323,7 @@ function News() {
                     The Building Robotics Lab is happy to have Heng joining us as a postdoctoral scholar after he recently completed his PhD in Architecture/Building Technology at Shanghai Jiao Tong University (SJTU). His research revolves around thermal comfort, human well-being, environmental sustainability, smart buildings, and data-driven models. Check out his full profile <Link to="/profile/Heng"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'SixthNewsSection'
+            sectionName: 'FifthNewsSection'
         },
         {
             NewsSectionName: 'KaiPublication2',
@@ -362,7 +362,7 @@ function News() {
                     <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/porous_plant_form-induced"><b>Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems</b></Link>. A few of the highlights include the finding that porous plant growth form in VGS amplifies cooling effect by up to 1°C within 800 mm, a negative VGS façade heat flux of -2.32 W/m2 was achieved with porous plant growth form, and there was a 16% higher rate of evaporative cooling from growing media found in porous VGS. Congratulations everyone!
                 </>
             ),
-            sectionName: 'FifthNewsSection'
+            sectionName: 'FourthNewsSection'
         },
         {
             NewsSectionName: 'Guillaume',
@@ -401,7 +401,7 @@ function News() {
                     Dr. Kate Sangwon Lee, Asst Prof Lee, <Link to="/profile/Connor"><b>Connor</b></Link>, <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/towards_democratization_of"><b>Towards democratization of digital twins: Design principles for transformation into a human-building interface</b></Link>. They developed design principles for a digital twin as an occupant-building interface, discovered occupants' needs for informed decision-making through digital twins, and included occupants as end users od digital twins for occupant-centric buildings. Congratulations everyone!
                 </>
             ),
-            sectionName: 'FourthNewsSection'
+            sectionName: 'ThirdNewsSection'
         },
         {
             NewsSectionName: 'Pegah',
@@ -440,7 +440,7 @@ function News() {
                     The Building Robotics Lab is happy to have Kelly joining us as a PhD student in the Department of the Built Environment after she recently completed her BSc in Project and Facilities Management at NUS. Her research revolves around building energy efficiency, building greenery, building finance, and building information modelling. Check out her full profile <Link to="/profile/Kelly"><b>here</b></Link> to get to know her more!
                 </>
             ),
-            sectionName: 'ThirdNewsSection'
+            sectionName: 'SecondNewsSection'
         },
         {
             NewsSectionName: 'Xiaosong',
@@ -479,7 +479,7 @@ function News() {
                     The Building Robotics Lab is happy to have Connor joining us as a PhD student in the Department of the Built Environment after he recently completed his MSc in Built Environment: Environmental Design and Engineering at UCL in the Bartlett Faculty of the Built Environment. His research revolves around virtual power plants, building-occupant network dynamics, smart buildings, human-building interaction, and decarbonisation. Check out his full profile <Link to="/profile/Connor"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'SecondNewsSection'
+            sectionName: 'FirstNewsSection'
         },
         {
             NewsSectionName: 'IqbalPublication',
