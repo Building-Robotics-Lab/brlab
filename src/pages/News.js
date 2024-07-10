@@ -122,7 +122,7 @@ function News() {
             imageSrc: ChenxiPic,
             altText: "A headshot of Chenxi.",
             date: '05/07/2024',
-            title: 'Please welcome Chenxi to the lab!',
+            title: 'Please welcome Lei Chenxi to the lab!',
             content: (
                 <>
                     The Building Robotics Lab is happy to have Chenxi joining us as a Research Associate before she begins her PhD within the Department of the Built Environment after she recently completed her MArch in Architectural Technology and Science at Tianjin University. Her research revolves around user-centered design, building performance simulation and optimization, and human-building interaction. Check out her full profile <Link to="/profile/Chenxi"><b>here</b></Link> to get to know her more!
