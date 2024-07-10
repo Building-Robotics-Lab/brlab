@@ -661,7 +661,7 @@ function Join_the_Lab() {
                             <h4><b>Current Opportunities</b></h4>
                         </div>
                         <div className="position_information">
-                            <p>There is available workload and physical space in the Lab (as of {getMonthName(month)} {year}).</p>
+                            <p>I am currently seeking Postdoctoral Scholars and PhD students to join our lab to work on an array of projects related to smart buildings, human-building interaction, and human-centered AI! Applicants who have experience, or an interest, in applying AI/ML solutions to grid-interactive and smart buildings are particularly encouraged to apply. [as of {getMonthName(month)} {year}]</p>
                         </div>
                     </div>
 
