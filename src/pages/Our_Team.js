@@ -115,14 +115,7 @@ function Our_Team() {
             skills: 'Building Performance Simulation; Building Energy Efficiency; Building Envelope Materials',
             imgSrc: JonathanPic,
             link: 'Jonathan'
-        },
-        {
-            name: 'Wang Xiaorong',
-            role: 'Visiting PhD Candidate',
-            skills: 'Urban Green Infrastructure Planning; Nature-Based Land Planning Solutions; Building Energy Efficiency',
-            imgSrc: XiaorongPic,
-            link: 'Xiaorong'
-        },
+        }
         /*{
             name: 'Maxime Caillat',
             role: 'Visiting MSc Student',
@@ -133,6 +126,17 @@ function Our_Team() {
     ];
 
     const alumnis = [
+        {
+            name: 'Wang Xiaorong',
+            role: (
+                <>
+                PhD Candidate <br />
+                China University of Geosciences (China)
+                </>
+            ),
+            skills: 'Visiting PhD Candidate (January 2024 - July 2024)',
+            imgSrc: XiaorongPic,
+        },
         {
             name: 'Riccardo Talami',
             role: (
