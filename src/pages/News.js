@@ -105,6 +105,19 @@ function News() {
 
     const newsData = [
         /*{
+            NewsSectionName: 'Maxime',
+            imageSrc: MaximePic,
+            altText: "A headshot of Maxime Caillat.",
+            date: '',
+            title: 'Please welcome Maxime Caillat to the lab!',
+            content: (
+                <>
+                    The Building Robotics Lab is happy to have Maxime joining us from Switzerland as a visiting MSc student at ETH Zürich studying Applied Mathematics to Financial Engineering in the Department of Mathematics. His research revolves around . Check out his full profile <Link to="/profile/Maxime"><b>here</b></Link> to get to know him more!
+                </>
+            ),
+            sectionName: 'TenthNewsSection'
+        },*/
+        /*{
             NewsSectionName: 'KatePublication2',
             imageSrc: KatePublication2,
             altText: "A graphical abstract of the publication.",

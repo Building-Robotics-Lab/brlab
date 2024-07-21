@@ -25,6 +25,7 @@ import HuanxiangPic from './../components/Website Individual Information/Huanxia
 import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
 import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpg';
 import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
+//import MaximePic from './components/Website Individual Information/Untitled.jpeg'
 import RiccardoPic from './../components/Website Individual Information/Riccardo/image.jpg';
 import PegahPic from './../components/Website Individual Information/Pegah/image.jpg';
 import GuillaumePic from './../components/Website Individual Information/Guillaume/image.jpg';
@@ -122,6 +123,13 @@ function Our_Team() {
             imgSrc: XiaorongPic,
             link: 'Xiaorong'
         },
+        /*{
+            name: 'Maxime Caillat',
+            role: 'Visiting MSc Student',
+            skills: '',
+            imgSrc: MaximePic,
+            link: 'Maxime'
+        },*/
     ];
 
     const alumnis = [

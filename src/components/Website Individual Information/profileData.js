@@ -34,6 +34,9 @@ import JonathanCV from './Jonathan/CV.pdf'
 import XiaorongPic from './Xiaorong/image.jpeg'
 import XiaorongCV from './Xiaorong/CV.pdf'
 
+//import MaximePic from './components/Website Individual Information/Untitled.jpeg'
+//import MaximeCV from './Maxime/CV.pdf'
+
 import RiccardoPic from './Riccardo/image.jpg'
 import RiccardoCV from './Riccardo/CV.pdf'
 
@@ -603,6 +606,35 @@ const profiles = [
             'Building Energy Efficiency',
         ],
     },
+    /*{
+        ProfileName: 'Maxime',
+        ProfileLink: "/profile/Maxime",
+        ProfilePic: MaximePic,
+        Name: 'Maxime Caillat',
+        Position: 'Visiting MSc Student',
+        Position2: 'ETH Zürich (Switzerland)',
+        Biography: '',
+        Education: [
+            'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Applied Mathematics to Financial Engineering (2025)',
+            'BSc, École Polytechnique Fédérale de Lausanne (EPFL), Mathematics (2023)'
+        ],
+        Awards: [],
+        Featured_Publications: [],
+        Contacts: [
+            { href: "mailto:mcaillat@student.ethz.ch", icon: faEnvelope, text: "mcaillat@student.ethz.ch" }
+        ],
+        Links: [
+            { href: MaximeCV, icon: faUser, text: 'CV' },
+            { href: 'https://www.linkedin.com/in/maxime-caillat/', icon: faLinkedin, text: 'LinkedIn' }
+        ],
+        Interests: [
+            '',
+            '',
+            '',
+            '',
+            ''
+        ],
+    },*/
     {
         ProfileName: 'Riccardo',
         ProfileLink: "/profile/Riccardo",

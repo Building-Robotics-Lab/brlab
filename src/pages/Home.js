@@ -22,6 +22,12 @@ import TeamNews5 from './../components/Website Individual Information/Team/WCS20
 const slides = [
     //6 most-recent news
     /*{
+        image: MaximeNews,
+        title: '<b>Please welcome Maxime Caillat to the lab!</b>',
+        date: '',
+        link: 'TenthNewsSection',
+    },
+    /*{
         image: KateNews2,
         title: '<b><i>Journal of Building Engineering</i> publication announcement!</b>',
         date: '//2024',
