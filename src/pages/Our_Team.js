@@ -24,8 +24,9 @@ import RezkyPic from './../components/Website Individual Information/Rezky/image
 import HuanxiangPic from './../components/Website Individual Information/Huanxiang/image.jpeg';
 import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
 import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpg';
-import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
 //import MaximePic from './components/Website Individual Information/Untitled.jpeg'
+//import XianPic from './components/Website Individual Information/Untitled.jpeg'
+import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
 import RiccardoPic from './../components/Website Individual Information/Riccardo/image.jpg';
 import PegahPic from './../components/Website Individual Information/Pegah/image.jpg';
 import GuillaumePic from './../components/Website Individual Information/Guillaume/image.jpg';
@@ -116,6 +117,13 @@ function Our_Team() {
             imgSrc: JonathanPic,
             link: 'Jonathan'
         }
+        /*{
+            name: 'Zhang Xian',
+            role: 'Visiting PhD Candidate',
+            skills: 'Human Factors Comfort; Cabin Lighting Environment',
+            imgSrc: XianPic,
+            link: 'Xian'
+        },*/
         /*{
             name: 'Maxime Caillat',
             role: 'Visiting MSc Student',

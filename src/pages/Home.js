@@ -11,6 +11,8 @@ import LandingPageVideo from './../components/Website Data/Smart_Building_Full_A
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
+//import XianNews from './components/Website Individual Information/Untitled.jpeg'
+//import MaximeNews from './components/Website Individual Information/Untitled.jpeg'
 //import KateNews from './../components/Website Data/kate_pub2.png'
 import ChenxiNews from './../components/Website Individual Information/Chenxi/image_news.jpeg';
 import TeamNews8 from './../components/Website Individual Information/Team/Kajima_news.jpg';
@@ -22,16 +24,22 @@ import TeamNews5 from './../components/Website Individual Information/Team/WCS20
 const slides = [
     //6 most-recent news
     /*{
+        image: XianNews,
+        title: '<b>Please welcome Zhang Xian to the lab!</b>',
+        date: '',
+        link: 'EleventhNewsSection',
+    },
+    /*{
         image: MaximeNews,
         title: '<b>Please welcome Maxime Caillat to the lab!</b>',
         date: '',
-        link: 'TenthNewsSection',
+        link: 'EleventhNewsSection',
     },
     /*{
         image: KateNews2,
         title: '<b><i>Journal of Building Engineering</i> publication announcement!</b>',
         date: '//2024',
-        link: 'TenthNewsSection',
+        link: 'EleventhNewsSection',
     },*/
     {
         image: ChenxiNews,

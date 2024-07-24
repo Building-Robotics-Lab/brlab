@@ -7,6 +7,8 @@ import './News.css'
 import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
+//import XianPic from './components/Website Individual Information/Untitled.jpeg'
+//import MaximePic from './components/Website Individual Information/Untitled.jpeg'
 //import KatePublication2 from './../components/Website Data/kate_pub2.png';
 import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
 import Kajima from './../components/Website Individual Information/Team/Kajima.jpg'
@@ -105,6 +107,19 @@ function News() {
 
     const newsData = [
         /*{
+            NewsSectionName: 'Xian',
+            imageSrc: XianPic,
+            altText: "A headshot of Zhang Xian.",
+            date: '',
+            title: 'Please welcome Zhang Xian to the lab!',
+            content: (
+                <>
+                    The Building Robotics Lab is happy to have Xian joining us from China as a visiting PhD student at Northwestern Polytechnic University studying Industrial Design in the Department of Industrial Design. Her research revolves around human factors comfort, cabin lighting environment. Check out his full profile <Link to="/profile/Xian"><b>here</b></Link> to get to know him more!
+                </>
+            ),
+            sectionName: 'EleventhNewsSection'
+        },*/
+        /*{
             NewsSectionName: 'Maxime',
             imageSrc: MaximePic,
             altText: "A headshot of Maxime Caillat.",
@@ -115,7 +130,7 @@ function News() {
                     The Building Robotics Lab is happy to have Maxime joining us from Switzerland as a visiting MSc student at ETH Zürich studying Applied Mathematics to Financial Engineering in the Department of Mathematics. His research revolves around . Check out his full profile <Link to="/profile/Maxime"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'TenthNewsSection'
+            sectionName: 'EleventhNewsSection'
         },*/
         /*{
             NewsSectionName: 'KatePublication2',
@@ -128,7 +143,7 @@ function News() {
                     Dr. Kate Sangwon Lee, <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/profile/Connor"><b>Connor</b></Link>, Asst Prof Lee, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/occupant-centric_digital_twins"><b>Occupant-Centric Digital Twin Interfaces for Buildings: Navigating User Preferences, Control, and Privacy</b></Link>. They XXX. Congratulations everyone!
                 </>
             ),
-            sectionName: 'TenthNewsSection'
+            sectionName: 'EleventhNewsSection'
         },*/
         {
             NewsSectionName: 'Chenxi',

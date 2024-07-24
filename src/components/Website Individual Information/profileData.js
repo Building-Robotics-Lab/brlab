@@ -31,11 +31,15 @@ import ChenxiCV from './Chenxi/CV.pdf'
 import JonathanPic from './Jonathan/image.jpg'
 import JonathanCV from './Jonathan/CV.pdf'
 
-import XiaorongPic from './Xiaorong/image.jpeg'
-import XiaorongCV from './Xiaorong/CV.pdf'
 
 //import MaximePic from './components/Website Individual Information/Untitled.jpeg'
 //import MaximeCV from './Maxime/CV.pdf'
+
+//import XianPic from './components/Website Individual Information/Untitled.jpeg'
+//import XianCV from './Maxime/CV.pdf'
+
+import XiaorongPic from './Xiaorong/image.jpeg'
+import XiaorongCV from './Xiaorong/CV.pdf'
 
 import RiccardoPic from './Riccardo/image.jpg'
 import RiccardoCV from './Riccardo/CV.pdf'
@@ -574,6 +578,78 @@ const profiles = [
             'Building Envelope Materials'
         ],
     },
+    /*{
+        ProfileName: 'Xian',
+        ProfileLink: "/profile/Xian",
+        ProfilePic: XianPic,
+        Name: 'Zhang Xian',
+        Position: 'Visiting PhD Candidate',
+        Position2: 'Northwestern Polytechnic University (China)',
+        Biography: '',
+        Education: [
+            'PhD, Northwestern Polytechnic University, Industrial Design (Current)',
+            'Master, Northwestern Polytechnic University, Design Science (2022)'
+            'Bachelor, Northwestern Polytechnic University, Product Design (2019)'
+        ],
+        Awards: [
+            'Excellent Graduate Student Title, Northwestern Polytechnic University (2022)
+            'First-Class Academic Scholarship, Northwestern Polytechnic University (2019)',
+            'Social Activity Scholarship, Northwestern Polytechnic University (2019)',
+            'Northwestern Polytechnic University Outstanding Graduates (2019)',
+            'First-Class Academic Scholarship, Northwestern Polytechnic University (2015)',
+            'Hexagon Academic Scholarship, Hexagon (2015)'
+        ],
+        Featured_Publications: [
+(
+                <>
+                    <b>Zhang, X.</b>, Qiao, Y., Wang, H., Wang, J. and Chen, D., 2023. <a href="https://doi.org/10.1016/j.scitotenv.2023.161933" ><b>Lighting environmental assessment in enclosed spaces based on emotional model</b></a>. <i>Science of The Total Environment, 870</i>, 161933.
+                </>
+            )
+        ],
+        Contacts: [
+            { href: "mailto:mzhangxian@mail.nwpu.edu.cn", icon: faEnvelope, text: "zhangxian@mail.nwpu.edu.cn" }
+        ],
+        Links: [
+            { href: XianCV, icon: faUser, text: 'CV' },
+            //{ href: '', icon: faLinkedin, text: 'LinkedIn' }
+        ],
+        Interests: [
+            'Human Factors Comfort',
+            'Cabin Lighting Environment',
+            '',
+            '',
+            ''
+        ],
+    },*/
+    /*{
+        ProfileName: 'Maxime',
+        ProfileLink: "/profile/Maxime",
+        ProfilePic: MaximePic,
+        Name: 'Maxime Caillat',
+        Position: 'Visiting MSc Student',
+        Position2: 'ETH Zürich (Switzerland)',
+        Biography: '',
+        Education: [
+            'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Applied Mathematics to Financial Engineering (Current)',
+            'BSc, École Polytechnique Fédérale de Lausanne (EPFL), Mathematics (2023)'
+        ],
+        Awards: [],
+        Featured_Publications: [],
+        Contacts: [
+            { href: "mailto:mcaillat@student.ethz.ch", icon: faEnvelope, text: "mcaillat@student.ethz.ch" }
+        ],
+        Links: [
+            { href: MaximeCV, icon: faUser, text: 'CV' },
+            { href: 'https://www.linkedin.com/in/maxime-caillat/', icon: faLinkedin, text: 'LinkedIn' }
+        ],
+        Interests: [
+            '',
+            '',
+            '',
+            '',
+            ''
+        ],
+    },*/
     {
         ProfileName: 'Xiaorong',
         ProfileLink: "/profile/Xiaorong",
@@ -606,35 +682,6 @@ const profiles = [
             'Building Energy Efficiency',
         ],
     },
-    /*{
-        ProfileName: 'Maxime',
-        ProfileLink: "/profile/Maxime",
-        ProfilePic: MaximePic,
-        Name: 'Maxime Caillat',
-        Position: 'Visiting MSc Student',
-        Position2: 'ETH Zürich (Switzerland)',
-        Biography: '',
-        Education: [
-            'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Applied Mathematics to Financial Engineering (2025)',
-            'BSc, École Polytechnique Fédérale de Lausanne (EPFL), Mathematics (2023)'
-        ],
-        Awards: [],
-        Featured_Publications: [],
-        Contacts: [
-            { href: "mailto:mcaillat@student.ethz.ch", icon: faEnvelope, text: "mcaillat@student.ethz.ch" }
-        ],
-        Links: [
-            { href: MaximeCV, icon: faUser, text: 'CV' },
-            { href: 'https://www.linkedin.com/in/maxime-caillat/', icon: faLinkedin, text: 'LinkedIn' }
-        ],
-        Interests: [
-            '',
-            '',
-            '',
-            '',
-            ''
-        ],
-    },*/
     {
         ProfileName: 'Riccardo',
         ProfileLink: "/profile/Riccardo",
