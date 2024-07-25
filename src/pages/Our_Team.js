@@ -78,7 +78,7 @@ function Our_Team() {
         {
             name: 'Connor Aucremanne',
             role: 'PhD Student',
-            skills: 'Virtual Power Plants; Building-Occupant Network Dynamics; Smart Buildings; Human-Building Interaction; Decarbonisation',
+            skills: 'Virtual Power Plants; Building-Occupant Network Dynamics; Energy Informatics; Human-Building Interaction; Smart Buildings',
             imgSrc: ConnorPic,
             link: 'Connor'
         },

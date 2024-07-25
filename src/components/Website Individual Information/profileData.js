@@ -31,7 +31,6 @@ import ChenxiCV from './Chenxi/CV.pdf'
 import JonathanPic from './Jonathan/image.jpg'
 import JonathanCV from './Jonathan/CV.pdf'
 
-
 //import MaximePic from './components/Website Individual Information/Untitled.jpeg'
 //import MaximeCV from './Maxime/CV.pdf'
 
@@ -354,7 +353,7 @@ const profiles = [
         ProfilePic: ConnorPic,
         Name: 'Connor Aucremanne',
         Position: 'PhD Student',
-        Biography: 'Connor Aucremanne is a second-year PhD student at the National University of Singapore (NUS) studying in the College of Design & Engineering\'s Department of the Built Environment. His primary research concerns the democratisation of virtual power plants for optimal monetisation and grid flexibility, as well as secondary projects revolving around digital twin development, resilient cooling, and decarbonisation. In the past, he also conducted valuable research during his time at the Pacific Northwest National Laboratory (PNNL), UCL, UF Center for Undergraduate Research, and Bob Graham Center for Public Service regarding net-zero energy and zero-carbon residential buildings, residential indoor soundscape perpcetion, Floridian residential rooftop solar PV, and Floridian climate change policy and public health. Through his passion, determination, and collaboration for his studies, Connor strives to answer the questions that no one has even thought of to ask. Outside of academia, he enjoys curating Spotify playlists of all genres (except country), rock climbing, collecting coffee table books, and appreciating (most) forms of expression throughout the arts.',
+        Biography: 'Connor Aucremanne is a second-year PhD student at the National University of Singapore (NUS) studying in the College of Design & Engineering\'s Department of the Built Environment. His primary research concerns the democratisation of virtual power plants for optimal monetisation and grid flexibility, as well as secondary projects revolving around digital twin development, resilient cooling, and decarbonisation. In the past, he also conducted valuable research during his time at the Pacific Northwest National Laboratory (PNNL), UCL, UF Center for Undergraduate Research, and Bob Graham Center for Public Service regarding net-zero energy and zero-carbon residential buildings, residential indoor soundscape perpcetion, Floridian residential rooftop solar PV, and Floridian climate change policy and public health. Through his passion, determination, and collaboration for his studies, Connor strives to answer the questions that no one has even thought of to ask. Outside of academia, he tends to curate Spotify playlists of most genres, enjoy the outdoors, collect coffee table books, and appreciate forms of expression throughout the arts.',
         Education: [
             'PhD, National University of Singapore (NUS), Built Environment (Current)',
             'MSc, University College London (UCL), Built Environment: Environmental Design and Engineering (2023)',
@@ -378,11 +377,11 @@ const profiles = [
             { href: 'https://orcid.org/0009-0006-7468-788X', icon: faOrcid, text: 'ORCID' }
         ],
         Interests: [
-            'Smart Buildings',
-            'Building-Occupant Network Dynamics',
             'Virtual Power Plants',
+            'Building-Occupant Network Dynamics',
+            'Energy Informatics',
             'Human-Building Interaction',
-            'Decarbonisation'
+            'Smart Buildings'
         ],
     },
     {

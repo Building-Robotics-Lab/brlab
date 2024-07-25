@@ -26,13 +26,13 @@ const slides = [
     /*{
         image: XianNews,
         title: '<b>Please welcome Zhang Xian to the lab!</b>',
-        date: '',
+        date: '//2024',
         link: 'EleventhNewsSection',
     },
     /*{
         image: MaximeNews,
         title: '<b>Please welcome Maxime Caillat to the lab!</b>',
-        date: '',
+        date: '//2024',
         link: 'EleventhNewsSection',
     },
     /*{

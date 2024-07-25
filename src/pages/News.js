@@ -504,7 +504,7 @@ function News() {
             title: 'Please welcome Connor Aucremanne to the lab!',
             content: (
                 <>
-                    The Building Robotics Lab is happy to have Connor joining us as a PhD student in the Department of the Built Environment after he recently completed his MSc in Built Environment: Environmental Design and Engineering at UCL in the Bartlett Faculty of the Built Environment. His research revolves around virtual power plants, building-occupant network dynamics, smart buildings, human-building interaction, and decarbonisation. Check out his full profile <Link to="/profile/Connor"><b>here</b></Link> to get to know him more!
+                    The Building Robotics Lab is happy to have Connor joining us as a PhD student in the Department of the Built Environment after he recently completed his MSc in Built Environment: Environmental Design and Engineering at UCL in the Bartlett Faculty of the Built Environment. His research revolves around virtual power plants, building-occupant network dynamics, energy informatics, human-building interaction, and smart buildings. Check out his full profile <Link to="/profile/Connor"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'FirstNewsSection'
