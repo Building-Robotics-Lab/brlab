@@ -91,10 +91,17 @@ function Our_Team() {
         },
         {
             name: 'Rezky Nanda',
-            role: 'Research Associate',
+            role: 'PhD Student',
             skills: 'Smart Buildings; Thermal Comfort; Building Energy Efficiency; AI for Energy',
             imgSrc: RezkyPic,
             link: 'Rezky'
+        },
+        {
+            name: 'Jonathan Poon',
+            role: 'PhD Student',
+            skills: 'Building Performance Simulation; Building Energy Efficiency; Building Envelope Materials',
+            imgSrc: JonathanPic,
+            link: 'Jonathan'
         },
         {
             name: 'Gao Huanxiang',
@@ -109,13 +116,6 @@ function Our_Team() {
             skills: 'User-Centered Design; Building Performance Simulation and Optimization; Human-Building Interaction',
             imgSrc: ChenxiPic,
             link: 'Chenxi'
-        },
-        {
-            name: 'Jonathan Poon',
-            role: 'Research Assistant',
-            skills: 'Building Performance Simulation; Building Energy Efficiency; Building Envelope Materials',
-            imgSrc: JonathanPic,
-            link: 'Jonathan'
         }
         /*{
             name: 'Zhang Xian',

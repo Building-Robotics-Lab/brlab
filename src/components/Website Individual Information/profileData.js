@@ -419,15 +419,15 @@ const profiles = [
         ProfileLink: "/profile/Rezky",
         ProfilePic: RezkyPic,
         Name: 'Rezky Nanda',
-        Position: 'Research Associate',
-        Biography: 'Rezky Nanda is currently a Research Associate in the Department of the Built Environment, National University of Singapore (NUS) before he begins his PhD in August 2024 under the A*STAR SINGA. His research focuses on the utilization of artificial intelligence to manage building energy systems, seeking the optimal balance between energy efficiency and occupant comfort. Previously, Rezky worked as an ESD Engineer at AfogreenBuild Pte Ltd, a green building consultant company. During his tenure at AfogreenBuild Pte Ltd, he assisted in several green building certification projects, such as GreenMark and LEED. Outside of work and research, Rezky is an avid reader. At the moment, he likes reading novels by Haruki Murakami, a renowned Japanese writer. Rezky is also fond of classical music and occasionally plays violin. His favourite composers are J.S. Bach and G.F. Händel.',
+        Position: 'PhD Student',
+        Biography: 'Rezky Nanda is currently a PhD student in the Department of the Built Environment, National University of Singapore (NUS) under the A*STAR SINGA. His research focuses on the utilization of artificial intelligence to manage building energy systems, seeking the optimal balance between energy efficiency and occupant comfort. Previously, Rezky worked as an ESD Engineer at AfogreenBuild Pte Ltd, a green building consultant company. During his tenure at AfogreenBuild Pte Ltd, he assisted in several green building certification projects, such as GreenMark and LEED. Outside of work and research, Rezky is an avid reader. At the moment, he likes reading novels by Haruki Murakami, a renowned Japanese writer. Rezky is also fond of classical music and occasionally plays violin. His favourite composers are J.S. Bach and G.F. Händel.',
         Education: [
-            //'PhD, National University of Singapore (NUS), Built Environment (Current)',
+            'PhD, National University of Singapore (NUS), Built Environment (Current)',
             'MSc (<i>cum laude</i>), Institut Teknologi Bandung, Engineering Physics (2022)',
             'BSc (<i>cum laude</i>), Institut Teknologi Bandung, Engineering Physics (2021)'
         ],
         Awards: [
-            //'Singapore International Graduate Award (SINGA), Agency for Science, Technology and Research (A*STAR) (2024 - Present)'
+            'Singapore International Graduate Award (SINGA), Agency for Science, Technology and Research (A*STAR) (2024 - Present)',
             'Dean Award: Highest GPA in Master\’s Program of Engineering Physics, Institut Teknologi Bandung (2022)',
             'Ganesha Talent Assistantship Master Program Scholarship Awardee, Institut Teknologi Bandung (2021)',
             '2nd Place in International Design Competition: Applied Engineering Challenge, American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE) (2020)'
@@ -452,6 +452,38 @@ const profiles = [
             'Thermal Comfort',
             'Building Energy Efficiency',
             'AI for Energy'
+        ],
+    },
+    {
+        ProfileName: 'Jonathan',
+        ProfileLink: "/profile/Jonathan",
+        ProfilePic: JonathanPic,
+        Name: 'Jonathan Poon',
+        Position: 'PhD Student',
+        Biography: 'Jonathan Poon is currently a PhD student in the Department of the Built Environment at the National University of Singapore (NUS) under the President\'s Graduate Fellowship. His research focuses on building performance simulation and energy efficiency. Jonathan is engaged in exploring the feasibility of generating energy reference models that accurately represent buildings in high-density tropical climate cities. Out of the office, Jonathan is usually found volunteering in his church on the weekends or occasionally playing console games. His recent favourite is The Legend of Zelda: Tears of the Kingdom.',
+        Education: [
+            'PhD, National University of Singapore (NUS), Built Environment (Current)',
+            'BSc (<i>Highest Distinction</i>), National University of Singapore (NUS), Project and Facilities Management (w/ minor in Infrastructure & Finance Management) (2024)',
+            'Diploma (<i>Merit</i>), Temasek Polytechnic, Aerospace Engineering'
+        ],
+        Awards: [
+            'NUS President\'s Graduate Fellowship, National University of Singapore (2024 - Present)',
+            'Dean\'s List, National University of Singapore (AY23/24 S1, AY22/23 S2)',
+            'CCA Merit (Leadership), Temasek Polytechnic (2016, 2017, 2018)',
+            'Director\'s List Award, Temasek Polytechnic (2017)'
+        ],
+        Featured_Publications: [],
+        Contacts: [
+            { href: "mailto:jpwj@nus.edu.sg", icon: faEnvelope, text: "jpwj@nus.edu.sg" }
+        ],
+        Links: [
+            { href: JonathanCV, icon: faUser, text: 'CV' },
+            { href: 'https://www.linkedin.com/in/jonathanpwj/', icon: faLinkedin, text: 'LinkedIn' },
+        ],
+        Interests: [
+            'Building Performance Simulation',
+            'Building Energy Efficiency',
+            'Building Envelope Materials'
         ],
     },
     {
@@ -543,38 +575,6 @@ const profiles = [
             'User-Centered Design',
             'Building Performance Simulation and Optimization',
             'Human-Building Interaction'
-        ],
-    },
-    {
-        ProfileName: 'Jonathan',
-        ProfileLink: "/profile/Jonathan",
-        ProfilePic: JonathanPic,
-        Name: 'Jonathan Poon',
-        Position: 'Research Assistant',
-        Biography: 'Jonathan Poon is currently a Research Assistant in the Department of the Built Environment at the National University of Singapore (NUS) before he begins his PhD in August 2024 under the President\'s Graduate Fellowship. His research focuses on building performance simulation and energy efficiency. Jonathan is engaged in exploring the feasibility of generating energy reference models that accurately represent buildings in high-density tropical climate cities. Out of the office, Jonathan is usually found volunteering in his church on the weekends or occasionally playing console games. His recent favourite is The Legend of Zelda: Tears of the Kingdom.',
-        Education: [
-            /*'PhD, National University of Singapore (NUS), Built Environment (Current)',*/
-            'BSc (<i>Highest Distinction</i>), National University of Singapore (NUS), Project and Facilities Management (w/ minor in Infrastructure & Finance Management) (2024)',
-            'Diploma (<i>Merit</i>), Temasek Polytechnic, Aerospace Engineering'
-        ],
-        Awards: [
-            //'NUS President\'s Graduate Fellowship, National University of Singapore (2024 - Present)',
-            'Dean\'s List, National University of Singapore (AY23/24 S1, AY22/23 S2)',
-            'CCA Merit (Leadership), Temasek Polytechnic (2016, 2017, 2018)',
-            'Director\'s List Award, Temasek Polytechnic (2017)'
-        ],
-        Featured_Publications: [],
-        Contacts: [
-            { href: "mailto:jpwj@nus.edu.sg", icon: faEnvelope, text: "jpwj@nus.edu.sg" }
-        ],
-        Links: [
-            { href: JonathanCV, icon: faUser, text: 'CV' },
-            { href: 'https://www.linkedin.com/in/jonathanpwj/', icon: faLinkedin, text: 'LinkedIn' },
-        ],
-        Interests: [
-            'Building Performance Simulation',
-            'Building Energy Efficiency',
-            'Building Envelope Materials'
         ],
     },
     /*{
