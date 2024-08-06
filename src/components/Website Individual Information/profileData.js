@@ -377,11 +377,11 @@ const profiles = [
             { href: 'https://orcid.org/0009-0006-7468-788X', icon: faOrcid, text: 'ORCID' }
         ],
         Interests: [
-            'Virtual Power Plants',
+            'Smart Buildings',
             'Building-Occupant Network Dynamics',
             'Energy Informatics',
             'Human-Building Interaction',
-            'Smart Buildings'
+            'Virtual Power Plants'
         ],
     },
     {
