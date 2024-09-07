@@ -1,15 +1,15 @@
-//import KatePublication2 from './Publication Images/kate_pub2.png'
-import IqbalPublication3 from './Publication Images/1-s2.0-S2666123324000461-ga1_lrg.jpg'
-import AliPublication38 from './Publication Images/1-s2.0-S0378778824001798-ga1_lrg.jpg'
-import MichellePublication from './Publication Images/1-s2.0-S2352710224004741-gr13_lrg.jpg'
-import KaiPublication2 from './Publication Images/1-s2.0-S0360132323011125-gr4_lrg.jpg'
-import RiccardoPublication2 from './Publication Images/riccardo_pub2.png'
-import IqbalPublication1 from './Publication Images/iqbal_publication1.jpg'
-import IqbalPublication2 from './Publication Images/1-s2.0-S0360132323009319-gr3_lrg.jpg'
+import MichellePublication from './Publication Images/michelle_pub1.jpg'
 import KatePublication1 from './Publication Images/kate_pub1.png'
+//import KatePublication2 from './Publication Images/kate_pub2.png'
 import RiccardoPublication1 from './Publication Images/riccardo_pub1.jpg'
-import AliPublication1 from './Publication Images/1-s2.0-S0360132322010411-gr1_lrg.jpg'
+import RiccardoPublication2 from './Publication Images/riccardo_pub2.png'
 import KaiPublication1 from './Publication Images/kai_pub1.png'
+import KaiPublication2 from './Publication Images/kai_pub2.jpg'
+import KaiPublication3 from './Publication Images/kai_pub3.jpg'
+import IqbalPublication1 from './Publication Images/iqbal_publication1.jpg'
+import IqbalPublication2 from './Publication Images/iqbal_publication2.jpg'
+import IqbalPublication3 from './Publication Images/iqbal_publication3.jpg'
+import AliPublication1 from './Publication Images/1-s2.0-S0360132322010411-gr1_lrg.jpg'
 import AliPublication2 from './Publication Images/41598_2022_25047_Fig3_HTML.webp'
 import AliPublication3 from './Publication Images/1-s2.0-S0360132322009118-gr1_lrg.jpg'
 import AliPublication4 from './Publication Images/1-s2.0-S221462962200281X-gr2_lrg.jpg'
@@ -46,6 +46,7 @@ import AliPublication34 from './Publication Images/1-s2.0-S0378778814007932-gr7_
 import AliPublication35 from './Publication Images/1-s2.0-S0378778813007731-gr4.jpg'
 import AliPublication36 from './Publication Images/1-s2.0-S0379711213002269-gr2.jpg'
 import AliPublication37 from './Publication Images/figure1.jpg'
+import AliPublication38 from './Publication Images/1-s2.0-S0378778824001798-ga1_lrg.jpg'
 
 const JournalData = [
     {
@@ -86,6 +87,38 @@ const JournalData = [
                 display_image: KatePublication2
             },*/
             {
+                title: "Warm, moderate, or cool-liker? A Benchmarking Framework to Characterize Occupant Overall Thermal Preferences based on Large-Scale Thermostat Data",
+                journal: "Building and Environment [In Press]",
+                volume: "", issue: "",
+                page: "112046",
+                authors: [
+                    { name: "*Chen Kai", link: "/profile/Kai" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" }
+                ],
+                minRead: "",
+                profiles: ["Kai", "Prof"],
+                links: [
+                    { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2024.112046" },
+                    { type: "ComfortGPT", url: "/brlab/#/comfortgpt" }
+                ],
+                keywords: [
+                    "Overall Thermal Preference",
+                    "Overall Preference Identification and Characterization",
+                    "Comfort Archetypes",
+                    "ECOBEE",
+                    "Chi-Squared Test"
+                ],
+                highlights: [
+                    "Proposed a benchmarking approach to identify overall thermal preferences.",
+                    "Characterized overall preferences based on setpoint/outdoor temperature relationships.",
+                    "Utilized descriptive statistics to establish decision boundaries.",
+                    "Established 3 temporally consistent and 1 temporally chaotic overall preference groups.",
+                    "Defined and investigated five characteristics of the overall preference groups."
+                ],
+                abstract: "Humans could exhibit distinct overall thermal preferences when exposed to identical indoor thermal environments, leading to distinct preference groups such as \"warm-likers\" or \"cool-likers\", who consistently prefer warmer or cooler conditions than the average population, respectively. Currently, most thermal comfort modelling studies focus on capturing momentary or instantaneous comfort states/preferences, ignoring the overall thermal preference. This paper proposes a benchmarking framework to identify and characterize overall thermal preferences based on preferred setpoint/outdoor temperature relationships derived from ECOBEE Donate Your Data program. Using descriptive statistics, we establish 3 temporally consistent overall preference groups, including warm-liker, moderate and cool-liker, along with a temporally chaotic preference group termed random. Our results demonstrate that warm-likers’ preferred temperature setpoints are above 21.5°C on heating days and 24-25°C on cooling days, while cool-likers prefer setpoints below 19.6°C on heating days and 22°C on cooling days. We observed that around 50% of users exhibit secondary overall preferences, implying that overall thermal preference could change over time. On average, overall thermal preference can be established in 10 to 16 setpoint adjustments. The study reveals varied responses to outdoor temperature changes among users: many maintain constant indoor temperature preferences, while a significant number adjust their indoor temperatures upwards by 0.1°C to 0.4°C for each 1°C rise in outdoor temperature. A smaller group prefers cooler indoor temperatures as it gets warmer outside, showing a unique negative adjustment trend of -0.1. We also found that climate interacts with the overall preference group, with warmer climates having more warm-likers and vice versa.",
+                display_image: KaiPublication3
+            },
+            {
                 title: "Enhancing Building Envelopes: Parametric Analysis of Shading Systems for Opaque Facades and Their Comparison with Cool Paints",
                 journal: "Energy and Built Environment [In Press]",
                 volume: "", issue: "",
@@ -97,7 +130,7 @@ const JournalData = [
                     { name: "Ali Ghahramani", link: "/team#prof_profile" },
                 ],
                 minRead: "",
-                profiles: ["Prof"],
+                profiles: ["Iqbal", "Song", "Riccardo", "Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.enbenv.2024.04.001" },
                 ],

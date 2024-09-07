@@ -8,8 +8,9 @@ import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
 //import XianPic from './components/Website Individual Information/Untitled.jpeg'
-//import MaximePic from './components/Website Individual Information/Untitled.jpeg'
 //import KatePublication2 from './../components/Website Data/kate_pub2.png';
+import MaximePic from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
+import KaiPublication3 from './../components/Website Data/kai_paper3.jpg';
 import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
 import Kajima from './../components/Website Individual Information/Team/Kajima.jpg'
 import ThomasParkinson from './../components/Website Individual Information/Team/ThomasParkinson.jpg'
@@ -120,19 +121,6 @@ function News() {
             sectionName: 'EleventhNewsSection'
         },*/
         /*{
-            NewsSectionName: 'Maxime',
-            imageSrc: MaximePic,
-            altText: "A headshot of Maxime Caillat.",
-            date: '',
-            title: 'Please welcome Maxime Caillat to the lab!',
-            content: (
-                <>
-                    The Building Robotics Lab is happy to have Maxime joining us from Switzerland as a visiting MSc student at ETH Zürich studying Applied Mathematics to Financial Engineering in the Department of Mathematics. His research revolves around . Check out his full profile <Link to="/profile/Maxime"><b>here</b></Link> to get to know him more!
-                </>
-            ),
-            sectionName: 'EleventhNewsSection'
-        },*/
-        /*{
             NewsSectionName: 'KatePublication2',
             imageSrc: KatePublication2,
             altText: "A graphical abstract of the publication.",
@@ -146,6 +134,32 @@ function News() {
             sectionName: 'EleventhNewsSection'
         },*/
         {
+            NewsSectionName: 'Maxime',
+            imageSrc: MaximePic,
+            altText: "A headshot of Maxime Caillat.",
+            date: '04/09/2024',
+            title: 'Please welcome Maxime Caillat to the lab!',
+            content: (
+                <>
+                    The Building Robotics Lab is happy to have Maxime joining us from Switzerland as a visiting MSc student at ETH Zürich studying Applied Mathematics in the Department of Mathematics. His research revolves around AI in energy and energy markets. Check out his full profile <Link to="/profile/Maxime"><b>here</b></Link> to get to know him more!
+                </>
+            ),
+            sectionName: 'EleventhNewsSection'
+        },
+        {
+            NewsSectionName: 'KaiPublication3',
+            imageSrc: KaiPublication3,
+            altText: "A graphical abstract of the publication.",
+            date: '03/09/2024',
+            title: '<i>Building and Environment</i> publication announcement!',
+            content: (
+                <>
+                    <Link to="/profile/Kai"><b>Kai</b></Link> and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/warm,_moderate,_or" ><b>Warm, moderate, or cool-liker? A Benchmarking Framework to Characterize Occupant Overall Thermal Preferences based on Large-Scale Thermostat Data</b></Link>. They proposed a benchmarking approach to identify overall thermal preferences by characterizing them based on setpoint and outdoor temperature relationships. Using descriptive statistics, they established decision boundaries and identified four overall preference groups—three temporally consistent and one temporally chaotic—while defining and investigating five key characteristics of these groups. Congratulations you two!
+                </>
+            ),
+            sectionName: 'EleventhNewsSection'
+        },
+        {
             NewsSectionName: 'Chenxi',
             imageSrc: ChenxiPic,
             altText: "A headshot of Chenxi.",
@@ -156,7 +170,7 @@ function News() {
                     The Building Robotics Lab is happy to have Chenxi joining us as a Research Associate before she begins her PhD within the Department of the Built Environment after she recently completed her MArch in Architectural Technology and Science at Tianjin University. Her research revolves around user-centered design, building performance simulation and optimization, and human-building interaction. Check out her full profile <Link to="/profile/Chenxi"><b>here</b></Link> to get to know her more!
                 </>
             ),
-            sectionName: 'TenthNewsSection'
+            sectionName: 'EleventhNewsSection'
         },
         {
             NewsSectionName: 'Kajima',
@@ -195,7 +209,7 @@ function News() {
                     The Building Robotics Lab is happy to have Huanxiang joining us as a Research Associate before he begins his PhD within the Department of the Built Environment after he recently completed his MEng in Civil and Environmental Engineering at Harbin Institute of Technology. His research revolves around computer vision, thermal comfort, and energy conservation. Check out his full profile <Link to="/profile/Huanxiang"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'NinthNewsSection'
+            sectionName: 'TenthNewsSection'
         },
         {
             NewsSectionName: 'PMO',
@@ -234,7 +248,7 @@ function News() {
                     The Building Robotics Lab is happy to have Jonathan joining us as a Research Assistant before he begins his PhD within the Department of the Built Environment after he recently completed his BSc in Project and Facilities Management at NUS. His research revolves around building performance simulation, building energy efficiency, and building envelope materials. Check out his full profile <Link to="/profile/Jonathan"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'EighthNewsSection'
+            sectionName: 'NinthNewsSection'
         },
         {
             NewsSectionName: 'Trane',
@@ -273,7 +287,7 @@ function News() {
                     The Building Robotics Lab is happy to have Rezky joining us as a Research Associate before he begins his PhD within the Department of the Built Environment after he recently completed his MSc in Engineering Physics at Institut Teknologi Bandung. His research revolves around smart buildings, thermal comfort, building energy efficiency, and AI for energy. Check out his full profile <Link to="/profile/Rezky"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'SeventhNewsSection'
+            sectionName: 'EighthNewsSection'
         },
         {
             NewsSectionName: 'RitaStreblow',
@@ -312,7 +326,7 @@ function News() {
                     The Building Robotics Lab is happy to have Keshav joining us as a postdoctoral scholar after he recently completed his PhD in Computer Science & Information Systems at Birla Institute of Technology and Science (BITS), Pilani. His research revolves around IoT for building systems, sustainable buildings, AI-enabled building management, and optimal control. Check out his full profile <Link to="/profile/Keshav"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'SixthNewsSection'
+            sectionName: 'SeventhNewsSection'
         },
         {
             NewsSectionName: 'Xiaorong',
@@ -351,7 +365,7 @@ function News() {
                     The Building Robotics Lab is happy to have Heng joining us as a postdoctoral scholar after he recently completed his PhD in Architecture/Building Technology at Shanghai Jiao Tong University (SJTU). His research revolves around thermal comfort, human well-being, environmental sustainability, smart buildings, and data-driven models. Check out his full profile <Link to="/profile/Heng"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'FifthNewsSection'
+            sectionName: 'SixthNewsSection'
         },
         {
             NewsSectionName: 'KaiPublication2',
@@ -390,7 +404,7 @@ function News() {
                     <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/porous_plant_form-induced"><b>Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems</b></Link>. A few of the highlights include the finding that porous plant growth form in VGS amplifies cooling effect by up to 1°C within 800 mm, a negative VGS façade heat flux of -2.32 W/m2 was achieved with porous plant growth form, and there was a 16% higher rate of evaporative cooling from growing media found in porous VGS. Congratulations everyone!
                 </>
             ),
-            sectionName: 'FourthNewsSection'
+            sectionName: 'FifthNewsSection'
         },
         {
             NewsSectionName: 'Guillaume',
@@ -429,7 +443,7 @@ function News() {
                     Dr. Kate Sangwon Lee, Asst Prof Lee, <Link to="/profile/Connor"><b>Connor</b></Link>, <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/towards_democratization_of"><b>Towards democratization of digital twins: Design principles for transformation into a human-building interface</b></Link>. They developed design principles for a digital twin as an occupant-building interface, discovered occupants' needs for informed decision-making through digital twins, and included occupants as end users od digital twins for occupant-centric buildings. Congratulations everyone!
                 </>
             ),
-            sectionName: 'ThirdNewsSection'
+            sectionName: 'FourthNewsSection'
         },
         {
             NewsSectionName: 'Pegah',
@@ -468,7 +482,7 @@ function News() {
                     The Building Robotics Lab is happy to have Kelly joining us as a PhD student in the Department of the Built Environment after she recently completed her BSc in Project and Facilities Management at NUS. Her research revolves around building energy efficiency, building greenery, building finance, and building information modelling. Check out her full profile <Link to="/profile/Kelly"><b>here</b></Link> to get to know her more!
                 </>
             ),
-            sectionName: 'SecondNewsSection'
+            sectionName: 'ThirdNewsSection'
         },
         {
             NewsSectionName: 'Xiaosong',
@@ -507,7 +521,7 @@ function News() {
                     The Building Robotics Lab is happy to have Connor joining us as a PhD student in the Department of the Built Environment after he recently completed his MSc in Built Environment: Environmental Design and Engineering at UCL in the Bartlett Faculty of the Built Environment. His research revolves around smart buildings, building-occupant network dynamics, energy informatics, human-building interaction, and virtual power plants. Check out his full profile <Link to="/profile/Connor"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'FirstNewsSection'
+            sectionName: 'SecondNewsSection'
         },
         {
             NewsSectionName: 'IqbalPublication',
@@ -541,7 +555,30 @@ function News() {
                 </div>
             </Container>
 
-            
+            {(() => {
+            const sectionNames = [
+                'EleventhNewsSection', 'TenthNewsSection', 'NinthNewsSection', 'EighthNewsSection', 'SeventhNewsSection',
+                'SixthNewsSection', 'FifthNewsSection', 'FourthNewsSection', 'ThirdNewsSection',
+                'SecondNewsSection', 'FirstNewsSection'
+            ];
+
+            return sectionNames.map((sectionName, index) => (
+                <Container
+                    key={sectionName}
+                    sectionName={sectionName}
+                    useOrange={index % 2 === 0} // Alternates the use of the `useOrange` prop
+                >
+                    <NewsGrid
+                        newsData={newsData.slice(index * 3, index * 3 + 3)}
+                        highlightedSection={highlightedSection}
+                        sectionName={sectionName}
+                    />
+                </Container>
+            ));
+            })()}
+
+{
+            /*
             <Container useOrange={true} sectionName='TenthNewsSection'>
                 <NewsGrid newsData={newsData.slice(0, 3)} highlightedSection={highlightedSection} sectionName='NinthNewsSection' />
              </Container>
@@ -581,6 +618,8 @@ function News() {
             <Container sectionName='FirstNewsSection'>
                 <NewsGrid newsData={newsData.slice(27, 30)} highlightedSection={highlightedSection} sectionName='FirstNewsSection' />
             </Container>
+            */
+            }
 
             <Footer />
         </div>

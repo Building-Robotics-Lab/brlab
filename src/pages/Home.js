@@ -11,15 +11,14 @@ import LandingPageVideo from './../components/Website Data/Smart_Building_Full_A
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
-//import XianNews from './components/Website Individual Information/Untitled.jpeg'
-//import MaximeNews from './components/Website Individual Information/Untitled.jpeg'
+//import XianNews from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
 //import KateNews from './../components/Website Data/kate_pub2.png'
+import MaximeNews from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
+import KaiNews from './..//components/Website Data/kai_paper3_news.jpg';
 import ChenxiNews from './../components/Website Individual Information/Chenxi/image_news.jpeg';
 import TeamNews8 from './../components/Website Individual Information/Team/Kajima_news.jpg';
 import TeamNews7 from './../components/Website Individual Information/Team/ThomasParkinson_news.jpg';
 import HuanxiangNews from './../components/Website Individual Information/Huanxiang/image_news.jpeg';
-import TeamNews6 from './../components/Website Individual Information/Team/PMO_news.jpg';
-import TeamNews5 from './../components/Website Individual Information/Team/WCS2024_news.jpeg';
 
 const slides = [
     //6 most-recent news
@@ -30,17 +29,23 @@ const slides = [
         link: 'EleventhNewsSection',
     },
     /*{
-        image: MaximeNews,
-        title: '<b>Please welcome Maxime Caillat to the lab!</b>',
-        date: '//2024',
-        link: 'EleventhNewsSection',
-    },
-    /*{
         image: KateNews2,
         title: '<b><i>Journal of Building Engineering</i> publication announcement!</b>',
         date: '//2024',
         link: 'EleventhNewsSection',
     },*/
+    {
+        image: MaximeNews,
+        title: '<b>Please welcome Maxime Caillat to the lab!</b>',
+        date: '04/09/2024',
+        link: 'EleventhNewsSection',
+    },
+    {
+        image: KaiNews,
+        title: '<b><i>Building and Environment</i> publication announcement!</b>',
+        date: '03/09/2024',
+        link: 'EleventhNewsSection',
+    },
     {
         image: ChenxiNews,
         title: '<b>Please welcome Lei Chenxi to the lab!</b>',
@@ -64,19 +69,7 @@ const slides = [
         title: '<b>Please welcome Gao Huanxiang to the lab!</b>',
         date: '18/06/2024',
         link: 'NinthhNewsSection',
-    },
-    {
-        image: TeamNews6,
-        title: '<b>A visit from the Climate Change & Sustainability Science & Technology Division, National Climate Change Secretariat!</b>',
-        date: '18/06/2024',
-        link: 'NinthNewsSection',
-    },
-    {
-        image: TeamNews5,
-        title: '<b>Iqbal at the World Cities Summit (WCS) 2024!</b>',
-        date: '05/06/2024',
-        link: 'NinthNewsSection',
-    },
+    }
 ];
 
 function Home() {

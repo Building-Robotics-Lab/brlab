@@ -22,20 +22,20 @@ import KellyCV from './Kelly/CV.pdf'
 import RezkyPic from './Rezky/image.jpeg'
 import RezkyCV from './Rezky/CV.pdf'
 
+import JonathanPic from './Jonathan/image.jpg'
+import JonathanCV from './Jonathan/CV.pdf'
+
 import HuanxiangPic from './Huanxiang/image.jpeg'
 import HuanxiangCV from './Huanxiang/CV.pdf'
 
 import ChenxiPic from './Chenxi/image.jpeg'
 import ChenxiCV from './Chenxi/CV.pdf'
 
-import JonathanPic from './Jonathan/image.jpg'
-import JonathanCV from './Jonathan/CV.pdf'
+import MaximePic from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
+import MaximeCV from './Maxime/CV.pdf'
 
-//import MaximePic from './components/Website Individual Information/Untitled.jpeg'
-//import MaximeCV from './Maxime/CV.pdf'
-
-//import XianPic from './components/Website Individual Information/Untitled.jpeg'
-//import XianCV from './Maxime/CV.pdf'
+//import XianPic from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
+//import XianCV from './Xian/CV.pdf'
 
 import XiaorongPic from './Xiaorong/image.jpeg'
 import XiaorongCV from './Xiaorong/CV.pdf'
@@ -64,8 +64,8 @@ import IlyasCV from './Ilyas/CV.pdf'
 import MichellePic from './Michelle/image.jpg'
 import MichelleCV from './Michelle/CV.pdf'
 
-import { faPhone, faEnvelope, faUser, faTemperatureHalf, faPerson, faS, faImage } from '@fortawesome/free-solid-svg-icons';
-import { faGoogle, faLinkedin, faResearchgate, faOrcid, faGit, faGithub } from '@fortawesome/free-brands-svg-icons';
+import {faEnvelope, faUser, faTemperatureHalf, faPerson, faS} from '@fortawesome/free-solid-svg-icons';
+import { faGoogle, faLinkedin, faResearchgate, faOrcid, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom'
 
 const profiles = [
@@ -268,6 +268,11 @@ const profiles = [
         Featured_Publications: [
             (
                 <>
+                    <b>Chen, K.</b> and Ghahramani, A., 2024. <Link to="/publication/warm,_moderate,_or"><b>Warm, moderate, or cool-liker? A Benchmarking Framework to Characterize Occupant Overall Thermal Preferences based on Large-Scale Thermostat Data</b></Link>. <i>Building and Environment</i>, 112046.
+                </>
+            ),
+            (
+                <>
                     <b>Chen, K.</b> and Ghahramani, A., 2023. <Link to="/publication/comfortgpt:_a_transformer-based" ><b>ComfortGPT: a transformer-based architecture for predicting preferred temperature setpoints leveraging big data</b></Link>. <i>Building and Environment</i>, <i>248</i>, 111085.    
                 </>
             ),
@@ -428,7 +433,7 @@ const profiles = [
         ],
         Awards: [
             'Singapore International Graduate Award (SINGA), Agency for Science, Technology and Research (A*STAR) (2024 - Present)',
-            'Dean Award: Highest GPA in Master\’s Program of Engineering Physics, Institut Teknologi Bandung (2022)',
+            'Dean Award: Highest GPA in Master’s Program of Engineering Physics, Institut Teknologi Bandung (2022)',
             'Ganesha Talent Assistantship Master Program Scholarship Awardee, Institut Teknologi Bandung (2021)',
             '2nd Place in International Design Competition: Applied Engineering Challenge, American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE) (2020)'
         ],
@@ -577,6 +582,33 @@ const profiles = [
             'Human-Building Interaction'
         ],
     },
+    {
+        ProfileName: 'Maxime',
+        ProfileLink: "/profile/Maxime",
+        ProfilePic: MaximePic,
+        Name: 'Maxime Caillat',
+        Position: 'Visiting MSc Student',
+        Position2: 'ETH Zürich (Switzerland)',
+        Biography: 'Maxime Caillat is a French MSc student in Applied Mathematics at ETH Zürich and he is currently writing its MSc thesis on optimal power trading strategies using AI to predict the energy market with the Department of the Built Environment, National University of Singapore. Previously, Maxime was studying mathematics at EPFL where he obtained his BSc degree. He is passionate about sports like handball, rugby, tennis, football, or bodybuilding. He was surprised to discover Australian football when he arrived in Singapore.',
+        Education: [
+            'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Applied Mathematics (Current)',
+            'BSc, École Polytechnique Fédérale de Lausanne (EPFL), Mathematics (2023)'
+        ],
+        Awards: [],
+        Featured_Publications: [],
+        Contacts: [
+            { href: "mailto:e1484159@u.nus.edu", icon: faEnvelope, text: "e1484159@u.nus.edu" },
+            { href: "mailto:mcaillat@student.ethz.ch", icon: faEnvelope, text: "mcaillat@student.ethz.ch" }
+        ],
+        Links: [
+            { href: MaximeCV, icon: faUser, text: 'CV' },
+            { href: 'https://www.linkedin.com/in/maxime-caillat/', icon: faLinkedin, text: 'LinkedIn' }
+        ],
+        Interests: [
+            'AI in Energy',
+            'Energy Markets'
+        ],
+    },
     /*{
         ProfileName: 'Xian',
         ProfileLink: "/profile/Xian",
@@ -615,35 +647,6 @@ const profiles = [
         Interests: [
             'Human Factors Comfort',
             'Cabin Lighting Environment',
-            '',
-            '',
-            ''
-        ],
-    },*/
-    /*{
-        ProfileName: 'Maxime',
-        ProfileLink: "/profile/Maxime",
-        ProfilePic: MaximePic,
-        Name: 'Maxime Caillat',
-        Position: 'Visiting MSc Student',
-        Position2: 'ETH Zürich (Switzerland)',
-        Biography: '',
-        Education: [
-            'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Applied Mathematics to Financial Engineering (Current)',
-            'BSc, École Polytechnique Fédérale de Lausanne (EPFL), Mathematics (2023)'
-        ],
-        Awards: [],
-        Featured_Publications: [],
-        Contacts: [
-            { href: "mailto:mcaillat@student.ethz.ch", icon: faEnvelope, text: "mcaillat@student.ethz.ch" }
-        ],
-        Links: [
-            { href: MaximeCV, icon: faUser, text: 'CV' },
-            { href: 'https://www.linkedin.com/in/maxime-caillat/', icon: faLinkedin, text: 'LinkedIn' }
-        ],
-        Interests: [
-            '',
-            '',
             '',
             '',
             ''
@@ -780,7 +783,7 @@ const profiles = [
         Name: 'Guillaume Lecronier',
         Position: 'Visiting MSc Student',
         Position2: 'ETH Zürich (Switzerland)',
-        Biography: 'Guillaume Lecronier is a master student at ETH Zürich (Swiss Federal Institute of Technology) in Mechanical Engineering and Robotics. Originally from France, he\'s visiting the lab in order to conduct his master thesis. His research focuses on indoor environment monitoring and involves the use of bluetooth low energy (BLE) technology in the scope of indoor positioning systems using a digital twin interface. Guillaume has a strong interest in IoT applications and is keen on working with sensors and integrating them into electronic prototyping setups, especially with platforms like Raspberry Pis. He enjoys the process of collecting valuable and meaningful data from these for innovative projects. In his free time, Guillaume enjoys running and fitness as well as travelling.',
+        Biography: 'Guillaume Lecronier is a MSc student at ETH Zürich (Swiss Federal Institute of Technology) in Mechanical Engineering and Robotics. Originally from France, he\'s visiting the lab in order to conduct his MSc thesis. His research focuses on indoor environment monitoring and involves the use of bluetooth low energy (BLE) technology in the scope of indoor positioning systems using a digital twin interface. Guillaume has a strong interest in IoT applications and is keen on working with sensors and integrating them into electronic prototyping setups, especially with platforms like Raspberry Pis. He enjoys the process of collecting valuable and meaningful data from these for innovative projects. In his free time, Guillaume enjoys running and fitness as well as travelling.',
         Education: [
             'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Mechanical Engineering (2024)',
             'BSc, École Polytechnique Fédérale de Lausanne (EPFL), Mechanical Engineering (2021)'
@@ -809,7 +812,7 @@ const profiles = [
         Name: 'Pierre-Louis David',
         Position: 'Visiting MSc Student',
         Position2: 'ETH Zürich (Switzerland)',
-        Biography: 'Pierre-Louis David is honoured to be a Master\'s candidate from ETH Zürich, specialising in Mechanical Engineering with a significant emphasis on Computer Science. Currently, he is in the midst of completing his thesis at the Building Robotics Lab in the Department of the Built Environment at the National University of Singapore, with a concentrated effort on optimising virtual power plants and pioneering methods to forecast energy prices using ML techniques. In his previous role at the esteemed Paul Scherrer Institut, he had the privilege to work with computer vision in the innovative Center for Proton Therapy. The objective was to refine segmentation techniques for patients afflicted with eye tumors, enhancing the efficacy of proton therapy and subsequently, improving patient recovery outcomes. Beyond his academic and professional pursuits, he takes a keen interest in marathon running, and values the moments he spends chatting with friends and colleagues.',
+        Biography: 'Pierre-Louis David is honoured to be a MSc candidate from ETH Zürich, specialising in Mechanical Engineering with a significant emphasis on Computer Science. Currently, he is in the midst of completing his thesis at the Building Robotics Lab in the Department of the Built Environment at the National University of Singapore, with a concentrated effort on optimising virtual power plants and pioneering methods to forecast energy prices using ML techniques. In his previous role at the esteemed Paul Scherrer Institut, he had the privilege to work with computer vision in the innovative Center for Proton Therapy. The objective was to refine segmentation techniques for patients afflicted with eye tumors, enhancing the efficacy of proton therapy and subsequently, improving patient recovery outcomes. Beyond his academic and professional pursuits, he takes a keen interest in marathon running, and values the moments he spends chatting with friends and colleagues.',
         Education: [
             'MSc, Eidgenössische Technische Hochschule (ETH Zürich), Mechanical Engineering and Computer Science (2024)',
             'BSc, École Polytechnique Fédérale de Lausanne (EPFL), Mechanical Engineering (2021)'

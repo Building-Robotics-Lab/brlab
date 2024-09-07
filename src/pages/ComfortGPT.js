@@ -777,7 +777,7 @@ function ComfortGPT() {
                     <div className="guidelines_text">
                         <h3>About the Tool</h3>
                         <p>
-                            ComfortGPT employs generative pre-trained models built on the data from thousands of ECOBEE thermostat users, to directly predict temperature setpoints while minimizing the reliance on occupant interactions. See Chen Kai's publication <Link to="/publication/comfortgpt:_a_transformer-based"><b className='paper_link'>here</b></Link> for a more in-depth description and analysis of the data behind this tool.
+                            ComfortGPT employs generative pre-trained models built on the data from thousands of ECOBEE thermostat users, to directly predict temperature setpoints while minimizing the reliance on occupant interactions. See Chen Kai's publications <Link to="/publication/warm,_moderate,_or"><b className='paper_link'>here</b></Link> and <Link to="/publication/comfortgpt:_a_transformer-based"><b className='paper_link'>here</b></Link> for a more in-depth description and analysis of the data behind this tool.
                         </p>
                         <h3>Guidelines</h3>
                         <p>

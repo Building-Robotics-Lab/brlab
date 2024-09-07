@@ -21,10 +21,10 @@ import IqbalPic from './../components/Website Individual Information/Iqbal/image
 import ConnorPic from './../components/Website Individual Information/Connor/image.jpg';
 import KellyPic from './../components/Website Individual Information/Kelly/image.jpg';
 import RezkyPic from './../components/Website Individual Information/Rezky/image.jpeg';
+import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpg';
 import HuanxiangPic from './../components/Website Individual Information/Huanxiang/image.jpeg';
 import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
-import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpg';
-//import MaximePic from './components/Website Individual Information/Untitled.jpeg'
+import MaximePic from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
 //import XianPic from './components/Website Individual Information/Untitled.jpeg'
 import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
 import RiccardoPic from './../components/Website Individual Information/Riccardo/image.jpg';
@@ -116,20 +116,20 @@ function Our_Team() {
             skills: 'User-Centered Design; Building Performance Simulation and Optimization; Human-Building Interaction',
             imgSrc: ChenxiPic,
             link: 'Chenxi'
-        }
+        },
+        {
+            name: 'Maxime Caillat',
+            role: 'Visiting MSc Student',
+            skills: 'AI in Energy; Energy Markets',
+            imgSrc: MaximePic,
+            link: 'Maxime'
+        },
         /*{
             name: 'Zhang Xian',
             role: 'Visiting PhD Candidate',
             skills: 'Human Factors Comfort; Cabin Lighting Environment',
             imgSrc: XianPic,
             link: 'Xian'
-        },*/
-        /*{
-            name: 'Maxime Caillat',
-            role: 'Visiting MSc Student',
-            skills: '',
-            imgSrc: MaximePic,
-            link: 'Maxime'
         },*/
     ];
 

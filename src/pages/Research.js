@@ -151,10 +151,11 @@ function Research() {
                         </div>
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">
+                            <p>Chen, K. and Ghahramani, A., 2024. <Link to="/publication/warm,_moderate,_or"><b>Warm, moderate, or cool-liker? A Benchmarking Framework to Characterize Occupant Overall Thermal Preferences based on Large-Scale Thermostat Data</b></Link>. <i>Building and Environment</i>, 112046.</p>
                             <p>Chen, K. and Ghahramani, A., 2023. <Link to="/publication/comfortgpt:_a_transformer-based"><b>ComfortGPT: a transformer-based architecture for predicting preferred temperature setpoints leveraging big data</b></Link>. <i>Building and Environment</i>, <i>248</i>, 111085.</p>
                             <p>Chen, K., Xu, Q., Leow, B. and Ghahramani, A., 2022. <Link to="/publication/personal_thermal_comfort"><b>Personal thermal comfort models based on physiological measurements-A design of experiments based review</b></Link>. <i>Building and Environment</i>, <i>228</i>, 109919.</p>
-                        </div>
-                        <p className='tool_links'><Link to="/ComfortGPT"><b>ComfortGPT</b></Link></p>
+                            <p className='tool_links'><Link to="/ComfortGPT"><b>ComfortGPT</b></Link></p>
+                            </div>
                     </div>
                     <div className='theme_section' id='theme1_section'>
                         <div className="theme_details">
@@ -238,7 +239,7 @@ function Research() {
                             <h4><b>Democratisation of Virtual Power Plants for Optimal Monetisation and Grid Flexibility</b></h4>
                             <h6><b>Pave the way for a future where AI-driven technologies empower individuals to play an active role in shaping the energy landscape while reaping financial rewards, thus fostering sustainable energy practices and grid resilience.</b></h6>
                             <p>In today's energy landscape, we witness a burgeoning wholesale electricity market alongside the increasing adoption of renewable energy sources, particularly photovoltaic (PV) batteries, driven by government subsidies and environmental motivations. While this transition holds immense promise, it also presents a real-world gap wherein end-users, despite having the potential to financially benefit from market participation, often lack the means to do so efficiently, frequently necessitating manual adjustments via mobile devices. The core motivation behind our research lies in harnessing the power of AI to facilitate seamless and user-friendly interactions with VPPs. We aim to bridge existing gaps by drawing insights from various disciplines beyond building science and algorithmic processes that have successfully incentivized behavioural change. Our overarching objectives revolve around transforming transient behaviors into enduring habits, quantifying and minimising uncertainty, and integrating users into the energy ecosystem to monetise their actions effectively.</p>
-                            <p>This project is led by <Link to="/profile/Connor"><b>Connor Aucremanne</b></Link>; previously supported by <Link to="/profile/Pierre"><b>Pierre-Louis David</b></Link>.</p>
+                            <p>This project is led by <Link to="/profile/Connor"><b>Connor Aucremanne</b></Link> and <Link to="/profile/Rezky"><b>Rezky Nanda</b></Link>, and supported by <Link to="/profile/Maxime"><b>Maxime Caillat</b></Link>; previously supported by <Link to="/profile/Pierre"><b>Pierre-Louis David</b></Link>.</p>
                         </div>
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">
