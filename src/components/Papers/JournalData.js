@@ -88,8 +88,8 @@ const JournalData = [
             },*/
             {
                 title: "Warm, moderate, or cool-liker? A Benchmarking Framework to Characterize Occupant Overall Thermal Preferences based on Large-Scale Thermostat Data",
-                journal: "Building and Environment [In Press]",
-                volume: "", issue: "",
+                journal: "Building and Environment",
+                volume: "266", issue: "",
                 page: "112046",
                 authors: [
                     { name: "*Chen Kai", link: "/profile/Kai" },

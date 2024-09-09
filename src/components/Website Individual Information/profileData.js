@@ -268,7 +268,7 @@ const profiles = [
         Featured_Publications: [
             (
                 <>
-                    <b>Chen, K.</b> and Ghahramani, A., 2024. <Link to="/publication/warm,_moderate,_or"><b>Warm, moderate, or cool-liker? A Benchmarking Framework to Characterize Occupant Overall Thermal Preferences based on Large-Scale Thermostat Data</b></Link>. <i>Building and Environment</i>, 112046.
+                    <b>Chen, K.</b> and Ghahramani, A., 2024. <Link to="/publication/warm,_moderate,_or"><b>Warm, moderate, or cool-liker? A Benchmarking Framework to Characterize Occupant Overall Thermal Preferences based on Large-Scale Thermostat Data</b></Link>. <i>Building and Environment</i>, <i>266</i>, 112046.
                 </>
             ),
             (
