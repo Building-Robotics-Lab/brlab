@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 
 //import XianPic from './components/Website Individual Information/Untitled.jpeg'
 //import KatePublication2 from './../components/Website Data/kate_pub2.png';
+//import IqbalPaper1 from './../components/Website Data/iqbal-paper1.jpg'
 import MaximePic from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
 import KaiPublication3 from './../components/Website Data/kai_paper3.jpg';
 import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
@@ -129,6 +130,19 @@ function News() {
             content: (
                 <>
                     Dr. Kate Sangwon Lee, <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/profile/Connor"><b>Connor</b></Link>, Asst Prof Lee, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/occupant-centric_digital_twins"><b>Occupant-Centric Digital Twin Interfaces for Buildings: Navigating User Preferences, Control, and Privacy</b></Link>. They XXX. Congratulations everyone!
+                </>
+            ),
+            sectionName: 'EleventhNewsSection'
+        },*/
+        /*{
+            NewsSectionName: 'IqbalPaper1',
+            imageSrc: IqbalPaper1,
+            altText: "A graphical abstract of the paper.",
+            date: '19/10/2024',
+            title: '<i>Energy Informations Academy Conference</i> paper announcement!',
+            content: (
+                <>
+                    <Link to="/profile/Iqbal"><b>Iqbal</b></Link> and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have presented their paper: <Link to="/publication/geospatial_semantic_enriched" ><b>Geospatial Semantic Enriched Digital Twin with Logical Reasoning Rules for Managing Control Loops"</b></Link>. They XXX. Congratulations you two!
                 </>
             ),
             sectionName: 'EleventhNewsSection'

@@ -13,6 +13,7 @@ import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-s
 
 //import XianNews from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
 //import KateNews from './../components/Website Data/kate_pub2.png'
+//import IqbalPaper1 from './Publication Images/'
 import MaximeNews from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
 import KaiNews from './..//components/Website Data/kai_paper3_news.jpg';
 import ChenxiNews from './../components/Website Individual Information/Chenxi/image_news.jpeg';
