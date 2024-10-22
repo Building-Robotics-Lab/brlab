@@ -1,3 +1,4 @@
+//import IqbalPaper1 from './Publication Images/'
 import AliPaper1 from './Publication Images/ghahr1-p4-ghahr-large.gif'
 import AliPaper2 from './Publication Images/Screenshot 2023-11-19 at 20.50.54.png'
 import AliPaper3 from './Publication Images/Screenshot 2023-11-19 at 20.55.33.png'
@@ -5,6 +6,36 @@ import AliPaper4 from './Publication Images/7408228-fig-1-source-large.gif'
 import AliPaper5 from './Publication Images/7408505-fig-1-source-large.gif'
 
 const ConferenceData = [
+    /*{
+        year: "2024",
+        publications: [
+            {
+                title: "Geospatial Semantic Enriched Digital Twin with Logical Reasoning Rules for Managing Control Loops",
+                conference: "Energy Informatics Academy Conference",
+                page: "245-258",
+                month: "October",
+                location: "Bali, Indonesia",
+                authors: [
+                    { name: "Iqbal Shah", link: "/profile/Iqbal" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
+                ],
+                minRead: "",
+                profiles: ["Iqbal", "Prof"],
+                links: [
+                    { type: "DOI", url: "https://doi.org/10.1007/978-3-031-74738-0_16" }
+                ],
+                keywords: [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                abstract: "This study introduces a framework for the development of a geospatial semantic enriched Digital Twins (DTs) with integrated logical reasoning rules, aimed towards addressing the challenges associated with the manual-intensive scripting for the development and upkeeping of traditional building control loops. By leveraging on geospatial information as a higher-level semantic, this framework enhances the integration with existing building ontologies, thereby facilitating the creation of a dynamic and responsive DT environment. An experimental trial involving 120 participants was conducted to validate the practicality and effectiveness of the geospatial semantic enriched DT with integrated logical reasoning rules, for the development of various human-centric user interfaces, providing options for the diverse range of user preferences. The results demonstrated strong preference for these adaptable DT interfaces. Moreover, the application of geospatial semantics with logical reasoning rules in selectively displaying only the nearby devices based on users’ locations not only enhances interface usability but also offers potential for reducing system misuse. These findings lay a robust foundation for future advancements in DT integration, emphasizing the transformative potential of integrating logical reasoning rules with geospatial semantics in the development of DTs.",
+                display_image: IqbalPaper1
+            },
+        ],
+    },*/
     {
         year: "2019",
         publications: [

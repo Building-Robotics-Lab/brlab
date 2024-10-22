@@ -219,6 +219,11 @@ const profiles = [
             'Director\'s List, Temasek Polytechnic (2014, 2015)'
         ],
         Featured_Publications: [
+            /*(
+                <>
+                    <b>Shah, I.</b> and Ghahramani, A., 2024, October. <Link to="/publication/geospatial_semantic_enriched" ><b>Geospatial Semantic Enriched Digital Twin with Logical Reasoning Rules for Managing Control Loops</b></Link>. In <i>Proceedings of Energy Informatics Academy Conference</i>, 245-258. 
+                </>
+            ),*/
             (
                 <>
                     <b>Shah, I.</b>, Su, X., Talami, R. and Ghahramani, A., 2024. <Link to="/publication/enhancing_building_envelopes:" ><b>Enhancing Building Envelopes: Parametric Analysis of Shading Systems for Opaque Facades and Their Comparison with Cool Paints</b></Link>. <i>Energy and Built Environment</i>.
@@ -321,7 +326,12 @@ const profiles = [
         Featured_Publications: [
             (
                 <>
-                    <b>Shah, I.</b>, Su, X., Talami, R. and Ghahramani, A., 2024. <Link to="/publication/enhancing_building_envelopes:" ><b>Enhancing Building Envelopes: Parametric Analysis of Shading Systems for Opaque Facades and Their Comparison with Cool Paints</b></Link>. <i>Energy and Built Environment</i>.
+                <b>Shah., I.</b> and Ghahramani, A., 2024
+                </>
+            )            
+            (
+                <>
+                    <b>Shah, Iqbal.</b>Ghahramani, A., 2024, October. <Link to="/publication/geospatial_semantic_enriched" ><b>Geospatial Semantic Enriched Digital Twin with Logical Reasoning Rules for Managing Control Loops</b></Link>. In <i>Proceedings of Energy Informatics Academy Conference</i>, 245-258. 
                 </>
             ),
             (
