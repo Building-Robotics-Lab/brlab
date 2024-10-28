@@ -324,11 +324,11 @@ const profiles = [
             'Director\'s List, Temasek Polytechnic (2014, 2015)'
         ],
         Featured_Publications: [
-            (
+            /*(
                 <>
                 <b>Shah., I.</b> and Ghahramani, A., 2024
                 </>
-            )            
+            ), */           
             (
                 <>
                     <b>Shah, Iqbal.</b>Ghahramani, A., 2024, October. <Link to="/publication/geospatial_semantic_enriched" ><b>Geospatial Semantic Enriched Digital Twin with Logical Reasoning Rules for Managing Control Loops</b></Link>. In <i>Proceedings of Energy Informatics Academy Conference</i>, 245-258. 
