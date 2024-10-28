@@ -142,7 +142,7 @@ function News() {
             title: '<i>Energy Informations Academy Conference</i> paper announcement!',
             content: (
                 <>
-                    <Link to="/profile/Iqbal"><b>Iqbal</b></Link> and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have presented their conference paper: <Link to="/publication/geospatial_semantic_enriched" ><b>Geospatial Semantic Enriched Digital Twin with Logical Reasoning Rules for Managing Control Loops"</b></Link>. They XXX. Congratulations you two!
+                    <Link to="/profile/Iqbal"><b>Iqbal</b></Link> and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have presented their conference paper: <Link to="/publication/geospatial_semantic_enriched" ><b>Geospatial Semantic Enriched Digital Twin with Logical Reasoning Rules for Managing Control Loops"</b></Link>. They presented a geospatial semantic enriched digital twin (DT) framework with integrated logical reasoning rules to simplify and enhance building control systems. Through an experimental trial with 120 participants, the results highlight improved usability and reduced system misuse by selectively displaying nearby devices based on user location and underscore the potential of combining geospatial semantics with logical reasoning rules to advance DT development and integration. Congratulations you two!
                 </>
             ),
             sectionName: 'EleventhNewsSection'
