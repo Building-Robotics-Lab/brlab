@@ -13,13 +13,12 @@ import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-s
 
 //import XianNews from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
 //import KateNews from './../components/Website Data/kate_pub2.png'
-//import IqbalPaper1 from './Publication Images/'
-import MaximeNews from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
+import IqbalNews from './..//components/Website Data/iqbal_paper1_news.png'
+import MaximeNews from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled_news.jpeg'
 import KaiNews from './..//components/Website Data/kai_paper3_news.jpg';
 import ChenxiNews from './../components/Website Individual Information/Chenxi/image_news.jpeg';
 import TeamNews8 from './../components/Website Individual Information/Team/Kajima_news.jpg';
 import TeamNews7 from './../components/Website Individual Information/Team/ThomasParkinson_news.jpg';
-import HuanxiangNews from './../components/Website Individual Information/Huanxiang/image_news.jpeg';
 
 const slides = [
     //6 most-recent news
@@ -35,6 +34,12 @@ const slides = [
         date: '//2024',
         link: 'EleventhNewsSection',
     },*/
+    {
+        image: IqbalNews,
+        title: '<b><i>Energy Informatics Academy Conference</i> conference paper announcement!</b>',
+        date: '19/10/2024',
+        link: 'EleventhNewsSection',
+    },
     {
         image: MaximeNews,
         title: '<b>Please welcome Maxime Caillat to the lab!</b>',
@@ -65,12 +70,6 @@ const slides = [
         date: '03/07/2024',
         link: 'TenthNewsSection',
     },
-    {
-        image: HuanxiangNews,
-        title: '<b>Please welcome Gao Huanxiang to the lab!</b>',
-        date: '18/06/2024',
-        link: 'NinthhNewsSection',
-    }
 ];
 
 function Home() {

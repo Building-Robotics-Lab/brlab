@@ -219,11 +219,11 @@ const profiles = [
             'Director\'s List, Temasek Polytechnic (2014, 2015)'
         ],
         Featured_Publications: [
-            /*(
+            (
                 <>
-                    <b>Shah, I.</b> and Ghahramani, A., 2024, October. <Link to="/publication/geospatial_semantic_enriched" ><b>Geospatial Semantic Enriched Digital Twin with Logical Reasoning Rules for Managing Control Loops</b></Link>. In <i>Proceedings of Energy Informatics Academy Conference</i>, 245-258. 
+                    <b>Shah, I.</b> and Ghahramani, A., 2024, October. <Link to="/publication/geospatial_semantic_enriched" ><b>Geospatial Semantic Enriched Digital Twin with Logical Reasoning Rules for Managing Control Loops</b></Link>. In <i>Energy Informatics Academy Conference</i>, 245-258. 
                 </>
-            ),*/
+            ),
             (
                 <>
                     <b>Shah, I.</b>, Su, X., Talami, R. and Ghahramani, A., 2024. <Link to="/publication/enhancing_building_envelopes:" ><b>Enhancing Building Envelopes: Parametric Analysis of Shading Systems for Opaque Facades and Their Comparison with Cool Paints</b></Link>. <i>Energy and Built Environment</i>.
@@ -302,64 +302,6 @@ const profiles = [
             'Building Energy Efficiency',
             'Thermal Comfort',
             'Smart Buildings'
-        ],
-    },
-    {
-        ProfileName: 'Iqbal',
-        ProfileLink: "/profile/Iqbal",
-        ProfilePic: IqbalPic,
-        Name: 'Iqbal Shah',
-        Position: 'PhD Candidate',
-        Biography: 'Iqbal Shah is a third-year PhD candidate (President\'s Graduate Fellow) at the National University of Singapore (NUS), College of Design & Engineering, Department of the Built Environment. His current research focuses on innovative façade technologies, urban greening solutions, as well as digital twin interface development, actuations, and ontology automation. Further expressing his interest in the technicalities and developments of heating and cooling systems, Iqbal is also currently a student member in the American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE) Singapore Chapter. He believes that a well-implemented semantic digital twin could bridge the gap between humans, systems, and the environment, allowing for true sustainability to be attained. To date, Iqbal has supervised eight undergraduate students for their final year project dissertation. Beyond academia and his research interests, Iqbal is passionate in volunteering work, and has participated as a mentor in multiple programmes. He lives by the quotes, “No one has ever become poor by giving.” - Anne Frank, and, “Those who are happiest are those who do the most for others.” - Booker T. Washington.',
-        Education: [
-            'PhD, National University of Singapore (NUS), Built Environment (Current)',
-            'BSc (<i>Highest Distinction</i>), National University of Singapore (NUS), Project & Facilities Management (2021)',
-            'Diploma (<i>Merit</i>), Temasek Polytechnic, Integrated Facility Management (2016)'
-        ],
-        Awards: [
-            'NUS President\'s Graduate Fellowship, National University of Singapore (2022 - Present)',
-            'iBuildSG Industry Sponsorship, Building and Construction Authority (2018 - Present)',
-            'Dean\'s List, National University of Singapore (2019, 2020, 2021)',
-            'Best BIMx Award, Graphisoft (2020)',
-            'Director\'s List, Temasek Polytechnic (2014, 2015)'
-        ],
-        Featured_Publications: [
-            /*(
-                <>
-                <b>Shah., I.</b> and Ghahramani, A., 2024
-                </>
-            ), */           
-            (
-                <>
-                    <b>Shah, Iqbal.</b>Ghahramani, A., 2024, October. <Link to="/publication/geospatial_semantic_enriched" ><b>Geospatial Semantic Enriched Digital Twin with Logical Reasoning Rules for Managing Control Loops</b></Link>. In <i>Proceedings of Energy Informatics Academy Conference</i>, 245-258. 
-                </>
-            ),
-            (
-                <>
-                    <b>Shah, I.</b>, Lau, S.K., Sekaran, V., and Ghahramani, A., 2023. <Link to="/publication/porous_plant_form-induced" ><b>Porous plant form-induced amplification of evapotranspiration for enhanced cooling in vertical greenery systems</b></Link>. <i>Building and Environment, 245</i>, 110904.
-                </>
-            ),
-            (
-                <>
-                    <b>Shah, I.</b>, Soh, B., Lim, C., Lau, S. K., and Ghahramani, A., 2023. <Link to="/publication/thermal_transfer_and" ><b>Thermal transfer and temperature reductions from shading systems on opaque facades: Quantifying the impacts of influential factors</b></Link>. <i>Energy and Buildings, 278</i>, 112604.      
-                </>
-            ),
-        ],
-        Contacts: [
-            { href: "mailto:iqbal_shah@u.nus.edu", icon: faEnvelope, text: "iqbal_shah@u.nus.edu" }
-        ],
-        Links: [
-            { href: IqbalCV, icon: faUser, text: 'CV' },
-            { href: 'https://scholar.google.com/citations?user=dxE-nuEAAAAJ&hl=en&oi=sra', icon: faGoogle, text: 'Google Scholar' },
-            { href: 'https://www.linkedin.com/in/iqbal-s-834035224/', icon: faLinkedin, text: 'LinkedIn' },
-            { href: 'https://orcid.org/0000-0002-8006-1078', icon: faOrcid, text: 'ORCID' }
-        ],
-        Interests: [
-            'Resilient Façade Systems',
-            'Urban Greening',
-            'Urban Heat Island',
-            'Digital Twin Development',
-            'Building Optimisation & Automation'
         ],
     },
     {
