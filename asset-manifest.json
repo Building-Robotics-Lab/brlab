@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brlab/static/css/main.ffd58da4.css",
-    "main.js": "/brlab/static/js/main.d8a70dfe.js",
+    "main.js": "/brlab/static/js/main.b9d72dae.js",
     "static/media/Smart_Building_Full_Animation_(Compressed).mp4": "/brlab/static/media/Smart_Building_Full_Animation_(Compressed).d2a5c408c0378fdec97a.mp4",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
     "static/media/michelle_pub1.jpg": "/brlab/static/media/michelle_pub1.5854b69a7b4d9a5c3eb7.jpg",
@@ -10,11 +10,13 @@
     "static/media/1-s2.0-S-gr2_lrg.jpg": "/brlab/static/media/1-s2.0-S0306261915016888-gr2_lrg.6d077d348833c7a56185.jpg",
     "static/media/1-s2.0-S-gr1_lrg.jpg": "/brlab/static/media/1-s2.0-S0360132318302518-gr1_lrg.b499839525f32d8b4461.jpg",
     "static/media/Iqbal_DT2_theme.png": "/brlab/static/media/Iqbal_DT2_theme.90e00b2f73465b1ecdc0.png",
+    "static/media/iqbal_paper1.png": "/brlab/static/media/iqbal_paper1.57dc6bc272b04f0ba823.png",
     "static/media/OTSToutput_example2.png": "/brlab/static/media/OTSToutput_example2.0ad7b46d87573c525439.png",
     "static/media/figure1.jpg": "/brlab/static/media/figure1.0da7989ea1f76cbd3d8a.jpg",
     "static/media/Screenshot 2023-11-19 at 20.50.54.png": "/brlab/static/media/Screenshot 2023-11-19 at 20.50.54.4d80071a24ee60dd8b93.png",
     "static/media/1-s2.0-S221462962200281X-gr2_lrg.jpg": "/brlab/static/media/1-s2.0-S221462962200281X-gr2_lrg.8d8c8cf6ada903de2451.jpg",
     "static/media/1-s2.0-S-gr7_lrg.jpg": "/brlab/static/media/1-s2.0-S0378778814007932-gr7_lrg.a784b47c804f1975b535.jpg",
+    "static/media/iqbal_paper1_news.png": "/brlab/static/media/iqbal_paper1_news.c829f1ae7a88a74f61f3.png",
     "static/media/1-s2.0-S-gr3_lrg.jpg": "/brlab/static/media/1-s2.0-S0378778818310909-gr3_lrg.214b4adf7a447e0249a2.jpg",
     "static/media/FEC1.png": "/brlab/static/media/FEC1.b8f97c2f419e6768295c.png",
     "static/media/iqbal_publication3.jpg": "/brlab/static/media/iqbal_publication3.e9774c80d661d577dfcf.jpg",
@@ -43,7 +45,7 @@
     "static/media/CV.pdf": "/brlab/static/media/CV.8df964af037d1af0377e.pdf",
     "static/media/1-s2.0-S-gr4_lrg.jpg": "/brlab/static/media/1-s2.0-S2352710219305200-gr4_lrg.b2aef02f62642b5a14e1.jpg",
     "static/media/DennisKnight.jpeg": "/brlab/static/media/DennisKnight.c0098296f62ead335f8d.jpeg",
-    "static/media/image_news.jpeg": "/brlab/static/media/image_news.25c1c8f05b35ce7f9e28.jpeg",
+    "static/media/image_news.jpeg": "/brlab/static/media/image_news.844ee7e8ccf82c0eb328.jpeg",
     "static/media/kate_pub1.png": "/brlab/static/media/kate_pub1.d64c13a83eaa9ef75cff.png",
     "static/media/iqbal-publication.jpeg": "/brlab/static/media/iqbal-publication.85eb9c7ada1a0b7037b9.jpeg",
     "static/media/1-s2.0-S235271022100293X-ga1_lrg.jpg": "/brlab/static/media/1-s2.0-S235271022100293X-ga1_lrg.46bd20e7a76701ab5959.jpg",
@@ -73,6 +75,7 @@
     "static/media/riccardo_pub1.jpg": "/brlab/static/media/riccardo_pub1.6b0317da42f65f02f46d.jpg",
     "static/media/41598_2022_25047_Fig3_HTML.webp": "/brlab/static/media/41598_2022_25047_Fig3_HTML.7e5320b76a238e3984f6.webp",
     "static/media/1-s2.0-S030626191731601X-gr4_lrg.jpg": "/brlab/static/media/1-s2.0-S030626191731601X-gr4_lrg.a4bbd62aa0f806058a6e.jpg",
+    "static/media/Untitled_news.jpeg": "/brlab/static/media/Untitled_news.201a9a3bc54cbfbaa40e.jpeg",
     "static/media/Smart-Green-Home.jpg": "/brlab/static/media/Smart-Green-Home.d6b2505eb90d161f2c3c.jpg",
     "static/media/Iqbal_VGS.jpg": "/brlab/static/media/Iqbal_VGS.94da5d2090eb77485e7a.jpg",
     "static/media/ghahr1-p4-ghahr-large.gif": "/brlab/static/media/ghahr1-p4-ghahr-large.71d75c87838a80e17d70.gif",
@@ -92,10 +95,10 @@
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
     "main.ffd58da4.css.map": "/brlab/static/css/main.ffd58da4.css.map",
-    "main.d8a70dfe.js.map": "/brlab/static/js/main.d8a70dfe.js.map"
+    "main.b9d72dae.js.map": "/brlab/static/js/main.b9d72dae.js.map"
   },
   "entrypoints": [
     "static/css/main.ffd58da4.css",
-    "static/js/main.d8a70dfe.js"
+    "static/js/main.b9d72dae.js"
   ]
 }
