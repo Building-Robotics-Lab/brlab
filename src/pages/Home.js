@@ -13,12 +13,12 @@ import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-s
 
 //import XianNews from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
 //import KateNews from './../components/Website Data/kate_pub2.png'
+import IqbalNews2 from './..//components/Website Data/iqbal_paper2_news.png'
 import IqbalNews from './..//components/Website Data/iqbal_paper1_news.png'
 import MaximeNews from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled_news.jpeg'
 import KaiNews from './..//components/Website Data/kai_paper3_news.jpg';
 import ChenxiNews from './../components/Website Individual Information/Chenxi/image_news.jpeg';
 import TeamNews8 from './../components/Website Individual Information/Team/Kajima_news.jpg';
-import TeamNews7 from './../components/Website Individual Information/Team/ThomasParkinson_news.jpg';
 
 const slides = [
     //6 most-recent news
@@ -35,6 +35,12 @@ const slides = [
         link: 'EleventhNewsSection',
     },*/
     {
+        image: IqbalNews2,
+        title: '<b><i>11th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation</i> conference paper announcement!</b>',
+        date: '07/11/2024',
+        link: 'EleventhNewsSection',
+    },
+    {
         image: IqbalNews,
         title: '<b><i>Energy Informatics Academy Conference</i> conference paper announcement!</b>',
         date: '19/10/2024',
@@ -50,7 +56,7 @@ const slides = [
         image: KaiNews,
         title: '<b><i>Building and Environment</i> publication announcement!</b>',
         date: '03/09/2024',
-        link: 'EleventhNewsSection',
+        link: 'TenthNewsSection',
     },
     {
         image: ChenxiNews,
@@ -62,12 +68,6 @@ const slides = [
         image: TeamNews8,
         title: '<b>A visit from the Kajima Technical Research Institute Singapore (KaTRIS)!</b>',
         date: '05/07/2024',
-        link: 'TenthNewsSection',
-    },
-    {
-        image: TeamNews7,
-        title: '<b>A visit from the IEQ Lab (University of Sydney)!</b>',
-        date: '03/07/2024',
         link: 'TenthNewsSection',
     },
 ];

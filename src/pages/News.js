@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 
 //import XianPic from './components/Website Individual Information/Untitled.jpeg'
 //import KatePublication2 from './../components/Website Data/kate_pub2.png';
+import IqbalPaper2 from './..//components/Website Data/iqbal_paper2.png'
 import IqbalPaper1 from './..//components/Website Data/iqbal_paper1.png'
 import MaximePic from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
 import KaiPublication3 from './../components/Website Data/kai_paper3.jpg';
@@ -135,6 +136,19 @@ function News() {
             sectionName: 'EleventhNewsSection'
         },*/
         {
+            NewsSectionName: 'IqbalPaper2',
+            imageSrc: IqbalPaper2,
+            altText: "A graphical abstract of the paper.",
+            date: '07/11/2024',
+            title: '<i>11th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation</i> paper announcement!',
+            content: (
+                <>
+                    <Link to="/profile/Iqbal"><b>Iqbal</b></Link> and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have presented their conference paper: <Link to="/publication/scalable_automation_of" ><b>Scalable Automation of Building Control Loops via Geospatial Semantic-enriched Digital Twins</b></Link>. They presented a geospatial semantic enriched digital twin (DT) framework with integrated logical reasoning rules to simplify and enhance building control systems. Through an experimental trial with 120 participants, the results highlight improved usability and reduced system misuse by selectively displaying nearby devices based on user location and underscore the potential of combining geospatial semantics with logical reasoning rules to advance DT development and integration. Congratulations you two!
+                </>
+            ),
+            sectionName: 'EleventhNewsSection'
+        },
+        {
             NewsSectionName: 'IqbalPaper1',
             imageSrc: IqbalPaper1,
             altText: "A graphical abstract of the paper.",
@@ -171,7 +185,7 @@ function News() {
                     <Link to="/profile/Kai"><b>Kai</b></Link> and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/warm,_moderate,_or" ><b>Warm, moderate, or cool-liker? A Benchmarking Framework to Characterize Occupant Overall Thermal Preferences based on Large-Scale Thermostat Data</b></Link>. They proposed a benchmarking approach to identify overall thermal preferences by characterizing them based on setpoint and outdoor temperature relationships. Using descriptive statistics, they established decision boundaries and identified four overall preference groups—three temporally consistent and one temporally chaotic—while defining and investigating five key characteristics of these groups. Congratulations you two!
                 </>
             ),
-            sectionName: 'EleventhNewsSection'
+            sectionName: 'TenthNewsSection'
         },
         {
             NewsSectionName: 'Chenxi',
@@ -210,7 +224,7 @@ function News() {
                     We were happy to have a bit of a <Link to="https://cbe.berkeley.edu/"><b>Center for the Built Environment</b></Link> reunion as <Link to="https://www.linkedin.com/in/thomas-c-parkinson/"><b>Dr. Thomas Parkinson</b></Link> (Assistant Professor and Deputy Director of the <Link to="https://www.sydney.edu.au/architecture/our-research/research-labs-and-facilities/indoor-environmental-quality-lab.html"><b>IEQ Lab, University of Sydney)</b></Link> stopped by our lab to discuss and experience our ongoing research projects. Looking forward to future collaborations with the IEQ Lab, as we share a common vision for healthy and sustainable built environments!
                 </>
             ),
-            sectionName: 'TenthNewsSection'
+            sectionName: 'NinthNewsSection'
         },
         {
             NewsSectionName: 'Huanxiang',
@@ -249,7 +263,7 @@ function News() {
                     Over the past several days, our PhD Student, <Link to="/profile/Iqbal"><b>Iqbal Shah</b></Link>, did a wonderful job representing both our lab and NUS at the <Link to="https://www.worldcitiessummit.com.sg/"><b>World Cities Summit (WCS) 2024</b></Link> as he showcased our research on the Human-Centric Smart Built Environment for Future Cities to public and private attendees. A sincere appreciation goes to <Link to="https://cde.nus.edu.sg/nuscities/"><b>NUS Cities</b></Link> for inviting us and providing the opportunity to present in their booth. See the full LinkedIn post <Link to="https://www.linkedin.com/feed/update/urn:li:activity:7203957876317450240"><b>here</b></Link>.
                 </>
             ),
-            sectionName: 'NinthNewsSection'
+            sectionName: 'EighthNewsSection'
         },
         {
             NewsSectionName: 'Jonathan',
@@ -288,7 +302,7 @@ function News() {
                     <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/profile/Xiaosong"><b>Song</b></Link>, <Link to="/profile/Riccardo"><b>Riccardo</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/enhancing_building_envelopes:" ><b>Enhancing Building Envelopes: Parametric Analysis of Shading Systems for Opaque Facades and Their Comparison with Cool Paints</b></Link>. Their study undertook an extensive parametric simulation, taking into account variables such as shading configurations, cool paints with varying facade solar absorbance values, facade orientation, diverse climates, and different building typologies. Ultimately, they found that shading on opaque facades alone could reduce cooling loads by 8-28%, cool paints on opaque facades alone could reduce cooling loads by 10-35%, and the combined use of shading and cool paint further reduces cooling loads by 10-40%. Congratulations to you all!
                 </>
             ),
-            sectionName: 'EighthNewsSection'
+            sectionName: 'SeventhNewsSection'
         },
         {
             NewsSectionName: 'Rezky',
@@ -327,7 +341,7 @@ function News() {
                     It was a pleasure to host <Link to="https://www.ashrae.org/professional-development/learning-portal/instructor-led-training/ashrae-instructors/dennis-knight"><b>Dennis Knight</b></Link>, the incoming <Link to="https://www.ashrae.org/"><b>ASHRAE</b></Link> President, in our living lab all the way from the United States for a discussion about the research projects we are conducting before he delivered his presentation, "Health and Wellness in the Built Environment," for the ASHRAE Singapore Chapter Distinguished Lecturer Event. Thank you very much for your time and thank you to Professor Chandra Sekhar for connecting us!
                 </>
             ),
-            sectionName: 'SeventhNewsSection'
+            sectionName: 'SixthNewsSection'
         },
         {
             NewsSectionName: 'Keshav',
@@ -366,7 +380,7 @@ function News() {
                     Our team was able to gather at Bukit Timah Nature Reserve to swap out our usual lab setting for some deserving time outdoors as we bid farewell to our three visiting students: <Link to="/profile/Pierre"><b>Pierre-Louis</b></Link>, <Link to="/profile/Guillaume"><b>Guillaume</b></Link>, and <Link to="/profile/Pegah"><b>Pegah</b></Link>! The former two have now completed their excellent MSc dissertations for ETH Zürich on advanced reinforcement learning strategies for power trading in smart grids and indoor positioning systems using Bluetooth LE and machine vision, and the latter is returning to Shahid Beheshti University to complete the final year of her PhD thesis on optimal distribution of urban density. Thank you to all three for spending time with us and good luck to you all in your future endeavours!
                 </>
             ),
-            sectionName: 'SixthNewsSection'
+            sectionName: 'FifthNewsSection'
         },
         {
             NewsSectionName: 'Heng',
@@ -405,7 +419,7 @@ function News() {
                     <Link to="/profile/Riccardo"><b>Riccardo</b></Link>, <Link to="/profile/Ilyas"><b>Ilyas</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/quantifying_energy_savings"><b>Quantifying energy savings from optimal selection of HVAC temperature setpoints and setbacks across diverse occupancy rates and patterns</b></Link>. They investigated three fixed and optimal setpoint and setback selection strategies. They found that fixed setpoint achieves 5.48% energy reduction due to lower occupant head loads and an additional 11.80% energy savings are obtained from incorporating fixed setbacks. Overall, the optimal selection of setpoint and setback provides additional 34-38% energy savings. Congratulations everyone!
                 </>
             ),
-            sectionName: 'FifthNewsSection'
+            sectionName: 'FourthNewsSection'
         },
         {
             NewsSectionName: 'IqbalPublication2',
@@ -444,7 +458,7 @@ function News() {
                     The Building Robotics Lab is happy to have Pierre-Louis joining us from Switzerland as a visiting MSc student at ETH Zürich studying Mechanical Engineering and Computer Science in the Department of Mechanical and Process Engineering. His research revolves around machine learning, optimisation, computer vision, and energy. Check out his full profile <Link to="/profile/Pierre"><b>here</b></Link> to get to know him more!
                 </>
             ),
-            sectionName: 'FourthNewsSection'
+            sectionName: 'ThirdNewsSection'
         },
         {
             NewsSectionName: 'KatePublication1',
@@ -483,7 +497,7 @@ function News() {
                     <Link to="/profile/Riccardo"><b>Riccardo</b></Link>, <Link to="/profile/Ilyas"><b>Ilyas</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/demystifying_energy_savings"><b>Demystifying energy savings from dynamic temperature setpoints under weather and occupancy variability</b></Link>. They found that both fixed and dynamic setpoints ensure 2-4% energy reduction due to lower heat generated by occupants at lower occupancy rates. However, at outdoor temperatures ranging from 5°C to 32°C, where occupant heat loads can shift the building between heating, free-running, and cooling modes, dynamic setpoints can achieve additional 2-10% energy savings compared to fixed setpoints. Congratulations everyone!
                 </>
             ),
-            sectionName: 'ThirdNewsSection'
+            sectionName: 'SecondNewsSection'
         },
         {
             NewsSectionName: 'Kelly',
@@ -522,7 +536,7 @@ function News() {
                     <Link to="/profile/Kai"><b>Kai</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/personal_thermal_comfort"><b>Personal thermal comfort models based on physiological measurements -- A design of experiments based review</b></Link>. This study aims to provide a systematic, comprehensive, and DOE-framework-based review of the physiological sensing methods to predict personal thermal comfort. This is Kai's inaugural first-author article! Chapeau!
                 </>
             ),
-            sectionName: 'SecondNewsSection'
+            sectionName: 'FirstNewsSection'
         },
         {
             NewsSectionName: 'Connor',

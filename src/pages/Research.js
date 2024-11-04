@@ -206,10 +206,8 @@ function Research() {
                         </div>
                         <h4 className="keyObjs"><b>Key Objectives</b></h4>
                         <div className="theme_deliverables">
+                            <p>Shah, I. and Ghahramani, A., 2024, November. <Link to="/publication/scalable_automation_of" ><b>Scalable Automation of Building Control Loops via Geospatial Semantic-enriched Digital Twins</b></Link>. In <i>Proceedings of the 11th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation</i>, 233-234. </p>
                             <p>Shah, I. and Ghahramani, A., 2024, October. <Link to="/publication/geospatial_semantic_enriched" ><b>Geospatial Semantic Enriched Digital Twin with Logical Reasoning Rules for Managing Control Loops</b></Link>. In <i>Energy Informatics Academy Conference</i>, 245-258.</p>
-                            <p>Development of automation algorithms focusing on the generation of semantics for digital twin applications.</p>
-                            <p>Develop smart personalised cooling systems utilising semantics to optimise and tailor cooling experiences for individual preferences.</p>
-                            <p>Design human-centric smart interfaces that prioritise comfort and well-being, ensuring intuitive and adaptive interactions between users and the environment.</p>
                         </div>
                     </div>
                     <div className='theme_section odd' id='theme2_section'>

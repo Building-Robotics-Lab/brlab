@@ -1,4 +1,5 @@
 import IqbalPaper1 from './Publication Images/iqbal_paper1.png'
+import IqbalPaper2 from './Publication Images/iqbal_paper2.png'
 import AliPaper1 from './Publication Images/ghahr1-p4-ghahr-large.gif'
 import AliPaper2 from './Publication Images/Screenshot 2023-11-19 at 20.50.54.png'
 import AliPaper3 from './Publication Images/Screenshot 2023-11-19 at 20.55.33.png'
@@ -9,6 +10,31 @@ const ConferenceData = [
     {
         year: "2024",
         publications: [
+            {
+                title: "Scalable Automation of Building Control Loops via Geospatial Semantic-enriched Digital Twins",
+                conference: "11th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation",
+                page: "233-234",
+                month: "November",
+                location: "Hangzhou, China",
+                authors: [
+                    { name: "Iqbal Shah", link: "/profile/Iqbal" },
+                    { name: "Ali Ghahramani", link: "/team#prof_profile" },
+                ],
+                minRead: "",
+                profiles: ["Iqbal", "Prof"],
+                links: [
+                    { type: "DOI", url: "https://doi.org/10.1145/3671127.3698706" }
+                ],
+                keywords: [
+                    "Control Loop",
+                    "Semantic Modelling",
+                    "Ontology",
+                    "Occupant Centric",
+                    "Digital Twin"
+                ],
+                abstract: "This work presents a scalable approach to automate the generation of building control loops using geospatial semantic-enriched Digital Twins (DTs). By integrating geospatial data and logical reasoning, the method dynamically adjusts control devices based on user proximity, reducing manual setup and improving adaptability. Experimental results validate its effectiveness in simplifying user-centric controllers, accommodating diverse user preferences under various contexts. Our graphical programming tool for developing geospatial ontologies is publicly available via 'Geospatial Semantics-BrickSchema Integration' Unity package.",
+                display_image: IqbalPaper2
+            },
             {
                 title: "Geospatial Semantic Enriched Digital Twin with Logical Reasoning Rules for Managing Control Loops",
                 conference: "Energy Informatics Academy Conference",
@@ -107,7 +133,7 @@ const ConferenceData = [
         publications: [
             {
                 title: "Can Immersive Virtual Environments Be Used for Understanding Occupant-System Interactions Under Thermal Stimuli?",
-                conference: "Proceedings of the Joint Conference on Computing in Construction (JC3)",
+                conference: "Joint Conference on Computing in Construction (JC3)",
                 page: "357-364",
                 month: "July",
                 location: "Heraklion, Greece",

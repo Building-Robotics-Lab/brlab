@@ -221,11 +221,6 @@ const profiles = [
         Featured_Publications: [
             (
                 <>
-                    <b>Shah, I.</b> and Ghahramani, A., 2024, October. <Link to="/publication/geospatial_semantic_enriched" ><b>Geospatial Semantic Enriched Digital Twin with Logical Reasoning Rules for Managing Control Loops</b></Link>. In <i>Energy Informatics Academy Conference</i>, 245-258. 
-                </>
-            ),
-            (
-                <>
                     <b>Shah, I.</b>, Su, X., Talami, R. and Ghahramani, A., 2024. <Link to="/publication/enhancing_building_envelopes:" ><b>Enhancing Building Envelopes: Parametric Analysis of Shading Systems for Opaque Facades and Their Comparison with Cool Paints</b></Link>. <i>Energy and Built Environment</i>.
                 </>
             ),
@@ -237,6 +232,16 @@ const profiles = [
             (
                 <>
                     <b>Shah, I.</b>, Soh, B., Lim, C., Lau, S. K., and Ghahramani, A., 2023. <Link to="/publication/thermal_transfer_and" ><b>Thermal transfer and temperature reductions from shading systems on opaque facades: Quantifying the impacts of influential factors</b></Link>. <i>Energy and Buildings, 278</i>, 112604.      
+                </>
+            ),
+            (
+                <>
+                    <b>Shah, I.</b> and Ghahramani, A., 2024, November. <Link to="/publication/scalable_automation_of" ><b>Scalable Automation of Building Control Loops via Geospatial Semantic-enriched Digital Twins</b></Link>. In <i>Proceedings of the 11th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation</i>, 233-234. 
+                </>
+            ),
+            (
+                <>
+                    <b>Shah, I.</b> and Ghahramani, A., 2024, October. <Link to="/publication/geospatial_semantic_enriched" ><b>Geospatial Semantic Enriched Digital Twin with Logical Reasoning Rules for Managing Control Loops</b></Link>. In <i>Energy Informatics Academy Conference</i>, 245-258. 
                 </>
             ),
         ],
