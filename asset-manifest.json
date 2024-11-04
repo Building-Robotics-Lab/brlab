@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/brlab/static/css/main.ffd58da4.css",
-    "main.js": "/brlab/static/js/main.3b0d0b3b.js",
+    "main.js": "/brlab/static/js/main.068cc4ee.js",
     "static/media/Smart_Building_Full_Animation_(Compressed).mp4": "/brlab/static/media/Smart_Building_Full_Animation_(Compressed).d2a5c408c0378fdec97a.mp4",
     "static/media/buildings-12-01241-g001.png": "/brlab/static/media/buildings-12-01241-g001.eb86f4ec0e01b32f831e.png",
     "static/media/michelle_pub1.jpg": "/brlab/static/media/michelle_pub1.5854b69a7b4d9a5c3eb7.jpg",
     "static/media/image.jpg": "/brlab/static/media/image.396a4d1491c7488d67bb.jpg",
     "static/media/image.jpeg": "/brlab/static/media/image.19341c3f72a5db628987.jpeg",
+    "static/media/iqbal_paper2.png": "/brlab/static/media/iqbal_paper2.d7e5d8fc2dc3f6804191.png",
     "static/media/1-s2.0-S-gr2_lrg.jpg": "/brlab/static/media/1-s2.0-S0306261915016888-gr2_lrg.6d077d348833c7a56185.jpg",
     "static/media/1-s2.0-S-gr1_lrg.jpg": "/brlab/static/media/1-s2.0-S0360132318302518-gr1_lrg.b499839525f32d8b4461.jpg",
     "static/media/Iqbal_DT2_theme.png": "/brlab/static/media/Iqbal_DT2_theme.90e00b2f73465b1ecdc0.png",
@@ -14,6 +15,7 @@
     "static/media/OTSToutput_example2.png": "/brlab/static/media/OTSToutput_example2.0ad7b46d87573c525439.png",
     "static/media/figure1.jpg": "/brlab/static/media/figure1.0da7989ea1f76cbd3d8a.jpg",
     "static/media/Screenshot 2023-11-19 at 20.50.54.png": "/brlab/static/media/Screenshot 2023-11-19 at 20.50.54.4d80071a24ee60dd8b93.png",
+    "static/media/iqbal_paper2_news.png": "/brlab/static/media/iqbal_paper2_news.ac243d5cce2fa989f049.png",
     "static/media/1-s2.0-S221462962200281X-gr2_lrg.jpg": "/brlab/static/media/1-s2.0-S221462962200281X-gr2_lrg.8d8c8cf6ada903de2451.jpg",
     "static/media/1-s2.0-S-gr7_lrg.jpg": "/brlab/static/media/1-s2.0-S0378778814007932-gr7_lrg.a784b47c804f1975b535.jpg",
     "static/media/iqbal_paper1_news.png": "/brlab/static/media/iqbal_paper1_news.c829f1ae7a88a74f61f3.png",
@@ -31,7 +33,6 @@
     "static/media/ThomasParkinson.jpg": "/brlab/static/media/ThomasParkinson.6de9d34a007f181f6161.jpg",
     "static/media/Kajima.jpg": "/brlab/static/media/Kajima.b9398c93cc91683a3438.jpg",
     "static/media/iqbal-publication3.jpg": "/brlab/static/media/iqbal-publication3.dbb6e75bb838ff183ccd.jpg",
-    "static/media/ThomasParkinson_news.jpg": "/brlab/static/media/ThomasParkinson_news.5721395aecd71daa186e.jpg",
     "static/media/Kajima_news.jpg": "/brlab/static/media/Kajima_news.d97d3840f89f632ab40c.jpg",
     "static/media/Screenshot 2023-11-19 at 20.55.33.png": "/brlab/static/media/Screenshot 2023-11-19 at 20.55.33.616bea6589fb2f06a408.png",
     "static/media/PMO.jpg": "/brlab/static/media/PMO.f2f576c15bdbba8b7572.jpg",
@@ -95,10 +96,10 @@
     "static/media/MicrosoftTeams-image.png": "/brlab/static/media/MicrosoftTeams-image.0cc6c000a76f813f8d03.png",
     "index.html": "/brlab/index.html",
     "main.ffd58da4.css.map": "/brlab/static/css/main.ffd58da4.css.map",
-    "main.3b0d0b3b.js.map": "/brlab/static/js/main.3b0d0b3b.js.map"
+    "main.068cc4ee.js.map": "/brlab/static/js/main.068cc4ee.js.map"
   },
   "entrypoints": [
     "static/css/main.ffd58da4.css",
-    "static/js/main.3b0d0b3b.js"
+    "static/js/main.068cc4ee.js"
   ]
 }
