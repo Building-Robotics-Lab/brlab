@@ -76,13 +76,6 @@ function Our_Team() {
             link: 'Kai'
         },
         {
-            name: 'Connor Aucremanne',
-            role: 'PhD Student',
-            skills: 'Smart Buildings; Building-Occupant Network Dynamics; Energy Informatics; Human-Building Interaction; Virtual Power Plants',
-            imgSrc: ConnorPic,
-            link: 'Connor'
-        },
-        {
             name: 'Kelly Loh',
             role: 'PhD Student',
             skills: 'Building Energy Efficiency; Building Greenery; Building Finance; Building Information Modelling',
@@ -134,6 +127,17 @@ function Our_Team() {
     ];
 
     const alumnis = [
+        {
+            name: 'Connor Aucremanne',
+            role: (
+                <>
+                PhD Student <br />
+                National University of Singapore (Singapore)
+                </>
+            ),
+            skills: 'PhD Student (January 2023 - November 2024)',
+            imgSrc: ConnorPic,
+        },
         {
             name: 'Wang Xiaorong',
             role: (
