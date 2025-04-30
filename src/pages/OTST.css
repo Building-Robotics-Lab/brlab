@@ -1,4 +1,3 @@
-/* First Section */
 
 .OTST .first_section {
     text-align: center;
@@ -125,7 +124,6 @@
     border-radius: 0.25rem;
 }
 
-/* Second Section */
 
 .OTST .second_section {
     display: flex;
@@ -217,7 +215,6 @@
     font-size: smaller;
 }
 
-/* Third Section */
 
 .OTST .third_section {
     display: flex;
@@ -349,7 +346,6 @@
 }
 
 @media screen and (max-width: 1025px) {
-    /* First Section */
 
     .OTST .first_section {
         gap: calc(0.7 * 2rem);
@@ -434,7 +430,6 @@
         border-radius: calc(0.7 * 0.25rem);
     }
 
-    /* Second Section */
 
     .OTST .second_section .inputs .inputs_left {
         padding: calc(0.7 * 2rem);
@@ -547,7 +542,6 @@
 }
 
 @media screen and (max-width: 769px) {
-    /* First Section */
 
     .OTST .first_section {
         gap: calc(0.4 * 2rem);
@@ -633,7 +627,6 @@
         border-radius: calc(0.4 * 0.25rem);
     }
 
-    /* Second Section */
 
     .OTST .second_section .inputs .inputs_left {
         padding: calc(0.4 * 2rem);
@@ -745,7 +738,6 @@
 }
 
 @media screen and (max-width: 426px) {
-    /* First Section */
 
     .OTST .first_section {
         gap: calc(0.3 * 2rem);
@@ -830,7 +822,6 @@
         border-radius: calc(0.3 * 0.25rem);
     }
 
-    /* Second Section */
 
     .OTST .second_section .inputs .inputs_left {
         padding: calc(0.3 * 2rem);

@@ -48,18 +48,13 @@ const ThesesData = [
         ],
     }
 ];
-// Function to generate ID from the title
 const generateIdFromTitle = (title) => {
-    // Take the first two words from the title
     const firstTwoWords = title.split(" ").slice(0, 3).join("_").toLowerCase();
     return firstTwoWords;
 };
 
-// Loop through the years
 ThesesData.forEach((yearData) => {
-    // Loop through the publications for each year
     yearData.publications.forEach((publication) => {
-        // Generate and assign the unique ID
         publication.id = generateIdFromTitle(publication.title);
         publication.individual_paper_link = "/publication/" + generateIdFromTitle(publication.title);
     });
@@ -78,7 +73,6 @@ const getWordsPerMinute = (title, university, abstract) => {
 }
 
 ThesesData.forEach((yearData) => {
-    // Loop through the publications for each year
     yearData.publications.forEach((publication) => {
         let readingTime = getWordsPerMinute(publication.title, publication.university, publication.abstract);
         publication.minRead = `${readingTime}-minute read`

@@ -17,7 +17,7 @@ function IndividualProfile() {
 
     useEffect(() => {
         if (profile) {
-            document.title = 'BRL - ' + profile.Name; // Assuming you want to set the title to profile's name
+            document.title = 'BRL - ' + profile.Name;
         } else {
             document.title = 'BRL - Profile Not Found';
         }
@@ -88,7 +88,6 @@ function IndividualProfile() {
                                 <p>
                                     <ul>
                                         {Featured_Publications.map((featured, index) => (
-                                            // <li key={index} dangerouslySetInnerHTML={{ __html: featured }}></li>
                                             <li key={index}>{featured}</li>
                                         ))}
                                     </ul>

@@ -5,7 +5,7 @@ import Logo from './Website Data/MicrosoftTeams-image.png';
 
 function NavBar() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const [isNavOpen, setNavOpen] = useState(false); // State to control the nav overlay
+  const [isNavOpen, setNavOpen] = useState(false);
   const timeoutRef = useRef(null);
   const [showResearchSublinks, setShowResearchSublinks] = useState(false);
 
@@ -26,15 +26,13 @@ function NavBar() {
 
   const handleNavLinkClick = () => {
     setNavOpen(false);
-    document.body.style.overflow = ''; // Reset the overflow
+    document.body.style.overflow = '';
   };
 
   const toggleResearchSublinks = () => {
     setShowResearchSublinks(!showResearchSublinks);
   };
 
-  // Ensure that scrolling is re-enabled when the component unmounts
-  // Handle window resize
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 850 && isNavOpen) {
@@ -44,10 +42,8 @@ function NavBar() {
       }
     };
 
-    // Add event listener
     window.addEventListener('resize', handleResize);
 
-    // Clean up
     return () => {
       window.removeEventListener('resize', handleResize);
       document.body.classList.remove('no-scroll');

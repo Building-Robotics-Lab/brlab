@@ -72,7 +72,6 @@
 .logo-buttons-wrapper {
     display: flex;
     align-items: center;
-    /* Vertically center align items */
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -80,26 +79,22 @@
 .logo-buttons-wrapper a,
 .logo-buttons-wrapper p {
     margin: 0px !important;
-    /* Remove default margins */
 }
 
 .logo-buttons-wrapper p {
     margin-left: 20px;
-    /* Add some space between the logo and buttons */
 }
 
 .logo-buttons-wrapper img {
     width: 219px;
 }
 
-/* ALL MID */
 
 .Footer .mid_text p {
     font-size: 1rem;
     margin-bottom: 8px;
 }
 
-/* ALL RIGHT */
 
 .Footer .right_text p {
     font-size: 1rem;
@@ -180,7 +175,6 @@
     .NUSLogo {
         width: calc(0.4 * 219px);
         height: calc(0.4 * 100px);
-        /* display: none; */
     }
 
     .Footer .mid_text p {
@@ -210,13 +204,11 @@
 
     .Footer h3 {
         font-size: calc(0.3 * 1.75rem);
-        /*margin-bottom: 0.25rem;*/
     }
 
     .Footer .BRL_Footer {
         font-size: calc(0.3 * 1rem);
         margin-bottom: 1vmax;
-        /*margin-bottom: 0.25rem;*/
     }
 
     #footer_Button {

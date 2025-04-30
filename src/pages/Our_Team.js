@@ -18,14 +18,12 @@ import HengPic from './../components/Website Individual Information/Heng/image.j
 import KeshavPic from './../components/Website Individual Information/Keshav/image.jpeg';
 import KaiPic from './../components/Website Individual Information/Kai/image.jpg';
 import IqbalPic from './../components/Website Individual Information/Iqbal/image.jpg';
-import ConnorPic from './../components/Website Individual Information/Connor/image.jpg';
 import KellyPic from './../components/Website Individual Information/Kelly/image.jpg';
 import RezkyPic from './../components/Website Individual Information/Rezky/image.jpeg';
 import JonathanPic from './../components/Website Individual Information/Jonathan/image.jpg';
 import HuanxiangPic from './../components/Website Individual Information/Huanxiang/image.jpeg';
 import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
-import MaximePic from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
-//import XianPic from './components/Website Individual Information/Untitled.jpeg'
+import MaximePic from './../components/Website Individual Information/Blank/Untitled.jpeg'
 import XiaorongPic from './../components/Website Individual Information/Xiaorong/image.jpeg';
 import RiccardoPic from './../components/Website Individual Information/Riccardo/image.jpg';
 import PegahPic from './../components/Website Individual Information/Pegah/image.jpg';
@@ -42,7 +40,7 @@ function Our_Team() {
     useEffect(() => {
         document.title = 'BRL - Team';
         return () => {
-            document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
+            document.title = 'My React App';
         };
     }, []);
 
@@ -117,27 +115,9 @@ function Our_Team() {
             imgSrc: MaximePic,
             link: 'Maxime'
         },
-        /*{
-            name: 'Zhang Xian',
-            role: 'Visiting PhD Candidate',
-            skills: 'Human Factors Comfort; Cabin Lighting Environment',
-            imgSrc: XianPic,
-            link: 'Xian'
-        },*/
     ];
 
     const alumnis = [
-        {
-            name: 'Connor Aucremanne',
-            role: (
-                <>
-                PhD Student <br />
-                National University of Singapore (Singapore)
-                </>
-            ),
-            skills: 'PhD Student (January 2023 - November 2024)',
-            imgSrc: ConnorPic,
-        },
         {
             name: 'Wang Xiaorong',
             role: (

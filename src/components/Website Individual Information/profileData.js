@@ -13,9 +13,6 @@ import KaiCV from './Kai/CV.pdf'
 import IqbalPic from './Iqbal/image.jpg'
 import IqbalCV from './Iqbal/CV.pdf'
 
-import ConnorPic from './Connor/image.jpg'
-import ConnorCV from './Connor/CV.pdf'
-
 import KellyPic from './Kelly/image.jpg'
 import KellyCV from './Kelly/CV.pdf'
 
@@ -31,11 +28,8 @@ import HuanxiangCV from './Huanxiang/CV.pdf'
 import ChenxiPic from './Chenxi/image.jpeg'
 import ChenxiCV from './Chenxi/CV.pdf'
 
-import MaximePic from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
+import MaximePic from './Blank/Untitled.jpeg'
 import MaximeCV from './Maxime/CV.pdf'
-
-//import XianPic from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
-//import XianCV from './Xian/CV.pdf'
 
 import XiaorongPic from './Xiaorong/image.jpeg'
 import XiaorongCV from './Xiaorong/CV.pdf'
@@ -310,43 +304,6 @@ const profiles = [
         ],
     },
     {
-        ProfileName: 'Connor',
-        ProfileLink: "/profile/Connor",
-        ProfilePic: ConnorPic,
-        Name: 'Connor Aucremanne',
-        Position: 'PhD Student',
-        Biography: 'Connor Aucremanne is a second-year PhD student at the National University of Singapore (NUS) studying in the College of Design & Engineering\'s Department of the Built Environment. His primary research concerns the democratisation of virtual power plants for optimal monetisation and grid flexibility, as well as secondary projects revolving around digital twin development, resilient cooling, and decarbonisation. In the past, he also conducted valuable research during his time at the Pacific Northwest National Laboratory (PNNL), UCL, UF Center for Undergraduate Research, and Bob Graham Center for Public Service regarding net-zero energy and zero-carbon residential buildings, residential indoor soundscape perpcetion, Floridian residential rooftop solar PV, and Floridian climate change policy and public health. Through his passion, determination, and collaboration for his studies, Connor strives to answer the questions that no one has even thought of to ask. Outside of academia, he tends to curate Spotify playlists of most genres, enjoy the outdoors, collect coffee table books, and appreciate forms of expression throughout the arts.',
-        Education: [
-            'PhD, National University of Singapore (NUS), Built Environment (Current)',
-            'MSc, University College London (UCL), Built Environment: Environmental Design and Engineering (2023)',
-            'BSc (<i>summa cum laude</i>), University of Florida (UF), Sustainability and the Built Environment (w/ minors in Economics; Agricultural and Natural Resource Ethics & Policy) (2021)'
-        ],
-        Awards: [
-            'NUS Research Scholarship (Ring-fenced Award), National University of Singapore (2023 - Present)',
-            'Bright Futures Academic Scholarship, University of Florida (2017 - 2021)',
-            'Dean\'s List, University of Florida (2020, 2021)',
-            'University Scholars Program Scholarship, University of Florida (2020 - 2021)',
-            'President\'s Honor Roll, University of Florida (2019)'
-        ],
-        Featured_Publications: [],
-        Contacts: [
-            { href: "mailto:aucremanne@u.nus.edu", icon: faEnvelope, text: "aucremanne@u.nus.edu" }
-        ],
-        Links: [
-            { href: ConnorCV, icon: faUser, text: 'CV' },
-            { href: 'https://scholar.google.com/citations?user=jjEr918AAAAJ&hl=en&oi=ao', icon: faGoogle, text: 'Google Scholar' },
-            { href: 'https://www.linkedin.com/in/connor-aucremanne', icon: faLinkedin, text: 'LinkedIn' },
-            { href: 'https://orcid.org/0009-0006-7468-788X', icon: faOrcid, text: 'ORCID' }
-        ],
-        Interests: [
-            'Smart Buildings',
-            'Building-Occupant Network Dynamics',
-            'Energy Informatics',
-            'Human-Building Interaction',
-            'Virtual Power Plants'
-        ],
-    },
-    {
         ProfileName: 'Kelly',
         ProfileLink: "/profile/Kelly",
         ProfilePic: KellyPic,
@@ -456,7 +413,6 @@ const profiles = [
         Position: 'Research Associate',
         Biography: 'Gao Huanxiang is currently a Research Associate at the National University of Singapore - Department of the Built Environment before he begins his PhD in January 2025, and is currently engaged in research that focuses on applying computer vision to improve thermal comfort and energy conservation in HVAC systems. He is engaged in exploring novel computer vision algorithms that can effectively and non-invasively capture features of occupants and analyze their thermal requirements. Out of the office, he likes playing badminton.',
         Education: [
-            /*'PhD, National University of Singapore (NUS), Built Environment (Current)',*/
             'MEng, Harbin Institute of Technology, Civil and Environmental Engineering (2024)',
             'BEng, Nanchang University, Civil Engineering (2021)'
         ],
@@ -509,7 +465,6 @@ const profiles = [
         Position: 'Research Associate',
         Biography: 'Lei Chenxi is currently a Research Associate in the Department of the Built Environment, National University of Singapore before she begins her PhD in January 2025. Her research interests lie in understanding occupants\' behaviors and preferences from a human-centered perspective. Her previous research focused on developing tools and methods aimed at optimizing indoor physical environments and energy usage during the early stages of building design, as well as exploring how individuals perceive and interact with the built environment. Outside of the office, she likes to find delicious food and watch movies. She also occasionally plays the piano and dances.',
         Education: [
-            //'PhD, National University of Singapore (NUS), Built Environment (Current)',
             'MArch, Tianjin University, Architectural Technology and Science (2024)',
             'BArch, Wuhan University of Technology, Architecture (2021)'
         ],
@@ -566,49 +521,6 @@ const profiles = [
             'Energy Markets'
         ],
     },
-    /*{
-        ProfileName: 'Xian',
-        ProfileLink: "/profile/Xian",
-        ProfilePic: XianPic,
-        Name: 'Zhang Xian',
-        Position: 'Visiting PhD Candidate',
-        Position2: 'Northwestern Polytechnic University (China)',
-        Biography: '',
-        Education: [
-            'PhD, Northwestern Polytechnic University, Industrial Design (Current)',
-            'Master, Northwestern Polytechnic University, Design Science (2022)'
-            'Bachelor, Northwestern Polytechnic University, Product Design (2019)'
-        ],
-        Awards: [
-            'Excellent Graduate Student Title, Northwestern Polytechnic University (2022)
-            'First-Class Academic Scholarship, Northwestern Polytechnic University (2019)',
-            'Social Activity Scholarship, Northwestern Polytechnic University (2019)',
-            'Northwestern Polytechnic University Outstanding Graduates (2019)',
-            'First-Class Academic Scholarship, Northwestern Polytechnic University (2015)',
-            'Hexagon Academic Scholarship, Hexagon (2015)'
-        ],
-        Featured_Publications: [
-(
-                <>
-                    <b>Zhang, X.</b>, Qiao, Y., Wang, H., Wang, J. and Chen, D., 2023. <a href="https://doi.org/10.1016/j.scitotenv.2023.161933" ><b>Lighting environmental assessment in enclosed spaces based on emotional model</b></a>. <i>Science of The Total Environment, 870</i>, 161933.
-                </>
-            )
-        ],
-        Contacts: [
-            { href: "mailto:mzhangxian@mail.nwpu.edu.cn", icon: faEnvelope, text: "zhangxian@mail.nwpu.edu.cn" }
-        ],
-        Links: [
-            { href: XianCV, icon: faUser, text: 'CV' },
-            //{ href: '', icon: faLinkedin, text: 'LinkedIn' }
-        ],
-        Interests: [
-            'Human Factors Comfort',
-            'Cabin Lighting Environment',
-            '',
-            '',
-            ''
-        ],
-    },*/
     {
         ProfileName: 'Xiaorong',
         ProfileLink: "/profile/Xiaorong",

@@ -1,6 +1,5 @@
 import MichellePublication from './Publication Images/michelle_pub1.jpg'
 import KatePublication1 from './Publication Images/kate_pub1.png'
-//import KatePublication2 from './Publication Images/kate_pub2.png'
 import RiccardoPublication1 from './Publication Images/riccardo_pub1.jpg'
 import RiccardoPublication2 from './Publication Images/riccardo_pub2.png'
 import KaiPublication1 from './Publication Images/kai_pub1.png'
@@ -52,40 +51,6 @@ const JournalData = [
     {
         year: "2024",
         publications: [
-            /*{
-                title: "Occupant-Centric Digital Twin Interfaces for Buildings: Navigating User Preferences, Control, and Privacy",
-                journal: "",
-                volume: "", issue: "",
-                page: "",
-                authors: [
-                    { name: "Kate Sangwon Lee" },
-                    { name: "*Iqbal Shah", link: "/profile/Iqbal" },
-                    { name: "*Connor Aucremanne", link: "/profile/Connor" },
-                    { name: "Jung-Joo Lee" },
-                    { name: "Ali Ghahramani", link: "/team#prof_profile" }
-                ],
-                minRead: "",
-                profiles: ["Iqbal","Connor", "Prof"],
-                links: [
-                    { type: "DOI", url: "" }
-                ],
-                keywords: [
-                    "User Interface",
-                    "Occupant-centric",
-                    "Data Privacy in Smart Buildings",
-                    "User Feedback Mechanisms",
-                    "Indoor Environmental Quality"
-                ],
-                highlights: [
-                    "Experiments show significant shifts in UI preferences in different scenarios.",
-                    "Scenario-based UI preferences underscores need for adaptable digital environments.",
-                    "Provision for multiple UI types enhances overall digital twin satisfaction level.",
-                    "Privacy concerns critically influence user engagement and trust in the system.",
-                    "Anonymity significantly increases participant's willingness to share personal data."
-                ],
-                abstract: "Occupants in buildings often play a passive role in controlling their environmental settings, leading to significant dissatisfaction and energy wastage. This challenge underscores the need for innovative approaches that not only enhance environmental control but also actively engage occupants in the process. To address these challenges, this study introduces a novel occupantcentric Digital Twin (DT) framework, examining the impact of three distinct user interface (UI) types: person-based, object-based, and recommendation-based controls on user satisfaction, preferences under different scenarios, and data sharing preferences. Through experiments involving 120 participants, this study revealed that preferences for specific user interface (UI) types vary significantly across different scenarios. Furthermore, the study delves into occupant responses to personal data and privacy measures associated with DT systems, highlighting their crucial role in building trust and facilitating data sharing. The findings advocate for a personalized approach in occupant-centric DT implementations, suggesting that flexible and adaptive UIs can significantly enhance occupant engagement and satisfaction
-                display_image: KatePublication2
-            },*/
             {
                 title: "Warm, moderate, or cool-liker? A Benchmarking Framework to Characterize Occupant Overall Thermal Preferences based on Large-Scale Thermostat Data",
                 journal: "Building and Environment",
@@ -341,12 +306,12 @@ const JournalData = [
                 authors: [
                     { name: "Kate Sangwon Lee" },
                     { name: "Jung-Joo Lee" },
-                    { name: "*Connor Aucremanne", link: "/profile/Connor" },
+                    { name: "Connor Aucremanne" },
                     { name: "*Iqbal Shah", link: "/profile/Iqbal" },
                     { name: "Ali Ghahramani", link: "/team#prof_profile" }
                 ],
                 minRead: "",
-                profiles: ["Connor", "Iqbal", "Prof"],
+                profiles: ["Iqbal", "Prof"],
                 links: [
                     { type: "DOI", url: "https://doi.org/10.1016/j.buildenv.2023.110771" }
                 ],
@@ -1812,18 +1777,13 @@ const JournalData = [
     },
 ];
 
-// Function to generate ID from the title
 const generateIdFromTitle = (title) => {
-    // Take the first two words from the title
     const firstTwoWords = title.split(" ").slice(0, 3).join("_").toLowerCase();
     return firstTwoWords;
 };
 
-// Loop through the years
 JournalData.forEach((yearData) => {
-    // Loop through the publications for each year
     yearData.publications.forEach((publication) => {
-        // Generate and assign the unique ID
         publication.id = generateIdFromTitle(publication.title);
         publication.individual_paper_link = "/publication/" + generateIdFromTitle(publication.title);
     });
@@ -1847,7 +1807,6 @@ const getWordsPerMinute = (title, journal, keyword, highlight, abstract) => {
 }
 
 JournalData.forEach((yearData) => {
-    // Loop through the publications for each year
     yearData.publications.forEach((publication) => {
         let readingTime = getWordsPerMinute(publication.title, publication.journal, publication.keywords, publication.highlights, publication.abstract);
         publication.minRead = `${readingTime}-minute read`

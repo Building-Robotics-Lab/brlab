@@ -19,13 +19,12 @@ function ComfortGPT() {
     useEffect(() => {
         document.title = 'BRL - ComfortGPT';
         return () => {
-            document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
+            document.title = 'My React App';
         };
     }, []);
 
-    // State for screen width and target height
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-    const [targetHeight, setTargetHeight] = useState(30); // default height
+    const [targetHeight, setTargetHeight] = useState(30);
     const [margin, settaretmargin] = useState({ top: 20, right: 20, bottom: 50, left: 70 })
     const [y_axis1, sety_axis1] = useState(20)
     const [y_axis2, sety_axis2] = useState(-60)
@@ -34,14 +33,12 @@ function ComfortGPT() {
         const handleResize = () => {
             const newWidth = window.innerWidth;
             if (newWidth > 760) {
-                // Batching updates for larger screens
                 setTargetHeight(30);
                 settaretmargin({ top: 20, right: 20, bottom: 60, left: 70 });
                 sety_axis1(25);
                 sety_axis2(-60);
                 console.log('greater than 760');
             } else {
-                // Batching updates for smaller screens
                 setTargetHeight(20);
                 settaretmargin({ top: 10, right: 10, bottom: 30, left: 40 });
                 sety_axis1(10);
@@ -50,18 +47,14 @@ function ComfortGPT() {
             }
         };
 
-        // Set the initial state based on the current window size
         handleResize();
 
-        // Set up the event listener
         window.addEventListener('resize', handleResize);
 
-        // Clean up the event listener
         return () => window.removeEventListener('resize', handleResize);
-    }, []); // Empty dependency array to run only on mount and unmount
+    }, []);
 
 
-    // Define styles here, using targetHeight
     const styles = {
         control: (base) => ({
             ...base,
@@ -82,12 +75,11 @@ function ComfortGPT() {
         }),
     };
 
-    // User Profiles
     const getProfileByName = (profileName) => {
         return profiles.find(profile => profile.ProfileName === profileName);
     };
     const mainProfile = ['Kai']
-    const supportProfile = ['Connor', 'Prof', 'Ilyas']
+    const supportProfile = ['Prof', 'Ilyas']
     const Roles = ["Project Lead", "UX Designer", "PI", "UI Developer"]
 
     const mainUserProfile = mainProfile.map(getProfileByName).filter(Boolean);
@@ -101,7 +93,6 @@ function ComfortGPT() {
         setStValues([...convertedTemperature_forDisplay[2]]);
     }
 
-    // Handling changes for OT values
     const [otValues, setOtValues] = useState([...initialOtValues]);
     const [extremeOtIndices, setExtremeOtIndices] = useState({});
     const handleOTChange = (index, value) => {
@@ -121,7 +112,6 @@ function ComfortGPT() {
         }
     };
 
-    // Handling changes for ST values
     const [stValues, setStValues] = useState([...initialStValues]);
     const [extremeStIndices, setExtremeStIndices] = useState({});
     const handleSTChange = (index, value) => {
@@ -142,7 +132,6 @@ function ComfortGPT() {
         }
     };
 
-    // to disable the calculate button if there is an extreme value
     const hasExtremeValue = () => {
         return Object.values(extremeOtIndices).some(Boolean) || Object.values(extremeStIndices).some(Boolean);
     };
@@ -196,14 +185,12 @@ function ComfortGPT() {
                 setusescale(scale);
                 setusescale2(scale2);
 
-                // Gray Lines
                 const slope_heat = plotData['slope_heat'];
                 const intercept_heat = plotData['intercept_heat'];
                 const slope_cool = plotData['slope_cool'];
                 const intercept_cool = plotData['intercept_cool'];
                 let [x_heat, y_heat, x_cool, y_cool] = get_gray_values(slope_heat, intercept_heat, slope_cool, intercept_cool);
 
-                // Convert to Respective Temperature Scale (Gray Lines)
                 let y_heat_converted = []
                 let y_cool_converted = []
 
@@ -217,27 +204,23 @@ function ComfortGPT() {
                 x_cool = convertTemperature_forHighlightLines(temperature_scale[0].value, temperature, x_cool);
                 y_cool = y_cool_converted
 
-                // Highlight Lines
                 const cintercept = plotData['cintercept'];
                 const cslope = plotData['cslope'];
                 const hintercept = plotData['hintercept'];
                 const hslope = plotData['hslope'];
                 let [x_heat_highlight, y_heat_highlight, x_cool_highlight, y_cool_highlight] = get_highlight_values(hslope, hintercept, cslope, cintercept);
 
-                // Convert to Respective Temperature Scale (Highlight Lines)
                 x_heat_highlight = convertTemperature_forHighlightLines(temperature_scale[0].value, temperature, x_heat_highlight);
                 y_heat_highlight = convertTemperature_forHighlightLines(temperature_scale[0].value, temperature, y_heat_highlight);
                 x_cool_highlight = convertTemperature_forHighlightLines(temperature_scale[0].value, temperature, x_cool_highlight);
                 y_cool_highlight = convertTemperature_forHighlightLines(temperature_scale[0].value, temperature, y_cool_highlight);
 
-                // Convert to Respective Temperature Scale (CSV)
                 [x_heat_highlight_csv, y_heat_highlight_csv, x_cool_highlight_csv, y_cool_highlight_csv] = save_to_csv(hslope, hintercept, cslope, cintercept);
                 x_heat_highlight_csv = convertTemperature_forHighlightLines(temperature_scale[0].value, temperature, x_heat_highlight_csv);
                 y_heat_highlight_csv = convertTemperature_forHighlightLines(temperature_scale[0].value, temperature, y_heat_highlight_csv);
                 x_cool_highlight_csv = convertTemperature_forHighlightLines(temperature_scale[0].value, temperature, x_cool_highlight_csv);
                 y_cool_highlight_csv = convertTemperature_forHighlightLines(temperature_scale[0].value, temperature, y_cool_highlight_csv);
 
-                // Plotting part
                 let xy_heat_highlight_dict = x_heat_highlight.map((x_value, i) => {
                     return { xval: x_value, yval: y_heat_highlight[i] };
                 });
@@ -350,7 +333,7 @@ function ComfortGPT() {
                     .text(function (d) { return d.label; });
 
                 for (let i = 0; i < y_heat.length; i++) {
-                    let y_heat_dict = x_heat.map((x_value, j) => {  // Use a different variable name (j)
+                    let y_heat_dict = x_heat.map((x_value, j) => {
                         return { xval: x_value, yval: y_heat[i][j] };
                     });
 
@@ -361,7 +344,7 @@ function ComfortGPT() {
                         .attr("stroke-width", 1)
                         .attr("d", line)
 
-                    let y_cool_dict = x_cool.map((x_value, j) => {  // Use a different variable name (j)
+                    let y_cool_dict = x_cool.map((x_value, j) => {
                         return { xval: x_value, yval: y_cool[i][j] };
                     });
 
@@ -404,7 +387,6 @@ function ComfortGPT() {
                         .attr("stroke-width", 5)
                         .attr("d", line)
 
-                    // Hover to show points on the heat and cool lines
                     svg.selectAll('.heat-point')
                         .data(xy_heat_highlight_dict)
                         .enter().append('circle')
@@ -426,13 +408,13 @@ function ComfortGPT() {
                             hoverLineVertical.attr("x1", x(d.xval))
                                 .attr("y1", y(d.yval))
                                 .attr("x2", x(d.xval))
-                                .attr("y2", height)  // y(0) assuming the x-axis is at y=0
+                                .attr("y2", height)
                                 .style("opacity", 1);
 
                             hoverLineHorizontal.attr("x1", x(d.xval))
                                 .attr("y1", y(d.yval))
                                 .attr("x2", 0)
-                                .attr("y2", y(d.yval))  // y(0) assuming the x-axis is at y=0
+                                .attr("y2", y(d.yval))
                                 .style("opacity", 1);
 
 
@@ -442,8 +424,8 @@ function ComfortGPT() {
                                 .duration(500)
                                 .style('opacity', 0);
 
-                            hoverLineVertical.style("opacity", 0);  // hide the line
-                            hoverLineHorizontal.style("opacity", 0);  // hide the line
+                            hoverLineVertical.style("opacity", 0);
+                            hoverLineHorizontal.style("opacity", 0);
                         });
 
                     svg.selectAll('.cool-point')
@@ -467,13 +449,13 @@ function ComfortGPT() {
                             hoverLineVertical.attr("x1", x(d.xval))
                                 .attr("y1", y(d.yval))
                                 .attr("x2", x(d.xval))
-                                .attr("y2", height)  // y(0) assuming the x-axis is at y=0
+                                .attr("y2", height)
                                 .style("opacity", 1);
 
                             hoverLineHorizontal.attr("x1", x(d.xval))
                                 .attr("y1", y(d.yval))
                                 .attr("x2", 0)
-                                .attr("y2", y(d.yval))  // y(0) assuming the x-axis is at y=0
+                                .attr("y2", y(d.yval))
                                 .style("opacity", 1);
                         })
                         .on('mouseout', function (d) {
@@ -481,34 +463,31 @@ function ComfortGPT() {
                                 .duration(500)
                                 .style('opacity', 0);
 
-                            hoverLineVertical.style("opacity", 0);  // hide the line
-                            hoverLineHorizontal.style("opacity", 0);  // hide the line
+                            hoverLineVertical.style("opacity", 0);
+                            hoverLineHorizontal.style("opacity", 0);
                         });
                 } else {
-                    // Remove existing red and blue lines
                     svg.selectAll('path')
                         .filter(function () {
                             return d3.select(this).attr('stroke') === 'red' || d3.select(this).attr('stroke') === 'blue';
                         })
                         .remove();
 
-                    // Remove existing red and blue points
                     svg.selectAll('.heat-point, .cool-point')
                         .remove();
                 }
 
-                // X Axis Label and Y Axis Label
                 svg.append("text")
-                    .attr("transform", `translate(${width / 2} ,${height + 15})`) // Position at the middle of the x-axis, and move slightly below the axis
+                    .attr("transform", `translate(${width / 2} ,${height + 15})`)
                     .attr("y", `${y_axis1}`)
                     .style("text-anchor", "middle")
                     .text(`Outdoor Temperature (${scale2})`);
 
                 svg.append("text")
-                    .attr("transform", "rotate(-90)") // Rotate the text 90 degrees
+                    .attr("transform", "rotate(-90)")
                     .attr("y", `${y_axis2}`)
-                    .attr("x", 0 - (height / 2)) // Position at the middle of the y-axis
-                    .attr("dy", "1em") // Move slightly away from the axis
+                    .attr("x", 0 - (height / 2))
+                    .attr("dy", "1em")
                     .style("text-anchor", "middle")
                     .text(`Preferred Setpoint (${scale2})`);
             }
@@ -572,13 +551,6 @@ function ComfortGPT() {
             addButton.style.pointerEvents = 'none';
             addButton.style.opacity = '0.5';
         }
-
-        // // Directly change the border color of the button
-        // const addButton = document.querySelector('.addRowButton');
-        // if (addButton) {
-
-        //     // addButton.style.borderColor = otValues.length === 20 ? 'red' : 'initial';
-        // }
     };
 
     const RemoveRow = () => {
@@ -626,41 +598,30 @@ function ComfortGPT() {
         setExtremeStIndices(stExtremeNewValues);
     }
 
-    // Download CSV
     const DownloadCSV = () => {
         const csvContent = generateCSVContent();
 
-        // Create a Blob object from the CSV content
         const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
 
-        // Create a temporary anchor element to initiate the download
         const link = document.createElement("a");
         if (link.download !== undefined) {
-            // Set the link's attributes
             const url = URL.createObjectURL(blob);
             link.setAttribute("href", url);
             link.setAttribute("download", "data.csv");
 
-            // Append the link to the document body
             document.body.appendChild(link);
 
-            // Simulate a click event on the link
             link.click();
 
-            // Clean up resources
             document.body.removeChild(link);
             URL.revokeObjectURL(url);
         }
     }
 
     function generateCSVContent() {
-        // Generate the CSV content based on the arrays
         const csvRows = [];
 
-        // Create the header row
         csvRows.push(`Outdoor Temperature Heat (${scale}), Predicted Setpoint Heat (${scale}), Outdoor Temperature Cool (${scale}), Predicted Setpoint Cool (${scale})`);
-        // "x_heat_highlight,y_heat_highlight,x_cool_highlight,y_cool_highlight"
-        // Determine the maximum length among the arrays
         const maxLength = Math.max(
             x_heat_highlight_csv.length,
             y_heat_highlight_csv.length,
@@ -668,7 +629,6 @@ function ComfortGPT() {
             y_cool_highlight_csv.length
         );
 
-        // Populate the rows with the array values
         for (let i = 0; i < maxLength; i++) {
             const row = [
                 i < x_heat_highlight_csv.length ? x_heat_highlight_csv[i] : "",
@@ -796,76 +756,12 @@ function ComfortGPT() {
                 </div>
             </Container>
 
-            {/* <Container useOrange={true}>
-                <div className='first_section'>
-                    <div className='contacts'>
-                        <div>
-                            <h3>Tool Contacts</h3>
-                        </div>
-                        <div className='Main'>
-                            {mainUserProfile.map((profile, index) => (
-                                <div className="each_profile" key={index}>
-                                    <div className="profile_image">
-                                        <Link to={`/profile/${profile.ProfileName}`} target="_blank">
-                                            <img src={profile.ProfilePic} alt={profile.Name} />
-                                        </Link>
-                                    </div>
-                                    <div className="profile_data">
-                                        <a href={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
-                                            <h5><b>{profile.Name}</b></h5>
-                                        </a>
-                                        <p>{Roles[0]}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        <div className='Supports'>
-                            {supportUserProfiles.map((profile, index) => (
-                                <div className="each_profile" key={index}>
-                                    <div className="profile_image">
-                                        <Link to={profile.ProfileName !== 'Prof' ? `/profile/${profile.ProfileName}` : profile.ProfileLink} target="_blank">
-                                            <img src={profile.ProfilePic} alt={profile.Name} />
-                                        </Link>
-                                    </div>
-                                    <div className="profile_data">
-                                        <a href={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
-                                            <h5><b>{profile.Name}</b></h5>
-                                        </a>
-                                        <p>{Roles.slice(1, Roles.length)[index]}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </Container> */}
+            {}
 
             <Footer />
         </div>
     )
 }
-
-// const targetHeight = 10;
-
-// const styles = {
-//   control: (base) => ({
-//     ...base,
-//     minHeight: 'initial',
-//   }),
-//   valueContainer: (base) => ({
-//     ...base,
-//     height: `${targetHeight - 1 - 1}px`,
-//     padding: '0 8px',
-//   }),
-//   clearIndicator: (base) => ({
-//     ...base,
-//     padding: `${(targetHeight - 20 - 1 - 1) / 2}px`,
-//   }),
-//   dropdownIndicator: (base) => ({
-//     ...base,
-//     padding: `${(targetHeight - 20 - 1 - 1) / 2}px`,
-//   }),
-// };
 
 export default ComfortGPT
 

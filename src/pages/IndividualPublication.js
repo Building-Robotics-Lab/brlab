@@ -115,7 +115,7 @@ function IndividualPublication() {
                     {userProfiles.map((profile, index) => (
                         <div className="each_profile" key={index}>
                             <div className="profile_image">
-                                {/* <Link to={`/profile/${profile.ProfileName}`} target="_blank"> */}
+                                {}
                                 <Link to={profile.ProfileLink} target="_blank" rel="noopener noreferrer">
                                     <img src={profile.ProfilePic} alt={profile.Name} />
                                 </Link>
@@ -155,7 +155,7 @@ function findPublicationById(id) {
     const allData = [JournalData, ConferenceData, ThesesData, PatentData];
 
     for (const data of allData) {
-        if (!data) continue;  // Skip if data is null or undefined
+        if (!data) continue;
 
         for (const yearData of data) {
             for (const pub of yearData.publications) {
@@ -165,5 +165,5 @@ function findPublicationById(id) {
             }
         }
     }
-    return null;  // or some default data
+    return null;
 }

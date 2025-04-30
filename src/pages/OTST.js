@@ -22,13 +22,12 @@ function OTST() {
     useEffect(() => {
         document.title = 'BRL - OTST';
         return () => {
-            document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
+            document.title = 'My React App';
         };
     }, []);
 
-    // State for screen width and target height
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-    const [targetHeight, setTargetHeight] = useState(30); // default height
+    const [targetHeight, setTargetHeight] = useState(30);
     const [margin, settaretmargin] = useState({ top: 20, right: 20, bottom: 40, left: 70 })
     const [y_axis1, sety_axis1] = useState(20)
     const [y_axis2, sety_axis2] = useState(-60)
@@ -37,14 +36,12 @@ function OTST() {
         const handleResize = () => {
             const newWidth = window.innerWidth;
             if (newWidth > 760) {
-                // Batching updates for larger screens
                 setTargetHeight(30);
                 settaretmargin({ top: 20, right: 20, bottom: 50, left: 80 });
                 sety_axis1(-5);
                 sety_axis2(-70);
                 console.log('greater than 760');
             } else {
-                // Batching updates for smaller screens
                 setTargetHeight(20);
                 settaretmargin({ top: 10, right: 10, bottom: 30, left: 40 });
                 sety_axis1(-5);
@@ -53,17 +50,13 @@ function OTST() {
             }
         };
 
-        // Set the initial state based on the current window size
         handleResize();
 
-        // Set up the event listener
         window.addEventListener('resize', handleResize);
 
-        // Clean up the event listener
         return () => window.removeEventListener('resize', handleResize);
-    }, []); // Empty dependency array to run only on mount and unmount
+    }, []);
 
-    // Define styles here, using targetHeight
     const styles = {
         control: (base) => ({
             ...base,
@@ -84,18 +77,16 @@ function OTST() {
         }),
     };
 
-    // For First Section
     const getProfileByName = (profileName) => {
         return profiles.find(profile => profile.ProfileName === profileName);
     };
     const mainProfile = ['Riccardo']
-    const supportProfile = ['Connor', 'Prof', 'Ilyas']
+    const supportProfile = ['Prof', 'Ilyas']
     const Roles = ["Project Lead", "UX Designer", "Collaborator/else?", "UI Developer"]
 
     const mainUserProfile = mainProfile.map(getProfileByName).filter(Boolean);
     const supportUserProfiles = supportProfile.map(getProfileByName).filter(Boolean);
 
-    // For Graph
     const [size, setSize] = useState(building_size[0].value);
     const buildingSize = (option) => {
         setSize(option.value)
@@ -106,14 +97,12 @@ function OTST() {
     const temperatureScale = (option) => {
         const newScale = option.value;
 
-        // Convert the otValue
         if (temperature === 'Celsius' && newScale === 'Fahrenheit') {
             setotValue(Math.round((otValue * 9 / 5) + 32));
         } else if (temperature === 'Fahrenheit' && newScale === 'Celsius') {
             setotValue(((otValue - 32) * 5 / 9).toFixed(1));
         }
 
-        // Update the temperature scale
         setTemperature(newScale);
     }
 
@@ -174,12 +163,11 @@ function OTST() {
 
     const formatLabel = (option, meta) => {
         if (meta.context === 'menu') {
-            return fulllabels[option.value];  // Display full label from the fulllabels array
+            return fulllabels[option.value];
         }
-        return option.label;  // Display abbreviation from the labels array
+        return option.label;
     };
 
-    // Fetch Data on Load
     const [climateData, setClimateData] = useState({});
     const [loading, setLoading] = useState(true);
     useEffect(() => {
@@ -190,7 +178,6 @@ function OTST() {
             },
             body: JSON.stringify({})
         }).then(response => response.json()).then(data => {
-            // Decode and decompress the gzipped data
             let decodedData = atob(data['body']);
             let compressedData = new Uint8Array(decodedData.length);
             for (let i = 0; i < decodedData.length; i++) {
@@ -198,7 +185,6 @@ function OTST() {
             }
             let decompressedData = Pako.inflate(compressedData, { to: 'string' });
 
-            // Parse the decompressed string into a JSON object
             let output = JSON.parse(decompressedData);
 
             setClimateData(output);
@@ -210,7 +196,6 @@ function OTST() {
         });
     }, []);
 
-    // Convert temperature when needed
     useEffect(() => {
         if (!loading) {
             const convertedData = {};
@@ -222,20 +207,19 @@ function OTST() {
         }
     }, [temperature]);
 
-    // Render graph after data is loaded
     let scale;
     let baseline;
-    const [col1, setcol1] = useState([]); // Temp Scale
-    const [col2, setcol2] = useState([]); // Climate
-    const [col3, setcol3] = useState([]); // Patt
-    const [col3_2, setcol3_2] = useState([]); // Patt Shortened
-    const [col4, setcol4] = useState([]); // Rate
-    const [col5, setcol5] = useState([]); // Outdoor Temperature
-    const [col6, setcol6] = useState([]); // Setpoint
-    const [col7, setcol7] = useState([]); // Energy
-    const [col8, setcol8] = useState([]); // Baseline
-    const [col9, setcol9] = useState([]); // Savings
-    const [col10, setcol10] = useState([]); // Legend Color
+    const [col1, setcol1] = useState([]);
+    const [col2, setcol2] = useState([]);
+    const [col3, setcol3] = useState([]);
+    const [col3_2, setcol3_2] = useState([]);
+    const [col4, setcol4] = useState([]);
+    const [col5, setcol5] = useState([]);
+    const [col6, setcol6] = useState([]);
+    const [col7, setcol7] = useState([]);
+    const [col8, setcol8] = useState([]);
+    const [col9, setcol9] = useState([]);
+    const [col10, setcol10] = useState([]);
     const [exceedValue, setexceedValue] = useState(false)
     const [usescale, setusescale] = useState();
     const [usebaseline, setusebaseline] = useState();
@@ -264,7 +248,6 @@ function OTST() {
                 const filteredFullLabels = selectedOptions.map(element => fulllabels[element.value]);
 
                 let data_climate = climateData[climate]
-                // const data_building = data_climate[size]
                 const data_or = data_climate.map(each_or => each_or[or]);
                 const indices = selectedOptions.map(option => option.value);
                 const data_op_checked = data_or.map(subArray => indices.map(index => subArray[index]));
@@ -315,51 +298,29 @@ function OTST() {
                     .style("opacity", 0);
 
                 svg.append("text")
-                    .attr("transform", `translate(${width / 2} ,${height + margin.top + 20})`) // Position at the middle of the x-axis, and move slightly below the axis
+                    .attr("transform", `translate(${width / 2} ,${height + margin.top + 20})`)
                     .attr("y", `${y_axis1}`)
                     .style("text-anchor", "middle")
                     .text(`Outdoor Temperature (${scale})`);
 
                 svg.append("text")
-                    .attr("transform", "rotate(-90)") // Rotate the text 90 degrees
+                    .attr("transform", "rotate(-90)")
                     .attr("y", `${y_axis2}`)
-                    .attr("x", 0 - (height / 2)) // Position at the middle of the y-axis
-                    .attr("dy", "1em") // Move slightly away from the axis
+                    .attr("x", 0 - (height / 2))
+                    .attr("dy", "1em")
                     .style("text-anchor", "middle")
                     .text(`Optimal Setpoint (${scale})`);
 
-                // const legends = filteredLabels.map((label, index) => {
-                //     return { color: filteredColors[index], label: label };
-                // });
 
-                // var legend = svg.selectAll('.legend')
-                //     .data(legends)
-                //     .enter().append('g')
-                //     .attr('class', 'legend')
-                //     .attr('transform', function (d, i) { return 'translate(' + (50) + ',' + (i * 20) + ')'; });
-
-                // legend.append('rect')
-                //     .attr('x', -30)
-                //     .attr('y', 7)
-                //     .attr('width', 19)
-                //     .attr('height', 5)
-                //     .style('fill', d => d.color);
-
-                // legend.append('text')
-                //     .attr('x', -5)
-                //     .attr('y', 9.5)
-                //     .attr('dy', '0.32em')
-                //     .text(function (d) { return d.label; });
-
-                const temporary_col1 = [] // Temp Scale
-                const temporary_col2 = [] // Climate
-                const temporary_col3 = [] // Patt
-                const temporary_col4 = [] // Rate
-                const temporary_col5 = [] // Outdoor Temperature
-                const temporary_col6 = [] // Setpoint
-                const temporary_col7 = [] // Energy
-                const temporary_col8 = [] // Baseline
-                const temporary_col9 = [] // Savings
+                const temporary_col1 = []
+                const temporary_col2 = []
+                const temporary_col3 = []
+                const temporary_col4 = []
+                const temporary_col5 = []
+                const temporary_col6 = []
+                const temporary_col7 = []
+                const temporary_col8 = []
+                const temporary_col9 = []
 
                 for (let i = 0; i < x_values.length; i++) {
                     const currentX = x_values[i];
@@ -369,11 +330,10 @@ function OTST() {
 
                     const plot_data = currentX.map((x, j) => ({ x, y: currentY[j], e: currentE[j], b: currentB[j] }));
 
-                    // Plot the line
                     svg.append("path")
                         .datum(plot_data)
                         .attr("fill", "none")
-                        .attr("stroke", filteredColors[i % filteredColors.length])  // Cycle through colors if there are more lines than colors
+                        .attr("stroke", filteredColors[i % filteredColors.length])
                         .attr("stroke-width", 3)
                         .attr("d", line);
 
@@ -389,7 +349,6 @@ function OTST() {
                         .style("stroke-dasharray", "5,5")
                         .style("opacity", 0);
 
-                    // Hover to show points on the heat and cool lines
                     svg.selectAll(`.heat-point-${i}`)
                         .data(plot_data)
                         .enter().append('circle')
@@ -425,8 +384,8 @@ function OTST() {
                                 .duration(100)
                                 .style('opacity', 0);
 
-                            hoverLineVertical.style("opacity", 0); // hide the vertical line
-                            hoverLineHorizontal.style("opacity", 0); // hide the horizontal line
+                            hoverLineVertical.style("opacity", 0);
+                            hoverLineHorizontal.style("opacity", 0);
                         });
 
                     if (Number(otValue) < xExtent[1] && Number(otValue) > xExtent[0]) {
@@ -441,22 +400,18 @@ function OTST() {
                         let scale_higher = document.getElementById('higher');
                         scale_higher.textContent = Number(xExtent[1]).toFixed(1);
 
-                        // Find the closest index for the specific x_value (assuming you have that value stored in a variable)
                         let closestIndex = findClosestIndex(currentX, Number(otValue));
 
-                        // Extract the corresponding y_value based on the closestIndex
                         let closestY = currentY[closestIndex];
                         let closestE = currentE[closestIndex];
                         let closestB = currentB[closestIndex];
 
-                        // Highlight the point by adding a circle
                         svg.append("circle")
                             .attr("cx", x(currentX[closestIndex]))
                             .attr("cy", y(closestY))
-                            .attr("r", 6)  // Radius of circle
+                            .attr("r", 6)
                             .attr("fill", filteredColors[i % filteredColors.length]);
 
-                        // Add vertical line
                         svg.append("line")
                             .attr("x1", x(currentX[closestIndex]))
                             .attr("y1", y(closestY))
@@ -466,7 +421,6 @@ function OTST() {
                             .style("stroke-width", 2)
                             .style("stroke-dasharray", "5,5");
 
-                        // Add horizontal line
                         svg.append("line")
                             .attr("x1", x(currentX[closestIndex]))
                             .attr("y1", y(closestY))
@@ -476,19 +430,18 @@ function OTST() {
                             .style("stroke-width", 2)
                             .style("stroke-dasharray", "5,5");
 
-                        // Populate the columns for download csv
-                        temporary_col1.push(temperature + ' (' + scale + ')') // Temp Scale
-                        temporary_col2.push(climate) // Climate
-                        temporary_col3.push(fulllabels[i]) // Patt
-                        temporary_col4.push(occupancy_rate[or]) // Rate
-                        temporary_col5.push(Number(otValue)) // Outdoor Temperature
-                        temporary_col6.push(closestY) // Setpoint
-                        temporary_col7.push(closestE) // Energy
-                        temporary_col8.push(closestB) // Baseline
+                        temporary_col1.push(temperature + ' (' + scale + ')')
+                        temporary_col2.push(climate)
+                        temporary_col3.push(fulllabels[i])
+                        temporary_col4.push(occupancy_rate[or])
+                        temporary_col5.push(Number(otValue))
+                        temporary_col6.push(closestY)
+                        temporary_col7.push(closestE)
+                        temporary_col8.push(closestB)
 
                         let savings = Number(((Math.abs(closestE - closestB) / (closestB)) * 100).toFixed(2))
 
-                        temporary_col9.push(savings) // Savings
+                        temporary_col9.push(savings)
                     } else {
                         let scale_lower = document.getElementById('lower');
                         scale_lower.textContent = Number(xExtent[0]).toFixed(1);
@@ -530,16 +483,13 @@ function OTST() {
 
     const DownloadCSV = () => {
         let csvContent = "Temperature Scale,Climate Zone,Unoccupied Periods,Occupancy Rate,Outdoor Temperature,Optimal Setpoint,HVAC Energy Consumption (J),HVAC Baseline Energy Consumption (J),Energy Savings (%)\n";
-        // Assuming col1, col2, ... col9 are of the same length
         for (let i = 0; i < col1.length; i++) {
             let row = [col1[i], col2[i], col3[i], col4[i], col5[i], col6[i], col7[i], col8[i], col9[i]].join(",");
             csvContent += row + "\n";
         }
 
-        // Create Blob
         const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
 
-        // Create a download link and click it
         const link = document.createElement('a');
         const url = URL.createObjectURL(blob);
         link.setAttribute('href', url);
@@ -753,13 +703,9 @@ const convertTemperature = (prevScale, selectedScale, inputList) => {
 
     const conversionKey = prevScale + selectedScale;
 
-    // Map over each Array(4) in the outer array
     let convertedList = inputList.map(array4 => {
-        // Map over each of the 14 Arrays within each Array(4)
         return array4.map(array14 => {
-            // Map over each Array(56) within each of the 14 Arrays
             return array14.map(array56 => {
-                // Map over each float value within the Array(56) and convert it
                 return array56.map(floatValue => convertTemp(floatValue, conversions[conversionKey]));
             });
         });

@@ -46,7 +46,7 @@ function Collaborations() {
     useEffect(() => {
         document.title = 'BRL - Collaborations';
         return () => {
-            document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
+            document.title = 'My React App';
         };
     }, []);
 
@@ -54,7 +54,6 @@ function Collaborations() {
         const updateMinHeightTitle = () => {
             const AllH4Height = collabRef.current.querySelectorAll('.themes .each_theme .each_theme_data h4')
 
-            // Reset heights to auto before recalculating
             AllH4Height.forEach((each_h4) => {
                 each_h4.style.height = 'auto';
             });
@@ -76,13 +75,10 @@ function Collaborations() {
             });
         }
 
-        // Initial update
         updateMinHeightTitle();
 
-        // Update on window resize
         window.addEventListener('resize', updateMinHeightTitle);
 
-        // Cleanup the event listener on component unmount
         return () => {
             window.removeEventListener('resize', updateMinHeightTitle);
         };
@@ -227,7 +223,7 @@ function Collaborations() {
                     <div className='theme_section' id='theme1_section'>
                         <div className="theme_details">
                         <FontAwesomeIcon icon={faImage} />   
-                            {/*<img src={T2Lab} alt="The Smart HVAC and Well-being Lab."></img>*/}
+                            {}
                             <h4><b>Smart HVAC and Well-Being Lab</b></h4>
                             <h6><b>Stay tuned! Under construction with an expected completion of August 2024.</b></h6>
                         </div>

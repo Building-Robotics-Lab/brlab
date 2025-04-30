@@ -11,31 +11,25 @@ const Footer = () => {
 
     useEffect(() => {
         const updateMargins = () => {
-            // const leftTextHeight = leftTextRef.current.offsetHeight;
             const brlFooter = leftTextRef.current.querySelector('.BRL_Footer');
             const brlFooterHeight = brlFooter.offsetHeight + 1.65 * window.innerWidth / 100;
             const leftTextH3 = leftTextRef.current.querySelector('.left_text h3');
             const leftTextH3Height = leftTextH3.offsetHeight + parseFloat(window.getComputedStyle(leftTextH3).marginBottom);
             const totalHeight = leftTextH3Height + brlFooterHeight;
 
-            // Calculate mid_text h3 height and subtract it from totalHeight
             const midTextH3Height = midTextRef.current.offsetHeight;
             const remainingHeightMid = totalHeight - midTextH3Height;
             midTextRef.current.style.marginBottom = `${remainingHeightMid}px`;
 
-            // Calculate right_text h3 height and subtract it from totalHeight
             const rightTextH3Height = rightTextRef.current.offsetHeight;
             const remainingHeightRight = totalHeight - rightTextH3Height;
             rightTextRef.current.style.marginBottom = `${remainingHeightRight}px`;
         };
 
-        // Initial adjustment
         updateMargins();
 
-        // Update on window resize
         window.addEventListener('resize', updateMargins);
 
-        // Cleanup
         return () => {
             window.removeEventListener('resize', updateMargins);
         };

@@ -5,33 +5,16 @@ function NewsGrid({ newsData, sectionName, highlightedSection }) {
     const newsGridRef = useRef(null);
     const handleImageError = (e) => {
         const attempt = e.target.getAttribute('data-attempt') || 1;
-        if (attempt < 3) { // Retry up to 3 times
+        if (attempt < 3) {
             e.target.src = e.target.src;
             e.target.setAttribute('data-attempt', attempt + 1);
         }
     };
 
-    // useEffect(() => {
-    //     const titles = newsGridRef.current.querySelectorAll('.NewsPic h4');
-    //     for (let i = 0; i < titles.length; i += 3) {
-    //         let maxHeight = 0;
-    //         const currentRowTitles = [titles[i], titles[i + 1], titles[i + 2]].filter(Boolean);
-    //         currentRowTitles.forEach(title => {
-    //             if (title.clientHeight > maxHeight) {
-    //                 maxHeight = title.clientHeight;
-    //             }
-    //         });
-    //         currentRowTitles.forEach(title => {
-    //             title.style.minHeight = `${maxHeight}px`;
-    //         });
-    //     }
-    // }, [newsData]);
-
     useEffect(() => {
         const updateMinHeightImage = () => {
             const AllImagesHeight = newsGridRef.current.querySelectorAll('.NewsGrid .NewsPic img');
 
-            // Reset heights to auto before recalculating
             AllImagesHeight.forEach((each_image) => {
                 each_image.style.height = 'auto';
             });
@@ -56,7 +39,6 @@ function NewsGrid({ newsData, sectionName, highlightedSection }) {
         const updateMinHeightTitle = () => {
             const AllH4Height = newsGridRef.current.querySelectorAll(`#${sectionName} .NewsInformation h4`)
 
-            // Reset heights to auto before recalculating
             AllH4Height.forEach((each_h4) => {
                 each_h4.style.height = 'auto';
             });
@@ -78,15 +60,12 @@ function NewsGrid({ newsData, sectionName, highlightedSection }) {
             });
         }
 
-        // Initial update
         updateMinHeightImage();
         updateMinHeightTitle();
 
-        // Update on window resize
         window.addEventListener('resize', updateMinHeightImage);
         window.addEventListener('resize', updateMinHeightTitle);
 
-        // Cleanup the event listener on component unmount
         return () => {
             window.removeEventListener('resize', updateMinHeightImage);
             window.removeEventListener('resize', updateMinHeightTitle);

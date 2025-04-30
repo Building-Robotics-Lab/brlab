@@ -11,29 +11,14 @@ import LandingPageVideo from './../components/Website Data/Smart_Building_Full_A
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faUsers, faPeopleArrows, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
-//import XianNews from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
-//import KateNews from './../components/Website Data/kate_pub2.png'
 import IqbalNews2 from './..//components/Website Data/iqbal_paper2_news.png'
 import IqbalNews from './..//components/Website Data/iqbal_paper1_news.png'
-import MaximeNews from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled_news.jpeg'
+import MaximeNews from './../components/Website Individual Information/Blank/Untitled_news.jpeg';
 import KaiNews from './..//components/Website Data/kai_paper3_news.jpg';
 import ChenxiNews from './../components/Website Individual Information/Chenxi/image_news.jpeg';
 import TeamNews8 from './../components/Website Individual Information/Team/Kajima_news.jpg';
 
 const slides = [
-    //6 most-recent news
-    /*{
-        image: XianNews,
-        title: '<b>Please welcome Zhang Xian to the lab!</b>',
-        date: '//2024',
-        link: 'EleventhNewsSection',
-    },
-    /*{
-        image: KateNews2,
-        title: '<b><i>Journal of Building Engineering</i> publication announcement!</b>',
-        date: '//2024',
-        link: 'EleventhNewsSection',
-    },*/
     {
         image: IqbalNews2,
         title: '<b><i>11th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation</i> conference paper announcement!</b>',
@@ -75,17 +60,16 @@ const slides = [
 function Home() {
     const [isMobile, setIsMobile] = useState(false);
     const homeRef = useRef(null);
-    const videoRef = useRef(null); // Create a ref for the video element
+    const videoRef = useRef(null);
 
     useEffect(() => {
         document.title = 'NUS Building Robotics Lab';
-        // Detect if the user is on a mobile device
         const userAgent = navigator.userAgent || navigator.vendor || window.opera;
         if (/android|ipad|iphone|ipod/i.test(userAgent) && !window.MSStream) {
             setIsMobile(true);
         }
         return () => {
-            document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
+            document.title = 'My React App';
         };
     }, []);
 
@@ -93,7 +77,6 @@ function Home() {
         const updateMinHeightTitle = () => {
             const AllH4Height = homeRef.current.querySelectorAll('.Home .second_section .research_section h3')
 
-            // Reset heights to auto before recalculating
             AllH4Height.forEach((each_h3) => {
                 each_h3.style.height = 'auto';
             });
@@ -123,7 +106,6 @@ function Home() {
 
             console.log(AllH4Height);
 
-            // Reset heights to auto before recalculating
             AllH4Height.forEach((each_h3) => {
                 each_h3.style.height = 'auto';
             });
@@ -147,15 +129,12 @@ function Home() {
             });
         }
 
-        // Initial update first section
         updateMinHeightTitle();
         updateMinHeightTitlethirdsection();
 
-        // Update on window resize
         window.addEventListener('resize', updateMinHeightTitle);
         window.addEventListener('resize', updateMinHeightTitlethirdsection);
 
-        // Cleanup the event listener on component unmount
         return () => {
             window.removeEventListener('resize', updateMinHeightTitle);
             window.removeEventListener('resize', updateMinHeightTitlethirdsection);
@@ -163,76 +142,6 @@ function Home() {
 
 
     }, []);
-
-
-    // useEffect(() => {
-    //     const updateBoxHeight = () => {
-    //         const AllpHeight = homeRef.current.querySelectorAll('.second_section .research_section p')
-
-    //         // Reset heights to auto before recalculating
-    //         AllpHeight.forEach((each_box) => {
-    //             each_box.style.height = 'auto';
-    //         });
-
-    //         let AllHeight = [];
-    //         AllpHeight.forEach((each_box) => {
-    //             const style = getComputedStyle(each_box);
-    //             const height = each_box.clientHeight;
-    //             AllHeight.push(height);
-    //         });
-
-    //         const maxHeight = Math.max(...AllHeight);
-    //         console.log(maxHeight)
-
-    //         // Set all box heights to the max height
-    //         AllpHeight.forEach((each_box) => {
-    //             const style = getComputedStyle(each_box);
-    //             const height = each_box.clientHeight;
-    //             each_box.style.paddingBottom = `${maxHeight - height + 16}px`;
-    //             console.log(maxHeight - height)
-    //         });
-
-    //         // 
-
-    //         const Allh3height = homeRef.current.querySelectorAll('.second_section .research_section h3')
-
-    //         // Reset heights to auto before recalculating
-    //         Allh3height.forEach((each_box) => {
-    //             each_box.style.height = 'auto';
-    //         });
-
-    //         let Allh3Heights = [];
-    //         Allh3height.forEach((each_box) => {
-    //             const style = getComputedStyle(each_box);
-    //             const height = each_box.clientHeight;
-    //             Allh3Heights.push(height);
-    //         });
-
-    //         const maxH3Height = Math.max(...Allh3Heights);
-    //         console.log(maxH3Height)
-
-    //         // Set all box heights to the max height
-    //         Allh3height.forEach((each_box) => {
-    //             const style = getComputedStyle(each_box);
-    //             const height = each_box.clientHeight;
-    //             const allPadding = maxH3Height - height + 8
-    //             each_box.style.paddingTop = `${allPadding/2}px`;
-    //             each_box.style.paddingBottom = `${allPadding/2}px`;
-    //             console.log(maxH3Height - height)
-    //         });
-    //     }
-
-    //     // Initial update
-    //     updateBoxHeight();
-
-    //     // Update on window resize
-    //     window.addEventListener('resize', updateBoxHeight);
-
-    //     // Cleanup the event listener on component unmount
-    //     return () => {
-    //         window.removeEventListener('resize', updateBoxHeight);
-    //     };
-    // }, []);
 
     return (
         <div className="Home" ref={homeRef}>

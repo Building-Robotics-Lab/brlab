@@ -16,7 +16,7 @@ function Publications() {
     useEffect(() => {
         document.title = 'BRL - Publications';
         return () => {
-            document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
+            document.title = 'My React App';
         };
     }, []);
 
@@ -143,7 +143,6 @@ function Publications() {
         'Riccardo Talami',
         'Chen Kai',
         'Iqbal Shah',
-        'Connor Aucremanne',
         'Ilyas Dawoodjee',
         'Qi Xuanning',
         'Su Xiaosong'
@@ -195,19 +194,15 @@ function Publications() {
     ];
     const [pubtype, setPubtype] = useState([publication_types[0]]);
     const publicationType = (selectedOptions) => {
-        // If nothing is selected, select 'All'
         if (!selectedOptions || selectedOptions.length === 0) {
             setPubtype([publication_types[0]]);
         }
-        // If the latest selected option is 'All' and other options are selected
         else if (selectedOptions[selectedOptions.length - 1].value === 0 && selectedOptions.length > 1) {
             setPubtype([publication_types[0]]);
         }
-        // If the latest selected option is not 'All' and 'All' is among the selected options
         else if (selectedOptions[selectedOptions.length - 1].value !== 0 && selectedOptions.some(option => option.value === 0)) {
             setPubtype(selectedOptions.filter(option => option.value !== 0));
         }
-        // Any other scenario
         else {
             setPubtype(selectedOptions);
         }
@@ -232,20 +227,16 @@ function Publications() {
     ];
     const [pubyear, setPubyear] = useState([publication_year[0]]);
     const publicationYear = (selectedOptions) => {
-        // If nothing is selected, select 'All'
         if (!selectedOptions || selectedOptions.length === 0) {
             setPubyear([publication_year[0]]);
         }
-        // If the latest selected option is 'All' and other options are selected
         else if (selectedOptions[selectedOptions.length - 1].value === 'all' && selectedOptions.length > 1) {
             setPubyear([publication_year[0]]);
         }
-        // If the latest selected option is not 'All' and 'All' is among the selected options
         else if (selectedOptions[selectedOptions.length - 1].value !== 'all' && selectedOptions.some(option => option.value === 'all')) {
             const sortedOptions = selectedOptions.filter(option => option.value !== 'all').sort((a, b) => b.value - a.value);
             setPubyear(sortedOptions);
         }
-        // Any other scenario
         else {
             const sortedOptions = [...selectedOptions].sort((a, b) => b.value - a.value);
             setPubyear(sortedOptions);
@@ -258,26 +249,21 @@ function Publications() {
         { value: 2, label: 'Riccardo Talami' },
         { value: 3, label: 'Chen Kai' },
         { value: 4, label: 'Iqbal Shah' },
-        { value: 5, label: 'Connor Aucremanne' },
         { value: 6, label: 'Ilyas Dawoodjee' },
         { value: 7, label: 'Qi Xuanning' },
         { value: 8, label: 'Su Xiaosong' }
     ];
     const [pubauthor, setPubauthor] = useState([publication_author[0]]);
     const publicationAuthor = (selectedOptions) => {
-        // If nothing is selected, select 'All'
         if (!selectedOptions || selectedOptions.length === 0) {
             setPubauthor([publication_author[0]]);
         }
-        // If the latest selected option is 'All' and other options are selected
         else if (selectedOptions[selectedOptions.length - 1].value === 0 && selectedOptions.length > 1) {
             setPubauthor([publication_author[0]]);
         }
-        // If the latest selected option is not 'All' and 'All' is among the selected options
         else if (selectedOptions[selectedOptions.length - 1].value !== 0 && selectedOptions.some(option => option.value === 0)) {
             setPubauthor(selectedOptions.filter(option => option.value !== 0));
         }
-        // Any other scenario
         else {
             setPubauthor(selectedOptions);
         }
@@ -289,15 +275,12 @@ function Publications() {
     };
 
     const shouldDisplayPublication = (pubYear) => {
-        // If 'All' is selected, display all publications
         if (pubyear.some(option => option.value === 'all')) return true;
 
-        // If publication's year matches one of the selected years, display the publication
         return pubyear.some(option => option.value === pubYear.toString());
     }
 
     const shouldShowPublication = (publication) => {
-        // If 'All' is selected in authors, show every publication
         if (pubauthor.some(option => option.value === 0)) {
             if (text) {
                 return publication.title.toLowerCase().includes(text.toLowerCase());
@@ -305,7 +288,6 @@ function Publications() {
             return true;
         }
 
-        // Check if any of the publication's authors are in the selected authors
         for (let author of publication.authors) {
             const cleanedAuthorName = author.name.replace('*', '');
             if (pubauthor.some(option => option.label === cleanedAuthorName)) {
@@ -624,11 +606,11 @@ const InputOption = ({ getStyles, isFocused, isSelected, children, innerProps, .
 const getDynamicWidth = () => {
     const screenWidth = window.innerWidth;
 
-    if (screenWidth <= 426) { // For small screens
+    if (screenWidth <= 426) {
         return '100px';
-    } else if (screenWidth <= 769) { // For medium screens
+    } else if (screenWidth <= 769) {
         return '120px';
-    } else if (screenWidth <= 1024) { // For larger screens
+    } else if (screenWidth <= 1024) {
         return '200px';
     } else {
         return '300px';
@@ -638,7 +620,7 @@ const getDynamicWidth = () => {
 const getDynamicHeight = () => {
     const screenWidth = window.innerWidth;
 
-    if (screenWidth <= 426) { // For small screens
+    if (screenWidth <= 426) {
         return '5px';
     } else {
         return '10px';
@@ -648,11 +630,11 @@ const getDynamicHeight = () => {
 const getDynamicPadding = () => {
     const screenWidth = window.innerWidth;
 
-    if (screenWidth <= 426) { // For small screens
+    if (screenWidth <= 426) {
         return '4px 6px';
-    } else if (screenWidth <= 769) { // For medium screens
+    } else if (screenWidth <= 769) {
         return '5px 8px';
-    } else if (screenWidth <= 1024) { // For larger screens
+    } else if (screenWidth <= 1024) {
         return '6px 10px';
     } else {
         return '8px 12px';
@@ -674,7 +656,7 @@ const customStyles = {
     option: (base, state) => ({
         ...base,
         backgroundColor: state.isFocused ? 'rgb(45, 99, 83)' : (state.isSelected ? 'rgb(45, 99, 83)' : base.backgroundColor),
-        padding: getDynamicPadding(), //'8px 12px',
+        padding: getDynamicPadding(),
         ':active': {
             backgroundColor: 'rgb(45, 99, 83)'
         }

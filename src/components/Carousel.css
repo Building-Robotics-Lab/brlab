@@ -121,12 +121,10 @@
     }
 
     .btn-left {
-        /*left: calc(0.7 * -12px);*/
         left: 0px;
     }
 
     .btn-right {
-        /*right: calc(0.7 * -12px);*/
         right: 0px;
     }
 }
@@ -159,52 +157,27 @@
     }
 
     .btn-left {
-        /*left: calc(0.4 * -12px);*/
         left: 0px;
     }
 
     .btn-right {
-        /*right: calc(0.4 * -12px);*/
         right: 0px;
     }
 
 }
 
 @media screen and (max-width: 426px) {
-    /*.carouselImage {
-        /* height: calc(0.3 * 375px); *//*
-        margin-bottom: calc(0.3 * .5rem);
-        padding: 0rem calc(0.3 * 1rem) calc(0.3 * 1rem) calc(0.3 * 1rem);
-    }
-    */
     .carouselDate {
-        /*padding: 0 calc(0.3 * 1rem);*/
         font-size: 0.3rem;
     }
-    /*
-    .carouselLink {
-        padding: 0 calc(0.3 * 1rem);
-        font-size: 0.3rem;
-    }
-
-    .carouselTitle {
-        font-size: calc(0.3 * 1.5rem);
-        padding: calc(0.3 * 0.25rem) calc(0.3 * 1rem);
-    }
-    */
     .btn {
         top: 37%
-        /*width: calc(0.3 * 40px);
-        height: calc(0.3 * 40px);
-        font-size: calc(0.3 * 1.25rem);*/
     }
     .btn-left {
-        /*left: calc(0.3 * -12px);*/
         left: 0px;
     }
 
     .btn-right {
-        /*right: calc(0.3 * -12px);*/
         right: 0px;
     }
 }

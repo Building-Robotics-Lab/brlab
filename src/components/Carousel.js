@@ -38,7 +38,7 @@ const Carousel = ({ slides }) => {
         setStartIndex(prevIndex => {
             let nextIndex = prevIndex - 1;
             if (nextIndex < 0) {
-                nextIndex = 0; // Prevent going back past the first slide
+                nextIndex = 0;
             }
             return nextIndex;
         });
@@ -48,11 +48,9 @@ const Carousel = ({ slides }) => {
         const updateMinHeight = () => {
             const AllImagesHeight = sliderRef.current.querySelectorAll('.carouselImage');
 
-            // Reset heights to auto before recalculating
             AllImagesHeight.forEach((each_image) => {
                 each_image.style.height = 'auto';
 
-                // Add load event listener for each image
                 each_image.addEventListener('load', () => {
                     updateMinHeight();
                 });
@@ -75,13 +73,10 @@ const Carousel = ({ slides }) => {
             });
         };
 
-        // Initial update
         updateMinHeight();
 
-        // Update on window resize
         window.addEventListener('resize', updateMinHeight);
 
-        // Cleanup the event listener on component unmount
         return () => {
             window.removeEventListener('resize', updateMinHeight);
         };

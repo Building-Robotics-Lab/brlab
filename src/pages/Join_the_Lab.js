@@ -249,30 +249,24 @@ function Join_the_Lab() {
     const scholarshipPosition = (selectedOptions) => {
         let selectedValues;
 
-        // If nothing is selected, select 'All'
         if (!selectedOptions || selectedOptions.length === 0) {
             selectedValues = ['All'];
         }
-        // If the latest selected option is 'All' and other options are selected
         else if (selectedOptions[selectedOptions.length - 1].value === 'All' && selectedOptions.length > 1) {
             selectedValues = ['All'];
         }
-        // If the latest selected option is not 'All' and 'All' is among the selected options
         else if (selectedOptions[selectedOptions.length - 1].value !== 'All' && selectedOptions.some(option => option.value === 'All')) {
             selectedValues = selectedOptions.filter(option => option.value !== 'All').map(option => option.value).sort((a, b) => b - a);
         }
-        // Any other scenario
         else {
             selectedValues = selectedOptions.map(option => option.value).sort((a, b) => b - a);
         }
 
         setPosition(selectedValues);
 
-        // Update available options for the other dropdowns based on the selected duration
         if (selectedValues.length === 1) {
             updateAvailableOptionsForPosition(selectedValues[0]);
         } else {
-            // Reset available options for position and country if multiple durations or none are selected
             setAvailableDurations(scholarship_position);
             setAvailableCountries(scholarship_country);
         }
@@ -355,30 +349,24 @@ function Join_the_Lab() {
     const scholarshipCountry = (selectedOptions) => {
         let selectedValues;
 
-        // If nothing is selected, select 'All'
         if (!selectedOptions || selectedOptions.length === 0) {
             selectedValues = ['All'];
         }
-        // If the latest selected option is 'All' and other options are selected
         else if (selectedOptions[selectedOptions.length - 1].value === 'All' && selectedOptions.length > 1) {
             selectedValues = ['All'];
         }
-        // If the latest selected option is not 'All' and 'All' is among the selected options
         else if (selectedOptions[selectedOptions.length - 1].value !== 'All' && selectedOptions.some(option => option.value === 'All')) {
             selectedValues = selectedOptions.filter(option => option.value !== 'All').map(option => option.value).sort((a, b) => b - a);
         }
-        // Any other scenario
         else {
             selectedValues = selectedOptions.map(option => option.value).sort((a, b) => b - a);
         }
 
         setCountry(selectedValues);
 
-        // Update available options for the other dropdowns based on the selected country
         if (selectedValues.length === 1) {
             updateAvailableOptionsForCountry(selectedValues[0]);
         } else {
-            // Reset available options for position and duration if multiple countries or none are selected
             setAvailablePositions(scholarship_position);
             setAvailableDurations(scholarship_duration);
         }
@@ -395,46 +383,37 @@ function Join_the_Lab() {
     const scholarshipDuration = (selectedOptions) => {
         let selectedValues;
 
-        // If nothing is selected, select 'All'
         if (!selectedOptions || selectedOptions.length === 0) {
             selectedValues = ['All'];
         }
-        // If the latest selected option is 'All' and other options are selected
         else if (selectedOptions[selectedOptions.length - 1].value === 'All' && selectedOptions.length > 1) {
             selectedValues = ['All'];
         }
-        // If the latest selected option is not 'All' and 'All' is among the selected options
         else if (selectedOptions[selectedOptions.length - 1].value !== 'All' && selectedOptions.some(option => option.value === 'All')) {
             selectedValues = selectedOptions.filter(option => option.value !== 'All').map(option => option.value).sort((a, b) => b - a);
         }
-        // Any other scenario
         else {
             selectedValues = selectedOptions.map(option => option.value).sort((a, b) => b - a);
         }
 
         setDuration(selectedValues);
 
-        // Update available options for the other dropdowns based on the selected duration
         if (selectedValues.length === 1) {
             updateAvailableOptionsForDuration(selectedValues[0]);
         } else {
-            // Reset available options for position and country if multiple durations or none are selected
             setAvailablePositions(scholarship_position);
             setAvailableCountries(scholarship_country);
         }
     };
 
-    // Extract the values from the scholarship_position, scholarship_country, and scholarship_duration for filtering
     const allPositions = scholarship_position.map(option => option.value);
     const allCountries = scholarship_country.map(option => option.value);
     const allDurations = scholarship_duration.map(option => option.value);
 
-    // Function to determine the filter values based on selection
     const getFilterValues = (selected, allValues) => {
         return selected.includes("All") ? allValues : selected;
     }
 
-    // Function to filter scholarships based on selected tags
     const filterScholarships = (scholarships, positions, countries, durations) => {
         const filterPositions = getFilterValues(positions, allPositions);
         const filterCountries = getFilterValues(countries, allCountries);
@@ -449,7 +428,6 @@ function Join_the_Lab() {
         });
     }
 
-    // Using the filter function
     const filteredOpenEligibilityScholarships = filterScholarships(openEligibility, position, country, duration);
     const filteredCountrySpecificEligibilityScholarships = filterScholarships(countrySpecificEligibility, position, country, duration);
 
@@ -458,27 +436,21 @@ function Join_the_Lab() {
     const [availableDurations, setAvailableDurations] = useState(scholarship_duration);
 
     const updateAvailableOptionsForPosition = (selectedPosition) => {
-        // Filter scholarships based on the selected position
         const scholarships = [...openEligibility, ...countrySpecificEligibility];
         const filteredScholarships = scholarships.filter(scholarship => scholarship.tags.position.includes(selectedPosition));
 
-        // Extract unique durations and countries from the filtered scholarships
         const newDurations = [...new Set(filteredScholarships.flatMap(scholarship => scholarship.tags.duration))];
         const newCountries = [...new Set(filteredScholarships.flatMap(scholarship => scholarship.tags.country))];
 
         if (selectedPosition === "All") {
-            // If 'All' is selected, reset to all available options
             setAvailableDurations(scholarship_duration);
             setAvailableCountries(scholarship_country);
         } else {
-            // Update the available options state WITHOUT updating the position dropdown
             if (!duration.includes("All") && duration.length === 1) {
-                // Don't update the duration dropdown if a single duration is already selected
             } else {
                 setAvailableDurations(scholarship_duration.filter(option => newDurations.includes(option.value)));
             }
             if (!country.includes("All") && country.length === 1) {
-                // Don't update the country dropdown if a single country is already selected
             } else {
                 setAvailableCountries(scholarship_country.filter(option => newCountries.includes(option.value)));
             }
@@ -487,27 +459,21 @@ function Join_the_Lab() {
     }
 
     const updateAvailableOptionsForDuration = (selectedDuration) => {
-        // Filter scholarships based on the selected duration
         const scholarships = [...openEligibility, ...countrySpecificEligibility];
         const filteredScholarships = scholarships.filter(scholarship => scholarship.tags.duration.includes(selectedDuration));
 
-        // Extract unique positions and countries from the filtered scholarships
         const newPositions = [...new Set(filteredScholarships.flatMap(scholarship => scholarship.tags.position))];
         const newCountries = [...new Set(filteredScholarships.flatMap(scholarship => scholarship.tags.country))];
 
         if (selectedDuration === "All") {
-            // If 'All' is selected, reset to all available options
             setAvailablePositions(scholarship_position);
             setAvailableCountries(scholarship_country);
         } else {
-            // Update the available options state WITHOUT updating the duration dropdown
             if (!position.includes("All") && position.length === 1) {
-                // Don't update the position dropdown if a single position is already selected
             } else {
                 setAvailablePositions(scholarship_position.filter(option => newPositions.includes(option.value)));
             }
             if (!country.includes("All") && country.length === 1) {
-                // Don't update the country dropdown if a single country is already selected
             } else {
                 setAvailableCountries(scholarship_country.filter(option => newCountries.includes(option.value)));
             }
@@ -515,32 +481,25 @@ function Join_the_Lab() {
     }
 
     const updateAvailableOptionsForCountry = (selectedCountry) => {
-        // Filter scholarships based on the selected country
         const scholarships = [...openEligibility, ...countrySpecificEligibility];
         let filteredScholarships = scholarships.filter(scholarship => scholarship.tags.country.includes(selectedCountry));
 
-        // Further filter the scholarships based on the currently selected position
         if (!position.includes("All")) {
             filteredScholarships = filteredScholarships.filter(scholarship => position.some(p => scholarship.tags.position.includes(p)));
         }
 
-        // Extract unique positions and durations from the filtered scholarships
         const newPositions = [...new Set(filteredScholarships.flatMap(scholarship => scholarship.tags.position))];
         const newDurations = [...new Set(filteredScholarships.flatMap(scholarship => scholarship.tags.duration))];
 
         if (selectedCountry === "All") {
-            // If 'All' is selected, reset to all available options
             setAvailablePositions(scholarship_position);
             setAvailableDurations(scholarship_duration);
         } else {
-            // Update the available options state WITHOUT updating the country dropdown
             if (!position.includes("All") && position.length === 1) {
-                // Don't update the position dropdown if a single position is already selected
             } else {
                 setAvailablePositions(scholarship_position.filter(option => newPositions.includes(option.value)));
             }
             if (!duration.includes("All") && duration.length === 1) {
-                // Don't update the duration dropdown if a single duration is already selected
             } else {
                 setAvailableDurations(scholarship_duration.filter(option => newDurations.includes(option.value)));
             }
@@ -581,7 +540,7 @@ function Join_the_Lab() {
     useEffect(() => {
         document.title = 'BRL - Join';
         return () => {
-            document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
+            document.title = 'My React App';
         };
     }, []);
 
@@ -769,11 +728,11 @@ const InputOption = ({ getStyles, isFocused, isSelected, children, innerProps, .
 const getDynamicWidth = () => {
     const screenWidth = window.innerWidth;
 
-    if (screenWidth <= 426) { // For small screens
+    if (screenWidth <= 426) {
         return '100px';
-    } else if (screenWidth <= 769) { // For medium screens
+    } else if (screenWidth <= 769) {
         return '120px';
-    } else if (screenWidth <= 1024) { // For larger screens
+    } else if (screenWidth <= 1024) {
         return '200px';
     } else {
         return '300px';
@@ -783,7 +742,7 @@ const getDynamicWidth = () => {
 const getDynamicHeight = () => {
     const screenWidth = window.innerWidth;
 
-    if (screenWidth <= 426) { // For small screens
+    if (screenWidth <= 426) {
         return '5px';
     } else {
         return '10px';
@@ -793,11 +752,11 @@ const getDynamicHeight = () => {
 const getDynamicPadding = () => {
     const screenWidth = window.innerWidth;
 
-    if (screenWidth <= 426) { // For small screens
+    if (screenWidth <= 426) {
         return '4px 6px';
-    } else if (screenWidth <= 769) { // For medium screens
+    } else if (screenWidth <= 769) {
         return '5px 8px';
-    } else if (screenWidth <= 1024) { // For larger screens
+    } else if (screenWidth <= 1024) {
         return '6px 10px';
     } else {
         return '8px 12px';

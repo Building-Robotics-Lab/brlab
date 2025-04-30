@@ -282,11 +282,8 @@ const generateIdFromTitle = (title) => {
     return firstTwoWords;
 };
 
-// Loop through the years
 ConferenceData.forEach((yearData) => {
-    // Loop through the publications for each year
     yearData.publications.forEach((publication) => {
-        // Generate and assign the unique ID
         publication.id = generateIdFromTitle(publication.title);
         publication.individual_paper_link = "/publication/" + generateIdFromTitle(publication.title);
     });
@@ -305,7 +302,6 @@ const getWordsPerMinute = (title, keyword, abstract) => {
 }
 
 ConferenceData.forEach((yearData) => {
-    // Loop through the publications for each year
     yearData.publications.forEach((publication) => {
         let readingTime = getWordsPerMinute(publication.title, publication.keywords, publication.abstract);
         publication.minRead = `${readingTime}-minute read`

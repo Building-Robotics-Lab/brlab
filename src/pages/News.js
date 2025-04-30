@@ -7,11 +7,9 @@ import './News.css'
 import NewsGrid from '../components/NewsGrid';
 import { Link } from 'react-router-dom';
 
-//import XianPic from './components/Website Individual Information/Untitled.jpeg'
-//import KatePublication2 from './../components/Website Data/kate_pub2.png';
 import IqbalPaper2 from './..//components/Website Data/iqbal_paper2.png'
 import IqbalPaper1 from './..//components/Website Data/iqbal_paper1.png'
-import MaximePic from '/Users/connoraucremanne/Documents/Website_2.0/brlab/src/components/Website Individual Information/Untitled.jpeg'
+import MaximePic from './../components/Website Individual Information/Blank/Untitled.jpeg';
 import KaiPublication3 from './../components/Website Data/kai_paper3.jpg';
 import ChenxiPic from './../components/Website Individual Information/Chenxi/image.jpeg';
 import Kajima from './../components/Website Individual Information/Team/Kajima.jpg'
@@ -40,14 +38,13 @@ import RiccardoPublication from './../components/Website Data/riccardo-publicati
 import KellyPic from './../components/Website Individual Information/Kelly/image.jpg';
 import XiaosongPic from './../components/Website Individual Information/Xiaosong/image.jpg';
 import KaiPublication from './../components/Website Data/kai_paper.png'
-import ConnorPic from './../components/Website Individual Information/Connor/image.jpg';
 import IqbalPublication from './../components/Website Data/iqbal-publication.jpeg'
 
 function News() {
     useEffect(() => {
         document.title = 'BRL - News';
         return () => {
-            document.title = 'My React App'; // This is optional and will reset the title when the component unmounts.
+            document.title = 'My React App';
         };
     }, []);
 
@@ -66,7 +63,6 @@ function News() {
     const [key, setKey] = useState(0);
 
     useEffect(() => {
-        // Set a timeout to trigger a re-render after a delay
         const timer = setTimeout(() => {
             setKey(prevKey => prevKey + 1);
         }, 500);
@@ -74,7 +70,6 @@ function News() {
     }, []);
 
     useEffect(() => {
-        // Set a timeout to trigger a re-render after a delay
         const timer = setTimeout(() => {
             setKey(prevKey => prevKey + 1);
         }, 1000);
@@ -83,58 +78,7 @@ function News() {
 
     const [highlightedSection, setHighlightedSection] = useState(null);
 
-    // useEffect(() => {
-    //     const scrollToSection = () => {
-    //         const hashes = window.location.hash.split("#");
-    //         if (hashes.length > 1) {
-    //             const sectionID = hashes[1]; // Get the second part of the hash
-    //             const section = document.getElementById(sectionID);
-    //             if (section) {
-    //                 section.scrollIntoView({ behavior: 'smooth' });
-    //                 setHighlightedSection(sectionID);
-    //             }
-    //         }
-    //     }
-
-    //     // Initial scroll when component mounts
-    //     scrollToSection();
-
-    //     // Add an event listener for hash changes
-    //     window.addEventListener('hashchange', scrollToSection);
-
-    //     // Cleanup the event listener when the component unmounts
-    //     return () => {
-    //         window.removeEventListener('hashchange', scrollToSection);
-    //     };
-    // }, []);
-
     const newsData = [
-        /*{
-            NewsSectionName: 'Xian',
-            imageSrc: XianPic,
-            altText: "A headshot of Zhang Xian.",
-            date: '',
-            title: 'Please welcome Zhang Xian to the lab!',
-            content: (
-                <>
-                    The Building Robotics Lab is happy to have Xian joining us from China as a visiting PhD student at Northwestern Polytechnic University studying Industrial Design in the Department of Industrial Design. Her research revolves around human factors comfort, cabin lighting environment. Check out his full profile <Link to="/profile/Xian"><b>here</b></Link> to get to know him more!
-                </>
-            ),
-            sectionName: 'EleventhNewsSection'
-        },*/
-        /*{
-            NewsSectionName: 'KatePublication2',
-            imageSrc: KatePublication2,
-            altText: "A graphical abstract of the publication.",
-            date: '//2024',
-            title: '<i>Journal of Building Engineering</i> publication announcement!',
-            content: (
-                <>
-                    Dr. Kate Sangwon Lee, <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, <Link to="/profile/Connor"><b>Connor</b></Link>, Asst Prof Lee, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/occupant-centric_digital_twins"><b>Occupant-Centric Digital Twin Interfaces for Buildings: Navigating User Preferences, Control, and Privacy</b></Link>. They XXX. Congratulations everyone!
-                </>
-            ),
-            sectionName: 'EleventhNewsSection'
-        },*/
         {
             NewsSectionName: 'IqbalPaper2',
             imageSrc: IqbalPaper2,
@@ -468,7 +412,7 @@ function News() {
             title: '<i>Building and Environment</i> publication announcement!',
             content: (
                 <>
-                    Dr. Kate Sangwon Lee, Asst Prof Lee, <Link to="/profile/Connor"><b>Connor</b></Link>, <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/towards_democratization_of"><b>Towards democratization of digital twins: Design principles for transformation into a human-building interface</b></Link>. They developed design principles for a digital twin as an occupant-building interface, discovered occupants' needs for informed decision-making through digital twins, and included occupants as end users od digital twins for occupant-centric buildings. Congratulations everyone!
+                    Dr. Kate Sangwon Lee, Asst Prof Lee, Connor Aucremanne, <Link to="/profile/Iqbal"><b>Iqbal</b></Link>, and <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link> have published their paper: <Link to="/publication/towards_democratization_of"><b>Towards democratization of digital twins: Design principles for transformation into a human-building interface</b></Link>. They developed design principles for a digital twin as an occupant-building interface, discovered occupants' needs for informed decision-making through digital twins, and included occupants as end users od digital twins for occupant-centric buildings. Congratulations everyone!
                 </>
             ),
             sectionName: 'ThirdNewsSection'
@@ -534,19 +478,6 @@ function News() {
             content: (
                 <>
                     <Link to="/profile/Kai"><b>Kai</b></Link>, <Link to="/team#prof_profile"><b>Asst Prof Ghahramani</b></Link>, and additional authors have published their paper: <Link to="/publication/personal_thermal_comfort"><b>Personal thermal comfort models based on physiological measurements -- A design of experiments based review</b></Link>. This study aims to provide a systematic, comprehensive, and DOE-framework-based review of the physiological sensing methods to predict personal thermal comfort. This is Kai's inaugural first-author article! Chapeau!
-                </>
-            ),
-            sectionName: 'FirstNewsSection'
-        },
-        {
-            NewsSectionName: 'Connor',
-            imageSrc: ConnorPic,
-            altText: "A headshot of Connor Aucremanne.",
-            date: '09/01/2023',
-            title: 'Please welcome Connor Aucremanne to the lab!',
-            content: (
-                <>
-                    The Building Robotics Lab is happy to have Connor joining us as a PhD student in the Department of the Built Environment after he recently completed his MSc in Built Environment: Environmental Design and Engineering at UCL in the Bartlett Faculty of the Built Environment. His research revolves around smart buildings, building-occupant network dynamics, energy informatics, human-building interaction, and virtual power plants. Check out his full profile <Link to="/profile/Connor"><b>here</b></Link> to get to know him more!
                 </>
             ),
             sectionName: 'FirstNewsSection'

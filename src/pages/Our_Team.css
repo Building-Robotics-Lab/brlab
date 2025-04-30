@@ -1,4 +1,3 @@
-/* First Section */
 
 .Our_Team .first_section {
     display: flex;
@@ -30,7 +29,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Add this line to vertically center the items */
     margin-top: 1rem;
 }
 
@@ -71,7 +69,6 @@
     line-height: 1.5;
 }
 
-/* Second and Third Section */
 
 .Our_Team .meet_team {
     font-size: 1.5rem;
@@ -85,7 +82,6 @@
     text-align: center;
 }
 
-/* Fourth Section */
 
 .Our_Team .LadImage1 {
     width: 100%;
@@ -93,7 +89,6 @@
 
 }
 
-/* Fifth Section */
 
 .Our_Team .fifth_section h3 {
     font-size: 1.75rem;
@@ -118,7 +113,6 @@
 }
 
 @media screen and (max-width: 1025px) {
-    /* First Section */
 
     .Our_Team .prof_data img {
         margin-bottom: calc(0.7 * 1rem);
@@ -154,7 +148,6 @@
         font-size: calc(0.7 * 1rem);
     }
 
-    /* Second and Third Section */
 
     .Our_Team .meet_team {
         font-size: calc(0.7 * 1.5rem);
@@ -166,13 +159,11 @@
         margin-bottom: calc(1 * 1.65vmax);
     }
 
-    /* Fourth Section */
 
     .Our_Team .LadImage1 {
         border-radius: calc(0.7 * 1rem);
     }
 
-    /* Fifth Section */
 
     .Our_Team .fifth_section h3 {
         font-size: calc(0.7 * 1.75rem);
@@ -186,7 +177,6 @@
 }
 
 @media screen and (max-width: 769px) {
-    /* First Section */
 
     .Our_Team .prof_data img {
         margin-bottom: calc(0.4 * 1rem);
@@ -222,7 +212,6 @@
         font-size: calc(0.4 * 1rem);
     }
 
-    /* Second and Third Section */
 
     .Our_Team .meet_team {
         font-size: calc(0.4 * 1.5rem);
@@ -234,13 +223,11 @@
         margin-bottom: calc(1 * 1.65vmax);
     }
 
-    /* Fourth Section */
 
     .Our_Team .LadImage1 {
         border-radius: calc(0.4 * 1rem);
     }
 
-    /* Fifth Section */
 
     .Our_Team .fifth_section h3 {
         font-size: calc(0.4 * 1.75rem);
@@ -254,7 +241,6 @@
 }
 
 @media screen and (max-width: 500px) {
-    /* First Section */
 
     .Our_Team .prof_data img {
         margin-bottom: calc(0.3 * 1rem);
@@ -290,7 +276,6 @@
         font-size: calc(0.3 * 1rem);
     }
 
-    /* Second and Third Section */
 
     .Our_Team .meet_team {
         font-size: calc(0.3 * 1.5rem);
@@ -302,13 +287,11 @@
         margin-bottom: calc(1 * 1.65vmax);
     }
 
-    /* Fourth Section */
 
     .Our_Team .LadImage1 {
         border-radius: calc(0.3 * 1rem);
     }
 
-    /* Fifth Section */
 
     .Our_Team .fifth_section h3 {
         font-size: calc(0.3 * 1.75rem);
